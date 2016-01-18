@@ -239,8 +239,7 @@ int main(int argc, char* argv[])
             //插入sqlite数据库
             std::ostringstream osql;
             osql<<"insert into calendar(date,lunar,liturgic,color,cells) values("
-            <<"date('"<<ansi2utf8(dayInfo.toString())<<"'),'"<<ansi2utf8(dayInfo.toLunarString())<<"',"<<dayInfo.getLiturgicId()<<","
-            <<dayInfo.getColor()<<",'"<<ansi2utf8(ostr.str())<<"');";
+            <<"date('"<<ansi2utf8(dayInfo.toString())<<"'),'"<<ansi2utf8(dayInfo.toLunarString())<<"',"<<dayInfo.getLiturgicId()<<","<<dayInfo.getColor()<<",'"<<ansi2utf8(sqlite3_mprintf("%q",ostr.str().c_str()))<<"');";
             
             if(sqlite3_exec(db, osql.str().c_str(), NULL, 0, NULL))
             {
@@ -249,7 +248,7 @@ int main(int argc, char* argv[])
             }
             else
             {
-                std::cout<<"inser date "<<dayInfo.toString()<<std::endl;
+                std::cout<<"insert date "<<dayInfo.toString()<<std::endl;
             }
             
             /*of<<dayInfo.toString()<<strSplit
