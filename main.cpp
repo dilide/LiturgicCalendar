@@ -154,26 +154,47 @@ std::string ansi2utf8(std::string& s)
 //创建数据库表
 int create_tables(sqlite3* db)
 {
-    std::string strSql = "create table calendar("\
-    "id integer primary key autoincrement,"\
-    "date date not null,"\
-    "lunar text not null,"\
-    "liturgic integer not null,"\
-    "color integer not null,"\
-    "cells text);";
-    
-    /* Execute SQL statement */
-    if(sqlite3_exec(db, strSql.c_str(), NULL, 0, NULL))
     {
-        std::cout<<"create table calendar error!"<<std::endl;
-        return -1;
+        std::string strSql = "create table saints("\
+        "id integer primary key autoincrement,"\
+        "key integer not null,"\
+        "name text not null,"\
+        "rank integer not null,"\
+        "color integer not null"\
+        ");";
+        
+        /* Execute SQL statement */
+        if(sqlite3_exec(db, strSql.c_str(), NULL, 0, NULL))
+        {
+            std::cout<<"create table saints error!"<<std::endl;
+            return -1;
+        }
     }
     
-    if(sqlite3_exec(db,"create index index_calendar_date on calendar (date);",0,0,0))
     {
-        std::cout<<"create index error!"<<std::endl;
-        return -1;
+        std::string strSql = "create table calendar("\
+        "id integer primary key autoincrement,"\
+        "date date not null,"\
+        "lunar text not null,"\
+        "liturgic integer not null,"\
+        "color integer not null,"\
+        "cells text);";
+        
+        /* Execute SQL statement */
+        if(sqlite3_exec(db, strSql.c_str(), NULL, 0, NULL))
+        {
+            std::cout<<"create table calendar error!"<<std::endl;
+            return -1;
+        }
+        
+        if(sqlite3_exec(db,"create index index_calendar_date on calendar (date);",0,0,0))
+        {
+            std::cout<<"create index error!"<<std::endl;
+            return -1;
+        }
     }
+    
+    
     
     return 1;
 }
@@ -197,7 +218,38 @@ int main(int argc, char* argv[])
     if(create_tables(db)<1)
         return -1;
     
+    
     Calendar::initCalendar();
+    
+    //导入圣人传记目录
+    {
+        sqlite3_exec(db,"begin;",0,0,0);
+        auto saints = LiturgicYear::getPropers();
+        auto iter = saints.begin();
+        while (iter!=saints.end()) {
+            
+            //插入sqlite数据库
+            std::ostringstream osql;
+            osql<<"insert into saints(key,name,rank,color) values("
+            <<iter->first<<",'"<<ansi2utf8(sqlite3_mprintf("%q",iter->second.celebration.c_str()))<<"',"
+            <<iter->second.rank<<","<<iter->second.color<<");";
+            
+            if(sqlite3_exec(db, osql.str().c_str(), NULL, 0, NULL))
+            {
+                std::cout<<osql.str()<<std::endl;
+                return -1;
+            }
+            else
+            {
+                std::cout<<"insert date "<<iter->second.celebration<<std::endl;
+            }
+            
+            ++iter;
+        }
+        
+        sqlite3_exec(db,"commit;",0,0,0);
+    }
+    
     std::string strSplit = "\t";
     
     std::ofstream of("LiturgicDay.txt",std::fstream::out|std::fstream::trunc);
