@@ -178,7 +178,8 @@ int create_tables(sqlite3* db)
         "lunar text not null,"\
         "liturgic integer not null,"\
         "color integer not null,"\
-        "cells text);";
+        "cells text,"\
+        "cellsid text);";
         
         /* Execute SQL statement */
         if(sqlite3_exec(db, strSql.c_str(), NULL, 0, NULL))
@@ -291,10 +292,24 @@ int main(int argc, char* argv[])
                 
                 ++iterCell;
             }
+            
+            //圣人传记的id
+            std::string strCellsId = "";
+            {
+                std::ostringstream ostrIds;
+                auto ids = dayInfo.getCellsId();
+                auto iii = ids.begin();
+                while (iii != ids.end()) {
+                    ostrIds<<*iii<<"|";
+                    
+                    ++iii;
+                }
+                strCellsId = ostrIds.str();
+            }
             //插入sqlite数据库
             std::ostringstream osql;
-            osql<<"insert into calendar(date,lunar,liturgic,color,cells) values("
-            <<"date('"<<ansi2utf8(dayInfo.toString())<<"'),'"<<ansi2utf8(dayInfo.toLunarString())<<"',"<<dayInfo.getLiturgicId()<<","<<dayInfo.getColor()<<",'"<<ansi2utf8(sqlite3_mprintf("%q",ostr.str().c_str()))<<"');";
+            osql<<"insert into calendar(date,lunar,liturgic,color,cells,cellsid) values("
+            <<"date('"<<ansi2utf8(dayInfo.toString())<<"'),'"<<ansi2utf8(dayInfo.toLunarString())<<"',"<<dayInfo.getLiturgicId()<<","<<dayInfo.getColor()<<",'"<<ansi2utf8(sqlite3_mprintf("%q",ostr.str().c_str()))<<"','"<<strCellsId<<"');";
             
             if(sqlite3_exec(db, osql.str().c_str(), NULL, 0, NULL))
             {

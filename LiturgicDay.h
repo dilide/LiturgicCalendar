@@ -82,6 +82,7 @@ namespace CathAssist
 			int getLiturgicId();
 
 			std::list<CellInfo> getCellInfos() const;
+            std::list<int> getCellsId() const{ return listCell; }
 			void appendCell(const int& id);
 
 			CellInfo getLiturgicCellInfo() const;
