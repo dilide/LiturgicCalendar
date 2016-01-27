@@ -250,23 +250,26 @@ int main(int argc, char* argv[])
         sqlite3_exec(db,"commit;",0,0,0);
     }
     
-    std::string strSplit = "\t";
-    
-    std::ofstream of("LiturgicDay.txt",std::fstream::out|std::fstream::trunc);
-    
-    //导出特殊节日
+    /*
     {
-        auto propers = LiturgicYear::getPropers();
-        auto iter = propers.begin();
-        while (iter!=propers.end())
-        {
-            of<<iter->first<<strSplit<<iter->second.celebration<<std::endl;
-            
-            ++iter;
-        }
+        //导出圣人传记为文本，已废弃（改为导出到sqlite数据库表saints中）
+        std::string strSplit = "\t";
+        std::ofstream of("LiturgicDay.txt",std::fstream::out|std::fstream::trunc);
         
-        of<<std::endl<<std::endl;
-    }
+        //导出特殊节日
+        {
+            auto propers = LiturgicYear::getPropers();
+            auto iter = propers.begin();
+            while (iter!=propers.end())
+            {
+                of<<iter->first<<strSplit<<iter->second.celebration<<std::endl;
+                
+                ++iter;
+            }
+            
+            of<<std::endl<<std::endl;
+        }
+    }*/
     
     sqlite3_exec(db,"begin;",0,0,0);
     for(int iYear=2000;iYear<2031;++iYear)
