@@ -6,13 +6,21 @@
 #include <locale>
 #include <codecvt>
 #include <vector>
+#include <iomanip>
+#include <fstream>
+#include "rapidjson/rapidjson.h"
+#include "rapidjson/document.h"
+#include "rapidjson/stringbuffer.h"
+#include "rapidjson/prettywriter.h"
 
 #ifdef __APPLE__
 using namespace std;
+using namespace rapidjson;
 #define ansi2utf8(X) (X)
 #else
 #include <windows.h>
 using namespace std;
+using namespace rapidjson;
 //UTF-8转Unicode
 std::wstring Utf82Unicode(const std::string& utf8string)
 {
@@ -199,9 +207,8 @@ int create_tables(sqlite3* db)
     return 1;
 }
 
-
-int main(int argc, char* argv[])
-{
+//导出给数据库使用，返回值：0 成功；非0 失败
+int exportSqlite() {
     std::string strDbName = "liturgic.db";
     
     //删除已存在的数据库文件
@@ -249,27 +256,6 @@ int main(int argc, char* argv[])
         
         sqlite3_exec(db,"commit;",0,0,0);
     }
-    
-    /*
-    {
-        //导出圣人传记为文本，已废弃（改为导出到sqlite数据库表saints中）
-        std::string strSplit = "\t";
-        std::ofstream of("LiturgicDay.txt",std::fstream::out|std::fstream::trunc);
-        
-        //导出特殊节日
-        {
-            auto propers = LiturgicYear::getPropers();
-            auto iter = propers.begin();
-            while (iter!=propers.end())
-            {
-                of<<iter->first<<strSplit<<iter->second.celebration<<std::endl;
-                
-                ++iter;
-            }
-            
-            of<<std::endl<<std::endl;
-        }
-    }*/
     
     sqlite3_exec(db,"begin;",0,0,0);
     for(int iYear=2000;iYear<2031;++iYear)
@@ -335,5 +321,105 @@ int main(int argc, char* argv[])
     Calendar::releaseCalendar();
     
     sqlite3_close(db);
+    return 0;
+}
+
+//导出为按月份的 JSON 文件，返回值：0 成功；非0 失败
+int exportMonthJson() {
+    std::string strRootPath = "month";
+    
+    //删除已存在的数据库文件
+    remove(strRootPath.c_str());
+    
+    Calendar::initCalendar();
+    
+    system("rm -rf months");
+    system("mkdir months");
+    int lastYear = -1;
+    int lastMonth = -1;
+    std::string lastFileName = "";
+    rapidjson::Document docMonth;
+    docMonth.SetObject();
+    rapidjson::Document::AllocatorType& allocator = docMonth.GetAllocator();
+    rapidjson::Value* days = new rapidjson::Value(rapidjson::kArrayType);
+    for(int iYear=2000;iYear<2042;++iYear)
+    {
+        CathAssist::Calendar::Date dtBegin(iYear,1,1);
+        while (dtBegin.year()==iYear)
+        {
+            if(lastYear!= dtBegin.year() || lastMonth != dtBegin.month())
+            {
+                //save last month
+                if(lastYear > 0)
+                {
+                    std::ostringstream tmp;
+                    tmp<<lastYear<<setfill('0')<<setw(2)<<lastMonth;
+                    
+                    docMonth.AddMember("month",Value(tmp.str().c_str(), allocator).Move(), allocator);
+                    docMonth.AddMember("title",Value(getSpecialMonth(lastMonth).c_str(), allocator), allocator);
+                    docMonth.AddMember("items", *days, allocator);
+                    StringBuffer buffer;
+                    PrettyWriter<StringBuffer> writer(buffer);
+                    docMonth.Accept(writer);
+                    
+                    std::ofstream of;
+                    of.open(string("./months/") + tmp.str() + ".json");
+                    of<<buffer.GetString();
+                    of.close();
+                    
+                    if(docMonth.IsObject()) {
+                        docMonth.RemoveAllMembers();
+                        delete days;
+                        days = new rapidjson::Value(rapidjson::kArrayType);
+                    }
+                }
+                
+                lastYear = dtBegin.year();
+                lastMonth = dtBegin.month();
+                //docMonth.AddMember("items", days, allocator);
+            }
+            
+            rapidjson::Value day(rapidjson::kObjectType);
+            LiturgicDay dayInfo = Calendar::getLiturgicDay(dtBegin);
+            
+            day.AddMember("date", Value(dayInfo.toString().c_str(), allocator), allocator);
+            day.AddMember("lunar", Value(dayInfo.toLunarString().c_str(), allocator), allocator);
+            day.AddMember("color", Value(getColorValue(dayInfo.getColor()).c_str(), allocator), allocator);
+            day.AddMember("colorStr", Value(getColorStr(dayInfo.getColor()).c_str(), allocator), allocator);
+            
+            rapidjson::Value liturgics(kArrayType);
+            
+            auto cells = dayInfo.getCellInfos();
+            auto iterCell = cells.begin();
+            while (iterCell!=cells.end())
+            {
+                if(iterCell->rank > ErrorRank)
+                {
+                    rapidjson::Value liturgic(rapidjson::kObjectType);
+                    liturgic.AddMember("name", Value(iterCell->toString().c_str(), allocator), allocator);
+                    liturgic.AddMember("rank", Value(iterCell->rank), allocator);
+                    
+                    liturgics.PushBack(liturgic, allocator);
+                }
+                
+                ++iterCell;
+            }
+            
+            day.AddMember("liturgics", liturgics, allocator);
+            
+            days->PushBack(day, docMonth.GetAllocator());
+            dtBegin = dtBegin.addDays(1);
+        }
+    }
+    
+    Calendar::releaseCalendar();
+    
+    return 0;
+}
+
+int main(int argc, char* argv[])
+{
+//    exportSqlite();
+    exportMonthJson();
     return 0;
 }
