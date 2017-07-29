@@ -27,7 +27,14 @@ add_executable(${PROJECT_TEST_NAME} ${TEST_SRC_FILES})
 add_dependencies(${PROJECT_TEST_NAME} googletest ${PROJECT_NAME_STR})
 target_link_libraries(${PROJECT_TEST_NAME} ${PROJECT_NAME_STR})
 
-if(NOT WIN32 OR MINGW)
+if(XCODE)
+    target_link_libraries(${PROJECT_TEST_NAME}
+            debug ${GTEST_LIBS_DIR}/DebugLibs/libgtest.a
+            optimized ${GTEST_LIBS_DIR}/ReleaseLibs/libgtest.a
+            debug ${GTEST_LIBS_DIR}/DebugLibs/libgtest_main.a
+            optimized ${GTEST_LIBS_DIR}/ReleaseLibs/libgtest_main.a
+            )
+elseif(NOT WIN32 OR MINGW)
     target_link_libraries(${PROJECT_TEST_NAME}
             ${GTEST_LIBS_DIR}/libgtest.a
             ${GTEST_LIBS_DIR}/libgtest_main.a
