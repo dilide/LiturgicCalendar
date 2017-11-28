@@ -753,6 +753,8 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
 		//圣神降临节（复活期第八主日）
 		mapPropers.insert(std::make_pair(EASTER*10000+800+0,CellInfo(SOLEMNITY,RED,"圣神降临节")));
 
+       //常年期第三十三主日（世界穷人日）
+        mapPropers.insert(std::make_pair(ORDINARY*10000+3300+0,CellInfo(FEAST,WHITE,"世界穷人日")));
 		//常年期第三十四主日（基督普世君王节）
 		mapPropers.insert(std::make_pair(ORDINARY*10000+3400+0,CellInfo(SOLEMNITY,WHITE,"基督普世君王节")));
 	}
