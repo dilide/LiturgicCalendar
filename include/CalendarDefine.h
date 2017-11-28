@@ -90,6 +90,35 @@ namespace CathAssist
             }
             return "Not define";
         }
+        
+        static std::string getColorValue(color_t c)
+        {
+            switch(c)
+            {
+                case NOCOLOR:
+                    return "#FFFFFF";
+                    break;
+                case GREEN:
+                    return "#00FF00";
+                    break;
+                case WHITE:
+                    return "#DDDDDD";
+                    break;
+                case RED:
+                    return "#FF0000";
+                    break;
+                case PURPLE:
+                    return "#8B00FF";
+                    break;
+                case ROSE:
+                    return "#FF0DA6";
+                    break;
+                case BLACK:
+                    return "#000000";
+                    break;
+            }
+            return "Not define";
+        }
 		/*
 		 * Liturgical Ranks
 		 */
@@ -300,6 +329,27 @@ namespace CathAssist
             }
             ostr<<getChineseNumStr(iLunarDay);
             return ostr.str();
+        }
+        
+        
+        static std::string getSpecialMonth(const int& iMonth)
+        {
+            switch (iMonth) {
+                case 3:
+                    return "圣若瑟月";
+                case 5:
+                    return "圣母月";
+                case 6:
+                    return "耶稣圣心月";
+                case 10:
+                    return "玫瑰月";
+                case 11:
+                    return "炼灵月";
+                default:
+                    break;
+            }
+            
+            return "";
         }
 	}
 }

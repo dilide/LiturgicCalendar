@@ -38,7 +38,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         mapPropers.insert(std::make_pair(1010302,CellInfo(OPTIONAL,NOCOLOR,"真福查瓦拉(Bd. Kuriakose Elias Chavara)")));
         mapPropers.insert(std::make_pair(1010303,CellInfo(OPTIONAL,NOCOLOR,"圣女日南斐法(童贞 St. Genevieve)")));
         //4日
-        mapPropers.insert(std::make_pair(1010401,CellInfo(OPTIONAL,NOCOLOR,"圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton")));
+        mapPropers.insert(std::make_pair(1010401,CellInfo(OPTIONAL,NOCOLOR,"圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)")));
         mapPropers.insert(std::make_pair(1010402,CellInfo(OPTIONAL,NOCOLOR,"圣女法拉意弟(St. Pharaildis)")));
         //5日
         mapPropers.insert(std::make_pair(1010501,CellInfo(OPTIONAL,NOCOLOR,"圣牛曼(St. John Nepornucene Neumann)")));
@@ -434,7 +434,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         mapPropers.insert(std::make_pair(1072002,CellInfo(OPTIONAL,NOCOLOR,"圣若瑟•巴尔撒巴(St. Joseph Barsabas)")));
         //21日
         mapPropers.insert(std::make_pair(1072101,CellInfo(OPTIONAL,NOCOLOR,"圣炳德西(St. Laurence of Brindisi)")));
-        mapPropers.insert(std::make_pair(1072201,CellInfo(MEMORIAL,WHITE,"圣女玛利亚•玛达肋纳(圣徳莲 St. Mary Magdalen)")));
+        mapPropers.insert(std::make_pair(1072201,CellInfo(FEAST,WHITE,"圣女玛利亚•玛达肋纳(圣徳莲 St. Mary Magdalen)")));
         mapPropers.insert(std::make_pair(1072202,CellInfo(OPTIONAL,NOCOLOR,"圣若瑟•巴勒斯坦(St. Joseph of Palestine)")));
         mapPropers.insert(std::make_pair(1072301,CellInfo(OPTIONAL,NOCOLOR,"圣妇彼利日大(救世主会创始人 St. Bridget)")));
         mapPropers.insert(std::make_pair(1072401,CellInfo(OPTIONAL,NOCOLOR,"圣方济各•沙拉纳(St. Francis Salasno)")));
@@ -648,7 +648,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         mapPropers.insert(std::make_pair(1111701,CellInfo(MEMORIAL,WHITE,"真福依撒伯尔(童贞 Bd. Elizabeth the Good)")));
         mapPropers.insert(std::make_pair(1111801,CellInfo(OPTIONAL,NOCOLOR,"圣伯多禄圣保禄大殿奉献日(The Dedication of the Basilicas of St. Peter and of St. Paul)")));
         mapPropers.insert(std::make_pair(1111901,CellInfo(OPTIONAL,NOCOLOR,"圣额我略“显灵迹者”(新则撒肋主教 St. Gregory the Wonderworker 215-268)")));
-        mapPropers.insert(std::make_pair(1112902,CellInfo(OPTIONAL,NOCOLOR,"圣狄尼削(亚历山大主教 St. Dionysius of Alexandria)")));
+        mapPropers.insert(std::make_pair(1111902,CellInfo(OPTIONAL,NOCOLOR,"圣狄尼削(亚历山大主教 St. Dionysius of Alexandria)")));
         mapPropers.insert(std::make_pair(1112001,CellInfo(OPTIONAL,NOCOLOR,"圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)")));
         //21日
 		mapPropers.insert(std::make_pair(1112101,CellInfo(MEMORIAL,WHITE,"圣母奉献日(The Presentation of the Blessed Virgin Mary)")));
@@ -753,6 +753,8 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
 		//圣神降临节（复活期第八主日）
 		mapPropers.insert(std::make_pair(EASTER*10000+800+0,CellInfo(SOLEMNITY,RED,"圣神降临节")));
 
+       //常年期第三十三主日（世界穷人日）
+        mapPropers.insert(std::make_pair(ORDINARY*10000+3300+0,CellInfo(FEAST,WHITE,"世界穷人日")));
 		//常年期第三十四主日（基督普世君王节）
 		mapPropers.insert(std::make_pair(ORDINARY*10000+3400+0,CellInfo(SOLEMNITY,WHITE,"基督普世君王节")));
 	}
@@ -762,12 +764,12 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
 	// 索引从1开始
 	*/
 	{
-		mapPropers.insert(std::make_pair(1,CellInfo(SOLEMNITY,WHITE,"主显节")));
-		mapPropers.insert(std::make_pair(2,CellInfo(LORD,WHITE,"主受洗日")));
+		mapPropers.insert(std::make_pair(1,CellInfo(SOLEMNITY,WHITE,"主显节(Epiphany of the Lord)")));
+		mapPropers.insert(std::make_pair(2,CellInfo(LORD,WHITE,"主受洗日(Baptism of the Lord)")));
 
 		//从复活节算起的节日
 		mapPropers.insert(std::make_pair(3,CellInfo(LORD,WHITE,"我们的主耶稣基督—永恒的大司祭")));	//复活节后53日
-		mapPropers.insert(std::make_pair(4,CellInfo(SOLEMNITY,WHITE,"圣三主日")));					//复活节后56日（复活期后的主日）
+		mapPropers.insert(std::make_pair(4,CellInfo(SOLEMNITY,WHITE,"圣三主日")));				//复活节后56日（复活期后的主日）
 		mapPropers.insert(std::make_pair(5,CellInfo(SOLEMNITY,WHITE,"基督圣体圣血节")));			//复活节后60日
 		mapPropers.insert(std::make_pair(6,CellInfo(SOLEMNITY,WHITE,"耶稣圣心节")));				//复活节后68日
 		mapPropers.insert(std::make_pair(7,CellInfo(MEMORIAL,WHITE,"圣母无玷圣心")));				//复活节后69日
@@ -900,7 +902,14 @@ void LiturgicYear::init()
 
 	t.setDate(year,11,30);
 	//将临期第一主日
-	av = t.addDays(0-t.dayOfWeek());
+    if(t.dayOfWeek() > Days::WED)
+    {
+        av = t.addDays(7-t.dayOfWeek());
+    }
+    else
+    {
+        av = t.addDays(0-t.dayOfWeek());
+    }
 
 	//圣诞节
 	cm.setDate(year,12,25);
