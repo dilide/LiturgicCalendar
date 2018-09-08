@@ -779,6 +779,8 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
 
 		//中华圣母（五月份的第二个星期六）
 		mapPropers.insert(std::make_pair(9,CellInfo(MEMORIAL,WHITE,"中华圣母")));
+        //教会之母节（圣神降临节后星期一）
+        mapPropers.insert(std::make_pair(10,CellInfo(MEMORIAL,WHITE,"教会之母")));
 	}
 }
 
@@ -1053,6 +1055,13 @@ void LiturgicYear::testChristmas2(LiturgicDay& ld)
 
 void LiturgicYear::testProper(LiturgicDay& ld)
 {
+    {
+        //教会之母（圣神降临节后星期一）
+        if(ld.daysTo(ps) == -1) {
+            ld.appendCell(10);
+        }
+    }
+
 	{
 		//中华圣母（5月的第二个周六）
 		if(ld.month() == 5 && ld.dayOfWeek() == 6)
