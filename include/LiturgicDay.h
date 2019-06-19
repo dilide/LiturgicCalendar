@@ -1,4 +1,4 @@
-﻿/*
+/*
 ============================================================================
 文件名称	:	LiturgicDay.h
 公司		:	CathAssist
@@ -20,11 +20,13 @@ namespace CathAssist
 	{
         typedef struct CellInfo
         {
+            int code = -1;              //节日编码
             rank_t rank;                //优先级
             color_t color;              //祭衣颜色
             std::string celebration;    //节日
 			CellInfo(rank_t r,color_t c,const std::string& cel)
 			{
+                code = -1;
 				rank = r;
 				color = c;
 				celebration = cel;

@@ -29,9 +29,9 @@ target_link_libraries(${PROJECT_TEST_NAME} ${PROJECT_NAME_STR})
 
 if(XCODE)
     target_link_libraries(${PROJECT_TEST_NAME}
-            debug ${GTEST_LIBS_DIR}/DebugLibs/libgtest.a
+            debug ${GTEST_LIBS_DIR}/DebugLibs/libgtestd.a
             optimized ${GTEST_LIBS_DIR}/ReleaseLibs/libgtest.a
-            debug ${GTEST_LIBS_DIR}/DebugLibs/libgtest_main.a
+            debug ${GTEST_LIBS_DIR}/DebugLibs/libgtest_maind.a
             optimized ${GTEST_LIBS_DIR}/ReleaseLibs/libgtest_main.a
             )
 elseif(NOT WIN32 OR MINGW)

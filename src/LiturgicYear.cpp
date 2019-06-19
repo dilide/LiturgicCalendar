@@ -1,4 +1,4 @@
-﻿/*
+/*
 ============================================================================
 文件名称	:	LiturgicYear.cpp
 公司		:	CathAssist
@@ -782,6 +782,13 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         //教会之母节（圣神降临节后星期一）
         mapPropers.insert(std::make_pair(10,CellInfo(MEMORIAL,WHITE,"教会之母")));
 	}
+    
+    // 将节日编码插入到节日里
+    auto iter = mapPropers.begin();
+    while(iter != mapPropers.end()) {
+        iter->second.code = iter->first;
+        ++iter;
+    }
 }
 
 CathAssist::Calendar::CellInfo CathAssist::Calendar::LiturgicYear::getCellInfo(const int& id)

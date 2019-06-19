@@ -137,6 +137,7 @@ TEST(liturgy_calendar_test, export_month_json_test)
                     rapidjson::Value liturgic(rapidjson::kObjectType);
                     liturgic.AddMember("name", Value(iterCell->toString().c_str(), allocator), allocator);
                     liturgic.AddMember("rank", Value(iterCell->rank), allocator);
+                    liturgic.AddMember("code", Value(iterCell->code), allocator);
 
                     liturgics.PushBack(liturgic, allocator);
                 }
