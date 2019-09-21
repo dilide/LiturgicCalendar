@@ -15,6 +15,15 @@ using namespace std;
 using namespace rapidjson;
 
 
+std::string ReplaceAll(std::string str, const std::string& from, const std::string& to) {
+    size_t start_pos = 0;
+    while((start_pos = str.find(from, start_pos)) != std::string::npos) {
+        str.replace(start_pos, from.length(), to);
+        start_pos += to.length(); // Handles case where 'to' is a substring of 'from'
+    }
+    return str;
+}
+
 //创建数据库表
 int create_tables(sqlite3* db)
 {
@@ -172,10 +181,12 @@ TEST(liturgy_calendar_test, export_to_sqlite)
 
     if(create_tables(db)<1)
         FAIL();
-
-
+    
+    
     Calendar::initCalendar();
 
+    std::ofstream of;
+    of.open(string("./update.sql"));
     //导入圣人传记目录
     {
         sqlite3_exec(db,"begin;",0,0,0);
@@ -253,18 +264,14 @@ TEST(liturgy_calendar_test, export_to_sqlite)
             {
                 std::cout<<"insert date "<<dayInfo.toString()<<std::endl;
             }
-
-            /*of<<dayInfo.toString()<<strSplit
-             <<iLiturgicDay<<strSplit
-             <<dayInfo.toLunarString()<<strSplit
-             <<dayInfo.toWeekdayString()<<strSplit
-             <<ostr.str()<<strSplit
-             <<std::endl;
-             */
+            
+            of<<"update easter_daily set cells='"<<ReplaceAll(ostr.str(), "'", "''").c_str()<<"' where date='"<<dayInfo.toString()<<"';"<<std::endl;
+            
             dtBegin = dtBegin.addDays(1);
         }
     }
     sqlite3_exec(db,"commit;",0,0,0);
+    of.close();
 
     Calendar::releaseCalendar();
 

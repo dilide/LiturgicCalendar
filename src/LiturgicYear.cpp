@@ -18,6 +18,9 @@ std::multimap<int,CellInfo> CathAssist::Calendar::LiturgicYear::mapPropers;
 
 void CathAssist::Calendar::LiturgicYear::initPropers()
 {
+    if(mapPropers.size() > 0) {
+        return;
+    }
 	/*
 	// 初始化常用节日（日期固定）
 	// 规则：采用十进制（共7位）,最高位始终为1

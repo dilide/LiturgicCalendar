@@ -49,6 +49,10 @@ namespace CathAssist
 				{
 					ostr<<"(庆)";
 				}
+                
+                if(code > 0) {
+                    ostr<<"\\\\"<<code;
+                }
 
 				return ostr.str();
 			}
