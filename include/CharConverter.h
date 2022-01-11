@@ -5,9 +5,7 @@
 #ifndef LITURGICCALENDAR_CHARCONVERTER_H
 #define LITURGICCALENDAR_CHARCONVERTER_H
 
-#ifdef __APPLE__
-#define ansi2utf8(X) (X)
-#else
+#ifdef _WIN32
 #include <windows.h>
 //UTF-8转Unicode
 std::wstring Utf82Unicode(const std::string& utf8string)
@@ -145,6 +143,10 @@ std::string ansi2utf8(std::string& s)
 {
     return ASCII2UTF_8(s);
 }
+#elif __APPLE__
+#define ansi2utf8(X) (X)
+#else
+#define ansi2utf8(X) (X)
 #endif
 
 #endif //LITURGICCALENDAR_CHARCONVERTER_H

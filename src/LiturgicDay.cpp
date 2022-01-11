@@ -164,6 +164,11 @@ CellInfo LiturgicDay::getLiturgicCellInfo() const
 	}
 	else if(CHRISTMAS == season)
 	{
+		if(dayOfWeek()==SUN) {
+			// 圣诞期所有主日都是特殊的
+			_rank = ErrorRank;
+		}
+		
 		Date dayChristmas((month()<12 ? year()-1 : year()),12,25);
 		int iAbsChristmas = abs(daysTo(dayChristmas));
 		if(iAbsChristmas<8 && iAbsChristmas>0)

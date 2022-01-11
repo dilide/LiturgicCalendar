@@ -46,9 +46,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         //5日
         mapPropers.insert(std::make_pair(1010501,CellInfo(OPTIONAL,NOCOLOR,"圣牛曼(St. John Nepornucene Neumann)")));
         mapPropers.insert(std::make_pair(1010502,CellInfo(OPTIONAL,NOCOLOR,"圣西默盎“石柱人”(St. Simeon the Stylite)")));
-        
-		//1月6日的主显节方式已不再使用（但因没有经过主教团批准，所以暂时未在大陆使用）
-        mapPropers.insert(std::make_pair(1010601,CellInfo(SOLEMNITY,WHITE,"主显节(三王来朝 The Epiphany of Our Lord Christ)")));
+		//6日
         mapPropers.insert(std::make_pair(1010602,CellInfo(OPTIONAL,NOCOLOR,"真福辣法厄尔•玛利亚(童贞圣心婢女会会祖 Bd Raphaela Mary)")));
         //7日
 		mapPropers.insert(std::make_pair(1010701,CellInfo(OPTIONAL,NOCOLOR,"圣赖孟多(St. Raymond of Penyafort)")));
@@ -821,7 +819,7 @@ LiturgicDay LiturgicYear::getLiturgicDay(const Date& d)
 
     //填充数据
     LiturgicDay ld = d;
-	if(ld<bl)
+	if(ld<=bl)
 	{
 		testChristmas1(ld);
 	}
@@ -946,9 +944,9 @@ void LiturgicYear::testChristmas1(LiturgicDay& ld)
 	{
 		ld.appendCell(1);	//主显节（普世教会）
 	}
-	else if(ld<bl)
+	else if(ld==bl)
 	{
-
+		ld.appendCell(2);	//主受洗日
 	}
 
 	if(ld.month()==1&&ld.day()==6)
@@ -959,18 +957,12 @@ void LiturgicYear::testChristmas1(LiturgicDay& ld)
 
 void LiturgicYear::testOrdinary1(LiturgicDay& ld)
 {
-	if((!ld.isValid()) || ld<bl || ld>=aw)
+	if((!ld.isValid()) || ld<=bl || ld>=aw)
 		return;
 
 	ld.setSeason(ORDINARY);
 //	int weekBegin = aw.weekNumber();
 	ld.setWeekOfSeason( ld.weekNumber()-bl.weekNumber()+1 );
-
-	if(ld == bl)
-	{
-		ld.appendCell(2);	//主受洗日
-	}
-
 }
 
 void LiturgicYear::testLent(LiturgicDay& ld)
