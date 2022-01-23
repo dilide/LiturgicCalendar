@@ -210,6 +210,11 @@ void export_to_sqlite()
             {
                 std::cout<<"insert date "<<iter->second.celebration<<std::endl;
             }
+            
+            //"INSERT INTO easter_saint (code, name, rank, color) SELECT 10300,'常年期第三主日(圣言主日)', 5, 4 WHERE NOT EXISTS (SELECT 1 FROM easter_saint WHERE code=10300);";
+            //of<<"insert into easter_saint(code, name, rank, color) select "<<iter->first<<",'"<<ansi2utf8(sqlite3_mprintf("%q",iter->second.celebration.c_str()))<<"',"
+            //    <<iter->second.rank<<","<<iter->second.color<<" where not exists (select 1 from easter_saint where code="<<iter->first<<");"<<std::endl;
+            //of<<"update easter_saint set name='"<<ansi2utf8(sqlite3_mprintf("%q",iter->second.celebration.c_str()))<<"', rank="<<iter->second.rank<<", color="<<iter->second.color<<" where code="<<iter->first<<";"<<std::endl;
 
             ++iter;
         }
@@ -266,7 +271,9 @@ void export_to_sqlite()
                 std::cout<<"insert date "<<dayInfo.toString()<<std::endl;
             }
             
-            of<<"update easter_daily set cells='"<<ReplaceAll(ostr.str(), "'", "''").c_str()<<"' where date='"<<dayInfo.toString()<<"';"<<std::endl;
+            //of<<"update easter_daily set cells='"<<ReplaceAll(ostr.str(), "'", "''").c_str()<<"', liturgic="<<dayInfo.getLiturgicId()<<", color="<<dayInfo.getColor()<<", lunar='"<<ansi2utf8(dayInfo.toLunarString())<<"' where date='"<<dayInfo.toString()<<"';"<<std::endl;
+            //of<<"insert into easter_daily(date,lunar,liturgic,color,cells) values("
+            //    <<"date('"<<ansi2utf8(dayInfo.toString())<<"'),'"<<ansi2utf8(dayInfo.toLunarString())<<"',"<<dayInfo.getLiturgicId()<<","<<dayInfo.getColor()<<",'"<<ansi2utf8(sqlite3_mprintf("%q",ostr.str().c_str()))<<"');"<<std::endl;
             
             dtBegin = dtBegin.addDays(1);
         }
