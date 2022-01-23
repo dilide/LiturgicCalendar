@@ -727,6 +727,8 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
 	// 最后两位为：星期几
 	*/
 	{
+        //常年期
+		mapPropers.insert(std::make_pair(ORDINARY*10000+300+0,CellInfo(SUNDAY,PURPLE,"常年期第三主日(圣言主日)")));
 		//四旬期第0主日星期三（圣灰礼仪）
 		mapPropers.insert(std::make_pair(LENT*10000+3,CellInfo(ASHWED,PURPLE,"圣灰礼仪")));
 		//四旬期第六主日（圣周）
@@ -748,14 +750,14 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
 		mapPropers.insert(std::make_pair(EASTER*10000+100+6,CellInfo(SOLEMNITY,WHITE,"复活节庆期第七日")));
 		mapPropers.insert(std::make_pair(EASTER*10000+200+0,CellInfo(SOLEMNITY,WHITE,"复活节庆期第八日(慈悲主日)")));
 		//复活期第四主日
-		mapPropers.insert(std::make_pair(EASTER*10000+400+0,CellInfo(SUNDAY,WHITE,"复活期第四主日（善牧主日）")));
+		mapPropers.insert(std::make_pair(EASTER*10000+400+0,CellInfo(SUNDAY,WHITE,"复活期第四主日(善牧主日)")));
 		//耶稣升天（复活期第六主日星期四）
 		mapPropers.insert(std::make_pair(EASTER*10000+600+4,CellInfo(SOLEMNITY,WHITE,"耶稣升天")));
 		//圣神降临节（复活期第八主日）
 		mapPropers.insert(std::make_pair(EASTER*10000+800+0,CellInfo(SOLEMNITY,RED,"圣神降临节")));
 
        //常年期第三十三主日（世界穷人日）
-        mapPropers.insert(std::make_pair(ORDINARY*10000+3300+0,CellInfo(FEAST,WHITE,"世界穷人日")));
+        mapPropers.insert(std::make_pair(ORDINARY*10000+3300+0,CellInfo(SUNDAY,WHITE,"常年期第三十三主日(世界穷人日)")));
 		//常年期第三十四主日（基督普世君王节）
 		mapPropers.insert(std::make_pair(ORDINARY*10000+3400+0,CellInfo(SOLEMNITY,WHITE,"基督普世君王节")));
 	}
