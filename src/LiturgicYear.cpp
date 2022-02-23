@@ -728,7 +728,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
 	*/
 	{
         //常年期
-		mapPropers.insert(std::make_pair(ORDINARY*10000+300+0,CellInfo(SUNDAY,PURPLE,"常年期第三主日(圣言主日)")));
+		mapPropers.insert(std::make_pair(ORDINARY*10000+300+0,CellInfo(SUNDAY,GREEN,"常年期第三主日(圣言主日)")));
 		//四旬期第0主日星期三（圣灰礼仪）
 		mapPropers.insert(std::make_pair(LENT*10000+3,CellInfo(ASHWED,PURPLE,"圣灰礼仪")));
 		//四旬期第六主日（圣周）
