@@ -622,7 +622,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
 		/**************11月**************/
         //1日
         mapPropers.insert(std::make_pair(1110101,CellInfo(SOLEMNITY,WHITE,"诸圣节(All Saints)")));
-        mapPropers.insert(std::make_pair(1110201,CellInfo(LORD,WHITE,"追思亡者(All Souls)")));
+        mapPropers.insert(std::make_pair(1110201,CellInfo(LORD,PURPLE,"追思亡者(All Souls)")));
         mapPropers.insert(std::make_pair(1110301,CellInfo(OPTIONAL,NOCOLOR,"圣玛尔定(St. Martin de Porres 1579-1639)")));
         mapPropers.insert(std::make_pair(1110401,CellInfo(MEMORIAL,WHITE,"圣嘉禄(米兰枢机主教 St. Charles Borromeo)")));
         mapPropers.insert(std::make_pair(1110501,CellInfo(OPTIONAL,NOCOLOR,"圣女伯蒂拉(童贞 St. Betrilla -708)")));
@@ -781,7 +781,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
 		mapPropers.insert(std::make_pair(8,CellInfo(LORD,WHITE,"圣家节")));
 
 		//中华圣母（五月份的第二个星期六）
-		mapPropers.insert(std::make_pair(9,CellInfo(MEMORIAL,WHITE,"中华圣母")));
+		mapPropers.insert(std::make_pair(9,CellInfo(FEAST,WHITE,"中华圣母")));
         //教会之母节（圣神降临节后星期一）
         mapPropers.insert(std::make_pair(10,CellInfo(MEMORIAL,WHITE,"教会之母")));
 	}
