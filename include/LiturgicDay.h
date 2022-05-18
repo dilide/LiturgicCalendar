@@ -43,7 +43,7 @@ namespace CathAssist
 				}
 				else if(rank == FEAST)
 				{
-					ostr<<"(节)";
+					ostr<<"(庆)";
 				}
 				else if(rank == LORD)
 				{
