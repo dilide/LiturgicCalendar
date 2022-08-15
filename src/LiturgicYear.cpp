@@ -474,7 +474,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         //11日
         mapPropers.insert(std::make_pair(1081101,CellInfo(MEMORIAL,WHITE,"圣女加辣(加辣会创办人 St. Clare)")));
         mapPropers.insert(std::make_pair(1081102,CellInfo(OPTIONAL,NOCOLOR,"真福伯多禄•法华(Bd. Peter Favre)")));
-        mapPropers.insert(std::make_pair(1081201,CellInfo(OPTIONAL,NOCOLOR,"圣慕达(St. Mortagh)")));
+        mapPropers.insert(std::make_pair(1081201,CellInfo(OPTIONAL,NOCOLOR,"圣慕达(St. Murtagh)")));
         mapPropers.insert(std::make_pair(1081301,CellInfo(OPTIONAL,NOCOLOR,"圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)")));
         mapPropers.insert(std::make_pair(1081302,CellInfo(OPTIONAL,NOCOLOR,"圣贝尼杜(St. Benildus)")));
         mapPropers.insert(std::make_pair(1081401,CellInfo(OPTIONAL,NOCOLOR,"真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)")));
