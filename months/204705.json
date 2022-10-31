@@ -1,0 +1,684 @@
+{
+    "month": "204705",
+    "title": "圣母月",
+    "items": [
+        {
+            "date": "2047-05-01",
+            "lunar": "丁卯 免年四月初七",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "大圣若瑟劳工主保(St. Joseph the Worker)\\\\1050101",
+                    "rank": 2,
+                    "code": 1050101
+                },
+                {
+                    "name": "圣亚玛多(St. Amator)\\\\1050102",
+                    "rank": 2,
+                    "code": 1050102
+                },
+                {
+                    "name": "复活期第三周(星期三)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2047-05-02",
+            "lunar": "丁卯 免年四月初八",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣亚大纳削(St. Athanasius)(纪)\\\\1050201",
+                    "rank": 3,
+                    "code": 1050201
+                },
+                {
+                    "name": "圣女维芭达(童贞殉道 St. Wibada)\\\\1050202",
+                    "rank": 2,
+                    "code": 1050202
+                },
+                {
+                    "name": "复活期第三周(星期四)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2047-05-03",
+            "lunar": "丁卯 免年四月初九",
+            "color": "#FF0000",
+            "colorStr": "红",
+            "liturgics": [
+                {
+                    "name": "圣斐理伯、圣雅各伯宗徒(Ss. Philip and James)(庆)\\\\1050301",
+                    "rank": 4,
+                    "code": 1050301
+                },
+                {
+                    "name": "复活期第三周(星期五)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2047-05-04",
+            "lunar": "丁卯 免年四月初十",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣福里安(殉道 St. Florian)\\\\1050401",
+                    "rank": 2,
+                    "code": 1050401
+                },
+                {
+                    "name": "英格兰和威尔士殉道烈士(the Martyrs of England and Wales)\\\\1050402",
+                    "rank": 2,
+                    "code": 1050402
+                },
+                {
+                    "name": "复活期第三周(星期六)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2047-05-05",
+            "lunar": "丁卯 免年四月十一",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "复活期第四主日(善牧主日)\\\\50400",
+                    "rank": 5,
+                    "code": 50400
+                },
+                {
+                    "name": "圣安日洛(殉道 St. Angelo)\\\\1050501",
+                    "rank": 2,
+                    "code": 1050501
+                }
+            ]
+        },
+        {
+            "date": "2047-05-06",
+            "lunar": "丁卯 免年四月十二",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣若望宗徒拉丁门前受鼎镬刑(St. John Before the Latin Gate)\\\\1050601",
+                    "rank": 2,
+                    "code": 1050601
+                },
+                {
+                    "name": "圣多明我•沙维豪(St. Donfinic Savio)\\\\1050602",
+                    "rank": 2,
+                    "code": 1050602
+                },
+                {
+                    "name": "复活期第四周(星期一)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2047-05-07",
+            "lunar": "丁卯 免年四月十三",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣若望•比华力(St. John of Beverley)\\\\1050701",
+                    "rank": 2,
+                    "code": 1050701
+                },
+                {
+                    "name": "真福罗撒(童贞 Bd. Rose Venerini)\\\\1050702",
+                    "rank": 2,
+                    "code": 1050702
+                },
+                {
+                    "name": "复活期第四周(星期二)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2047-05-08",
+            "lunar": "丁卯 免年四月十四",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣波尼法爵四世(St. Boniface IV)\\\\1050801",
+                    "rank": 2,
+                    "code": 1050801
+                },
+                {
+                    "name": "圣女玛达肋纳•嘉诺撒(St. Magdalen Di Canossa)\\\\1050802",
+                    "rank": 2,
+                    "code": 1050802
+                },
+                {
+                    "name": "圣伯多禄(戴郎旦主教 St. Peter)\\\\1050803",
+                    "rank": 2,
+                    "code": 1050803
+                },
+                {
+                    "name": "复活期第四周(星期三)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2047-05-09",
+            "lunar": "丁卯 免年四月十五",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣伯多禄•诺拉谷(玛利亚赎虏会 St. Peter Nolasco)\\\\1050901",
+                    "rank": 2,
+                    "code": 1050901
+                },
+                {
+                    "name": "复活期第四周(星期四)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2047-05-10",
+            "lunar": "丁卯 免年四月十六",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣安多宁(佛罗伦萨总主教 St. Antoninus)\\\\1051001",
+                    "rank": 2,
+                    "code": 1051001
+                },
+                {
+                    "name": "圣若望•亚维拉(St. John of Avila)\\\\1051002",
+                    "rank": 2,
+                    "code": 1051002
+                },
+                {
+                    "name": "复活期第四周(星期五)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2047-05-11",
+            "lunar": "丁卯 免年四月十七",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "中华圣母(庆)\\\\9",
+                    "rank": 4,
+                    "code": 9
+                },
+                {
+                    "name": "圣依纳爵•雷可尼(St. Ignatius of Laconi)\\\\1051101",
+                    "rank": 2,
+                    "code": 1051101
+                },
+                {
+                    "name": "圣方济各•基罗拉莫(St. Francis Di Girolamo)\\\\1051102",
+                    "rank": 2,
+                    "code": 1051102
+                },
+                {
+                    "name": "复活期第四周(星期六)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2047-05-12",
+            "lunar": "丁卯 免年四月十八",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "复活期第五主日",
+                    "rank": 5,
+                    "code": -1
+                },
+                {
+                    "name": "圣乃仁、圣亚启略、圣女多弥谛拉(Ss. Nereus, Achilleus and Domitilla)\\\\1051201",
+                    "rank": 2,
+                    "code": 1051201
+                },
+                {
+                    "name": "圣邦康(St. Pancras)\\\\1051202",
+                    "rank": 2,
+                    "code": 1051202
+                }
+            ]
+        },
+        {
+            "date": "2047-05-13",
+            "lunar": "丁卯 免年四月十九",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "法蒂玛圣母(Our Lady of Fatima)\\\\1051301",
+                    "rank": 2,
+                    "code": 1051301
+                },
+                {
+                    "name": "圣玛利亚•玛萨利洛(母佑会副会祖 St. Mary Mazzarello)\\\\1051302",
+                    "rank": 2,
+                    "code": 1051302
+                },
+                {
+                    "name": "复活期第五周(星期一)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2047-05-14",
+            "lunar": "丁卯 免年四月廿零",
+            "color": "#FF0000",
+            "colorStr": "红",
+            "liturgics": [
+                {
+                    "name": "圣玛弟亚宗徒(St. Matthias)(庆)\\\\1051401",
+                    "rank": 4,
+                    "code": 1051401
+                },
+                {
+                    "name": "圣弥额尔•加利古(白太林圣心司铎会会祖 St. Michael Garicoits)\\\\1051402",
+                    "rank": 2,
+                    "code": 1051402
+                },
+                {
+                    "name": "复活期第五周(星期二)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2047-05-15",
+            "lunar": "丁卯 免年四月廿一",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣伯多禄和圣刁尼霞(殉道者 Ss. Peter and Dionysia)\\\\1051501",
+                    "rank": 2,
+                    "code": 1051501
+                },
+                {
+                    "name": "复活期第五周(星期三)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2047-05-16",
+            "lunar": "丁卯 免年四月廿二",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣西满•斯道克(St. Simon Stock)\\\\1051601",
+                    "rank": 2,
+                    "code": 1051601
+                },
+                {
+                    "name": "圣吴巴多(古比奥主教 St. Ubald)\\\\1051602",
+                    "rank": 2,
+                    "code": 1051602
+                },
+                {
+                    "name": "复活期第五周(星期四)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2047-05-17",
+            "lunar": "丁卯 免年四月廿三",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣巴斯卦(St. Paschal Baylon)\\\\1051701",
+                    "rank": 2,
+                    "code": 1051701
+                },
+                {
+                    "name": "复活期第五周(星期五)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2047-05-18",
+            "lunar": "丁卯 免年四月廿四",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣若望一世(教宗殉道 St. John I)\\\\1051801",
+                    "rank": 2,
+                    "code": 1051801
+                },
+                {
+                    "name": "圣斐理斯(St. Felix Cantalice)\\\\1051802",
+                    "rank": 2,
+                    "code": 1051802
+                },
+                {
+                    "name": "复活期第五周(星期六)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2047-05-19",
+            "lunar": "丁卯 免年四月廿五",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "复活期第六主日",
+                    "rank": 5,
+                    "code": -1
+                },
+                {
+                    "name": "圣塞来斯定五世(教宗 St. Celestine V)\\\\1051901",
+                    "rank": 2,
+                    "code": 1051901
+                },
+                {
+                    "name": "真福奥斯定•诺未洛(Bd. Augustine Novello)\\\\1051902",
+                    "rank": 2,
+                    "code": 1051902
+                }
+            ]
+        },
+        {
+            "date": "2047-05-20",
+            "lunar": "丁卯 免年四月廿六",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣伯尔纳定•栖亚那(St. Bernardine of Siena)\\\\1052001",
+                    "rank": 2,
+                    "code": 1052001
+                },
+                {
+                    "name": "真福高隆巴(童贞 Bd. Columba of Rieti)\\\\1052002",
+                    "rank": 2,
+                    "code": 1052002
+                },
+                {
+                    "name": "复活期第六周(星期一)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2047-05-21",
+            "lunar": "丁卯 免年四月廿七",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣维克多(殉道 St. Victor of Marseilles)\\\\1052101",
+                    "rank": 2,
+                    "code": 1052101
+                },
+                {
+                    "name": "复活期第六周(星期二)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2047-05-22",
+            "lunar": "丁卯 免年四月廿八",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣妇丽达(St. Rita of Cascia)\\\\1052201",
+                    "rank": 2,
+                    "code": 1052201
+                },
+                {
+                    "name": "福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\\\1052202",
+                    "rank": 2,
+                    "code": 1052202
+                },
+                {
+                    "name": "复活期第六周(星期三)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2047-05-23",
+            "lunar": "丁卯 免年四月廿九",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "耶稣升天\\\\50604",
+                    "rank": 10,
+                    "code": 50604
+                },
+                {
+                    "name": "圣若翰•路西(St. John Baptist Rossi)\\\\1052301",
+                    "rank": 2,
+                    "code": 1052301
+                },
+                {
+                    "name": "复活期第六周(星期四)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2047-05-24",
+            "lunar": "丁卯 免年四月三十",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣母进教之佑节(Our Lady Help of Christians)(庆)\\\\1052401",
+                    "rank": 4,
+                    "code": 1052401
+                },
+                {
+                    "name": "圣味增爵•雷冷(St. Vincent of Lerins)\\\\1052402",
+                    "rank": 2,
+                    "code": 1052402
+                },
+                {
+                    "name": "复活期第六周(星期五)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2047-05-25",
+            "lunar": "丁卯 免年五月初一",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣伯达(圣师 St. Bede the Venerable)\\\\1052501",
+                    "rank": 2,
+                    "code": 1052501
+                },
+                {
+                    "name": "圣额我略七世教宗(St. Gregory VII)\\\\1052502",
+                    "rank": 2,
+                    "code": 1052502
+                },
+                {
+                    "name": "圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\\\1052503",
+                    "rank": 2,
+                    "code": 1052503
+                },
+                {
+                    "name": "复活期第六周(星期六)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2047-05-26",
+            "lunar": "丁卯 免年五月初二",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "复活期第七主日",
+                    "rank": 5,
+                    "code": -1
+                },
+                {
+                    "name": "圣斐理伯•内利(斐理•乃立 St. Philip Neri)(纪)\\\\1052601",
+                    "rank": 3,
+                    "code": 1052601
+                }
+            ]
+        },
+        {
+            "date": "2047-05-27",
+            "lunar": "丁卯 免年五月初三",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣奥斯定(坎特伯里总主教 St. Augustine)\\\\1052701",
+                    "rank": 2,
+                    "code": 1052701
+                },
+                {
+                    "name": "复活期第七周(星期一)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2047-05-28",
+            "lunar": "丁卯 免年五月初四",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣日曼诺斯(巴黎主教 St. Gemanus)\\\\1052801",
+                    "rank": 2,
+                    "code": 1052801
+                },
+                {
+                    "name": "真福多默•福特及其他殉道烈士(Bd. Thomas Ford and his Campanions)\\\\1052802",
+                    "rank": 2,
+                    "code": 1052802
+                },
+                {
+                    "name": "复活期第七周(星期二)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2047-05-29",
+            "lunar": "丁卯 免年五月初五",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣济利禄•凯撒利亚(殉道 St. Cyril of Caesarea)\\\\1052901",
+                    "rank": 2,
+                    "code": 1052901
+                },
+                {
+                    "name": "复活期第七周(星期三)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2047-05-30",
+            "lunar": "丁卯 免年五月初六",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣女贞德(童贞 St. Joan of Arc)\\\\1053001",
+                    "rank": 2,
+                    "code": 1053001
+                },
+                {
+                    "name": "复活期第七周(星期四)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2047-05-31",
+            "lunar": "丁卯 免年五月初七",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣母访亲节(the Vistation of the Blessed Virgin Mary)(庆)\\\\1053101",
+                    "rank": 4,
+                    "code": 1053101
+                },
+                {
+                    "name": "圣母诸宠中保及中华圣母节(Our Lady of all Graces and Queen of China)\\\\1053102",
+                    "rank": 2,
+                    "code": 1053102
+                },
+                {
+                    "name": "复活期第七周(星期五)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        }
+    ]
+}

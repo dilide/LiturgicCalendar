@@ -1,0 +1,654 @@
+{
+    "month": "202807",
+    "title": "",
+    "items": [
+        {
+            "date": "2028-07-01",
+            "lunar": "戊申 猴年五月初九",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣珈尔(克来门主教 St. Gall)\\\\1070101",
+                    "rank": 2,
+                    "code": 1070101
+                },
+                {
+                    "name": "真福多默•李斯斐(Bd. Thomas Maxfield)\\\\1070102",
+                    "rank": 2,
+                    "code": 1070102
+                },
+                {
+                    "name": "常年期第十二周(星期六)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2028-07-02",
+            "lunar": "戊申 猴年五月初十",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "常年期第十三主日",
+                    "rank": 5,
+                    "code": -1
+                },
+                {
+                    "name": "圣博策稣、圣玛谛酿(殉道 Ss. Processus and Martinian)\\\\1070201",
+                    "rank": 2,
+                    "code": 1070201
+                },
+                {
+                    "name": "圣奥多(彭伯主教 St. Otto)\\\\1070202",
+                    "rank": 2,
+                    "code": 1070202
+                }
+            ]
+        },
+        {
+            "date": "2028-07-03",
+            "lunar": "戊申 猴年五月十一",
+            "color": "#FF0000",
+            "colorStr": "红",
+            "liturgics": [
+                {
+                    "name": "圣多默(宗徒 St. Thomas the Apostle)(庆)\\\\1070301",
+                    "rank": 4,
+                    "code": 1070301
+                },
+                {
+                    "name": "常年期第十三周(星期一)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2028-07-04",
+            "lunar": "戊申 猴年五月十二",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣妇依撒伯尔(St. Elizabeth of Portuga)\\\\1070401",
+                    "rank": 2,
+                    "code": 1070401
+                },
+                {
+                    "name": "常年期第十三周(星期二)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2028-07-05",
+            "lunar": "戊申 猴年五月十三",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣安多尼•匝加利(圣保禄神职修会创办人 St. Antony Zaccaria)\\\\1070501",
+                    "rank": 2,
+                    "code": 1070501
+                },
+                {
+                    "name": "常年期第十三周(星期三)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2028-07-06",
+            "lunar": "戊申 猴年五月十四",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "高兰蒂•玛利亚(童贞殉道 St. Maria Goretti)\\\\1070601",
+                    "rank": 2,
+                    "code": 1070601
+                },
+                {
+                    "name": "常年期第十三周(星期四)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2028-07-07",
+            "lunar": "戊申 猴年五月十五",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣庞德诺(St. Pantaenus)\\\\1070701",
+                    "rank": 2,
+                    "code": 1070701
+                },
+                {
+                    "name": "常年期第十三周(星期五)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2028-07-08",
+            "lunar": "戊申 猴年五月十六",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣艾士波和卓娅(殉道 Ss. Hesperus and Zoa-135)\\\\1070801",
+                    "rank": 2,
+                    "code": 1070801
+                },
+                {
+                    "name": "常年期第十三周(星期六)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2028-07-09",
+            "lunar": "戊申 猴年五月十七",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "常年期第十四主日",
+                    "rank": 5,
+                    "code": -1
+                },
+                {
+                    "name": "中华诸圣及真福(The Martyrs of China)(庆)\\\\1070901",
+                    "rank": 4,
+                    "code": 1070901
+                },
+                {
+                    "name": "圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\\\1070902",
+                    "rank": 2,
+                    "code": 1070902
+                },
+                {
+                    "name": "圣女万罗尼加•祁拉尼(童贞 St. Veronica Giuliani)\\\\1070903",
+                    "rank": 2,
+                    "code": 1070903
+                }
+            ]
+        },
+        {
+            "date": "2028-07-10",
+            "lunar": "戊申 猴年五月十八",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "七位圣昆仲(殉道 the Seven Brothers and St. Feheity)\\\\1071001",
+                    "rank": 2,
+                    "code": 1071001
+                },
+                {
+                    "name": "常年期第十四周(星期一)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2028-07-11",
+            "lunar": "戊申 猴年五月十九",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣本笃(院长 St. Benedict 480-547)(纪)\\\\1071101",
+                    "rank": 3,
+                    "code": 1071101
+                },
+                {
+                    "name": "常年期第十四周(星期二)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2028-07-12",
+            "lunar": "戊申 猴年五月廿零",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "越南殉道烈士(the Martyrs of Indo-China, I)\\\\1071201",
+                    "rank": 2,
+                    "code": 1071201
+                },
+                {
+                    "name": "常年期第十四周(星期三)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2028-07-13",
+            "lunar": "戊申 猴年五月廿一",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣亨利二世(St. Henry II)\\\\1071301",
+                    "rank": 2,
+                    "code": 1071301
+                },
+                {
+                    "name": "圣息拉(St. Silas)\\\\1071302",
+                    "rank": 2,
+                    "code": 1071302
+                },
+                {
+                    "name": "圣欧杰(迦太基主教 St. Eugenius-505)\\\\1071303",
+                    "rank": 2,
+                    "code": 1071303
+                },
+                {
+                    "name": "常年期第十四周(星期四)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2028-07-14",
+            "lunar": "戊申 猴年五月廿二",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣加弥禄(灵医会创办人 St. Camillus De Lellis)\\\\1071401",
+                    "rank": 2,
+                    "code": 1071401
+                },
+                {
+                    "name": "常年期第十四周(星期五)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2028-07-15",
+            "lunar": "戊申 猴年五月廿三",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣文都辣(St. Bonaventure)(纪)\\\\1071501",
+                    "rank": 3,
+                    "code": 1071501
+                },
+                {
+                    "name": "圣亚大纳削(那不勒斯主教 St. Athanasius)\\\\1071502",
+                    "rank": 2,
+                    "code": 1071502
+                },
+                {
+                    "name": "常年期第十四周(星期六)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2028-07-16",
+            "lunar": "戊申 猴年五月廿四",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "常年期第十五主日",
+                    "rank": 5,
+                    "code": -1
+                },
+                {
+                    "name": "加尔默罗圣母(The Commemoration of Our Lady of Mount Carmel)\\\\1071601",
+                    "rank": 2,
+                    "code": 1071601
+                },
+                {
+                    "name": "圣女玛利亚•玛达肋纳•巴斯德(St. Mary Magdalem Postel)\\\\1071602",
+                    "rank": 2,
+                    "code": 1071602
+                }
+            ]
+        },
+        {
+            "date": "2028-07-17",
+            "lunar": "戊申 猴年五月廿五",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣亚肋叔(St. Alexius)\\\\1071701",
+                    "rank": 2,
+                    "code": 1071701
+                },
+                {
+                    "name": "圣女玛珊利纳(St. Marcellina)\\\\1071702",
+                    "rank": 2,
+                    "code": 1071702
+                },
+                {
+                    "name": "常年期第十五周(星期一)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2028-07-18",
+            "lunar": "戊申 猴年五月廿六",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣威德廉(乌德莱主教殉道 St. Frederick)\\\\1071801",
+                    "rank": 2,
+                    "code": 1071801
+                },
+                {
+                    "name": "常年期第十五周(星期二)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2028-07-19",
+            "lunar": "戊申 猴年五月廿七",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣女儒斯大、圣妇卢菲娜(Ss. Justa and Rufina)\\\\1071901",
+                    "rank": 2,
+                    "code": 1071901
+                },
+                {
+                    "name": "圣亚赛热(St. Arsenius the Great-450)\\\\1071902",
+                    "rank": 2,
+                    "code": 1071902
+                },
+                {
+                    "name": "常年期第十五周(星期三)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2028-07-20",
+            "lunar": "戊申 猴年五月廿八",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣厄利亚(耶路撒冷宗主教)和圣法来文(Ss. Elias and Flavian)\\\\1072001",
+                    "rank": 2,
+                    "code": 1072001
+                },
+                {
+                    "name": "圣若瑟•巴尔撒巴(St. Joseph Barsabas)\\\\1072002",
+                    "rank": 2,
+                    "code": 1072002
+                },
+                {
+                    "name": "常年期第十五周(星期四)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2028-07-21",
+            "lunar": "戊申 猴年五月廿九",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣炳德西(St. Laurence of Brindisi)\\\\1072101",
+                    "rank": 2,
+                    "code": 1072101
+                },
+                {
+                    "name": "常年期第十五周(星期五)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2028-07-22",
+            "lunar": "戊申 猴年六月初一",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣女玛利亚•玛达肋纳(圣徳莲 St. Mary Magdalen)(庆)\\\\1072201",
+                    "rank": 4,
+                    "code": 1072201
+                },
+                {
+                    "name": "圣若瑟•巴勒斯坦(St. Joseph of Palestine)\\\\1072202",
+                    "rank": 2,
+                    "code": 1072202
+                },
+                {
+                    "name": "常年期第十五周(星期六)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2028-07-23",
+            "lunar": "戊申 猴年六月初二",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "常年期第十六主日",
+                    "rank": 5,
+                    "code": -1
+                },
+                {
+                    "name": "圣妇彼利日大(救世主会创始人 St. Bridget)\\\\1072301",
+                    "rank": 2,
+                    "code": 1072301
+                }
+            ]
+        },
+        {
+            "date": "2028-07-24",
+            "lunar": "戊申 猴年六月初三",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣方济各•沙拉纳(St. Francis Salasno)\\\\1072401",
+                    "rank": 2,
+                    "code": 1072401
+                },
+                {
+                    "name": "圣女克利斯蒂娜(童贞 St. Christina the Astonishing)\\\\1072402",
+                    "rank": 2,
+                    "code": 1072402
+                },
+                {
+                    "name": "常年期第十六周(星期一)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2028-07-25",
+            "lunar": "戊申 猴年六月初四",
+            "color": "#FF0000",
+            "colorStr": "红",
+            "liturgics": [
+                {
+                    "name": "圣长雅各伯宗徒(St. James the Greater)(庆)\\\\1072501",
+                    "rank": 4,
+                    "code": 1072501
+                },
+                {
+                    "name": "圣基多福(殉道 St. Christopher)\\\\1072502",
+                    "rank": 2,
+                    "code": 1072502
+                },
+                {
+                    "name": "常年期第十六周(星期二)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2028-07-26",
+            "lunar": "戊申 猴年六月初五",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣妇亚纳及若亚敬(St. Anne & St. Joachim)(纪)\\\\1072601",
+                    "rank": 3,
+                    "code": 1072601
+                },
+                {
+                    "name": "圣女亚加比大日(童贞路物仁爱女修会副会祖 St. Bartholomea Capitanio-1833)\\\\1072602",
+                    "rank": 2,
+                    "code": 1072602
+                },
+                {
+                    "name": "常年期第十六周(星期三)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2028-07-27",
+            "lunar": "戊申 猴年六月初六",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣依诺增爵一世(教宗 St. Innocent I)\\\\1072701",
+                    "rank": 2,
+                    "code": 1072701
+                },
+                {
+                    "name": "圣庞大良(殉道 St. Pantaleon)\\\\1072702",
+                    "rank": 2,
+                    "code": 1072702
+                },
+                {
+                    "name": "常年期第十六周(星期四)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2028-07-28",
+            "lunar": "戊申 猴年六月初七",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "真福亚尔丰索(童贞 Bd. Alphonsa Muttathupadathu 1910-1946)\\\\1072801",
+                    "rank": 2,
+                    "code": 1072801
+                },
+                {
+                    "name": "常年期第十六周(星期五)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2028-07-29",
+            "lunar": "戊申 猴年六月初八",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣女玛尔大(圣曼德 St. Martha)(纪)\\\\1072901",
+                    "rank": 3,
+                    "code": 1072901
+                },
+                {
+                    "name": "常年期第十六周(星期六)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2028-07-30",
+            "lunar": "戊申 猴年六月初九",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "常年期第十七主日",
+                    "rank": 5,
+                    "code": -1
+                },
+                {
+                    "name": "圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\\\1073001",
+                    "rank": 2,
+                    "code": 1073001
+                },
+                {
+                    "name": "真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\\\1073002",
+                    "rank": 2,
+                    "code": 1073002
+                }
+            ]
+        },
+        {
+            "date": "2028-07-31",
+            "lunar": "戊申 猴年六月初十",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\\\1073101",
+                    "rank": 2,
+                    "code": 1073101
+                },
+                {
+                    "name": "真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\\\1073102",
+                    "rank": 2,
+                    "code": 1073102
+                },
+                {
+                    "name": "常年期第十七周(星期一)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        }
+    ]
+}

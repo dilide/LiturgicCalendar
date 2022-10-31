@@ -1,0 +1,601 @@
+{
+    "month": "201911",
+    "title": "炼灵月",
+    "items": [
+        {
+            "date": "2019-11-01",
+            "lunar": "己亥 猪年十月初五",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "诸圣节(All Saints)\\\\1110101",
+                    "rank": 10,
+                    "code": 1110101
+                },
+                {
+                    "name": "常年期第三十周(星期五)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2019-11-02",
+            "lunar": "己亥 猪年十月初六",
+            "color": "#8B00FF",
+            "colorStr": "紫",
+            "liturgics": [
+                {
+                    "name": "追思亡者(All Souls)(庆)\\\\1110201",
+                    "rank": 6,
+                    "code": 1110201
+                },
+                {
+                    "name": "常年期第三十周(星期六)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2019-11-03",
+            "lunar": "己亥 猪年十月初七",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "常年期第三十一主日",
+                    "rank": 5,
+                    "code": -1
+                },
+                {
+                    "name": "圣玛尔定(St. Martin de Porres 1579-1639)\\\\1110301",
+                    "rank": 2,
+                    "code": 1110301
+                }
+            ]
+        },
+        {
+            "date": "2019-11-04",
+            "lunar": "己亥 猪年十月初八",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣嘉禄(米兰枢机主教 St. Charles Borromeo)(纪)\\\\1110401",
+                    "rank": 3,
+                    "code": 1110401
+                },
+                {
+                    "name": "常年期第三十一周(星期一)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2019-11-05",
+            "lunar": "己亥 猪年十月初九",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣女伯蒂拉(童贞 St. Betrilla -708)\\\\1110501",
+                    "rank": 2,
+                    "code": 1110501
+                },
+                {
+                    "name": "常年期第三十一周(星期二)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2019-11-06",
+            "lunar": "己亥 猪年十月初十",
+            "color": "#FF0000",
+            "colorStr": "红",
+            "liturgics": [
+                {
+                    "name": "越南第二批殉道烈士(The Martyrs of Indo-China, II)(纪)\\\\1110601",
+                    "rank": 3,
+                    "code": 1110601
+                },
+                {
+                    "name": "圣良纳弟(St. Leonard of Noblac)\\\\1110602",
+                    "rank": 2,
+                    "code": 1110602
+                },
+                {
+                    "name": "常年期第三十一周(星期三)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2019-11-07",
+            "lunar": "己亥 猪年十月十一",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣威利巴(欧德莱主教 St. Willbrord 658-739)\\\\1110701",
+                    "rank": 2,
+                    "code": 1110701
+                },
+                {
+                    "name": "真福安多尼•白田诺西(Bd. Antony Baldinucci)\\\\1110702",
+                    "rank": 2,
+                    "code": 1110702
+                },
+                {
+                    "name": "常年期第三十一周(星期四)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2019-11-08",
+            "lunar": "己亥 猪年十月十二",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\\\1110801",
+                    "rank": 2,
+                    "code": 1110801
+                },
+                {
+                    "name": "常年期第三十一周(星期五)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2019-11-09",
+            "lunar": "己亥 猪年十月十三",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "建救世主大殿(The Dedication of the Basilica of St. John Lateran)(庆)\\\\1110901",
+                    "rank": 6,
+                    "code": 1110901
+                },
+                {
+                    "name": "常年期第三十一周(星期六)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2019-11-10",
+            "lunar": "己亥 猪年十月十四",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "常年期第三十二主日",
+                    "rank": 5,
+                    "code": -1
+                },
+                {
+                    "name": "圣良一世(主教 St. Leo the Great)(纪)\\\\1111001",
+                    "rank": 3,
+                    "code": 1111001
+                },
+                {
+                    "name": "圣安德肋•亚委琳(St. Andrew Avellino)\\\\1111002",
+                    "rank": 2,
+                    "code": 1111002
+                }
+            ]
+        },
+        {
+            "date": "2019-11-11",
+            "lunar": "己亥 猪年十月十五",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣玛尔定(都尔主教 St. Martin of Tours)(纪)\\\\1111101",
+                    "rank": 3,
+                    "code": 1111101
+                },
+                {
+                    "name": "圣刁多禄(院长 St. Theodore the Studite)\\\\1111102",
+                    "rank": 2,
+                    "code": 1111102
+                },
+                {
+                    "name": "常年期第三十二周(星期一)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2019-11-12",
+            "lunar": "己亥 猪年十月十六",
+            "color": "#FF0000",
+            "colorStr": "红",
+            "liturgics": [
+                {
+                    "name": "圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)(纪)\\\\1111201",
+                    "rank": 3,
+                    "code": 1111201
+                },
+                {
+                    "name": "常年期第三十二周(星期二)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2019-11-13",
+            "lunar": "己亥 猪年十月十七",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\\\1111301",
+                    "rank": 2,
+                    "code": 1111301
+                },
+                {
+                    "name": "常年期第三十二周(星期三)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2019-11-14",
+            "lunar": "己亥 猪年十月十八",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣老楞佐•奥多(都柏林总主教 St. Laurence O'Toole)\\\\1111401",
+                    "rank": 2,
+                    "code": 1111401
+                },
+                {
+                    "name": "常年期第三十二周(星期四)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2019-11-15",
+            "lunar": "己亥 猪年十月十九",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣大亚伯尔(勒根斯堡主教圣师 St. Albert the Great)\\\\1111501",
+                    "rank": 2,
+                    "code": 1111501
+                },
+                {
+                    "name": "常年期第三十二周(星期五)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2019-11-16",
+            "lunar": "己亥 猪年十月廿零",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣妇玛加利大(St. Margaret of Scotland)\\\\1111601",
+                    "rank": 2,
+                    "code": 1111601
+                },
+                {
+                    "name": "圣女日多达(St. Getrude)\\\\1111602",
+                    "rank": 2,
+                    "code": 1111602
+                },
+                {
+                    "name": "圣爱德门(坎特布里总主教 St. Edmund of Abingdon)\\\\1111603",
+                    "rank": 2,
+                    "code": 1111603
+                },
+                {
+                    "name": "常年期第三十二周(星期六)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2019-11-17",
+            "lunar": "己亥 猪年十月廿一",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "常年期第三十三主日(世界穷人日)\\\\13300",
+                    "rank": 5,
+                    "code": 13300
+                },
+                {
+                    "name": "真福依撒伯尔(童贞 Bd. Elizabeth the Good)(纪)\\\\1111701",
+                    "rank": 3,
+                    "code": 1111701
+                }
+            ]
+        },
+        {
+            "date": "2019-11-18",
+            "lunar": "己亥 猪年十月廿二",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣伯多禄圣保禄大殿奉献日(The Dedication of the Basilicas of St. Peter and of St. Paul)\\\\1111801",
+                    "rank": 2,
+                    "code": 1111801
+                },
+                {
+                    "name": "常年期第三十三周(星期一)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2019-11-19",
+            "lunar": "己亥 猪年十月廿三",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣额我略“显灵迹者”(新则撒肋主教 St. Gregory the Wonderworker 215-268)\\\\1111901",
+                    "rank": 2,
+                    "code": 1111901
+                },
+                {
+                    "name": "圣狄尼削(亚历山大主教 St. Dionysius of Alexandria)\\\\1111902",
+                    "rank": 2,
+                    "code": 1111902
+                },
+                {
+                    "name": "常年期第三十三周(星期二)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2019-11-20",
+            "lunar": "己亥 猪年十月廿四",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\\\1112001",
+                    "rank": 2,
+                    "code": 1112001
+                },
+                {
+                    "name": "常年期第三十三周(星期三)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2019-11-21",
+            "lunar": "己亥 猪年十月廿五",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣母奉献日(The Presentation of the Blessed Virgin Mary)(纪)\\\\1112101",
+                    "rank": 3,
+                    "code": 1112101
+                },
+                {
+                    "name": "常年期第三十三周(星期四)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2019-11-22",
+            "lunar": "己亥 猪年十月廿六",
+            "color": "#FF0000",
+            "colorStr": "红",
+            "liturgics": [
+                {
+                    "name": "圣女则济利亚(童贞殉道 St. Cecilia -250)(纪)\\\\1112201",
+                    "rank": 3,
+                    "code": 1112201
+                },
+                {
+                    "name": "常年期第三十三周(星期五)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2019-11-23",
+            "lunar": "己亥 猪年十月廿七",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣格肋孟一世(教宗殉道 St. Clement I -100)\\\\1112301",
+                    "rank": 2,
+                    "code": 1112301
+                },
+                {
+                    "name": "圣高隆庞(St. Columban -615)\\\\1112302",
+                    "rank": 2,
+                    "code": 1112302
+                },
+                {
+                    "name": "常年期第三十三周(星期六)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2019-11-24",
+            "lunar": "己亥 猪年十月廿八",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "基督普世君王节\\\\13400",
+                    "rank": 10,
+                    "code": 13400
+                },
+                {
+                    "name": "常年期第三十四主日",
+                    "rank": 5,
+                    "code": -1
+                },
+                {
+                    "name": "圣芬明(殉道 St. Finmin -303)、圣芬伯(主教 St. Finbar -633)(纪)\\\\1112401",
+                    "rank": 3,
+                    "code": 1112401
+                }
+            ]
+        },
+        {
+            "date": "2019-11-25",
+            "lunar": "己亥 猪年十月廿九",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\\\1112501",
+                    "rank": 2,
+                    "code": 1112501
+                },
+                {
+                    "name": "圣若望•伯尔各满(St. John Berchmans)\\\\1112502",
+                    "rank": 2,
+                    "code": 1112502
+                },
+                {
+                    "name": "常年期第三十四周(星期一)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2019-11-26",
+            "lunar": "己亥 猪年冬月初一",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣良纳(St. Leonard of Port Mauriee 1676-1751)\\\\1112601",
+                    "rank": 2,
+                    "code": 1112601
+                },
+                {
+                    "name": "常年期第三十四周(星期二)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2019-11-27",
+            "lunar": "己亥 猪年冬月初二",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣维琪尔(苏士堡主教 St. Virgil of Salzburg -784)\\\\1112701",
+                    "rank": 2,
+                    "code": 1112701
+                },
+                {
+                    "name": "常年期第三十四周(星期三)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2019-11-28",
+            "lunar": "己亥 猪年冬月初三",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣女加大利纳•拉布莱(童贞 St. Catherine Laboure 1806-1876)\\\\1112801",
+                    "rank": 2,
+                    "code": 1112801
+                },
+                {
+                    "name": "常年期第三十四周(星期四)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2019-11-29",
+            "lunar": "己亥 猪年冬月初四",
+            "color": "#00FF00",
+            "colorStr": "绿",
+            "liturgics": [
+                {
+                    "name": "圣斯德望(殉道 St. Stephen the Younger)\\\\1112901",
+                    "rank": 2,
+                    "code": 1112901
+                },
+                {
+                    "name": "圣胡伯(列日主教 St. Hubert -727)\\\\1112902",
+                    "rank": 2,
+                    "code": 1112902
+                },
+                {
+                    "name": "常年期第三十四周(星期五)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2019-11-30",
+            "lunar": "己亥 猪年冬月初五",
+            "color": "#FF0000",
+            "colorStr": "红",
+            "liturgics": [
+                {
+                    "name": "圣安德肋(宗徒 St. Andrew the Apostle)(庆)\\\\1113001",
+                    "rank": 4,
+                    "code": 1113001
+                },
+                {
+                    "name": "常年期第三十四周(星期六)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        }
+    ]
+}

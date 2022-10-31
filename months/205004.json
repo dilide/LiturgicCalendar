@@ -1,0 +1,671 @@
+{
+    "month": "205004",
+    "title": "",
+    "items": [
+        {
+            "date": "2050-04-01",
+            "lunar": "庚午 马年三月初十",
+            "color": "#8B00FF",
+            "colorStr": "紫",
+            "liturgics": [
+                {
+                    "name": "圣许格(格肋诺主教 St. Hugh of Grenoble)\\\\1040101",
+                    "rank": 2,
+                    "code": 1040101
+                },
+                {
+                    "name": "真福路道味•巴华尼(无玷圣母之子会会祖 Bd. Ludovic Pavoni)\\\\1040102",
+                    "rank": 2,
+                    "code": 1040102
+                },
+                {
+                    "name": "四旬期第五周(星期五)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2050-04-02",
+            "lunar": "庚午 马年三月十一",
+            "color": "#8B00FF",
+            "colorStr": "紫",
+            "liturgics": [
+                {
+                    "name": "圣方济各保拉(最小兄弟会会祖 St. Francis of Paola)\\\\1040201",
+                    "rank": 2,
+                    "code": 1040201
+                },
+                {
+                    "name": "四旬期第五周(星期六)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2050-04-03",
+            "lunar": "庚午 马年三月十二",
+            "color": "#FF0000",
+            "colorStr": "红",
+            "liturgics": [
+                {
+                    "name": "圣枝主日(基督苦难主日)\\\\40600",
+                    "rank": 8,
+                    "code": 40600
+                },
+                {
+                    "name": "四旬期第六主日",
+                    "rank": 5,
+                    "code": -1
+                },
+                {
+                    "name": "圣理查德(St. Richard)\\\\1040301",
+                    "rank": 2,
+                    "code": 1040301
+                }
+            ]
+        },
+        {
+            "date": "2050-04-04",
+            "lunar": "庚午 马年三月十三",
+            "color": "#8B00FF",
+            "colorStr": "紫",
+            "liturgics": [
+                {
+                    "name": "圣周一\\\\40601",
+                    "rank": 8,
+                    "code": 40601
+                },
+                {
+                    "name": "圣依西多禄(St. Isidore)\\\\1040401",
+                    "rank": 2,
+                    "code": 1040401
+                },
+                {
+                    "name": "圣“农民”依西多禄希道(St. Isidore the Husbandman)\\\\1040402",
+                    "rank": 2,
+                    "code": 1040402
+                },
+                {
+                    "name": "四旬期第六周(星期一)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2050-04-05",
+            "lunar": "庚午 马年三月十四",
+            "color": "#8B00FF",
+            "colorStr": "紫",
+            "liturgics": [
+                {
+                    "name": "圣周二\\\\40602",
+                    "rank": 8,
+                    "code": 40602
+                },
+                {
+                    "name": "圣味增爵•斐勒略(St. Vincent Ferrer)\\\\1040501",
+                    "rank": 2,
+                    "code": 1040501
+                },
+                {
+                    "name": "真福儒利亚纳(童贞 Bd. Juliana of Mount Cornillon)\\\\1040502",
+                    "rank": 2,
+                    "code": 1040502
+                },
+                {
+                    "name": "四旬期第六周(星期二)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2050-04-06",
+            "lunar": "庚午 马年三月十五",
+            "color": "#8B00FF",
+            "colorStr": "紫",
+            "liturgics": [
+                {
+                    "name": "圣周三\\\\40603",
+                    "rank": 8,
+                    "code": 40603
+                },
+                {
+                    "name": "圣塞来斯定一世(教宗 St. Celestinel)\\\\1040601",
+                    "rank": 2,
+                    "code": 1040601
+                },
+                {
+                    "name": "四旬期第六周(星期三)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2050-04-07",
+            "lunar": "庚午 马年三月十六",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "主的晚餐\\\\40604",
+                    "rank": 9,
+                    "code": 40604
+                },
+                {
+                    "name": "圣若翰•兰沙(St. John Baptist de la Salle)(纪)\\\\1040701",
+                    "rank": 3,
+                    "code": 1040701
+                },
+                {
+                    "name": "四旬期第六周(星期四)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2050-04-08",
+            "lunar": "庚午 马年三月十七",
+            "color": "#FF0000",
+            "colorStr": "红",
+            "liturgics": [
+                {
+                    "name": "耶稣受难\\\\40605",
+                    "rank": 9,
+                    "code": 40605
+                },
+                {
+                    "name": "真福尤丽•贝略(童贞诺默圣母会副会祖 Bd. Julia Billiart)\\\\1040801",
+                    "rank": 2,
+                    "code": 1040801
+                },
+                {
+                    "name": "真福亚松大(Bd. Maria Assunta)\\\\1040802",
+                    "rank": 2,
+                    "code": 1040802
+                },
+                {
+                    "name": "四旬期第六周(星期五)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2050-04-09",
+            "lunar": "庚午 马年三月十八",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "基督安眠墓中(复活节前夕)\\\\40606",
+                    "rank": 9,
+                    "code": 40606
+                },
+                {
+                    "name": "圣妇华德托蒂(St. Waldetrudis)\\\\1040901",
+                    "rank": 2,
+                    "code": 1040901
+                },
+                {
+                    "name": "真福欧伯(Bd. Ubald of Florence)\\\\1040902",
+                    "rank": 2,
+                    "code": 1040902
+                },
+                {
+                    "name": "四旬期第六周(星期六)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2050-04-10",
+            "lunar": "庚午 马年三月十九",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "复活节\\\\50100",
+                    "rank": 10,
+                    "code": 50100
+                },
+                {
+                    "name": "圣傅培(沙尔德主教 St. Fulbert)\\\\1041001",
+                    "rank": 2,
+                    "code": 1041001
+                }
+            ]
+        },
+        {
+            "date": "2050-04-11",
+            "lunar": "庚午 马年三月廿零",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "复活节庆期第二日\\\\50101",
+                    "rank": 10,
+                    "code": 50101
+                },
+                {
+                    "name": "圣达尼老(主教殉道 St. Stanislaus)(纪)\\\\1041101",
+                    "rank": 3,
+                    "code": 1041101
+                },
+                {
+                    "name": "圣瑰玛•甘甘妮(St. Gemma Galgan)\\\\1041102",
+                    "rank": 2,
+                    "code": 1041102
+                }
+            ]
+        },
+        {
+            "date": "2050-04-12",
+            "lunar": "庚午 马年三月廿一",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "复活节庆期第三日\\\\50102",
+                    "rank": 10,
+                    "code": 50102
+                },
+                {
+                    "name": "圣儒略一世(教宗 St. Julius I)\\\\1041201",
+                    "rank": 2,
+                    "code": 1041201
+                },
+                {
+                    "name": "圣柴诺(万罗纳主教 St. Zeno)\\\\1041202",
+                    "rank": 2,
+                    "code": 1041202
+                }
+            ]
+        },
+        {
+            "date": "2050-04-13",
+            "lunar": "庚午 马年三月廿二",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "复活节庆期第四日\\\\50103",
+                    "rank": 10,
+                    "code": 50103
+                },
+                {
+                    "name": "圣玛尔定一世(教宗殉道 St. Martin I)\\\\1041301",
+                    "rank": 2,
+                    "code": 1041301
+                }
+            ]
+        },
+        {
+            "date": "2050-04-14",
+            "lunar": "庚午 马年三月廿三",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "复活节庆期第五日\\\\50104",
+                    "rank": 10,
+                    "code": 50104
+                },
+                {
+                    "name": "圣谛步爵、圣华肋廉、圣玛息莫(殉道 Ss. Tiburtius, Valerius and Maxiuss)\\\\1041401",
+                    "rank": 2,
+                    "code": 1041401
+                },
+                {
+                    "name": "真福李维娜(童贞 Bd. Lydwina of Schiedam)\\\\1041402",
+                    "rank": 2,
+                    "code": 1041402
+                }
+            ]
+        },
+        {
+            "date": "2050-04-15",
+            "lunar": "庚午 马年三月廿四",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "复活节庆期第六日\\\\50105",
+                    "rank": 10,
+                    "code": 50105
+                },
+                {
+                    "name": "圣本笃•若瑟•雷伯(St. Benedict Joseph Labre)\\\\1041501",
+                    "rank": 2,
+                    "code": 1041501
+                }
+            ]
+        },
+        {
+            "date": "2050-04-16",
+            "lunar": "庚午 马年三月廿五",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "复活节庆期第七日\\\\50106",
+                    "rank": 10,
+                    "code": 50106
+                },
+                {
+                    "name": "圣女伯尔纳德(St. Bernadette or Mary Bernard Soubinous)\\\\1041601",
+                    "rank": 2,
+                    "code": 1041601
+                }
+            ]
+        },
+        {
+            "date": "2050-04-17",
+            "lunar": "庚午 马年三月廿六",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "复活节庆期第八日(慈悲主日)\\\\50200",
+                    "rank": 10,
+                    "code": 50200
+                },
+                {
+                    "name": "圣阿尼塞多(教宗殉道 St. Anicetus)\\\\1041701",
+                    "rank": 2,
+                    "code": 1041701
+                },
+                {
+                    "name": "圣斯德望(西笃修院院长西斯德会副会长 St. Stephen Harding)\\\\1041702",
+                    "rank": 2,
+                    "code": 1041702
+                }
+            ]
+        },
+        {
+            "date": "2050-04-18",
+            "lunar": "庚午 马年三月廿七",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣加帝诺(米兰总主教 St. Caldinus)\\\\1041801",
+                    "rank": 2,
+                    "code": 1041801
+                },
+                {
+                    "name": "福女玛利亚(Bd. Mary of the Incarnation)\\\\1041802",
+                    "rank": 2,
+                    "code": 1041802
+                },
+                {
+                    "name": "圣马塞兰(St. Marcellin Chanmagnat)\\\\1041803",
+                    "rank": 2,
+                    "code": 1041803
+                },
+                {
+                    "name": "复活期第二周(星期一)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2050-04-19",
+            "lunar": "庚午 马年三月廿八",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣良九世(教宗 St. Leo IX. Bruno)\\\\1041901",
+                    "rank": 2,
+                    "code": 1041901
+                },
+                {
+                    "name": "圣亚斐奇(坎特伯里总主教殉道 St. Alphege)\\\\1041902",
+                    "rank": 2,
+                    "code": 1041902
+                },
+                {
+                    "name": "复活期第二周(星期二)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2050-04-20",
+            "lunar": "庚午 马年三月廿九",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣女依搦斯•蒙德波(童贞 St. Agnes of Montepulciano)\\\\1042001",
+                    "rank": 2,
+                    "code": 1042001
+                },
+                {
+                    "name": "复活期第二周(星期三)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2050-04-21",
+            "lunar": "庚午 马年三月初一",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣安色莫(坎特伯里总主教圣师 St. Anseln)\\\\1042101",
+                    "rank": 2,
+                    "code": 1042101
+                },
+                {
+                    "name": "复活期第二周(星期四)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2050-04-22",
+            "lunar": "庚午 马年三月初二",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣索台禄(教宗殉道 St. Soter)\\\\1042201",
+                    "rank": 2,
+                    "code": 1042201
+                },
+                {
+                    "name": "圣爱比巴巨、圣亚历山大(殉道 Ss. Epipodius and Alexander)\\\\1042202",
+                    "rank": 2,
+                    "code": 1042202
+                },
+                {
+                    "name": "复活期第二周(星期五)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2050-04-23",
+            "lunar": "庚午 马年三月初三",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣乔治(殉道 St. George)\\\\1042301",
+                    "rank": 2,
+                    "code": 1042301
+                },
+                {
+                    "name": "真福吉利(Bd. Giles of Assisi)\\\\1042302",
+                    "rank": 2,
+                    "code": 1042302
+                },
+                {
+                    "name": "复活期第二周(星期六)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2050-04-24",
+            "lunar": "庚午 马年三月初四",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "复活期第三主日",
+                    "rank": 5,
+                    "code": -1
+                },
+                {
+                    "name": "圣斐德(圣斐德理 St. Fidelis of Sigmaringen)\\\\1042401",
+                    "rank": 2,
+                    "code": 1042401
+                },
+                {
+                    "name": "圣女贝莱蒂(童贞善牧仁爱圣母会会祖 St. Pelletier)\\\\1042402",
+                    "rank": 2,
+                    "code": 1042402
+                }
+            ]
+        },
+        {
+            "date": "2050-04-25",
+            "lunar": "庚午 马年三月初五",
+            "color": "#FF0000",
+            "colorStr": "红",
+            "liturgics": [
+                {
+                    "name": "圣马尔谷(St. Mark)(庆)\\\\1042501",
+                    "rank": 4,
+                    "code": 1042501
+                },
+                {
+                    "name": "复活期第三周(星期一)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2050-04-26",
+            "lunar": "庚午 马年三月初六",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣格肋多(殉道 St. Cletus)\\\\1042601",
+                    "rank": 2,
+                    "code": 1042601
+                },
+                {
+                    "name": "圣女方佳(童贞女修院院长 St. Franca of Piacenza)\\\\1042602",
+                    "rank": 2,
+                    "code": 1042602
+                },
+                {
+                    "name": "复活期第三周(星期二)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2050-04-27",
+            "lunar": "庚午 马年三月初七",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣女纪达(童贞 St. Zita)\\\\1042701",
+                    "rank": 2,
+                    "code": 1042701
+                },
+                {
+                    "name": "复活期第三周(星期三)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2050-04-28",
+            "lunar": "庚午 马年三月初八",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣葛利农(St. Louis Mary Grignion of Monffort)\\\\1042801",
+                    "rank": 2,
+                    "code": 1042801
+                },
+                {
+                    "name": "圣伯多禄•尚纳神父(殉道 St. Peter Mary Chanel)\\\\1042802",
+                    "rank": 2,
+                    "code": 1042802
+                },
+                {
+                    "name": "复活期第三周(星期四)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2050-04-29",
+            "lunar": "庚午 马年三月初九",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣女加大利纳•仙娜(童贞圣师 St. Catherine of Siena)(纪)\\\\1042901",
+                    "rank": 3,
+                    "code": 1042901
+                },
+                {
+                    "name": "圣若瑟•高登伦哥(St. Joseph Cottolengo)\\\\1042902",
+                    "rank": 2,
+                    "code": 1042902
+                },
+                {
+                    "name": "复活期第三周(星期五)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        },
+        {
+            "date": "2050-04-30",
+            "lunar": "庚午 马年三月初十",
+            "color": "#DDDDDD",
+            "colorStr": "白",
+            "liturgics": [
+                {
+                    "name": "圣比约五世(教宗 Pius V Michele Ghislieril)\\\\1043001",
+                    "rank": 2,
+                    "code": 1043001
+                },
+                {
+                    "name": "复活期第三周(星期六)",
+                    "rank": 0,
+                    "code": -1
+                }
+            ]
+        }
+    ]
+}
