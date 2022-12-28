@@ -4,7 +4,7 @@
     "items": [
         {
             "date": "2035-05-01",
-            "lunar": "乙卯 免年三月廿四",
+            "lunar": "乙卯 兔年三月廿四",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -27,7 +27,7 @@
         },
         {
             "date": "2035-05-02",
-            "lunar": "乙卯 免年三月廿五",
+            "lunar": "乙卯 兔年三月廿五",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -50,7 +50,7 @@
         },
         {
             "date": "2035-05-03",
-            "lunar": "乙卯 免年三月廿六",
+            "lunar": "乙卯 兔年三月廿六",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -73,7 +73,7 @@
         },
         {
             "date": "2035-05-04",
-            "lunar": "乙卯 免年三月廿七",
+            "lunar": "乙卯 兔年三月廿七",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -96,7 +96,7 @@
         },
         {
             "date": "2035-05-05",
-            "lunar": "乙卯 免年三月廿八",
+            "lunar": "乙卯 兔年三月廿八",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -114,7 +114,7 @@
         },
         {
             "date": "2035-05-06",
-            "lunar": "乙卯 免年三月廿九",
+            "lunar": "乙卯 兔年三月廿九",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -137,7 +137,7 @@
         },
         {
             "date": "2035-05-07",
-            "lunar": "乙卯 免年三月三十",
+            "lunar": "乙卯 兔年三月三十",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -160,7 +160,7 @@
         },
         {
             "date": "2035-05-08",
-            "lunar": "乙卯 免年四月初一",
+            "lunar": "乙卯 兔年四月初一",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -188,7 +188,7 @@
         },
         {
             "date": "2035-05-09",
-            "lunar": "乙卯 免年四月初二",
+            "lunar": "乙卯 兔年四月初二",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -206,7 +206,7 @@
         },
         {
             "date": "2035-05-10",
-            "lunar": "乙卯 免年四月初三",
+            "lunar": "乙卯 兔年四月初三",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -229,7 +229,7 @@
         },
         {
             "date": "2035-05-11",
-            "lunar": "乙卯 免年四月初四",
+            "lunar": "乙卯 兔年四月初四",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -252,7 +252,7 @@
         },
         {
             "date": "2035-05-12",
-            "lunar": "乙卯 免年四月初五",
+            "lunar": "乙卯 兔年四月初五",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -280,7 +280,7 @@
         },
         {
             "date": "2035-05-13",
-            "lunar": "乙卯 免年四月初六",
+            "lunar": "乙卯 兔年四月初六",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -308,7 +308,7 @@
         },
         {
             "date": "2035-05-14",
-            "lunar": "乙卯 免年四月初七",
+            "lunar": "乙卯 兔年四月初七",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -336,7 +336,7 @@
         },
         {
             "date": "2035-05-15",
-            "lunar": "乙卯 免年四月初八",
+            "lunar": "乙卯 兔年四月初八",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -354,7 +354,7 @@
         },
         {
             "date": "2035-05-16",
-            "lunar": "乙卯 免年四月初九",
+            "lunar": "乙卯 兔年四月初九",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -377,7 +377,7 @@
         },
         {
             "date": "2035-05-17",
-            "lunar": "乙卯 免年四月初十",
+            "lunar": "乙卯 兔年四月初十",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -400,7 +400,7 @@
         },
         {
             "date": "2035-05-18",
-            "lunar": "乙卯 免年四月十一",
+            "lunar": "乙卯 兔年四月十一",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -423,7 +423,7 @@
         },
         {
             "date": "2035-05-19",
-            "lunar": "乙卯 免年四月十二",
+            "lunar": "乙卯 兔年四月十二",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -446,7 +446,7 @@
         },
         {
             "date": "2035-05-20",
-            "lunar": "乙卯 免年四月十三",
+            "lunar": "乙卯 兔年四月十三",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -474,7 +474,7 @@
         },
         {
             "date": "2035-05-21",
-            "lunar": "乙卯 免年四月十四",
+            "lunar": "乙卯 兔年四月十四",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -492,7 +492,7 @@
         },
         {
             "date": "2035-05-22",
-            "lunar": "乙卯 免年四月十五",
+            "lunar": "乙卯 兔年四月十五",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -515,7 +515,7 @@
         },
         {
             "date": "2035-05-23",
-            "lunar": "乙卯 免年四月十六",
+            "lunar": "乙卯 兔年四月十六",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -533,7 +533,7 @@
         },
         {
             "date": "2035-05-24",
-            "lunar": "乙卯 免年四月十七",
+            "lunar": "乙卯 兔年四月十七",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -561,7 +561,7 @@
         },
         {
             "date": "2035-05-25",
-            "lunar": "乙卯 免年四月十八",
+            "lunar": "乙卯 兔年四月十八",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -589,7 +589,7 @@
         },
         {
             "date": "2035-05-26",
-            "lunar": "乙卯 免年四月十九",
+            "lunar": "乙卯 兔年四月十九",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -607,7 +607,7 @@
         },
         {
             "date": "2035-05-27",
-            "lunar": "乙卯 免年四月廿零",
+            "lunar": "乙卯 兔年四月廿零",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -625,7 +625,7 @@
         },
         {
             "date": "2035-05-28",
-            "lunar": "乙卯 免年四月廿一",
+            "lunar": "乙卯 兔年四月廿一",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -648,7 +648,7 @@
         },
         {
             "date": "2035-05-29",
-            "lunar": "乙卯 免年四月廿二",
+            "lunar": "乙卯 兔年四月廿二",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -666,7 +666,7 @@
         },
         {
             "date": "2035-05-30",
-            "lunar": "乙卯 免年四月廿三",
+            "lunar": "乙卯 兔年四月廿三",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -684,7 +684,7 @@
         },
         {
             "date": "2035-05-31",
-            "lunar": "乙卯 免年四月廿四",
+            "lunar": "乙卯 兔年四月廿四",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [

@@ -4,7 +4,7 @@
     "items": [
         {
             "date": "2023-06-01",
-            "lunar": "癸卯 免年四月十四",
+            "lunar": "癸卯 兔年四月十四",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -32,7 +32,7 @@
         },
         {
             "date": "2023-06-02",
-            "lunar": "癸卯 免年四月十五",
+            "lunar": "癸卯 兔年四月十五",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -55,7 +55,7 @@
         },
         {
             "date": "2023-06-03",
-            "lunar": "癸卯 免年四月十六",
+            "lunar": "癸卯 兔年四月十六",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -78,7 +78,7 @@
         },
         {
             "date": "2023-06-04",
-            "lunar": "癸卯 免年四月十七",
+            "lunar": "癸卯 兔年四月十七",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -106,7 +106,7 @@
         },
         {
             "date": "2023-06-05",
-            "lunar": "癸卯 免年四月十八",
+            "lunar": "癸卯 兔年四月十八",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -124,7 +124,7 @@
         },
         {
             "date": "2023-06-06",
-            "lunar": "癸卯 免年四月十九",
+            "lunar": "癸卯 兔年四月十九",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -142,7 +142,7 @@
         },
         {
             "date": "2023-06-07",
-            "lunar": "癸卯 免年四月廿零",
+            "lunar": "癸卯 兔年四月廿零",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -170,7 +170,7 @@
         },
         {
             "date": "2023-06-08",
-            "lunar": "癸卯 免年四月廿一",
+            "lunar": "癸卯 兔年四月廿一",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -198,7 +198,7 @@
         },
         {
             "date": "2023-06-09",
-            "lunar": "癸卯 免年四月廿二",
+            "lunar": "癸卯 兔年四月廿二",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -226,7 +226,7 @@
         },
         {
             "date": "2023-06-10",
-            "lunar": "癸卯 免年四月廿三",
+            "lunar": "癸卯 兔年四月廿三",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -244,7 +244,7 @@
         },
         {
             "date": "2023-06-11",
-            "lunar": "癸卯 免年四月廿四",
+            "lunar": "癸卯 兔年四月廿四",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -267,7 +267,7 @@
         },
         {
             "date": "2023-06-12",
-            "lunar": "癸卯 免年四月廿五",
+            "lunar": "癸卯 兔年四月廿五",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -290,7 +290,7 @@
         },
         {
             "date": "2023-06-13",
-            "lunar": "癸卯 免年四月廿六",
+            "lunar": "癸卯 兔年四月廿六",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -308,7 +308,7 @@
         },
         {
             "date": "2023-06-14",
-            "lunar": "癸卯 免年四月廿七",
+            "lunar": "癸卯 兔年四月廿七",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -326,7 +326,7 @@
         },
         {
             "date": "2023-06-15",
-            "lunar": "癸卯 免年四月廿八",
+            "lunar": "癸卯 兔年四月廿八",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -349,7 +349,7 @@
         },
         {
             "date": "2023-06-16",
-            "lunar": "癸卯 免年四月廿九",
+            "lunar": "癸卯 兔年四月廿九",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -377,7 +377,7 @@
         },
         {
             "date": "2023-06-17",
-            "lunar": "癸卯 免年四月三十",
+            "lunar": "癸卯 兔年四月三十",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -405,7 +405,7 @@
         },
         {
             "date": "2023-06-18",
-            "lunar": "癸卯 免年五月初一",
+            "lunar": "癸卯 兔年五月初一",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -433,7 +433,7 @@
         },
         {
             "date": "2023-06-19",
-            "lunar": "癸卯 免年五月初二",
+            "lunar": "癸卯 兔年五月初二",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -456,7 +456,7 @@
         },
         {
             "date": "2023-06-20",
-            "lunar": "癸卯 免年五月初三",
+            "lunar": "癸卯 兔年五月初三",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -479,7 +479,7 @@
         },
         {
             "date": "2023-06-21",
-            "lunar": "癸卯 免年五月初四",
+            "lunar": "癸卯 兔年五月初四",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -502,7 +502,7 @@
         },
         {
             "date": "2023-06-22",
-            "lunar": "癸卯 免年五月初五",
+            "lunar": "癸卯 兔年五月初五",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -530,7 +530,7 @@
         },
         {
             "date": "2023-06-23",
-            "lunar": "癸卯 免年五月初六",
+            "lunar": "癸卯 兔年五月初六",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -548,7 +548,7 @@
         },
         {
             "date": "2023-06-24",
-            "lunar": "癸卯 免年五月初七",
+            "lunar": "癸卯 兔年五月初七",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -566,7 +566,7 @@
         },
         {
             "date": "2023-06-25",
-            "lunar": "癸卯 免年五月初八",
+            "lunar": "癸卯 兔年五月初八",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -589,7 +589,7 @@
         },
         {
             "date": "2023-06-26",
-            "lunar": "癸卯 免年五月初九",
+            "lunar": "癸卯 兔年五月初九",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -607,7 +607,7 @@
         },
         {
             "date": "2023-06-27",
-            "lunar": "癸卯 免年五月初十",
+            "lunar": "癸卯 兔年五月初十",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -625,7 +625,7 @@
         },
         {
             "date": "2023-06-28",
-            "lunar": "癸卯 免年五月十一",
+            "lunar": "癸卯 兔年五月十一",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -648,7 +648,7 @@
         },
         {
             "date": "2023-06-29",
-            "lunar": "癸卯 免年五月十二",
+            "lunar": "癸卯 兔年五月十二",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -671,7 +671,7 @@
         },
         {
             "date": "2023-06-30",
-            "lunar": "癸卯 免年五月十三",
+            "lunar": "癸卯 兔年五月十三",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [

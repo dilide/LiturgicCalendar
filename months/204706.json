@@ -4,7 +4,7 @@
     "items": [
         {
             "date": "2047-06-01",
-            "lunar": "丁卯 免年五月初八",
+            "lunar": "丁卯 兔年五月初八",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -27,7 +27,7 @@
         },
         {
             "date": "2047-06-02",
-            "lunar": "丁卯 免年五月初九",
+            "lunar": "丁卯 兔年五月初九",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -55,7 +55,7 @@
         },
         {
             "date": "2047-06-03",
-            "lunar": "丁卯 免年五月初十",
+            "lunar": "丁卯 兔年五月初十",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -83,7 +83,7 @@
         },
         {
             "date": "2047-06-04",
-            "lunar": "丁卯 免年五月十一",
+            "lunar": "丁卯 兔年五月十一",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -106,7 +106,7 @@
         },
         {
             "date": "2047-06-05",
-            "lunar": "丁卯 免年五月十二",
+            "lunar": "丁卯 兔年五月十二",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -124,7 +124,7 @@
         },
         {
             "date": "2047-06-06",
-            "lunar": "丁卯 免年五月十三",
+            "lunar": "丁卯 兔年五月十三",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -147,7 +147,7 @@
         },
         {
             "date": "2047-06-07",
-            "lunar": "丁卯 免年五月十四",
+            "lunar": "丁卯 兔年五月十四",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -175,7 +175,7 @@
         },
         {
             "date": "2047-06-08",
-            "lunar": "丁卯 免年五月十五",
+            "lunar": "丁卯 兔年五月十五",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -198,7 +198,7 @@
         },
         {
             "date": "2047-06-09",
-            "lunar": "丁卯 免年五月十六",
+            "lunar": "丁卯 兔年五月十六",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -231,7 +231,7 @@
         },
         {
             "date": "2047-06-10",
-            "lunar": "丁卯 免年五月十七",
+            "lunar": "丁卯 兔年五月十七",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -249,7 +249,7 @@
         },
         {
             "date": "2047-06-11",
-            "lunar": "丁卯 免年五月十八",
+            "lunar": "丁卯 兔年五月十八",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -272,7 +272,7 @@
         },
         {
             "date": "2047-06-12",
-            "lunar": "丁卯 免年五月十九",
+            "lunar": "丁卯 兔年五月十九",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -295,7 +295,7 @@
         },
         {
             "date": "2047-06-13",
-            "lunar": "丁卯 免年五月廿零",
+            "lunar": "丁卯 兔年五月廿零",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -318,7 +318,7 @@
         },
         {
             "date": "2047-06-14",
-            "lunar": "丁卯 免年五月廿一",
+            "lunar": "丁卯 兔年五月廿一",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -336,7 +336,7 @@
         },
         {
             "date": "2047-06-15",
-            "lunar": "丁卯 免年五月廿二",
+            "lunar": "丁卯 兔年五月廿二",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -359,7 +359,7 @@
         },
         {
             "date": "2047-06-16",
-            "lunar": "丁卯 免年五月廿三",
+            "lunar": "丁卯 兔年五月廿三",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -382,7 +382,7 @@
         },
         {
             "date": "2047-06-17",
-            "lunar": "丁卯 免年五月廿四",
+            "lunar": "丁卯 兔年五月廿四",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -405,7 +405,7 @@
         },
         {
             "date": "2047-06-18",
-            "lunar": "丁卯 免年五月廿五",
+            "lunar": "丁卯 兔年五月廿五",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -433,7 +433,7 @@
         },
         {
             "date": "2047-06-19",
-            "lunar": "丁卯 免年五月廿六",
+            "lunar": "丁卯 兔年五月廿六",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -456,7 +456,7 @@
         },
         {
             "date": "2047-06-20",
-            "lunar": "丁卯 免年五月廿七",
+            "lunar": "丁卯 兔年五月廿七",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -479,7 +479,7 @@
         },
         {
             "date": "2047-06-21",
-            "lunar": "丁卯 免年五月廿八",
+            "lunar": "丁卯 兔年五月廿八",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -507,7 +507,7 @@
         },
         {
             "date": "2047-06-22",
-            "lunar": "丁卯 免年五月廿九",
+            "lunar": "丁卯 兔年五月廿九",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -540,7 +540,7 @@
         },
         {
             "date": "2047-06-23",
-            "lunar": "丁卯 免年五月初一",
+            "lunar": "丁卯 兔年五月初一",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -558,7 +558,7 @@
         },
         {
             "date": "2047-06-24",
-            "lunar": "丁卯 免年五月初二",
+            "lunar": "丁卯 兔年五月初二",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -576,7 +576,7 @@
         },
         {
             "date": "2047-06-25",
-            "lunar": "丁卯 免年五月初三",
+            "lunar": "丁卯 兔年五月初三",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -599,7 +599,7 @@
         },
         {
             "date": "2047-06-26",
-            "lunar": "丁卯 免年五月初四",
+            "lunar": "丁卯 兔年五月初四",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -617,7 +617,7 @@
         },
         {
             "date": "2047-06-27",
-            "lunar": "丁卯 免年五月初五",
+            "lunar": "丁卯 兔年五月初五",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -635,7 +635,7 @@
         },
         {
             "date": "2047-06-28",
-            "lunar": "丁卯 免年五月初六",
+            "lunar": "丁卯 兔年五月初六",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -658,7 +658,7 @@
         },
         {
             "date": "2047-06-29",
-            "lunar": "丁卯 免年五月初七",
+            "lunar": "丁卯 兔年五月初七",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -681,7 +681,7 @@
         },
         {
             "date": "2047-06-30",
-            "lunar": "丁卯 免年五月初八",
+            "lunar": "丁卯 兔年五月初八",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
