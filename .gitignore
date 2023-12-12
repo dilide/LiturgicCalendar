@@ -1,2 +1,11 @@
 build/
 CMakeFiles/
+LiturgicCalendar.xcodeproj
+CMakeScripts
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+libLiturgicCalendar.a
+LiturgicCalendar
+Makefile
+.vscode
