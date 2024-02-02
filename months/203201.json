@@ -129,7 +129,7 @@
                     "code": 1
                 },
                 {
-                    "name": "真福辣法厄尔•玛利亚(童贞圣心婢女会会祖 Bd Raphaela Mary)\\\\1010602",
+                    "name": "真福辣法厄尔•玛利亚(童贞圣心婢女会会祖 Bd. Raphaela Mary)\\\\1010602",
                     "rank": 2,
                     "code": 1010602
                 },
@@ -593,6 +593,11 @@
             "colorStr": "绿",
             "liturgics": [
                 {
+                    "name": "圣福若瑟(司铎 St. Joseph Freinademetz)(纪)\\\\1012902",
+                    "rank": 3,
+                    "code": 1012902
+                },
+                {
                     "name": "圣亚波罗尼(殉道 St. Apoelonius the Apologist)\\\\1012901",
                     "rank": 2,
                     "code": 1012901
@@ -610,6 +615,11 @@
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
+                {
+                    "name": "真福雷永明(司铎 Bd. Gabriele Allegra)(纪)\\\\1013003",
+                    "rank": 3,
+                    "code": 1013003
+                },
                 {
                     "name": "圣女玛蒂娜(童贞致命 St. Martina)\\\\1013001",
                     "rank": 2,
