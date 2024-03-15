@@ -378,8 +378,8 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣若瑟(圣母净配中国主保 St. Joseph)\\\\1031901",
-                    "rank": 10,
+                    "name": "圣若瑟(圣母净配中国主保 St. Joseph)(庆)\\\\1031901",
+                    "rank": 4,
                     "code": 1031901
                 },
                 {
@@ -501,8 +501,8 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣母领报(the Annunciation of the Blessed Virgin Mary)\\\\1032501",
-                    "rank": 10,
+                    "name": "圣母领报(the Annunciation of the Blessed Virgin Mary)(庆)\\\\1032501",
+                    "rank": 4,
                     "code": 1032501
                 },
                 {

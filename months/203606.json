@@ -563,8 +563,8 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣若翰洗者诞辰(The Birthday of St. John the Baptist)\\\\1062401",
-                    "rank": 10,
+                    "name": "圣若翰洗者诞辰(The Birthday of St. John the Baptist)(庆)\\\\1062401",
+                    "rank": 4,
                     "code": 1062401
                 },
                 {
@@ -659,23 +659,23 @@
         {
             "date": "2036-06-29",
             "lunar": "丙辰 龙年六月初六",
-            "color": "#FF0000",
-            "colorStr": "红",
+            "color": "#00FF00",
+            "colorStr": "绿",
             "liturgics": [
-                {
-                    "name": "圣伯多禄宗徒(St. Peter Apostle)\\\\1062901",
-                    "rank": 10,
-                    "code": 1062901
-                },
-                {
-                    "name": "圣保禄宗徒(St. Paul Apostle)\\\\1062902",
-                    "rank": 10,
-                    "code": 1062902
-                },
                 {
                     "name": "常年期第十三主日",
                     "rank": 5,
                     "code": -1
+                },
+                {
+                    "name": "圣伯多禄宗徒(St. Peter Apostle)(庆)\\\\1062901",
+                    "rank": 4,
+                    "code": 1062901
+                },
+                {
+                    "name": "圣保禄宗徒(St. Paul Apostle)(庆)\\\\1062902",
+                    "rank": 4,
+                    "code": 1062902
                 }
             ]
         },

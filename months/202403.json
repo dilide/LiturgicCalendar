@@ -378,8 +378,8 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣若瑟(圣母净配中国主保 St. Joseph)\\\\1031901",
-                    "rank": 10,
+                    "name": "圣若瑟(圣母净配中国主保 St. Joseph)(庆)\\\\1031901",
+                    "rank": 4,
                     "code": 1031901
                 },
                 {
@@ -502,18 +502,18 @@
         {
             "date": "2024-03-25",
             "lunar": "甲辰 龙年二月十六",
-            "color": "#DDDDDD",
-            "colorStr": "白",
+            "color": "#8B00FF",
+            "colorStr": "紫",
             "liturgics": [
-                {
-                    "name": "圣母领报(the Annunciation of the Blessed Virgin Mary)\\\\1032501",
-                    "rank": 10,
-                    "code": 1032501
-                },
                 {
                     "name": "圣周一\\\\40601",
                     "rank": 8,
                     "code": 40601
+                },
+                {
+                    "name": "圣母领报(the Annunciation of the Blessed Virgin Mary)(庆)\\\\1032501",
+                    "rank": 4,
+                    "code": 1032501
                 },
                 {
                     "name": "真福玛加大•格利塞罗(殉道 Bd. Margaret Clitherow)\\\\1032502",

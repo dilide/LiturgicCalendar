@@ -141,18 +141,18 @@
         {
             "date": "2013-12-08",
             "lunar": "癸巳 蛇年冬月初六",
-            "color": "#DDDDDD",
-            "colorStr": "白",
+            "color": "#8B00FF",
+            "colorStr": "紫",
             "liturgics": [
-                {
-                    "name": "圣母无原罪始胎(The Immaculate Conception of the Blessed Virgin Mary)\\\\1120801",
-                    "rank": 10,
-                    "code": 1120801
-                },
                 {
                     "name": "将临期第二主日",
                     "rank": 5,
                     "code": -1
+                },
+                {
+                    "name": "圣母无原罪始胎(The Immaculate Conception of the Blessed Virgin Mary)(庆)\\\\1120801",
+                    "rank": 4,
+                    "code": 1120801
                 }
             ]
         },

@@ -544,18 +544,18 @@
         {
             "date": "2012-06-24",
             "lunar": "壬辰 龙年五月初六",
-            "color": "#DDDDDD",
-            "colorStr": "白",
+            "color": "#00FF00",
+            "colorStr": "绿",
             "liturgics": [
-                {
-                    "name": "圣若翰洗者诞辰(The Birthday of St. John the Baptist)\\\\1062401",
-                    "rank": 10,
-                    "code": 1062401
-                },
                 {
                     "name": "常年期第十二主日",
                     "rank": 5,
                     "code": -1
+                },
+                {
+                    "name": "圣若翰洗者诞辰(The Birthday of St. John the Baptist)(庆)\\\\1062401",
+                    "rank": 4,
+                    "code": 1062401
                 }
             ]
         },
@@ -648,13 +648,13 @@
             "colorStr": "红",
             "liturgics": [
                 {
-                    "name": "圣伯多禄宗徒(St. Peter Apostle)\\\\1062901",
-                    "rank": 10,
+                    "name": "圣伯多禄宗徒(St. Peter Apostle)(庆)\\\\1062901",
+                    "rank": 4,
                     "code": 1062901
                 },
                 {
-                    "name": "圣保禄宗徒(St. Paul Apostle)\\\\1062902",
-                    "rank": 10,
+                    "name": "圣保禄宗徒(St. Paul Apostle)(庆)\\\\1062902",
+                    "rank": 4,
                     "code": 1062902
                 },
                 {
