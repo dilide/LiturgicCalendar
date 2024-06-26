@@ -287,6 +287,53 @@ void export_to_sqlite()
     sqlite3_close(db);
 }
 
+void export_to_mass() {
+    Calendar::initCalendar();
+
+    std::ofstream of, of2;
+    of.open(string("./mass.sql"));
+    of2.open(string("./mass.csv"));
+    {
+        // 表头
+        of2<<"编号;名称;循环(年)"<<std::endl;
+        
+        
+        // 礼仪年
+        {
+            auto days = LiturgicYear::getNormalDays();
+            auto iter = days.begin();
+            while (iter != days.end()) {
+                std::cout<<iter->celebration<<std::endl;
+                
+                of2<<iter->code<<";\""<<ansi2utf8(sqlite3_mprintf("%q",iter->celebration.c_str()))<<"\";"<<iter->cycleOfReadings<<std::endl;
+                ++iter;
+            }
+        }
+
+        
+        
+        // 特殊节日
+        {
+            auto saints = LiturgicYear::getPropers();
+            auto iter = saints.begin();
+            while (iter!=saints.end()) {
+                std::cout<<iter->second.celebration<<std::endl;
+                /*
+                of<<"insert into easter_mass(code, name, year, cycle) select "<<iter->second.code<<",'"<<ansi2utf8(sqlite3_mprintf("%q",iter->second.celebration.c_str()))<<"',"<<3
+                    <<" where not exists (select 1 from easter_saint where code="<<iter->second.code<<");"<<std::endl;
+                of<<"update easter_mass set name='"<<ansi2utf8(sqlite3_mprintf("%q",iter->second.celebration.c_str()))<<"'"<<" where code="<<iter->second.code<<";"<<std::endl;
+                */
+                of2<<iter->second.code<<";\""<<ansi2utf8(sqlite3_mprintf("%q",iter->second.celebration.c_str()))<<"\";"<<iter->second.cycleOfReadings<<std::endl;
+                ++iter;
+            }
+        }
+    }
+    of.close();
+    of2.close();
+    
+    Calendar::releaseCalendar();
+}
+
 void calendar_test()
 {  
     Calendar::initCalendar();
@@ -316,9 +363,10 @@ void calendar_test()
 
 int main(int argc, char *argv[])
 {
-   export_month_json_test();
-   export_to_sqlite();
-
-   //calendar_test();
-   return 0;
+//    export_month_json_test();
+//    export_to_sqlite();
+    export_to_mass();
+    
+    //calendar_test();
+    return 0;
 }

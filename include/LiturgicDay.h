@@ -24,13 +24,20 @@ namespace CathAssist
             rank_t rank;                //优先级
             color_t color;              //祭衣颜色
             std::string celebration;    //节日
-			CellInfo(rank_t r,color_t c,const std::string& cel)
+            int cycleOfReadings = 1;    //读经循环（如：主日读经三年一循环，平日读经两年一循环）
+			CellInfo(int code, rank_t r, color_t c, const std::string& cel, int cycleOfReadings)
 			{
-                code = -1;
-				rank = r;
-				color = c;
-				celebration = cel;
+                this->code = code;
+				this->rank = r;
+                this->color = c;
+                celebration = cel;
+                this->cycleOfReadings = cycleOfReadings;
 			}
+            
+            CellInfo(rank_t r, color_t c, const std::string& cel)
+                : CellInfo(-1, r, c, cel, 1)
+            {
+            }
 
 			std::string toString()
 			{
@@ -63,6 +70,10 @@ namespace CathAssist
         class LiturgicDay : public Date
         {
         public:
+            static std::string getWeekdayString(int code);
+            static std::string getWeekdayString(const season_t& season, const int& weekOfSeason, const int& dayOfWeek);
+            
+        public:
             LiturgicDay();
             LiturgicDay(const Date& d);
             LiturgicDay(const int& year, const int& month, const int& day);
@@ -85,7 +96,7 @@ namespace CathAssist
 			// 前面两位为：Season
 			// 中间两位为：主日编号
 			// 最后两位为：星期几
-			int getLiturgicId();
+			int getLiturgicId() const;
 
 			std::list<CellInfo> getCellInfos() const;
             std::list<int> getCellsId() const{ return listCell; }

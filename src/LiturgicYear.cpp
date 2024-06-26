@@ -1106,3 +1106,39 @@ void LiturgicYear::testProper(LiturgicDay& ld)
 		}
 	}
 }
+
+std::list<CellInfo> LiturgicYear::getNormalDays()
+{
+    std::list<CellInfo> days;
+    {
+        // 将临期
+        for(int i=1; i<=4; ++i) {
+            for(int j=0; j<=6; ++j) {
+                int code = ADVENT*10000 + i*100 + j;
+                days.push_back(CellInfo(code, OPTIONAL, NOCOLOR, LiturgicDay::getWeekdayString(code), 1));
+            }
+        }
+    }
+    {
+        // 圣诞期
+        for(int i=1; i<=4; ++i) {
+            for(int j=0; j<=6; ++j) {
+                int code = CHRISTMAS*10000 + i*100 + j;
+                days.push_back(CellInfo(code, OPTIONAL, NOCOLOR, LiturgicDay::getWeekdayString(code), 1));
+            }
+        }
+    }
+    {
+        //四旬期
+    }
+    {
+        //复活期
+    }
+    {
+        //常年期
+    }
+    
+    
+    return days;
+}
+

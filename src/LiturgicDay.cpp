@@ -1,4 +1,4 @@
-﻿/*
+/*
 ============================================================================
 文件名称	:	LiturgicDay.cpp
 公司		:	CathAssist
@@ -56,7 +56,7 @@ color_t LiturgicDay::getColor() const
 	return NOCOLOR;
 }
 
-int LiturgicDay::getLiturgicId()
+int LiturgicDay::getLiturgicId() const
 {
 	return season*10000+weekOfSeason*100+dayOfWeek();
 }
@@ -141,7 +141,7 @@ CellInfo LiturgicDay::getLiturgicCellInfo() const
 	}
 	else if(EASTER == season)
 	{
-		if(getWeekOfSeason()==1 || getWeekOfSeason()==2&&dayOfWeek()==0)
+		if((getWeekOfSeason()==1 || getWeekOfSeason()==2) && dayOfWeek()==0)
 		{
 			//复活节八日庆典（已特殊定义）
 			_rank = ErrorRank;
@@ -183,25 +183,13 @@ CellInfo LiturgicDay::getLiturgicCellInfo() const
 			_clr = WHITE;
 		}
 	}
-
-	return CellInfo(_rank,_clr,toWeekdayString());
+    
+	return CellInfo(_rank, _clr, toWeekdayString());
 }
 
 std::string LiturgicDay::toWeekdayString() const
 {
-	std::ostringstream ostr;
-	if(dayOfWeek()==SUN)
-	{
-		ostr<<CathAssist::Calendar::getSeasonStr(season)
-			<<"第"<<getChineseNumStr(weekOfSeason)<<"主日";
-	}
-	else
-	{
-		ostr<<CathAssist::Calendar::getSeasonStr(season)
-			<<"第"<<getChineseNumStr(weekOfSeason)<<"周("<<CathAssist::Calendar::getDayStr(dayOfWeek())<<")";
-	}
-
-	return ostr.str();
+    return LiturgicDay::getWeekdayString(season, weekOfSeason, dayOfWeek());
 }
 
 std::string LiturgicDay::toLiturgicString() const
@@ -227,3 +215,29 @@ std::string LiturgicDay::toLiturgicString() const
     
     return ostr.str();
 }
+
+std::string LiturgicDay::getWeekdayString(int code) { 
+    int season = code/10000;
+    int weekNum = (code%10000)/100;
+    int dayNum = code%100;
+    
+    return LiturgicDay::getWeekdayString((season_t)season, weekNum, dayNum);
+}
+
+
+std::string LiturgicDay::getWeekdayString(const season_t &season, const int &weekOfSeason, const int &dayOfWeek) {
+    std::ostringstream ostr;
+    if(dayOfWeek==SUN)
+    {
+        ostr<<CathAssist::Calendar::getSeasonStr(season)
+            <<"第"<<getChineseNumStr(weekOfSeason)<<"主日";
+    }
+    else
+    {
+        ostr<<CathAssist::Calendar::getSeasonStr(season)
+            <<"第"<<getChineseNumStr(weekOfSeason)<<"周("<<CathAssist::Calendar::getDayStr((day_t)dayOfWeek)<<")";
+    }
+
+    return ostr.str();
+}
+

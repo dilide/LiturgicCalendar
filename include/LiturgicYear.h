@@ -1,4 +1,4 @@
-﻿/*
+/*
 ============================================================================
 文件名称	:	LiturgicYear.h
 公司		:	CathAssist
@@ -21,6 +21,7 @@ namespace CathAssist
 		public:
 			static void initPropers();
 			static std::multimap<int,CellInfo> getPropers(){ return mapPropers; }
+            static std::list<CellInfo> getNormalDays();
 			static CellInfo getCellInfo(const int& id);
 
 		public:
