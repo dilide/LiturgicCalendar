@@ -1007,9 +1007,9 @@ void LiturgicYear::testOrdinary2(LiturgicDay& ld)
 	{
 		ld.appendCell(4);	//圣三主日
 	}
-	else if(dayFromEaster == 60)
+	else if(dayFromEaster == 60 || dayFromEaster == 63)
 	{
-		//可移至主日庆祝 + 63
+		//圣三主日的星期四(+60)，可移至主日庆祝(+63)
 		ld.appendCell(5);	//基督圣体圣血节
 	}
 	else if(dayFromEaster == 68)

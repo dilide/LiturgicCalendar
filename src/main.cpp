@@ -363,8 +363,8 @@ void calendar_test()
 int main(int argc, char *argv[])
 {
 //    export_month_json_test();
-//    export_to_sqlite();
-    export_to_mass();
+    export_to_sqlite();
+//    export_to_mass();
     
     //calendar_test();
     return 0;
