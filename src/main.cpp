@@ -304,26 +304,25 @@ void export_to_mass() {
             auto iter = days.begin();
             while (iter != days.end()) {
                 std::cout<<iter->celebration<<std::endl;
-                
+                of<< "insert into easter_mass(code, name) values("<<iter->code<<",'"<<ansi2utf8(sqlite3_mprintf("%q",iter->celebration.c_str()))<<"');"<<std::endl;
                 of2<<iter->code<<";\""<<ansi2utf8(sqlite3_mprintf("%q",iter->celebration.c_str()))<<"\";"<<iter->cycleOfReadings<<std::endl;
                 ++iter;
             }
-        }
-
-        
+        }        
         
         // 特殊节日
         {
             auto saints = LiturgicYear::getPropers();
             auto iter = saints.begin();
             while (iter!=saints.end()) {
-                std::cout<<iter->second.celebration<<std::endl;
-                /*
-                of<<"insert into easter_mass(code, name, year, cycle) select "<<iter->second.code<<",'"<<ansi2utf8(sqlite3_mprintf("%q",iter->second.celebration.c_str()))<<"',"<<3
-                    <<" where not exists (select 1 from easter_saint where code="<<iter->second.code<<");"<<std::endl;
-                of<<"update easter_mass set name='"<<ansi2utf8(sqlite3_mprintf("%q",iter->second.celebration.c_str()))<<"'"<<" where code="<<iter->second.code<<";"<<std::endl;
-                */
-                of2<<iter->second.code<<";\""<<ansi2utf8(sqlite3_mprintf("%q",iter->second.celebration.c_str()))<<"\";"<<iter->second.cycleOfReadings<<std::endl;
+                if(iter->second.rank >= MEMORIAL) {
+                    std::cout<<iter->second.celebration<<std::endl;
+//                    of<< "insert into easter_mass(code, name) values("<<iter->second.code<<",'"<<ansi2utf8(sqlite3_mprintf("%q",iter->second.celebration.c_str()))<<"');"<<std::endl;
+                    of<<"insert into easter_mass(code, name) select "<<iter->second.code<<",'"<<ansi2utf8(sqlite3_mprintf("%q",iter->second.celebration.c_str()))<<"'"
+                        <<" where not exists (select 1 from easter_mass where code="<<iter->second.code<<");"<<std::endl;
+                    of<<"update easter_mass set name='"<<ansi2utf8(sqlite3_mprintf("%q",iter->second.celebration.c_str()))<<"'"<<" where code="<<iter->second.code<<";"<<std::endl;
+                    of2<<iter->second.code<<";\""<<ansi2utf8(sqlite3_mprintf("%q",iter->second.celebration.c_str()))<<"\";"<<iter->second.cycleOfReadings<<std::endl;
+                }
                 ++iter;
             }
         }

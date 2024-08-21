@@ -1121,7 +1121,7 @@ std::list<CellInfo> LiturgicYear::getNormalDays()
     }
     {
         // 圣诞期
-        for(int i=1; i<=4; ++i) {
+        for(int i=1; i<=2; ++i) {
             for(int j=0; j<=6; ++j) {
                 int code = CHRISTMAS*10000 + i*100 + j;
                 days.push_back(CellInfo(code, OPTIONAL, NOCOLOR, LiturgicDay::getWeekdayString(code), 1));
@@ -1130,14 +1130,38 @@ std::list<CellInfo> LiturgicYear::getNormalDays()
     }
     {
         //四旬期
+        //圣灰礼仪后三天（周四、周五、周六）
+        int code = LENT*10000 + 0*100 + 4;
+        days.push_back(CellInfo(code, OPTIONAL, NOCOLOR, LiturgicDay::getWeekdayString(code), 1));
+        code++;
+        days.push_back(CellInfo(code, OPTIONAL, NOCOLOR, LiturgicDay::getWeekdayString(code), 1));
+        code++;
+        days.push_back(CellInfo(code, OPTIONAL, NOCOLOR, LiturgicDay::getWeekdayString(code), 1));
+        for(int i=1; i<=6; ++i) {
+            for(int j=0; j<=6; ++j) {
+                int code = LENT*10000 + i*100 + j;
+                days.push_back(CellInfo(code, OPTIONAL, NOCOLOR, LiturgicDay::getWeekdayString(code), 1));
+            }
+        }
     }
     {
         //复活期
+        for(int i=1; i<=7; ++i) {
+            for(int j=0; j<=6; ++j) {
+                int code = EASTER*10000 + i*100 + j;
+                days.push_back(CellInfo(code, OPTIONAL, NOCOLOR, LiturgicDay::getWeekdayString(code), 1));
+            }
+        }
     }
     {
         //常年期
+        for(int i=1; i<=34; ++i) {
+            for(int j=0; j<=6; ++j) {
+                int code = ORDINARY*10000 + i*100 + j;
+                days.push_back(CellInfo(code, OPTIONAL, NOCOLOR, LiturgicDay::getWeekdayString(code), 1));
+            }
+        }
     }
-    
     
     return days;
 }
