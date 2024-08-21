@@ -199,7 +199,7 @@
         },
         {
             "date": "2014-12-11",
-            "lunar": "甲午 马年十月廿零",
+            "lunar": "甲午 马年十月二十",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
@@ -217,7 +217,7 @@
         },
         {
             "date": "2014-12-12",
-            "lunar": "甲午 马年十月廿一",
+            "lunar": "甲午 马年十月二十一",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -240,7 +240,7 @@
         },
         {
             "date": "2014-12-13",
-            "lunar": "甲午 马年十月廿二",
+            "lunar": "甲午 马年十月二十二",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -258,7 +258,7 @@
         },
         {
             "date": "2014-12-14",
-            "lunar": "甲午 马年十月廿三",
+            "lunar": "甲午 马年十月二十三",
             "color": "#FF0DA6",
             "colorStr": "玫",
             "liturgics": [
@@ -281,7 +281,7 @@
         },
         {
             "date": "2014-12-15",
-            "lunar": "甲午 马年十月廿四",
+            "lunar": "甲午 马年十月二十四",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
@@ -309,7 +309,7 @@
         },
         {
             "date": "2014-12-16",
-            "lunar": "甲午 马年十月廿五",
+            "lunar": "甲午 马年十月二十五",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
@@ -327,7 +327,7 @@
         },
         {
             "date": "2014-12-17",
-            "lunar": "甲午 马年十月廿六",
+            "lunar": "甲午 马年十月二十六",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
@@ -350,7 +350,7 @@
         },
         {
             "date": "2014-12-18",
-            "lunar": "甲午 马年十月廿七",
+            "lunar": "甲午 马年十月二十七",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
@@ -373,7 +373,7 @@
         },
         {
             "date": "2014-12-19",
-            "lunar": "甲午 马年十月廿八",
+            "lunar": "甲午 马年十月二十八",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
@@ -391,7 +391,7 @@
         },
         {
             "date": "2014-12-20",
-            "lunar": "甲午 马年十月廿九",
+            "lunar": "甲午 马年十月二十九",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [

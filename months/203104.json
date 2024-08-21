@@ -234,7 +234,7 @@
         },
         {
             "date": "2031-04-11",
-            "lunar": "辛亥 猪年三月廿零",
+            "lunar": "辛亥 猪年三月二十",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -262,7 +262,7 @@
         },
         {
             "date": "2031-04-12",
-            "lunar": "辛亥 猪年三月廿一",
+            "lunar": "辛亥 猪年三月二十一",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -290,7 +290,7 @@
         },
         {
             "date": "2031-04-13",
-            "lunar": "辛亥 猪年三月廿二",
+            "lunar": "辛亥 猪年三月二十二",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -308,7 +308,7 @@
         },
         {
             "date": "2031-04-14",
-            "lunar": "辛亥 猪年三月廿三",
+            "lunar": "辛亥 猪年三月二十三",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -326,12 +326,17 @@
                     "name": "真福李维娜(童贞 Bd. Lydwina of Schiedam)\\\\1041402",
                     "rank": 2,
                     "code": 1041402
+                },
+                {
+                    "name": "复活期第一周(星期一)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2031-04-15",
-            "lunar": "辛亥 猪年三月廿四",
+            "lunar": "辛亥 猪年三月二十四",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -344,12 +349,17 @@
                     "name": "圣本笃•若瑟•雷伯(St. Benedict Joseph Labre)\\\\1041501",
                     "rank": 2,
                     "code": 1041501
+                },
+                {
+                    "name": "复活期第一周(星期二)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2031-04-16",
-            "lunar": "辛亥 猪年三月廿五",
+            "lunar": "辛亥 猪年三月二十五",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -362,12 +372,17 @@
                     "name": "圣女伯尔纳德(St. Bernadette or Mary Bernard Soubinous)\\\\1041601",
                     "rank": 2,
                     "code": 1041601
+                },
+                {
+                    "name": "复活期第一周(星期三)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2031-04-17",
-            "lunar": "辛亥 猪年三月廿六",
+            "lunar": "辛亥 猪年三月二十六",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -385,12 +400,17 @@
                     "name": "圣斯德望(西笃修院院长西斯德会副会长 St. Stephen Harding)\\\\1041702",
                     "rank": 2,
                     "code": 1041702
+                },
+                {
+                    "name": "复活期第一周(星期四)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2031-04-18",
-            "lunar": "辛亥 猪年三月廿七",
+            "lunar": "辛亥 猪年三月二十七",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -413,12 +433,17 @@
                     "name": "圣马塞兰(St. Marcellin Chanmagnat)\\\\1041803",
                     "rank": 2,
                     "code": 1041803
+                },
+                {
+                    "name": "复活期第一周(星期五)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2031-04-19",
-            "lunar": "辛亥 猪年三月廿八",
+            "lunar": "辛亥 猪年三月二十八",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -436,12 +461,17 @@
                     "name": "圣亚斐奇(坎特伯里总主教殉道 St. Alphege)\\\\1041902",
                     "rank": 2,
                     "code": 1041902
+                },
+                {
+                    "name": "复活期第一周(星期六)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2031-04-20",
-            "lunar": "辛亥 猪年三月廿九",
+            "lunar": "辛亥 猪年三月二十九",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [

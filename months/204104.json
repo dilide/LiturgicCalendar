@@ -436,7 +436,7 @@
         },
         {
             "date": "2041-04-20",
-            "lunar": "辛酉 鸡年三月廿零",
+            "lunar": "辛酉 鸡年三月二十",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -459,7 +459,7 @@
         },
         {
             "date": "2041-04-21",
-            "lunar": "辛酉 鸡年三月廿一",
+            "lunar": "辛酉 鸡年三月二十一",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -477,7 +477,7 @@
         },
         {
             "date": "2041-04-22",
-            "lunar": "辛酉 鸡年三月廿二",
+            "lunar": "辛酉 鸡年三月二十二",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -495,12 +495,17 @@
                     "name": "圣爱比巴巨、圣亚历山大(殉道 Ss. Epipodius and Alexander)\\\\1042202",
                     "rank": 2,
                     "code": 1042202
+                },
+                {
+                    "name": "复活期第一周(星期一)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2041-04-23",
-            "lunar": "辛酉 鸡年三月廿三",
+            "lunar": "辛酉 鸡年三月二十三",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -518,12 +523,17 @@
                     "name": "真福吉利(Bd. Giles of Assisi)\\\\1042302",
                     "rank": 2,
                     "code": 1042302
+                },
+                {
+                    "name": "复活期第一周(星期二)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2041-04-24",
-            "lunar": "辛酉 鸡年三月廿四",
+            "lunar": "辛酉 鸡年三月二十四",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -541,12 +551,17 @@
                     "name": "圣女贝莱蒂(童贞善牧仁爱圣母会会祖 St. Pelletier)\\\\1042402",
                     "rank": 2,
                     "code": 1042402
+                },
+                {
+                    "name": "复活期第一周(星期三)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2041-04-25",
-            "lunar": "辛酉 鸡年三月廿五",
+            "lunar": "辛酉 鸡年三月二十五",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -559,12 +574,17 @@
                     "name": "圣马尔谷(St. Mark)(庆)\\\\1042501",
                     "rank": 4,
                     "code": 1042501
+                },
+                {
+                    "name": "复活期第一周(星期四)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2041-04-26",
-            "lunar": "辛酉 鸡年三月廿六",
+            "lunar": "辛酉 鸡年三月二十六",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -582,12 +602,17 @@
                     "name": "圣女方佳(童贞女修院院长 St. Franca of Piacenza)\\\\1042602",
                     "rank": 2,
                     "code": 1042602
+                },
+                {
+                    "name": "复活期第一周(星期五)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2041-04-27",
-            "lunar": "辛酉 鸡年三月廿七",
+            "lunar": "辛酉 鸡年三月二十七",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -600,12 +625,17 @@
                     "name": "圣女纪达(童贞 St. Zita)\\\\1042701",
                     "rank": 2,
                     "code": 1042701
+                },
+                {
+                    "name": "复活期第一周(星期六)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2041-04-28",
-            "lunar": "辛酉 鸡年三月廿八",
+            "lunar": "辛酉 鸡年三月二十八",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -628,7 +658,7 @@
         },
         {
             "date": "2041-04-29",
-            "lunar": "辛酉 鸡年三月廿九",
+            "lunar": "辛酉 鸡年三月二十九",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [

@@ -326,7 +326,7 @@
         },
         {
             "date": "2025-06-15",
-            "lunar": "乙巳 蛇年五月廿零",
+            "lunar": "乙巳 蛇年五月二十",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -354,7 +354,7 @@
         },
         {
             "date": "2025-06-16",
-            "lunar": "乙巳 蛇年五月廿一",
+            "lunar": "乙巳 蛇年五月二十一",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -377,7 +377,7 @@
         },
         {
             "date": "2025-06-17",
-            "lunar": "乙巳 蛇年五月廿二",
+            "lunar": "乙巳 蛇年五月二十二",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -400,7 +400,7 @@
         },
         {
             "date": "2025-06-18",
-            "lunar": "乙巳 蛇年五月廿三",
+            "lunar": "乙巳 蛇年五月二十三",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -428,7 +428,7 @@
         },
         {
             "date": "2025-06-19",
-            "lunar": "乙巳 蛇年五月廿四",
+            "lunar": "乙巳 蛇年五月二十四",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -456,7 +456,7 @@
         },
         {
             "date": "2025-06-20",
-            "lunar": "乙巳 蛇年五月廿五",
+            "lunar": "乙巳 蛇年五月二十五",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -479,7 +479,7 @@
         },
         {
             "date": "2025-06-21",
-            "lunar": "乙巳 蛇年五月廿六",
+            "lunar": "乙巳 蛇年五月二十六",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -502,10 +502,15 @@
         },
         {
             "date": "2025-06-22",
-            "lunar": "乙巳 蛇年五月廿七",
-            "color": "#00FF00",
-            "colorStr": "绿",
+            "lunar": "乙巳 蛇年五月二十七",
+            "color": "#DDDDDD",
+            "colorStr": "白",
             "liturgics": [
+                {
+                    "name": "基督圣体圣血节\\\\5",
+                    "rank": 10,
+                    "code": 5
+                },
                 {
                     "name": "常年期第十二主日",
                     "rank": 5,
@@ -530,7 +535,7 @@
         },
         {
             "date": "2025-06-23",
-            "lunar": "乙巳 蛇年五月廿八",
+            "lunar": "乙巳 蛇年五月二十八",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -548,7 +553,7 @@
         },
         {
             "date": "2025-06-24",
-            "lunar": "乙巳 蛇年五月廿九",
+            "lunar": "乙巳 蛇年五月二十九",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [

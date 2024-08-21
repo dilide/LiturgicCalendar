@@ -4,7 +4,7 @@
     "items": [
         {
             "date": "2032-07-01",
-            "lunar": "壬子 鼠年五月廿四",
+            "lunar": "壬子 鼠年五月二十四",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -27,7 +27,7 @@
         },
         {
             "date": "2032-07-02",
-            "lunar": "壬子 鼠年五月廿五",
+            "lunar": "壬子 鼠年五月二十五",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -50,7 +50,7 @@
         },
         {
             "date": "2032-07-03",
-            "lunar": "壬子 鼠年五月廿六",
+            "lunar": "壬子 鼠年五月二十六",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -68,7 +68,7 @@
         },
         {
             "date": "2032-07-04",
-            "lunar": "壬子 鼠年五月廿七",
+            "lunar": "壬子 鼠年五月二十七",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -86,7 +86,7 @@
         },
         {
             "date": "2032-07-05",
-            "lunar": "壬子 鼠年五月廿八",
+            "lunar": "壬子 鼠年五月二十八",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -104,7 +104,7 @@
         },
         {
             "date": "2032-07-06",
-            "lunar": "壬子 鼠年五月廿九",
+            "lunar": "壬子 鼠年五月二十九",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -524,7 +524,7 @@
         },
         {
             "date": "2032-07-26",
-            "lunar": "壬子 鼠年六月廿零",
+            "lunar": "壬子 鼠年六月二十",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -547,7 +547,7 @@
         },
         {
             "date": "2032-07-27",
-            "lunar": "壬子 鼠年六月廿一",
+            "lunar": "壬子 鼠年六月二十一",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -570,7 +570,7 @@
         },
         {
             "date": "2032-07-28",
-            "lunar": "壬子 鼠年六月廿二",
+            "lunar": "壬子 鼠年六月二十二",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -588,7 +588,7 @@
         },
         {
             "date": "2032-07-29",
-            "lunar": "壬子 鼠年六月廿三",
+            "lunar": "壬子 鼠年六月二十三",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -606,7 +606,7 @@
         },
         {
             "date": "2032-07-30",
-            "lunar": "壬子 鼠年六月廿四",
+            "lunar": "壬子 鼠年六月二十四",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -629,7 +629,7 @@
         },
         {
             "date": "2032-07-31",
-            "lunar": "壬子 鼠年六月廿五",
+            "lunar": "壬子 鼠年六月二十五",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [

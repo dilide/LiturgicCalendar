@@ -4,7 +4,7 @@
     "items": [
         {
             "date": "2045-12-01",
-            "lunar": "乙丑 牛年十月廿三",
+            "lunar": "乙丑 牛年十月二十三",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -27,7 +27,7 @@
         },
         {
             "date": "2045-12-02",
-            "lunar": "乙丑 牛年十月廿四",
+            "lunar": "乙丑 牛年十月二十四",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -45,7 +45,7 @@
         },
         {
             "date": "2045-12-03",
-            "lunar": "乙丑 牛年十月廿五",
+            "lunar": "乙丑 牛年十月二十五",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
@@ -63,7 +63,7 @@
         },
         {
             "date": "2045-12-04",
-            "lunar": "乙丑 牛年十月廿六",
+            "lunar": "乙丑 牛年十月二十六",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
@@ -81,7 +81,7 @@
         },
         {
             "date": "2045-12-05",
-            "lunar": "乙丑 牛年十月廿七",
+            "lunar": "乙丑 牛年十月二十七",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
@@ -99,7 +99,7 @@
         },
         {
             "date": "2045-12-06",
-            "lunar": "乙丑 牛年十月廿八",
+            "lunar": "乙丑 牛年十月二十八",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
@@ -117,7 +117,7 @@
         },
         {
             "date": "2045-12-07",
-            "lunar": "乙丑 牛年十月廿九",
+            "lunar": "乙丑 牛年十月二十九",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -522,7 +522,7 @@
         },
         {
             "date": "2045-12-27",
-            "lunar": "乙丑 牛年冬月廿零",
+            "lunar": "乙丑 牛年冬月二十",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -540,7 +540,7 @@
         },
         {
             "date": "2045-12-28",
-            "lunar": "乙丑 牛年冬月廿一",
+            "lunar": "乙丑 牛年冬月二十一",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -558,7 +558,7 @@
         },
         {
             "date": "2045-12-29",
-            "lunar": "乙丑 牛年冬月廿二",
+            "lunar": "乙丑 牛年冬月二十二",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -576,7 +576,7 @@
         },
         {
             "date": "2045-12-30",
-            "lunar": "乙丑 牛年冬月廿三",
+            "lunar": "乙丑 牛年冬月二十三",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -594,7 +594,7 @@
         },
         {
             "date": "2045-12-31",
-            "lunar": "乙丑 牛年冬月廿四",
+            "lunar": "乙丑 牛年冬月二十四",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [

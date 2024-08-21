@@ -4,7 +4,7 @@
     "items": [
         {
             "date": "2027-06-01",
-            "lunar": "丁未 羊年四月廿七",
+            "lunar": "丁未 羊年四月二十七",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -27,7 +27,7 @@
         },
         {
             "date": "2027-06-02",
-            "lunar": "丁未 羊年四月廿八",
+            "lunar": "丁未 羊年四月二十八",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -50,7 +50,7 @@
         },
         {
             "date": "2027-06-03",
-            "lunar": "丁未 羊年四月廿九",
+            "lunar": "丁未 羊年四月二十九",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -533,7 +533,7 @@
         },
         {
             "date": "2027-06-24",
-            "lunar": "丁未 羊年五月廿零",
+            "lunar": "丁未 羊年五月二十",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -551,7 +551,7 @@
         },
         {
             "date": "2027-06-25",
-            "lunar": "丁未 羊年五月廿一",
+            "lunar": "丁未 羊年五月二十一",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -574,7 +574,7 @@
         },
         {
             "date": "2027-06-26",
-            "lunar": "丁未 羊年五月廿二",
+            "lunar": "丁未 羊年五月二十二",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -592,7 +592,7 @@
         },
         {
             "date": "2027-06-27",
-            "lunar": "丁未 羊年五月廿三",
+            "lunar": "丁未 羊年五月二十三",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -610,7 +610,7 @@
         },
         {
             "date": "2027-06-28",
-            "lunar": "丁未 羊年五月廿四",
+            "lunar": "丁未 羊年五月二十四",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -633,7 +633,7 @@
         },
         {
             "date": "2027-06-29",
-            "lunar": "丁未 羊年五月廿五",
+            "lunar": "丁未 羊年五月二十五",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -656,7 +656,7 @@
         },
         {
             "date": "2027-06-30",
-            "lunar": "丁未 羊年五月廿六",
+            "lunar": "丁未 羊年五月二十六",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [

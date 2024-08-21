@@ -145,7 +145,7 @@
         },
         {
             "date": "2015-02-08",
-            "lunar": "甲午 马年腊月廿零",
+            "lunar": "甲午 马年腊月二十",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -168,7 +168,7 @@
         },
         {
             "date": "2015-02-09",
-            "lunar": "甲午 马年腊月廿一",
+            "lunar": "甲午 马年腊月二十一",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -191,7 +191,7 @@
         },
         {
             "date": "2015-02-10",
-            "lunar": "甲午 马年腊月廿二",
+            "lunar": "甲午 马年腊月二十二",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -209,7 +209,7 @@
         },
         {
             "date": "2015-02-11",
-            "lunar": "甲午 马年腊月廿三",
+            "lunar": "甲午 马年腊月二十三",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -227,7 +227,7 @@
         },
         {
             "date": "2015-02-12",
-            "lunar": "甲午 马年腊月廿四",
+            "lunar": "甲午 马年腊月二十四",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -250,7 +250,7 @@
         },
         {
             "date": "2015-02-13",
-            "lunar": "甲午 马年腊月廿五",
+            "lunar": "甲午 马年腊月二十五",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -273,7 +273,7 @@
         },
         {
             "date": "2015-02-14",
-            "lunar": "甲午 马年腊月廿六",
+            "lunar": "甲午 马年腊月二十六",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -296,7 +296,7 @@
         },
         {
             "date": "2015-02-15",
-            "lunar": "甲午 马年腊月廿七",
+            "lunar": "甲午 马年腊月二十七",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -324,7 +324,7 @@
         },
         {
             "date": "2015-02-16",
-            "lunar": "甲午 马年腊月廿八",
+            "lunar": "甲午 马年腊月二十八",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -342,7 +342,7 @@
         },
         {
             "date": "2015-02-17",
-            "lunar": "甲午 马年腊月廿九",
+            "lunar": "甲午 马年腊月二十九",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [

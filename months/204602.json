@@ -4,7 +4,7 @@
     "items": [
         {
             "date": "2046-02-01",
-            "lunar": "乙丑 牛年腊月廿六",
+            "lunar": "乙丑 牛年腊月二十六",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -22,7 +22,7 @@
         },
         {
             "date": "2046-02-02",
-            "lunar": "乙丑 牛年腊月廿七",
+            "lunar": "乙丑 牛年腊月二十七",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -40,7 +40,7 @@
         },
         {
             "date": "2046-02-03",
-            "lunar": "乙丑 牛年腊月廿八",
+            "lunar": "乙丑 牛年腊月二十八",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -63,7 +63,7 @@
         },
         {
             "date": "2046-02-04",
-            "lunar": "乙丑 牛年腊月廿九",
+            "lunar": "乙丑 牛年腊月二十九",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -511,7 +511,7 @@
         },
         {
             "date": "2046-02-25",
-            "lunar": "丙寅 虎年正月廿零",
+            "lunar": "丙寅 虎年正月二十",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
@@ -534,7 +534,7 @@
         },
         {
             "date": "2046-02-26",
-            "lunar": "丙寅 虎年正月廿一",
+            "lunar": "丙寅 虎年正月二十一",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
@@ -557,7 +557,7 @@
         },
         {
             "date": "2046-02-27",
-            "lunar": "丙寅 虎年正月廿二",
+            "lunar": "丙寅 虎年正月二十二",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
@@ -580,7 +580,7 @@
         },
         {
             "date": "2046-02-28",
-            "lunar": "丙寅 虎年正月廿三",
+            "lunar": "丙寅 虎年正月二十三",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [

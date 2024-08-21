@@ -4,7 +4,7 @@
     "items": [
         {
             "date": "2024-04-01",
-            "lunar": "甲辰 龙年二月廿三",
+            "lunar": "甲辰 龙年二月二十三",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -22,12 +22,17 @@
                     "name": "真福路道味•巴华尼(无玷圣母之子会会祖 Bd. Ludovic Pavoni)\\\\1040102",
                     "rank": 2,
                     "code": 1040102
+                },
+                {
+                    "name": "复活期第一周(星期一)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2024-04-02",
-            "lunar": "甲辰 龙年二月廿四",
+            "lunar": "甲辰 龙年二月二十四",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -40,12 +45,17 @@
                     "name": "圣方济各保拉(最小兄弟会会祖 St. Francis of Paola)\\\\1040201",
                     "rank": 2,
                     "code": 1040201
+                },
+                {
+                    "name": "复活期第一周(星期二)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2024-04-03",
-            "lunar": "甲辰 龙年二月廿五",
+            "lunar": "甲辰 龙年二月二十五",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -58,12 +68,17 @@
                     "name": "圣理查德(St. Richard)\\\\1040301",
                     "rank": 2,
                     "code": 1040301
+                },
+                {
+                    "name": "复活期第一周(星期三)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2024-04-04",
-            "lunar": "甲辰 龙年二月廿六",
+            "lunar": "甲辰 龙年二月二十六",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -81,12 +96,17 @@
                     "name": "圣“农民”依西多禄希道(St. Isidore the Husbandman)\\\\1040402",
                     "rank": 2,
                     "code": 1040402
+                },
+                {
+                    "name": "复活期第一周(星期四)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2024-04-05",
-            "lunar": "甲辰 龙年二月廿七",
+            "lunar": "甲辰 龙年二月二十七",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -104,12 +124,17 @@
                     "name": "真福儒利亚纳(童贞 Bd. Juliana of Mount Cornillon)\\\\1040502",
                     "rank": 2,
                     "code": 1040502
+                },
+                {
+                    "name": "复活期第一周(星期五)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2024-04-06",
-            "lunar": "甲辰 龙年二月廿八",
+            "lunar": "甲辰 龙年二月二十八",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -122,12 +147,17 @@
                     "name": "圣塞来斯定一世(教宗 St. Celestinel)\\\\1040601",
                     "rank": 2,
                     "code": 1040601
+                },
+                {
+                    "name": "复活期第一周(星期六)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2024-04-07",
-            "lunar": "甲辰 龙年二月廿九",
+            "lunar": "甲辰 龙年二月二十九",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -570,7 +600,7 @@
         },
         {
             "date": "2024-04-28",
-            "lunar": "甲辰 龙年三月廿零",
+            "lunar": "甲辰 龙年三月二十",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -593,7 +623,7 @@
         },
         {
             "date": "2024-04-29",
-            "lunar": "甲辰 龙年三月廿一",
+            "lunar": "甲辰 龙年三月二十一",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -616,7 +646,7 @@
         },
         {
             "date": "2024-04-30",
-            "lunar": "甲辰 龙年三月廿二",
+            "lunar": "甲辰 龙年三月二十二",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [

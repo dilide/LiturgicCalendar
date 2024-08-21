@@ -27,7 +27,7 @@
         },
         {
             "date": "2010-06-02",
-            "lunar": "庚寅 虎年四月廿零",
+            "lunar": "庚寅 虎年四月二十",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -50,7 +50,7 @@
         },
         {
             "date": "2010-06-03",
-            "lunar": "庚寅 虎年四月廿一",
+            "lunar": "庚寅 虎年四月二十一",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -78,7 +78,7 @@
         },
         {
             "date": "2010-06-04",
-            "lunar": "庚寅 虎年四月廿二",
+            "lunar": "庚寅 虎年四月二十二",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -101,7 +101,7 @@
         },
         {
             "date": "2010-06-05",
-            "lunar": "庚寅 虎年四月廿三",
+            "lunar": "庚寅 虎年四月二十三",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -119,10 +119,15 @@
         },
         {
             "date": "2010-06-06",
-            "lunar": "庚寅 虎年四月廿四",
-            "color": "#00FF00",
-            "colorStr": "绿",
+            "lunar": "庚寅 虎年四月二十四",
+            "color": "#DDDDDD",
+            "colorStr": "白",
             "liturgics": [
+                {
+                    "name": "基督圣体圣血节\\\\5",
+                    "rank": 10,
+                    "code": 5
+                },
                 {
                     "name": "常年期第十主日",
                     "rank": 5,
@@ -137,7 +142,7 @@
         },
         {
             "date": "2010-06-07",
-            "lunar": "庚寅 虎年四月廿五",
+            "lunar": "庚寅 虎年四月二十五",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -165,7 +170,7 @@
         },
         {
             "date": "2010-06-08",
-            "lunar": "庚寅 虎年四月廿六",
+            "lunar": "庚寅 虎年四月二十六",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -188,7 +193,7 @@
         },
         {
             "date": "2010-06-09",
-            "lunar": "庚寅 虎年四月廿七",
+            "lunar": "庚寅 虎年四月二十七",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -216,7 +221,7 @@
         },
         {
             "date": "2010-06-10",
-            "lunar": "庚寅 虎年四月廿八",
+            "lunar": "庚寅 虎年四月二十八",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -234,7 +239,7 @@
         },
         {
             "date": "2010-06-11",
-            "lunar": "庚寅 虎年四月廿九",
+            "lunar": "庚寅 虎年四月二十九",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [

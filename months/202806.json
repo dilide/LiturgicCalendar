@@ -272,7 +272,7 @@
         },
         {
             "date": "2028-06-12",
-            "lunar": "戊申 猴年五月廿零",
+            "lunar": "戊申 猴年五月二十",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -295,7 +295,7 @@
         },
         {
             "date": "2028-06-13",
-            "lunar": "戊申 猴年五月廿一",
+            "lunar": "戊申 猴年五月二十一",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -313,7 +313,7 @@
         },
         {
             "date": "2028-06-14",
-            "lunar": "戊申 猴年五月廿二",
+            "lunar": "戊申 猴年五月二十二",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -331,7 +331,7 @@
         },
         {
             "date": "2028-06-15",
-            "lunar": "戊申 猴年五月廿三",
+            "lunar": "戊申 猴年五月二十三",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -359,7 +359,7 @@
         },
         {
             "date": "2028-06-16",
-            "lunar": "戊申 猴年五月廿四",
+            "lunar": "戊申 猴年五月二十四",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -382,7 +382,7 @@
         },
         {
             "date": "2028-06-17",
-            "lunar": "戊申 猴年五月廿五",
+            "lunar": "戊申 猴年五月二十五",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -405,10 +405,15 @@
         },
         {
             "date": "2028-06-18",
-            "lunar": "戊申 猴年五月廿六",
-            "color": "#00FF00",
-            "colorStr": "绿",
+            "lunar": "戊申 猴年五月二十六",
+            "color": "#DDDDDD",
+            "colorStr": "白",
             "liturgics": [
+                {
+                    "name": "基督圣体圣血节\\\\5",
+                    "rank": 10,
+                    "code": 5
+                },
                 {
                     "name": "常年期第十一主日",
                     "rank": 5,
@@ -433,7 +438,7 @@
         },
         {
             "date": "2028-06-19",
-            "lunar": "戊申 猴年五月廿七",
+            "lunar": "戊申 猴年五月二十七",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -456,7 +461,7 @@
         },
         {
             "date": "2028-06-20",
-            "lunar": "戊申 猴年五月廿八",
+            "lunar": "戊申 猴年五月二十八",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -479,7 +484,7 @@
         },
         {
             "date": "2028-06-21",
-            "lunar": "戊申 猴年五月廿九",
+            "lunar": "戊申 猴年五月二十九",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [

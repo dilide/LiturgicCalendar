@@ -246,7 +246,10 @@ namespace CathAssist
 			}
 			else if(n<30)
 			{
-				return "廿"+numStr[n%10];
+                if(n==20)
+                    return "二十";
+                else
+				    return "二十"+numStr[n%10];
 			}
 			else if(n<40)
 			{

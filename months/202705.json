@@ -4,7 +4,7 @@
     "items": [
         {
             "date": "2027-05-01",
-            "lunar": "丁未 羊年三月廿五",
+            "lunar": "丁未 羊年三月二十五",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -27,7 +27,7 @@
         },
         {
             "date": "2027-05-02",
-            "lunar": "丁未 羊年三月廿六",
+            "lunar": "丁未 羊年三月二十六",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -50,7 +50,7 @@
         },
         {
             "date": "2027-05-03",
-            "lunar": "丁未 羊年三月廿七",
+            "lunar": "丁未 羊年三月二十七",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -68,7 +68,7 @@
         },
         {
             "date": "2027-05-04",
-            "lunar": "丁未 羊年三月廿八",
+            "lunar": "丁未 羊年三月二十八",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -91,7 +91,7 @@
         },
         {
             "date": "2027-05-05",
-            "lunar": "丁未 羊年三月廿九",
+            "lunar": "丁未 羊年三月二十九",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -556,7 +556,7 @@
         },
         {
             "date": "2027-05-25",
-            "lunar": "丁未 羊年四月廿零",
+            "lunar": "丁未 羊年四月二十",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -584,7 +584,7 @@
         },
         {
             "date": "2027-05-26",
-            "lunar": "丁未 羊年四月廿一",
+            "lunar": "丁未 羊年四月二十一",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -602,7 +602,7 @@
         },
         {
             "date": "2027-05-27",
-            "lunar": "丁未 羊年四月廿二",
+            "lunar": "丁未 羊年四月二十二",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -625,7 +625,7 @@
         },
         {
             "date": "2027-05-28",
-            "lunar": "丁未 羊年四月廿三",
+            "lunar": "丁未 羊年四月二十三",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -648,7 +648,7 @@
         },
         {
             "date": "2027-05-29",
-            "lunar": "丁未 羊年四月廿四",
+            "lunar": "丁未 羊年四月二十四",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -666,10 +666,15 @@
         },
         {
             "date": "2027-05-30",
-            "lunar": "丁未 羊年四月廿五",
-            "color": "#00FF00",
-            "colorStr": "绿",
+            "lunar": "丁未 羊年四月二十五",
+            "color": "#DDDDDD",
+            "colorStr": "白",
             "liturgics": [
+                {
+                    "name": "基督圣体圣血节\\\\5",
+                    "rank": 10,
+                    "code": 5
+                },
                 {
                     "name": "常年期第九主日",
                     "rank": 5,
@@ -684,7 +689,7 @@
         },
         {
             "date": "2027-05-31",
-            "lunar": "丁未 羊年四月廿六",
+            "lunar": "丁未 羊年四月二十六",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [

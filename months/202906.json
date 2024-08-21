@@ -4,7 +4,7 @@
     "items": [
         {
             "date": "2029-06-01",
-            "lunar": "己酉 鸡年四月廿零",
+            "lunar": "己酉 鸡年四月二十",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -27,7 +27,7 @@
         },
         {
             "date": "2029-06-02",
-            "lunar": "己酉 鸡年四月廿一",
+            "lunar": "己酉 鸡年四月二十一",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -50,10 +50,15 @@
         },
         {
             "date": "2029-06-03",
-            "lunar": "己酉 鸡年四月廿二",
-            "color": "#00FF00",
-            "colorStr": "绿",
+            "lunar": "己酉 鸡年四月二十二",
+            "color": "#DDDDDD",
+            "colorStr": "白",
             "liturgics": [
+                {
+                    "name": "基督圣体圣血节\\\\5",
+                    "rank": 10,
+                    "code": 5
+                },
                 {
                     "name": "常年期第九主日",
                     "rank": 5,
@@ -73,7 +78,7 @@
         },
         {
             "date": "2029-06-04",
-            "lunar": "己酉 鸡年四月廿三",
+            "lunar": "己酉 鸡年四月二十三",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -96,7 +101,7 @@
         },
         {
             "date": "2029-06-05",
-            "lunar": "己酉 鸡年四月廿四",
+            "lunar": "己酉 鸡年四月二十四",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -114,7 +119,7 @@
         },
         {
             "date": "2029-06-06",
-            "lunar": "己酉 鸡年四月廿五",
+            "lunar": "己酉 鸡年四月二十五",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -132,7 +137,7 @@
         },
         {
             "date": "2029-06-07",
-            "lunar": "己酉 鸡年四月廿六",
+            "lunar": "己酉 鸡年四月二十六",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -160,7 +165,7 @@
         },
         {
             "date": "2029-06-08",
-            "lunar": "己酉 鸡年四月廿七",
+            "lunar": "己酉 鸡年四月二十七",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -188,7 +193,7 @@
         },
         {
             "date": "2029-06-09",
-            "lunar": "己酉 鸡年四月廿八",
+            "lunar": "己酉 鸡年四月二十八",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -221,7 +226,7 @@
         },
         {
             "date": "2029-06-10",
-            "lunar": "己酉 鸡年四月廿九",
+            "lunar": "己酉 鸡年四月二十九",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [

@@ -4,7 +4,7 @@
     "items": [
         {
             "date": "2021-05-01",
-            "lunar": "辛丑 牛年三月廿零",
+            "lunar": "辛丑 牛年三月二十",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -27,7 +27,7 @@
         },
         {
             "date": "2021-05-02",
-            "lunar": "辛丑 牛年三月廿一",
+            "lunar": "辛丑 牛年三月二十一",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -50,7 +50,7 @@
         },
         {
             "date": "2021-05-03",
-            "lunar": "辛丑 牛年三月廿二",
+            "lunar": "辛丑 牛年三月二十二",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -68,7 +68,7 @@
         },
         {
             "date": "2021-05-04",
-            "lunar": "辛丑 牛年三月廿三",
+            "lunar": "辛丑 牛年三月二十三",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -91,7 +91,7 @@
         },
         {
             "date": "2021-05-05",
-            "lunar": "辛丑 牛年三月廿四",
+            "lunar": "辛丑 牛年三月二十四",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -109,7 +109,7 @@
         },
         {
             "date": "2021-05-06",
-            "lunar": "辛丑 牛年三月廿五",
+            "lunar": "辛丑 牛年三月二十五",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -132,7 +132,7 @@
         },
         {
             "date": "2021-05-07",
-            "lunar": "辛丑 牛年三月廿六",
+            "lunar": "辛丑 牛年三月二十六",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -155,7 +155,7 @@
         },
         {
             "date": "2021-05-08",
-            "lunar": "辛丑 牛年三月廿七",
+            "lunar": "辛丑 牛年三月二十七",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -188,7 +188,7 @@
         },
         {
             "date": "2021-05-09",
-            "lunar": "辛丑 牛年三月廿八",
+            "lunar": "辛丑 牛年三月二十八",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -206,7 +206,7 @@
         },
         {
             "date": "2021-05-10",
-            "lunar": "辛丑 牛年三月廿九",
+            "lunar": "辛丑 牛年三月二十九",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -679,7 +679,7 @@
         },
         {
             "date": "2021-05-31",
-            "lunar": "辛丑 牛年四月廿零",
+            "lunar": "辛丑 牛年四月二十",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [

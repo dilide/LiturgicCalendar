@@ -165,6 +165,11 @@
                     "name": "圣若翰•兰沙(St. John Baptist de la Salle)(纪)\\\\1040701",
                     "rank": 3,
                     "code": 1040701
+                },
+                {
+                    "name": "复活期第一周(星期一)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
@@ -188,6 +193,11 @@
                     "name": "真福亚松大(Bd. Maria Assunta)\\\\1040802",
                     "rank": 2,
                     "code": 1040802
+                },
+                {
+                    "name": "复活期第一周(星期二)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
@@ -211,12 +221,17 @@
                     "name": "真福欧伯(Bd. Ubald of Florence)\\\\1040902",
                     "rank": 2,
                     "code": 1040902
+                },
+                {
+                    "name": "复活期第一周(星期三)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2042-04-10",
-            "lunar": "壬戌 狗年二月廿零",
+            "lunar": "壬戌 狗年二月二十",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -229,12 +244,17 @@
                     "name": "圣傅培(沙尔德主教 St. Fulbert)\\\\1041001",
                     "rank": 2,
                     "code": 1041001
+                },
+                {
+                    "name": "复活期第一周(星期四)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2042-04-11",
-            "lunar": "壬戌 狗年二月廿一",
+            "lunar": "壬戌 狗年二月二十一",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -252,12 +272,17 @@
                     "name": "圣瑰玛•甘甘妮(St. Gemma Galgan)\\\\1041102",
                     "rank": 2,
                     "code": 1041102
+                },
+                {
+                    "name": "复活期第一周(星期五)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2042-04-12",
-            "lunar": "壬戌 狗年二月廿二",
+            "lunar": "壬戌 狗年二月二十二",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -275,12 +300,17 @@
                     "name": "圣柴诺(万罗纳主教 St. Zeno)\\\\1041202",
                     "rank": 2,
                     "code": 1041202
+                },
+                {
+                    "name": "复活期第一周(星期六)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2042-04-13",
-            "lunar": "壬戌 狗年二月廿三",
+            "lunar": "壬戌 狗年二月二十三",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -298,7 +328,7 @@
         },
         {
             "date": "2042-04-14",
-            "lunar": "壬戌 狗年二月廿四",
+            "lunar": "壬戌 狗年二月二十四",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -321,7 +351,7 @@
         },
         {
             "date": "2042-04-15",
-            "lunar": "壬戌 狗年二月廿五",
+            "lunar": "壬戌 狗年二月二十五",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -339,7 +369,7 @@
         },
         {
             "date": "2042-04-16",
-            "lunar": "壬戌 狗年二月廿六",
+            "lunar": "壬戌 狗年二月二十六",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -357,7 +387,7 @@
         },
         {
             "date": "2042-04-17",
-            "lunar": "壬戌 狗年二月廿七",
+            "lunar": "壬戌 狗年二月二十七",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -380,7 +410,7 @@
         },
         {
             "date": "2042-04-18",
-            "lunar": "壬戌 狗年二月廿八",
+            "lunar": "壬戌 狗年二月二十八",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -408,7 +438,7 @@
         },
         {
             "date": "2042-04-19",
-            "lunar": "壬戌 狗年二月廿九",
+            "lunar": "壬戌 狗年二月二十九",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [

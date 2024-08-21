@@ -4,7 +4,7 @@
     "items": [
         {
             "date": "2030-01-01",
-            "lunar": "己酉 鸡年冬月廿八",
+            "lunar": "己酉 鸡年冬月二十八",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -22,7 +22,7 @@
         },
         {
             "date": "2030-01-02",
-            "lunar": "己酉 鸡年冬月廿九",
+            "lunar": "己酉 鸡年冬月二十九",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -475,7 +475,7 @@
         },
         {
             "date": "2030-01-23",
-            "lunar": "己酉 鸡年腊月廿零",
+            "lunar": "己酉 鸡年腊月二十",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -493,7 +493,7 @@
         },
         {
             "date": "2030-01-24",
-            "lunar": "己酉 鸡年腊月廿一",
+            "lunar": "己酉 鸡年腊月二十一",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -511,7 +511,7 @@
         },
         {
             "date": "2030-01-25",
-            "lunar": "己酉 鸡年腊月廿二",
+            "lunar": "己酉 鸡年腊月二十二",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -529,7 +529,7 @@
         },
         {
             "date": "2030-01-26",
-            "lunar": "己酉 鸡年腊月廿三",
+            "lunar": "己酉 鸡年腊月二十三",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -552,7 +552,7 @@
         },
         {
             "date": "2030-01-27",
-            "lunar": "己酉 鸡年腊月廿四",
+            "lunar": "己酉 鸡年腊月二十四",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -570,7 +570,7 @@
         },
         {
             "date": "2030-01-28",
-            "lunar": "己酉 鸡年腊月廿五",
+            "lunar": "己酉 鸡年腊月二十五",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -588,7 +588,7 @@
         },
         {
             "date": "2030-01-29",
-            "lunar": "己酉 鸡年腊月廿六",
+            "lunar": "己酉 鸡年腊月二十六",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -611,7 +611,7 @@
         },
         {
             "date": "2030-01-30",
-            "lunar": "己酉 鸡年腊月廿七",
+            "lunar": "己酉 鸡年腊月二十七",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -639,7 +639,7 @@
         },
         {
             "date": "2030-01-31",
-            "lunar": "己酉 鸡年腊月廿八",
+            "lunar": "己酉 鸡年腊月二十八",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [

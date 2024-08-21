@@ -152,7 +152,7 @@
         },
         {
             "date": "2045-04-07",
-            "lunar": "乙丑 牛年二月廿零",
+            "lunar": "乙丑 牛年二月二十",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -175,7 +175,7 @@
         },
         {
             "date": "2045-04-08",
-            "lunar": "乙丑 牛年二月廿一",
+            "lunar": "乙丑 牛年二月二十一",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -203,7 +203,7 @@
         },
         {
             "date": "2045-04-09",
-            "lunar": "乙丑 牛年二月廿二",
+            "lunar": "乙丑 牛年二月二十二",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -226,7 +226,7 @@
         },
         {
             "date": "2045-04-10",
-            "lunar": "乙丑 牛年二月廿三",
+            "lunar": "乙丑 牛年二月二十三",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -239,12 +239,17 @@
                     "name": "圣傅培(沙尔德主教 St. Fulbert)\\\\1041001",
                     "rank": 2,
                     "code": 1041001
+                },
+                {
+                    "name": "复活期第一周(星期一)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2045-04-11",
-            "lunar": "乙丑 牛年二月廿四",
+            "lunar": "乙丑 牛年二月二十四",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -262,12 +267,17 @@
                     "name": "圣瑰玛•甘甘妮(St. Gemma Galgan)\\\\1041102",
                     "rank": 2,
                     "code": 1041102
+                },
+                {
+                    "name": "复活期第一周(星期二)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2045-04-12",
-            "lunar": "乙丑 牛年二月廿五",
+            "lunar": "乙丑 牛年二月二十五",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -285,12 +295,17 @@
                     "name": "圣柴诺(万罗纳主教 St. Zeno)\\\\1041202",
                     "rank": 2,
                     "code": 1041202
+                },
+                {
+                    "name": "复活期第一周(星期三)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2045-04-13",
-            "lunar": "乙丑 牛年二月廿六",
+            "lunar": "乙丑 牛年二月二十六",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -303,12 +318,17 @@
                     "name": "圣玛尔定一世(教宗殉道 St. Martin I)\\\\1041301",
                     "rank": 2,
                     "code": 1041301
+                },
+                {
+                    "name": "复活期第一周(星期四)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2045-04-14",
-            "lunar": "乙丑 牛年二月廿七",
+            "lunar": "乙丑 牛年二月二十七",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -326,12 +346,17 @@
                     "name": "真福李维娜(童贞 Bd. Lydwina of Schiedam)\\\\1041402",
                     "rank": 2,
                     "code": 1041402
+                },
+                {
+                    "name": "复活期第一周(星期五)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2045-04-15",
-            "lunar": "乙丑 牛年二月廿八",
+            "lunar": "乙丑 牛年二月二十八",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -344,12 +369,17 @@
                     "name": "圣本笃•若瑟•雷伯(St. Benedict Joseph Labre)\\\\1041501",
                     "rank": 2,
                     "code": 1041501
+                },
+                {
+                    "name": "复活期第一周(星期六)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2045-04-16",
-            "lunar": "乙丑 牛年二月廿九",
+            "lunar": "乙丑 牛年二月二十九",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [

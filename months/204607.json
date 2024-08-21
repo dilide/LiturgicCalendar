@@ -4,7 +4,7 @@
     "items": [
         {
             "date": "2046-07-01",
-            "lunar": "丙寅 虎年五月廿八",
+            "lunar": "丙寅 虎年五月二十八",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -27,7 +27,7 @@
         },
         {
             "date": "2046-07-02",
-            "lunar": "丙寅 虎年五月廿九",
+            "lunar": "丙寅 虎年五月二十九",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -460,7 +460,7 @@
         },
         {
             "date": "2046-07-23",
-            "lunar": "丙寅 虎年六月廿零",
+            "lunar": "丙寅 虎年六月二十",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -478,7 +478,7 @@
         },
         {
             "date": "2046-07-24",
-            "lunar": "丙寅 虎年六月廿一",
+            "lunar": "丙寅 虎年六月二十一",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -501,7 +501,7 @@
         },
         {
             "date": "2046-07-25",
-            "lunar": "丙寅 虎年六月廿二",
+            "lunar": "丙寅 虎年六月二十二",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -524,7 +524,7 @@
         },
         {
             "date": "2046-07-26",
-            "lunar": "丙寅 虎年六月廿三",
+            "lunar": "丙寅 虎年六月二十三",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -547,7 +547,7 @@
         },
         {
             "date": "2046-07-27",
-            "lunar": "丙寅 虎年六月廿四",
+            "lunar": "丙寅 虎年六月二十四",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -570,7 +570,7 @@
         },
         {
             "date": "2046-07-28",
-            "lunar": "丙寅 虎年六月廿五",
+            "lunar": "丙寅 虎年六月二十五",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -588,7 +588,7 @@
         },
         {
             "date": "2046-07-29",
-            "lunar": "丙寅 虎年六月廿六",
+            "lunar": "丙寅 虎年六月二十六",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -606,7 +606,7 @@
         },
         {
             "date": "2046-07-30",
-            "lunar": "丙寅 虎年六月廿七",
+            "lunar": "丙寅 虎年六月二十七",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -629,7 +629,7 @@
         },
         {
             "date": "2046-07-31",
-            "lunar": "丙寅 虎年六月廿八",
+            "lunar": "丙寅 虎年六月二十八",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [

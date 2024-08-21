@@ -4,7 +4,7 @@
     "items": [
         {
             "date": "2011-04-01",
-            "lunar": "辛卯 兔年二月廿八",
+            "lunar": "辛卯 兔年二月二十八",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
@@ -27,7 +27,7 @@
         },
         {
             "date": "2011-04-02",
-            "lunar": "辛卯 兔年二月廿九",
+            "lunar": "辛卯 兔年二月二十九",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
@@ -467,7 +467,7 @@
         },
         {
             "date": "2011-04-22",
-            "lunar": "辛卯 兔年三月廿零",
+            "lunar": "辛卯 兔年三月二十",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -495,7 +495,7 @@
         },
         {
             "date": "2011-04-23",
-            "lunar": "辛卯 兔年三月廿一",
+            "lunar": "辛卯 兔年三月二十一",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -523,7 +523,7 @@
         },
         {
             "date": "2011-04-24",
-            "lunar": "辛卯 兔年三月廿二",
+            "lunar": "辛卯 兔年三月二十二",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -546,7 +546,7 @@
         },
         {
             "date": "2011-04-25",
-            "lunar": "辛卯 兔年三月廿三",
+            "lunar": "辛卯 兔年三月二十三",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -559,12 +559,17 @@
                     "name": "圣马尔谷(St. Mark)(庆)\\\\1042501",
                     "rank": 4,
                     "code": 1042501
+                },
+                {
+                    "name": "复活期第一周(星期一)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2011-04-26",
-            "lunar": "辛卯 兔年三月廿四",
+            "lunar": "辛卯 兔年三月二十四",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -582,12 +587,17 @@
                     "name": "圣女方佳(童贞女修院院长 St. Franca of Piacenza)\\\\1042602",
                     "rank": 2,
                     "code": 1042602
+                },
+                {
+                    "name": "复活期第一周(星期二)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2011-04-27",
-            "lunar": "辛卯 兔年三月廿五",
+            "lunar": "辛卯 兔年三月二十五",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -600,12 +610,17 @@
                     "name": "圣女纪达(童贞 St. Zita)\\\\1042701",
                     "rank": 2,
                     "code": 1042701
+                },
+                {
+                    "name": "复活期第一周(星期三)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2011-04-28",
-            "lunar": "辛卯 兔年三月廿六",
+            "lunar": "辛卯 兔年三月二十六",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -623,12 +638,17 @@
                     "name": "圣伯多禄•尚纳神父(殉道 St. Peter Mary Chanel)\\\\1042802",
                     "rank": 2,
                     "code": 1042802
+                },
+                {
+                    "name": "复活期第一周(星期四)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2011-04-29",
-            "lunar": "辛卯 兔年三月廿七",
+            "lunar": "辛卯 兔年三月二十七",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -646,12 +666,17 @@
                     "name": "圣若瑟•高登伦哥(St. Joseph Cottolengo)\\\\1042902",
                     "rank": 2,
                     "code": 1042902
+                },
+                {
+                    "name": "复活期第一周(星期五)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         },
         {
             "date": "2011-04-30",
-            "lunar": "辛卯 兔年三月廿八",
+            "lunar": "辛卯 兔年三月二十八",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -664,6 +689,11 @@
                     "name": "圣比约五世(教宗 Pius V Michele Ghislieril)\\\\1043001",
                     "rank": 2,
                     "code": 1043001
+                },
+                {
+                    "name": "复活期第一周(星期六)",
+                    "rank": 0,
+                    "code": -1
                 }
             ]
         }

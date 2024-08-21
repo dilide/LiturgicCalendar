@@ -400,7 +400,7 @@
         },
         {
             "date": "2041-06-18",
-            "lunar": "辛酉 鸡年五月廿零",
+            "lunar": "辛酉 鸡年五月二十",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -428,7 +428,7 @@
         },
         {
             "date": "2041-06-19",
-            "lunar": "辛酉 鸡年五月廿一",
+            "lunar": "辛酉 鸡年五月二十一",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -451,7 +451,7 @@
         },
         {
             "date": "2041-06-20",
-            "lunar": "辛酉 鸡年五月廿二",
+            "lunar": "辛酉 鸡年五月二十二",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -479,7 +479,7 @@
         },
         {
             "date": "2041-06-21",
-            "lunar": "辛酉 鸡年五月廿三",
+            "lunar": "辛酉 鸡年五月二十三",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -502,7 +502,7 @@
         },
         {
             "date": "2041-06-22",
-            "lunar": "辛酉 鸡年五月廿四",
+            "lunar": "辛酉 鸡年五月二十四",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -530,10 +530,15 @@
         },
         {
             "date": "2041-06-23",
-            "lunar": "辛酉 鸡年五月廿五",
-            "color": "#00FF00",
-            "colorStr": "绿",
+            "lunar": "辛酉 鸡年五月二十五",
+            "color": "#DDDDDD",
+            "colorStr": "白",
             "liturgics": [
+                {
+                    "name": "基督圣体圣血节\\\\5",
+                    "rank": 10,
+                    "code": 5
+                },
                 {
                     "name": "常年期第十二主日",
                     "rank": 5,
@@ -548,7 +553,7 @@
         },
         {
             "date": "2041-06-24",
-            "lunar": "辛酉 鸡年五月廿六",
+            "lunar": "辛酉 鸡年五月二十六",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -566,7 +571,7 @@
         },
         {
             "date": "2041-06-25",
-            "lunar": "辛酉 鸡年五月廿七",
+            "lunar": "辛酉 鸡年五月二十七",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -589,7 +594,7 @@
         },
         {
             "date": "2041-06-26",
-            "lunar": "辛酉 鸡年五月廿八",
+            "lunar": "辛酉 鸡年五月二十八",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -607,7 +612,7 @@
         },
         {
             "date": "2041-06-27",
-            "lunar": "辛酉 鸡年五月廿九",
+            "lunar": "辛酉 鸡年五月二十九",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [

@@ -4,7 +4,7 @@
     "items": [
         {
             "date": "2016-01-01",
-            "lunar": "乙未 羊年冬月廿二",
+            "lunar": "乙未 羊年冬月二十二",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -22,7 +22,7 @@
         },
         {
             "date": "2016-01-02",
-            "lunar": "乙未 羊年冬月廿三",
+            "lunar": "乙未 羊年冬月二十三",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -45,7 +45,7 @@
         },
         {
             "date": "2016-01-03",
-            "lunar": "乙未 羊年冬月廿四",
+            "lunar": "乙未 羊年冬月二十四",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -73,7 +73,7 @@
         },
         {
             "date": "2016-01-04",
-            "lunar": "乙未 羊年冬月廿五",
+            "lunar": "乙未 羊年冬月二十五",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -96,7 +96,7 @@
         },
         {
             "date": "2016-01-05",
-            "lunar": "乙未 羊年冬月廿六",
+            "lunar": "乙未 羊年冬月二十六",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -119,7 +119,7 @@
         },
         {
             "date": "2016-01-06",
-            "lunar": "乙未 羊年冬月廿七",
+            "lunar": "乙未 羊年冬月二十七",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -142,7 +142,7 @@
         },
         {
             "date": "2016-01-07",
-            "lunar": "乙未 羊年冬月廿八",
+            "lunar": "乙未 羊年冬月二十八",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -160,7 +160,7 @@
         },
         {
             "date": "2016-01-08",
-            "lunar": "乙未 羊年冬月廿九",
+            "lunar": "乙未 羊年冬月二十九",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -588,7 +588,7 @@
         },
         {
             "date": "2016-01-29",
-            "lunar": "乙未 羊年腊月廿零",
+            "lunar": "乙未 羊年腊月二十",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -611,7 +611,7 @@
         },
         {
             "date": "2016-01-30",
-            "lunar": "乙未 羊年腊月廿一",
+            "lunar": "乙未 羊年腊月二十一",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -639,7 +639,7 @@
         },
         {
             "date": "2016-01-31",
-            "lunar": "乙未 羊年腊月廿二",
+            "lunar": "乙未 羊年腊月二十二",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [

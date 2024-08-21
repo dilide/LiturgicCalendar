@@ -4,7 +4,7 @@
     "items": [
         {
             "date": "2021-11-01",
-            "lunar": "辛丑 牛年九月廿七",
+            "lunar": "辛丑 牛年九月二十七",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -22,7 +22,7 @@
         },
         {
             "date": "2021-11-02",
-            "lunar": "辛丑 牛年九月廿八",
+            "lunar": "辛丑 牛年九月二十八",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
@@ -40,7 +40,7 @@
         },
         {
             "date": "2021-11-03",
-            "lunar": "辛丑 牛年九月廿九",
+            "lunar": "辛丑 牛年九月二十九",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -463,7 +463,7 @@
         },
         {
             "date": "2021-11-24",
-            "lunar": "辛丑 牛年十月廿零",
+            "lunar": "辛丑 牛年十月二十",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -481,7 +481,7 @@
         },
         {
             "date": "2021-11-25",
-            "lunar": "辛丑 牛年十月廿一",
+            "lunar": "辛丑 牛年十月二十一",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -504,7 +504,7 @@
         },
         {
             "date": "2021-11-26",
-            "lunar": "辛丑 牛年十月廿二",
+            "lunar": "辛丑 牛年十月二十二",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -522,7 +522,7 @@
         },
         {
             "date": "2021-11-27",
-            "lunar": "辛丑 牛年十月廿三",
+            "lunar": "辛丑 牛年十月二十三",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -540,7 +540,7 @@
         },
         {
             "date": "2021-11-28",
-            "lunar": "辛丑 牛年十月廿四",
+            "lunar": "辛丑 牛年十月二十四",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
@@ -558,7 +558,7 @@
         },
         {
             "date": "2021-11-29",
-            "lunar": "辛丑 牛年十月廿五",
+            "lunar": "辛丑 牛年十月二十五",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
@@ -581,7 +581,7 @@
         },
         {
             "date": "2021-11-30",
-            "lunar": "辛丑 牛年十月廿六",
+            "lunar": "辛丑 牛年十月二十六",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [

@@ -4,7 +4,7 @@
     "items": [
         {
             "date": "2030-03-01",
-            "lunar": "庚戌 狗年正月廿七",
+            "lunar": "庚戌 狗年正月二十七",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -22,7 +22,7 @@
         },
         {
             "date": "2030-03-02",
-            "lunar": "庚戌 狗年正月廿八",
+            "lunar": "庚戌 狗年正月二十八",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -45,7 +45,7 @@
         },
         {
             "date": "2030-03-03",
-            "lunar": "庚戌 狗年正月廿九",
+            "lunar": "庚戌 狗年正月二十九",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -455,7 +455,7 @@
         },
         {
             "date": "2030-03-23",
-            "lunar": "庚戌 狗年二月廿零",
+            "lunar": "庚戌 狗年二月二十",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
@@ -478,7 +478,7 @@
         },
         {
             "date": "2030-03-24",
-            "lunar": "庚戌 狗年二月廿一",
+            "lunar": "庚戌 狗年二月二十一",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
@@ -501,7 +501,7 @@
         },
         {
             "date": "2030-03-25",
-            "lunar": "庚戌 狗年二月廿二",
+            "lunar": "庚戌 狗年二月二十二",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -529,7 +529,7 @@
         },
         {
             "date": "2030-03-26",
-            "lunar": "庚戌 狗年二月廿三",
+            "lunar": "庚戌 狗年二月二十三",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
@@ -552,7 +552,7 @@
         },
         {
             "date": "2030-03-27",
-            "lunar": "庚戌 狗年二月廿四",
+            "lunar": "庚戌 狗年二月二十四",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
@@ -570,7 +570,7 @@
         },
         {
             "date": "2030-03-28",
-            "lunar": "庚戌 狗年二月廿五",
+            "lunar": "庚戌 狗年二月二十五",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
@@ -588,7 +588,7 @@
         },
         {
             "date": "2030-03-29",
-            "lunar": "庚戌 狗年二月廿六",
+            "lunar": "庚戌 狗年二月二十六",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
@@ -611,7 +611,7 @@
         },
         {
             "date": "2030-03-30",
-            "lunar": "庚戌 狗年二月廿七",
+            "lunar": "庚戌 狗年二月二十七",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
@@ -629,7 +629,7 @@
         },
         {
             "date": "2030-03-31",
-            "lunar": "庚戌 狗年二月廿八",
+            "lunar": "庚戌 狗年二月二十八",
             "color": "#FF0DA6",
             "colorStr": "玫",
             "liturgics": [

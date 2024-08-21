@@ -4,7 +4,7 @@
     "items": [
         {
             "date": "2026-12-01",
-            "lunar": "丙午 马年十月廿三",
+            "lunar": "丙午 马年十月二十三",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
@@ -27,7 +27,7 @@
         },
         {
             "date": "2026-12-02",
-            "lunar": "丙午 马年十月廿四",
+            "lunar": "丙午 马年十月二十四",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
@@ -45,7 +45,7 @@
         },
         {
             "date": "2026-12-03",
-            "lunar": "丙午 马年十月廿五",
+            "lunar": "丙午 马年十月二十五",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -63,7 +63,7 @@
         },
         {
             "date": "2026-12-04",
-            "lunar": "丙午 马年十月廿六",
+            "lunar": "丙午 马年十月二十六",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
@@ -81,7 +81,7 @@
         },
         {
             "date": "2026-12-05",
-            "lunar": "丙午 马年十月廿七",
+            "lunar": "丙午 马年十月二十七",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
@@ -99,7 +99,7 @@
         },
         {
             "date": "2026-12-06",
-            "lunar": "丙午 马年十月廿八",
+            "lunar": "丙午 马年十月二十八",
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
@@ -117,7 +117,7 @@
         },
         {
             "date": "2026-12-07",
-            "lunar": "丙午 马年十月廿九",
+            "lunar": "丙午 马年十月二十九",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -540,7 +540,7 @@
         },
         {
             "date": "2026-12-28",
-            "lunar": "丙午 马年冬月廿零",
+            "lunar": "丙午 马年冬月二十",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -558,7 +558,7 @@
         },
         {
             "date": "2026-12-29",
-            "lunar": "丙午 马年冬月廿一",
+            "lunar": "丙午 马年冬月二十一",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -576,7 +576,7 @@
         },
         {
             "date": "2026-12-30",
-            "lunar": "丙午 马年冬月廿二",
+            "lunar": "丙午 马年冬月二十二",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -594,7 +594,7 @@
         },
         {
             "date": "2026-12-31",
-            "lunar": "丙午 马年冬月廿三",
+            "lunar": "丙午 马年冬月二十三",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [

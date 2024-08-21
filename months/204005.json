@@ -4,7 +4,7 @@
     "items": [
         {
             "date": "2040-05-01",
-            "lunar": "庚申 猴年三月廿一",
+            "lunar": "庚申 猴年三月二十一",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -27,7 +27,7 @@
         },
         {
             "date": "2040-05-02",
-            "lunar": "庚申 猴年三月廿二",
+            "lunar": "庚申 猴年三月二十二",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -50,7 +50,7 @@
         },
         {
             "date": "2040-05-03",
-            "lunar": "庚申 猴年三月廿三",
+            "lunar": "庚申 猴年三月二十三",
             "color": "#FF0000",
             "colorStr": "红",
             "liturgics": [
@@ -68,7 +68,7 @@
         },
         {
             "date": "2040-05-04",
-            "lunar": "庚申 猴年三月廿四",
+            "lunar": "庚申 猴年三月二十四",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -91,7 +91,7 @@
         },
         {
             "date": "2040-05-05",
-            "lunar": "庚申 猴年三月廿五",
+            "lunar": "庚申 猴年三月二十五",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -109,7 +109,7 @@
         },
         {
             "date": "2040-05-06",
-            "lunar": "庚申 猴年三月廿六",
+            "lunar": "庚申 猴年三月二十六",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -132,7 +132,7 @@
         },
         {
             "date": "2040-05-07",
-            "lunar": "庚申 猴年三月廿七",
+            "lunar": "庚申 猴年三月二十七",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -155,7 +155,7 @@
         },
         {
             "date": "2040-05-08",
-            "lunar": "庚申 猴年三月廿八",
+            "lunar": "庚申 猴年三月二十八",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -183,7 +183,7 @@
         },
         {
             "date": "2040-05-09",
-            "lunar": "庚申 猴年三月廿九",
+            "lunar": "庚申 猴年三月二十九",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
@@ -661,7 +661,7 @@
         },
         {
             "date": "2040-05-30",
-            "lunar": "庚申 猴年四月廿零",
+            "lunar": "庚申 猴年四月二十",
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
@@ -679,7 +679,7 @@
         },
         {
             "date": "2040-05-31",
-            "lunar": "庚申 猴年四月廿一",
+            "lunar": "庚申 猴年四月二十一",
             "color": "#DDDDDD",
             "colorStr": "白",
             "liturgics": [
