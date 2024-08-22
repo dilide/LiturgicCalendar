@@ -220,13 +220,21 @@ std::string LiturgicDay::getWeekdayString(int code) {
     int season = code/10000;
     int weekNum = (code%10000)/100;
     int dayNum = code%100;
-    
+
     return LiturgicDay::getWeekdayString((season_t)season, weekNum, dayNum);
 }
 
 
 std::string LiturgicDay::getWeekdayString(const season_t &season, const int &weekOfSeason, const int &dayOfWeek) {
     std::ostringstream ostr;
+
+	if(LENT == season && 0 == weekOfSeason) {
+		if(dayOfWeek != 3) {
+			ostr<<"圣灰礼仪后" + CathAssist::Calendar::getDayStr((day_t)dayOfWeek);
+			return ostr.str();
+		}
+	}
+
     if(dayOfWeek==SUN)
     {
         ostr<<CathAssist::Calendar::getSeasonStr(season)

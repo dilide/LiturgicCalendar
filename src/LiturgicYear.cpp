@@ -701,14 +701,21 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         mapPropers.insert(std::make_pair(1121601,CellInfo(OPTIONAL,NOCOLOR,"圣妇亚德莱(St. Adelaide)")));
         mapPropers.insert(std::make_pair(1121701,CellInfo(OPTIONAL,NOCOLOR,"圣拉匝禄(St. Lazarus)")));
         mapPropers.insert(std::make_pair(1121702,CellInfo(OPTIONAL,NOCOLOR,"圣妇奥林比亚(St. Olympias 361-408)")));
+        mapPropers.insert(std::make_pair(1121703,CellInfo(MEMORIAL,PURPLE,"将临期 十二月十七日")));
         mapPropers.insert(std::make_pair(1121801,CellInfo(OPTIONAL,NOCOLOR,"圣威纳巴(院长 St. Wunibald)")));
         mapPropers.insert(std::make_pair(1121802,CellInfo(OPTIONAL,NOCOLOR,"圣斯多米(院长 St. Sturmi)")));
+        mapPropers.insert(std::make_pair(1121803,CellInfo(MEMORIAL,PURPLE,"将临期 十二月十八日")));
         mapPropers.insert(std::make_pair(1121901,CellInfo(OPTIONAL,NOCOLOR,"圣南米修及其他殉道烈士(Ss. Nemesius and other Martyrs)")));
+        mapPropers.insert(std::make_pair(1121902,CellInfo(MEMORIAL,PURPLE,"将临期 十二月十九日")));
         mapPropers.insert(std::make_pair(1122001,CellInfo(OPTIONAL,NOCOLOR,"圣多明我•西洛(院长 St. Dominic of Silos -1073)")));
+        mapPropers.insert(std::make_pair(1122002,CellInfo(MEMORIAL,PURPLE,"将临期 十二月二十日")));
         //21日
         mapPropers.insert(std::make_pair(1122101,CellInfo(OPTIONAL,NOCOLOR,"圣伯多禄•加尼削(圣师 St. Peter Canisius)")));
+        mapPropers.insert(std::make_pair(1122102,CellInfo(MEMORIAL,PURPLE,"将临期 十二月二十一日")));
         mapPropers.insert(std::make_pair(1122201,CellInfo(OPTIONAL,NOCOLOR,"圣女方济加(童贞 圣心传教女修会创办人 St. Frances Xavier Cabrini 1850-1917)")));
+        mapPropers.insert(std::make_pair(1122202,CellInfo(MEMORIAL,PURPLE,"将临期 十二月二十二日")));
         mapPropers.insert(std::make_pair(1122301,CellInfo(OPTIONAL,NOCOLOR,"圣若望根地(St. John of Kanti 1297-1473)")));
+        mapPropers.insert(std::make_pair(1122302,CellInfo(MEMORIAL,PURPLE,"将临期 十二月二十三日")));
         mapPropers.insert(std::make_pair(1122401,CellInfo(SOLEMNITY,WHITE,"耶稣圣诞节望日")));
         mapPropers.insert(std::make_pair(1122501,CellInfo(SOLEMNITY,WHITE,"耶稣圣诞(The Birthday of Our Lord Jesus Christ)")));
         //26日
@@ -1121,7 +1128,7 @@ std::list<CellInfo> LiturgicYear::getNormalDays()
     }
     {
         // 圣诞期
-        for(int i=1; i<=2; ++i) {
+        for(int i=1; i<=3; ++i) {
             for(int j=0; j<=6; ++j) {
                 int code = CHRISTMAS*10000 + i*100 + j;
                 days.push_back(CellInfo(code, OPTIONAL, NOCOLOR, LiturgicDay::getWeekdayString(code), 1));

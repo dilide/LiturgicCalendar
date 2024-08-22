@@ -290,22 +290,19 @@ void export_to_sqlite()
 void export_to_mass() {
     Calendar::initCalendar();
 
-    std::ofstream of, of2;
+    std::ofstream of;
     of.open(string("./mass.sql"));
-    of2.open(string("./mass.csv"));
     {
-        // 表头
-        of2<<"编号;名称;循环(年)"<<std::endl;
-        
-        
         // 礼仪年
         {
             auto days = LiturgicYear::getNormalDays();
             auto iter = days.begin();
             while (iter != days.end()) {
                 std::cout<<iter->celebration<<std::endl;
-                of<< "insert into easter_mass(code, name) values("<<iter->code<<",'"<<ansi2utf8(sqlite3_mprintf("%q",iter->celebration.c_str()))<<"');"<<std::endl;
-                of2<<iter->code<<";\""<<ansi2utf8(sqlite3_mprintf("%q",iter->celebration.c_str()))<<"\";"<<iter->cycleOfReadings<<std::endl;
+
+                of<<"insert into easter_mass(code, name) select "<<iter->code<<",'"<<ansi2utf8(sqlite3_mprintf("%q",iter->celebration.c_str()))<<"'"
+                        <<" where not exists (select 1 from easter_mass where code="<<iter->code<<");"<<std::endl;
+                of<<"update easter_mass set name='"<<ansi2utf8(sqlite3_mprintf("%q",iter->celebration.c_str()))<<"'"<<" where code="<<iter->code<<";"<<std::endl;
                 ++iter;
             }
         }        
@@ -321,14 +318,12 @@ void export_to_mass() {
                     of<<"insert into easter_mass(code, name) select "<<iter->second.code<<",'"<<ansi2utf8(sqlite3_mprintf("%q",iter->second.celebration.c_str()))<<"'"
                         <<" where not exists (select 1 from easter_mass where code="<<iter->second.code<<");"<<std::endl;
                     of<<"update easter_mass set name='"<<ansi2utf8(sqlite3_mprintf("%q",iter->second.celebration.c_str()))<<"'"<<" where code="<<iter->second.code<<";"<<std::endl;
-                    of2<<iter->second.code<<";\""<<ansi2utf8(sqlite3_mprintf("%q",iter->second.celebration.c_str()))<<"\";"<<iter->second.cycleOfReadings<<std::endl;
                 }
                 ++iter;
             }
         }
     }
     of.close();
-    of2.close();
     
     Calendar::releaseCalendar();
 }
@@ -362,10 +357,10 @@ void calendar_test()
 
 int main(int argc, char *argv[])
 {
-//    export_month_json_test();
+    export_month_json_test();
     export_to_sqlite();
-//    export_to_mass();
+    export_to_mass();
     
-    //calendar_test();
+    calendar_test();
     return 0;
 }

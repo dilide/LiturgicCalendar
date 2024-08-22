@@ -332,6 +332,11 @@
             "colorStr": "紫",
             "liturgics": [
                 {
+                    "name": "将临期 十二月十七日(纪)\\\\1121703",
+                    "rank": 3,
+                    "code": 1121703
+                },
+                {
                     "name": "圣拉匝禄(St. Lazarus)\\\\1121701",
                     "rank": 2,
                     "code": 1121701
@@ -354,6 +359,11 @@
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
+                {
+                    "name": "将临期 十二月十八日(纪)\\\\1121803",
+                    "rank": 3,
+                    "code": 1121803
+                },
                 {
                     "name": "圣威纳巴(院长 St. Wunibald)\\\\1121801",
                     "rank": 2,
@@ -378,6 +388,11 @@
             "colorStr": "紫",
             "liturgics": [
                 {
+                    "name": "将临期 十二月十九日(纪)\\\\1121902",
+                    "rank": 3,
+                    "code": 1121902
+                },
+                {
                     "name": "圣南米修及其他殉道烈士(Ss. Nemesius and other Martyrs)\\\\1121901",
                     "rank": 2,
                     "code": 1121901
@@ -395,6 +410,11 @@
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
+                {
+                    "name": "将临期 十二月二十日(纪)\\\\1122002",
+                    "rank": 3,
+                    "code": 1122002
+                },
                 {
                     "name": "圣多明我•西洛(院长 St. Dominic of Silos -1073)\\\\1122001",
                     "rank": 2,
@@ -414,6 +434,11 @@
             "colorStr": "紫",
             "liturgics": [
                 {
+                    "name": "将临期 十二月二十一日(纪)\\\\1122102",
+                    "rank": 3,
+                    "code": 1122102
+                },
+                {
                     "name": "圣伯多禄•加尼削(圣师 St. Peter Canisius)\\\\1122101",
                     "rank": 2,
                     "code": 1122101
@@ -431,6 +456,11 @@
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
+                {
+                    "name": "将临期 十二月二十二日(纪)\\\\1122202",
+                    "rank": 3,
+                    "code": 1122202
+                },
                 {
                     "name": "圣女方济加(童贞 圣心传教女修会创办人 St. Frances Xavier Cabrini 1850-1917)\\\\1122201",
                     "rank": 2,
@@ -453,6 +483,11 @@
                     "name": "将临期第四主日",
                     "rank": 5,
                     "code": -1
+                },
+                {
+                    "name": "将临期 十二月二十三日(纪)\\\\1122302",
+                    "rank": 3,
+                    "code": 1122302
                 },
                 {
                     "name": "圣若望根地(St. John of Kanti 1297-1473)\\\\1122301",
