@@ -585,9 +585,14 @@
         {
             "date": "2010-06-26",
             "lunar": "庚寅 虎年五月十五",
-            "color": "#00FF00",
-            "colorStr": "绿",
+            "color": "#DDDDDD",
+            "colorStr": "白",
             "liturgics": [
+                {
+                    "name": "圣施礼华(司铎 St. Josemaria)(纪)\\\\1062602",
+                    "rank": 3,
+                    "code": 1062602
+                },
                 {
                     "name": "圣安德莫(比利主教 St. Anthelm)\\\\1062601",
                     "rank": 2,
@@ -648,14 +653,9 @@
             "colorStr": "红",
             "liturgics": [
                 {
-                    "name": "圣伯多禄宗徒(St. Peter Apostle)(庆)\\\\1062901",
+                    "name": "圣伯多禄及圣保禄宗徒(St. Peter Apostle & St. Paul Apostle)(庆)\\\\1062901",
                     "rank": 4,
                     "code": 1062901
-                },
-                {
-                    "name": "圣保禄宗徒(St. Paul Apostle)(庆)\\\\1062902",
-                    "rank": 4,
-                    "code": 1062902
                 },
                 {
                     "name": "常年期第十三周(星期二)",

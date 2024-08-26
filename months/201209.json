@@ -97,9 +97,14 @@
         {
             "date": "2012-09-05",
             "lunar": "壬辰 龙年七月二十",
-            "color": "#00FF00",
-            "colorStr": "绿",
+            "color": "#DDDDDD",
+            "colorStr": "白",
             "liturgics": [
+                {
+                    "name": "圣德肋撒·加尔各答(St. Teresa of Calcutta)(纪)\\\\1090502",
+                    "rank": 3,
+                    "code": 1090502
+                },
                 {
                     "name": "圣老楞佐•儒斯定(威尼斯宗主教 St. Laurence Giustiniani)\\\\1090501",
                     "rank": 2,
@@ -248,12 +253,12 @@
         {
             "date": "2012-09-12",
             "lunar": "壬辰 龙年七月二十七",
-            "color": "#00FF00",
-            "colorStr": "绿",
+            "color": "#DDDDDD",
+            "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣母圣名节(The Holy Name of Mary)\\\\1091201",
-                    "rank": 2,
+                    "name": "圣母圣名节(The Holy Name of Mary)(纪)\\\\1091201",
+                    "rank": 3,
                     "code": 1091201
                 },
                 {
@@ -349,14 +354,9 @@
                     "code": -1
                 },
                 {
-                    "name": "圣高尔内略(教宗殉道 St. Cornelius)(纪)\\\\1091601",
+                    "name": "圣高尔内略及圣西彼廉主教(殉道 St. Cornelius & St. Cyprian)(纪)\\\\1091601",
                     "rank": 3,
                     "code": 1091601
-                },
-                {
-                    "name": "圣西彼廉(迦太基主教殉道 St. Cyprian)(纪)\\\\1091602",
-                    "rank": 3,
-                    "code": 1091602
                 }
             ]
         },
@@ -495,6 +495,11 @@
                     "code": -1
                 },
                 {
+                    "name": "圣比约•庇特來(司铎 St. Pio of Pietrelcina.)(纪)\\\\1092303",
+                    "rank": 3,
+                    "code": 1092303
+                },
+                {
                     "name": "圣理诺(教宗殉道 St. Linus)\\\\1092301",
                     "rank": 2,
                     "code": 1092301
@@ -623,19 +628,9 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣弥额尔大天使(St. Michael the Archangel)(庆)\\\\1092901",
+                    "name": "诸圣天使(圣弥额尔、圣加俾额尔、圣拉法厄尔)(庆)\\\\1092901",
                     "rank": 4,
                     "code": 1092901
-                },
-                {
-                    "name": "圣嘉俾厄尔大天使(St. Gabriel the Archangel)(庆)\\\\1092902",
-                    "rank": 4,
-                    "code": 1092902
-                },
-                {
-                    "name": "圣拉法厄尔大天使(St. Raphael the Archangel)(庆)\\\\1092903",
-                    "rank": 4,
-                    "code": 1092903
                 },
                 {
                     "name": "常年期第二十五周(星期六)",

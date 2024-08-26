@@ -77,12 +77,12 @@
         {
             "date": "2040-10-05",
             "lunar": "庚申 猴年八月三十",
-            "color": "#00FF00",
-            "colorStr": "绿",
+            "color": "#DDDDDD",
+            "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣女傅天娜(St. Faustina)\\\\1100501",
-                    "rank": 2,
+                    "name": "圣女傅天娜(童贞 St. Faustina)(纪)\\\\1100501",
+                    "rank": 3,
                     "code": 1100501
                 },
                 {

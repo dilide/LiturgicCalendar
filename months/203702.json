@@ -109,7 +109,7 @@
             "colorStr": "红",
             "liturgics": [
                 {
-                    "name": "日本殉道烈士诸圣(the Martyrs of Japan)(纪)\\\\1020601",
+                    "name": "圣保禄三木司铎及同伴(the Martyrs of Japan)(纪)\\\\1020601",
                     "rank": 3,
                     "code": 1020601
                 },
@@ -278,6 +278,11 @@
             "colorStr": "白",
             "liturgics": [
                 {
+                    "name": "农历除夕(庆)\\\\11",
+                    "rank": 4,
+                    "code": 11
+                },
+                {
                     "name": "圣济利禄、圣美铎第(主教 Ss. Cyril and Methodius)(纪)\\\\1021401",
                     "rank": 3,
                     "code": 1021401
@@ -304,6 +309,11 @@
                     "name": "常年期第六主日",
                     "rank": 5,
                     "code": -1
+                },
+                {
+                    "name": "农历新春(庆)\\\\12",
+                    "rank": 4,
+                    "code": 12
                 },
                 {
                     "name": "圣傅天定和圣约未达殉道(Ss. Faustinus & Jovita)\\\\1021501",

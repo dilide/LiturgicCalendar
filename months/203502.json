@@ -109,7 +109,7 @@
             "colorStr": "红",
             "liturgics": [
                 {
-                    "name": "日本殉道烈士诸圣(the Martyrs of Japan)(纪)\\\\1020601",
+                    "name": "圣保禄三木司铎及同伴(the Martyrs of Japan)(纪)\\\\1020601",
                     "rank": 3,
                     "code": 1020601
                 },
@@ -137,6 +137,11 @@
                     "code": 40003
                 },
                 {
+                    "name": "农历除夕(庆)\\\\11",
+                    "rank": 4,
+                    "code": 11
+                },
+                {
                     "name": "圣女尤丽娜(童贞 St. Juliana Falconieri)\\\\1020701",
                     "rank": 2,
                     "code": 1020701
@@ -154,6 +159,11 @@
             "color": "#8B00FF",
             "colorStr": "紫",
             "liturgics": [
+                {
+                    "name": "农历新春(庆)\\\\12",
+                    "rank": 4,
+                    "code": 12
+                },
                 {
                     "name": "圣热罗莫•爱弥廉(St. Jierome Emiliani)\\\\1020801",
                     "rank": 2,

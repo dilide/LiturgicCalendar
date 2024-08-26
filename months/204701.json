@@ -50,8 +50,8 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "耶稣圣名节\\\\1010301",
-                    "rank": 2,
+                    "name": "耶稣圣名节(纪)\\\\1010301",
+                    "rank": 3,
                     "code": 1010301
                 },
                 {
@@ -494,12 +494,12 @@
         {
             "date": "2047-01-24",
             "lunar": "丙寅 虎年腊月二十九",
-            "color": "#00FF00",
-            "colorStr": "绿",
+            "color": "#DDDDDD",
+            "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣方济各•撒肋爵(主教圣师 St. Francis de Sales)\\\\1012401",
-                    "rank": 2,
+                    "name": "圣方济各•撒肋爵(主教圣师 St. Francis de Sales)(纪)\\\\1012401",
+                    "rank": 3,
                     "code": 1012401
                 },
                 {
@@ -516,6 +516,11 @@
             "colorStr": "绿",
             "liturgics": [
                 {
+                    "name": "农历除夕(庆)\\\\11",
+                    "rank": 4,
+                    "code": 11
+                },
+                {
                     "name": "圣保禄宗徒归化(The Conversion of St. Paul)\\\\1012501",
                     "rank": 2,
                     "code": 1012501
@@ -530,18 +535,18 @@
         {
             "date": "2047-01-26",
             "lunar": "丁卯 兔年正月初一",
-            "color": "#00FF00",
-            "colorStr": "绿",
+            "color": "#DDDDDD",
+            "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣弟茂德(主教精修 St. Timothy 32-97)\\\\1012601",
-                    "rank": 2,
-                    "code": 1012601
+                    "name": "农历新春(庆)\\\\12",
+                    "rank": 4,
+                    "code": 12
                 },
                 {
-                    "name": "圣弟铎(克里特主教迪德 St. Titus)\\\\1012602",
-                    "rank": 2,
-                    "code": 1012602
+                    "name": "圣弟茂德及圣弟铎(St. Timothy & St. Titus)(纪)\\\\1012601",
+                    "rank": 3,
+                    "code": 1012601
                 },
                 {
                     "name": "常年期第二周(星期六)",
@@ -640,12 +645,12 @@
         {
             "date": "2047-01-31",
             "lunar": "丁卯 兔年正月初六",
-            "color": "#00FF00",
-            "colorStr": "绿",
+            "color": "#DDDDDD",
+            "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣鲍思高(慈幼会会祖 St. John Bosco)\\\\1013101",
-                    "rank": 2,
+                    "name": "圣鲍思高(慈幼会会祖 St. John Bosco)(纪)\\\\1013101",
+                    "rank": 3,
                     "code": 1013101
                 },
                 {

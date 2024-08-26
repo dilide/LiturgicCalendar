@@ -9,8 +9,8 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "大圣若瑟劳工主保(St. Joseph the Worker)\\\\1050101",
-                    "rank": 2,
+                    "name": "大圣若瑟劳工主保(St. Joseph the Worker)(纪)\\\\1050101",
+                    "rank": 3,
                     "code": 1050101
                 },
                 {
@@ -285,8 +285,8 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "法蒂玛圣母(Our Lady of Fatima)\\\\1051301",
-                    "rank": 2,
+                    "name": "法蒂玛圣母(Our Lady of Fatima)(纪)\\\\1051301",
+                    "rank": 3,
                     "code": 1051301
                 },
                 {
@@ -649,9 +649,14 @@
         {
             "date": "2032-05-29",
             "lunar": "壬子 鼠年四月二十一",
-            "color": "#00FF00",
-            "colorStr": "绿",
+            "color": "#DDDDDD",
+            "colorStr": "白",
             "liturgics": [
+                {
+                    "name": "圣保禄六世(教宗 St. Paul VI)(纪)\\\\1052902",
+                    "rank": 3,
+                    "code": 1052902
+                },
                 {
                     "name": "圣济利禄•凯撒利亚(殉道 St. Cyril of Caesarea)\\\\1052901",
                     "rank": 2,

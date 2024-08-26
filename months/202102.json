@@ -109,7 +109,7 @@
             "colorStr": "红",
             "liturgics": [
                 {
-                    "name": "日本殉道烈士诸圣(the Martyrs of Japan)(纪)\\\\1020601",
+                    "name": "圣保禄三木司铎及同伴(the Martyrs of Japan)(纪)\\\\1020601",
                     "rank": 3,
                     "code": 1020601
                 },
@@ -214,6 +214,11 @@
             "colorStr": "绿",
             "liturgics": [
                 {
+                    "name": "农历除夕(庆)\\\\11",
+                    "rank": 4,
+                    "code": 11
+                },
+                {
                     "name": "露德圣母显现(the Appearing of our Lady at Lourdes)\\\\1021101",
                     "rank": 2,
                     "code": 1021101
@@ -231,6 +236,11 @@
             "color": "#00FF00",
             "colorStr": "绿",
             "liturgics": [
+                {
+                    "name": "农历新春(庆)\\\\12",
+                    "rank": 4,
+                    "code": 12
+                },
                 {
                     "name": "圣高登雪(主教 St. Gaudentius)\\\\1021201",
                     "rank": 2,

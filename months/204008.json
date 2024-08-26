@@ -91,8 +91,8 @@
                     "code": -1
                 },
                 {
-                    "name": "罗马圣母大殿奉献日(The Dedication of the Basilica of St. Mary Major)\\\\1080501",
-                    "rank": 2,
+                    "name": "罗马圣母大殿奉献日(The Dedication of the Basilica of St. Mary Major)(纪)\\\\1080501",
+                    "rank": 3,
                     "code": 1080501
                 },
                 {
@@ -274,9 +274,14 @@
         {
             "date": "2040-08-14",
             "lunar": "庚申 猴年七月初七",
-            "color": "#00FF00",
-            "colorStr": "绿",
+            "color": "#FF0000",
+            "colorStr": "红",
             "liturgics": [
+                {
+                    "name": "圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)(纪)\\\\1081402",
+                    "rank": 3,
+                    "code": 1081402
+                },
                 {
                     "name": "真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\\\1081401",
                     "rank": 2,

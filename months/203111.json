@@ -341,12 +341,12 @@
         {
             "date": "2031-11-18",
             "lunar": "辛亥 猪年十月初四",
-            "color": "#00FF00",
-            "colorStr": "绿",
+            "color": "#DDDDDD",
+            "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣伯多禄圣保禄大殿奉献日(The Dedication of the Basilicas of St. Peter and of St. Paul)\\\\1111801",
-                    "rank": 2,
+                    "name": "圣伯多禄圣保禄大殿奉献日(The Dedication of the Basilicas of St. Peter and of St. Paul)(纪)\\\\1111801",
+                    "rank": 3,
                     "code": 1111801
                 },
                 {
