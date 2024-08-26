@@ -512,12 +512,12 @@
         {
             "date": "2011-01-25",
             "lunar": "庚寅 虎年腊月二十二",
-            "color": "#00FF00",
-            "colorStr": "绿",
+            "color": "#DDDDDD",
+            "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣保禄宗徒归化(The Conversion of St. Paul)\\\\1012501",
-                    "rank": 2,
+                    "name": "圣保禄宗徒归化(The Conversion of St. Paul)(庆)\\\\1012501",
+                    "rank": 4,
                     "code": 1012501
                 },
                 {

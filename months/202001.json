@@ -517,8 +517,8 @@
         {
             "date": "2020-01-25",
             "lunar": "庚子 鼠年正月初一",
-            "color": "#00FF00",
-            "colorStr": "绿",
+            "color": "#DDDDDD",
+            "colorStr": "白",
             "liturgics": [
                 {
                     "name": "农历新春(庆)\\\\12",
@@ -526,8 +526,8 @@
                     "code": 12
                 },
                 {
-                    "name": "圣保禄宗徒归化(The Conversion of St. Paul)\\\\1012501",
-                    "rank": 2,
+                    "name": "圣保禄宗徒归化(The Conversion of St. Paul)(庆)\\\\1012501",
+                    "rank": 4,
                     "code": 1012501
                 },
                 {
