@@ -24,18 +24,16 @@ namespace CathAssist
             rank_t rank;                //优先级
             color_t color;              //祭衣颜色
             std::string celebration;    //节日
-            int cycleOfReadings = 1;    //读经循环（如：主日读经三年一循环，平日读经两年一循环）
-			CellInfo(int code, rank_t r, color_t c, const std::string& cel, int cycleOfReadings)
+			CellInfo(int code, rank_t r, color_t c, const std::string& cel)
 			{
                 this->code = code;
 				this->rank = r;
                 this->color = c;
                 celebration = cel;
-                this->cycleOfReadings = cycleOfReadings;
 			}
             
             CellInfo(rank_t r, color_t c, const std::string& cel)
-                : CellInfo(-1, r, c, cel, 1)
+                : CellInfo(-1, r, c, cel)
             {
             }
 

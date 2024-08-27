@@ -169,19 +169,7 @@ CellInfo LiturgicDay::getLiturgicCellInfo() const
 			_rank = ErrorRank;
 		}
 		
-		Date dayChristmas((month()<12 ? year()-1 : year()),12,25);
-		int iAbsChristmas = abs(daysTo(dayChristmas));
-		if(iAbsChristmas<8 && iAbsChristmas>0)
-		{
-			//圣诞庆期八日（第八日是天主之母节）
-			std::ostringstream ostr;
-			ostr<<"圣诞节庆期第"<<getChineseNumStr(iAbsChristmas+1)<<"日";
-			return CellInfo(_rank,WHITE,ostr.str());
-		}
-		else
-		{
-			_clr = WHITE;
-		}
+		_clr = WHITE;
 	}
     
 	return CellInfo(_rank, _clr, toWeekdayString());

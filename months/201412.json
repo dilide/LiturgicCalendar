@@ -535,9 +535,14 @@
         {
             "date": "2014-12-26",
             "lunar": "甲午 马年冬月初五",
-            "color": "#FF0000",
-            "colorStr": "红",
+            "color": "#DDDDDD",
+            "colorStr": "白",
             "liturgics": [
+                {
+                    "name": "圣诞节庆期第二日\\\\31",
+                    "rank": 6,
+                    "code": 31
+                },
                 {
                     "name": "圣斯德望(首位殉道 St. Stephen -34)\\\\1122601",
                     "rank": 4,
@@ -549,7 +554,7 @@
                     "code": 1122602
                 },
                 {
-                    "name": "圣诞节庆期第二日",
+                    "name": "圣诞期第一周(星期五)",
                     "rank": 0,
                     "code": -1
                 }
@@ -562,12 +567,17 @@
             "colorStr": "白",
             "liturgics": [
                 {
+                    "name": "圣诞节庆期第三日\\\\32",
+                    "rank": 6,
+                    "code": 32
+                },
+                {
                     "name": "圣若望(宗徒兼圣史 St. John the Evangelist -100)\\\\1122701",
                     "rank": 4,
                     "code": 1122701
                 },
                 {
-                    "name": "圣诞节庆期第三日",
+                    "name": "圣诞期第一周(星期六)",
                     "rank": 0,
                     "code": -1
                 }
@@ -585,6 +595,11 @@
                     "code": 8
                 },
                 {
+                    "name": "圣诞节庆期第四日\\\\33",
+                    "rank": 6,
+                    "code": 33
+                },
+                {
                     "name": "诸圣婴孩(The Holy Innocents)\\\\1122801",
                     "rank": 4,
                     "code": 1122801
@@ -598,12 +613,17 @@
             "colorStr": "白",
             "liturgics": [
                 {
+                    "name": "圣诞节庆期第五日\\\\34",
+                    "rank": 6,
+                    "code": 34
+                },
+                {
                     "name": "圣多默•贝凯(St. Thomas Becket)\\\\1122901",
                     "rank": 2,
                     "code": 1122901
                 },
                 {
-                    "name": "圣诞节庆期第五日",
+                    "name": "圣诞期第一周(星期一)",
                     "rank": 0,
                     "code": -1
                 }
@@ -616,12 +636,17 @@
             "colorStr": "白",
             "liturgics": [
                 {
+                    "name": "圣诞节庆期第六日\\\\35",
+                    "rank": 6,
+                    "code": 35
+                },
+                {
                     "name": "圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\\\1123001",
                     "rank": 2,
                     "code": 1123001
                 },
                 {
-                    "name": "圣诞节庆期第六日",
+                    "name": "圣诞期第一周(星期二)",
                     "rank": 0,
                     "code": -1
                 }
@@ -634,6 +659,11 @@
             "colorStr": "白",
             "liturgics": [
                 {
+                    "name": "圣诞节庆期第七日\\\\36",
+                    "rank": 6,
+                    "code": 36
+                },
+                {
                     "name": "圣西尔物斯德肋(思维 St. Silvestes 314-335)\\\\1123101",
                     "rank": 2,
                     "code": 1123101
@@ -644,7 +674,7 @@
                     "code": 1123102
                 },
                 {
-                    "name": "圣诞节庆期第七日",
+                    "name": "圣诞期第一周(星期三)",
                     "rank": 0,
                     "code": -1
                 }
