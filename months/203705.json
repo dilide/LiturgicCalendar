@@ -9,7 +9,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "大圣若瑟劳工主保(St. Joseph the Worker)(纪)\\\\1050101",
+                    "name": "大圣若瑟劳工主保(St. Joseph the Worker)\\\\1050101",
                     "rank": 3,
                     "code": 1050101
                 },
@@ -32,7 +32,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣亚大纳削(St. Athanasius)(纪)\\\\1050201",
+                    "name": "圣亚大纳削(St. Athanasius)\\\\1050201",
                     "rank": 3,
                     "code": 1050201
                 },
@@ -60,7 +60,7 @@
                     "code": -1
                 },
                 {
-                    "name": "圣斐理伯、圣雅各伯宗徒(Ss. Philip and James)(庆)\\\\1050301",
+                    "name": "圣斐理伯、圣雅各伯宗徒(Ss. Philip and James)\\\\1050301",
                     "rank": 4,
                     "code": 1050301
                 }
@@ -188,7 +188,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "中华圣母(庆)\\\\9",
+                    "name": "中华圣母\\\\9",
                     "rank": 4,
                     "code": 9
                 },
@@ -280,7 +280,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "法蒂玛圣母(Our Lady of Fatima)(纪)\\\\1051301",
+                    "name": "法蒂玛圣母(Our Lady of Fatima)\\\\1051301",
                     "rank": 3,
                     "code": 1051301
                 },
@@ -308,7 +308,7 @@
                     "code": 50604
                 },
                 {
-                    "name": "圣玛弟亚宗徒(St. Matthias)(庆)\\\\1051401",
+                    "name": "圣玛弟亚宗徒(St. Matthias)\\\\1051401",
                     "rank": 4,
                     "code": 1051401
                 },
@@ -528,7 +528,7 @@
                     "code": -1
                 },
                 {
-                    "name": "圣母进教之佑节(Our Lady Help of Christians)(庆)\\\\1052401",
+                    "name": "圣母进教之佑节(Our Lady Help of Christians)\\\\1052401",
                     "rank": 4,
                     "code": 1052401
                 },
@@ -546,7 +546,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "教会之母(纪)\\\\10",
+                    "name": "教会之母\\\\10",
                     "rank": 3,
                     "code": 10
                 },
@@ -579,7 +579,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣斐理伯•内利(斐理•乃立 St. Philip Neri)(纪)\\\\1052601",
+                    "name": "圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\\\1052601",
                     "rank": 3,
                     "code": 1052601
                 },
@@ -615,7 +615,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "我们的主耶稣基督—永恒的大司祭(庆)\\\\3",
+                    "name": "我们的主耶稣基督—永恒的大司祭\\\\3",
                     "rank": 6,
                     "code": 3
                 },
@@ -643,7 +643,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣保禄六世(教宗 St. Paul VI)(纪)\\\\1052902",
+                    "name": "圣保禄六世(教宗 St. Paul VI)\\\\1052902",
                     "rank": 3,
                     "code": 1052902
                 },
@@ -694,7 +694,7 @@
                     "code": -1
                 },
                 {
-                    "name": "圣母访亲节(the Vistation of the Blessed Virgin Mary)(庆)\\\\1053101",
+                    "name": "圣母访亲节(the Vistation of the Blessed Virgin Mary)\\\\1053101",
                     "rank": 4,
                     "code": 1053101
                 },

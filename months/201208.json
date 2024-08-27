@@ -9,7 +9,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)(纪)\\\\1080101",
+                    "name": "圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\\\1080101",
                     "rank": 3,
                     "code": 1080101
                 },
@@ -68,7 +68,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣若翰•维雅纳(St. John Vianney)(纪)\\\\1080401",
+                    "name": "圣若翰•维雅纳(St. John Vianney)\\\\1080401",
                     "rank": 3,
                     "code": 1080401
                 },
@@ -91,7 +91,7 @@
                     "code": -1
                 },
                 {
-                    "name": "罗马圣母大殿奉献日(The Dedication of the Basilica of St. Mary Major)(纪)\\\\1080501",
+                    "name": "罗马圣母大殿奉献日(The Dedication of the Basilica of St. Mary Major)\\\\1080501",
                     "rank": 3,
                     "code": 1080501
                 },
@@ -109,7 +109,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)(庆)\\\\1080601",
+                    "name": "耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\\\1080601",
                     "rank": 6,
                     "code": 1080601
                 },
@@ -150,7 +150,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣多明我(多明我会会祖 St. Dominic)(纪)\\\\1080801",
+                    "name": "圣多明我(多明我会会祖 St. Dominic)\\\\1080801",
                     "rank": 3,
                     "code": 1080801
                 },
@@ -191,7 +191,7 @@
             "colorStr": "红",
             "liturgics": [
                 {
-                    "name": "圣老楞佐(殉道 St. Laurence)(庆)\\\\1081001",
+                    "name": "圣老楞佐(殉道 St. Laurence)\\\\1081001",
                     "rank": 4,
                     "code": 1081001
                 },
@@ -214,7 +214,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣女加辣(加辣会创办人 St. Clare)(纪)\\\\1081101",
+                    "name": "圣女加辣(加辣会创办人 St. Clare)\\\\1081101",
                     "rank": 3,
                     "code": 1081101
                 },
@@ -278,7 +278,7 @@
             "colorStr": "红",
             "liturgics": [
                 {
-                    "name": "圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)(纪)\\\\1081402",
+                    "name": "圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\\\1081402",
                     "rank": 3,
                     "code": 1081402
                 },
@@ -416,7 +416,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣伯尔纳多(格来福院长圣师 St. Bernard)(纪)\\\\1082001",
+                    "name": "圣伯尔纳多(格来福院长圣师 St. Bernard)\\\\1082001",
                     "rank": 3,
                     "code": 1082001
                 },
@@ -439,7 +439,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣比约十世(教宗 St. Pius X)(纪)\\\\1082101",
+                    "name": "圣比约十世(教宗 St. Pius X)\\\\1082101",
                     "rank": 3,
                     "code": 1082101
                 },
@@ -457,7 +457,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣母元后(The Queenship of the Blessed Virgin Mary)(纪)\\\\1082201",
+                    "name": "圣母元后(The Queenship of the Blessed Virgin Mary)\\\\1082201",
                     "rank": 3,
                     "code": 1082201
                 },
@@ -508,7 +508,7 @@
             "colorStr": "红",
             "liturgics": [
                 {
-                    "name": "圣巴尔多禄茂(宗徒 St. Bartholomew)(庆)\\\\1082401",
+                    "name": "圣巴尔多禄茂(宗徒 St. Bartholomew)\\\\1082401",
                     "rank": 4,
                     "code": 1082401
                 },
@@ -572,7 +572,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣妇莫尼加(St. Monica)(纪)\\\\1082701",
+                    "name": "圣妇莫尼加(St. Monica)\\\\1082701",
                     "rank": 3,
                     "code": 1082701
                 },
@@ -590,7 +590,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣奥斯定(希波主教圣师 St. Augustinei of Hippo)(纪)\\\\1082801",
+                    "name": "圣奥斯定(希波主教圣师 St. Augustinei of Hippo)\\\\1082801",
                     "rank": 3,
                     "code": 1082801
                 },
@@ -608,7 +608,7 @@
             "colorStr": "红",
             "liturgics": [
                 {
-                    "name": "圣若翰洗者蒙难(The Beheading of St. John the Baptist)(纪)\\\\1082901",
+                    "name": "圣若翰洗者蒙难(The Beheading of St. John the Baptist)\\\\1082901",
                     "rank": 3,
                     "code": 1082901
                 },

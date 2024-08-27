@@ -9,7 +9,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣女婴孩耶稣德肋撒(St. Terese of Licieux)(纪)\\\\1100101",
+                    "name": "圣女婴孩耶稣德肋撒(St. Terese of Licieux)\\\\1100101",
                     "rank": 3,
                     "code": 1100101
                 },
@@ -27,7 +27,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "护守天使(The Guardian Angels)(纪)\\\\1100201",
+                    "name": "护守天使(The Guardian Angels)\\\\1100201",
                     "rank": 3,
                     "code": 1100201
                 },
@@ -63,7 +63,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣五伤方济各(St. Francis Assisi)(纪)\\\\1100401",
+                    "name": "圣五伤方济各(St. Francis Assisi)\\\\1100401",
                     "rank": 3,
                     "code": 1100401
                 },
@@ -86,7 +86,7 @@
                     "code": -1
                 },
                 {
-                    "name": "圣女傅天娜(童贞 St. Faustina)(纪)\\\\1100501",
+                    "name": "圣女傅天娜(童贞 St. Faustina)\\\\1100501",
                     "rank": 3,
                     "code": 1100501
                 },
@@ -132,7 +132,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "玫瑰圣母节(Our Lady's Rosary)(纪)\\\\1100701",
+                    "name": "玫瑰圣母节(Our Lady's Rosary)\\\\1100701",
                     "rank": 3,
                     "code": 1100701
                 },
@@ -214,7 +214,7 @@
             "colorStr": "绿",
             "liturgics": [
                 {
-                    "name": "圣若望二十三世(教宗 St. John XXIII)(纪)\\\\1101102",
+                    "name": "圣若望二十三世(教宗 St. John XXIII)\\\\1101102",
                     "rank": 3,
                     "code": 1101102
                 },
@@ -291,7 +291,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣女大德肋撒(童贞 加尔默罗修会改革者 St. Teresa of Avila)(纪)\\\\1101501",
+                    "name": "圣女大德肋撒(童贞 加尔默罗修会改革者 St. Teresa of Avila)\\\\1101501",
                     "rank": 3,
                     "code": 1101501
                 },
@@ -332,7 +332,7 @@
             "colorStr": "红",
             "liturgics": [
                 {
-                    "name": "圣依纳爵(主教殉道 St. Ignatius)(纪)\\\\1101701",
+                    "name": "圣依纳爵(主教殉道 St. Ignatius)\\\\1101701",
                     "rank": 3,
                     "code": 1101701
                 },
@@ -350,7 +350,7 @@
             "colorStr": "红",
             "liturgics": [
                 {
-                    "name": "圣史路加(St. Luke)(庆)\\\\1101801",
+                    "name": "圣史路加(St. Luke)\\\\1101801",
                     "rank": 4,
                     "code": 1101801
                 },
@@ -432,7 +432,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣若望·保禄二世(教宗 St. John Paul II)(纪)\\\\1102201",
+                    "name": "圣若望·保禄二世(教宗 St. John Paul II)\\\\1102201",
                     "rank": 3,
                     "code": 1102201
                 },
@@ -550,7 +550,7 @@
             "colorStr": "红",
             "liturgics": [
                 {
-                    "name": "圣西满、圣达陡(宗徒 Ss. Simon and Jude)(庆)\\\\1102801",
+                    "name": "圣西满、圣达陡(宗徒 Ss. Simon and Jude)\\\\1102801",
                     "rank": 4,
                     "code": 1102801
                 },

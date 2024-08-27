@@ -32,12 +32,12 @@
                     "code": 1
                 },
                 {
-                    "name": "圣巴西略(凯撒利亚主教圣师 St. Basil the Great)(纪)\\\\1010201",
+                    "name": "圣巴西略(凯撒利亚主教圣师 St. Basil the Great)\\\\1010201",
                     "rank": 3,
                     "code": 1010201
                 },
                 {
-                    "name": "圣额我略•纳齐盎(国瑞•纳祥 St. Gregory Nazianxen)(纪)\\\\1010202",
+                    "name": "圣额我略•纳齐盎(国瑞•纳祥 St. Gregory Nazianxen)\\\\1010202",
                     "rank": 3,
                     "code": 1010202
                 }
@@ -50,7 +50,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "耶稣圣名节(纪)\\\\1010301",
+                    "name": "耶稣圣名节\\\\1010301",
                     "rank": 3,
                     "code": 1010301
                 },
@@ -183,7 +183,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "主受洗日(Baptism of the Lord)(庆)\\\\2",
+                    "name": "主受洗日(Baptism of the Lord)\\\\2",
                     "rank": 6,
                     "code": 2
                 },
@@ -337,7 +337,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣安当院长(St. Antony the Great)(纪)\\\\1011701",
+                    "name": "圣安当院长(St. Antony the Great)\\\\1011701",
                     "rank": 3,
                     "code": 1011701
                 },
@@ -355,7 +355,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣伯多禄定圣座于罗马(St. Peter's Chair at Rome)(庆)\\\\1011802",
+                    "name": "圣伯多禄定圣座于罗马(St. Peter's Chair at Rome)\\\\1011802",
                     "rank": 4,
                     "code": 1011802
                 },
@@ -498,7 +498,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣方济各•撒肋爵(主教圣师 St. Francis de Sales)(纪)\\\\1012401",
+                    "name": "圣方济各•撒肋爵(主教圣师 St. Francis de Sales)\\\\1012401",
                     "rank": 3,
                     "code": 1012401
                 },
@@ -516,12 +516,12 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "农历除夕(庆)\\\\11",
+                    "name": "农历除夕\\\\11",
                     "rank": 4,
                     "code": 11
                 },
                 {
-                    "name": "圣保禄宗徒归化(The Conversion of St. Paul)(庆)\\\\1012501",
+                    "name": "圣保禄宗徒归化(The Conversion of St. Paul)\\\\1012501",
                     "rank": 4,
                     "code": 1012501
                 },
@@ -539,12 +539,12 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "农历新春(庆)\\\\12",
+                    "name": "农历新春\\\\12",
                     "rank": 4,
                     "code": 12
                 },
                 {
-                    "name": "圣弟茂德及圣弟铎(St. Timothy & St. Titus)(纪)\\\\1012601",
+                    "name": "圣弟茂德及圣弟铎(St. Timothy & St. Titus)\\\\1012601",
                     "rank": 3,
                     "code": 1012601
                 },
@@ -598,7 +598,7 @@
             "colorStr": "绿",
             "liturgics": [
                 {
-                    "name": "圣福若瑟(司铎 St. Joseph Freinademetz)(纪)\\\\1012902",
+                    "name": "圣福若瑟(司铎 St. Joseph Freinademetz)\\\\1012902",
                     "rank": 3,
                     "code": 1012902
                 },
@@ -626,7 +626,7 @@
                     "code": -1
                 },
                 {
-                    "name": "真福雷永明(司铎 Bd. Gabriele Allegra)(纪)\\\\1013003",
+                    "name": "真福雷永明(司铎 Bd. Gabriele Allegra)\\\\1013003",
                     "rank": 3,
                     "code": 1013003
                 },
@@ -649,7 +649,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣鲍思高(慈幼会会祖 St. John Bosco)(纪)\\\\1013101",
+                    "name": "圣鲍思高(慈幼会会祖 St. John Bosco)\\\\1013101",
                     "rank": 3,
                     "code": 1013101
                 },

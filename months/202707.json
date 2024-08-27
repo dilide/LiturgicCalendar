@@ -55,7 +55,7 @@
             "colorStr": "红",
             "liturgics": [
                 {
-                    "name": "圣多默(宗徒 St. Thomas the Apostle)(庆)\\\\1070301",
+                    "name": "圣多默(宗徒 St. Thomas the Apostle)\\\\1070301",
                     "rank": 4,
                     "code": 1070301
                 },
@@ -78,7 +78,7 @@
                     "code": -1
                 },
                 {
-                    "name": "圣妇依撒伯尔(St. Elizabeth of Portuga)(纪)\\\\1070401",
+                    "name": "圣妇依撒伯尔(St. Elizabeth of Portuga)\\\\1070401",
                     "rank": 3,
                     "code": 1070401
                 }
@@ -163,7 +163,7 @@
             "colorStr": "红",
             "liturgics": [
                 {
-                    "name": "中华诸圣及真福(The Martyrs of China)(庆)\\\\1070901",
+                    "name": "中华诸圣及真福(The Martyrs of China)\\\\1070901",
                     "rank": 4,
                     "code": 1070901
                 },
@@ -214,7 +214,7 @@
                     "code": -1
                 },
                 {
-                    "name": "圣本笃(院长 St. Benedict 480-547)(纪)\\\\1071101",
+                    "name": "圣本笃(院长 St. Benedict 480-547)\\\\1071101",
                     "rank": 3,
                     "code": 1071101
                 }
@@ -291,7 +291,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣文都辣(St. Bonaventure)(纪)\\\\1071501",
+                    "name": "圣文都辣(St. Bonaventure)\\\\1071501",
                     "rank": 3,
                     "code": 1071501
                 },
@@ -314,7 +314,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "加尔默罗圣母(The Commemoration of Our Lady of Mount Carmel)(纪)\\\\1071601",
+                    "name": "加尔默罗圣母(The Commemoration of Our Lady of Mount Carmel)\\\\1071601",
                     "rank": 3,
                     "code": 1071601
                 },
@@ -442,7 +442,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣女玛利亚•玛达肋纳(圣徳莲 St. Mary Magdalen)(庆)\\\\1072201",
+                    "name": "圣女玛利亚•玛达肋纳(圣徳莲 St. Mary Magdalen)\\\\1072201",
                     "rank": 4,
                     "code": 1072201
                 },
@@ -511,7 +511,7 @@
                     "code": -1
                 },
                 {
-                    "name": "圣长雅各伯宗徒(St. James the Greater)(庆)\\\\1072501",
+                    "name": "圣长雅各伯宗徒(St. James the Greater)\\\\1072501",
                     "rank": 4,
                     "code": 1072501
                 },
@@ -529,7 +529,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣妇亚纳及若亚敬(St. Anne & St. Joachim)(纪)\\\\1072601",
+                    "name": "圣妇亚纳及若亚敬(St. Anne & St. Joachim)\\\\1072601",
                     "rank": 3,
                     "code": 1072601
                 },
@@ -593,7 +593,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)(纪)\\\\1072901",
+                    "name": "圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\\\1072901",
                     "rank": 3,
                     "code": 1072901
                 },
@@ -634,7 +634,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)(纪)\\\\1073101",
+                    "name": "圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\\\1073101",
                     "rank": 3,
                     "code": 1073101
                 },

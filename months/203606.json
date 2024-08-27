@@ -19,7 +19,7 @@
                     "code": -1
                 },
                 {
-                    "name": "圣犹思定殉道(St. Justin)(纪)\\\\1060101",
+                    "name": "圣犹思定殉道(St. Justin)\\\\1060101",
                     "rank": 3,
                     "code": 1060101
                 },
@@ -37,7 +37,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "教会之母(纪)\\\\10",
+                    "name": "教会之母\\\\10",
                     "rank": 3,
                     "code": 10
                 },
@@ -65,7 +65,7 @@
             "colorStr": "红",
             "liturgics": [
                 {
-                    "name": "圣查理王加、圣若瑟加萨及其他殉道烈士(Ss. Charles Lwanga, Joseph Mkasa and their Companions)(纪)\\\\1060301",
+                    "name": "圣查理王加、圣若瑟加萨及其他殉道烈士(Ss. Charles Lwanga, Joseph Mkasa and their Companions)\\\\1060301",
                     "rank": 3,
                     "code": 1060301
                 },
@@ -111,12 +111,12 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "我们的主耶稣基督—永恒的大司祭(庆)\\\\3",
+                    "name": "我们的主耶稣基督—永恒的大司祭\\\\3",
                     "rank": 6,
                     "code": 3
                 },
                 {
-                    "name": "圣波尼法爵(圣博义总主教殉道 St. Boniface)(纪)\\\\1060501",
+                    "name": "圣波尼法爵(圣博义总主教殉道 St. Boniface)\\\\1060501",
                     "rank": 3,
                     "code": 1060501
                 },
@@ -254,7 +254,7 @@
             "colorStr": "红",
             "liturgics": [
                 {
-                    "name": "圣巴尔纳伯(宗徒 St. Barnabas)(纪)\\\\1061101",
+                    "name": "圣巴尔纳伯(宗徒 St. Barnabas)\\\\1061101",
                     "rank": 3,
                     "code": 1061101
                 },
@@ -305,7 +305,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣安多尼(圣师 St. Antony of Padua)(纪)\\\\1061301",
+                    "name": "圣安多尼(圣师 St. Antony of Padua)\\\\1061301",
                     "rank": 3,
                     "code": 1061301
                 },
@@ -494,12 +494,12 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣母无玷圣心(纪)\\\\7",
+                    "name": "圣母无玷圣心\\\\7",
                     "rank": 3,
                     "code": 7
                 },
                 {
-                    "name": "圣类思•公撒格(St. Aloysius)(纪)\\\\1062101",
+                    "name": "圣类思•公撒格(St. Aloysius)\\\\1062101",
                     "rank": 3,
                     "code": 1062101
                 },
@@ -568,7 +568,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣若翰洗者诞辰(The Birthday of St. John the Baptist)(庆)\\\\1062401",
+                    "name": "圣若翰洗者诞辰(The Birthday of St. John the Baptist)\\\\1062401",
                     "rank": 4,
                     "code": 1062401
                 },
@@ -609,7 +609,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣施礼华(司铎 St. Josemaria)(纪)\\\\1062602",
+                    "name": "圣施礼华(司铎 St. Josemaria)\\\\1062602",
                     "rank": 3,
                     "code": 1062602
                 },
@@ -650,7 +650,7 @@
             "colorStr": "红",
             "liturgics": [
                 {
-                    "name": "圣依勒内(里昂主教殉道 St. Irenaeus)(纪)\\\\1062801",
+                    "name": "圣依勒内(里昂主教殉道 St. Irenaeus)\\\\1062801",
                     "rank": 3,
                     "code": 1062801
                 },
@@ -678,7 +678,7 @@
                     "code": -1
                 },
                 {
-                    "name": "圣伯多禄及圣保禄宗徒(St. Peter Apostle & St. Paul Apostle)(庆)\\\\1062901",
+                    "name": "圣伯多禄及圣保禄宗徒(St. Peter Apostle & St. Paul Apostle)\\\\1062901",
                     "rank": 4,
                     "code": 1062901
                 }
@@ -691,7 +691,7 @@
             "colorStr": "红",
             "liturgics": [
                 {
-                    "name": "罗马第一批殉道烈士(Martyrs of Rome, I)(纪)\\\\1063001",
+                    "name": "罗马第一批殉道烈士(Martyrs of Rome, I)\\\\1063001",
                     "rank": 3,
                     "code": 1063001
                 },

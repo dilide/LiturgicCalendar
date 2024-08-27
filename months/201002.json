@@ -27,7 +27,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "献耶稣于圣殿(Presentation of the Lord)(庆)\\\\1020201",
+                    "name": "献耶稣于圣殿(Presentation of the Lord)\\\\1020201",
                     "rank": 6,
                     "code": 1020201
                 },
@@ -91,7 +91,7 @@
             "colorStr": "红",
             "liturgics": [
                 {
-                    "name": "圣女亚加大(童贞殉道 St. Agatha)(纪)\\\\1020501",
+                    "name": "圣女亚加大(童贞殉道 St. Agatha)\\\\1020501",
                     "rank": 3,
                     "code": 1020501
                 },
@@ -109,7 +109,7 @@
             "colorStr": "红",
             "liturgics": [
                 {
-                    "name": "圣保禄三木司铎及同伴(the Martyrs of Japan)(纪)\\\\1020601",
+                    "name": "圣保禄三木司铎及同伴(the Martyrs of Japan)\\\\1020601",
                     "rank": 3,
                     "code": 1020601
                 },
@@ -196,7 +196,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣女斯高拉蒂加(圣思嘉童贞 Scholastica)(纪)\\\\1021001",
+                    "name": "圣女斯高拉蒂加(圣思嘉童贞 Scholastica)\\\\1021001",
                     "rank": 3,
                     "code": 1021001
                 },
@@ -255,7 +255,7 @@
             "colorStr": "绿",
             "liturgics": [
                 {
-                    "name": "农历除夕(庆)\\\\11",
+                    "name": "农历除夕\\\\11",
                     "rank": 4,
                     "code": 11
                 },
@@ -288,12 +288,12 @@
                     "code": -1
                 },
                 {
-                    "name": "农历新春(庆)\\\\12",
+                    "name": "农历新春\\\\12",
                     "rank": 4,
                     "code": 12
                 },
                 {
-                    "name": "圣济利禄、圣美铎第(主教 Ss. Cyril and Methodius)(纪)\\\\1021401",
+                    "name": "圣济利禄、圣美铎第(主教 Ss. Cyril and Methodius)\\\\1021401",
                     "rank": 3,
                     "code": 1021401
                 },
@@ -462,7 +462,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "建立圣伯多禄宗座于安提约基(St. Peter’s Chair at Antioch)(庆)\\\\1022201",
+                    "name": "建立圣伯多禄宗座于安提约基(St. Peter’s Chair at Antioch)\\\\1022201",
                     "rank": 4,
                     "code": 1022201
                 },
@@ -485,7 +485,7 @@
             "colorStr": "红",
             "liturgics": [
                 {
-                    "name": "圣波利卡浦(主教殉道 St. Polycarp)(纪)\\\\1022301",
+                    "name": "圣波利卡浦(主教殉道 St. Polycarp)\\\\1022301",
                     "rank": 3,
                     "code": 1022301
                 },

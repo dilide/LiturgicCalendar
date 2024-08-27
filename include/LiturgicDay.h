@@ -43,7 +43,7 @@ namespace CathAssist
 			{
 				std::ostringstream ostr;
 				ostr<<celebration;
-
+				/*
 				if(rank == MEMORIAL)
 				{
 					ostr<<"(纪)";
@@ -56,7 +56,7 @@ namespace CathAssist
 				{
 					ostr<<"(庆)";
 				}
-                
+                */
                 if(code > 0) {
                     ostr<<"\\\\"<<code;
                 }

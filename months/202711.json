@@ -27,7 +27,7 @@
             "colorStr": "紫",
             "liturgics": [
                 {
-                    "name": "追思亡者(All Souls)(庆)\\\\1110201",
+                    "name": "追思亡者(All Souls)\\\\1110201",
                     "rank": 6,
                     "code": 1110201
                 },
@@ -63,7 +63,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣嘉禄(米兰枢机主教 St. Charles Borromeo)(纪)\\\\1110401",
+                    "name": "圣嘉禄(米兰枢机主教 St. Charles Borromeo)\\\\1110401",
                     "rank": 3,
                     "code": 1110401
                 },
@@ -99,7 +99,7 @@
             "colorStr": "红",
             "liturgics": [
                 {
-                    "name": "越南第二批殉道烈士(The Martyrs of Indo-China, II)(纪)\\\\1110601",
+                    "name": "越南第二批殉道烈士(The Martyrs of Indo-China, II)\\\\1110601",
                     "rank": 3,
                     "code": 1110601
                 },
@@ -163,7 +163,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "建救世主大殿(The Dedication of the Basilica of St. John Lateran)(庆)\\\\1110901",
+                    "name": "建救世主大殿(The Dedication of the Basilica of St. John Lateran)\\\\1110901",
                     "rank": 6,
                     "code": 1110901
                 },
@@ -181,7 +181,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣良一世(主教 St. Leo the Great)(纪)\\\\1111001",
+                    "name": "圣良一世(主教 St. Leo the Great)\\\\1111001",
                     "rank": 3,
                     "code": 1111001
                 },
@@ -204,7 +204,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣玛尔定(都尔主教 St. Martin of Tours)(纪)\\\\1111101",
+                    "name": "圣玛尔定(都尔主教 St. Martin of Tours)\\\\1111101",
                     "rank": 3,
                     "code": 1111101
                 },
@@ -227,7 +227,7 @@
             "colorStr": "红",
             "liturgics": [
                 {
-                    "name": "圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)(纪)\\\\1111201",
+                    "name": "圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\\\1111201",
                     "rank": 3,
                     "code": 1111201
                 },
@@ -327,7 +327,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "真福依撒伯尔(童贞 Bd. Elizabeth the Good)(纪)\\\\1111701",
+                    "name": "真福依撒伯尔(童贞 Bd. Elizabeth the Good)\\\\1111701",
                     "rank": 3,
                     "code": 1111701
                 },
@@ -345,7 +345,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣伯多禄圣保禄大殿奉献日(The Dedication of the Basilicas of St. Peter and of St. Paul)(纪)\\\\1111801",
+                    "name": "圣伯多禄圣保禄大殿奉献日(The Dedication of the Basilicas of St. Peter and of St. Paul)\\\\1111801",
                     "rank": 3,
                     "code": 1111801
                 },
@@ -414,7 +414,7 @@
                     "code": -1
                 },
                 {
-                    "name": "圣母奉献日(The Presentation of the Blessed Virgin Mary)(纪)\\\\1112101",
+                    "name": "圣母奉献日(The Presentation of the Blessed Virgin Mary)\\\\1112101",
                     "rank": 3,
                     "code": 1112101
                 }
@@ -427,7 +427,7 @@
             "colorStr": "红",
             "liturgics": [
                 {
-                    "name": "圣女则济利亚(童贞殉道 St. Cecilia -250)(纪)\\\\1112201",
+                    "name": "圣女则济利亚(童贞殉道 St. Cecilia -250)\\\\1112201",
                     "rank": 3,
                     "code": 1112201
                 },
@@ -468,7 +468,7 @@
             "colorStr": "红",
             "liturgics": [
                 {
-                    "name": "圣芬明(殉道 St. Finmin -303)、圣芬伯(主教 St. Finbar -633)(纪)\\\\1112401",
+                    "name": "圣芬明(殉道 St. Finmin -303)、圣芬伯(主教 St. Finbar -633)\\\\1112401",
                     "rank": 3,
                     "code": 1112401
                 },
@@ -586,7 +586,7 @@
             "colorStr": "红",
             "liturgics": [
                 {
-                    "name": "圣安德肋(宗徒 St. Andrew the Apostle)(庆)\\\\1113001",
+                    "name": "圣安德肋(宗徒 St. Andrew the Apostle)\\\\1113001",
                     "rank": 4,
                     "code": 1113001
                 },

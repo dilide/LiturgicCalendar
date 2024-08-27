@@ -55,7 +55,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣额我略一世(教宗圣师 St. Gregory the Great)(纪)\\\\1090301",
+                    "name": "圣额我略一世(教宗圣师 St. Gregory the Great)\\\\1090301",
                     "rank": 3,
                     "code": 1090301
                 },
@@ -101,7 +101,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣德肋撒·加尔各答(St. Teresa of Calcutta)(纪)\\\\1090502",
+                    "name": "圣德肋撒·加尔各答(St. Teresa of Calcutta)\\\\1090502",
                     "rank": 3,
                     "code": 1090502
                 },
@@ -170,7 +170,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣母诞辰(The Birthday of the Blessed Virgin Mary)(庆)\\\\1090801",
+                    "name": "圣母诞辰(The Birthday of the Blessed Virgin Mary)\\\\1090801",
                     "rank": 4,
                     "code": 1090801
                 },
@@ -257,7 +257,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣母圣名节(The Holy Name of Mary)(纪)\\\\1091201",
+                    "name": "圣母圣名节(The Holy Name of Mary)\\\\1091201",
                     "rank": 3,
                     "code": 1091201
                 },
@@ -280,7 +280,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "金口圣若望(主教圣师 St. John Chrysostom)(纪)\\\\1091301",
+                    "name": "金口圣若望(主教圣师 St. John Chrysostom)\\\\1091301",
                     "rank": 3,
                     "code": 1091301
                 },
@@ -303,7 +303,7 @@
             "colorStr": "红",
             "liturgics": [
                 {
-                    "name": "光荣十字圣架(The Exaltation of the Holy Cross)(庆)\\\\1091401",
+                    "name": "光荣十字圣架(The Exaltation of the Holy Cross)\\\\1091401",
                     "rank": 6,
                     "code": 1091401
                 },
@@ -326,7 +326,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "痛苦圣母(Our Lady of Sorrows)(纪)\\\\1091501",
+                    "name": "痛苦圣母(Our Lady of Sorrows)\\\\1091501",
                     "rank": 3,
                     "code": 1091501
                 },
@@ -349,7 +349,7 @@
             "colorStr": "红",
             "liturgics": [
                 {
-                    "name": "圣高尔内略及圣西彼廉主教(殉道 St. Cornelius & St. Cyprian)(纪)\\\\1091601",
+                    "name": "圣高尔内略及圣西彼廉主教(殉道 St. Cornelius & St. Cyprian)\\\\1091601",
                     "rank": 3,
                     "code": 1091601
                 },
@@ -426,7 +426,7 @@
             "colorStr": "红",
             "liturgics": [
                 {
-                    "name": "圣金大建及同伴殉道(Ss. Andrew Kim Taegon and Companions)(纪)\\\\1092003",
+                    "name": "圣金大建及同伴殉道(Ss. Andrew Kim Taegon and Companions)\\\\1092003",
                     "rank": 3,
                     "code": 1092003
                 },
@@ -459,7 +459,7 @@
                     "code": -1
                 },
                 {
-                    "name": "圣玛窦(宗徒兼圣史 St. Matthew)(庆)\\\\1092101",
+                    "name": "圣玛窦(宗徒兼圣史 St. Matthew)\\\\1092101",
                     "rank": 4,
                     "code": 1092101
                 }
@@ -490,7 +490,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣比约•庇特來(司铎 St. Pio of Pietrelcina.)(纪)\\\\1092303",
+                    "name": "圣比约•庇特來(司铎 St. Pio of Pietrelcina.)\\\\1092303",
                     "rank": 3,
                     "code": 1092303
                 },
@@ -582,7 +582,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣味增爵(遣使会和仁爱会创始人 St. Vincent De Paul)(纪)\\\\1092702",
+                    "name": "圣味增爵(遣使会和仁爱会创始人 St. Vincent De Paul)\\\\1092702",
                     "rank": 3,
                     "code": 1092702
                 },
@@ -628,7 +628,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "诸圣天使(圣弥额尔、圣加俾额尔、圣拉法厄尔)(庆)\\\\1092901",
+                    "name": "诸圣天使(圣弥额尔、圣加俾额尔、圣拉法厄尔)\\\\1092901",
                     "rank": 4,
                     "code": 1092901
                 },
@@ -646,7 +646,7 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣热罗尼莫(圣师 St. Jerome)(纪)\\\\1093001",
+                    "name": "圣热罗尼莫(圣师 St. Jerome)\\\\1093001",
                     "rank": 3,
                     "code": 1093001
                 },
