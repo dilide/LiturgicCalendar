@@ -724,9 +724,12 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
 		mapPropers.insert(std::make_pair(1122701,CellInfo(FEAST,WHITE,"圣若望(宗徒兼圣史 St. John the Evangelist -100)")));
 		mapPropers.insert(std::make_pair(1122801,CellInfo(FEAST,RED,"诸圣婴孩(The Holy Innocents)")));
         mapPropers.insert(std::make_pair(1122901,CellInfo(OPTIONAL,NOCOLOR,"圣多默•贝凯(St. Thomas Becket)")));
+		mapPropers.insert(std::make_pair(1122902,CellInfo(LORD,WHITE,"圣诞节庆期第五日")));
         mapPropers.insert(std::make_pair(1123001,CellInfo(OPTIONAL,NOCOLOR,"圣撒比诺等殉道者(Ss. Sabinus and his Companions)")));
+		mapPropers.insert(std::make_pair(1123002,CellInfo(LORD,WHITE,"圣诞节庆期第六日")));
         mapPropers.insert(std::make_pair(1123101,CellInfo(OPTIONAL,NOCOLOR,"圣西尔物斯德肋(思维 St. Silvestes 314-335)")));
         mapPropers.insert(std::make_pair(1123102,CellInfo(OPTIONAL,NOCOLOR,"圣妇幼梅肋尼亚(St. Melania the Younger -439)")));
+		mapPropers.insert(std::make_pair(1123103,CellInfo(LORD,WHITE,"圣诞节庆期第七日")));
 	}
 
 
@@ -790,13 +793,6 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
 
 		//圣诞期
 		mapPropers.insert(std::make_pair(8,CellInfo(LORD,WHITE,"圣家节")));
-        //圣诞节八日庆期（第一日是圣诞节，第八日是天主之母节 忽略）
-		mapPropers.insert(std::make_pair(31,CellInfo(LORD,WHITE,"圣诞节庆期第二日")));
-		mapPropers.insert(std::make_pair(32,CellInfo(LORD,WHITE,"圣诞节庆期第三日")));
-		mapPropers.insert(std::make_pair(33,CellInfo(LORD,WHITE,"圣诞节庆期第四日")));
-		mapPropers.insert(std::make_pair(34,CellInfo(LORD,WHITE,"圣诞节庆期第五日")));
-		mapPropers.insert(std::make_pair(35,CellInfo(LORD,WHITE,"圣诞节庆期第六日")));
-		mapPropers.insert(std::make_pair(36,CellInfo(LORD,WHITE,"圣诞节庆期第七日")));
 
 		//中华圣母（五月份的第二个星期六）
 		mapPropers.insert(std::make_pair(9,CellInfo(FEAST,WHITE,"中华圣母")));
@@ -1078,12 +1074,6 @@ void LiturgicYear::testChristmas2(LiturgicDay& ld)
 		if(ld.dayOfWeek() == SUN)
 			ld.appendCell(8);
 	}
-
-    //圣诞节八日庆期
-	int dayFromChristmas = cm.daysTo(ld);
-    if(dayFromChristmas < 8 && dayFromChristmas > 0) {
-        ld.appendCell(30+dayFromChristmas);
-    }
 }
 
 void LiturgicYear::testProper(LiturgicDay& ld)

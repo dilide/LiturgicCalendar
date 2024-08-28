@@ -535,14 +535,9 @@
         {
             "date": "2020-12-26",
             "lunar": "庚子 鼠年冬月十二",
-            "color": "#DDDDDD",
-            "colorStr": "白",
+            "color": "#FF0000",
+            "colorStr": "红",
             "liturgics": [
-                {
-                    "name": "圣诞节庆期第二日\\\\31",
-                    "rank": 6,
-                    "code": 31
-                },
                 {
                     "name": "圣斯德望(首位殉道 St. Stephen -34)\\\\1122601",
                     "rank": 4,
@@ -572,11 +567,6 @@
                     "code": 8
                 },
                 {
-                    "name": "圣诞节庆期第三日\\\\32",
-                    "rank": 6,
-                    "code": 32
-                },
-                {
                     "name": "圣若望(宗徒兼圣史 St. John the Evangelist -100)\\\\1122701",
                     "rank": 4,
                     "code": 1122701
@@ -586,14 +576,9 @@
         {
             "date": "2020-12-28",
             "lunar": "庚子 鼠年冬月十四",
-            "color": "#DDDDDD",
-            "colorStr": "白",
+            "color": "#FF0000",
+            "colorStr": "红",
             "liturgics": [
-                {
-                    "name": "圣诞节庆期第四日\\\\33",
-                    "rank": 6,
-                    "code": 33
-                },
                 {
                     "name": "诸圣婴孩(The Holy Innocents)\\\\1122801",
                     "rank": 4,
@@ -613,9 +598,9 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣诞节庆期第五日\\\\34",
+                    "name": "圣诞节庆期第五日\\\\1122902",
                     "rank": 6,
-                    "code": 34
+                    "code": 1122902
                 },
                 {
                     "name": "圣多默•贝凯(St. Thomas Becket)\\\\1122901",
@@ -636,9 +621,9 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣诞节庆期第六日\\\\35",
+                    "name": "圣诞节庆期第六日\\\\1123002",
                     "rank": 6,
-                    "code": 35
+                    "code": 1123002
                 },
                 {
                     "name": "圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\\\1123001",
@@ -659,9 +644,9 @@
             "colorStr": "白",
             "liturgics": [
                 {
-                    "name": "圣诞节庆期第七日\\\\36",
+                    "name": "圣诞节庆期第七日\\\\1123103",
                     "rank": 6,
-                    "code": 36
+                    "code": 1123103
                 },
                 {
                     "name": "圣西尔物斯德肋(思维 St. Silvestes 314-335)\\\\1123101",
