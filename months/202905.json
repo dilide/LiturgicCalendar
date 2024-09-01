@@ -409,9 +409,14 @@
         {
             "date": "2029-05-19",
             "lunar": "己酉 鸡年四月初七",
-            "color": "#DDDDDD",
-            "colorStr": "白",
+            "color": "#FF0000",
+            "colorStr": "红",
             "liturgics": [
+                {
+                    "name": "圣神降临节前夕\\\\50706",
+                    "rank": 4,
+                    "code": 50706
+                },
                 {
                     "name": "圣塞来斯定五世(教宗 St. Celestine V)\\\\1051901",
                     "rank": 2,

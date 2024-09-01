@@ -360,7 +360,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         mapPropers.insert(std::make_pair(1060903,CellInfo(OPTIONAL,NOCOLOR,"真福亚纳•玛利亚•泰琪(Bd. Anne Mary Taigi)")));
         mapPropers.insert(std::make_pair(1061001,CellInfo(OPTIONAL,NOCOLOR,"圣日多列和殉道烈士(Ss. Getulius and his Companions)")));
         //11日
-        mapPropers.insert(std::make_pair(1061101,CellInfo(MEMORIAL,RED,"圣巴尔纳伯(宗徒 St. Barnabas)")));
+        mapPropers.insert(std::make_pair(1061101,CellInfo(FEAST,RED,"圣巴尔纳伯(宗徒 St. Barnabas)")));
         mapPropers.insert(std::make_pair(1061102,CellInfo(OPTIONAL,NOCOLOR,"真福宝拉(童贞圣多罗珊女修会会祖 Bd. Paula Frassinetti)")));
         mapPropers.insert(std::make_pair(1061201,CellInfo(OPTIONAL,NOCOLOR,"圣若望•瑟哈公(St. John of Sahagun)")));
         mapPropers.insert(std::make_pair(1061202,CellInfo(OPTIONAL,NOCOLOR,"圣伯多禄(St. Peter of Mount Athos)")));
@@ -481,6 +481,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         mapPropers.insert(std::make_pair(1081302,CellInfo(OPTIONAL,NOCOLOR,"圣贝尼杜(St. Benildus)")));
         mapPropers.insert(std::make_pair(1081401,CellInfo(OPTIONAL,NOCOLOR,"真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)")));
         mapPropers.insert(std::make_pair(1081402,CellInfo(MEMORIAL,RED,"圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)")));
+        mapPropers.insert(std::make_pair(1081403,CellInfo(FEAST,WHITE,"圣母升天节前夕")));
         mapPropers.insert(std::make_pair(1081501,CellInfo(SOLEMNITY,WHITE,"圣母升天节(The Assumption of the Blessed Virgin Mary)")));
         //16日
         mapPropers.insert(std::make_pair(1081601,CellInfo(OPTIONAL,NOCOLOR,"圣斯德望国王(St. Stephen of Hungary)")));
@@ -767,7 +768,9 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
 		mapPropers.insert(std::make_pair(EASTER*10000+400+0,CellInfo(SUNDAY,WHITE,"复活期第四主日(善牧主日)")));
 		//耶稣升天（复活期第六主日星期四）
 		mapPropers.insert(std::make_pair(EASTER*10000+600+4,CellInfo(SOLEMNITY,WHITE,"耶稣升天")));
+
 		//圣神降临节（复活期第八主日）
+		mapPropers.insert(std::make_pair(EASTER*10000+700+6,CellInfo(FEAST,RED,"圣神降临节前夕")));
 		mapPropers.insert(std::make_pair(EASTER*10000+800+0,CellInfo(SOLEMNITY,RED,"圣神降临节")));
 
        //常年期第三十三主日（世界穷人日）

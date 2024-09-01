@@ -274,9 +274,14 @@
         {
             "date": "2020-08-14",
             "lunar": "庚子 鼠年六月二十五",
-            "color": "#FF0000",
-            "colorStr": "红",
+            "color": "#DDDDDD",
+            "colorStr": "白",
             "liturgics": [
+                {
+                    "name": "圣母升天节前夕\\\\1081403",
+                    "rank": 4,
+                    "code": 1081403
+                },
                 {
                     "name": "圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\\\1081402",
                     "rank": 3,

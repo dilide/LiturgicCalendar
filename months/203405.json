@@ -583,9 +583,14 @@
         {
             "date": "2034-05-27",
             "lunar": "甲寅 虎年四月初十",
-            "color": "#DDDDDD",
-            "colorStr": "白",
+            "color": "#FF0000",
+            "colorStr": "红",
             "liturgics": [
+                {
+                    "name": "圣神降临节前夕\\\\50706",
+                    "rank": 4,
+                    "code": 50706
+                },
                 {
                     "name": "圣奥斯定(坎特伯里总主教 St. Augustine)\\\\1052701",
                     "rank": 2,

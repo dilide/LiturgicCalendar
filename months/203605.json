@@ -665,9 +665,14 @@
         {
             "date": "2036-05-31",
             "lunar": "丙辰 龙年五月初六",
-            "color": "#DDDDDD",
-            "colorStr": "白",
+            "color": "#FF0000",
+            "colorStr": "红",
             "liturgics": [
+                {
+                    "name": "圣神降临节前夕\\\\50706",
+                    "rank": 4,
+                    "code": 50706
+                },
                 {
                     "name": "圣母访亲节(the Vistation of the Blessed Virgin Mary)\\\\1053101",
                     "rank": 4,

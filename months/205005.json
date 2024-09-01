@@ -601,9 +601,14 @@
         {
             "date": "2050-05-28",
             "lunar": "庚午 马年四月初八",
-            "color": "#DDDDDD",
-            "colorStr": "白",
+            "color": "#FF0000",
+            "colorStr": "红",
             "liturgics": [
+                {
+                    "name": "圣神降临节前夕\\\\50706",
+                    "rank": 4,
+                    "code": 50706
+                },
                 {
                     "name": "圣日曼诺斯(巴黎主教 St. Gemanus)\\\\1052801",
                     "rank": 2,

@@ -55,6 +55,11 @@
             "colorStr": "红",
             "liturgics": [
                 {
+                    "name": "圣神降临节前夕\\\\50706",
+                    "rank": 4,
+                    "code": 50706
+                },
+                {
                     "name": "圣查理王加、圣若瑟加萨及其他殉道烈士(Ss. Charles Lwanga, Joseph Mkasa and their Companions)\\\\1060301",
                     "rank": 3,
                     "code": 1060301
@@ -260,7 +265,7 @@
                 },
                 {
                     "name": "圣巴尔纳伯(宗徒 St. Barnabas)\\\\1061101",
-                    "rank": 3,
+                    "rank": 4,
                     "code": 1061101
                 },
                 {

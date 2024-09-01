@@ -496,9 +496,14 @@
         {
             "date": "2037-05-23",
             "lunar": "丁巳 蛇年四月初九",
-            "color": "#DDDDDD",
-            "colorStr": "白",
+            "color": "#FF0000",
+            "colorStr": "红",
             "liturgics": [
+                {
+                    "name": "圣神降临节前夕\\\\50706",
+                    "rank": 4,
+                    "code": 50706
+                },
                 {
                     "name": "圣若翰•路西(St. John Baptist Rossi)\\\\1052301",
                     "rank": 2,

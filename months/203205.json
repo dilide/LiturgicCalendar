@@ -327,9 +327,14 @@
         {
             "date": "2032-05-15",
             "lunar": "壬子 鼠年四月初七",
-            "color": "#DDDDDD",
-            "colorStr": "白",
+            "color": "#FF0000",
+            "colorStr": "红",
             "liturgics": [
+                {
+                    "name": "圣神降临节前夕\\\\50706",
+                    "rank": 4,
+                    "code": 50706
+                },
                 {
                     "name": "圣伯多禄和圣刁尼霞(殉道者 Ss. Peter and Dionysia)\\\\1051501",
                     "rank": 2,

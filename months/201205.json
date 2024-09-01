@@ -565,9 +565,14 @@
         {
             "date": "2012-05-26",
             "lunar": "壬辰 龙年四月初六",
-            "color": "#DDDDDD",
-            "colorStr": "白",
+            "color": "#FF0000",
+            "colorStr": "红",
             "liturgics": [
+                {
+                    "name": "圣神降临节前夕\\\\50706",
+                    "rank": 4,
+                    "code": 50706
+                },
                 {
                     "name": "圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\\\1052601",
                     "rank": 3,

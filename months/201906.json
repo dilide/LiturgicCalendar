@@ -161,9 +161,14 @@
         {
             "date": "2019-06-08",
             "lunar": "己亥 猪年五月初六",
-            "color": "#DDDDDD",
-            "colorStr": "白",
+            "color": "#FF0000",
+            "colorStr": "红",
             "liturgics": [
+                {
+                    "name": "圣神降临节前夕\\\\50706",
+                    "rank": 4,
+                    "code": 50706
+                },
                 {
                     "name": "圣迈达(万孟杜主教 St. Medard)\\\\1060801",
                     "rank": 2,
@@ -245,7 +250,7 @@
             "liturgics": [
                 {
                     "name": "圣巴尔纳伯(宗徒 St. Barnabas)\\\\1061101",
-                    "rank": 3,
+                    "rank": 4,
                     "code": 1061101
                 },
                 {

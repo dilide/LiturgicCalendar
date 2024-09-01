@@ -473,9 +473,14 @@
         {
             "date": "2010-05-22",
             "lunar": "庚寅 虎年四月初九",
-            "color": "#DDDDDD",
-            "colorStr": "白",
+            "color": "#FF0000",
+            "colorStr": "红",
             "liturgics": [
+                {
+                    "name": "圣神降临节前夕\\\\50706",
+                    "rank": 4,
+                    "code": 50706
+                },
                 {
                     "name": "圣妇丽达(St. Rita of Cascia)\\\\1052201",
                     "rank": 2,

@@ -74,9 +74,14 @@
         {
             "date": "2033-06-04",
             "lunar": "癸丑 牛年五月初八",
-            "color": "#DDDDDD",
-            "colorStr": "白",
+            "color": "#FF0000",
+            "colorStr": "红",
             "liturgics": [
+                {
+                    "name": "圣神降临节前夕\\\\50706",
+                    "rank": 4,
+                    "code": 50706
+                },
                 {
                     "name": "圣方济各•加辣巧洛(末位神职界修会会祖 St. Francis Caracciolo)\\\\1060401",
                     "rank": 2,
@@ -250,7 +255,7 @@
             "liturgics": [
                 {
                     "name": "圣巴尔纳伯(宗徒 St. Barnabas)\\\\1061101",
-                    "rank": 3,
+                    "rank": 4,
                     "code": 1061101
                 },
                 {

@@ -514,9 +514,14 @@
         {
             "date": "2042-05-24",
             "lunar": "壬戌 狗年四月初六",
-            "color": "#DDDDDD",
-            "colorStr": "白",
+            "color": "#FF0000",
+            "colorStr": "红",
             "liturgics": [
+                {
+                    "name": "圣神降临节前夕\\\\50706",
+                    "rank": 4,
+                    "code": 50706
+                },
                 {
                     "name": "圣母进教之佑节(Our Lady Help of Christians)\\\\1052401",
                     "rank": 4,

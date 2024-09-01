@@ -345,9 +345,14 @@
         {
             "date": "2043-05-16",
             "lunar": "癸亥 猪年四月初八",
-            "color": "#DDDDDD",
-            "colorStr": "白",
+            "color": "#FF0000",
+            "colorStr": "红",
             "liturgics": [
+                {
+                    "name": "圣神降临节前夕\\\\50706",
+                    "rank": 4,
+                    "code": 50706
+                },
                 {
                     "name": "圣西满•斯道克(St. Simon Stock)\\\\1051601",
                     "rank": 2,

@@ -583,9 +583,14 @@
         {
             "date": "2023-05-27",
             "lunar": "癸卯 兔年四月初九",
-            "color": "#DDDDDD",
-            "colorStr": "白",
+            "color": "#FF0000",
+            "colorStr": "红",
             "liturgics": [
+                {
+                    "name": "圣神降临节前夕\\\\50706",
+                    "rank": 4,
+                    "code": 50706
+                },
                 {
                     "name": "圣奥斯定(坎特伯里总主教 St. Augustine)\\\\1052701",
                     "rank": 2,
