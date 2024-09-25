@@ -80,7 +80,6 @@ namespace CathAssist
             static int getLunarMonthDays(int iLunarYear, int iLunarMonth);
             static unsigned short gLunarMonthDay[];
             static unsigned char gLunarMonth[];
-            static unsigned char gLunarHolDay[];
 		};
 	}
 }
