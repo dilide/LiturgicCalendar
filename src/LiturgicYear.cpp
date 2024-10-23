@@ -807,6 +807,8 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         mapPropers.insert(std::make_pair(11,CellInfo(FEAST,NOCOLOR,"农历除夕")));
         //农历春节
         mapPropers.insert(std::make_pair(12,CellInfo(FEAST,NOCOLOR,"农历新春")));
+        //普世传教节
+        mapPropers.insert(std::make_pair(13,CellInfo(LORD,GREEN,"普世传教节")));
 	}
     
     // 将节日编码插入到节日里
@@ -1039,6 +1041,11 @@ void LiturgicYear::testOrdinary2(LiturgicDay& ld)
 	{
 		ld.appendCell(7);	//圣母无玷圣心
 	}
+
+    if(SUN == ld.dayOfWeek() && 10 == ld.month() && ld.day() >=18 && ld.day()<=24) {
+        // 普世传教节，10月倒数第二个主日
+        ld.appendCell(13);
+    }
 
 	ld.setSeason(ORDINARY);
 }

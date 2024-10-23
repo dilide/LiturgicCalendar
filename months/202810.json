@@ -432,6 +432,11 @@
             "colorStr": "绿",
             "liturgics": [
                 {
+                    "name": "普世传教节\\\\13",
+                    "rank": 6,
+                    "code": 13
+                },
+                {
                     "name": "常年期第二十九主日",
                     "rank": 5,
                     "code": -1
