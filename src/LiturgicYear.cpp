@@ -602,7 +602,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         //16日
         mapPropers.insert(std::make_pair(1101601,CellInfo(OPTIONAL,NOCOLOR,"圣妇赫德维(St. Hedwig)")));
         mapPropers.insert(std::make_pair(1101602,CellInfo(OPTIONAL,NOCOLOR,"圣女玛加利大(童贞 St. Margaret Mary)")));
-        mapPropers.insert(std::make_pair(1101701,CellInfo(MEMORIAL,RED,"圣依纳爵(主教殉道 St. Ignatius)")));
+        mapPropers.insert(std::make_pair(1101701,CellInfo(MEMORIAL,RED,"圣依纳爵•安提约基亚(主教殉道 St. Ignatius of Antioch)")));
         mapPropers.insert(std::make_pair(1101801,CellInfo(FEAST,RED,"圣史路加(St. Luke)")));
         mapPropers.insert(std::make_pair(1101901,CellInfo(OPTIONAL,NOCOLOR,"圣伯多禄•亚刚大辣(St. Peter of Alcantara)")));
         mapPropers.insert(std::make_pair(1101902,CellInfo(OPTIONAL,NOCOLOR,"北美洲殉道烈士(The Martyrs of North America)")));
@@ -619,7 +619,6 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         mapPropers.insert(std::make_pair(1102601,CellInfo(OPTIONAL,NOCOLOR,"圣厄瓦理斯多(教宗殉道 St. Evaristus)")));
         mapPropers.insert(std::make_pair(1102701,CellInfo(OPTIONAL,NOCOLOR,"圣福门舒(亚克松主教 St. Frumentius 330-380)")));
         mapPropers.insert(std::make_pair(1102702,CellInfo(OPTIONAL,NOCOLOR,"真福费列尼(Bd. Contardo Ferrini)")));
-        mapPropers.insert(std::make_pair(1102703,CellInfo(MEMORIAL,RED,"圣依纳爵主教•安提约基亚(殉道 St. Ignatius of Antioch)")));
         mapPropers.insert(std::make_pair(1102801,CellInfo(FEAST,RED,"圣西满、圣达陡(宗徒 Ss. Simon and Jude)")));
         mapPropers.insert(std::make_pair(1102901,CellInfo(OPTIONAL,NOCOLOR,"圣南西苏(耶路撒冷主教 St. Narcissus of Jerusalem -215)")));
         mapPropers.insert(std::make_pair(1103001,CellInfo(OPTIONAL,NOCOLOR,"圣玛塞洛(殉道 St. Marcellus the Cenlurion)")));
