@@ -287,11 +287,11 @@ void export_to_sqlite()
     sqlite3_close(db);
 }
 
-void export_to_mass() {
+void export_to_liturgy() {
     Calendar::initCalendar();
 
     std::ofstream of;
-    of.open(string("./mass.sql"));
+    of.open(string("./liturgy.sql"));
     {
         // 礼仪年
         {
@@ -303,6 +303,10 @@ void export_to_mass() {
                 of<<"insert into easter_mass(code, name) select "<<iter->code<<",'"<<ansi2utf8(sqlite3_mprintf("%q",iter->celebration.c_str()))<<"'"
                         <<" where not exists (select 1 from easter_mass where code="<<iter->code<<");"<<std::endl;
                 of<<"update easter_mass set name='"<<ansi2utf8(sqlite3_mprintf("%q",iter->celebration.c_str()))<<"'"<<" where code="<<iter->code<<";"<<std::endl;
+
+                of<<"insert into easter_liturgy_hours(code, name) select "<<iter->code<<",'"<<ansi2utf8(sqlite3_mprintf("%q",iter->celebration.c_str()))<<"'"
+                        <<" where not exists (select 1 from easter_liturgy_hours where code="<<iter->code<<");"<<std::endl;
+                of<<"update easter_liturgy_hours set name='"<<ansi2utf8(sqlite3_mprintf("%q",iter->celebration.c_str()))<<"'"<<" where code="<<iter->code<<";"<<std::endl;
                 ++iter;
             }
         }        
@@ -318,6 +322,10 @@ void export_to_mass() {
                     of<<"insert into easter_mass(code, name) select "<<iter->second.code<<",'"<<ansi2utf8(sqlite3_mprintf("%q",iter->second.celebration.c_str()))<<"'"
                         <<" where not exists (select 1 from easter_mass where code="<<iter->second.code<<");"<<std::endl;
                     of<<"update easter_mass set name='"<<ansi2utf8(sqlite3_mprintf("%q",iter->second.celebration.c_str()))<<"'"<<" where code="<<iter->second.code<<";"<<std::endl;
+
+                    of<<"insert into easter_liturgy_hours(code, name) select "<<iter->second.code<<",'"<<ansi2utf8(sqlite3_mprintf("%q",iter->second.celebration.c_str()))<<"'"
+                        <<" where not exists (select 1 from easter_liturgy_hours where code="<<iter->second.code<<");"<<std::endl;
+                    of<<"update easter_liturgy_hours set name='"<<ansi2utf8(sqlite3_mprintf("%q",iter->second.celebration.c_str()))<<"'"<<" where code="<<iter->second.code<<";"<<std::endl;
                 }
                 ++iter;
             }
@@ -359,7 +367,7 @@ int main(int argc, char *argv[])
 {
     export_month_json_test();
     export_to_sqlite();
-    export_to_mass();
+    export_to_liturgy();
     
     calendar_test();
     return 0;
