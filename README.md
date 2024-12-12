@@ -4,7 +4,7 @@ LiturgicCalendar is a program that generates the General Roman Calendar of the C
 
 ## Purpose
 
-This project is desgined for [CathAssist](http://www.cathassist.org).
+This project is designed for [CathAssist](http://www.cathassist.org).
 
 ## Architecture
 
