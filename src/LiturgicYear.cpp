@@ -978,7 +978,8 @@ void LiturgicYear::testChristmas1(LiturgicDay& ld)
 
 	if(ld.month()==1&&ld.day()==6)
 	{
-		ld.appendCell(1);	//主显节（大陆教会）
+        // 移除 1 月 6 日的主显节
+//		ld.appendCell(1);	//主显节（大陆教会）
 	}
 }
 
