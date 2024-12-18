@@ -171,6 +171,10 @@ CellInfo LiturgicDay::getLiturgicCellInfo() const
 		
 		_clr = WHITE;
 	}
+
+	if(getWeekOfSeason() < 0) {
+		_rank = ErrorRank;
+	}
     
 	return CellInfo(_rank, _clr, toWeekdayString());
 }

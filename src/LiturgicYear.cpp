@@ -958,14 +958,11 @@ void LiturgicYear::testChristmas1(LiturgicDay& ld)
 		return;
 
 	ld.setSeason(CHRISTMAS);
-
-	Date lastChristmas(year-1,12,25);
-	int dayFromLC = lastChristmas.daysTo(ld);
-	ld.setWeekOfSeason((dayFromLC-(lastChristmas.dayOfWeek()-1))/7 + 1);
-
+    ld.setWeekOfSeason(2);
 	if(ld<ep)
 	{
-
+        //主显节前都是第一周
+        ld.setWeekOfSeason(1);
 	}
 	else if(ld==ep)
 	{
@@ -974,6 +971,7 @@ void LiturgicYear::testChristmas1(LiturgicDay& ld)
 	else if(ld==bl)
 	{
 		ld.appendCell(2);	//主受洗日
+        ld.setWeekOfSeason(-1); //不归属于常年期或圣诞期
 	}
 
 	if(ld.month()==1&&ld.day()==6)
@@ -1066,14 +1064,8 @@ void LiturgicYear::testChristmas2(LiturgicDay& ld)
 		return;
 
 	ld.setSeason(CHRISTMAS);
-	if(cm.dayOfWeek() == SUN && ld==Date(year,12,31))
-	{
-		ld.setWeekOfSeason(2);
-	}
-	else
-	{
-		ld.setWeekOfSeason(1);
-	}
+    //12 月份全是圣诞节八日庆期
+    ld.setWeekOfSeason(-1);
 
 	//圣家节
 	if(cm.dayOfWeek() == SUN)
