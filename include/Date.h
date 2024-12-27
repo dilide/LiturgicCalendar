@@ -13,6 +13,7 @@
 #define __CA_CALENDAR_DATE_H__
 
 #include <string>
+#include <map>
 #include "CalendarDefine.h"
 
 namespace CathAssist
@@ -24,6 +25,10 @@ namespace CathAssist
 		public:
 			static bool isValid(const int& year,const int& month,const int& day); 
 			static bool isLeapYear(const int& year);
+			// 判断是否为春节
+			static bool isSpringFestival(const Date& d);
+			// 判断是否为除夕
+			static bool isNewYearEve(const Date& d);
 
 		public:
 			Date(void);
@@ -67,6 +72,7 @@ namespace CathAssist
         private:
             static const int gStartYear;
             static const int gEndYear;
+			static const std::map<int, Date> gLunarSpringDays;
 		};
 	}
 }

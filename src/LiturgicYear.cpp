@@ -1101,25 +1101,14 @@ void LiturgicYear::testProper(LiturgicDay& ld)
 	}
 
     {
-        /*
         //中国农历新年
-        int iLunarYear,iLunarMonth,iLunarDay;
-    	if(ld.getLunarDate(iLunarYear,iLunarMonth,iLunarDay))
-        {
-            if(iLunarMonth == 1 && iLunarDay == 1) {
-                //春节
-                ld.appendCell(12);
-            }
+        if(LiturgicDay::isSpringFestival(ld)) {
+            ld.appendCell(12);
         }
         //中国农历除夕
-        if(ld.addDays(1).getLunarDate(iLunarYear,iLunarMonth,iLunarDay))
-        {
-            if(iLunarMonth == 1 && iLunarDay == 1) {
-                //除夕
-                ld.appendCell(11);
-            }
+        if(LiturgicDay::isNewYearEve(ld)) {
+            ld.appendCell(11);
         }
-        */
     }
 
 	{

@@ -49,7 +49,6 @@ int create_tables(sqlite3* db)
         std::string strSql = "create table calendar("\
         "id integer primary key autoincrement,"\
         "date date not null,"\
-        "lunar text not null,"\
         "liturgic integer not null,"\
         "color integer not null,"\
         "cells text);";
@@ -258,7 +257,7 @@ void export_to_sqlite()
             }
             //插入sqlite数据库
             std::ostringstream osql;
-            osql<<"insert into calendar(date,lunar,liturgic,color,cells) values("
+            osql<<"insert into calendar(date,liturgic,color,cells) values("
                 <<"date('"<<ansi2utf8(dayInfo.toString())<<"'),"<<dayInfo.getLiturgicId()<<","<<dayInfo.getColor()<<",'"<<ansi2utf8(sqlite3_mprintf("%q",ostr.str().c_str()))<<"');";
 
             if(sqlite3_exec(db, osql.str().c_str(), NULL, 0, NULL))
