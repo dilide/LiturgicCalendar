@@ -51,11 +51,7 @@ namespace CathAssist
 			Date addMonths(int months) const;
 			Date addYears(int years) const;
 			int daysTo(const Date &) const;
-            
-            bool getLunarDate(int& iLunarYear, int& iLunarMonth, int& iLunarDay) const;
-
 			std::string toString() const;
-			std::string toLunarString() const;
 
 		public:
 			bool operator==(const Date &other) const { return jd == other.jd; }
@@ -71,15 +67,6 @@ namespace CathAssist
         private:
             static const int gStartYear;
             static const int gEndYear;
-            
-            //返回阴历iLunarYear年的闰月月份，如没有返回0
-            // 1901年1月---2050年12月
-            static unsigned short getLeapMonth(int iLunarYear);
-            
-            static int getLunarYearDays(int iLunarYear);
-            static int getLunarMonthDays(int iLunarYear, int iLunarMonth);
-            static unsigned short gLunarMonthDay[];
-            static unsigned char gLunarMonth[];
 		};
 	}
 }

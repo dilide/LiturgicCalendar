@@ -1101,6 +1101,7 @@ void LiturgicYear::testProper(LiturgicDay& ld)
 	}
 
     {
+        /*
         //中国农历新年
         int iLunarYear,iLunarMonth,iLunarDay;
     	if(ld.getLunarDate(iLunarYear,iLunarMonth,iLunarDay))
@@ -1118,6 +1119,7 @@ void LiturgicYear::testProper(LiturgicDay& ld)
                 ld.appendCell(11);
             }
         }
+        */
     }
 
 	{

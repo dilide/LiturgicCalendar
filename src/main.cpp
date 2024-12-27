@@ -132,7 +132,6 @@ void export_month_json_test()
             LiturgicDay dayInfo = Calendar::getLiturgicDay(dtBegin);
 
             day.AddMember("date", Value(dayInfo.toString().c_str(), allocator), allocator);
-            day.AddMember("lunar", Value(dayInfo.toLunarString().c_str(), allocator), allocator);
             day.AddMember("color", Value(getColorValue(dayInfo.getColor()).c_str(), allocator), allocator);
             day.AddMember("colorStr", Value(getColorStr(dayInfo.getColor()).c_str(), allocator), allocator);
 
@@ -260,7 +259,7 @@ void export_to_sqlite()
             //插入sqlite数据库
             std::ostringstream osql;
             osql<<"insert into calendar(date,lunar,liturgic,color,cells) values("
-                <<"date('"<<ansi2utf8(dayInfo.toString())<<"'),'"<<ansi2utf8(dayInfo.toLunarString())<<"',"<<dayInfo.getLiturgicId()<<","<<dayInfo.getColor()<<",'"<<ansi2utf8(sqlite3_mprintf("%q",ostr.str().c_str()))<<"');";
+                <<"date('"<<ansi2utf8(dayInfo.toString())<<"'),"<<dayInfo.getLiturgicId()<<","<<dayInfo.getColor()<<",'"<<ansi2utf8(sqlite3_mprintf("%q",ostr.str().c_str()))<<"');";
 
             if(sqlite3_exec(db, osql.str().c_str(), NULL, 0, NULL))
             {
@@ -272,7 +271,7 @@ void export_to_sqlite()
                 std::cout<<"insert date "<<dayInfo.toString()<<std::endl;
             }
             
-            of<<"update easter_daily set cells='"<<ReplaceAll(ostr.str(), "'", "''").c_str()<<"', liturgic="<<dayInfo.getLiturgicId()<<", color="<<dayInfo.getColor()<<", lunar='"<<ansi2utf8(dayInfo.toLunarString())<<"' where date='"<<dayInfo.toString()<<"';"<<std::endl;
+            of<<"update easter_daily set cells='"<<ReplaceAll(ostr.str(), "'", "''").c_str()<<"', liturgic="<<dayInfo.getLiturgicId()<<", color="<<dayInfo.getColor()<<", where date='"<<dayInfo.toString()<<"';"<<std::endl;
             //of<<"insert into easter_daily(date,lunar,liturgic,color,cells) values("
             //    <<"date('"<<ansi2utf8(dayInfo.toString())<<"'),'"<<ansi2utf8(dayInfo.toLunarString())<<"',"<<dayInfo.getLiturgicId()<<","<<dayInfo.getColor()<<",'"<<ansi2utf8(sqlite3_mprintf("%q",ostr.str().c_str()))<<"');"<<std::endl;
             
