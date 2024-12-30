@@ -58,7 +58,11 @@ color_t LiturgicDay::getColor() const
 
 int LiturgicDay::getLiturgicId() const
 {
-	return season*10000+weekOfSeason*100+dayOfWeek();
+	if(weekOfSeason > -1) {
+		return season*10000+weekOfSeason*100+dayOfWeek();
+	} else {
+		return season*10000+0*100+dayOfWeek();
+	}
 }
 
 std::list<CellInfo> LiturgicDay::getCellInfos() const
