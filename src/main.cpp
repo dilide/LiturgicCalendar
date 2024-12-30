@@ -270,7 +270,7 @@ void export_to_sqlite()
                 std::cout<<"insert date "<<dayInfo.toString()<<std::endl;
             }
             
-            of<<"update easter_daily set cells='"<<ReplaceAll(ostr.str(), "'", "''").c_str()<<"', liturgic="<<dayInfo.getLiturgicId()<<", color="<<dayInfo.getColor()<<", where date='"<<dayInfo.toString()<<"';"<<std::endl;
+            of<<"update easter_daily set cells='"<<ReplaceAll(ostr.str(), "'", "''").c_str()<<"', liturgic="<<dayInfo.getLiturgicId()<<", color="<<dayInfo.getColor()<<" where date='"<<dayInfo.toString()<<"';"<<std::endl;
             //of<<"insert into easter_daily(date,lunar,liturgic,color,cells) values("
             //    <<"date('"<<ansi2utf8(dayInfo.toString())<<"'),'"<<ansi2utf8(dayInfo.toLunarString())<<"',"<<dayInfo.getLiturgicId()<<","<<dayInfo.getColor()<<",'"<<ansi2utf8(sqlite3_mprintf("%q",ostr.str().c_str()))<<"');"<<std::endl;
             
