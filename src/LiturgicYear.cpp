@@ -766,8 +766,6 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
 		mapPropers.insert(std::make_pair(EASTER*10000+200+0,CellInfo(SOLEMNITY,WHITE,"复活节庆期第八日(慈悲主日)")));
 		//复活期第四主日
 		mapPropers.insert(std::make_pair(EASTER*10000+400+0,CellInfo(SUNDAY,WHITE,"复活期第四主日(善牧主日)")));
-		//耶稣升天（复活期第六主日星期四）
-		mapPropers.insert(std::make_pair(EASTER*10000+600+4,CellInfo(SOLEMNITY,WHITE,"耶稣升天")));
 
 		//圣神降临节（复活期第八主日）
 		mapPropers.insert(std::make_pair(EASTER*10000+700+6,CellInfo(FEAST,RED,"圣神降临节前夕")));
@@ -808,6 +806,9 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         mapPropers.insert(std::make_pair(12,CellInfo(FEAST,NOCOLOR,"农历新春")));
         //普世传教节
         mapPropers.insert(std::make_pair(13,CellInfo(LORD,GREEN,"普世传教节")));
+
+		//耶稣升天（固定在复活期第六主日星期四，但可能因牧灵需要调整到第七主日）
+		mapPropers.insert(std::make_pair(14,CellInfo(SOLEMNITY,WHITE,"耶稣升天节")));
 	}
     
     // 将节日编码插入到节日里
@@ -1006,6 +1007,13 @@ void LiturgicYear::testEaster(LiturgicDay& ld)
 
 	ld.setSeason(EASTER);
 	ld.setWeekOfSeason(ld.weekNumber()-easter.weekNumber()+1);
+
+    if(ld.getLiturgicId() == EASTER*10000+600+4) {
+        ld.appendCell(14); //耶稣升天节（复活期第六主日星期四）
+    }
+    if(ld.getLiturgicId() == EASTER*10000+700+0) {
+        ld.appendCell(14); //耶稣升天节（可挪到主日庆祝）
+    }
 }
 
 void LiturgicYear::testOrdinary2(LiturgicDay& ld)
