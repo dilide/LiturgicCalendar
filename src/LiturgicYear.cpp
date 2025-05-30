@@ -332,7 +332,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         mapPropers.insert(std::make_pair(1052901,CellInfo(OPTIONAL,NOCOLOR,"圣济利禄•凯撒利亚(殉道 St. Cyril of Caesarea)")));
         mapPropers.insert(std::make_pair(1052902,CellInfo(MEMORIAL,WHITE,"圣保禄六世(教宗 St. Paul VI)")));
         mapPropers.insert(std::make_pair(1053001,CellInfo(OPTIONAL,NOCOLOR,"圣女贞德(童贞 St. Joan of Arc)")));
-        mapPropers.insert(std::make_pair(1053101,CellInfo(FEAST,WHITE,"圣母访亲节(the Vistation of the Blessed Virgin Mary)")));
+        mapPropers.insert(std::make_pair(1053101,CellInfo(FEAST,WHITE,"圣母访亲(the Vistation of the Blessed Virgin Mary)")));
         mapPropers.insert(std::make_pair(1053102,CellInfo(OPTIONAL,NOCOLOR,"圣母诸宠中保及中华圣母节(Our Lady of all Graces and Queen of China)")));
         
         /*************6月***************/
