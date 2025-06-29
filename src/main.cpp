@@ -314,7 +314,7 @@ void export_to_liturgy() {
             auto saints = LiturgicYear::getPropers();
             auto iter = saints.begin();
             while (iter!=saints.end()) {
-                if(iter->second.rank >= MEMORIAL) {
+                if(iter->second.rank >= MEMORIAL || iter->second.rank == WEEKDAY) {
                     std::cout<<iter->second.celebration<<std::endl;
 //                    of<< "insert into easter_mass(code, name) values("<<iter->second.code<<",'"<<ansi2utf8(sqlite3_mprintf("%q",iter->second.celebration.c_str()))<<"');"<<std::endl;
                     of<<"insert into easter_mass(code, name) select "<<iter->second.code<<",'"<<ansi2utf8(sqlite3_mprintf("%q",iter->second.celebration.c_str()))<<"'"
