@@ -1838,6 +1838,10 @@ insert into easter_mass(code, name) select 1062101,'圣类思•公撒格(St. Al
 update easter_mass set name='圣类思•公撒格(St. Aloysius)' where code=1062101;
 insert into easter_liturgy_hours(code, name) select 1062101,'圣类思•公撒格(St. Aloysius)' where not exists (select 1 from easter_liturgy_hours where code=1062101);
 update easter_liturgy_hours set name='圣类思•公撒格(St. Aloysius)' where code=1062101;
+insert into easter_mass(code, name) select 1062302,'圣若翰洗者诞辰前夕' where not exists (select 1 from easter_mass where code=1062302);
+update easter_mass set name='圣若翰洗者诞辰前夕' where code=1062302;
+insert into easter_liturgy_hours(code, name) select 1062302,'圣若翰洗者诞辰前夕' where not exists (select 1 from easter_liturgy_hours where code=1062302);
+update easter_liturgy_hours set name='圣若翰洗者诞辰前夕' where code=1062302;
 insert into easter_mass(code, name) select 1062401,'圣若翰洗者诞辰(The Birthday of St. John the Baptist)' where not exists (select 1 from easter_mass where code=1062401);
 update easter_mass set name='圣若翰洗者诞辰(The Birthday of St. John the Baptist)' where code=1062401;
 insert into easter_liturgy_hours(code, name) select 1062401,'圣若翰洗者诞辰(The Birthday of St. John the Baptist)' where not exists (select 1 from easter_liturgy_hours where code=1062401);
@@ -1850,6 +1854,10 @@ insert into easter_mass(code, name) select 1062801,'圣依勒内(里昂主教殉
 update easter_mass set name='圣依勒内(里昂主教殉道 St. Irenaeus)' where code=1062801;
 insert into easter_liturgy_hours(code, name) select 1062801,'圣依勒内(里昂主教殉道 St. Irenaeus)' where not exists (select 1 from easter_liturgy_hours where code=1062801);
 update easter_liturgy_hours set name='圣依勒内(里昂主教殉道 St. Irenaeus)' where code=1062801;
+insert into easter_mass(code, name) select 1062803,'圣伯多禄及圣保禄宗徒前夕' where not exists (select 1 from easter_mass where code=1062803);
+update easter_mass set name='圣伯多禄及圣保禄宗徒前夕' where code=1062803;
+insert into easter_liturgy_hours(code, name) select 1062803,'圣伯多禄及圣保禄宗徒前夕' where not exists (select 1 from easter_liturgy_hours where code=1062803);
+update easter_liturgy_hours set name='圣伯多禄及圣保禄宗徒前夕' where code=1062803;
 insert into easter_mass(code, name) select 1062901,'圣伯多禄及圣保禄宗徒(St. Peter Apostle & St. Paul Apostle)' where not exists (select 1 from easter_mass where code=1062901);
 update easter_mass set name='圣伯多禄及圣保禄宗徒(St. Peter Apostle & St. Paul Apostle)' where code=1062901;
 insert into easter_liturgy_hours(code, name) select 1062901,'圣伯多禄及圣保禄宗徒(St. Peter Apostle & St. Paul Apostle)' where not exists (select 1 from easter_liturgy_hours where code=1062901);

@@ -71,6 +71,15 @@ std::list<CellInfo> LiturgicDay::getCellInfos() const
 
 	for(int r = CathAssist::Calendar::SOLEMNITY; r>=WEEKDAY; --r)
 	{
+		if(r == CathAssist::Calendar::WEEKDAY && dayOfWeek()!=0) {
+			//平日
+			CellInfo c = getLiturgicCellInfo();
+			if(c.rank != ErrorRank)
+			{
+				cells.push_back(c);
+			}
+		}
+
 		//特殊节日
 		int iCount = 0;
 		auto iter = listCell.begin();
@@ -88,19 +97,10 @@ std::list<CellInfo> LiturgicDay::getCellInfos() const
 
 		if(iCount<1)
 		{
-			//重新计算主日和平日信息
+			//计算特殊主日
 			if(r == CathAssist::Calendar::SUNDAY && dayOfWeek()==0)
 			{
 				//主日
-				CellInfo c = getLiturgicCellInfo();
-				if(c.rank != ErrorRank)
-				{
-					cells.push_back(c);
-				}
-			}
-			else if(r == CathAssist::Calendar::WEEKDAY && dayOfWeek()!=0)
-			{
-				//平日
 				CellInfo c = getLiturgicCellInfo();
 				if(c.rank != ErrorRank)
 				{
