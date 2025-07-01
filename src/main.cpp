@@ -90,7 +90,7 @@ void export_month_json_test()
     docMonth.SetObject();
     rapidjson::Document::AllocatorType& allocator = docMonth.GetAllocator();
     rapidjson::Value* days = new rapidjson::Value(rapidjson::kArrayType);
-    for(int iYear=2010;iYear<2051;++iYear)
+    for(int iYear=2010;iYear<=2051;++iYear)
     {
         CathAssist::Calendar::Date dtBegin(iYear,1,1);
         while (dtBegin.year()==iYear)
@@ -98,7 +98,7 @@ void export_month_json_test()
             if(lastYear!= dtBegin.year() || lastMonth != dtBegin.month())
             {
                 //save last month
-                if(lastYear > 0)
+                if(lastYear > 0 && lastYear < 2051)
                 {
                     std::ostringstream tmp;
                     tmp<<lastYear<<setfill('0')<<setw(2)<<lastMonth;
@@ -109,6 +109,8 @@ void export_month_json_test()
                     StringBuffer buffer;
                     PrettyWriter<StringBuffer> writer(buffer);
                     docMonth.Accept(writer);
+
+                    std::cout<<"export month "<<tmp.str()<<std::endl;
 
                     std::ofstream of;
                     of.open(string("./months/") + tmp.str() + ".json");
