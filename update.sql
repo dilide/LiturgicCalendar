@@ -764,8 +764,8 @@ insert into easter_saint(code, name, rank, color) select 1073101,'圣依纳爵�
 update easter_saint set name='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)', rank=3, color=2 where code=1073101;
 insert into easter_saint(code, name, rank, color) select 1073102,'真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)',2,0 where not exists (select 1 from easter_saint where code=1073102);
 update easter_saint set name='真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)', rank=2, color=0 where code=1073102;
-insert into easter_saint(code, name, rank, color) select 1080101,'圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)',3,2 where not exists (select 1 from easter_saint where code=1080101);
-update easter_saint set name='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)', rank=3, color=2 where code=1080101;
+insert into easter_saint(code, name, rank, color) select 1080101,'圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)',3,2 where not exists (select 1 from easter_saint where code=1080101);
+update easter_saint set name='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)', rank=3, color=2 where code=1080101;
 insert into easter_saint(code, name, rank, color) select 1080201,'圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)',2,0 where not exists (select 1 from easter_saint where code=1080201);
 update easter_saint set name='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)', rank=2, color=0 where code=1080201;
 insert into easter_saint(code, name, rank, color) select 1080301,'圣华旦(梅洛士院长 St. Waltheof -1160)',2,0 where not exists (select 1 from easter_saint where code=1080301);
@@ -1460,7 +1460,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十七周(星期四)|', liturgic=11704, color=2 where date='2010-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期五)|', liturgic=11705, color=1 where date='2010-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期六)|', liturgic=11706, color=2 where date='2010-07-31';
-update easter_daily set cells='常年期第十八主日|圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|', liturgic=11800, color=1 where date='2010-08-01';
+update easter_daily set cells='常年期第十八主日|圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|', liturgic=11800, color=1 where date='2010-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十八周(星期一)|', liturgic=11801, color=1 where date='2010-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十八周(星期二)|', liturgic=11802, color=1 where date='2010-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十八周(星期三)|', liturgic=11803, color=2 where date='2010-08-04';
@@ -1825,7 +1825,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十七周(星期五)|', liturgic=11705, color=2 where date='2011-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期六)|', liturgic=11706, color=1 where date='2011-07-30';
 update easter_daily set cells='常年期第十八主日|圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|', liturgic=11800, color=1 where date='2011-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十八周(星期一)|', liturgic=11801, color=2 where date='2011-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十八周(星期一)|', liturgic=11801, color=2 where date='2011-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十八周(星期二)|', liturgic=11802, color=1 where date='2011-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十八周(星期三)|', liturgic=11803, color=1 where date='2011-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十八周(星期四)|', liturgic=11804, color=2 where date='2011-08-04';
@@ -2191,7 +2191,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='常年期第十七主日|圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|', liturgic=11700, color=1 where date='2012-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期一)|', liturgic=11701, color=1 where date='2012-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期二)|', liturgic=11702, color=2 where date='2012-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期三)|', liturgic=11703, color=2 where date='2012-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期三)|', liturgic=11703, color=2 where date='2012-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十七周(星期四)|', liturgic=11704, color=1 where date='2012-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十七周(星期五)|', liturgic=11705, color=1 where date='2012-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十七周(星期六)|', liturgic=11706, color=2 where date='2012-08-04';
@@ -2556,7 +2556,7 @@ update easter_daily set cells='常年期第十七主日|真福亚尔丰索(童�
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十七周(星期一)|', liturgic=11701, color=2 where date='2013-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期二)|', liturgic=11702, color=1 where date='2013-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期三)|', liturgic=11703, color=2 where date='2013-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期四)|', liturgic=11704, color=2 where date='2013-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期四)|', liturgic=11704, color=2 where date='2013-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十七周(星期五)|', liturgic=11705, color=1 where date='2013-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十七周(星期六)|', liturgic=11706, color=1 where date='2013-08-03';
 update easter_daily set cells='常年期第十八主日|圣若翰•维雅纳(St. John Vianney)\\1080401|', liturgic=11800, color=1 where date='2013-08-04';
@@ -2921,7 +2921,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十七周(星期二)|', liturgic=11702, color=2 where date='2014-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期三)|', liturgic=11703, color=1 where date='2014-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期四)|', liturgic=11704, color=2 where date='2014-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期五)|', liturgic=11705, color=2 where date='2014-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期五)|', liturgic=11705, color=2 where date='2014-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十七周(星期六)|', liturgic=11706, color=1 where date='2014-08-02';
 update easter_daily set cells='常年期第十八主日|圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|', liturgic=11800, color=1 where date='2014-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十八周(星期一)|', liturgic=11801, color=2 where date='2014-08-04';
@@ -3286,7 +3286,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十七周(星期三)|', liturgic=11703, color=2 where date='2015-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期四)|', liturgic=11704, color=1 where date='2015-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期五)|', liturgic=11705, color=2 where date='2015-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期六)|', liturgic=11706, color=2 where date='2015-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期六)|', liturgic=11706, color=2 where date='2015-08-01';
 update easter_daily set cells='常年期第十八主日|圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|', liturgic=11800, color=1 where date='2015-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十八周(星期一)|', liturgic=11801, color=1 where date='2015-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十八周(星期二)|', liturgic=11802, color=2 where date='2015-08-04';
@@ -3652,7 +3652,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十七周(星期五)|', liturgic=11705, color=2 where date='2016-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期六)|', liturgic=11706, color=1 where date='2016-07-30';
 update easter_daily set cells='常年期第十八主日|圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|', liturgic=11800, color=1 where date='2016-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十八周(星期一)|', liturgic=11801, color=2 where date='2016-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十八周(星期一)|', liturgic=11801, color=2 where date='2016-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十八周(星期二)|', liturgic=11802, color=1 where date='2016-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十八周(星期三)|', liturgic=11803, color=1 where date='2016-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十八周(星期四)|', liturgic=11804, color=2 where date='2016-08-04';
@@ -4017,7 +4017,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十六周(星期六)|', liturgic=11606, color=2 where date='2017-07-29';
 update easter_daily set cells='常年期第十七主日|圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|', liturgic=11700, color=1 where date='2017-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期一)|', liturgic=11701, color=2 where date='2017-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期二)|', liturgic=11702, color=2 where date='2017-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期二)|', liturgic=11702, color=2 where date='2017-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十七周(星期三)|', liturgic=11703, color=1 where date='2017-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十七周(星期四)|', liturgic=11704, color=1 where date='2017-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十七周(星期五)|', liturgic=11705, color=2 where date='2017-08-04';
@@ -4382,7 +4382,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='常年期第十七主日|圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|', liturgic=11700, color=1 where date='2018-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期一)|', liturgic=11701, color=1 where date='2018-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期二)|', liturgic=11702, color=2 where date='2018-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期三)|', liturgic=11703, color=2 where date='2018-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期三)|', liturgic=11703, color=2 where date='2018-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十七周(星期四)|', liturgic=11704, color=1 where date='2018-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十七周(星期五)|', liturgic=11705, color=1 where date='2018-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十七周(星期六)|', liturgic=11706, color=2 where date='2018-08-04';
@@ -4747,7 +4747,7 @@ update easter_daily set cells='常年期第十七主日|真福亚尔丰索(童�
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十七周(星期一)|', liturgic=11701, color=2 where date='2019-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期二)|', liturgic=11702, color=1 where date='2019-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期三)|', liturgic=11703, color=2 where date='2019-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期四)|', liturgic=11704, color=2 where date='2019-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期四)|', liturgic=11704, color=2 where date='2019-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十七周(星期五)|', liturgic=11705, color=1 where date='2019-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十七周(星期六)|', liturgic=11706, color=1 where date='2019-08-03';
 update easter_daily set cells='常年期第十八主日|圣若翰•维雅纳(St. John Vianney)\\1080401|', liturgic=11800, color=1 where date='2019-08-04';
@@ -5113,7 +5113,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十七周(星期三)|', liturgic=11703, color=2 where date='2020-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期四)|', liturgic=11704, color=1 where date='2020-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期五)|', liturgic=11705, color=2 where date='2020-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期六)|', liturgic=11706, color=2 where date='2020-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期六)|', liturgic=11706, color=2 where date='2020-08-01';
 update easter_daily set cells='常年期第十八主日|圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|', liturgic=11800, color=1 where date='2020-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十八周(星期一)|', liturgic=11801, color=1 where date='2020-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十八周(星期二)|', liturgic=11802, color=2 where date='2020-08-04';
@@ -5478,7 +5478,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十七周(星期四)|', liturgic=11704, color=2 where date='2021-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期五)|', liturgic=11705, color=1 where date='2021-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期六)|', liturgic=11706, color=2 where date='2021-07-31';
-update easter_daily set cells='常年期第十八主日|圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|', liturgic=11800, color=1 where date='2021-08-01';
+update easter_daily set cells='常年期第十八主日|圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|', liturgic=11800, color=1 where date='2021-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十八周(星期一)|', liturgic=11801, color=1 where date='2021-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十八周(星期二)|', liturgic=11802, color=1 where date='2021-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十八周(星期三)|', liturgic=11803, color=2 where date='2021-08-04';
@@ -5843,7 +5843,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十七周(星期五)|', liturgic=11705, color=2 where date='2022-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期六)|', liturgic=11706, color=1 where date='2022-07-30';
 update easter_daily set cells='常年期第十八主日|圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|', liturgic=11800, color=1 where date='2022-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十八周(星期一)|', liturgic=11801, color=2 where date='2022-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十八周(星期一)|', liturgic=11801, color=2 where date='2022-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十八周(星期二)|', liturgic=11802, color=1 where date='2022-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十八周(星期三)|', liturgic=11803, color=1 where date='2022-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十八周(星期四)|', liturgic=11804, color=2 where date='2022-08-04';
@@ -6208,7 +6208,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十六周(星期六)|', liturgic=11606, color=2 where date='2023-07-29';
 update easter_daily set cells='常年期第十七主日|圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|', liturgic=11700, color=1 where date='2023-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期一)|', liturgic=11701, color=2 where date='2023-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期二)|', liturgic=11702, color=2 where date='2023-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期二)|', liturgic=11702, color=2 where date='2023-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十七周(星期三)|', liturgic=11703, color=1 where date='2023-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十七周(星期四)|', liturgic=11704, color=1 where date='2023-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十七周(星期五)|', liturgic=11705, color=2 where date='2023-08-04';
@@ -6574,7 +6574,7 @@ update easter_daily set cells='常年期第十七主日|真福亚尔丰索(童�
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十七周(星期一)|', liturgic=11701, color=2 where date='2024-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期二)|', liturgic=11702, color=1 where date='2024-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期三)|', liturgic=11703, color=2 where date='2024-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期四)|', liturgic=11704, color=2 where date='2024-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期四)|', liturgic=11704, color=2 where date='2024-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十七周(星期五)|', liturgic=11705, color=1 where date='2024-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十七周(星期六)|', liturgic=11706, color=1 where date='2024-08-03';
 update easter_daily set cells='常年期第十八主日|圣若翰•维雅纳(St. John Vianney)\\1080401|', liturgic=11800, color=1 where date='2024-08-04';
@@ -6939,7 +6939,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十七周(星期二)|', liturgic=11702, color=2 where date='2025-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期三)|', liturgic=11703, color=1 where date='2025-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期四)|', liturgic=11704, color=2 where date='2025-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期五)|', liturgic=11705, color=2 where date='2025-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期五)|', liturgic=11705, color=2 where date='2025-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十七周(星期六)|', liturgic=11706, color=1 where date='2025-08-02';
 update easter_daily set cells='常年期第十八主日|圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|', liturgic=11800, color=1 where date='2025-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十八周(星期一)|', liturgic=11801, color=2 where date='2025-08-04';
@@ -7304,7 +7304,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十七周(星期三)|', liturgic=11703, color=2 where date='2026-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期四)|', liturgic=11704, color=1 where date='2026-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期五)|', liturgic=11705, color=2 where date='2026-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期六)|', liturgic=11706, color=2 where date='2026-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期六)|', liturgic=11706, color=2 where date='2026-08-01';
 update easter_daily set cells='常年期第十八主日|圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|', liturgic=11800, color=1 where date='2026-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十八周(星期一)|', liturgic=11801, color=1 where date='2026-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十八周(星期二)|', liturgic=11802, color=2 where date='2026-08-04';
@@ -7669,7 +7669,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十七周(星期四)|', liturgic=11704, color=2 where date='2027-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期五)|', liturgic=11705, color=1 where date='2027-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期六)|', liturgic=11706, color=2 where date='2027-07-31';
-update easter_daily set cells='常年期第十八主日|圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|', liturgic=11800, color=1 where date='2027-08-01';
+update easter_daily set cells='常年期第十八主日|圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|', liturgic=11800, color=1 where date='2027-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十八周(星期一)|', liturgic=11801, color=1 where date='2027-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十八周(星期二)|', liturgic=11802, color=1 where date='2027-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十八周(星期三)|', liturgic=11803, color=2 where date='2027-08-04';
@@ -8035,7 +8035,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十六周(星期六)|', liturgic=11606, color=2 where date='2028-07-29';
 update easter_daily set cells='常年期第十七主日|圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|', liturgic=11700, color=1 where date='2028-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期一)|', liturgic=11701, color=2 where date='2028-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期二)|', liturgic=11702, color=2 where date='2028-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期二)|', liturgic=11702, color=2 where date='2028-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十七周(星期三)|', liturgic=11703, color=1 where date='2028-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十七周(星期四)|', liturgic=11704, color=1 where date='2028-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十七周(星期五)|', liturgic=11705, color=2 where date='2028-08-04';
@@ -8400,7 +8400,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='常年期第十七主日|圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|', liturgic=11700, color=1 where date='2029-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期一)|', liturgic=11701, color=1 where date='2029-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期二)|', liturgic=11702, color=2 where date='2029-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期三)|', liturgic=11703, color=2 where date='2029-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期三)|', liturgic=11703, color=2 where date='2029-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十七周(星期四)|', liturgic=11704, color=1 where date='2029-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十七周(星期五)|', liturgic=11705, color=1 where date='2029-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十七周(星期六)|', liturgic=11706, color=2 where date='2029-08-04';
@@ -8765,7 +8765,7 @@ update easter_daily set cells='常年期第十七主日|真福亚尔丰索(童�
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十七周(星期一)|', liturgic=11701, color=2 where date='2030-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期二)|', liturgic=11702, color=1 where date='2030-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期三)|', liturgic=11703, color=2 where date='2030-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期四)|', liturgic=11704, color=2 where date='2030-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期四)|', liturgic=11704, color=2 where date='2030-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十七周(星期五)|', liturgic=11705, color=1 where date='2030-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十七周(星期六)|', liturgic=11706, color=1 where date='2030-08-03';
 update easter_daily set cells='常年期第十八主日|圣若翰•维雅纳(St. John Vianney)\\1080401|', liturgic=11800, color=1 where date='2030-08-04';
@@ -9130,7 +9130,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十七周(星期二)|', liturgic=11702, color=2 where date='2031-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期三)|', liturgic=11703, color=1 where date='2031-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期四)|', liturgic=11704, color=2 where date='2031-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期五)|', liturgic=11705, color=2 where date='2031-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期五)|', liturgic=11705, color=2 where date='2031-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十七周(星期六)|', liturgic=11706, color=1 where date='2031-08-02';
 update easter_daily set cells='常年期第十八主日|圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|', liturgic=11800, color=1 where date='2031-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十八周(星期一)|', liturgic=11801, color=2 where date='2031-08-04';
@@ -9496,7 +9496,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十七周(星期四)|', liturgic=11704, color=2 where date='2032-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期五)|', liturgic=11705, color=1 where date='2032-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期六)|', liturgic=11706, color=2 where date='2032-07-31';
-update easter_daily set cells='常年期第十八主日|圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|', liturgic=11800, color=1 where date='2032-08-01';
+update easter_daily set cells='常年期第十八主日|圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|', liturgic=11800, color=1 where date='2032-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十八周(星期一)|', liturgic=11801, color=1 where date='2032-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十八周(星期二)|', liturgic=11802, color=1 where date='2032-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十八周(星期三)|', liturgic=11803, color=2 where date='2032-08-04';
@@ -9861,7 +9861,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十七周(星期五)|', liturgic=11705, color=2 where date='2033-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期六)|', liturgic=11706, color=1 where date='2033-07-30';
 update easter_daily set cells='常年期第十八主日|圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|', liturgic=11800, color=1 where date='2033-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十八周(星期一)|', liturgic=11801, color=2 where date='2033-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十八周(星期一)|', liturgic=11801, color=2 where date='2033-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十八周(星期二)|', liturgic=11802, color=1 where date='2033-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十八周(星期三)|', liturgic=11803, color=1 where date='2033-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十八周(星期四)|', liturgic=11804, color=2 where date='2033-08-04';
@@ -10226,7 +10226,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十六周(星期六)|', liturgic=11606, color=2 where date='2034-07-29';
 update easter_daily set cells='常年期第十七主日|圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|', liturgic=11700, color=1 where date='2034-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期一)|', liturgic=11701, color=2 where date='2034-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期二)|', liturgic=11702, color=2 where date='2034-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期二)|', liturgic=11702, color=2 where date='2034-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十七周(星期三)|', liturgic=11703, color=1 where date='2034-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十七周(星期四)|', liturgic=11704, color=1 where date='2034-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十七周(星期五)|', liturgic=11705, color=2 where date='2034-08-04';
@@ -10591,7 +10591,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='常年期第十七主日|圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|', liturgic=11700, color=1 where date='2035-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期一)|', liturgic=11701, color=1 where date='2035-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期二)|', liturgic=11702, color=2 where date='2035-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期三)|', liturgic=11703, color=2 where date='2035-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期三)|', liturgic=11703, color=2 where date='2035-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十七周(星期四)|', liturgic=11704, color=1 where date='2035-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十七周(星期五)|', liturgic=11705, color=1 where date='2035-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十七周(星期六)|', liturgic=11706, color=2 where date='2035-08-04';
@@ -10957,7 +10957,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十七周(星期二)|', liturgic=11702, color=2 where date='2036-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期三)|', liturgic=11703, color=1 where date='2036-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期四)|', liturgic=11704, color=2 where date='2036-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期五)|', liturgic=11705, color=2 where date='2036-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期五)|', liturgic=11705, color=2 where date='2036-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十七周(星期六)|', liturgic=11706, color=1 where date='2036-08-02';
 update easter_daily set cells='常年期第十八主日|圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|', liturgic=11800, color=1 where date='2036-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十八周(星期一)|', liturgic=11801, color=2 where date='2036-08-04';
@@ -11322,7 +11322,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十七周(星期三)|', liturgic=11703, color=2 where date='2037-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期四)|', liturgic=11704, color=1 where date='2037-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期五)|', liturgic=11705, color=2 where date='2037-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期六)|', liturgic=11706, color=2 where date='2037-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期六)|', liturgic=11706, color=2 where date='2037-08-01';
 update easter_daily set cells='常年期第十八主日|圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|', liturgic=11800, color=1 where date='2037-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十八周(星期一)|', liturgic=11801, color=1 where date='2037-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十八周(星期二)|', liturgic=11802, color=2 where date='2037-08-04';
@@ -11687,7 +11687,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十七周(星期四)|', liturgic=11704, color=2 where date='2038-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期五)|', liturgic=11705, color=1 where date='2038-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期六)|', liturgic=11706, color=2 where date='2038-07-31';
-update easter_daily set cells='常年期第十八主日|圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|', liturgic=11800, color=1 where date='2038-08-01';
+update easter_daily set cells='常年期第十八主日|圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|', liturgic=11800, color=1 where date='2038-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十八周(星期一)|', liturgic=11801, color=1 where date='2038-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十八周(星期二)|', liturgic=11802, color=1 where date='2038-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十八周(星期三)|', liturgic=11803, color=2 where date='2038-08-04';
@@ -12052,7 +12052,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十七周(星期五)|', liturgic=11705, color=2 where date='2039-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期六)|', liturgic=11706, color=1 where date='2039-07-30';
 update easter_daily set cells='常年期第十八主日|圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|', liturgic=11800, color=1 where date='2039-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十八周(星期一)|', liturgic=11801, color=2 where date='2039-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十八周(星期一)|', liturgic=11801, color=2 where date='2039-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十八周(星期二)|', liturgic=11802, color=1 where date='2039-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十八周(星期三)|', liturgic=11803, color=1 where date='2039-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十八周(星期四)|', liturgic=11804, color=2 where date='2039-08-04';
@@ -12418,7 +12418,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='常年期第十七主日|圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|', liturgic=11700, color=1 where date='2040-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期一)|', liturgic=11701, color=1 where date='2040-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期二)|', liturgic=11702, color=2 where date='2040-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期三)|', liturgic=11703, color=2 where date='2040-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期三)|', liturgic=11703, color=2 where date='2040-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十七周(星期四)|', liturgic=11704, color=1 where date='2040-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十七周(星期五)|', liturgic=11705, color=1 where date='2040-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十七周(星期六)|', liturgic=11706, color=2 where date='2040-08-04';
@@ -12783,7 +12783,7 @@ update easter_daily set cells='常年期第十七主日|真福亚尔丰索(童�
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十七周(星期一)|', liturgic=11701, color=2 where date='2041-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期二)|', liturgic=11702, color=1 where date='2041-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期三)|', liturgic=11703, color=2 where date='2041-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期四)|', liturgic=11704, color=2 where date='2041-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期四)|', liturgic=11704, color=2 where date='2041-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十七周(星期五)|', liturgic=11705, color=1 where date='2041-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十七周(星期六)|', liturgic=11706, color=1 where date='2041-08-03';
 update easter_daily set cells='常年期第十八主日|圣若翰•维雅纳(St. John Vianney)\\1080401|', liturgic=11800, color=1 where date='2041-08-04';
@@ -13148,7 +13148,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十七周(星期二)|', liturgic=11702, color=2 where date='2042-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期三)|', liturgic=11703, color=1 where date='2042-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期四)|', liturgic=11704, color=2 where date='2042-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期五)|', liturgic=11705, color=2 where date='2042-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期五)|', liturgic=11705, color=2 where date='2042-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十七周(星期六)|', liturgic=11706, color=1 where date='2042-08-02';
 update easter_daily set cells='常年期第十八主日|圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|', liturgic=11800, color=1 where date='2042-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十八周(星期一)|', liturgic=11801, color=2 where date='2042-08-04';
@@ -13513,7 +13513,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十七周(星期三)|', liturgic=11703, color=2 where date='2043-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期四)|', liturgic=11704, color=1 where date='2043-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期五)|', liturgic=11705, color=2 where date='2043-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期六)|', liturgic=11706, color=2 where date='2043-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期六)|', liturgic=11706, color=2 where date='2043-08-01';
 update easter_daily set cells='常年期第十八主日|圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|', liturgic=11800, color=1 where date='2043-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十八周(星期一)|', liturgic=11801, color=1 where date='2043-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十八周(星期二)|', liturgic=11802, color=2 where date='2043-08-04';
@@ -13879,7 +13879,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十七周(星期五)|', liturgic=11705, color=2 where date='2044-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期六)|', liturgic=11706, color=1 where date='2044-07-30';
 update easter_daily set cells='常年期第十八主日|圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|', liturgic=11800, color=1 where date='2044-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十八周(星期一)|', liturgic=11801, color=2 where date='2044-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十八周(星期一)|', liturgic=11801, color=2 where date='2044-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十八周(星期二)|', liturgic=11802, color=1 where date='2044-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十八周(星期三)|', liturgic=11803, color=1 where date='2044-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十八周(星期四)|', liturgic=11804, color=2 where date='2044-08-04';
@@ -14244,7 +14244,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十六周(星期六)|', liturgic=11606, color=2 where date='2045-07-29';
 update easter_daily set cells='常年期第十七主日|圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|', liturgic=11700, color=1 where date='2045-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期一)|', liturgic=11701, color=2 where date='2045-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期二)|', liturgic=11702, color=2 where date='2045-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期二)|', liturgic=11702, color=2 where date='2045-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十七周(星期三)|', liturgic=11703, color=1 where date='2045-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十七周(星期四)|', liturgic=11704, color=1 where date='2045-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十七周(星期五)|', liturgic=11705, color=2 where date='2045-08-04';
@@ -14609,7 +14609,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='常年期第十七主日|圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|', liturgic=11700, color=1 where date='2046-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期一)|', liturgic=11701, color=1 where date='2046-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期二)|', liturgic=11702, color=2 where date='2046-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期三)|', liturgic=11703, color=2 where date='2046-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期三)|', liturgic=11703, color=2 where date='2046-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十七周(星期四)|', liturgic=11704, color=1 where date='2046-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十七周(星期五)|', liturgic=11705, color=1 where date='2046-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十七周(星期六)|', liturgic=11706, color=2 where date='2046-08-04';
@@ -14974,7 +14974,7 @@ update easter_daily set cells='常年期第十七主日|真福亚尔丰索(童�
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十七周(星期一)|', liturgic=11701, color=2 where date='2047-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期二)|', liturgic=11702, color=1 where date='2047-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期三)|', liturgic=11703, color=2 where date='2047-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期四)|', liturgic=11704, color=2 where date='2047-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期四)|', liturgic=11704, color=2 where date='2047-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十七周(星期五)|', liturgic=11705, color=1 where date='2047-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十七周(星期六)|', liturgic=11706, color=1 where date='2047-08-03';
 update easter_daily set cells='常年期第十八主日|圣若翰•维雅纳(St. John Vianney)\\1080401|', liturgic=11800, color=1 where date='2047-08-04';
@@ -15340,7 +15340,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十七周(星期三)|', liturgic=11703, color=2 where date='2048-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期四)|', liturgic=11704, color=1 where date='2048-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期五)|', liturgic=11705, color=2 where date='2048-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期六)|', liturgic=11706, color=2 where date='2048-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十七周(星期六)|', liturgic=11706, color=2 where date='2048-08-01';
 update easter_daily set cells='常年期第十八主日|圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|', liturgic=11800, color=1 where date='2048-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十八周(星期一)|', liturgic=11801, color=1 where date='2048-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十八周(星期二)|', liturgic=11802, color=2 where date='2048-08-04';
@@ -15705,7 +15705,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十七周(星期四)|', liturgic=11704, color=2 where date='2049-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期五)|', liturgic=11705, color=1 where date='2049-07-30';
 update easter_daily set cells='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|常年期第十七周(星期六)|', liturgic=11706, color=2 where date='2049-07-31';
-update easter_daily set cells='常年期第十八主日|圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|', liturgic=11800, color=1 where date='2049-08-01';
+update easter_daily set cells='常年期第十八主日|圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|', liturgic=11800, color=1 where date='2049-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十八周(星期一)|', liturgic=11801, color=1 where date='2049-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十八周(星期二)|', liturgic=11802, color=1 where date='2049-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十八周(星期三)|', liturgic=11803, color=2 where date='2049-08-04';
@@ -16070,7 +16070,7 @@ update easter_daily set cells='真福亚尔丰索(童贞 Bd. Alphonsa Muttathupa
 update easter_daily set cells='圣玛尔大、圣玛利亚及圣拉匝禄(St. Martha, Mary and Lazarus)\\1072901|常年期第十七周(星期五)|', liturgic=11705, color=2 where date='2050-07-29';
 update easter_daily set cells='圣伯多禄金言(辣未纳总主教圣师 St. Peter Chrysologus)\\1073001|真福伯多禄•玛格里诺(Bd. Peter of Mogliano)\\1073002|常年期第十七周(星期六)|', liturgic=11706, color=1 where date='2050-07-30';
 update easter_daily set cells='常年期第十八主日|圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)\\1073101|真福儒斯定(尼洛波利主教 Bd. Justin de Jacobis)\\1073102|', liturgic=11800, color=1 where date='2050-07-31';
-update easter_daily set cells='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十八周(星期一)|', liturgic=11801, color=2 where date='2050-08-01';
+update easter_daily set cells='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)\\1080101|常年期第十八周(星期一)|', liturgic=11801, color=2 where date='2050-08-01';
 update easter_daily set cells='圣欧瑟伯(凡尔则里主教 St. Eusebius of Vencelli)\\1080201|常年期第十八周(星期二)|', liturgic=11802, color=1 where date='2050-08-02';
 update easter_daily set cells='圣华旦(梅洛士院长 St. Waltheof -1160)\\1080301|真福伯多禄•儒里安•爱麦(至圣圣体修会会祖 Bd. Peter Julian Eymard)\\1080302|常年期第十八周(星期三)|', liturgic=11803, color=1 where date='2050-08-03';
 update easter_daily set cells='圣若翰•维雅纳(St. John Vianney)\\1080401|常年期第十八周(星期四)|', liturgic=11804, color=2 where date='2050-08-04';

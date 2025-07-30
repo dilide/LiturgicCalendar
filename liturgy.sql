@@ -1910,10 +1910,10 @@ insert into easter_mass(code, name) select 1073101,'圣依纳爵•罗耀拉(耶
 update easter_mass set name='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)' where code=1073101;
 insert into easter_liturgy_hours(code, name) select 1073101,'圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)' where not exists (select 1 from easter_liturgy_hours where code=1073101);
 update easter_liturgy_hours set name='圣依纳爵•罗耀拉(耶稣会会祖圣纳爵 St. Ignatius of Loyola)' where code=1073101;
-insert into easter_mass(code, name) select 1080101,'圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)' where not exists (select 1 from easter_mass where code=1080101);
-update easter_mass set name='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)' where code=1080101;
-insert into easter_liturgy_hours(code, name) select 1080101,'圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)' where not exists (select 1 from easter_liturgy_hours where code=1080101);
-update easter_liturgy_hours set name='圣亚尔丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)' where code=1080101;
+insert into easter_mass(code, name) select 1080101,'圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)' where not exists (select 1 from easter_mass where code=1080101);
+update easter_mass set name='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)' where code=1080101;
+insert into easter_liturgy_hours(code, name) select 1080101,'圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)' where not exists (select 1 from easter_liturgy_hours where code=1080101);
+update easter_liturgy_hours set name='圣亚丰索(主教圣师赎世主会会祖 St. Alphonsus de Liguori)' where code=1080101;
 insert into easter_mass(code, name) select 1080401,'圣若翰•维雅纳(St. John Vianney)' where not exists (select 1 from easter_mass where code=1080401);
 update easter_mass set name='圣若翰•维雅纳(St. John Vianney)' where code=1080401;
 insert into easter_liturgy_hours(code, name) select 1080401,'圣若翰•维雅纳(St. John Vianney)' where not exists (select 1 from easter_liturgy_hours where code=1080401);
