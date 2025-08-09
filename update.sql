@@ -806,8 +806,8 @@ insert into easter_saint(code, name, rank, color) select 1081302,'圣贝尼杜(S
 update easter_saint set name='圣贝尼杜(St. Benildus)', rank=2, color=0 where code=1081302;
 insert into easter_saint(code, name, rank, color) select 1081401,'真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)',2,0 where not exists (select 1 from easter_saint where code=1081401);
 update easter_saint set name='真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)', rank=2, color=0 where code=1081401;
-insert into easter_saint(code, name, rank, color) select 1081402,'圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)',3,3 where not exists (select 1 from easter_saint where code=1081402);
-update easter_saint set name='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)', rank=3, color=3 where code=1081402;
+insert into easter_saint(code, name, rank, color) select 1081402,'圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)',3,3 where not exists (select 1 from easter_saint where code=1081402);
+update easter_saint set name='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)', rank=3, color=3 where code=1081402;
 insert into easter_saint(code, name, rank, color) select 1081403,'圣母升天节前夕',0,2 where not exists (select 1 from easter_saint where code=1081403);
 update easter_saint set name='圣母升天节前夕', rank=0, color=2 where code=1081403;
 insert into easter_saint(code, name, rank, color) select 1081501,'圣母升天节(The Assumption of the Blessed Virgin Mary)',10,2 where not exists (select 1 from easter_saint where code=1081501);
@@ -1473,7 +1473,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期三)|', liturgic=11903, color=2 where date='2010-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2010-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2010-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期六)|圣母升天节前夕\\1081403|', liturgic=11906, color=3 where date='2010-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期六)|圣母升天节前夕\\1081403|', liturgic=11906, color=3 where date='2010-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第二十主日|', liturgic=12000, color=2 where date='2010-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2010-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2010-08-17';
@@ -1838,7 +1838,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期四)|', liturgic=11904, color=2 where date='2011-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2011-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2011-08-13';
-update easter_daily set cells='常年期第二十主日|圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|圣母升天节前夕\\1081403|', liturgic=12000, color=1 where date='2011-08-14';
+update easter_daily set cells='常年期第二十主日|圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|圣母升天节前夕\\1081403|', liturgic=12000, color=1 where date='2011-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第二十周(星期一)|', liturgic=12001, color=2 where date='2011-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2011-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2011-08-17';
@@ -2204,7 +2204,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十八周(星期六)|', liturgic=11806, color=2 where date='2012-08-11';
 update easter_daily set cells='常年期第十九主日|圣慕达(St. Murtagh)\\1081201|', liturgic=11900, color=1 where date='2012-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期一)|', liturgic=11901, color=1 where date='2012-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期二)|圣母升天节前夕\\1081403|', liturgic=11902, color=3 where date='2012-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期二)|圣母升天节前夕\\1081403|', liturgic=11902, color=3 where date='2012-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期三)|', liturgic=11903, color=2 where date='2012-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2012-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2012-08-17';
@@ -2569,7 +2569,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='常年期第十九主日|圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|', liturgic=11900, color=1 where date='2013-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十九周(星期一)|', liturgic=11901, color=1 where date='2013-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期二)|', liturgic=11902, color=1 where date='2013-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期三)|圣母升天节前夕\\1081403|', liturgic=11903, color=3 where date='2013-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期三)|圣母升天节前夕\\1081403|', liturgic=11903, color=3 where date='2013-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期四)|', liturgic=11904, color=2 where date='2013-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2013-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2013-08-17';
@@ -2934,7 +2934,7 @@ update easter_daily set cells='常年期第十九主日|圣老楞佐(殉道 St. 
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期一)|', liturgic=11901, color=2 where date='2014-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十九周(星期二)|', liturgic=11902, color=1 where date='2014-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期三)|', liturgic=11903, color=1 where date='2014-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期四)|圣母升天节前夕\\1081403|', liturgic=11904, color=3 where date='2014-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期四)|圣母升天节前夕\\1081403|', liturgic=11904, color=3 where date='2014-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期五)|', liturgic=11905, color=2 where date='2014-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2014-08-16';
 update easter_daily set cells='常年期第二十主日|圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|', liturgic=12000, color=1 where date='2014-08-17';
@@ -3299,7 +3299,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期二)|', liturgic=11902, color=2 where date='2015-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十九周(星期三)|', liturgic=11903, color=1 where date='2015-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2015-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期五)|圣母升天节前夕\\1081403|', liturgic=11905, color=3 where date='2015-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期五)|圣母升天节前夕\\1081403|', liturgic=11905, color=3 where date='2015-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期六)|', liturgic=11906, color=2 where date='2015-08-15';
 update easter_daily set cells='常年期第二十主日|圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|', liturgic=12000, color=1 where date='2015-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2015-08-17';
@@ -3665,7 +3665,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期四)|', liturgic=11904, color=2 where date='2016-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2016-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2016-08-13';
-update easter_daily set cells='常年期第二十主日|圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|圣母升天节前夕\\1081403|', liturgic=12000, color=1 where date='2016-08-14';
+update easter_daily set cells='常年期第二十主日|圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|圣母升天节前夕\\1081403|', liturgic=12000, color=1 where date='2016-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第二十周(星期一)|', liturgic=12001, color=2 where date='2016-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2016-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2016-08-17';
@@ -4030,7 +4030,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十八周(星期五)|', liturgic=11805, color=2 where date='2017-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十八周(星期六)|', liturgic=11806, color=1 where date='2017-08-12';
 update easter_daily set cells='常年期第十九主日|圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|', liturgic=11900, color=1 where date='2017-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期一)|圣母升天节前夕\\1081403|', liturgic=11901, color=3 where date='2017-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期一)|圣母升天节前夕\\1081403|', liturgic=11901, color=3 where date='2017-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期二)|', liturgic=11902, color=2 where date='2017-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期三)|', liturgic=11903, color=1 where date='2017-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2017-08-17';
@@ -4395,7 +4395,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十八周(星期六)|', liturgic=11806, color=2 where date='2018-08-11';
 update easter_daily set cells='常年期第十九主日|圣慕达(St. Murtagh)\\1081201|', liturgic=11900, color=1 where date='2018-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期一)|', liturgic=11901, color=1 where date='2018-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期二)|圣母升天节前夕\\1081403|', liturgic=11902, color=3 where date='2018-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期二)|圣母升天节前夕\\1081403|', liturgic=11902, color=3 where date='2018-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期三)|', liturgic=11903, color=2 where date='2018-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2018-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2018-08-17';
@@ -4760,7 +4760,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='常年期第十九主日|圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|', liturgic=11900, color=1 where date='2019-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十九周(星期一)|', liturgic=11901, color=1 where date='2019-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期二)|', liturgic=11902, color=1 where date='2019-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期三)|圣母升天节前夕\\1081403|', liturgic=11903, color=3 where date='2019-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期三)|圣母升天节前夕\\1081403|', liturgic=11903, color=3 where date='2019-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期四)|', liturgic=11904, color=2 where date='2019-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2019-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2019-08-17';
@@ -5126,7 +5126,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期二)|', liturgic=11902, color=2 where date='2020-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十九周(星期三)|', liturgic=11903, color=1 where date='2020-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2020-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期五)|圣母升天节前夕\\1081403|', liturgic=11905, color=3 where date='2020-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期五)|圣母升天节前夕\\1081403|', liturgic=11905, color=3 where date='2020-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期六)|', liturgic=11906, color=2 where date='2020-08-15';
 update easter_daily set cells='常年期第二十主日|圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|', liturgic=12000, color=1 where date='2020-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2020-08-17';
@@ -5491,7 +5491,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期三)|', liturgic=11903, color=2 where date='2021-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2021-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2021-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期六)|圣母升天节前夕\\1081403|', liturgic=11906, color=3 where date='2021-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期六)|圣母升天节前夕\\1081403|', liturgic=11906, color=3 where date='2021-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第二十主日|', liturgic=12000, color=2 where date='2021-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2021-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2021-08-17';
@@ -5856,7 +5856,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期四)|', liturgic=11904, color=2 where date='2022-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2022-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2022-08-13';
-update easter_daily set cells='常年期第二十主日|圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|圣母升天节前夕\\1081403|', liturgic=12000, color=1 where date='2022-08-14';
+update easter_daily set cells='常年期第二十主日|圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|圣母升天节前夕\\1081403|', liturgic=12000, color=1 where date='2022-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第二十周(星期一)|', liturgic=12001, color=2 where date='2022-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2022-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2022-08-17';
@@ -6221,7 +6221,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十八周(星期五)|', liturgic=11805, color=2 where date='2023-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十八周(星期六)|', liturgic=11806, color=1 where date='2023-08-12';
 update easter_daily set cells='常年期第十九主日|圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|', liturgic=11900, color=1 where date='2023-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期一)|圣母升天节前夕\\1081403|', liturgic=11901, color=3 where date='2023-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期一)|圣母升天节前夕\\1081403|', liturgic=11901, color=3 where date='2023-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期二)|', liturgic=11902, color=2 where date='2023-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期三)|', liturgic=11903, color=1 where date='2023-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2023-08-17';
@@ -6587,7 +6587,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='常年期第十九主日|圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|', liturgic=11900, color=1 where date='2024-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十九周(星期一)|', liturgic=11901, color=1 where date='2024-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期二)|', liturgic=11902, color=1 where date='2024-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期三)|圣母升天节前夕\\1081403|', liturgic=11903, color=3 where date='2024-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期三)|圣母升天节前夕\\1081403|', liturgic=11903, color=3 where date='2024-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期四)|', liturgic=11904, color=2 where date='2024-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2024-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2024-08-17';
@@ -6952,7 +6952,7 @@ update easter_daily set cells='常年期第十九主日|圣老楞佐(殉道 St. 
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期一)|', liturgic=11901, color=2 where date='2025-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十九周(星期二)|', liturgic=11902, color=1 where date='2025-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期三)|', liturgic=11903, color=1 where date='2025-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期四)|圣母升天节前夕\\1081403|', liturgic=11904, color=3 where date='2025-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期四)|圣母升天节前夕\\1081403|', liturgic=11904, color=3 where date='2025-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期五)|', liturgic=11905, color=2 where date='2025-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2025-08-16';
 update easter_daily set cells='常年期第二十主日|圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|', liturgic=12000, color=1 where date='2025-08-17';
@@ -7317,7 +7317,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期二)|', liturgic=11902, color=2 where date='2026-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十九周(星期三)|', liturgic=11903, color=1 where date='2026-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2026-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期五)|圣母升天节前夕\\1081403|', liturgic=11905, color=3 where date='2026-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期五)|圣母升天节前夕\\1081403|', liturgic=11905, color=3 where date='2026-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期六)|', liturgic=11906, color=2 where date='2026-08-15';
 update easter_daily set cells='常年期第二十主日|圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|', liturgic=12000, color=1 where date='2026-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2026-08-17';
@@ -7682,7 +7682,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期三)|', liturgic=11903, color=2 where date='2027-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2027-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2027-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期六)|圣母升天节前夕\\1081403|', liturgic=11906, color=3 where date='2027-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期六)|圣母升天节前夕\\1081403|', liturgic=11906, color=3 where date='2027-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第二十主日|', liturgic=12000, color=2 where date='2027-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2027-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2027-08-17';
@@ -8048,7 +8048,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十八周(星期五)|', liturgic=11805, color=2 where date='2028-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十八周(星期六)|', liturgic=11806, color=1 where date='2028-08-12';
 update easter_daily set cells='常年期第十九主日|圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|', liturgic=11900, color=1 where date='2028-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期一)|圣母升天节前夕\\1081403|', liturgic=11901, color=3 where date='2028-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期一)|圣母升天节前夕\\1081403|', liturgic=11901, color=3 where date='2028-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期二)|', liturgic=11902, color=2 where date='2028-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期三)|', liturgic=11903, color=1 where date='2028-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2028-08-17';
@@ -8413,7 +8413,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十八周(星期六)|', liturgic=11806, color=2 where date='2029-08-11';
 update easter_daily set cells='常年期第十九主日|圣慕达(St. Murtagh)\\1081201|', liturgic=11900, color=1 where date='2029-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期一)|', liturgic=11901, color=1 where date='2029-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期二)|圣母升天节前夕\\1081403|', liturgic=11902, color=3 where date='2029-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期二)|圣母升天节前夕\\1081403|', liturgic=11902, color=3 where date='2029-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期三)|', liturgic=11903, color=2 where date='2029-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2029-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2029-08-17';
@@ -8778,7 +8778,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='常年期第十九主日|圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|', liturgic=11900, color=1 where date='2030-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十九周(星期一)|', liturgic=11901, color=1 where date='2030-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期二)|', liturgic=11902, color=1 where date='2030-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期三)|圣母升天节前夕\\1081403|', liturgic=11903, color=3 where date='2030-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期三)|圣母升天节前夕\\1081403|', liturgic=11903, color=3 where date='2030-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期四)|', liturgic=11904, color=2 where date='2030-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2030-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2030-08-17';
@@ -9143,7 +9143,7 @@ update easter_daily set cells='常年期第十九主日|圣老楞佐(殉道 St. 
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期一)|', liturgic=11901, color=2 where date='2031-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十九周(星期二)|', liturgic=11902, color=1 where date='2031-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期三)|', liturgic=11903, color=1 where date='2031-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期四)|圣母升天节前夕\\1081403|', liturgic=11904, color=3 where date='2031-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期四)|圣母升天节前夕\\1081403|', liturgic=11904, color=3 where date='2031-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期五)|', liturgic=11905, color=2 where date='2031-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2031-08-16';
 update easter_daily set cells='常年期第二十主日|圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|', liturgic=12000, color=1 where date='2031-08-17';
@@ -9509,7 +9509,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期三)|', liturgic=11903, color=2 where date='2032-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2032-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2032-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期六)|圣母升天节前夕\\1081403|', liturgic=11906, color=3 where date='2032-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期六)|圣母升天节前夕\\1081403|', liturgic=11906, color=3 where date='2032-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第二十主日|', liturgic=12000, color=2 where date='2032-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2032-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2032-08-17';
@@ -9874,7 +9874,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期四)|', liturgic=11904, color=2 where date='2033-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2033-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2033-08-13';
-update easter_daily set cells='常年期第二十主日|圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|圣母升天节前夕\\1081403|', liturgic=12000, color=1 where date='2033-08-14';
+update easter_daily set cells='常年期第二十主日|圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|圣母升天节前夕\\1081403|', liturgic=12000, color=1 where date='2033-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第二十周(星期一)|', liturgic=12001, color=2 where date='2033-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2033-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2033-08-17';
@@ -10239,7 +10239,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十八周(星期五)|', liturgic=11805, color=2 where date='2034-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十八周(星期六)|', liturgic=11806, color=1 where date='2034-08-12';
 update easter_daily set cells='常年期第十九主日|圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|', liturgic=11900, color=1 where date='2034-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期一)|圣母升天节前夕\\1081403|', liturgic=11901, color=3 where date='2034-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期一)|圣母升天节前夕\\1081403|', liturgic=11901, color=3 where date='2034-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期二)|', liturgic=11902, color=2 where date='2034-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期三)|', liturgic=11903, color=1 where date='2034-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2034-08-17';
@@ -10604,7 +10604,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十八周(星期六)|', liturgic=11806, color=2 where date='2035-08-11';
 update easter_daily set cells='常年期第十九主日|圣慕达(St. Murtagh)\\1081201|', liturgic=11900, color=1 where date='2035-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期一)|', liturgic=11901, color=1 where date='2035-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期二)|圣母升天节前夕\\1081403|', liturgic=11902, color=3 where date='2035-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期二)|圣母升天节前夕\\1081403|', liturgic=11902, color=3 where date='2035-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期三)|', liturgic=11903, color=2 where date='2035-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2035-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2035-08-17';
@@ -10970,7 +10970,7 @@ update easter_daily set cells='常年期第十九主日|圣老楞佐(殉道 St. 
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期一)|', liturgic=11901, color=2 where date='2036-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十九周(星期二)|', liturgic=11902, color=1 where date='2036-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期三)|', liturgic=11903, color=1 where date='2036-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期四)|圣母升天节前夕\\1081403|', liturgic=11904, color=3 where date='2036-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期四)|圣母升天节前夕\\1081403|', liturgic=11904, color=3 where date='2036-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期五)|', liturgic=11905, color=2 where date='2036-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2036-08-16';
 update easter_daily set cells='常年期第二十主日|圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|', liturgic=12000, color=1 where date='2036-08-17';
@@ -11335,7 +11335,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期二)|', liturgic=11902, color=2 where date='2037-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十九周(星期三)|', liturgic=11903, color=1 where date='2037-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2037-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期五)|圣母升天节前夕\\1081403|', liturgic=11905, color=3 where date='2037-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期五)|圣母升天节前夕\\1081403|', liturgic=11905, color=3 where date='2037-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期六)|', liturgic=11906, color=2 where date='2037-08-15';
 update easter_daily set cells='常年期第二十主日|圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|', liturgic=12000, color=1 where date='2037-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2037-08-17';
@@ -11700,7 +11700,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期三)|', liturgic=11903, color=2 where date='2038-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2038-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2038-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期六)|圣母升天节前夕\\1081403|', liturgic=11906, color=3 where date='2038-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期六)|圣母升天节前夕\\1081403|', liturgic=11906, color=3 where date='2038-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第二十主日|', liturgic=12000, color=2 where date='2038-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2038-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2038-08-17';
@@ -12065,7 +12065,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期四)|', liturgic=11904, color=2 where date='2039-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2039-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2039-08-13';
-update easter_daily set cells='常年期第二十主日|圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|圣母升天节前夕\\1081403|', liturgic=12000, color=1 where date='2039-08-14';
+update easter_daily set cells='常年期第二十主日|圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|圣母升天节前夕\\1081403|', liturgic=12000, color=1 where date='2039-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第二十周(星期一)|', liturgic=12001, color=2 where date='2039-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2039-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2039-08-17';
@@ -12431,7 +12431,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十八周(星期六)|', liturgic=11806, color=2 where date='2040-08-11';
 update easter_daily set cells='常年期第十九主日|圣慕达(St. Murtagh)\\1081201|', liturgic=11900, color=1 where date='2040-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期一)|', liturgic=11901, color=1 where date='2040-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期二)|圣母升天节前夕\\1081403|', liturgic=11902, color=3 where date='2040-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期二)|圣母升天节前夕\\1081403|', liturgic=11902, color=3 where date='2040-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期三)|', liturgic=11903, color=2 where date='2040-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2040-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2040-08-17';
@@ -12796,7 +12796,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='常年期第十九主日|圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|', liturgic=11900, color=1 where date='2041-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十九周(星期一)|', liturgic=11901, color=1 where date='2041-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期二)|', liturgic=11902, color=1 where date='2041-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期三)|圣母升天节前夕\\1081403|', liturgic=11903, color=3 where date='2041-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期三)|圣母升天节前夕\\1081403|', liturgic=11903, color=3 where date='2041-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期四)|', liturgic=11904, color=2 where date='2041-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2041-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2041-08-17';
@@ -13161,7 +13161,7 @@ update easter_daily set cells='常年期第十九主日|圣老楞佐(殉道 St. 
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期一)|', liturgic=11901, color=2 where date='2042-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十九周(星期二)|', liturgic=11902, color=1 where date='2042-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期三)|', liturgic=11903, color=1 where date='2042-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期四)|圣母升天节前夕\\1081403|', liturgic=11904, color=3 where date='2042-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期四)|圣母升天节前夕\\1081403|', liturgic=11904, color=3 where date='2042-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期五)|', liturgic=11905, color=2 where date='2042-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2042-08-16';
 update easter_daily set cells='常年期第二十主日|圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|', liturgic=12000, color=1 where date='2042-08-17';
@@ -13526,7 +13526,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期二)|', liturgic=11902, color=2 where date='2043-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十九周(星期三)|', liturgic=11903, color=1 where date='2043-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2043-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期五)|圣母升天节前夕\\1081403|', liturgic=11905, color=3 where date='2043-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期五)|圣母升天节前夕\\1081403|', liturgic=11905, color=3 where date='2043-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期六)|', liturgic=11906, color=2 where date='2043-08-15';
 update easter_daily set cells='常年期第二十主日|圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|', liturgic=12000, color=1 where date='2043-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2043-08-17';
@@ -13892,7 +13892,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期四)|', liturgic=11904, color=2 where date='2044-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2044-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2044-08-13';
-update easter_daily set cells='常年期第二十主日|圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|圣母升天节前夕\\1081403|', liturgic=12000, color=1 where date='2044-08-14';
+update easter_daily set cells='常年期第二十主日|圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|圣母升天节前夕\\1081403|', liturgic=12000, color=1 where date='2044-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第二十周(星期一)|', liturgic=12001, color=2 where date='2044-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2044-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2044-08-17';
@@ -14257,7 +14257,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十八周(星期五)|', liturgic=11805, color=2 where date='2045-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十八周(星期六)|', liturgic=11806, color=1 where date='2045-08-12';
 update easter_daily set cells='常年期第十九主日|圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|', liturgic=11900, color=1 where date='2045-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期一)|圣母升天节前夕\\1081403|', liturgic=11901, color=3 where date='2045-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期一)|圣母升天节前夕\\1081403|', liturgic=11901, color=3 where date='2045-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期二)|', liturgic=11902, color=2 where date='2045-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期三)|', liturgic=11903, color=1 where date='2045-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2045-08-17';
@@ -14622,7 +14622,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十八周(星期六)|', liturgic=11806, color=2 where date='2046-08-11';
 update easter_daily set cells='常年期第十九主日|圣慕达(St. Murtagh)\\1081201|', liturgic=11900, color=1 where date='2046-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期一)|', liturgic=11901, color=1 where date='2046-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期二)|圣母升天节前夕\\1081403|', liturgic=11902, color=3 where date='2046-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期二)|圣母升天节前夕\\1081403|', liturgic=11902, color=3 where date='2046-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期三)|', liturgic=11903, color=2 where date='2046-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2046-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2046-08-17';
@@ -14987,7 +14987,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='常年期第十九主日|圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|', liturgic=11900, color=1 where date='2047-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十九周(星期一)|', liturgic=11901, color=1 where date='2047-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期二)|', liturgic=11902, color=1 where date='2047-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期三)|圣母升天节前夕\\1081403|', liturgic=11903, color=3 where date='2047-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期三)|圣母升天节前夕\\1081403|', liturgic=11903, color=3 where date='2047-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期四)|', liturgic=11904, color=2 where date='2047-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2047-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2047-08-17';
@@ -15353,7 +15353,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期二)|', liturgic=11902, color=2 where date='2048-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十九周(星期三)|', liturgic=11903, color=1 where date='2048-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2048-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期五)|圣母升天节前夕\\1081403|', liturgic=11905, color=3 where date='2048-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期五)|圣母升天节前夕\\1081403|', liturgic=11905, color=3 where date='2048-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期六)|', liturgic=11906, color=2 where date='2048-08-15';
 update easter_daily set cells='常年期第二十主日|圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|', liturgic=12000, color=1 where date='2048-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2048-08-17';
@@ -15718,7 +15718,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期三)|', liturgic=11903, color=2 where date='2049-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2049-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2049-08-13';
-update easter_daily set cells='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期六)|圣母升天节前夕\\1081403|', liturgic=11906, color=3 where date='2049-08-14';
+update easter_daily set cells='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|常年期第十九周(星期六)|圣母升天节前夕\\1081403|', liturgic=11906, color=3 where date='2049-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第二十主日|', liturgic=12000, color=2 where date='2049-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2049-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2049-08-17';
@@ -16083,7 +16083,7 @@ update easter_daily set cells='圣老楞佐(殉道 St. Laurence)\\1081001|圣女
 update easter_daily set cells='圣女加辣(加辣会创办人 St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期四)|', liturgic=11904, color=2 where date='2050-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2050-08-12';
 update easter_daily set cells='圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)\\1081301|圣贝尼杜(St. Benildus)\\1081302|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2050-08-13';
-update easter_daily set cells='常年期第二十主日|圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|圣母升天节前夕\\1081403|', liturgic=12000, color=1 where date='2050-08-14';
+update easter_daily set cells='常年期第二十主日|圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)\\1081402|真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)\\1081401|圣母升天节前夕\\1081403|', liturgic=12000, color=1 where date='2050-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第二十周(星期一)|', liturgic=12001, color=2 where date='2050-08-15';
 update easter_daily set cells='圣斯德望国王(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2050-08-16';
 update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(圣亚纳创办人 Bd. Joan Delanoue)\\1081702|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2050-08-17';

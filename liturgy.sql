@@ -1938,10 +1938,10 @@ insert into easter_mass(code, name) select 1081101,'圣女加辣(加辣会创办
 update easter_mass set name='圣女加辣(加辣会创办人 St. Clare)' where code=1081101;
 insert into easter_liturgy_hours(code, name) select 1081101,'圣女加辣(加辣会创办人 St. Clare)' where not exists (select 1 from easter_liturgy_hours where code=1081101);
 update easter_liturgy_hours set name='圣女加辣(加辣会创办人 St. Clare)' where code=1081101;
-insert into easter_mass(code, name) select 1081402,'圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)' where not exists (select 1 from easter_mass where code=1081402);
-update easter_mass set name='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)' where code=1081402;
-insert into easter_liturgy_hours(code, name) select 1081402,'圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)' where not exists (select 1 from easter_liturgy_hours where code=1081402);
-update easter_liturgy_hours set name='圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)' where code=1081402;
+insert into easter_mass(code, name) select 1081402,'圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)' where not exists (select 1 from easter_mass where code=1081402);
+update easter_mass set name='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)' where code=1081402;
+insert into easter_liturgy_hours(code, name) select 1081402,'圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)' where not exists (select 1 from easter_liturgy_hours where code=1081402);
+update easter_liturgy_hours set name='圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)' where code=1081402;
 insert into easter_mass(code, name) select 1081403,'圣母升天节前夕' where not exists (select 1 from easter_mass where code=1081403);
 update easter_mass set name='圣母升天节前夕' where code=1081403;
 insert into easter_liturgy_hours(code, name) select 1081403,'圣母升天节前夕' where not exists (select 1 from easter_liturgy_hours where code=1081403);

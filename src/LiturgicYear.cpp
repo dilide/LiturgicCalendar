@@ -480,7 +480,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         mapPropers.insert(std::make_pair(1081301,CellInfo(OPTIONAL,NOCOLOR,"圣依玻里多和圣彭谦(殉道 Ss. Hippolytus and Ponlianus)")));
         mapPropers.insert(std::make_pair(1081302,CellInfo(OPTIONAL,NOCOLOR,"圣贝尼杜(St. Benildus)")));
         mapPropers.insert(std::make_pair(1081401,CellInfo(OPTIONAL,NOCOLOR,"真福安多尼毕马田和伙伴(殉道 Bb. Antony Primaldi and other Martyrs)")));
-        mapPropers.insert(std::make_pair(1081402,CellInfo(MEMORIAL,RED,"圣高比司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)")));
+        mapPropers.insert(std::make_pair(1081402,CellInfo(MEMORIAL,RED,"圣国柏司铎(殉道 St. Maximilian Kolbe, Priest and Martyr)")));
         mapPropers.insert(std::make_pair(1081403,CellInfo(WEEKDAY,WHITE,"圣母升天节前夕")));
         mapPropers.insert(std::make_pair(1081501,CellInfo(SOLEMNITY,WHITE,"圣母升天节(The Assumption of the Blessed Virgin Mary)")));
         //16日
