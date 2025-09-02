@@ -1978,6 +1978,10 @@ insert into easter_mass(code, name) select 1082901,'圣若翰洗者蒙难(The Be
 update easter_mass set name='圣若翰洗者蒙难(The Beheading of St. John the Baptist)' where code=1082901;
 insert into easter_liturgy_hours(code, name) select 1082901,'圣若翰洗者蒙难(The Beheading of St. John the Baptist)' where not exists (select 1 from easter_liturgy_hours where code=1082901);
 update easter_liturgy_hours set name='圣若翰洗者蒙难(The Beheading of St. John the Baptist)' where code=1082901;
+insert into easter_mass(code, name) select 1090103,'照料受造界日' where not exists (select 1 from easter_mass where code=1090103);
+update easter_mass set name='照料受造界日' where code=1090103;
+insert into easter_liturgy_hours(code, name) select 1090103,'照料受造界日' where not exists (select 1 from easter_liturgy_hours where code=1090103);
+update easter_liturgy_hours set name='照料受造界日' where code=1090103;
 insert into easter_mass(code, name) select 1090301,'圣额我略一世(教宗圣师 St. Gregory the Great)' where not exists (select 1 from easter_mass where code=1090301);
 update easter_mass set name='圣额我略一世(教宗圣师 St. Gregory the Great)' where code=1090301;
 insert into easter_liturgy_hours(code, name) select 1090301,'圣额我略一世(教宗圣师 St. Gregory the Great)' where not exists (select 1 from easter_liturgy_hours where code=1090301);
