@@ -1994,10 +1994,10 @@ insert into easter_mass(code, name) select 1090801,'圣母诞辰(The Birthday of
 update easter_mass set name='圣母诞辰(The Birthday of the Blessed Virgin Mary)' where code=1090801;
 insert into easter_liturgy_hours(code, name) select 1090801,'圣母诞辰(The Birthday of the Blessed Virgin Mary)' where not exists (select 1 from easter_liturgy_hours where code=1090801);
 update easter_liturgy_hours set name='圣母诞辰(The Birthday of the Blessed Virgin Mary)' where code=1090801;
-insert into easter_mass(code, name) select 1091201,'圣母圣名节(The Holy Name of Mary)' where not exists (select 1 from easter_mass where code=1091201);
-update easter_mass set name='圣母圣名节(The Holy Name of Mary)' where code=1091201;
-insert into easter_liturgy_hours(code, name) select 1091201,'圣母圣名节(The Holy Name of Mary)' where not exists (select 1 from easter_liturgy_hours where code=1091201);
-update easter_liturgy_hours set name='圣母圣名节(The Holy Name of Mary)' where code=1091201;
+insert into easter_mass(code, name) select 1091201,'圣母圣名(The Holy Name of Mary)' where not exists (select 1 from easter_mass where code=1091201);
+update easter_mass set name='圣母圣名(The Holy Name of Mary)' where code=1091201;
+insert into easter_liturgy_hours(code, name) select 1091201,'圣母圣名(The Holy Name of Mary)' where not exists (select 1 from easter_liturgy_hours where code=1091201);
+update easter_liturgy_hours set name='圣母圣名(The Holy Name of Mary)' where code=1091201;
 insert into easter_mass(code, name) select 1091301,'金口圣若望(主教圣师 St. John Chrysostom)' where not exists (select 1 from easter_mass where code=1091301);
 update easter_mass set name='金口圣若望(主教圣师 St. John Chrysostom)' where code=1091301;
 insert into easter_liturgy_hours(code, name) select 1091301,'金口圣若望(主教圣师 St. John Chrysostom)' where not exists (select 1 from easter_liturgy_hours where code=1091301);
