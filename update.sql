@@ -526,8 +526,8 @@ insert into easter_saint(code, name, rank, color) select 1052202,'福女若基�
 update easter_saint set name='福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)', rank=2, color=0 where code=1052202;
 insert into easter_saint(code, name, rank, color) select 1052301,'圣若翰•路西(St. John Baptist Rossi)',2,0 where not exists (select 1 from easter_saint where code=1052301);
 update easter_saint set name='圣若翰•路西(St. John Baptist Rossi)', rank=2, color=0 where code=1052301;
-insert into easter_saint(code, name, rank, color) select 1052401,'圣母进教之佑节(Our Lady Help of Christians)',4,2 where not exists (select 1 from easter_saint where code=1052401);
-update easter_saint set name='圣母进教之佑节(Our Lady Help of Christians)', rank=4, color=2 where code=1052401;
+insert into easter_saint(code, name, rank, color) select 1052401,'圣母进教之佑(Our Lady Help of Christians)',4,2 where not exists (select 1 from easter_saint where code=1052401);
+update easter_saint set name='圣母进教之佑(Our Lady Help of Christians)', rank=4, color=2 where code=1052401;
 insert into easter_saint(code, name, rank, color) select 1052402,'圣味增爵•雷冷(St. Vincent of Lerins)',2,0 where not exists (select 1 from easter_saint where code=1052402);
 update easter_saint set name='圣味增爵•雷冷(St. Vincent of Lerins)', rank=2, color=0 where code=1052402;
 insert into easter_saint(code, name, rank, color) select 1052501,'圣伯达(圣师 St. Bede the Venerable)',2,0 where not exists (select 1 from easter_saint where code=1052501);
@@ -994,8 +994,8 @@ insert into easter_saint(code, name, rank, color) select 1100601,'圣勃路诺(�
 update easter_saint set name='圣勃路诺(加多森会创办人 St. Bruno)', rank=2, color=0 where code=1100601;
 insert into easter_saint(code, name, rank, color) select 1100602,'圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)',2,0 where not exists (select 1 from easter_saint where code=1100602);
 update easter_saint set name='圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)', rank=2, color=0 where code=1100602;
-insert into easter_saint(code, name, rank, color) select 1100701,'玫瑰圣母节(Our Lady''s Rosary)',3,2 where not exists (select 1 from easter_saint where code=1100701);
-update easter_saint set name='玫瑰圣母节(Our Lady''s Rosary)', rank=3, color=2 where code=1100701;
+insert into easter_saint(code, name, rank, color) select 1100701,'玫瑰圣母(Our Lady''s Rosary)',3,2 where not exists (select 1 from easter_saint where code=1100701);
+update easter_saint set name='玫瑰圣母(Our Lady''s Rosary)', rank=3, color=2 where code=1100701;
 insert into easter_saint(code, name, rank, color) select 1100801,'圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)',2,0 where not exists (select 1 from easter_saint where code=1100801);
 update easter_saint set name='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)', rank=2, color=0 where code=1100801;
 insert into easter_saint(code, name, rank, color) select 1100802,'圣女白兰佳(St. Pelagia the Penitent)',2,0 where not exists (select 1 from easter_saint where code=1100802);
@@ -1393,7 +1393,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|复活期第七周(星期五)|', liturgic=50705, color=2 where date='2010-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|复活期第七周(星期六)|', liturgic=50706, color=2 where date='2010-05-22';
 update easter_daily set cells='圣神降临节\\50800|复活期第八主日|圣若翰•路西(St. John Baptist Rossi)\\1052301|', liturgic=50800, color=3 where date='2010-05-23';
-update easter_daily set cells='圣母进教之佑节(Our Lady Help of Christians)\\1052401|教会之母\\10|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|常年期第八周(星期一)|', liturgic=10801, color=2 where date='2010-05-24';
+update easter_daily set cells='圣母进教之佑(Our Lady Help of Christians)\\1052401|教会之母\\10|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|常年期第八周(星期一)|', liturgic=10801, color=2 where date='2010-05-24';
 update easter_daily set cells='圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|常年期第八周(星期二)|', liturgic=10802, color=1 where date='2010-05-25';
 update easter_daily set cells='圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|常年期第八周(星期三)|', liturgic=10803, color=2 where date='2010-05-26';
 update easter_daily set cells='我们的主耶稣基督—永恒的大司祭\\3|圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|常年期第八周(星期四)|', liturgic=10804, color=2 where date='2010-05-27';
@@ -1529,7 +1529,7 @@ update easter_daily set cells='常年期第二十七主日|依华昆仲(殉道 T
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十七周(星期一)|', liturgic=12701, color=2 where date='2010-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十七周(星期二)|', liturgic=12702, color=2 where date='2010-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十七周(星期三)|', liturgic=12703, color=1 where date='2010-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期四)|', liturgic=12704, color=2 where date='2010-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期四)|', liturgic=12704, color=2 where date='2010-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期五)|', liturgic=12705, color=1 where date='2010-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期六)|', liturgic=12706, color=1 where date='2010-10-09';
 update easter_daily set cells='常年期第二十八主日|圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|', liturgic=12800, color=1 where date='2010-10-10';
@@ -1758,7 +1758,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|复活期第四周(星期六)|', liturgic=50406, color=2 where date='2011-05-21';
 update easter_daily set cells='复活期第五主日|圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|', liturgic=50500, color=2 where date='2011-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|复活期第五周(星期一)|', liturgic=50501, color=2 where date='2011-05-23';
-update easter_daily set cells='圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第五周(星期二)|', liturgic=50502, color=2 where date='2011-05-24';
+update easter_daily set cells='圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第五周(星期二)|', liturgic=50502, color=2 where date='2011-05-24';
 update easter_daily set cells='圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|复活期第五周(星期三)|', liturgic=50503, color=2 where date='2011-05-25';
 update easter_daily set cells='圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|复活期第五周(星期四)|', liturgic=50504, color=2 where date='2011-05-26';
 update easter_daily set cells='圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|复活期第五周(星期五)|', liturgic=50505, color=2 where date='2011-05-27';
@@ -1894,7 +1894,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十七周(星期二)|', liturgic=12702, color=2 where date='2011-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十七周(星期三)|', liturgic=12703, color=2 where date='2011-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十七周(星期四)|', liturgic=12704, color=1 where date='2011-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期五)|', liturgic=12705, color=2 where date='2011-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期五)|', liturgic=12705, color=2 where date='2011-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期六)|', liturgic=12706, color=1 where date='2011-10-08';
 update easter_daily set cells='常年期第二十八主日|圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|', liturgic=12800, color=1 where date='2011-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十八周(星期一)|', liturgic=12801, color=1 where date='2011-10-10';
@@ -2124,7 +2124,7 @@ update easter_daily set cells='耶稣升天节\\14|复活期第七主日|圣伯�
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|复活期第七周(星期一)|', liturgic=50701, color=2 where date='2012-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|复活期第七周(星期二)|', liturgic=50702, color=2 where date='2012-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|复活期第七周(星期三)|', liturgic=50703, color=2 where date='2012-05-23';
-update easter_daily set cells='圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第七周(星期四)|', liturgic=50704, color=2 where date='2012-05-24';
+update easter_daily set cells='圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第七周(星期四)|', liturgic=50704, color=2 where date='2012-05-24';
 update easter_daily set cells='圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|复活期第七周(星期五)|', liturgic=50705, color=2 where date='2012-05-25';
 update easter_daily set cells='圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|复活期第七周(星期六)|', liturgic=50706, color=2 where date='2012-05-26';
 update easter_daily set cells='圣神降临节\\50800|复活期第八主日|圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|', liturgic=50800, color=3 where date='2012-05-27';
@@ -2260,7 +2260,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十六周(星期四)|', liturgic=12604, color=2 where date='2012-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十六周(星期五)|', liturgic=12605, color=2 where date='2012-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十六周(星期六)|', liturgic=12606, color=1 where date='2012-10-06';
-update easter_daily set cells='常年期第二十七主日|玫瑰圣母节(Our Lady''s Rosary)\\1100701|', liturgic=12700, color=1 where date='2012-10-07';
+update easter_daily set cells='常年期第二十七主日|玫瑰圣母(Our Lady''s Rosary)\\1100701|', liturgic=12700, color=1 where date='2012-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期一)|', liturgic=12701, color=1 where date='2012-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期二)|', liturgic=12702, color=1 where date='2012-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十七周(星期三)|', liturgic=12703, color=1 where date='2012-10-10';
@@ -2489,7 +2489,7 @@ update easter_daily set cells='教会之母\\10|圣伯尔纳定•栖亚那(St. 
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|常年期第七周(星期二)|', liturgic=10702, color=1 where date='2013-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|常年期第七周(星期三)|', liturgic=10703, color=1 where date='2013-05-22';
 update easter_daily set cells='我们的主耶稣基督—永恒的大司祭\\3|圣若翰•路西(St. John Baptist Rossi)\\1052301|常年期第七周(星期四)|', liturgic=10704, color=2 where date='2013-05-23';
-update easter_daily set cells='圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|常年期第七周(星期五)|', liturgic=10705, color=2 where date='2013-05-24';
+update easter_daily set cells='圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|常年期第七周(星期五)|', liturgic=10705, color=2 where date='2013-05-24';
 update easter_daily set cells='圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|常年期第七周(星期六)|', liturgic=10706, color=1 where date='2013-05-25';
 update easter_daily set cells='圣三主日\\4|常年期第八主日|圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|', liturgic=10800, color=2 where date='2013-05-26';
 update easter_daily set cells='圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|常年期第八周(星期一)|', liturgic=10801, color=1 where date='2013-05-27';
@@ -2625,7 +2625,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十六周(星期五)|', liturgic=12605, color=2 where date='2013-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十六周(星期六)|', liturgic=12606, color=2 where date='2013-10-05';
 update easter_daily set cells='常年期第二十七主日|圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|', liturgic=12700, color=1 where date='2013-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期一)|', liturgic=12701, color=2 where date='2013-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期一)|', liturgic=12701, color=2 where date='2013-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期二)|', liturgic=12702, color=1 where date='2013-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期三)|', liturgic=12703, color=1 where date='2013-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十七周(星期四)|', liturgic=12704, color=1 where date='2013-10-10';
@@ -2854,7 +2854,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|复活期第五周(星期三)|', liturgic=50503, color=2 where date='2014-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|复活期第五周(星期四)|', liturgic=50504, color=2 where date='2014-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|复活期第五周(星期五)|', liturgic=50505, color=2 where date='2014-05-23';
-update easter_daily set cells='圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第五周(星期六)|', liturgic=50506, color=2 where date='2014-05-24';
+update easter_daily set cells='圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第五周(星期六)|', liturgic=50506, color=2 where date='2014-05-24';
 update easter_daily set cells='复活期第六主日|圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|', liturgic=50600, color=2 where date='2014-05-25';
 update easter_daily set cells='圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|复活期第六周(星期一)|', liturgic=50601, color=2 where date='2014-05-26';
 update easter_daily set cells='圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|复活期第六周(星期二)|', liturgic=50602, color=2 where date='2014-05-27';
@@ -2990,7 +2990,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十六周(星期六)|', liturgic=12606, color=2 where date='2014-10-04';
 update easter_daily set cells='常年期第二十七主日|圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|', liturgic=12700, color=1 where date='2014-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十七周(星期一)|', liturgic=12701, color=1 where date='2014-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期二)|', liturgic=12702, color=2 where date='2014-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期二)|', liturgic=12702, color=2 where date='2014-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期三)|', liturgic=12703, color=1 where date='2014-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期四)|', liturgic=12704, color=1 where date='2014-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十七周(星期五)|', liturgic=12705, color=1 where date='2014-10-10';
@@ -3219,7 +3219,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|复活期第七周(星期四)|', liturgic=50704, color=2 where date='2015-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|复活期第七周(星期五)|', liturgic=50705, color=2 where date='2015-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|复活期第七周(星期六)|', liturgic=50706, color=2 where date='2015-05-23';
-update easter_daily set cells='圣神降临节\\50800|复活期第八主日|圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|', liturgic=50800, color=3 where date='2015-05-24';
+update easter_daily set cells='圣神降临节\\50800|复活期第八主日|圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|', liturgic=50800, color=3 where date='2015-05-24';
 update easter_daily set cells='教会之母\\10|圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|常年期第八周(星期一)|', liturgic=10801, color=2 where date='2015-05-25';
 update easter_daily set cells='圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|常年期第八周(星期二)|', liturgic=10802, color=2 where date='2015-05-26';
 update easter_daily set cells='圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|常年期第八周(星期三)|', liturgic=10803, color=1 where date='2015-05-27';
@@ -3355,7 +3355,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='常年期第二十七主日|圣五伤方济各(St. Francis Assisi)\\1100401|', liturgic=12700, color=1 where date='2015-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十七周(星期一)|', liturgic=12701, color=2 where date='2015-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十七周(星期二)|', liturgic=12702, color=1 where date='2015-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期三)|', liturgic=12703, color=2 where date='2015-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期三)|', liturgic=12703, color=2 where date='2015-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期四)|', liturgic=12704, color=1 where date='2015-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期五)|', liturgic=12705, color=1 where date='2015-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十七周(星期六)|', liturgic=12706, color=1 where date='2015-10-10';
@@ -3585,7 +3585,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|常年期第七周(星期六)|', liturgic=10706, color=1 where date='2016-05-21';
 update easter_daily set cells='圣三主日\\4|常年期第八主日|圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|', liturgic=10800, color=2 where date='2016-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|常年期第八周(星期一)|', liturgic=10801, color=1 where date='2016-05-23';
-update easter_daily set cells='圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|常年期第八周(星期二)|', liturgic=10802, color=2 where date='2016-05-24';
+update easter_daily set cells='圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|常年期第八周(星期二)|', liturgic=10802, color=2 where date='2016-05-24';
 update easter_daily set cells='圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|常年期第八周(星期三)|', liturgic=10803, color=1 where date='2016-05-25';
 update easter_daily set cells='基督圣体圣血节\\5|圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|常年期第八周(星期四)|', liturgic=10804, color=2 where date='2016-05-26';
 update easter_daily set cells='圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|常年期第八周(星期五)|', liturgic=10805, color=1 where date='2016-05-27';
@@ -3721,7 +3721,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十七周(星期二)|', liturgic=12702, color=2 where date='2016-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十七周(星期三)|', liturgic=12703, color=2 where date='2016-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十七周(星期四)|', liturgic=12704, color=1 where date='2016-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期五)|', liturgic=12705, color=2 where date='2016-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期五)|', liturgic=12705, color=2 where date='2016-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期六)|', liturgic=12706, color=1 where date='2016-10-08';
 update easter_daily set cells='常年期第二十八主日|圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|', liturgic=12800, color=1 where date='2016-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十八周(星期一)|', liturgic=12801, color=1 where date='2016-10-10';
@@ -3950,7 +3950,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='复活期第六主日|圣维克多(殉道 St. Victor of Marseilles)\\1052101|', liturgic=50600, color=2 where date='2017-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|复活期第六周(星期一)|', liturgic=50601, color=2 where date='2017-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|复活期第六周(星期二)|', liturgic=50602, color=2 where date='2017-05-23';
-update easter_daily set cells='圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第六周(星期三)|', liturgic=50603, color=2 where date='2017-05-24';
+update easter_daily set cells='圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第六周(星期三)|', liturgic=50603, color=2 where date='2017-05-24';
 update easter_daily set cells='耶稣升天节\\14|圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|复活期第六周(星期四)|', liturgic=50604, color=2 where date='2017-05-25';
 update easter_daily set cells='圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|复活期第六周(星期五)|', liturgic=50605, color=2 where date='2017-05-26';
 update easter_daily set cells='圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|复活期第六周(星期六)|', liturgic=50606, color=2 where date='2017-05-27';
@@ -4086,7 +4086,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十六周(星期三)|', liturgic=12603, color=2 where date='2017-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十六周(星期四)|', liturgic=12604, color=2 where date='2017-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十六周(星期五)|', liturgic=12605, color=1 where date='2017-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十六周(星期六)|', liturgic=12606, color=2 where date='2017-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十六周(星期六)|', liturgic=12606, color=2 where date='2017-10-07';
 update easter_daily set cells='常年期第二十七主日|圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|', liturgic=12700, color=1 where date='2017-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期一)|', liturgic=12701, color=1 where date='2017-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十七周(星期二)|', liturgic=12702, color=1 where date='2017-10-10';
@@ -4315,7 +4315,7 @@ update easter_daily set cells='圣神降临节\\50800|复活期第八主日|圣�
 update easter_daily set cells='教会之母\\10|圣维克多(殉道 St. Victor of Marseilles)\\1052101|常年期第七周(星期一)|', liturgic=10701, color=2 where date='2018-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|常年期第七周(星期二)|', liturgic=10702, color=1 where date='2018-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|常年期第七周(星期三)|', liturgic=10703, color=1 where date='2018-05-23';
-update easter_daily set cells='我们的主耶稣基督—永恒的大司祭\\3|圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|常年期第七周(星期四)|', liturgic=10704, color=2 where date='2018-05-24';
+update easter_daily set cells='我们的主耶稣基督—永恒的大司祭\\3|圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|常年期第七周(星期四)|', liturgic=10704, color=2 where date='2018-05-24';
 update easter_daily set cells='圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|常年期第七周(星期五)|', liturgic=10705, color=1 where date='2018-05-25';
 update easter_daily set cells='圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|常年期第七周(星期六)|', liturgic=10706, color=2 where date='2018-05-26';
 update easter_daily set cells='圣三主日\\4|常年期第八主日|圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|', liturgic=10800, color=2 where date='2018-05-27';
@@ -4451,7 +4451,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十六周(星期四)|', liturgic=12604, color=2 where date='2018-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十六周(星期五)|', liturgic=12605, color=2 where date='2018-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十六周(星期六)|', liturgic=12606, color=1 where date='2018-10-06';
-update easter_daily set cells='常年期第二十七主日|玫瑰圣母节(Our Lady''s Rosary)\\1100701|', liturgic=12700, color=1 where date='2018-10-07';
+update easter_daily set cells='常年期第二十七主日|玫瑰圣母(Our Lady''s Rosary)\\1100701|', liturgic=12700, color=1 where date='2018-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期一)|', liturgic=12701, color=1 where date='2018-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期二)|', liturgic=12702, color=1 where date='2018-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十七周(星期三)|', liturgic=12703, color=1 where date='2018-10-10';
@@ -4680,7 +4680,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|复活期第五周(星期二)|', liturgic=50502, color=2 where date='2019-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|复活期第五周(星期三)|', liturgic=50503, color=2 where date='2019-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|复活期第五周(星期四)|', liturgic=50504, color=2 where date='2019-05-23';
-update easter_daily set cells='圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第五周(星期五)|', liturgic=50505, color=2 where date='2019-05-24';
+update easter_daily set cells='圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第五周(星期五)|', liturgic=50505, color=2 where date='2019-05-24';
 update easter_daily set cells='圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|复活期第五周(星期六)|', liturgic=50506, color=2 where date='2019-05-25';
 update easter_daily set cells='复活期第六主日|圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|', liturgic=50600, color=2 where date='2019-05-26';
 update easter_daily set cells='圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|复活期第六周(星期一)|', liturgic=50601, color=2 where date='2019-05-27';
@@ -4816,7 +4816,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十六周(星期五)|', liturgic=12605, color=2 where date='2019-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十六周(星期六)|', liturgic=12606, color=2 where date='2019-10-05';
 update easter_daily set cells='常年期第二十七主日|圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|', liturgic=12700, color=1 where date='2019-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期一)|', liturgic=12701, color=2 where date='2019-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期一)|', liturgic=12701, color=2 where date='2019-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期二)|', liturgic=12702, color=1 where date='2019-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期三)|', liturgic=12703, color=1 where date='2019-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十七周(星期四)|', liturgic=12704, color=1 where date='2019-10-10';
@@ -5046,7 +5046,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='耶稣升天节\\14|圣维克多(殉道 St. Victor of Marseilles)\\1052101|复活期第六周(星期四)|', liturgic=50604, color=2 where date='2020-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|复活期第六周(星期五)|', liturgic=50605, color=2 where date='2020-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|复活期第六周(星期六)|', liturgic=50606, color=2 where date='2020-05-23';
-update easter_daily set cells='耶稣升天节\\14|复活期第七主日|圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|', liturgic=50700, color=2 where date='2020-05-24';
+update easter_daily set cells='耶稣升天节\\14|复活期第七主日|圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|', liturgic=50700, color=2 where date='2020-05-24';
 update easter_daily set cells='圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|复活期第七周(星期一)|', liturgic=50701, color=2 where date='2020-05-25';
 update easter_daily set cells='圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|复活期第七周(星期二)|', liturgic=50702, color=2 where date='2020-05-26';
 update easter_daily set cells='圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|复活期第七周(星期三)|', liturgic=50703, color=2 where date='2020-05-27';
@@ -5182,7 +5182,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='常年期第二十七主日|圣五伤方济各(St. Francis Assisi)\\1100401|', liturgic=12700, color=1 where date='2020-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十七周(星期一)|', liturgic=12701, color=2 where date='2020-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十七周(星期二)|', liturgic=12702, color=1 where date='2020-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期三)|', liturgic=12703, color=2 where date='2020-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期三)|', liturgic=12703, color=2 where date='2020-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期四)|', liturgic=12704, color=1 where date='2020-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期五)|', liturgic=12705, color=1 where date='2020-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十七周(星期六)|', liturgic=12706, color=1 where date='2020-10-10';
@@ -5411,7 +5411,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|复活期第七周(星期五)|', liturgic=50705, color=2 where date='2021-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|复活期第七周(星期六)|', liturgic=50706, color=2 where date='2021-05-22';
 update easter_daily set cells='圣神降临节\\50800|复活期第八主日|圣若翰•路西(St. John Baptist Rossi)\\1052301|', liturgic=50800, color=3 where date='2021-05-23';
-update easter_daily set cells='圣母进教之佑节(Our Lady Help of Christians)\\1052401|教会之母\\10|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|常年期第八周(星期一)|', liturgic=10801, color=2 where date='2021-05-24';
+update easter_daily set cells='圣母进教之佑(Our Lady Help of Christians)\\1052401|教会之母\\10|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|常年期第八周(星期一)|', liturgic=10801, color=2 where date='2021-05-24';
 update easter_daily set cells='圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|常年期第八周(星期二)|', liturgic=10802, color=1 where date='2021-05-25';
 update easter_daily set cells='圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|常年期第八周(星期三)|', liturgic=10803, color=2 where date='2021-05-26';
 update easter_daily set cells='我们的主耶稣基督—永恒的大司祭\\3|圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|常年期第八周(星期四)|', liturgic=10804, color=2 where date='2021-05-27';
@@ -5547,7 +5547,7 @@ update easter_daily set cells='常年期第二十七主日|依华昆仲(殉道 T
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十七周(星期一)|', liturgic=12701, color=2 where date='2021-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十七周(星期二)|', liturgic=12702, color=2 where date='2021-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十七周(星期三)|', liturgic=12703, color=1 where date='2021-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期四)|', liturgic=12704, color=2 where date='2021-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期四)|', liturgic=12704, color=2 where date='2021-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期五)|', liturgic=12705, color=1 where date='2021-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期六)|', liturgic=12706, color=1 where date='2021-10-09';
 update easter_daily set cells='常年期第二十八主日|圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|', liturgic=12800, color=1 where date='2021-10-10';
@@ -5776,7 +5776,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|复活期第五周(星期六)|', liturgic=50506, color=2 where date='2022-05-21';
 update easter_daily set cells='复活期第六主日|圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|', liturgic=50600, color=2 where date='2022-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|复活期第六周(星期一)|', liturgic=50601, color=2 where date='2022-05-23';
-update easter_daily set cells='圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第六周(星期二)|', liturgic=50602, color=2 where date='2022-05-24';
+update easter_daily set cells='圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第六周(星期二)|', liturgic=50602, color=2 where date='2022-05-24';
 update easter_daily set cells='圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|复活期第六周(星期三)|', liturgic=50603, color=2 where date='2022-05-25';
 update easter_daily set cells='耶稣升天节\\14|圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|复活期第六周(星期四)|', liturgic=50604, color=2 where date='2022-05-26';
 update easter_daily set cells='圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|复活期第六周(星期五)|', liturgic=50605, color=2 where date='2022-05-27';
@@ -5912,7 +5912,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十七周(星期二)|', liturgic=12702, color=2 where date='2022-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十七周(星期三)|', liturgic=12703, color=2 where date='2022-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十七周(星期四)|', liturgic=12704, color=1 where date='2022-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期五)|', liturgic=12705, color=2 where date='2022-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期五)|', liturgic=12705, color=2 where date='2022-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期六)|', liturgic=12706, color=1 where date='2022-10-08';
 update easter_daily set cells='常年期第二十八主日|圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|', liturgic=12800, color=1 where date='2022-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十八周(星期一)|', liturgic=12801, color=1 where date='2022-10-10';
@@ -6141,7 +6141,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='耶稣升天节\\14|复活期第七主日|圣维克多(殉道 St. Victor of Marseilles)\\1052101|', liturgic=50700, color=2 where date='2023-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|复活期第七周(星期一)|', liturgic=50701, color=2 where date='2023-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|复活期第七周(星期二)|', liturgic=50702, color=2 where date='2023-05-23';
-update easter_daily set cells='圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第七周(星期三)|', liturgic=50703, color=2 where date='2023-05-24';
+update easter_daily set cells='圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第七周(星期三)|', liturgic=50703, color=2 where date='2023-05-24';
 update easter_daily set cells='圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|复活期第七周(星期四)|', liturgic=50704, color=2 where date='2023-05-25';
 update easter_daily set cells='圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|复活期第七周(星期五)|', liturgic=50705, color=2 where date='2023-05-26';
 update easter_daily set cells='圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|复活期第七周(星期六)|', liturgic=50706, color=2 where date='2023-05-27';
@@ -6277,7 +6277,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十六周(星期三)|', liturgic=12603, color=2 where date='2023-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十六周(星期四)|', liturgic=12604, color=2 where date='2023-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十六周(星期五)|', liturgic=12605, color=1 where date='2023-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十六周(星期六)|', liturgic=12606, color=2 where date='2023-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十六周(星期六)|', liturgic=12606, color=2 where date='2023-10-07';
 update easter_daily set cells='常年期第二十七主日|圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|', liturgic=12700, color=1 where date='2023-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期一)|', liturgic=12701, color=1 where date='2023-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十七周(星期二)|', liturgic=12702, color=1 where date='2023-10-10';
@@ -6507,7 +6507,7 @@ update easter_daily set cells='教会之母\\10|圣伯尔纳定•栖亚那(St. 
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|常年期第七周(星期二)|', liturgic=10702, color=1 where date='2024-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|常年期第七周(星期三)|', liturgic=10703, color=1 where date='2024-05-22';
 update easter_daily set cells='我们的主耶稣基督—永恒的大司祭\\3|圣若翰•路西(St. John Baptist Rossi)\\1052301|常年期第七周(星期四)|', liturgic=10704, color=2 where date='2024-05-23';
-update easter_daily set cells='圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|常年期第七周(星期五)|', liturgic=10705, color=2 where date='2024-05-24';
+update easter_daily set cells='圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|常年期第七周(星期五)|', liturgic=10705, color=2 where date='2024-05-24';
 update easter_daily set cells='圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|常年期第七周(星期六)|', liturgic=10706, color=1 where date='2024-05-25';
 update easter_daily set cells='圣三主日\\4|常年期第八主日|圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|', liturgic=10800, color=2 where date='2024-05-26';
 update easter_daily set cells='圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|常年期第八周(星期一)|', liturgic=10801, color=1 where date='2024-05-27';
@@ -6643,7 +6643,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十六周(星期五)|', liturgic=12605, color=2 where date='2024-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十六周(星期六)|', liturgic=12606, color=2 where date='2024-10-05';
 update easter_daily set cells='常年期第二十七主日|圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|', liturgic=12700, color=1 where date='2024-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期一)|', liturgic=12701, color=2 where date='2024-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期一)|', liturgic=12701, color=2 where date='2024-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期二)|', liturgic=12702, color=1 where date='2024-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期三)|', liturgic=12703, color=1 where date='2024-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十七周(星期四)|', liturgic=12704, color=1 where date='2024-10-10';
@@ -6872,7 +6872,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|复活期第五周(星期三)|', liturgic=50503, color=2 where date='2025-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|复活期第五周(星期四)|', liturgic=50504, color=2 where date='2025-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|复活期第五周(星期五)|', liturgic=50505, color=2 where date='2025-05-23';
-update easter_daily set cells='圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第五周(星期六)|', liturgic=50506, color=2 where date='2025-05-24';
+update easter_daily set cells='圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第五周(星期六)|', liturgic=50506, color=2 where date='2025-05-24';
 update easter_daily set cells='复活期第六主日|圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|', liturgic=50600, color=2 where date='2025-05-25';
 update easter_daily set cells='圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|复活期第六周(星期一)|', liturgic=50601, color=2 where date='2025-05-26';
 update easter_daily set cells='圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|复活期第六周(星期二)|', liturgic=50602, color=2 where date='2025-05-27';
@@ -7008,7 +7008,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十六周(星期六)|', liturgic=12606, color=2 where date='2025-10-04';
 update easter_daily set cells='常年期第二十七主日|圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|', liturgic=12700, color=1 where date='2025-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十七周(星期一)|', liturgic=12701, color=1 where date='2025-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期二)|', liturgic=12702, color=2 where date='2025-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期二)|', liturgic=12702, color=2 where date='2025-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期三)|', liturgic=12703, color=1 where date='2025-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期四)|', liturgic=12704, color=1 where date='2025-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十七周(星期五)|', liturgic=12705, color=1 where date='2025-10-10';
@@ -7237,7 +7237,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|复活期第七周(星期四)|', liturgic=50704, color=2 where date='2026-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|复活期第七周(星期五)|', liturgic=50705, color=2 where date='2026-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|复活期第七周(星期六)|', liturgic=50706, color=2 where date='2026-05-23';
-update easter_daily set cells='圣神降临节\\50800|复活期第八主日|圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|', liturgic=50800, color=3 where date='2026-05-24';
+update easter_daily set cells='圣神降临节\\50800|复活期第八主日|圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|', liturgic=50800, color=3 where date='2026-05-24';
 update easter_daily set cells='教会之母\\10|圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|常年期第八周(星期一)|', liturgic=10801, color=2 where date='2026-05-25';
 update easter_daily set cells='圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|常年期第八周(星期二)|', liturgic=10802, color=2 where date='2026-05-26';
 update easter_daily set cells='圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|常年期第八周(星期三)|', liturgic=10803, color=1 where date='2026-05-27';
@@ -7373,7 +7373,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='常年期第二十七主日|圣五伤方济各(St. Francis Assisi)\\1100401|', liturgic=12700, color=1 where date='2026-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十七周(星期一)|', liturgic=12701, color=2 where date='2026-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十七周(星期二)|', liturgic=12702, color=1 where date='2026-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期三)|', liturgic=12703, color=2 where date='2026-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期三)|', liturgic=12703, color=2 where date='2026-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期四)|', liturgic=12704, color=1 where date='2026-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期五)|', liturgic=12705, color=1 where date='2026-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十七周(星期六)|', liturgic=12706, color=1 where date='2026-10-10';
@@ -7602,7 +7602,7 @@ update easter_daily set cells='我们的主耶稣基督—永恒的大司祭\\3|
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|常年期第七周(星期五)|', liturgic=10705, color=1 where date='2027-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|常年期第七周(星期六)|', liturgic=10706, color=1 where date='2027-05-22';
 update easter_daily set cells='圣三主日\\4|常年期第八主日|圣若翰•路西(St. John Baptist Rossi)\\1052301|', liturgic=10800, color=2 where date='2027-05-23';
-update easter_daily set cells='圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|常年期第八周(星期一)|', liturgic=10801, color=2 where date='2027-05-24';
+update easter_daily set cells='圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|常年期第八周(星期一)|', liturgic=10801, color=2 where date='2027-05-24';
 update easter_daily set cells='圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|常年期第八周(星期二)|', liturgic=10802, color=1 where date='2027-05-25';
 update easter_daily set cells='圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|常年期第八周(星期三)|', liturgic=10803, color=2 where date='2027-05-26';
 update easter_daily set cells='基督圣体圣血节\\5|圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|常年期第八周(星期四)|', liturgic=10804, color=2 where date='2027-05-27';
@@ -7738,7 +7738,7 @@ update easter_daily set cells='常年期第二十七主日|依华昆仲(殉道 T
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十七周(星期一)|', liturgic=12701, color=2 where date='2027-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十七周(星期二)|', liturgic=12702, color=2 where date='2027-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十七周(星期三)|', liturgic=12703, color=1 where date='2027-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期四)|', liturgic=12704, color=2 where date='2027-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期四)|', liturgic=12704, color=2 where date='2027-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期五)|', liturgic=12705, color=1 where date='2027-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期六)|', liturgic=12706, color=1 where date='2027-10-09';
 update easter_daily set cells='常年期第二十八主日|圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|', liturgic=12800, color=1 where date='2027-10-10';
@@ -7968,7 +7968,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='复活期第六主日|圣维克多(殉道 St. Victor of Marseilles)\\1052101|', liturgic=50600, color=2 where date='2028-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|复活期第六周(星期一)|', liturgic=50601, color=2 where date='2028-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|复活期第六周(星期二)|', liturgic=50602, color=2 where date='2028-05-23';
-update easter_daily set cells='圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第六周(星期三)|', liturgic=50603, color=2 where date='2028-05-24';
+update easter_daily set cells='圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第六周(星期三)|', liturgic=50603, color=2 where date='2028-05-24';
 update easter_daily set cells='耶稣升天节\\14|圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|复活期第六周(星期四)|', liturgic=50604, color=2 where date='2028-05-25';
 update easter_daily set cells='圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|复活期第六周(星期五)|', liturgic=50605, color=2 where date='2028-05-26';
 update easter_daily set cells='圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|复活期第六周(星期六)|', liturgic=50606, color=2 where date='2028-05-27';
@@ -8104,7 +8104,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十六周(星期三)|', liturgic=12603, color=2 where date='2028-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十六周(星期四)|', liturgic=12604, color=2 where date='2028-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十六周(星期五)|', liturgic=12605, color=1 where date='2028-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十六周(星期六)|', liturgic=12606, color=2 where date='2028-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十六周(星期六)|', liturgic=12606, color=2 where date='2028-10-07';
 update easter_daily set cells='常年期第二十七主日|圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|', liturgic=12700, color=1 where date='2028-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期一)|', liturgic=12701, color=1 where date='2028-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十七周(星期二)|', liturgic=12702, color=1 where date='2028-10-10';
@@ -8333,7 +8333,7 @@ update easter_daily set cells='圣神降临节\\50800|复活期第八主日|圣�
 update easter_daily set cells='教会之母\\10|圣维克多(殉道 St. Victor of Marseilles)\\1052101|常年期第七周(星期一)|', liturgic=10701, color=2 where date='2029-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|常年期第七周(星期二)|', liturgic=10702, color=1 where date='2029-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|常年期第七周(星期三)|', liturgic=10703, color=1 where date='2029-05-23';
-update easter_daily set cells='我们的主耶稣基督—永恒的大司祭\\3|圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|常年期第七周(星期四)|', liturgic=10704, color=2 where date='2029-05-24';
+update easter_daily set cells='我们的主耶稣基督—永恒的大司祭\\3|圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|常年期第七周(星期四)|', liturgic=10704, color=2 where date='2029-05-24';
 update easter_daily set cells='圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|常年期第七周(星期五)|', liturgic=10705, color=1 where date='2029-05-25';
 update easter_daily set cells='圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|常年期第七周(星期六)|', liturgic=10706, color=2 where date='2029-05-26';
 update easter_daily set cells='圣三主日\\4|常年期第八主日|圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|', liturgic=10800, color=2 where date='2029-05-27';
@@ -8469,7 +8469,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十六周(星期四)|', liturgic=12604, color=2 where date='2029-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十六周(星期五)|', liturgic=12605, color=2 where date='2029-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十六周(星期六)|', liturgic=12606, color=1 where date='2029-10-06';
-update easter_daily set cells='常年期第二十七主日|玫瑰圣母节(Our Lady''s Rosary)\\1100701|', liturgic=12700, color=1 where date='2029-10-07';
+update easter_daily set cells='常年期第二十七主日|玫瑰圣母(Our Lady''s Rosary)\\1100701|', liturgic=12700, color=1 where date='2029-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期一)|', liturgic=12701, color=1 where date='2029-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期二)|', liturgic=12702, color=1 where date='2029-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十七周(星期三)|', liturgic=12703, color=1 where date='2029-10-10';
@@ -8698,7 +8698,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|复活期第五周(星期二)|', liturgic=50502, color=2 where date='2030-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|复活期第五周(星期三)|', liturgic=50503, color=2 where date='2030-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|复活期第五周(星期四)|', liturgic=50504, color=2 where date='2030-05-23';
-update easter_daily set cells='圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第五周(星期五)|', liturgic=50505, color=2 where date='2030-05-24';
+update easter_daily set cells='圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第五周(星期五)|', liturgic=50505, color=2 where date='2030-05-24';
 update easter_daily set cells='圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|复活期第五周(星期六)|', liturgic=50506, color=2 where date='2030-05-25';
 update easter_daily set cells='复活期第六主日|圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|', liturgic=50600, color=2 where date='2030-05-26';
 update easter_daily set cells='圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|复活期第六周(星期一)|', liturgic=50601, color=2 where date='2030-05-27';
@@ -8834,7 +8834,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十六周(星期五)|', liturgic=12605, color=2 where date='2030-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十六周(星期六)|', liturgic=12606, color=2 where date='2030-10-05';
 update easter_daily set cells='常年期第二十七主日|圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|', liturgic=12700, color=1 where date='2030-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期一)|', liturgic=12701, color=2 where date='2030-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期一)|', liturgic=12701, color=2 where date='2030-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期二)|', liturgic=12702, color=1 where date='2030-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期三)|', liturgic=12703, color=1 where date='2030-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十七周(星期四)|', liturgic=12704, color=1 where date='2030-10-10';
@@ -9063,7 +9063,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|复活期第六周(星期三)|', liturgic=50603, color=2 where date='2031-05-21';
 update easter_daily set cells='耶稣升天节\\14|圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|复活期第六周(星期四)|', liturgic=50604, color=2 where date='2031-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|复活期第六周(星期五)|', liturgic=50605, color=2 where date='2031-05-23';
-update easter_daily set cells='圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第六周(星期六)|', liturgic=50606, color=2 where date='2031-05-24';
+update easter_daily set cells='圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第六周(星期六)|', liturgic=50606, color=2 where date='2031-05-24';
 update easter_daily set cells='耶稣升天节\\14|复活期第七主日|圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|', liturgic=50700, color=2 where date='2031-05-25';
 update easter_daily set cells='圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|复活期第七周(星期一)|', liturgic=50701, color=2 where date='2031-05-26';
 update easter_daily set cells='圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|复活期第七周(星期二)|', liturgic=50702, color=2 where date='2031-05-27';
@@ -9199,7 +9199,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十六周(星期六)|', liturgic=12606, color=2 where date='2031-10-04';
 update easter_daily set cells='常年期第二十七主日|圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|', liturgic=12700, color=1 where date='2031-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十七周(星期一)|', liturgic=12701, color=1 where date='2031-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期二)|', liturgic=12702, color=2 where date='2031-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期二)|', liturgic=12702, color=2 where date='2031-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期三)|', liturgic=12703, color=1 where date='2031-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期四)|', liturgic=12704, color=1 where date='2031-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十七周(星期五)|', liturgic=12705, color=1 where date='2031-10-10';
@@ -9429,7 +9429,7 @@ update easter_daily set cells='我们的主耶稣基督—永恒的大司祭\\3|
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|常年期第七周(星期五)|', liturgic=10705, color=1 where date='2032-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|常年期第七周(星期六)|', liturgic=10706, color=1 where date='2032-05-22';
 update easter_daily set cells='圣三主日\\4|常年期第八主日|圣若翰•路西(St. John Baptist Rossi)\\1052301|', liturgic=10800, color=2 where date='2032-05-23';
-update easter_daily set cells='圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|常年期第八周(星期一)|', liturgic=10801, color=2 where date='2032-05-24';
+update easter_daily set cells='圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|常年期第八周(星期一)|', liturgic=10801, color=2 where date='2032-05-24';
 update easter_daily set cells='圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|常年期第八周(星期二)|', liturgic=10802, color=1 where date='2032-05-25';
 update easter_daily set cells='圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|常年期第八周(星期三)|', liturgic=10803, color=2 where date='2032-05-26';
 update easter_daily set cells='基督圣体圣血节\\5|圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|常年期第八周(星期四)|', liturgic=10804, color=2 where date='2032-05-27';
@@ -9565,7 +9565,7 @@ update easter_daily set cells='常年期第二十七主日|依华昆仲(殉道 T
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十七周(星期一)|', liturgic=12701, color=2 where date='2032-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十七周(星期二)|', liturgic=12702, color=2 where date='2032-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十七周(星期三)|', liturgic=12703, color=1 where date='2032-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期四)|', liturgic=12704, color=2 where date='2032-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期四)|', liturgic=12704, color=2 where date='2032-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期五)|', liturgic=12705, color=1 where date='2032-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期六)|', liturgic=12706, color=1 where date='2032-10-09';
 update easter_daily set cells='常年期第二十八主日|圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|', liturgic=12800, color=1 where date='2032-10-10';
@@ -9794,7 +9794,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|复活期第五周(星期六)|', liturgic=50506, color=2 where date='2033-05-21';
 update easter_daily set cells='复活期第六主日|圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|', liturgic=50600, color=2 where date='2033-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|复活期第六周(星期一)|', liturgic=50601, color=2 where date='2033-05-23';
-update easter_daily set cells='圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第六周(星期二)|', liturgic=50602, color=2 where date='2033-05-24';
+update easter_daily set cells='圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第六周(星期二)|', liturgic=50602, color=2 where date='2033-05-24';
 update easter_daily set cells='圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|复活期第六周(星期三)|', liturgic=50603, color=2 where date='2033-05-25';
 update easter_daily set cells='耶稣升天节\\14|圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|复活期第六周(星期四)|', liturgic=50604, color=2 where date='2033-05-26';
 update easter_daily set cells='圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|复活期第六周(星期五)|', liturgic=50605, color=2 where date='2033-05-27';
@@ -9930,7 +9930,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十七周(星期二)|', liturgic=12702, color=2 where date='2033-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十七周(星期三)|', liturgic=12703, color=2 where date='2033-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十七周(星期四)|', liturgic=12704, color=1 where date='2033-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期五)|', liturgic=12705, color=2 where date='2033-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期五)|', liturgic=12705, color=2 where date='2033-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期六)|', liturgic=12706, color=1 where date='2033-10-08';
 update easter_daily set cells='常年期第二十八主日|圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|', liturgic=12800, color=1 where date='2033-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十八周(星期一)|', liturgic=12801, color=1 where date='2033-10-10';
@@ -10159,7 +10159,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='耶稣升天节\\14|复活期第七主日|圣维克多(殉道 St. Victor of Marseilles)\\1052101|', liturgic=50700, color=2 where date='2034-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|复活期第七周(星期一)|', liturgic=50701, color=2 where date='2034-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|复活期第七周(星期二)|', liturgic=50702, color=2 where date='2034-05-23';
-update easter_daily set cells='圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第七周(星期三)|', liturgic=50703, color=2 where date='2034-05-24';
+update easter_daily set cells='圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第七周(星期三)|', liturgic=50703, color=2 where date='2034-05-24';
 update easter_daily set cells='圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|复活期第七周(星期四)|', liturgic=50704, color=2 where date='2034-05-25';
 update easter_daily set cells='圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|复活期第七周(星期五)|', liturgic=50705, color=2 where date='2034-05-26';
 update easter_daily set cells='圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|复活期第七周(星期六)|', liturgic=50706, color=2 where date='2034-05-27';
@@ -10295,7 +10295,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十六周(星期三)|', liturgic=12603, color=2 where date='2034-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十六周(星期四)|', liturgic=12604, color=2 where date='2034-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十六周(星期五)|', liturgic=12605, color=1 where date='2034-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十六周(星期六)|', liturgic=12606, color=2 where date='2034-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十六周(星期六)|', liturgic=12606, color=2 where date='2034-10-07';
 update easter_daily set cells='常年期第二十七主日|圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|', liturgic=12700, color=1 where date='2034-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期一)|', liturgic=12701, color=1 where date='2034-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十七周(星期二)|', liturgic=12702, color=1 where date='2034-10-10';
@@ -10524,7 +10524,7 @@ update easter_daily set cells='圣三主日\\4|常年期第七主日|圣伯尔�
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|常年期第七周(星期一)|', liturgic=10701, color=1 where date='2035-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|常年期第七周(星期二)|', liturgic=10702, color=1 where date='2035-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|常年期第七周(星期三)|', liturgic=10703, color=1 where date='2035-05-23';
-update easter_daily set cells='基督圣体圣血节\\5|圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|常年期第七周(星期四)|', liturgic=10704, color=2 where date='2035-05-24';
+update easter_daily set cells='基督圣体圣血节\\5|圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|常年期第七周(星期四)|', liturgic=10704, color=2 where date='2035-05-24';
 update easter_daily set cells='圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|常年期第七周(星期五)|', liturgic=10705, color=1 where date='2035-05-25';
 update easter_daily set cells='圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|常年期第七周(星期六)|', liturgic=10706, color=2 where date='2035-05-26';
 update easter_daily set cells='基督圣体圣血节\\5|常年期第八主日|圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|', liturgic=10800, color=2 where date='2035-05-27';
@@ -10660,7 +10660,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十六周(星期四)|', liturgic=12604, color=2 where date='2035-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十六周(星期五)|', liturgic=12605, color=2 where date='2035-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十六周(星期六)|', liturgic=12606, color=1 where date='2035-10-06';
-update easter_daily set cells='常年期第二十七主日|玫瑰圣母节(Our Lady''s Rosary)\\1100701|', liturgic=12700, color=1 where date='2035-10-07';
+update easter_daily set cells='常年期第二十七主日|玫瑰圣母(Our Lady''s Rosary)\\1100701|', liturgic=12700, color=1 where date='2035-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期一)|', liturgic=12701, color=1 where date='2035-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期二)|', liturgic=12702, color=1 where date='2035-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十七周(星期三)|', liturgic=12703, color=1 where date='2035-10-10';
@@ -10890,7 +10890,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|复活期第六周(星期三)|', liturgic=50603, color=2 where date='2036-05-21';
 update easter_daily set cells='耶稣升天节\\14|圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|复活期第六周(星期四)|', liturgic=50604, color=2 where date='2036-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|复活期第六周(星期五)|', liturgic=50605, color=2 where date='2036-05-23';
-update easter_daily set cells='圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第六周(星期六)|', liturgic=50606, color=2 where date='2036-05-24';
+update easter_daily set cells='圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第六周(星期六)|', liturgic=50606, color=2 where date='2036-05-24';
 update easter_daily set cells='耶稣升天节\\14|复活期第七主日|圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|', liturgic=50700, color=2 where date='2036-05-25';
 update easter_daily set cells='圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|复活期第七周(星期一)|', liturgic=50701, color=2 where date='2036-05-26';
 update easter_daily set cells='圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|复活期第七周(星期二)|', liturgic=50702, color=2 where date='2036-05-27';
@@ -11026,7 +11026,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十六周(星期六)|', liturgic=12606, color=2 where date='2036-10-04';
 update easter_daily set cells='常年期第二十七主日|圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|', liturgic=12700, color=1 where date='2036-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十七周(星期一)|', liturgic=12701, color=1 where date='2036-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期二)|', liturgic=12702, color=2 where date='2036-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期二)|', liturgic=12702, color=2 where date='2036-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期三)|', liturgic=12703, color=1 where date='2036-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期四)|', liturgic=12704, color=1 where date='2036-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十七周(星期五)|', liturgic=12705, color=1 where date='2036-10-10';
@@ -11255,7 +11255,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|复活期第七周(星期四)|', liturgic=50704, color=2 where date='2037-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|复活期第七周(星期五)|', liturgic=50705, color=2 where date='2037-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|复活期第七周(星期六)|', liturgic=50706, color=2 where date='2037-05-23';
-update easter_daily set cells='圣神降临节\\50800|复活期第八主日|圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|', liturgic=50800, color=3 where date='2037-05-24';
+update easter_daily set cells='圣神降临节\\50800|复活期第八主日|圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|', liturgic=50800, color=3 where date='2037-05-24';
 update easter_daily set cells='教会之母\\10|圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|常年期第八周(星期一)|', liturgic=10801, color=2 where date='2037-05-25';
 update easter_daily set cells='圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|常年期第八周(星期二)|', liturgic=10802, color=2 where date='2037-05-26';
 update easter_daily set cells='圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|常年期第八周(星期三)|', liturgic=10803, color=1 where date='2037-05-27';
@@ -11391,7 +11391,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='常年期第二十七主日|圣五伤方济各(St. Francis Assisi)\\1100401|', liturgic=12700, color=1 where date='2037-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十七周(星期一)|', liturgic=12701, color=2 where date='2037-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十七周(星期二)|', liturgic=12702, color=1 where date='2037-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期三)|', liturgic=12703, color=2 where date='2037-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期三)|', liturgic=12703, color=2 where date='2037-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期四)|', liturgic=12704, color=1 where date='2037-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期五)|', liturgic=12705, color=1 where date='2037-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十七周(星期六)|', liturgic=12706, color=1 where date='2037-10-10';
@@ -11620,7 +11620,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|复活期第四周(星期五)|', liturgic=50405, color=2 where date='2038-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|复活期第四周(星期六)|', liturgic=50406, color=2 where date='2038-05-22';
 update easter_daily set cells='复活期第五主日|圣若翰•路西(St. John Baptist Rossi)\\1052301|', liturgic=50500, color=2 where date='2038-05-23';
-update easter_daily set cells='圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第五周(星期一)|', liturgic=50501, color=2 where date='2038-05-24';
+update easter_daily set cells='圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第五周(星期一)|', liturgic=50501, color=2 where date='2038-05-24';
 update easter_daily set cells='圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|复活期第五周(星期二)|', liturgic=50502, color=2 where date='2038-05-25';
 update easter_daily set cells='圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|复活期第五周(星期三)|', liturgic=50503, color=2 where date='2038-05-26';
 update easter_daily set cells='圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|复活期第五周(星期四)|', liturgic=50504, color=2 where date='2038-05-27';
@@ -11756,7 +11756,7 @@ update easter_daily set cells='常年期第二十七主日|依华昆仲(殉道 T
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十七周(星期一)|', liturgic=12701, color=2 where date='2038-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十七周(星期二)|', liturgic=12702, color=2 where date='2038-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十七周(星期三)|', liturgic=12703, color=1 where date='2038-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期四)|', liturgic=12704, color=2 where date='2038-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期四)|', liturgic=12704, color=2 where date='2038-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期五)|', liturgic=12705, color=1 where date='2038-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期六)|', liturgic=12706, color=1 where date='2038-10-09';
 update easter_daily set cells='常年期第二十八主日|圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|', liturgic=12800, color=1 where date='2038-10-10';
@@ -11985,7 +11985,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|复活期第六周(星期六)|', liturgic=50606, color=2 where date='2039-05-21';
 update easter_daily set cells='耶稣升天节\\14|复活期第七主日|圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|', liturgic=50700, color=2 where date='2039-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|复活期第七周(星期一)|', liturgic=50701, color=2 where date='2039-05-23';
-update easter_daily set cells='圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第七周(星期二)|', liturgic=50702, color=2 where date='2039-05-24';
+update easter_daily set cells='圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第七周(星期二)|', liturgic=50702, color=2 where date='2039-05-24';
 update easter_daily set cells='圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|复活期第七周(星期三)|', liturgic=50703, color=2 where date='2039-05-25';
 update easter_daily set cells='圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|复活期第七周(星期四)|', liturgic=50704, color=2 where date='2039-05-26';
 update easter_daily set cells='圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|复活期第七周(星期五)|', liturgic=50705, color=2 where date='2039-05-27';
@@ -12121,7 +12121,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十七周(星期二)|', liturgic=12702, color=2 where date='2039-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十七周(星期三)|', liturgic=12703, color=2 where date='2039-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十七周(星期四)|', liturgic=12704, color=1 where date='2039-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期五)|', liturgic=12705, color=2 where date='2039-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期五)|', liturgic=12705, color=2 where date='2039-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期六)|', liturgic=12706, color=1 where date='2039-10-08';
 update easter_daily set cells='常年期第二十八主日|圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|', liturgic=12800, color=1 where date='2039-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十八周(星期一)|', liturgic=12801, color=1 where date='2039-10-10';
@@ -12351,7 +12351,7 @@ update easter_daily set cells='圣神降临节\\50800|复活期第八主日|圣�
 update easter_daily set cells='教会之母\\10|圣维克多(殉道 St. Victor of Marseilles)\\1052101|常年期第七周(星期一)|', liturgic=10701, color=2 where date='2040-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|常年期第七周(星期二)|', liturgic=10702, color=1 where date='2040-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|常年期第七周(星期三)|', liturgic=10703, color=1 where date='2040-05-23';
-update easter_daily set cells='我们的主耶稣基督—永恒的大司祭\\3|圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|常年期第七周(星期四)|', liturgic=10704, color=2 where date='2040-05-24';
+update easter_daily set cells='我们的主耶稣基督—永恒的大司祭\\3|圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|常年期第七周(星期四)|', liturgic=10704, color=2 where date='2040-05-24';
 update easter_daily set cells='圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|常年期第七周(星期五)|', liturgic=10705, color=1 where date='2040-05-25';
 update easter_daily set cells='圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|常年期第七周(星期六)|', liturgic=10706, color=2 where date='2040-05-26';
 update easter_daily set cells='圣三主日\\4|常年期第八主日|圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|', liturgic=10800, color=2 where date='2040-05-27';
@@ -12487,7 +12487,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十六周(星期四)|', liturgic=12604, color=2 where date='2040-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十六周(星期五)|', liturgic=12605, color=2 where date='2040-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十六周(星期六)|', liturgic=12606, color=1 where date='2040-10-06';
-update easter_daily set cells='常年期第二十七主日|玫瑰圣母节(Our Lady''s Rosary)\\1100701|', liturgic=12700, color=1 where date='2040-10-07';
+update easter_daily set cells='常年期第二十七主日|玫瑰圣母(Our Lady''s Rosary)\\1100701|', liturgic=12700, color=1 where date='2040-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期一)|', liturgic=12701, color=1 where date='2040-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期二)|', liturgic=12702, color=1 where date='2040-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十七周(星期三)|', liturgic=12703, color=1 where date='2040-10-10';
@@ -12716,7 +12716,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|复活期第五周(星期二)|', liturgic=50502, color=2 where date='2041-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|复活期第五周(星期三)|', liturgic=50503, color=2 where date='2041-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|复活期第五周(星期四)|', liturgic=50504, color=2 where date='2041-05-23';
-update easter_daily set cells='圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第五周(星期五)|', liturgic=50505, color=2 where date='2041-05-24';
+update easter_daily set cells='圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第五周(星期五)|', liturgic=50505, color=2 where date='2041-05-24';
 update easter_daily set cells='圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|复活期第五周(星期六)|', liturgic=50506, color=2 where date='2041-05-25';
 update easter_daily set cells='复活期第六主日|圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|', liturgic=50600, color=2 where date='2041-05-26';
 update easter_daily set cells='圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|复活期第六周(星期一)|', liturgic=50601, color=2 where date='2041-05-27';
@@ -12852,7 +12852,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十六周(星期五)|', liturgic=12605, color=2 where date='2041-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十六周(星期六)|', liturgic=12606, color=2 where date='2041-10-05';
 update easter_daily set cells='常年期第二十七主日|圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|', liturgic=12700, color=1 where date='2041-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期一)|', liturgic=12701, color=2 where date='2041-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期一)|', liturgic=12701, color=2 where date='2041-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期二)|', liturgic=12702, color=1 where date='2041-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期三)|', liturgic=12703, color=1 where date='2041-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十七周(星期四)|', liturgic=12704, color=1 where date='2041-10-10';
@@ -13081,7 +13081,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|复活期第七周(星期三)|', liturgic=50703, color=2 where date='2042-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|复活期第七周(星期四)|', liturgic=50704, color=2 where date='2042-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|复活期第七周(星期五)|', liturgic=50705, color=2 where date='2042-05-23';
-update easter_daily set cells='圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第七周(星期六)|', liturgic=50706, color=2 where date='2042-05-24';
+update easter_daily set cells='圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第七周(星期六)|', liturgic=50706, color=2 where date='2042-05-24';
 update easter_daily set cells='圣神降临节\\50800|复活期第八主日|圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|', liturgic=50800, color=3 where date='2042-05-25';
 update easter_daily set cells='教会之母\\10|圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|常年期第八周(星期一)|', liturgic=10801, color=2 where date='2042-05-26';
 update easter_daily set cells='圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|常年期第八周(星期二)|', liturgic=10802, color=1 where date='2042-05-27';
@@ -13217,7 +13217,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十六周(星期六)|', liturgic=12606, color=2 where date='2042-10-04';
 update easter_daily set cells='常年期第二十七主日|圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|', liturgic=12700, color=1 where date='2042-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十七周(星期一)|', liturgic=12701, color=1 where date='2042-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期二)|', liturgic=12702, color=2 where date='2042-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期二)|', liturgic=12702, color=2 where date='2042-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期三)|', liturgic=12703, color=1 where date='2042-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期四)|', liturgic=12704, color=1 where date='2042-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十七周(星期五)|', liturgic=12705, color=1 where date='2042-10-10';
@@ -13446,7 +13446,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='我们的主耶稣基督—永恒的大司祭\\3|圣维克多(殉道 St. Victor of Marseilles)\\1052101|常年期第七周(星期四)|', liturgic=10704, color=2 where date='2043-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|常年期第七周(星期五)|', liturgic=10705, color=1 where date='2043-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|常年期第七周(星期六)|', liturgic=10706, color=1 where date='2043-05-23';
-update easter_daily set cells='圣三主日\\4|常年期第八主日|圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|', liturgic=10800, color=2 where date='2043-05-24';
+update easter_daily set cells='圣三主日\\4|常年期第八主日|圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|', liturgic=10800, color=2 where date='2043-05-24';
 update easter_daily set cells='圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|常年期第八周(星期一)|', liturgic=10801, color=1 where date='2043-05-25';
 update easter_daily set cells='圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|常年期第八周(星期二)|', liturgic=10802, color=2 where date='2043-05-26';
 update easter_daily set cells='圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|常年期第八周(星期三)|', liturgic=10803, color=1 where date='2043-05-27';
@@ -13582,7 +13582,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='常年期第二十七主日|圣五伤方济各(St. Francis Assisi)\\1100401|', liturgic=12700, color=1 where date='2043-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十七周(星期一)|', liturgic=12701, color=2 where date='2043-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十七周(星期二)|', liturgic=12702, color=1 where date='2043-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期三)|', liturgic=12703, color=2 where date='2043-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期三)|', liturgic=12703, color=2 where date='2043-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期四)|', liturgic=12704, color=1 where date='2043-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期五)|', liturgic=12705, color=1 where date='2043-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十七周(星期六)|', liturgic=12706, color=1 where date='2043-10-10';
@@ -13812,7 +13812,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|复活期第五周(星期六)|', liturgic=50506, color=2 where date='2044-05-21';
 update easter_daily set cells='复活期第六主日|圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|', liturgic=50600, color=2 where date='2044-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|复活期第六周(星期一)|', liturgic=50601, color=2 where date='2044-05-23';
-update easter_daily set cells='圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第六周(星期二)|', liturgic=50602, color=2 where date='2044-05-24';
+update easter_daily set cells='圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第六周(星期二)|', liturgic=50602, color=2 where date='2044-05-24';
 update easter_daily set cells='圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|复活期第六周(星期三)|', liturgic=50603, color=2 where date='2044-05-25';
 update easter_daily set cells='耶稣升天节\\14|圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|复活期第六周(星期四)|', liturgic=50604, color=2 where date='2044-05-26';
 update easter_daily set cells='圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|复活期第六周(星期五)|', liturgic=50605, color=2 where date='2044-05-27';
@@ -13948,7 +13948,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十七周(星期二)|', liturgic=12702, color=2 where date='2044-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十七周(星期三)|', liturgic=12703, color=2 where date='2044-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十七周(星期四)|', liturgic=12704, color=1 where date='2044-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期五)|', liturgic=12705, color=2 where date='2044-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期五)|', liturgic=12705, color=2 where date='2044-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期六)|', liturgic=12706, color=1 where date='2044-10-08';
 update easter_daily set cells='常年期第二十八主日|圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|', liturgic=12800, color=1 where date='2044-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十八周(星期一)|', liturgic=12801, color=1 where date='2044-10-10';
@@ -14177,7 +14177,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='耶稣升天节\\14|复活期第七主日|圣维克多(殉道 St. Victor of Marseilles)\\1052101|', liturgic=50700, color=2 where date='2045-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|复活期第七周(星期一)|', liturgic=50701, color=2 where date='2045-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|复活期第七周(星期二)|', liturgic=50702, color=2 where date='2045-05-23';
-update easter_daily set cells='圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第七周(星期三)|', liturgic=50703, color=2 where date='2045-05-24';
+update easter_daily set cells='圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第七周(星期三)|', liturgic=50703, color=2 where date='2045-05-24';
 update easter_daily set cells='圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|复活期第七周(星期四)|', liturgic=50704, color=2 where date='2045-05-25';
 update easter_daily set cells='圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|复活期第七周(星期五)|', liturgic=50705, color=2 where date='2045-05-26';
 update easter_daily set cells='圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|复活期第七周(星期六)|', liturgic=50706, color=2 where date='2045-05-27';
@@ -14313,7 +14313,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十六周(星期三)|', liturgic=12603, color=2 where date='2045-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十六周(星期四)|', liturgic=12604, color=2 where date='2045-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十六周(星期五)|', liturgic=12605, color=1 where date='2045-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十六周(星期六)|', liturgic=12606, color=2 where date='2045-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十六周(星期六)|', liturgic=12606, color=2 where date='2045-10-07';
 update easter_daily set cells='常年期第二十七主日|圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|', liturgic=12700, color=1 where date='2045-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期一)|', liturgic=12701, color=1 where date='2045-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十七周(星期二)|', liturgic=12702, color=1 where date='2045-10-10';
@@ -14542,7 +14542,7 @@ update easter_daily set cells='圣三主日\\4|常年期第七主日|圣伯尔�
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|常年期第七周(星期一)|', liturgic=10701, color=1 where date='2046-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|常年期第七周(星期二)|', liturgic=10702, color=1 where date='2046-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|常年期第七周(星期三)|', liturgic=10703, color=1 where date='2046-05-23';
-update easter_daily set cells='基督圣体圣血节\\5|圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|常年期第七周(星期四)|', liturgic=10704, color=2 where date='2046-05-24';
+update easter_daily set cells='基督圣体圣血节\\5|圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|常年期第七周(星期四)|', liturgic=10704, color=2 where date='2046-05-24';
 update easter_daily set cells='圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|常年期第七周(星期五)|', liturgic=10705, color=1 where date='2046-05-25';
 update easter_daily set cells='圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|常年期第七周(星期六)|', liturgic=10706, color=2 where date='2046-05-26';
 update easter_daily set cells='基督圣体圣血节\\5|常年期第八主日|圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|', liturgic=10800, color=2 where date='2046-05-27';
@@ -14678,7 +14678,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十六周(星期四)|', liturgic=12604, color=2 where date='2046-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十六周(星期五)|', liturgic=12605, color=2 where date='2046-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十六周(星期六)|', liturgic=12606, color=1 where date='2046-10-06';
-update easter_daily set cells='常年期第二十七主日|玫瑰圣母节(Our Lady''s Rosary)\\1100701|', liturgic=12700, color=1 where date='2046-10-07';
+update easter_daily set cells='常年期第二十七主日|玫瑰圣母(Our Lady''s Rosary)\\1100701|', liturgic=12700, color=1 where date='2046-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期一)|', liturgic=12701, color=1 where date='2046-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期二)|', liturgic=12702, color=1 where date='2046-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十七周(星期三)|', liturgic=12703, color=1 where date='2046-10-10';
@@ -14907,7 +14907,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|复活期第六周(星期二)|', liturgic=50602, color=2 where date='2047-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|复活期第六周(星期三)|', liturgic=50603, color=2 where date='2047-05-22';
 update easter_daily set cells='耶稣升天节\\14|圣若翰•路西(St. John Baptist Rossi)\\1052301|复活期第六周(星期四)|', liturgic=50604, color=2 where date='2047-05-23';
-update easter_daily set cells='圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第六周(星期五)|', liturgic=50605, color=2 where date='2047-05-24';
+update easter_daily set cells='圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第六周(星期五)|', liturgic=50605, color=2 where date='2047-05-24';
 update easter_daily set cells='圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|复活期第六周(星期六)|', liturgic=50606, color=2 where date='2047-05-25';
 update easter_daily set cells='耶稣升天节\\14|复活期第七主日|圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|', liturgic=50700, color=2 where date='2047-05-26';
 update easter_daily set cells='圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|复活期第七周(星期一)|', liturgic=50701, color=2 where date='2047-05-27';
@@ -15043,7 +15043,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十六周(星期五)|', liturgic=12605, color=2 where date='2047-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十六周(星期六)|', liturgic=12606, color=2 where date='2047-10-05';
 update easter_daily set cells='常年期第二十七主日|圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|', liturgic=12700, color=1 where date='2047-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期一)|', liturgic=12701, color=2 where date='2047-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期一)|', liturgic=12701, color=2 where date='2047-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期二)|', liturgic=12702, color=1 where date='2047-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期三)|', liturgic=12703, color=1 where date='2047-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十七周(星期四)|', liturgic=12704, color=1 where date='2047-10-10';
@@ -15273,7 +15273,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|复活期第七周(星期四)|', liturgic=50704, color=2 where date='2048-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|复活期第七周(星期五)|', liturgic=50705, color=2 where date='2048-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|复活期第七周(星期六)|', liturgic=50706, color=2 where date='2048-05-23';
-update easter_daily set cells='圣神降临节\\50800|复活期第八主日|圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|', liturgic=50800, color=3 where date='2048-05-24';
+update easter_daily set cells='圣神降临节\\50800|复活期第八主日|圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|', liturgic=50800, color=3 where date='2048-05-24';
 update easter_daily set cells='教会之母\\10|圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|常年期第八周(星期一)|', liturgic=10801, color=2 where date='2048-05-25';
 update easter_daily set cells='圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|常年期第八周(星期二)|', liturgic=10802, color=2 where date='2048-05-26';
 update easter_daily set cells='圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|常年期第八周(星期三)|', liturgic=10803, color=1 where date='2048-05-27';
@@ -15409,7 +15409,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='常年期第二十七主日|圣五伤方济各(St. Francis Assisi)\\1100401|', liturgic=12700, color=1 where date='2048-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十七周(星期一)|', liturgic=12701, color=2 where date='2048-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十七周(星期二)|', liturgic=12702, color=1 where date='2048-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期三)|', liturgic=12703, color=2 where date='2048-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期三)|', liturgic=12703, color=2 where date='2048-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期四)|', liturgic=12704, color=1 where date='2048-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期五)|', liturgic=12705, color=1 where date='2048-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十七周(星期六)|', liturgic=12706, color=1 where date='2048-10-10';
@@ -15638,7 +15638,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|复活期第五周(星期五)|', liturgic=50505, color=2 where date='2049-05-21';
 update easter_daily set cells='圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|复活期第五周(星期六)|', liturgic=50506, color=2 where date='2049-05-22';
 update easter_daily set cells='复活期第六主日|圣若翰•路西(St. John Baptist Rossi)\\1052301|', liturgic=50600, color=2 where date='2049-05-23';
-update easter_daily set cells='圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第六周(星期一)|', liturgic=50601, color=2 where date='2049-05-24';
+update easter_daily set cells='圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第六周(星期一)|', liturgic=50601, color=2 where date='2049-05-24';
 update easter_daily set cells='圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|复活期第六周(星期二)|', liturgic=50602, color=2 where date='2049-05-25';
 update easter_daily set cells='圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|复活期第六周(星期三)|', liturgic=50603, color=2 where date='2049-05-26';
 update easter_daily set cells='耶稣升天节\\14|圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|复活期第六周(星期四)|', liturgic=50604, color=2 where date='2049-05-27';
@@ -15774,7 +15774,7 @@ update easter_daily set cells='常年期第二十七主日|依华昆仲(殉道 T
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十七周(星期一)|', liturgic=12701, color=2 where date='2049-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十七周(星期二)|', liturgic=12702, color=2 where date='2049-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十七周(星期三)|', liturgic=12703, color=1 where date='2049-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期四)|', liturgic=12704, color=2 where date='2049-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期四)|', liturgic=12704, color=2 where date='2049-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期五)|', liturgic=12705, color=1 where date='2049-10-08';
 update easter_daily set cells='圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|常年期第二十七周(星期六)|', liturgic=12706, color=1 where date='2049-10-09';
 update easter_daily set cells='常年期第二十八主日|圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|', liturgic=12800, color=1 where date='2049-10-10';
@@ -16003,7 +16003,7 @@ update easter_daily set cells='圣伯尔纳定•栖亚那(St. Bernardine of Sie
 update easter_daily set cells='圣维克多(殉道 St. Victor of Marseilles)\\1052101|复活期第六周(星期六)|', liturgic=50606, color=2 where date='2050-05-21';
 update easter_daily set cells='耶稣升天节\\14|复活期第七主日|圣妇丽达(St. Rita of Cascia)\\1052201|福女若基玛(加尔默罗会祖 Bd. Joachima de Mas de Veruna)\\1052202|', liturgic=50700, color=2 where date='2050-05-22';
 update easter_daily set cells='圣若翰•路西(St. John Baptist Rossi)\\1052301|复活期第七周(星期一)|', liturgic=50701, color=2 where date='2050-05-23';
-update easter_daily set cells='圣母进教之佑节(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第七周(星期二)|', liturgic=50702, color=2 where date='2050-05-24';
+update easter_daily set cells='圣母进教之佑(Our Lady Help of Christians)\\1052401|圣味增爵•雷冷(St. Vincent of Lerins)\\1052402|复活期第七周(星期二)|', liturgic=50702, color=2 where date='2050-05-24';
 update easter_daily set cells='圣伯达(圣师 St. Bede the Venerable)\\1052501|圣额我略七世教宗(St. Gregory VII)\\1052502|圣玛达肋纳•沙斐•亚巴拉(童贞圣心女修会会祖 St. Madeleine Sophie Barat)\\1052503|复活期第七周(星期三)|', liturgic=50703, color=2 where date='2050-05-25';
 update easter_daily set cells='圣斐理伯•内利(斐理•乃立 St. Philip Neri)\\1052601|复活期第七周(星期四)|', liturgic=50704, color=2 where date='2050-05-26';
 update easter_daily set cells='圣奥斯定(坎特伯里总主教 St. Augustine)\\1052701|复活期第七周(星期五)|', liturgic=50705, color=2 where date='2050-05-27';
@@ -16139,7 +16139,7 @@ update easter_daily set cells='依华昆仲(殉道 The Two Ewalds -695)\\1100301
 update easter_daily set cells='圣五伤方济各(St. Francis Assisi)\\1100401|常年期第二十七周(星期二)|', liturgic=12702, color=2 where date='2050-10-04';
 update easter_daily set cells='圣女傅天娜(童贞 St. Faustina)\\1100501|圣布拉祺多(殉道 St. Placid)\\1100502|圣女福辣(St. Flora of Beaulien)\\1100503|常年期第二十七周(星期三)|', liturgic=12703, color=2 where date='2050-10-05';
 update easter_daily set cells='圣勃路诺(加多森会创办人 St. Bruno)\\1100601|圣女玛利亚•方济加(童贞 St. Mary Francesd Naples)\\1100602|常年期第二十七周(星期四)|', liturgic=12704, color=1 where date='2050-10-06';
-update easter_daily set cells='玫瑰圣母节(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期五)|', liturgic=12705, color=2 where date='2050-10-07';
+update easter_daily set cells='玫瑰圣母(Our Lady''s Rosary)\\1100701|常年期第二十七周(星期五)|', liturgic=12705, color=2 where date='2050-10-07';
 update easter_daily set cells='圣塞尔久、圣伯古斯(殉道 Ss. Sergius and Bacchus)\\1100801|圣女白兰佳(St. Pelagia the Penitent)\\1100802|常年期第二十七周(星期六)|', liturgic=12706, color=1 where date='2050-10-08';
 update easter_daily set cells='常年期第二十八主日|圣德尼斯(巴黎主教)、圣路帝古、圣爱留德路(殉道 Ss. Denis, Rusticus & Eleutherius)\\1100901|圣若望•良纳弟(天主之母会会祖 St. John Leonardi 1543-1609)\\1100902|', liturgic=12800, color=1 where date='2050-10-09';
 update easter_daily set cells='圣方济各•玻尔日亚(St. Francis Borgia)\\1101001|常年期第二十八周(星期一)|', liturgic=12801, color=1 where date='2050-10-10';
