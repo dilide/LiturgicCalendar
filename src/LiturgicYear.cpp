@@ -812,6 +812,15 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
 
 		//耶稣升天（固定在复活期第六主日星期四，但可能因牧灵需要调整到第七主日）
 		mapPropers.insert(std::make_pair(14,CellInfo(SOLEMNITY,WHITE,"耶稣升天节")));
+
+		//圣诞期1月2日～1月8日
+		mapPropers.insert(std::make_pair(15,CellInfo(MEMORIAL,WHITE,"圣诞期 1月2日")));
+		mapPropers.insert(std::make_pair(16,CellInfo(MEMORIAL,WHITE,"圣诞期 1月3日")));
+		mapPropers.insert(std::make_pair(17,CellInfo(MEMORIAL,WHITE,"圣诞期 1月4日")));
+		mapPropers.insert(std::make_pair(18,CellInfo(MEMORIAL,WHITE,"圣诞期 1月5日")));
+		mapPropers.insert(std::make_pair(19,CellInfo(MEMORIAL,WHITE,"圣诞期 1月6日")));
+		mapPropers.insert(std::make_pair(20,CellInfo(MEMORIAL,WHITE,"圣诞期 1月7日")));
+		mapPropers.insert(std::make_pair(21,CellInfo(MEMORIAL,WHITE,"圣诞期 1月8日")));
 	}
     
     // 将节日编码插入到节日里
@@ -961,20 +970,39 @@ void LiturgicYear::testChristmas1(LiturgicDay& ld)
 		return;
 
 	ld.setSeason(CHRISTMAS);
-    ld.setWeekOfSeason(2);
+    ld.setWeekOfSeason(-1);
 	if(ld<ep)
 	{
-        //主显节前都是第一周
-        ld.setWeekOfSeason(1);
+        ld.setWeekOfSeason(-1);
+        //主显节前(1月2日～1月8日)
+        if(ld.day() == 2) {
+            ld.appendCell(15);
+        } else if(ld.day() == 3) {
+            ld.appendCell(16);
+        } else if(ld.day() == 4) {
+            ld.appendCell(17);
+        } else if(ld.day() == 5) {
+            ld.appendCell(18);
+        } else if(ld.day() == 6) {
+            ld.appendCell(19);
+        } else if(ld.day() == 7) {
+            ld.appendCell(20);
+        } else if(ld.day() == 8) {
+            ld.appendCell(21);
+        }
 	}
 	else if(ld==ep)
 	{
 		ld.appendCell(1);	//主显节（普世教会）
 	}
+    else if(ld>ep && ld<bl)
+    {
+        // 只有主显节 ～ 主受洗日之间使用正常礼仪年
+        ld.setWeekOfSeason(1);
+    }
 	else if(ld==bl)
 	{
 		ld.appendCell(2);	//主受洗日
-        ld.setWeekOfSeason(-1); //不归属于常年期或圣诞期
 	}
 
 	if(ld.month()==1&&ld.day()==6)
@@ -1160,8 +1188,8 @@ std::list<CellInfo> LiturgicYear::getNormalDays()
     }
     {
         // 圣诞期
-        for(int i=1; i<=3; ++i) {
-            for(int j=0; j<=6; ++j) {
+        for(int i=1; i<=1; ++i) {
+            for(int j=1; j<=6; ++j) {
                 int code = CHRISTMAS*10000 + i*100 + j;
                 days.push_back(CellInfo(code, OPTIONAL, NOCOLOR, LiturgicDay::getWeekdayString(code)));
             }
