@@ -1187,7 +1187,7 @@ std::list<CellInfo> LiturgicYear::getNormalDays()
         }
     }
     {
-        // 圣诞期
+        // 圣诞期（12月25日至主显节全部是特殊日期，只有主显节后一周符合正常礼仪年）
         for(int i=1; i<=1; ++i) {
             for(int j=1; j<=6; ++j) {
                 int code = CHRISTMAS*10000 + i*100 + j;
