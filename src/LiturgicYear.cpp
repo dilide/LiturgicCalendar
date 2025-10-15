@@ -814,13 +814,13 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
 		mapPropers.insert(std::make_pair(14,CellInfo(SOLEMNITY,WHITE,"耶稣升天节")));
 
 		//圣诞期1月2日～1月8日
-		mapPropers.insert(std::make_pair(15,CellInfo(MEMORIAL,WHITE,"圣诞期 1月2日")));
-		mapPropers.insert(std::make_pair(16,CellInfo(MEMORIAL,WHITE,"圣诞期 1月3日")));
-		mapPropers.insert(std::make_pair(17,CellInfo(MEMORIAL,WHITE,"圣诞期 1月4日")));
-		mapPropers.insert(std::make_pair(18,CellInfo(MEMORIAL,WHITE,"圣诞期 1月5日")));
-		mapPropers.insert(std::make_pair(19,CellInfo(MEMORIAL,WHITE,"圣诞期 1月6日")));
-		mapPropers.insert(std::make_pair(20,CellInfo(MEMORIAL,WHITE,"圣诞期 1月7日")));
-		mapPropers.insert(std::make_pair(21,CellInfo(MEMORIAL,WHITE,"圣诞期 1月8日")));
+		mapPropers.insert(std::make_pair(15,CellInfo(WEEKDAY,WHITE,"圣诞期 1月2日")));
+		mapPropers.insert(std::make_pair(16,CellInfo(WEEKDAY,WHITE,"圣诞期 1月3日")));
+		mapPropers.insert(std::make_pair(17,CellInfo(WEEKDAY,WHITE,"圣诞期 1月4日")));
+		mapPropers.insert(std::make_pair(18,CellInfo(WEEKDAY,WHITE,"圣诞期 1月5日")));
+		mapPropers.insert(std::make_pair(19,CellInfo(WEEKDAY,WHITE,"圣诞期 1月6日")));
+		mapPropers.insert(std::make_pair(20,CellInfo(WEEKDAY,WHITE,"圣诞期 1月7日")));
+		mapPropers.insert(std::make_pair(21,CellInfo(WEEKDAY,WHITE,"圣诞期 1月8日")));
 	}
     
     // 将节日编码插入到节日里
