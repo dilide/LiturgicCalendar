@@ -230,11 +230,6 @@ std::string LiturgicDay::getWeekdayString(const season_t &season, const int &wee
 			return ostr.str();
 		}
 	}
-	else if(CHRISTMAS == season)
-	{
-		ostr<<"主显节后 "<<CathAssist::Calendar::getDayStr((day_t)dayOfWeek);
-		return ostr.str();
-	}
 
     if(dayOfWeek==SUN)
     {

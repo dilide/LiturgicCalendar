@@ -821,6 +821,14 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
 		mapPropers.insert(std::make_pair(19,CellInfo(WEEKDAY,WHITE,"圣诞期 1月6日")));
 		mapPropers.insert(std::make_pair(20,CellInfo(WEEKDAY,WHITE,"圣诞期 1月7日")));
 		mapPropers.insert(std::make_pair(21,CellInfo(WEEKDAY,WHITE,"圣诞期 1月8日")));
+
+		//主显节后的星期一至星期六
+		mapPropers.insert(std::make_pair(31,CellInfo(WEEKDAY,WHITE,"主显节后 星期一")));
+		mapPropers.insert(std::make_pair(32,CellInfo(WEEKDAY,WHITE,"主显节后 星期二")));
+		mapPropers.insert(std::make_pair(33,CellInfo(WEEKDAY,WHITE,"主显节后 星期三")));
+		mapPropers.insert(std::make_pair(34,CellInfo(WEEKDAY,WHITE,"主显节后 星期四")));
+		mapPropers.insert(std::make_pair(35,CellInfo(WEEKDAY,WHITE,"主显节后 星期五")));
+		mapPropers.insert(std::make_pair(36,CellInfo(WEEKDAY,WHITE,"主显节后 星期六")));
 	}
     
     // 将节日编码插入到节日里
@@ -973,8 +981,17 @@ void LiturgicYear::testChristmas1(LiturgicDay& ld)
     ld.setWeekOfSeason(-1);
 	if(ld<ep)
 	{
-        ld.setWeekOfSeason(-1);
-        //主显节前(1月2日～1月8日)
+        if(ld.day() > 1) {
+            if(ep.day() == 8) {
+                // 主显节在 1 月 8 日，主显节前是第二周（没有第一周）
+                ld.setWeekOfSeason(2);
+            } else {
+                // 否则主显节前是第一周
+                ld.setWeekOfSeason(1);
+            }
+        }
+
+        //弥撒特殊处理 主显节前(1月2日～1月8日)
         if(ld.day() == 2) {
             ld.appendCell(15);
         } else if(ld.day() == 3) {
@@ -997,8 +1014,23 @@ void LiturgicYear::testChristmas1(LiturgicDay& ld)
 	}
     else if(ld>ep && ld<bl)
     {
-        // 只有主显节 ～ 主受洗日之间使用正常礼仪年
-        ld.setWeekOfSeason(1);
+        // 主显节～主受洗日之间如果有平日，就一定是第二周
+        ld.setWeekOfSeason(2);
+
+        // 弥撒特殊处理 主显节后按礼仪年处理
+        if(ld.dayOfWeek() == MON) {
+            ld.appendCell(31);
+        } else if(ld.dayOfWeek() == TUE) {
+            ld.appendCell(32);
+        } else if(ld.dayOfWeek() == WED) {
+            ld.appendCell(33);
+        } else if(ld.dayOfWeek() == THU) {
+            ld.appendCell(34);
+        } else if(ld.dayOfWeek() == FRI) {
+            ld.appendCell(35);
+        } else if(ld.dayOfWeek() == SAT) {
+            ld.appendCell(36);
+        }
     }
 	else if(ld==bl)
 	{
@@ -1187,9 +1219,10 @@ std::list<CellInfo> LiturgicYear::getNormalDays()
         }
     }
     {
-        // 圣诞期（12月25日至主显节全部是特殊日期，只有主显节后一周符合正常礼仪年）
-        for(int i=1; i<=1; ++i) {
+        // 圣诞期（12月25日至次年1月1日全部是特殊日期，1月2日～主显节为第二周，主显节后为第三周）
+        for(int i=1; i<=2; ++i) {
             for(int j=1; j<=6; ++j) {
+                // 不含主日（所有主日都是特殊的）
                 int code = CHRISTMAS*10000 + i*100 + j;
                 days.push_back(CellInfo(code, OPTIONAL, NOCOLOR, LiturgicDay::getWeekdayString(code)));
             }
