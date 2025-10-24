@@ -1112,8 +1112,8 @@ insert into easter_saint(code, name, rank, color) select 1110802,'真福若望·
 update easter_saint set name='真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)', rank=2, color=0 where code=1110802;
 insert into easter_saint(code, name, rank, color) select 1110901,'拉特朗大殿奉献日(The Dedication of the Lateran Basilica)',6,2 where not exists (select 1 from easter_saint where code=1110901);
 update easter_saint set name='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)', rank=6, color=2 where code=1110901;
-insert into easter_saint(code, name, rank, color) select 1111001,'圣良一世(主教 St. Leo the Great)',3,2 where not exists (select 1 from easter_saint where code=1111001);
-update easter_saint set name='圣良一世(主教 St. Leo the Great)', rank=3, color=2 where code=1111001;
+insert into easter_saint(code, name, rank, color) select 1111001,'圣良一世(教宗 St. Leo the Great)',3,2 where not exists (select 1 from easter_saint where code=1111001);
+update easter_saint set name='圣良一世(教宗 St. Leo the Great)', rank=3, color=2 where code=1111001;
 insert into easter_saint(code, name, rank, color) select 1111002,'圣安德肋•亚委琳(St. Andrew Avellino)',2,0 where not exists (select 1 from easter_saint where code=1111002);
 update easter_saint set name='圣安德肋•亚委琳(St. Andrew Avellino)', rank=2, color=0 where code=1111002;
 insert into easter_saint(code, name, rank, color) select 1111101,'圣玛尔定(都尔主教 St. Martin of Tours)',3,2 where not exists (select 1 from easter_saint where code=1111101);
@@ -1589,7 +1589,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='常年期第三十二主日|圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|', liturgic=13200, color=1 where date='2010-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2010-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十二周(星期二)|', liturgic=13202, color=2 where date='2010-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2010-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2010-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十二周(星期四)|', liturgic=13204, color=2 where date='2010-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期五)|', liturgic=13205, color=3 where date='2010-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期六)|', liturgic=13206, color=1 where date='2010-11-13';
@@ -1954,7 +1954,7 @@ update easter_daily set cells='常年期第三十二主日|越南第二批殉道
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2011-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十二周(星期二)|', liturgic=13202, color=1 where date='2011-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2011-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期四)|', liturgic=13204, color=2 where date='2011-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期四)|', liturgic=13204, color=2 where date='2011-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十二周(星期五)|', liturgic=13205, color=2 where date='2011-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期六)|', liturgic=13206, color=3 where date='2011-11-12';
 update easter_daily set cells='常年期第三十三主日(世界穷人日)\\13300|圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|', liturgic=13300, color=2 where date='2011-11-13';
@@ -2320,7 +2320,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2012-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2012-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十一周(星期五)|', liturgic=13105, color=2 where date='2012-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十一周(星期六)|', liturgic=13106, color=2 where date='2012-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十一周(星期六)|', liturgic=13106, color=2 where date='2012-11-10';
 update easter_daily set cells='常年期第三十二主日|圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|', liturgic=13200, color=1 where date='2012-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期一)|', liturgic=13201, color=3 where date='2012-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期二)|', liturgic=13202, color=1 where date='2012-11-13';
@@ -2685,7 +2685,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2013-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2013-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十一周(星期六)|', liturgic=13106, color=2 where date='2013-11-09';
-update easter_daily set cells='常年期第三十二主日|圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|', liturgic=13200, color=1 where date='2013-11-10';
+update easter_daily set cells='常年期第三十二主日|圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|', liturgic=13200, color=1 where date='2013-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十二周(星期一)|', liturgic=13201, color=2 where date='2013-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期二)|', liturgic=13202, color=3 where date='2013-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期三)|', liturgic=13203, color=1 where date='2013-11-13';
@@ -3050,7 +3050,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2014-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2014-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十二主日|', liturgic=13200, color=2 where date='2014-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期一)|', liturgic=13201, color=2 where date='2014-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期一)|', liturgic=13201, color=2 where date='2014-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十二周(星期二)|', liturgic=13202, color=2 where date='2014-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期三)|', liturgic=13203, color=3 where date='2014-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期四)|', liturgic=13204, color=1 where date='2014-11-13';
@@ -3415,7 +3415,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2015-11-07';
 update easter_daily set cells='常年期第三十二主日|圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|', liturgic=13200, color=1 where date='2015-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十二周(星期一)|', liturgic=13201, color=2 where date='2015-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期二)|', liturgic=13202, color=2 where date='2015-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期二)|', liturgic=13202, color=2 where date='2015-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2015-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期四)|', liturgic=13204, color=3 where date='2015-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期五)|', liturgic=13205, color=1 where date='2015-11-13';
@@ -3781,7 +3781,7 @@ update easter_daily set cells='常年期第三十二主日|越南第二批殉道
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2016-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十二周(星期二)|', liturgic=13202, color=1 where date='2016-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2016-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期四)|', liturgic=13204, color=2 where date='2016-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期四)|', liturgic=13204, color=2 where date='2016-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十二周(星期五)|', liturgic=13205, color=2 where date='2016-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期六)|', liturgic=13206, color=3 where date='2016-11-12';
 update easter_daily set cells='常年期第三十三主日(世界穷人日)\\13300|圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|', liturgic=13300, color=2 where date='2016-11-13';
@@ -4146,7 +4146,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十一周(星期二)|', liturgic=13102, color=1 where date='2017-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2017-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十一周(星期四)|', liturgic=13104, color=2 where date='2017-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十一周(星期五)|', liturgic=13105, color=2 where date='2017-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十一周(星期五)|', liturgic=13105, color=2 where date='2017-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十一周(星期六)|', liturgic=13106, color=2 where date='2017-11-11';
 update easter_daily set cells='常年期第三十二主日|圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|', liturgic=13200, color=1 where date='2017-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2017-11-13';
@@ -4511,7 +4511,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2018-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2018-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十一周(星期五)|', liturgic=13105, color=2 where date='2018-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十一周(星期六)|', liturgic=13106, color=2 where date='2018-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十一周(星期六)|', liturgic=13106, color=2 where date='2018-11-10';
 update easter_daily set cells='常年期第三十二主日|圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|', liturgic=13200, color=1 where date='2018-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期一)|', liturgic=13201, color=3 where date='2018-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期二)|', liturgic=13202, color=1 where date='2018-11-13';
@@ -4876,7 +4876,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2019-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2019-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十一周(星期六)|', liturgic=13106, color=2 where date='2019-11-09';
-update easter_daily set cells='常年期第三十二主日|圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|', liturgic=13200, color=1 where date='2019-11-10';
+update easter_daily set cells='常年期第三十二主日|圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|', liturgic=13200, color=1 where date='2019-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十二周(星期一)|', liturgic=13201, color=2 where date='2019-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期二)|', liturgic=13202, color=3 where date='2019-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期三)|', liturgic=13203, color=1 where date='2019-11-13';
@@ -5242,7 +5242,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2020-11-07';
 update easter_daily set cells='常年期第三十二主日|圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|', liturgic=13200, color=1 where date='2020-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十二周(星期一)|', liturgic=13201, color=2 where date='2020-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期二)|', liturgic=13202, color=2 where date='2020-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期二)|', liturgic=13202, color=2 where date='2020-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2020-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期四)|', liturgic=13204, color=3 where date='2020-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期五)|', liturgic=13205, color=1 where date='2020-11-13';
@@ -5607,7 +5607,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='常年期第三十二主日|圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|', liturgic=13200, color=1 where date='2021-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2021-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十二周(星期二)|', liturgic=13202, color=2 where date='2021-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2021-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2021-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十二周(星期四)|', liturgic=13204, color=2 where date='2021-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期五)|', liturgic=13205, color=3 where date='2021-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期六)|', liturgic=13206, color=1 where date='2021-11-13';
@@ -5972,7 +5972,7 @@ update easter_daily set cells='常年期第三十二主日|越南第二批殉道
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2022-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十二周(星期二)|', liturgic=13202, color=1 where date='2022-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2022-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期四)|', liturgic=13204, color=2 where date='2022-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期四)|', liturgic=13204, color=2 where date='2022-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十二周(星期五)|', liturgic=13205, color=2 where date='2022-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期六)|', liturgic=13206, color=3 where date='2022-11-12';
 update easter_daily set cells='常年期第三十三主日(世界穷人日)\\13300|圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|', liturgic=13300, color=2 where date='2022-11-13';
@@ -6337,7 +6337,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十一周(星期二)|', liturgic=13102, color=1 where date='2023-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2023-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十一周(星期四)|', liturgic=13104, color=2 where date='2023-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十一周(星期五)|', liturgic=13105, color=2 where date='2023-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十一周(星期五)|', liturgic=13105, color=2 where date='2023-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十一周(星期六)|', liturgic=13106, color=2 where date='2023-11-11';
 update easter_daily set cells='常年期第三十二主日|圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|', liturgic=13200, color=1 where date='2023-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2023-11-13';
@@ -6703,7 +6703,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2024-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2024-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十一周(星期六)|', liturgic=13106, color=2 where date='2024-11-09';
-update easter_daily set cells='常年期第三十二主日|圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|', liturgic=13200, color=1 where date='2024-11-10';
+update easter_daily set cells='常年期第三十二主日|圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|', liturgic=13200, color=1 where date='2024-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十二周(星期一)|', liturgic=13201, color=2 where date='2024-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期二)|', liturgic=13202, color=3 where date='2024-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期三)|', liturgic=13203, color=1 where date='2024-11-13';
@@ -7068,7 +7068,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2025-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2025-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十二主日|', liturgic=13200, color=2 where date='2025-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期一)|', liturgic=13201, color=2 where date='2025-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期一)|', liturgic=13201, color=2 where date='2025-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十二周(星期二)|', liturgic=13202, color=2 where date='2025-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期三)|', liturgic=13203, color=3 where date='2025-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期四)|', liturgic=13204, color=1 where date='2025-11-13';
@@ -7433,7 +7433,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2026-11-07';
 update easter_daily set cells='常年期第三十二主日|圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|', liturgic=13200, color=1 where date='2026-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十二周(星期一)|', liturgic=13201, color=2 where date='2026-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期二)|', liturgic=13202, color=2 where date='2026-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期二)|', liturgic=13202, color=2 where date='2026-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2026-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期四)|', liturgic=13204, color=3 where date='2026-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期五)|', liturgic=13205, color=1 where date='2026-11-13';
@@ -7798,7 +7798,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='常年期第三十二主日|圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|', liturgic=13200, color=1 where date='2027-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2027-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十二周(星期二)|', liturgic=13202, color=2 where date='2027-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2027-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2027-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十二周(星期四)|', liturgic=13204, color=2 where date='2027-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期五)|', liturgic=13205, color=3 where date='2027-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期六)|', liturgic=13206, color=1 where date='2027-11-13';
@@ -8164,7 +8164,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十一周(星期二)|', liturgic=13102, color=1 where date='2028-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2028-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十一周(星期四)|', liturgic=13104, color=2 where date='2028-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十一周(星期五)|', liturgic=13105, color=2 where date='2028-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十一周(星期五)|', liturgic=13105, color=2 where date='2028-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十一周(星期六)|', liturgic=13106, color=2 where date='2028-11-11';
 update easter_daily set cells='常年期第三十二主日|圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|', liturgic=13200, color=1 where date='2028-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2028-11-13';
@@ -8529,7 +8529,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2029-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2029-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十一周(星期五)|', liturgic=13105, color=2 where date='2029-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十一周(星期六)|', liturgic=13106, color=2 where date='2029-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十一周(星期六)|', liturgic=13106, color=2 where date='2029-11-10';
 update easter_daily set cells='常年期第三十二主日|圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|', liturgic=13200, color=1 where date='2029-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期一)|', liturgic=13201, color=3 where date='2029-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期二)|', liturgic=13202, color=1 where date='2029-11-13';
@@ -8894,7 +8894,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2030-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2030-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十一周(星期六)|', liturgic=13106, color=2 where date='2030-11-09';
-update easter_daily set cells='常年期第三十二主日|圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|', liturgic=13200, color=1 where date='2030-11-10';
+update easter_daily set cells='常年期第三十二主日|圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|', liturgic=13200, color=1 where date='2030-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十二周(星期一)|', liturgic=13201, color=2 where date='2030-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期二)|', liturgic=13202, color=3 where date='2030-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期三)|', liturgic=13203, color=1 where date='2030-11-13';
@@ -9259,7 +9259,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2031-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2031-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十二主日|', liturgic=13200, color=2 where date='2031-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期一)|', liturgic=13201, color=2 where date='2031-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期一)|', liturgic=13201, color=2 where date='2031-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十二周(星期二)|', liturgic=13202, color=2 where date='2031-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期三)|', liturgic=13203, color=3 where date='2031-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期四)|', liturgic=13204, color=1 where date='2031-11-13';
@@ -9625,7 +9625,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='常年期第三十二主日|圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|', liturgic=13200, color=1 where date='2032-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2032-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十二周(星期二)|', liturgic=13202, color=2 where date='2032-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2032-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2032-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十二周(星期四)|', liturgic=13204, color=2 where date='2032-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期五)|', liturgic=13205, color=3 where date='2032-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期六)|', liturgic=13206, color=1 where date='2032-11-13';
@@ -9990,7 +9990,7 @@ update easter_daily set cells='常年期第三十二主日|越南第二批殉道
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2033-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十二周(星期二)|', liturgic=13202, color=1 where date='2033-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2033-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期四)|', liturgic=13204, color=2 where date='2033-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期四)|', liturgic=13204, color=2 where date='2033-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十二周(星期五)|', liturgic=13205, color=2 where date='2033-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期六)|', liturgic=13206, color=3 where date='2033-11-12';
 update easter_daily set cells='常年期第三十三主日(世界穷人日)\\13300|圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|', liturgic=13300, color=2 where date='2033-11-13';
@@ -10355,7 +10355,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十一周(星期二)|', liturgic=13102, color=1 where date='2034-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2034-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十一周(星期四)|', liturgic=13104, color=2 where date='2034-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十一周(星期五)|', liturgic=13105, color=2 where date='2034-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十一周(星期五)|', liturgic=13105, color=2 where date='2034-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十一周(星期六)|', liturgic=13106, color=2 where date='2034-11-11';
 update easter_daily set cells='常年期第三十二主日|圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|', liturgic=13200, color=1 where date='2034-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2034-11-13';
@@ -10720,7 +10720,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2035-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2035-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十一周(星期五)|', liturgic=13105, color=2 where date='2035-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十一周(星期六)|', liturgic=13106, color=2 where date='2035-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十一周(星期六)|', liturgic=13106, color=2 where date='2035-11-10';
 update easter_daily set cells='常年期第三十二主日|圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|', liturgic=13200, color=1 where date='2035-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期一)|', liturgic=13201, color=3 where date='2035-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期二)|', liturgic=13202, color=1 where date='2035-11-13';
@@ -11086,7 +11086,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2036-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2036-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十二主日|', liturgic=13200, color=2 where date='2036-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期一)|', liturgic=13201, color=2 where date='2036-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期一)|', liturgic=13201, color=2 where date='2036-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十二周(星期二)|', liturgic=13202, color=2 where date='2036-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期三)|', liturgic=13203, color=3 where date='2036-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期四)|', liturgic=13204, color=1 where date='2036-11-13';
@@ -11451,7 +11451,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2037-11-07';
 update easter_daily set cells='常年期第三十二主日|圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|', liturgic=13200, color=1 where date='2037-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十二周(星期一)|', liturgic=13201, color=2 where date='2037-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期二)|', liturgic=13202, color=2 where date='2037-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期二)|', liturgic=13202, color=2 where date='2037-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2037-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期四)|', liturgic=13204, color=3 where date='2037-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期五)|', liturgic=13205, color=1 where date='2037-11-13';
@@ -11816,7 +11816,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='常年期第三十二主日|圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|', liturgic=13200, color=1 where date='2038-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2038-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十二周(星期二)|', liturgic=13202, color=2 where date='2038-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2038-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2038-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十二周(星期四)|', liturgic=13204, color=2 where date='2038-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期五)|', liturgic=13205, color=3 where date='2038-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期六)|', liturgic=13206, color=1 where date='2038-11-13';
@@ -12181,7 +12181,7 @@ update easter_daily set cells='常年期第三十二主日|越南第二批殉道
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2039-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十二周(星期二)|', liturgic=13202, color=1 where date='2039-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2039-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期四)|', liturgic=13204, color=2 where date='2039-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期四)|', liturgic=13204, color=2 where date='2039-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十二周(星期五)|', liturgic=13205, color=2 where date='2039-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期六)|', liturgic=13206, color=3 where date='2039-11-12';
 update easter_daily set cells='常年期第三十三主日(世界穷人日)\\13300|圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|', liturgic=13300, color=2 where date='2039-11-13';
@@ -12547,7 +12547,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2040-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2040-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十一周(星期五)|', liturgic=13105, color=2 where date='2040-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十一周(星期六)|', liturgic=13106, color=2 where date='2040-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十一周(星期六)|', liturgic=13106, color=2 where date='2040-11-10';
 update easter_daily set cells='常年期第三十二主日|圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|', liturgic=13200, color=1 where date='2040-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期一)|', liturgic=13201, color=3 where date='2040-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期二)|', liturgic=13202, color=1 where date='2040-11-13';
@@ -12912,7 +12912,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2041-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2041-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十一周(星期六)|', liturgic=13106, color=2 where date='2041-11-09';
-update easter_daily set cells='常年期第三十二主日|圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|', liturgic=13200, color=1 where date='2041-11-10';
+update easter_daily set cells='常年期第三十二主日|圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|', liturgic=13200, color=1 where date='2041-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十二周(星期一)|', liturgic=13201, color=2 where date='2041-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期二)|', liturgic=13202, color=3 where date='2041-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期三)|', liturgic=13203, color=1 where date='2041-11-13';
@@ -13277,7 +13277,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2042-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2042-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十二主日|', liturgic=13200, color=2 where date='2042-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期一)|', liturgic=13201, color=2 where date='2042-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期一)|', liturgic=13201, color=2 where date='2042-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十二周(星期二)|', liturgic=13202, color=2 where date='2042-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期三)|', liturgic=13203, color=3 where date='2042-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期四)|', liturgic=13204, color=1 where date='2042-11-13';
@@ -13642,7 +13642,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2043-11-07';
 update easter_daily set cells='常年期第三十二主日|圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|', liturgic=13200, color=1 where date='2043-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十二周(星期一)|', liturgic=13201, color=2 where date='2043-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期二)|', liturgic=13202, color=2 where date='2043-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期二)|', liturgic=13202, color=2 where date='2043-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2043-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期四)|', liturgic=13204, color=3 where date='2043-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期五)|', liturgic=13205, color=1 where date='2043-11-13';
@@ -14008,7 +14008,7 @@ update easter_daily set cells='常年期第三十二主日|越南第二批殉道
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2044-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十二周(星期二)|', liturgic=13202, color=1 where date='2044-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2044-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期四)|', liturgic=13204, color=2 where date='2044-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期四)|', liturgic=13204, color=2 where date='2044-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十二周(星期五)|', liturgic=13205, color=2 where date='2044-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期六)|', liturgic=13206, color=3 where date='2044-11-12';
 update easter_daily set cells='常年期第三十三主日(世界穷人日)\\13300|圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|', liturgic=13300, color=2 where date='2044-11-13';
@@ -14373,7 +14373,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十一周(星期二)|', liturgic=13102, color=1 where date='2045-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2045-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十一周(星期四)|', liturgic=13104, color=2 where date='2045-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十一周(星期五)|', liturgic=13105, color=2 where date='2045-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十一周(星期五)|', liturgic=13105, color=2 where date='2045-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十一周(星期六)|', liturgic=13106, color=2 where date='2045-11-11';
 update easter_daily set cells='常年期第三十二主日|圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|', liturgic=13200, color=1 where date='2045-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2045-11-13';
@@ -14738,7 +14738,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2046-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2046-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十一周(星期五)|', liturgic=13105, color=2 where date='2046-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十一周(星期六)|', liturgic=13106, color=2 where date='2046-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十一周(星期六)|', liturgic=13106, color=2 where date='2046-11-10';
 update easter_daily set cells='常年期第三十二主日|圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|', liturgic=13200, color=1 where date='2046-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期一)|', liturgic=13201, color=3 where date='2046-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期二)|', liturgic=13202, color=1 where date='2046-11-13';
@@ -15103,7 +15103,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2047-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2047-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十一周(星期六)|', liturgic=13106, color=2 where date='2047-11-09';
-update easter_daily set cells='常年期第三十二主日|圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|', liturgic=13200, color=1 where date='2047-11-10';
+update easter_daily set cells='常年期第三十二主日|圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|', liturgic=13200, color=1 where date='2047-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十二周(星期一)|', liturgic=13201, color=2 where date='2047-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期二)|', liturgic=13202, color=3 where date='2047-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期三)|', liturgic=13203, color=1 where date='2047-11-13';
@@ -15469,7 +15469,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2048-11-07';
 update easter_daily set cells='常年期第三十二主日|圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|', liturgic=13200, color=1 where date='2048-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十二周(星期一)|', liturgic=13201, color=2 where date='2048-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期二)|', liturgic=13202, color=2 where date='2048-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期二)|', liturgic=13202, color=2 where date='2048-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2048-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期四)|', liturgic=13204, color=3 where date='2048-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期五)|', liturgic=13205, color=1 where date='2048-11-13';
@@ -15834,7 +15834,7 @@ update easter_daily set cells='越南第二批殉道烈士(The Martyrs of Indo-C
 update easter_daily set cells='常年期第三十二主日|圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|', liturgic=13200, color=1 where date='2049-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2049-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十二周(星期二)|', liturgic=13202, color=2 where date='2049-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2049-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2049-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十二周(星期四)|', liturgic=13204, color=2 where date='2049-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期五)|', liturgic=13205, color=3 where date='2049-11-12';
 update easter_daily set cells='圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|常年期第三十二周(星期六)|', liturgic=13206, color=1 where date='2049-11-13';
@@ -16199,7 +16199,7 @@ update easter_daily set cells='常年期第三十二主日|越南第二批殉道
 update easter_daily set cells='圣威利巴(欧德莱主教 St. Willbrord 658-739)\\1110701|真福安多尼•白田诺西(Bd. Antony Baldinucci)\\1110702|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2050-11-07';
 update easter_daily set cells='圣高弗烈(亚弥央斯主教 St. Godfrey -1115)\\1110801|真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)\\1110802|常年期第三十二周(星期二)|', liturgic=13202, color=1 where date='2050-11-08';
 update easter_daily set cells='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)\\1110901|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2050-11-09';
-update easter_daily set cells='圣良一世(主教 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期四)|', liturgic=13204, color=2 where date='2050-11-10';
+update easter_daily set cells='圣良一世(教宗 St. Leo the Great)\\1111001|圣安德肋•亚委琳(St. Andrew Avellino)\\1111002|常年期第三十二周(星期四)|', liturgic=13204, color=2 where date='2050-11-10';
 update easter_daily set cells='圣玛尔定(都尔主教 St. Martin of Tours)\\1111101|圣刁多禄(院长 St. Theodore the Studite)\\1111102|常年期第三十二周(星期五)|', liturgic=13205, color=2 where date='2050-11-11';
 update easter_daily set cells='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)\\1111201|常年期第三十二周(星期六)|', liturgic=13206, color=3 where date='2050-11-12';
 update easter_daily set cells='常年期第三十三主日(世界穷人日)\\13300|圣达尼老•各斯加(St. Stanislaus Kostka 1550-1568)\\1111301|', liturgic=13300, color=2 where date='2050-11-13';

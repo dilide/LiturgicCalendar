@@ -2118,10 +2118,10 @@ insert into easter_mass(code, name) select 1110901,'拉特朗大殿奉献日(The
 update easter_mass set name='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)' where code=1110901;
 insert into easter_liturgy_hours(code, name) select 1110901,'拉特朗大殿奉献日(The Dedication of the Lateran Basilica)' where not exists (select 1 from easter_liturgy_hours where code=1110901);
 update easter_liturgy_hours set name='拉特朗大殿奉献日(The Dedication of the Lateran Basilica)' where code=1110901;
-insert into easter_mass(code, name) select 1111001,'圣良一世(主教 St. Leo the Great)' where not exists (select 1 from easter_mass where code=1111001);
-update easter_mass set name='圣良一世(主教 St. Leo the Great)' where code=1111001;
-insert into easter_liturgy_hours(code, name) select 1111001,'圣良一世(主教 St. Leo the Great)' where not exists (select 1 from easter_liturgy_hours where code=1111001);
-update easter_liturgy_hours set name='圣良一世(主教 St. Leo the Great)' where code=1111001;
+insert into easter_mass(code, name) select 1111001,'圣良一世(教宗 St. Leo the Great)' where not exists (select 1 from easter_mass where code=1111001);
+update easter_mass set name='圣良一世(教宗 St. Leo the Great)' where code=1111001;
+insert into easter_liturgy_hours(code, name) select 1111001,'圣良一世(教宗 St. Leo the Great)' where not exists (select 1 from easter_liturgy_hours where code=1111001);
+update easter_liturgy_hours set name='圣良一世(教宗 St. Leo the Great)' where code=1111001;
 insert into easter_mass(code, name) select 1111101,'圣玛尔定(都尔主教 St. Martin of Tours)' where not exists (select 1 from easter_mass where code=1111101);
 update easter_mass set name='圣玛尔定(都尔主教 St. Martin of Tours)' where code=1111101;
 insert into easter_liturgy_hours(code, name) select 1111101,'圣玛尔定(都尔主教 St. Martin of Tours)' where not exists (select 1 from easter_liturgy_hours where code=1111101);
