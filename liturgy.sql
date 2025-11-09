@@ -2130,10 +2130,10 @@ insert into easter_mass(code, name) select 1111201,'圣若撒法(波罗总主教
 update easter_mass set name='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)' where code=1111201;
 insert into easter_liturgy_hours(code, name) select 1111201,'圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)' where not exists (select 1 from easter_liturgy_hours where code=1111201);
 update easter_liturgy_hours set name='圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)' where code=1111201;
-insert into easter_mass(code, name) select 1111701,'真福依撒伯尔(童贞 Bd. Elizabeth the Good)' where not exists (select 1 from easter_mass where code=1111701);
-update easter_mass set name='真福依撒伯尔(童贞 Bd. Elizabeth the Good)' where code=1111701;
-insert into easter_liturgy_hours(code, name) select 1111701,'真福依撒伯尔(童贞 Bd. Elizabeth the Good)' where not exists (select 1 from easter_liturgy_hours where code=1111701);
-update easter_liturgy_hours set name='真福依撒伯尔(童贞 Bd. Elizabeth the Good)' where code=1111701;
+insert into easter_mass(code, name) select 1111701,'圣依撒伯尔(St. Elizabeth of Hungary)' where not exists (select 1 from easter_mass where code=1111701);
+update easter_mass set name='圣依撒伯尔(St. Elizabeth of Hungary)' where code=1111701;
+insert into easter_liturgy_hours(code, name) select 1111701,'圣依撒伯尔(St. Elizabeth of Hungary)' where not exists (select 1 from easter_liturgy_hours where code=1111701);
+update easter_liturgy_hours set name='圣依撒伯尔(St. Elizabeth of Hungary)' where code=1111701;
 insert into easter_mass(code, name) select 1111801,'圣伯多禄圣保禄大殿奉献日(The Dedication of the Basilicas of St. Peter and of St. Paul)' where not exists (select 1 from easter_mass where code=1111801);
 update easter_mass set name='圣伯多禄圣保禄大殿奉献日(The Dedication of the Basilicas of St. Peter and of St. Paul)' where code=1111801;
 insert into easter_liturgy_hours(code, name) select 1111801,'圣伯多禄圣保禄大殿奉献日(The Dedication of the Basilicas of St. Peter and of St. Paul)' where not exists (select 1 from easter_liturgy_hours where code=1111801);

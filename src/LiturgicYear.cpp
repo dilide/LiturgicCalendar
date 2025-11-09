@@ -638,7 +638,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         mapPropers.insert(std::make_pair(1110701,CellInfo(OPTIONAL,NOCOLOR,"圣威利巴(欧德莱主教 St. Willbrord 658-739)")));
         mapPropers.insert(std::make_pair(1110702,CellInfo(OPTIONAL,NOCOLOR,"真福安多尼•白田诺西(Bd. Antony Baldinucci)")));
         mapPropers.insert(std::make_pair(1110801,CellInfo(OPTIONAL,NOCOLOR,"圣高弗烈(亚弥央斯主教 St. Godfrey -1115)")));
-        mapPropers.insert(std::make_pair(1110802,CellInfo(OPTIONAL,NOCOLOR,"真福若望·董思高(司铎圣师 St. John Duns Scott 1266—1308)")));
+        mapPropers.insert(std::make_pair(1110802,CellInfo(OPTIONAL,NOCOLOR,"真福若望·董思高(Bd. John Duns Scott 1266—1308)")));
         mapPropers.insert(std::make_pair(1110901,CellInfo(LORD,WHITE,"拉特朗大殿奉献日(The Dedication of the Lateran Basilica)")));
         mapPropers.insert(std::make_pair(1111001,CellInfo(MEMORIAL,WHITE,"圣良一世(教宗 St. Leo the Great)")));
         mapPropers.insert(std::make_pair(1111002,CellInfo(OPTIONAL,NOCOLOR,"圣安德肋•亚委琳(St. Andrew Avellino)")));
@@ -654,7 +654,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         mapPropers.insert(std::make_pair(1111601,CellInfo(OPTIONAL,NOCOLOR,"圣妇玛加利大(St. Margaret of Scotland)")));
         mapPropers.insert(std::make_pair(1111602,CellInfo(OPTIONAL,NOCOLOR,"圣女日多达(St. Getrude)")));
         mapPropers.insert(std::make_pair(1111603,CellInfo(OPTIONAL,NOCOLOR,"圣爱德门(坎特布里总主教 St. Edmund of Abingdon)")));
-        mapPropers.insert(std::make_pair(1111701,CellInfo(MEMORIAL,WHITE,"真福依撒伯尔(童贞 Bd. Elizabeth the Good)")));
+        mapPropers.insert(std::make_pair(1111701,CellInfo(MEMORIAL,WHITE,"圣依撒伯尔(St. Elizabeth of Hungary)")));
         mapPropers.insert(std::make_pair(1111801,CellInfo(MEMORIAL,WHITE,"圣伯多禄圣保禄大殿奉献日(The Dedication of the Basilicas of St. Peter and of St. Paul)")));
         mapPropers.insert(std::make_pair(1111901,CellInfo(OPTIONAL,NOCOLOR,"圣额我略“显灵迹者”(新则撒肋主教 St. Gregory the Wonderworker 215-268)")));
         mapPropers.insert(std::make_pair(1111902,CellInfo(OPTIONAL,NOCOLOR,"圣狄尼削(亚历山大主教 St. Dionysius of Alexandria)")));
