@@ -1150,8 +1150,8 @@ insert into easter_saint(code, name, rank, color) select 1112101,'圣母奉献�
 update easter_saint set name='圣母奉献日(The Presentation of the Blessed Virgin Mary)', rank=3, color=2 where code=1112101;
 insert into easter_saint(code, name, rank, color) select 1112201,'圣女则济利亚(童贞殉道 St. Cecilia -250)',3,3 where not exists (select 1 from easter_saint where code=1112201);
 update easter_saint set name='圣女则济利亚(童贞殉道 St. Cecilia -250)', rank=3, color=3 where code=1112201;
-insert into easter_saint(code, name, rank, color) select 1112301,'圣格肋孟一世(教宗殉道 St. Clement I -100)',2,0 where not exists (select 1 from easter_saint where code=1112301);
-update easter_saint set name='圣格肋孟一世(教宗殉道 St. Clement I -100)', rank=2, color=0 where code=1112301;
+insert into easter_saint(code, name, rank, color) select 1112301,'圣格肋孟一世(教宗殉道 St. Clement I -99)',2,0 where not exists (select 1 from easter_saint where code=1112301);
+update easter_saint set name='圣格肋孟一世(教宗殉道 St. Clement I -99)', rank=2, color=0 where code=1112301;
 insert into easter_saint(code, name, rank, color) select 1112302,'圣高隆庞(St. Columban -615)',2,0 where not exists (select 1 from easter_saint where code=1112302);
 update easter_saint set name='圣高隆庞(St. Columban -615)', rank=2, color=0 where code=1112302;
 insert into easter_saint(code, name, rank, color) select 1112401,'圣陈安勇乐司铎及同伴(殉道)',3,3 where not exists (select 1 from easter_saint where code=1112401);
@@ -1602,7 +1602,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期六)|', liturgic=13306, color=1 where date='2010-11-20';
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|', liturgic=13400, color=2 where date='2010-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十四周(星期一)|', liturgic=13401, color=3 where date='2010-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期二)|', liturgic=13402, color=1 where date='2010-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期二)|', liturgic=13402, color=1 where date='2010-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十四周(星期三)|', liturgic=13403, color=3 where date='2010-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十四周(星期四)|', liturgic=13404, color=1 where date='2010-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期五)|', liturgic=13405, color=1 where date='2010-11-26';
@@ -1967,7 +1967,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|', liturgic=13400, color=2 where date='2011-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十四周(星期一)|', liturgic=13401, color=2 where date='2011-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十四周(星期二)|', liturgic=13402, color=3 where date='2011-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期三)|', liturgic=13403, color=1 where date='2011-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期三)|', liturgic=13403, color=1 where date='2011-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十四周(星期四)|', liturgic=13404, color=3 where date='2011-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十四周(星期五)|', liturgic=13405, color=1 where date='2011-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期六)|', liturgic=13406, color=1 where date='2011-11-26';
@@ -2333,7 +2333,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期二)|', liturgic=13302, color=1 where date='2012-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十三周(星期三)|', liturgic=13303, color=2 where date='2012-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十三周(星期四)|', liturgic=13304, color=3 where date='2012-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期五)|', liturgic=13305, color=1 where date='2012-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期五)|', liturgic=13305, color=1 where date='2012-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十三周(星期六)|', liturgic=13306, color=3 where date='2012-11-24';
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|', liturgic=13400, color=2 where date='2012-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期一)|', liturgic=13401, color=1 where date='2012-11-26';
@@ -2698,7 +2698,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期三)|', liturgic=13303, color=1 where date='2013-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十三周(星期四)|', liturgic=13304, color=2 where date='2013-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十三周(星期五)|', liturgic=13305, color=3 where date='2013-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期六)|', liturgic=13306, color=1 where date='2013-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期六)|', liturgic=13306, color=1 where date='2013-11-23';
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣陈安勇乐司铎及同伴(殉道)\\1112401|', liturgic=13400, color=2 where date='2013-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十四周(星期一)|', liturgic=13401, color=1 where date='2013-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期二)|', liturgic=13402, color=1 where date='2013-11-26';
@@ -3063,7 +3063,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期四)|', liturgic=13304, color=1 where date='2014-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十三周(星期五)|', liturgic=13305, color=2 where date='2014-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十三周(星期六)|', liturgic=13306, color=3 where date='2014-11-22';
-update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|', liturgic=13400, color=2 where date='2014-11-23';
+update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|', liturgic=13400, color=2 where date='2014-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十四周(星期一)|', liturgic=13401, color=3 where date='2014-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十四周(星期二)|', liturgic=13402, color=1 where date='2014-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期三)|', liturgic=13403, color=1 where date='2014-11-26';
@@ -3428,7 +3428,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期五)|', liturgic=13305, color=1 where date='2015-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十三周(星期六)|', liturgic=13306, color=2 where date='2015-11-21';
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|', liturgic=13400, color=2 where date='2015-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期一)|', liturgic=13401, color=1 where date='2015-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期一)|', liturgic=13401, color=1 where date='2015-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十四周(星期二)|', liturgic=13402, color=3 where date='2015-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十四周(星期三)|', liturgic=13403, color=1 where date='2015-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期四)|', liturgic=13404, color=1 where date='2015-11-26';
@@ -3794,7 +3794,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|', liturgic=13400, color=2 where date='2016-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十四周(星期一)|', liturgic=13401, color=2 where date='2016-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十四周(星期二)|', liturgic=13402, color=3 where date='2016-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期三)|', liturgic=13403, color=1 where date='2016-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期三)|', liturgic=13403, color=1 where date='2016-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十四周(星期四)|', liturgic=13404, color=3 where date='2016-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十四周(星期五)|', liturgic=13405, color=1 where date='2016-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期六)|', liturgic=13406, color=1 where date='2016-11-26';
@@ -4159,7 +4159,7 @@ update easter_daily set cells='常年期第三十三主日(世界穷人日)\\133
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期一)|', liturgic=13301, color=1 where date='2017-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十三周(星期二)|', liturgic=13302, color=2 where date='2017-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十三周(星期三)|', liturgic=13303, color=3 where date='2017-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期四)|', liturgic=13304, color=1 where date='2017-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期四)|', liturgic=13304, color=1 where date='2017-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十三周(星期五)|', liturgic=13305, color=3 where date='2017-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十三周(星期六)|', liturgic=13306, color=1 where date='2017-11-25';
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|', liturgic=13400, color=2 where date='2017-11-26';
@@ -4524,7 +4524,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期二)|', liturgic=13302, color=1 where date='2018-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十三周(星期三)|', liturgic=13303, color=2 where date='2018-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十三周(星期四)|', liturgic=13304, color=3 where date='2018-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期五)|', liturgic=13305, color=1 where date='2018-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期五)|', liturgic=13305, color=1 where date='2018-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十三周(星期六)|', liturgic=13306, color=3 where date='2018-11-24';
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|', liturgic=13400, color=2 where date='2018-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期一)|', liturgic=13401, color=1 where date='2018-11-26';
@@ -4889,7 +4889,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期三)|', liturgic=13303, color=1 where date='2019-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十三周(星期四)|', liturgic=13304, color=2 where date='2019-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十三周(星期五)|', liturgic=13305, color=3 where date='2019-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期六)|', liturgic=13306, color=1 where date='2019-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期六)|', liturgic=13306, color=1 where date='2019-11-23';
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣陈安勇乐司铎及同伴(殉道)\\1112401|', liturgic=13400, color=2 where date='2019-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十四周(星期一)|', liturgic=13401, color=1 where date='2019-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期二)|', liturgic=13402, color=1 where date='2019-11-26';
@@ -5255,7 +5255,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期五)|', liturgic=13305, color=1 where date='2020-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十三周(星期六)|', liturgic=13306, color=2 where date='2020-11-21';
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|', liturgic=13400, color=2 where date='2020-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期一)|', liturgic=13401, color=1 where date='2020-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期一)|', liturgic=13401, color=1 where date='2020-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十四周(星期二)|', liturgic=13402, color=3 where date='2020-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十四周(星期三)|', liturgic=13403, color=1 where date='2020-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期四)|', liturgic=13404, color=1 where date='2020-11-26';
@@ -5620,7 +5620,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期六)|', liturgic=13306, color=1 where date='2021-11-20';
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|', liturgic=13400, color=2 where date='2021-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十四周(星期一)|', liturgic=13401, color=3 where date='2021-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期二)|', liturgic=13402, color=1 where date='2021-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期二)|', liturgic=13402, color=1 where date='2021-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十四周(星期三)|', liturgic=13403, color=3 where date='2021-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十四周(星期四)|', liturgic=13404, color=1 where date='2021-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期五)|', liturgic=13405, color=1 where date='2021-11-26';
@@ -5985,7 +5985,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|', liturgic=13400, color=2 where date='2022-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十四周(星期一)|', liturgic=13401, color=2 where date='2022-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十四周(星期二)|', liturgic=13402, color=3 where date='2022-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期三)|', liturgic=13403, color=1 where date='2022-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期三)|', liturgic=13403, color=1 where date='2022-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十四周(星期四)|', liturgic=13404, color=3 where date='2022-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十四周(星期五)|', liturgic=13405, color=1 where date='2022-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期六)|', liturgic=13406, color=1 where date='2022-11-26';
@@ -6350,7 +6350,7 @@ update easter_daily set cells='常年期第三十三主日(世界穷人日)\\133
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期一)|', liturgic=13301, color=1 where date='2023-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十三周(星期二)|', liturgic=13302, color=2 where date='2023-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十三周(星期三)|', liturgic=13303, color=3 where date='2023-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期四)|', liturgic=13304, color=1 where date='2023-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期四)|', liturgic=13304, color=1 where date='2023-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十三周(星期五)|', liturgic=13305, color=3 where date='2023-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十三周(星期六)|', liturgic=13306, color=1 where date='2023-11-25';
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|', liturgic=13400, color=2 where date='2023-11-26';
@@ -6716,7 +6716,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期三)|', liturgic=13303, color=1 where date='2024-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十三周(星期四)|', liturgic=13304, color=2 where date='2024-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十三周(星期五)|', liturgic=13305, color=3 where date='2024-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期六)|', liturgic=13306, color=1 where date='2024-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期六)|', liturgic=13306, color=1 where date='2024-11-23';
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣陈安勇乐司铎及同伴(殉道)\\1112401|', liturgic=13400, color=2 where date='2024-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十四周(星期一)|', liturgic=13401, color=1 where date='2024-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期二)|', liturgic=13402, color=1 where date='2024-11-26';
@@ -7081,7 +7081,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期四)|', liturgic=13304, color=1 where date='2025-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十三周(星期五)|', liturgic=13305, color=2 where date='2025-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十三周(星期六)|', liturgic=13306, color=3 where date='2025-11-22';
-update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|', liturgic=13400, color=2 where date='2025-11-23';
+update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|', liturgic=13400, color=2 where date='2025-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十四周(星期一)|', liturgic=13401, color=3 where date='2025-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十四周(星期二)|', liturgic=13402, color=1 where date='2025-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期三)|', liturgic=13403, color=1 where date='2025-11-26';
@@ -7446,7 +7446,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期五)|', liturgic=13305, color=1 where date='2026-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十三周(星期六)|', liturgic=13306, color=2 where date='2026-11-21';
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|', liturgic=13400, color=2 where date='2026-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期一)|', liturgic=13401, color=1 where date='2026-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期一)|', liturgic=13401, color=1 where date='2026-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十四周(星期二)|', liturgic=13402, color=3 where date='2026-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十四周(星期三)|', liturgic=13403, color=1 where date='2026-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期四)|', liturgic=13404, color=1 where date='2026-11-26';
@@ -7811,7 +7811,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期六)|', liturgic=13306, color=1 where date='2027-11-20';
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|', liturgic=13400, color=2 where date='2027-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十四周(星期一)|', liturgic=13401, color=3 where date='2027-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期二)|', liturgic=13402, color=1 where date='2027-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期二)|', liturgic=13402, color=1 where date='2027-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十四周(星期三)|', liturgic=13403, color=3 where date='2027-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十四周(星期四)|', liturgic=13404, color=1 where date='2027-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期五)|', liturgic=13405, color=1 where date='2027-11-26';
@@ -8177,7 +8177,7 @@ update easter_daily set cells='常年期第三十三主日(世界穷人日)\\133
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期一)|', liturgic=13301, color=1 where date='2028-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十三周(星期二)|', liturgic=13302, color=2 where date='2028-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十三周(星期三)|', liturgic=13303, color=3 where date='2028-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期四)|', liturgic=13304, color=1 where date='2028-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期四)|', liturgic=13304, color=1 where date='2028-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十三周(星期五)|', liturgic=13305, color=3 where date='2028-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十三周(星期六)|', liturgic=13306, color=1 where date='2028-11-25';
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|', liturgic=13400, color=2 where date='2028-11-26';
@@ -8542,7 +8542,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期二)|', liturgic=13302, color=1 where date='2029-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十三周(星期三)|', liturgic=13303, color=2 where date='2029-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十三周(星期四)|', liturgic=13304, color=3 where date='2029-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期五)|', liturgic=13305, color=1 where date='2029-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期五)|', liturgic=13305, color=1 where date='2029-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十三周(星期六)|', liturgic=13306, color=3 where date='2029-11-24';
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|', liturgic=13400, color=2 where date='2029-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期一)|', liturgic=13401, color=1 where date='2029-11-26';
@@ -8907,7 +8907,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期三)|', liturgic=13303, color=1 where date='2030-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十三周(星期四)|', liturgic=13304, color=2 where date='2030-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十三周(星期五)|', liturgic=13305, color=3 where date='2030-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期六)|', liturgic=13306, color=1 where date='2030-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期六)|', liturgic=13306, color=1 where date='2030-11-23';
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣陈安勇乐司铎及同伴(殉道)\\1112401|', liturgic=13400, color=2 where date='2030-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十四周(星期一)|', liturgic=13401, color=1 where date='2030-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期二)|', liturgic=13402, color=1 where date='2030-11-26';
@@ -9272,7 +9272,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期四)|', liturgic=13304, color=1 where date='2031-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十三周(星期五)|', liturgic=13305, color=2 where date='2031-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十三周(星期六)|', liturgic=13306, color=3 where date='2031-11-22';
-update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|', liturgic=13400, color=2 where date='2031-11-23';
+update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|', liturgic=13400, color=2 where date='2031-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十四周(星期一)|', liturgic=13401, color=3 where date='2031-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十四周(星期二)|', liturgic=13402, color=1 where date='2031-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期三)|', liturgic=13403, color=1 where date='2031-11-26';
@@ -9638,7 +9638,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期六)|', liturgic=13306, color=1 where date='2032-11-20';
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|', liturgic=13400, color=2 where date='2032-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十四周(星期一)|', liturgic=13401, color=3 where date='2032-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期二)|', liturgic=13402, color=1 where date='2032-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期二)|', liturgic=13402, color=1 where date='2032-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十四周(星期三)|', liturgic=13403, color=3 where date='2032-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十四周(星期四)|', liturgic=13404, color=1 where date='2032-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期五)|', liturgic=13405, color=1 where date='2032-11-26';
@@ -10003,7 +10003,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|', liturgic=13400, color=2 where date='2033-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十四周(星期一)|', liturgic=13401, color=2 where date='2033-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十四周(星期二)|', liturgic=13402, color=3 where date='2033-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期三)|', liturgic=13403, color=1 where date='2033-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期三)|', liturgic=13403, color=1 where date='2033-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十四周(星期四)|', liturgic=13404, color=3 where date='2033-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十四周(星期五)|', liturgic=13405, color=1 where date='2033-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期六)|', liturgic=13406, color=1 where date='2033-11-26';
@@ -10368,7 +10368,7 @@ update easter_daily set cells='常年期第三十三主日(世界穷人日)\\133
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期一)|', liturgic=13301, color=1 where date='2034-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十三周(星期二)|', liturgic=13302, color=2 where date='2034-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十三周(星期三)|', liturgic=13303, color=3 where date='2034-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期四)|', liturgic=13304, color=1 where date='2034-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期四)|', liturgic=13304, color=1 where date='2034-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十三周(星期五)|', liturgic=13305, color=3 where date='2034-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十三周(星期六)|', liturgic=13306, color=1 where date='2034-11-25';
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|', liturgic=13400, color=2 where date='2034-11-26';
@@ -10733,7 +10733,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期二)|', liturgic=13302, color=1 where date='2035-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十三周(星期三)|', liturgic=13303, color=2 where date='2035-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十三周(星期四)|', liturgic=13304, color=3 where date='2035-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期五)|', liturgic=13305, color=1 where date='2035-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期五)|', liturgic=13305, color=1 where date='2035-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十三周(星期六)|', liturgic=13306, color=3 where date='2035-11-24';
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|', liturgic=13400, color=2 where date='2035-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期一)|', liturgic=13401, color=1 where date='2035-11-26';
@@ -11099,7 +11099,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期四)|', liturgic=13304, color=1 where date='2036-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十三周(星期五)|', liturgic=13305, color=2 where date='2036-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十三周(星期六)|', liturgic=13306, color=3 where date='2036-11-22';
-update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|', liturgic=13400, color=2 where date='2036-11-23';
+update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|', liturgic=13400, color=2 where date='2036-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十四周(星期一)|', liturgic=13401, color=3 where date='2036-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十四周(星期二)|', liturgic=13402, color=1 where date='2036-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期三)|', liturgic=13403, color=1 where date='2036-11-26';
@@ -11464,7 +11464,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期五)|', liturgic=13305, color=1 where date='2037-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十三周(星期六)|', liturgic=13306, color=2 where date='2037-11-21';
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|', liturgic=13400, color=2 where date='2037-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期一)|', liturgic=13401, color=1 where date='2037-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期一)|', liturgic=13401, color=1 where date='2037-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十四周(星期二)|', liturgic=13402, color=3 where date='2037-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十四周(星期三)|', liturgic=13403, color=1 where date='2037-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期四)|', liturgic=13404, color=1 where date='2037-11-26';
@@ -11829,7 +11829,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期六)|', liturgic=13306, color=1 where date='2038-11-20';
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|', liturgic=13400, color=2 where date='2038-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十四周(星期一)|', liturgic=13401, color=3 where date='2038-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期二)|', liturgic=13402, color=1 where date='2038-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期二)|', liturgic=13402, color=1 where date='2038-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十四周(星期三)|', liturgic=13403, color=3 where date='2038-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十四周(星期四)|', liturgic=13404, color=1 where date='2038-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期五)|', liturgic=13405, color=1 where date='2038-11-26';
@@ -12194,7 +12194,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|', liturgic=13400, color=2 where date='2039-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十四周(星期一)|', liturgic=13401, color=2 where date='2039-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十四周(星期二)|', liturgic=13402, color=3 where date='2039-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期三)|', liturgic=13403, color=1 where date='2039-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期三)|', liturgic=13403, color=1 where date='2039-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十四周(星期四)|', liturgic=13404, color=3 where date='2039-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十四周(星期五)|', liturgic=13405, color=1 where date='2039-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期六)|', liturgic=13406, color=1 where date='2039-11-26';
@@ -12560,7 +12560,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期二)|', liturgic=13302, color=1 where date='2040-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十三周(星期三)|', liturgic=13303, color=2 where date='2040-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十三周(星期四)|', liturgic=13304, color=3 where date='2040-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期五)|', liturgic=13305, color=1 where date='2040-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期五)|', liturgic=13305, color=1 where date='2040-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十三周(星期六)|', liturgic=13306, color=3 where date='2040-11-24';
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|', liturgic=13400, color=2 where date='2040-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期一)|', liturgic=13401, color=1 where date='2040-11-26';
@@ -12925,7 +12925,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期三)|', liturgic=13303, color=1 where date='2041-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十三周(星期四)|', liturgic=13304, color=2 where date='2041-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十三周(星期五)|', liturgic=13305, color=3 where date='2041-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期六)|', liturgic=13306, color=1 where date='2041-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期六)|', liturgic=13306, color=1 where date='2041-11-23';
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣陈安勇乐司铎及同伴(殉道)\\1112401|', liturgic=13400, color=2 where date='2041-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十四周(星期一)|', liturgic=13401, color=1 where date='2041-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期二)|', liturgic=13402, color=1 where date='2041-11-26';
@@ -13290,7 +13290,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期四)|', liturgic=13304, color=1 where date='2042-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十三周(星期五)|', liturgic=13305, color=2 where date='2042-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十三周(星期六)|', liturgic=13306, color=3 where date='2042-11-22';
-update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|', liturgic=13400, color=2 where date='2042-11-23';
+update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|', liturgic=13400, color=2 where date='2042-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十四周(星期一)|', liturgic=13401, color=3 where date='2042-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十四周(星期二)|', liturgic=13402, color=1 where date='2042-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期三)|', liturgic=13403, color=1 where date='2042-11-26';
@@ -13655,7 +13655,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期五)|', liturgic=13305, color=1 where date='2043-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十三周(星期六)|', liturgic=13306, color=2 where date='2043-11-21';
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|', liturgic=13400, color=2 where date='2043-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期一)|', liturgic=13401, color=1 where date='2043-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期一)|', liturgic=13401, color=1 where date='2043-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十四周(星期二)|', liturgic=13402, color=3 where date='2043-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十四周(星期三)|', liturgic=13403, color=1 where date='2043-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期四)|', liturgic=13404, color=1 where date='2043-11-26';
@@ -14021,7 +14021,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|', liturgic=13400, color=2 where date='2044-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十四周(星期一)|', liturgic=13401, color=2 where date='2044-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十四周(星期二)|', liturgic=13402, color=3 where date='2044-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期三)|', liturgic=13403, color=1 where date='2044-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期三)|', liturgic=13403, color=1 where date='2044-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十四周(星期四)|', liturgic=13404, color=3 where date='2044-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十四周(星期五)|', liturgic=13405, color=1 where date='2044-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期六)|', liturgic=13406, color=1 where date='2044-11-26';
@@ -14386,7 +14386,7 @@ update easter_daily set cells='常年期第三十三主日(世界穷人日)\\133
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期一)|', liturgic=13301, color=1 where date='2045-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十三周(星期二)|', liturgic=13302, color=2 where date='2045-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十三周(星期三)|', liturgic=13303, color=3 where date='2045-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期四)|', liturgic=13304, color=1 where date='2045-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期四)|', liturgic=13304, color=1 where date='2045-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十三周(星期五)|', liturgic=13305, color=3 where date='2045-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十三周(星期六)|', liturgic=13306, color=1 where date='2045-11-25';
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|', liturgic=13400, color=2 where date='2045-11-26';
@@ -14751,7 +14751,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期二)|', liturgic=13302, color=1 where date='2046-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十三周(星期三)|', liturgic=13303, color=2 where date='2046-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十三周(星期四)|', liturgic=13304, color=3 where date='2046-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期五)|', liturgic=13305, color=1 where date='2046-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期五)|', liturgic=13305, color=1 where date='2046-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十三周(星期六)|', liturgic=13306, color=3 where date='2046-11-24';
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|', liturgic=13400, color=2 where date='2046-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期一)|', liturgic=13401, color=1 where date='2046-11-26';
@@ -15116,7 +15116,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期三)|', liturgic=13303, color=1 where date='2047-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十三周(星期四)|', liturgic=13304, color=2 where date='2047-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十三周(星期五)|', liturgic=13305, color=3 where date='2047-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期六)|', liturgic=13306, color=1 where date='2047-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十三周(星期六)|', liturgic=13306, color=1 where date='2047-11-23';
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣陈安勇乐司铎及同伴(殉道)\\1112401|', liturgic=13400, color=2 where date='2047-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十四周(星期一)|', liturgic=13401, color=1 where date='2047-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期二)|', liturgic=13402, color=1 where date='2047-11-26';
@@ -15482,7 +15482,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期五)|', liturgic=13305, color=1 where date='2048-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十三周(星期六)|', liturgic=13306, color=2 where date='2048-11-21';
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|', liturgic=13400, color=2 where date='2048-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期一)|', liturgic=13401, color=1 where date='2048-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期一)|', liturgic=13401, color=1 where date='2048-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十四周(星期二)|', liturgic=13402, color=3 where date='2048-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十四周(星期三)|', liturgic=13403, color=1 where date='2048-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期四)|', liturgic=13404, color=1 where date='2048-11-26';
@@ -15847,7 +15847,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|常年期第三十三周(星期六)|', liturgic=13306, color=1 where date='2049-11-20';
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|', liturgic=13400, color=2 where date='2049-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十四周(星期一)|', liturgic=13401, color=3 where date='2049-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期二)|', liturgic=13402, color=1 where date='2049-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期二)|', liturgic=13402, color=1 where date='2049-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十四周(星期三)|', liturgic=13403, color=3 where date='2049-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十四周(星期四)|', liturgic=13404, color=1 where date='2049-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期五)|', liturgic=13405, color=1 where date='2049-11-26';
@@ -16212,7 +16212,7 @@ update easter_daily set cells='圣额我略“显灵迹者”(新则撒肋主教
 update easter_daily set cells='基督普世君王节\\13400|常年期第三十四主日|圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)\\1112001|', liturgic=13400, color=2 where date='2050-11-20';
 update easter_daily set cells='圣母奉献日(The Presentation of the Blessed Virgin Mary)\\1112101|常年期第三十四周(星期一)|', liturgic=13401, color=2 where date='2050-11-21';
 update easter_daily set cells='圣女则济利亚(童贞殉道 St. Cecilia -250)\\1112201|常年期第三十四周(星期二)|', liturgic=13402, color=3 where date='2050-11-22';
-update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -100)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期三)|', liturgic=13403, color=1 where date='2050-11-23';
+update easter_daily set cells='圣格肋孟一世(教宗殉道 St. Clement I -99)\\1112301|圣高隆庞(St. Columban -615)\\1112302|常年期第三十四周(星期三)|', liturgic=13403, color=1 where date='2050-11-23';
 update easter_daily set cells='圣陈安勇乐司铎及同伴(殉道)\\1112401|常年期第三十四周(星期四)|', liturgic=13404, color=3 where date='2050-11-24';
 update easter_daily set cells='圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)\\1112501|圣若望•伯尔各满(St. John Berchmans)\\1112502|常年期第三十四周(星期五)|', liturgic=13405, color=1 where date='2050-11-25';
 update easter_daily set cells='圣良纳(St. Leonard of Port Mauriee 1676-1751)\\1112601|常年期第三十四周(星期六)|', liturgic=13406, color=1 where date='2050-11-26';
