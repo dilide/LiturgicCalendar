@@ -166,10 +166,8 @@ void export_month_json_test()
     Calendar::releaseCalendar();
 }
 
-void export_to_sqlite()
+void export_to_sqlite(const std::string& strDbName)
 {
-    std::string strDbName = "liturgic.db";
-
     //删除已存在的数据库文件
     remove(strDbName.c_str());
 
@@ -187,8 +185,6 @@ void export_to_sqlite()
     
     Calendar::initCalendar();
 
-    std::ofstream of;
-    of.open(string("./update.sql"));
     //导入圣人传记目录
     {
         sqlite3_exec(db,"begin;",0,0,0);
@@ -211,13 +207,6 @@ void export_to_sqlite()
             {
                 std::cout<<"insert date "<<iter->second.celebration<<std::endl;
             }
-            
-            //"INSERT INTO easter_saint (code, name, rank, color) SELECT 10300,'常年期第三主日(圣言主日)', 5, 4 WHERE NOT EXISTS (SELECT 1 FROM easter_saint WHERE code=10300);";
-
-            of<<"insert into easter_saint(code, name, rank, color) select "<<iter->first<<",'"<<ansi2utf8(sqlite3_mprintf("%q",iter->second.celebration.c_str()))<<"',"
-                <<iter->second.rank<<","<<iter->second.color<<" where not exists (select 1 from easter_saint where code="<<iter->first<<");"<<std::endl;
-            of<<"update easter_saint set name='"<<ansi2utf8(sqlite3_mprintf("%q",iter->second.celebration.c_str()))<<"', rank="<<iter->second.rank<<", color="<<iter->second.color<<" where code="<<iter->first<<";"<<std::endl;
-
             ++iter;
         }
 
@@ -273,6 +262,68 @@ void export_to_sqlite()
                 std::cout<<"insert date "<<dayInfo.toString()<<std::endl;
             }
             
+            dtBegin = dtBegin.addDays(1);
+        }
+    }
+    sqlite3_exec(db,"commit;",0,0,0);
+    Calendar::releaseCalendar();
+    sqlite3_close(db);
+}
+
+void export_to_update_sql()
+{
+    Calendar::initCalendar();
+
+    std::ofstream of;
+    of.open(string("./update.sql"));
+    //导入圣人传记目录
+    {
+        auto saints = LiturgicYear::getPropers();
+        auto iter = saints.begin();
+        while (iter!=saints.end()) {
+            //"INSERT INTO easter_saint (code, name, rank, color) SELECT 10300,'常年期第三主日(圣言主日)', 5, 4 WHERE NOT EXISTS (SELECT 1 FROM easter_saint WHERE code=10300);";
+            of<<"insert into easter_saint(code, name, rank, color) select "<<iter->first<<",'"<<ansi2utf8(sqlite3_mprintf("%q",iter->second.celebration.c_str()))<<"',"
+                <<iter->second.rank<<","<<iter->second.color<<" where not exists (select 1 from easter_saint where code="<<iter->first<<");"<<std::endl;
+            of<<"update easter_saint set name='"<<ansi2utf8(sqlite3_mprintf("%q",iter->second.celebration.c_str()))<<"', rank="<<iter->second.rank<<", color="<<iter->second.color<<" where code="<<iter->first<<";"<<std::endl;
+
+            ++iter;
+        }
+    }
+
+    for(int iYear=2010;iYear<2051;++iYear)
+    {
+        CathAssist::Calendar::Date dtBegin(iYear,1,1);
+
+        while (dtBegin.year()==iYear)
+        {
+            LiturgicDay dayInfo = Calendar::getLiturgicDay(dtBegin);
+
+            unsigned int iLiturgicDay = dayInfo.getLiturgicId();
+
+            std::ostringstream ostr;
+            auto cells = dayInfo.getCellInfos();
+            auto iterCell = cells.begin();
+            while (iterCell!=cells.end())
+            {
+                ostr<<iterCell->toString()<<"|";
+
+                ++iterCell;
+            }
+
+            //圣人传记的id，暂时不导出
+            std::string strCellsId = "";
+            {
+                std::ostringstream ostrIds;
+                auto ids = dayInfo.getCellsId();
+                auto iii = ids.begin();
+                while (iii != ids.end()) {
+                    ostrIds<<*iii<<"|";
+
+                    ++iii;
+                }
+                strCellsId = ostrIds.str();
+            }
+            
             of<<"update easter_daily set cells='"<<ReplaceAll(ostr.str(), "'", "''").c_str()<<"', liturgic="<<dayInfo.getLiturgicId()<<", color="<<dayInfo.getColor()<<" where date='"<<dayInfo.toString()<<"';"<<std::endl;
             //of<<"insert into easter_daily(date,lunar,liturgic,color,cells) values("
             //    <<"date('"<<ansi2utf8(dayInfo.toString())<<"'),'"<<ansi2utf8(dayInfo.toLunarString())<<"',"<<dayInfo.getLiturgicId()<<","<<dayInfo.getColor()<<",'"<<ansi2utf8(sqlite3_mprintf("%q",ostr.str().c_str()))<<"');"<<std::endl;
@@ -280,17 +331,13 @@ void export_to_sqlite()
             dtBegin = dtBegin.addDays(1);
         }
     }
-    sqlite3_exec(db,"commit;",0,0,0);
     of.close();
 
     Calendar::releaseCalendar();
-
-    sqlite3_close(db);
 }
 
 void export_to_liturgy() {
     Calendar::initCalendar();
-
     std::ofstream of;
     of.open(string("./liturgy.sql"));
     {
@@ -367,14 +414,18 @@ void calendar_test()
 int main(int argc, char *argv[])
 {
     CathAssist::Calendar::MultiLang::read("lang.ini");
-    //CathAssist::Calendar::MultiLang::setDefaultLang("en");
-
     export_month_json_test();
-    export_to_sqlite();
+    export_to_sqlite("liturgic.db");
+    export_to_update_sql();
     export_to_liturgy();
-    
-    calendar_test();
 
+    for(int lang=CathAssist::Calendar::LANG_EN; lang <= CathAssist::Calendar::LANG_PT_BR; ++lang) {
+        CathAssist::Calendar::MultiLang::setLangCode(static_cast<CathAssist::Calendar::langcode_t>(lang));
+        std::string strDbName = "liturgic." + CathAssist::Calendar::getLangCodeStr(static_cast<CathAssist::Calendar::langcode_t>(lang)) + ".db";
+        export_to_sqlite(strDbName);
+    }
+
+    calendar_test();
     CathAssist::Calendar::MultiLang::write("lang_out.ini");
     return 0;
 }

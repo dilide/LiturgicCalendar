@@ -43,4 +43,5 @@ void CathAssist::Calendar::Calendar::releaseCalendar()
     }
     
     mapLiturgicYear.clear();
+    LiturgicYear::releasePropers();
 }

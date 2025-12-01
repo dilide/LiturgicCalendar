@@ -844,6 +844,11 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
     }
 }
 
+void CathAssist::Calendar::LiturgicYear::releasePropers()
+{
+    mapPropers.clear();
+}
+
 CathAssist::Calendar::CellInfo CathAssist::Calendar::LiturgicYear::getCellInfo(const int& id)
 {
 	auto iter = mapPropers.find(id);

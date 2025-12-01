@@ -11,3 +11,10 @@ Makefile
 .vscode
 Debug
 months
+lang_out.ini
+liturgic.en.db
+liturgic.es_ES.db
+liturgic.it_IT.db
+liturgic.pt_BR.db
+liturgic.zh_CN.db
+liturgic.zh_TW.db
