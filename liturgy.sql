@@ -1678,10 +1678,10 @@ insert into easter_mass(code, name) select 50800,'圣神降临节' where not exi
 update easter_mass set name='圣神降临节' where code=50800;
 insert into easter_liturgy_hours(code, name) select 50800,'圣神降临节' where not exists (select 1 from easter_liturgy_hours where code=50800);
 update easter_liturgy_hours set name='圣神降临节' where code=50800;
-insert into easter_mass(code, name) select 1010101,'天主之母节(Solemnity Mary,Monther of God)' where not exists (select 1 from easter_mass where code=1010101);
-update easter_mass set name='天主之母节(Solemnity Mary,Monther of God)' where code=1010101;
-insert into easter_liturgy_hours(code, name) select 1010101,'天主之母节(Solemnity Mary,Monther of God)' where not exists (select 1 from easter_liturgy_hours where code=1010101);
-update easter_liturgy_hours set name='天主之母节(Solemnity Mary,Monther of God)' where code=1010101;
+insert into easter_mass(code, name) select 1010101,'天主之母节(Solemnity Mary, Mother of God)' where not exists (select 1 from easter_mass where code=1010101);
+update easter_mass set name='天主之母节(Solemnity Mary, Mother of God)' where code=1010101;
+insert into easter_liturgy_hours(code, name) select 1010101,'天主之母节(Solemnity Mary, Mother of God)' where not exists (select 1 from easter_liturgy_hours where code=1010101);
+update easter_liturgy_hours set name='天主之母节(Solemnity Mary, Mother of God)' where code=1010101;
 insert into easter_mass(code, name) select 1010201,'圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)' where not exists (select 1 from easter_mass where code=1010201);
 update easter_mass set name='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)' where code=1010201;
 insert into easter_liturgy_hours(code, name) select 1010201,'圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)' where not exists (select 1 from easter_liturgy_hours where code=1010201);

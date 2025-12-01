@@ -94,8 +94,8 @@ insert into easter_saint(code, name, rank, color) select 50400,'复活期第四�
 update easter_saint set name='复活期第四主日(善牧主日)', rank=5, color=2 where code=50400;
 insert into easter_saint(code, name, rank, color) select 50800,'圣神降临节',10,3 where not exists (select 1 from easter_saint where code=50800);
 update easter_saint set name='圣神降临节', rank=10, color=3 where code=50800;
-insert into easter_saint(code, name, rank, color) select 1010101,'天主之母节(Solemnity Mary,Monther of God)',10,2 where not exists (select 1 from easter_saint where code=1010101);
-update easter_saint set name='天主之母节(Solemnity Mary,Monther of God)', rank=10, color=2 where code=1010101;
+insert into easter_saint(code, name, rank, color) select 1010101,'天主之母节(Solemnity Mary, Mother of God)',10,2 where not exists (select 1 from easter_saint where code=1010101);
+update easter_saint set name='天主之母节(Solemnity Mary, Mother of God)', rank=10, color=2 where code=1010101;
 insert into easter_saint(code, name, rank, color) select 1010201,'圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)',3,2 where not exists (select 1 from easter_saint where code=1010201);
 update easter_saint set name='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)', rank=3, color=2 where code=1010201;
 insert into easter_saint(code, name, rank, color) select 1010301,'耶稣圣名',3,2 where not exists (select 1 from easter_saint where code=1010301);
@@ -196,8 +196,6 @@ insert into easter_saint(code, name, rank, color) select 1020201,'献耶稣于�
 update easter_saint set name='献耶稣于圣殿(Presentation of the Lord)', rank=6, color=2 where code=1020201;
 insert into easter_saint(code, name, rank, color) select 1020301,'圣巴拉削(主教殉道 St. Blaise)',2,0 where not exists (select 1 from easter_saint where code=1020301);
 update easter_saint set name='圣巴拉削(主教殉道 St. Blaise)', rank=2, color=0 where code=1020301;
-insert into easter_saint(code, name, rank, color) select 1020302,'圣老楞佐(主教 St. Laurence)',2,0 where not exists (select 1 from easter_saint where code=1020302);
-update easter_saint set name='圣老楞佐(主教 St. Laurence)', rank=2, color=0 where code=1020302;
 insert into easter_saint(code, name, rank, color) select 1020401,'圣若望•波利多(殉道 St. John de Britto)',2,0 where not exists (select 1 from easter_saint where code=1020401);
 update easter_saint set name='圣若望•波利多(殉道 St. John de Britto)', rank=2, color=0 where code=1020401;
 insert into easter_saint(code, name, rank, color) select 1020402,'圣妇若翰纳(圣母领报会会祖 St. John of France)',2,0 where not exists (select 1 from easter_saint where code=1020402);
@@ -1276,7 +1274,7 @@ insert into easter_saint(code, name, rank, color) select 1123102,'圣妇幼梅�
 update easter_saint set name='圣妇幼梅肋尼亚(St. Melania the Younger -439)', rank=2, color=0 where code=1123102;
 insert into easter_saint(code, name, rank, color) select 1123103,'圣诞节庆期第七日',6,2 where not exists (select 1 from easter_saint where code=1123103);
 update easter_saint set name='圣诞节庆期第七日', rank=6, color=2 where code=1123103;
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30005, color=2 where date='2010-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30005, color=2 where date='2010-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期六)|', liturgic=30106, color=2 where date='2010-01-02';
 update easter_daily set cells='主显节(Epiphany of the Lord)\\1|耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|', liturgic=30000, color=2 where date='2010-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|主显节后 星期一\\31|圣诞期第二周(星期一)|', liturgic=30201, color=2 where date='2010-01-04';
@@ -1309,7 +1307,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='常年期第四主日|圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|', liturgic=10400, color=1 where date='2010-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2010-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2010-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2010-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2010-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2010-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第四周(星期五)|', liturgic=10405, color=3 where date='2010-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第四周(星期六)|', liturgic=10406, color=3 where date='2010-02-06';
@@ -1641,7 +1639,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30003, color=2 where date='2010-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30004, color=2 where date='2010-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30005, color=2 where date='2010-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30006, color=2 where date='2011-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30006, color=2 where date='2011-01-01';
 update easter_daily set cells='主显节(Epiphany of the Lord)\\1|圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|', liturgic=30000, color=2 where date='2011-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|主显节后 星期一\\31|圣诞期第二周(星期一)|', liturgic=30201, color=2 where date='2011-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|主显节后 星期二\\32|圣诞期第二周(星期二)|', liturgic=30202, color=2 where date='2011-01-04';
@@ -1674,7 +1672,7 @@ update easter_daily set cells='常年期第四主日|真福雷永明(司铎 Bd. 
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第四周(星期一)|', liturgic=10401, color=2 where date='2011-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2011-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|农历除夕\\11|常年期第四周(星期三)|', liturgic=10403, color=2 where date='2011-02-02';
-update easter_daily set cells='农历新春\\12|圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2011-02-03';
+update easter_daily set cells='农历新春\\12|圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2011-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期五)|', liturgic=10405, color=1 where date='2011-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第四周(星期六)|', liturgic=10406, color=3 where date='2011-02-05';
 update easter_daily set cells='常年期第五主日|圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|', liturgic=10500, color=1 where date='2011-02-06';
@@ -2006,7 +2004,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30004, color=2 where date='2011-12-29';
 update easter_daily set cells='圣家节\\8|圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30005, color=2 where date='2011-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30006, color=2 where date='2011-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30000, color=2 where date='2012-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30000, color=2 where date='2012-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第二周(星期一)|', liturgic=30201, color=2 where date='2012-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第二周(星期二)|', liturgic=30202, color=2 where date='2012-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|圣诞期 1月4日\\17|圣诞期第二周(星期三)|', liturgic=30203, color=2 where date='2012-01-04';
@@ -2039,7 +2037,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2012-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2012-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四周(星期四)|', liturgic=10404, color=2 where date='2012-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期五)|', liturgic=10405, color=1 where date='2012-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期五)|', liturgic=10405, color=1 where date='2012-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期六)|', liturgic=10406, color=1 where date='2012-02-04';
 update easter_daily set cells='常年期第五主日|圣女亚加大(童贞殉道 St. Agatha)\\1020501|', liturgic=10500, color=1 where date='2012-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第五周(星期一)|', liturgic=10501, color=3 where date='2012-02-06';
@@ -2372,7 +2370,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30006, color=2 where date='2012-12-29';
 update easter_daily set cells='圣家节\\8|圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30000, color=2 where date='2012-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30001, color=2 where date='2012-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30002, color=2 where date='2013-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30002, color=2 where date='2013-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2013-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第一周(星期四)|', liturgic=30104, color=2 where date='2013-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|圣诞期 1月4日\\17|圣诞期第一周(星期五)|', liturgic=30105, color=2 where date='2013-01-04';
@@ -2405,7 +2403,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第三周(星期四)|', liturgic=10304, color=2 where date='2013-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第三周(星期五)|', liturgic=10305, color=1 where date='2013-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第三周(星期六)|', liturgic=10306, color=2 where date='2013-02-02';
-update easter_daily set cells='常年期第四主日|圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|', liturgic=10400, color=1 where date='2013-02-03';
+update easter_daily set cells='常年期第四主日|圣巴拉削(主教殉道 St. Blaise)\\1020301|', liturgic=10400, color=1 where date='2013-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2013-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第四周(星期二)|', liturgic=10402, color=3 where date='2013-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第四周(星期三)|', liturgic=10403, color=3 where date='2013-02-06';
@@ -2737,7 +2735,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣家节\\8|圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30000, color=2 where date='2013-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30001, color=2 where date='2013-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30002, color=2 where date='2013-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30003, color=2 where date='2014-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30003, color=2 where date='2014-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期四)|', liturgic=30104, color=2 where date='2014-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第一周(星期五)|', liturgic=30105, color=2 where date='2014-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|圣诞期 1月4日\\17|圣诞期第一周(星期六)|', liturgic=30106, color=2 where date='2014-01-04';
@@ -2770,7 +2768,7 @@ update easter_daily set cells='农历除夕\\11|真福雷永明(司铎 Bd. Gabri
 update easter_daily set cells='农历新春\\12|圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第三周(星期五)|', liturgic=10305, color=2 where date='2014-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第三周(星期六)|', liturgic=10306, color=1 where date='2014-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四主日|', liturgic=10400, color=2 where date='2014-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2014-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2014-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2014-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第四周(星期三)|', liturgic=10403, color=3 where date='2014-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第四周(星期四)|', liturgic=10404, color=3 where date='2014-02-06';
@@ -3102,7 +3100,7 @@ update easter_daily set cells='圣家节\\8|诸圣婴孩(The Holy Innocents)\\11
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30001, color=2 where date='2014-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30002, color=2 where date='2014-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30003, color=2 where date='2014-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30004, color=2 where date='2015-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30004, color=2 where date='2015-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期五)|', liturgic=30105, color=2 where date='2015-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第一周(星期六)|', liturgic=30106, color=2 where date='2015-01-03';
 update easter_daily set cells='主显节(Epiphany of the Lord)\\1|圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|', liturgic=30000, color=2 where date='2015-01-04';
@@ -3135,7 +3133,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第三周(星期六)|', liturgic=10306, color=2 where date='2015-01-31';
 update easter_daily set cells='常年期第四主日|圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|', liturgic=10400, color=1 where date='2015-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四周(星期一)|', liturgic=10401, color=2 where date='2015-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2015-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2015-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2015-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第四周(星期四)|', liturgic=10404, color=3 where date='2015-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第四周(星期五)|', liturgic=10405, color=3 where date='2015-02-06';
@@ -3467,7 +3465,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30002, color=2 where date='2015-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30003, color=2 where date='2015-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30004, color=2 where date='2015-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30005, color=2 where date='2016-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30005, color=2 where date='2016-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期六)|', liturgic=30106, color=2 where date='2016-01-02';
 update easter_daily set cells='主显节(Epiphany of the Lord)\\1|耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|', liturgic=30000, color=2 where date='2016-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|主显节后 星期一\\31|圣诞期第二周(星期一)|', liturgic=30201, color=2 where date='2016-01-04';
@@ -3500,7 +3498,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='常年期第四主日|圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|', liturgic=10400, color=1 where date='2016-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2016-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2016-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2016-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2016-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2016-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第四周(星期五)|', liturgic=10405, color=3 where date='2016-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第四周(星期六)|', liturgic=10406, color=3 where date='2016-02-06';
@@ -3833,7 +3831,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30004, color=2 where date='2016-12-29';
 update easter_daily set cells='圣家节\\8|圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30005, color=2 where date='2016-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30006, color=2 where date='2016-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30000, color=2 where date='2017-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30000, color=2 where date='2017-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第二周(星期一)|', liturgic=30201, color=2 where date='2017-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第二周(星期二)|', liturgic=30202, color=2 where date='2017-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|圣诞期 1月4日\\17|圣诞期第二周(星期三)|', liturgic=30203, color=2 where date='2017-01-04';
@@ -3866,7 +3864,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2017-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2017-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四周(星期四)|', liturgic=10404, color=2 where date='2017-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期五)|', liturgic=10405, color=1 where date='2017-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期五)|', liturgic=10405, color=1 where date='2017-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期六)|', liturgic=10406, color=1 where date='2017-02-04';
 update easter_daily set cells='常年期第五主日|圣女亚加大(童贞殉道 St. Agatha)\\1020501|', liturgic=10500, color=1 where date='2017-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第五周(星期一)|', liturgic=10501, color=3 where date='2017-02-06';
@@ -4198,7 +4196,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30005, color=2 where date='2017-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30006, color=2 where date='2017-12-30';
 update easter_daily set cells='圣家节\\8|圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30000, color=2 where date='2017-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30001, color=2 where date='2018-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30001, color=2 where date='2018-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2018-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2018-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|圣诞期 1月4日\\17|圣诞期第一周(星期四)|', liturgic=30104, color=2 where date='2018-01-04';
@@ -4231,7 +4229,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第四周(星期三)|', liturgic=10403, color=2 where date='2018-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2018-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四周(星期五)|', liturgic=10405, color=2 where date='2018-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期六)|', liturgic=10406, color=1 where date='2018-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期六)|', liturgic=10406, color=1 where date='2018-02-03';
 update easter_daily set cells='常年期第五主日|圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|', liturgic=10500, color=1 where date='2018-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第五周(星期一)|', liturgic=10501, color=3 where date='2018-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第五周(星期二)|', liturgic=10502, color=3 where date='2018-02-06';
@@ -4563,7 +4561,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30006, color=2 where date='2018-12-29';
 update easter_daily set cells='圣家节\\8|圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30000, color=2 where date='2018-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30001, color=2 where date='2018-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30002, color=2 where date='2019-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30002, color=2 where date='2019-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2019-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第一周(星期四)|', liturgic=30104, color=2 where date='2019-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|圣诞期 1月4日\\17|圣诞期第一周(星期五)|', liturgic=30105, color=2 where date='2019-01-04';
@@ -4596,7 +4594,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第三周(星期四)|', liturgic=10304, color=2 where date='2019-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第三周(星期五)|', liturgic=10305, color=1 where date='2019-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第三周(星期六)|', liturgic=10306, color=2 where date='2019-02-02';
-update easter_daily set cells='常年期第四主日|圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|', liturgic=10400, color=1 where date='2019-02-03';
+update easter_daily set cells='常年期第四主日|圣巴拉削(主教殉道 St. Blaise)\\1020301|', liturgic=10400, color=1 where date='2019-02-03';
 update easter_daily set cells='农历除夕\\11|圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2019-02-04';
 update easter_daily set cells='农历新春\\12|圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第四周(星期二)|', liturgic=10402, color=3 where date='2019-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第四周(星期三)|', liturgic=10403, color=3 where date='2019-02-06';
@@ -4928,7 +4926,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣家节\\8|圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30000, color=2 where date='2019-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30001, color=2 where date='2019-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30002, color=2 where date='2019-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30003, color=2 where date='2020-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30003, color=2 where date='2020-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期四)|', liturgic=30104, color=2 where date='2020-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第一周(星期五)|', liturgic=30105, color=2 where date='2020-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|圣诞期 1月4日\\17|圣诞期第一周(星期六)|', liturgic=30106, color=2 where date='2020-01-04';
@@ -4961,7 +4959,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第三周(星期五)|', liturgic=10305, color=2 where date='2020-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第三周(星期六)|', liturgic=10306, color=1 where date='2020-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四主日|', liturgic=10400, color=2 where date='2020-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2020-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2020-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2020-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第四周(星期三)|', liturgic=10403, color=3 where date='2020-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第四周(星期四)|', liturgic=10404, color=3 where date='2020-02-06';
@@ -5294,7 +5292,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30002, color=2 where date='2020-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30003, color=2 where date='2020-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30004, color=2 where date='2020-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30005, color=2 where date='2021-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30005, color=2 where date='2021-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期六)|', liturgic=30106, color=2 where date='2021-01-02';
 update easter_daily set cells='主显节(Epiphany of the Lord)\\1|耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|', liturgic=30000, color=2 where date='2021-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|主显节后 星期一\\31|圣诞期第二周(星期一)|', liturgic=30201, color=2 where date='2021-01-04';
@@ -5327,7 +5325,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='常年期第四主日|圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|', liturgic=10400, color=1 where date='2021-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2021-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2021-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2021-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2021-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2021-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第四周(星期五)|', liturgic=10405, color=3 where date='2021-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第四周(星期六)|', liturgic=10406, color=3 where date='2021-02-06';
@@ -5659,7 +5657,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30003, color=2 where date='2021-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30004, color=2 where date='2021-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30005, color=2 where date='2021-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30006, color=2 where date='2022-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30006, color=2 where date='2022-01-01';
 update easter_daily set cells='主显节(Epiphany of the Lord)\\1|圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|', liturgic=30000, color=2 where date='2022-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|主显节后 星期一\\31|圣诞期第二周(星期一)|', liturgic=30201, color=2 where date='2022-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|主显节后 星期二\\32|圣诞期第二周(星期二)|', liturgic=30202, color=2 where date='2022-01-04';
@@ -5692,7 +5690,7 @@ update easter_daily set cells='常年期第四主日|真福雷永明(司铎 Bd. 
 update easter_daily set cells='农历除夕\\11|圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第四周(星期一)|', liturgic=10401, color=2 where date='2022-01-31';
 update easter_daily set cells='农历新春\\12|圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2022-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四周(星期三)|', liturgic=10403, color=2 where date='2022-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2022-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2022-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期五)|', liturgic=10405, color=1 where date='2022-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第四周(星期六)|', liturgic=10406, color=3 where date='2022-02-05';
 update easter_daily set cells='常年期第五主日|圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|', liturgic=10500, color=1 where date='2022-02-06';
@@ -6024,7 +6022,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30004, color=2 where date='2022-12-29';
 update easter_daily set cells='圣家节\\8|圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30005, color=2 where date='2022-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30006, color=2 where date='2022-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30000, color=2 where date='2023-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30000, color=2 where date='2023-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第二周(星期一)|', liturgic=30201, color=2 where date='2023-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第二周(星期二)|', liturgic=30202, color=2 where date='2023-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|圣诞期 1月4日\\17|圣诞期第二周(星期三)|', liturgic=30203, color=2 where date='2023-01-04';
@@ -6057,7 +6055,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2023-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2023-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四周(星期四)|', liturgic=10404, color=2 where date='2023-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期五)|', liturgic=10405, color=1 where date='2023-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期五)|', liturgic=10405, color=1 where date='2023-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期六)|', liturgic=10406, color=1 where date='2023-02-04';
 update easter_daily set cells='常年期第五主日|圣女亚加大(童贞殉道 St. Agatha)\\1020501|', liturgic=10500, color=1 where date='2023-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第五周(星期一)|', liturgic=10501, color=3 where date='2023-02-06';
@@ -6389,7 +6387,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30005, color=2 where date='2023-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30006, color=2 where date='2023-12-30';
 update easter_daily set cells='圣家节\\8|圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30000, color=2 where date='2023-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30001, color=2 where date='2024-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30001, color=2 where date='2024-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2024-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2024-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|圣诞期 1月4日\\17|圣诞期第一周(星期四)|', liturgic=30104, color=2 where date='2024-01-04';
@@ -6422,7 +6420,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第四周(星期三)|', liturgic=10403, color=2 where date='2024-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2024-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四周(星期五)|', liturgic=10405, color=2 where date='2024-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期六)|', liturgic=10406, color=1 where date='2024-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期六)|', liturgic=10406, color=1 where date='2024-02-03';
 update easter_daily set cells='常年期第五主日|圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|', liturgic=10500, color=1 where date='2024-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第五周(星期一)|', liturgic=10501, color=3 where date='2024-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第五周(星期二)|', liturgic=10502, color=3 where date='2024-02-06';
@@ -6755,7 +6753,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣家节\\8|圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30000, color=2 where date='2024-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30001, color=2 where date='2024-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30002, color=2 where date='2024-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30003, color=2 where date='2025-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30003, color=2 where date='2025-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期四)|', liturgic=30104, color=2 where date='2025-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第一周(星期五)|', liturgic=30105, color=2 where date='2025-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|圣诞期 1月4日\\17|圣诞期第一周(星期六)|', liturgic=30106, color=2 where date='2025-01-04';
@@ -6788,7 +6786,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第三周(星期五)|', liturgic=10305, color=2 where date='2025-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第三周(星期六)|', liturgic=10306, color=1 where date='2025-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四主日|', liturgic=10400, color=2 where date='2025-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2025-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2025-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2025-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第四周(星期三)|', liturgic=10403, color=3 where date='2025-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第四周(星期四)|', liturgic=10404, color=3 where date='2025-02-06';
@@ -7120,7 +7118,7 @@ update easter_daily set cells='圣家节\\8|诸圣婴孩(The Holy Innocents)\\11
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30001, color=2 where date='2025-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30002, color=2 where date='2025-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30003, color=2 where date='2025-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30004, color=2 where date='2026-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30004, color=2 where date='2026-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期五)|', liturgic=30105, color=2 where date='2026-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第一周(星期六)|', liturgic=30106, color=2 where date='2026-01-03';
 update easter_daily set cells='主显节(Epiphany of the Lord)\\1|圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|', liturgic=30000, color=2 where date='2026-01-04';
@@ -7153,7 +7151,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第三周(星期六)|', liturgic=10306, color=2 where date='2026-01-31';
 update easter_daily set cells='常年期第四主日|圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|', liturgic=10400, color=1 where date='2026-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四周(星期一)|', liturgic=10401, color=2 where date='2026-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2026-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2026-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2026-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第四周(星期四)|', liturgic=10404, color=3 where date='2026-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第四周(星期五)|', liturgic=10405, color=3 where date='2026-02-06';
@@ -7485,7 +7483,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30002, color=2 where date='2026-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30003, color=2 where date='2026-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30004, color=2 where date='2026-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30005, color=2 where date='2027-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30005, color=2 where date='2027-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期六)|', liturgic=30106, color=2 where date='2027-01-02';
 update easter_daily set cells='主显节(Epiphany of the Lord)\\1|耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|', liturgic=30000, color=2 where date='2027-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|主显节后 星期一\\31|圣诞期第二周(星期一)|', liturgic=30201, color=2 where date='2027-01-04';
@@ -7518,7 +7516,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='常年期第四主日|圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|', liturgic=10400, color=1 where date='2027-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2027-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2027-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2027-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2027-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2027-02-04';
 update easter_daily set cells='农历除夕\\11|圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第四周(星期五)|', liturgic=10405, color=3 where date='2027-02-05';
 update easter_daily set cells='农历新春\\12|圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第四周(星期六)|', liturgic=10406, color=3 where date='2027-02-06';
@@ -7850,7 +7848,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30003, color=2 where date='2027-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30004, color=2 where date='2027-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30005, color=2 where date='2027-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30006, color=2 where date='2028-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30006, color=2 where date='2028-01-01';
 update easter_daily set cells='主显节(Epiphany of the Lord)\\1|圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|', liturgic=30000, color=2 where date='2028-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|主显节后 星期一\\31|圣诞期第二周(星期一)|', liturgic=30201, color=2 where date='2028-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|主显节后 星期二\\32|圣诞期第二周(星期二)|', liturgic=30202, color=2 where date='2028-01-04';
@@ -7883,7 +7881,7 @@ update easter_daily set cells='常年期第四主日|真福雷永明(司铎 Bd. 
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第四周(星期一)|', liturgic=10401, color=2 where date='2028-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2028-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四周(星期三)|', liturgic=10403, color=2 where date='2028-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2028-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2028-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期五)|', liturgic=10405, color=1 where date='2028-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第四周(星期六)|', liturgic=10406, color=3 where date='2028-02-05';
 update easter_daily set cells='常年期第五主日|圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|', liturgic=10500, color=1 where date='2028-02-06';
@@ -8216,7 +8214,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30005, color=2 where date='2028-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30006, color=2 where date='2028-12-30';
 update easter_daily set cells='圣家节\\8|圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30000, color=2 where date='2028-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30001, color=2 where date='2029-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30001, color=2 where date='2029-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2029-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2029-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|圣诞期 1月4日\\17|圣诞期第一周(星期四)|', liturgic=30104, color=2 where date='2029-01-04';
@@ -8249,7 +8247,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第四周(星期三)|', liturgic=10403, color=2 where date='2029-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2029-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四周(星期五)|', liturgic=10405, color=2 where date='2029-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期六)|', liturgic=10406, color=1 where date='2029-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期六)|', liturgic=10406, color=1 where date='2029-02-03';
 update easter_daily set cells='常年期第五主日|圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|', liturgic=10500, color=1 where date='2029-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第五周(星期一)|', liturgic=10501, color=3 where date='2029-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第五周(星期二)|', liturgic=10502, color=3 where date='2029-02-06';
@@ -8581,7 +8579,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30006, color=2 where date='2029-12-29';
 update easter_daily set cells='圣家节\\8|圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30000, color=2 where date='2029-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30001, color=2 where date='2029-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30002, color=2 where date='2030-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30002, color=2 where date='2030-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2030-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第一周(星期四)|', liturgic=30104, color=2 where date='2030-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|圣诞期 1月4日\\17|圣诞期第一周(星期五)|', liturgic=30105, color=2 where date='2030-01-04';
@@ -8614,7 +8612,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第三周(星期四)|', liturgic=10304, color=2 where date='2030-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第三周(星期五)|', liturgic=10305, color=1 where date='2030-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|农历除夕\\11|常年期第三周(星期六)|', liturgic=10306, color=2 where date='2030-02-02';
-update easter_daily set cells='常年期第四主日|农历新春\\12|圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|', liturgic=10400, color=1 where date='2030-02-03';
+update easter_daily set cells='常年期第四主日|农历新春\\12|圣巴拉削(主教殉道 St. Blaise)\\1020301|', liturgic=10400, color=1 where date='2030-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2030-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第四周(星期二)|', liturgic=10402, color=3 where date='2030-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第四周(星期三)|', liturgic=10403, color=3 where date='2030-02-06';
@@ -8946,7 +8944,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣家节\\8|圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30000, color=2 where date='2030-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30001, color=2 where date='2030-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30002, color=2 where date='2030-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30003, color=2 where date='2031-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30003, color=2 where date='2031-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期四)|', liturgic=30104, color=2 where date='2031-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第一周(星期五)|', liturgic=30105, color=2 where date='2031-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|圣诞期 1月4日\\17|圣诞期第一周(星期六)|', liturgic=30106, color=2 where date='2031-01-04';
@@ -8979,7 +8977,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第三周(星期五)|', liturgic=10305, color=2 where date='2031-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第三周(星期六)|', liturgic=10306, color=1 where date='2031-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四主日|', liturgic=10400, color=2 where date='2031-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2031-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2031-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2031-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第四周(星期三)|', liturgic=10403, color=3 where date='2031-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第四周(星期四)|', liturgic=10404, color=3 where date='2031-02-06';
@@ -9311,7 +9309,7 @@ update easter_daily set cells='圣家节\\8|诸圣婴孩(The Holy Innocents)\\11
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30001, color=2 where date='2031-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30002, color=2 where date='2031-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30003, color=2 where date='2031-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30004, color=2 where date='2032-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30004, color=2 where date='2032-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期五)|', liturgic=30105, color=2 where date='2032-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第一周(星期六)|', liturgic=30106, color=2 where date='2032-01-03';
 update easter_daily set cells='主显节(Epiphany of the Lord)\\1|圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|', liturgic=30000, color=2 where date='2032-01-04';
@@ -9344,7 +9342,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第三周(星期六)|', liturgic=10306, color=2 where date='2032-01-31';
 update easter_daily set cells='常年期第四主日|圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|', liturgic=10400, color=1 where date='2032-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四周(星期一)|', liturgic=10401, color=2 where date='2032-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2032-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2032-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2032-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第四周(星期四)|', liturgic=10404, color=3 where date='2032-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第四周(星期五)|', liturgic=10405, color=3 where date='2032-02-06';
@@ -9677,7 +9675,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30003, color=2 where date='2032-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30004, color=2 where date='2032-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30005, color=2 where date='2032-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30006, color=2 where date='2033-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30006, color=2 where date='2033-01-01';
 update easter_daily set cells='主显节(Epiphany of the Lord)\\1|圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|', liturgic=30000, color=2 where date='2033-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|主显节后 星期一\\31|圣诞期第二周(星期一)|', liturgic=30201, color=2 where date='2033-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|主显节后 星期二\\32|圣诞期第二周(星期二)|', liturgic=30202, color=2 where date='2033-01-04';
@@ -9710,7 +9708,7 @@ update easter_daily set cells='常年期第四主日|农历除夕\\11|真福雷�
 update easter_daily set cells='农历新春\\12|圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第四周(星期一)|', liturgic=10401, color=2 where date='2033-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2033-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四周(星期三)|', liturgic=10403, color=2 where date='2033-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2033-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2033-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期五)|', liturgic=10405, color=1 where date='2033-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第四周(星期六)|', liturgic=10406, color=3 where date='2033-02-05';
 update easter_daily set cells='常年期第五主日|圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|', liturgic=10500, color=1 where date='2033-02-06';
@@ -10042,7 +10040,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30004, color=2 where date='2033-12-29';
 update easter_daily set cells='圣家节\\8|圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30005, color=2 where date='2033-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30006, color=2 where date='2033-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30000, color=2 where date='2034-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30000, color=2 where date='2034-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第二周(星期一)|', liturgic=30201, color=2 where date='2034-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第二周(星期二)|', liturgic=30202, color=2 where date='2034-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|圣诞期 1月4日\\17|圣诞期第二周(星期三)|', liturgic=30203, color=2 where date='2034-01-04';
@@ -10075,7 +10073,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2034-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2034-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四周(星期四)|', liturgic=10404, color=2 where date='2034-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期五)|', liturgic=10405, color=1 where date='2034-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期五)|', liturgic=10405, color=1 where date='2034-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期六)|', liturgic=10406, color=1 where date='2034-02-04';
 update easter_daily set cells='常年期第五主日|圣女亚加大(童贞殉道 St. Agatha)\\1020501|', liturgic=10500, color=1 where date='2034-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第五周(星期一)|', liturgic=10501, color=3 where date='2034-02-06';
@@ -10407,7 +10405,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30005, color=2 where date='2034-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30006, color=2 where date='2034-12-30';
 update easter_daily set cells='圣家节\\8|圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30000, color=2 where date='2034-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30001, color=2 where date='2035-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30001, color=2 where date='2035-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2035-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2035-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|圣诞期 1月4日\\17|圣诞期第一周(星期四)|', liturgic=30104, color=2 where date='2035-01-04';
@@ -10440,7 +10438,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第四周(星期三)|', liturgic=10403, color=2 where date='2035-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2035-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四周(星期五)|', liturgic=10405, color=2 where date='2035-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期六)|', liturgic=10406, color=1 where date='2035-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期六)|', liturgic=10406, color=1 where date='2035-02-03';
 update easter_daily set cells='常年期第五主日|圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|', liturgic=10500, color=1 where date='2035-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第五周(星期一)|', liturgic=10501, color=3 where date='2035-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第五周(星期二)|', liturgic=10502, color=3 where date='2035-02-06';
@@ -10772,7 +10770,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30006, color=2 where date='2035-12-29';
 update easter_daily set cells='圣家节\\8|圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30000, color=2 where date='2035-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30001, color=2 where date='2035-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30002, color=2 where date='2036-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30002, color=2 where date='2036-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2036-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第一周(星期四)|', liturgic=30104, color=2 where date='2036-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|圣诞期 1月4日\\17|圣诞期第一周(星期五)|', liturgic=30105, color=2 where date='2036-01-04';
@@ -10805,7 +10803,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第三周(星期四)|', liturgic=10304, color=2 where date='2036-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第三周(星期五)|', liturgic=10305, color=1 where date='2036-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第三周(星期六)|', liturgic=10306, color=2 where date='2036-02-02';
-update easter_daily set cells='常年期第四主日|圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|', liturgic=10400, color=1 where date='2036-02-03';
+update easter_daily set cells='常年期第四主日|圣巴拉削(主教殉道 St. Blaise)\\1020301|', liturgic=10400, color=1 where date='2036-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2036-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第四周(星期二)|', liturgic=10402, color=3 where date='2036-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第四周(星期三)|', liturgic=10403, color=3 where date='2036-02-06';
@@ -11138,7 +11136,7 @@ update easter_daily set cells='圣家节\\8|诸圣婴孩(The Holy Innocents)\\11
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30001, color=2 where date='2036-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30002, color=2 where date='2036-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30003, color=2 where date='2036-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30004, color=2 where date='2037-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30004, color=2 where date='2037-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期五)|', liturgic=30105, color=2 where date='2037-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第一周(星期六)|', liturgic=30106, color=2 where date='2037-01-03';
 update easter_daily set cells='主显节(Epiphany of the Lord)\\1|圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|', liturgic=30000, color=2 where date='2037-01-04';
@@ -11171,7 +11169,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第三周(星期六)|', liturgic=10306, color=2 where date='2037-01-31';
 update easter_daily set cells='常年期第四主日|圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|', liturgic=10400, color=1 where date='2037-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四周(星期一)|', liturgic=10401, color=2 where date='2037-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2037-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2037-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2037-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第四周(星期四)|', liturgic=10404, color=3 where date='2037-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第四周(星期五)|', liturgic=10405, color=3 where date='2037-02-06';
@@ -11503,7 +11501,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30002, color=2 where date='2037-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30003, color=2 where date='2037-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30004, color=2 where date='2037-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30005, color=2 where date='2038-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30005, color=2 where date='2038-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期六)|', liturgic=30106, color=2 where date='2038-01-02';
 update easter_daily set cells='主显节(Epiphany of the Lord)\\1|耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|', liturgic=30000, color=2 where date='2038-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|主显节后 星期一\\31|圣诞期第二周(星期一)|', liturgic=30201, color=2 where date='2038-01-04';
@@ -11536,7 +11534,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='常年期第四主日|圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|', liturgic=10400, color=1 where date='2038-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2038-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2038-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2038-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2038-02-03';
 update easter_daily set cells='农历除夕\\11|圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2038-02-04';
 update easter_daily set cells='农历新春\\12|圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第四周(星期五)|', liturgic=10405, color=3 where date='2038-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第四周(星期六)|', liturgic=10406, color=3 where date='2038-02-06';
@@ -11868,7 +11866,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30003, color=2 where date='2038-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30004, color=2 where date='2038-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30005, color=2 where date='2038-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30006, color=2 where date='2039-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30006, color=2 where date='2039-01-01';
 update easter_daily set cells='主显节(Epiphany of the Lord)\\1|圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|', liturgic=30000, color=2 where date='2039-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|主显节后 星期一\\31|圣诞期第二周(星期一)|', liturgic=30201, color=2 where date='2039-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|主显节后 星期二\\32|圣诞期第二周(星期二)|', liturgic=30202, color=2 where date='2039-01-04';
@@ -11901,7 +11899,7 @@ update easter_daily set cells='常年期第四主日|真福雷永明(司铎 Bd. 
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第四周(星期一)|', liturgic=10401, color=2 where date='2039-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2039-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四周(星期三)|', liturgic=10403, color=2 where date='2039-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2039-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2039-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期五)|', liturgic=10405, color=1 where date='2039-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第四周(星期六)|', liturgic=10406, color=3 where date='2039-02-05';
 update easter_daily set cells='常年期第五主日|圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|', liturgic=10500, color=1 where date='2039-02-06';
@@ -12233,7 +12231,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30004, color=2 where date='2039-12-29';
 update easter_daily set cells='圣家节\\8|圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30005, color=2 where date='2039-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30006, color=2 where date='2039-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30000, color=2 where date='2040-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30000, color=2 where date='2040-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第二周(星期一)|', liturgic=30201, color=2 where date='2040-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第二周(星期二)|', liturgic=30202, color=2 where date='2040-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|圣诞期 1月4日\\17|圣诞期第二周(星期三)|', liturgic=30203, color=2 where date='2040-01-04';
@@ -12266,7 +12264,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2040-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2040-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四周(星期四)|', liturgic=10404, color=2 where date='2040-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期五)|', liturgic=10405, color=1 where date='2040-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期五)|', liturgic=10405, color=1 where date='2040-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期六)|', liturgic=10406, color=1 where date='2040-02-04';
 update easter_daily set cells='常年期第五主日|圣女亚加大(童贞殉道 St. Agatha)\\1020501|', liturgic=10500, color=1 where date='2040-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第五周(星期一)|', liturgic=10501, color=3 where date='2040-02-06';
@@ -12599,7 +12597,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30006, color=2 where date='2040-12-29';
 update easter_daily set cells='圣家节\\8|圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30000, color=2 where date='2040-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30001, color=2 where date='2040-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30002, color=2 where date='2041-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30002, color=2 where date='2041-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2041-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第一周(星期四)|', liturgic=30104, color=2 where date='2041-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|圣诞期 1月4日\\17|圣诞期第一周(星期五)|', liturgic=30105, color=2 where date='2041-01-04';
@@ -12632,7 +12630,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第三周(星期四)|', liturgic=10304, color=2 where date='2041-01-31';
 update easter_daily set cells='农历除夕\\11|圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第三周(星期五)|', liturgic=10305, color=1 where date='2041-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|农历新春\\12|常年期第三周(星期六)|', liturgic=10306, color=2 where date='2041-02-02';
-update easter_daily set cells='常年期第四主日|圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|', liturgic=10400, color=1 where date='2041-02-03';
+update easter_daily set cells='常年期第四主日|圣巴拉削(主教殉道 St. Blaise)\\1020301|', liturgic=10400, color=1 where date='2041-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2041-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第四周(星期二)|', liturgic=10402, color=3 where date='2041-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第四周(星期三)|', liturgic=10403, color=3 where date='2041-02-06';
@@ -12964,7 +12962,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣家节\\8|圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30000, color=2 where date='2041-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30001, color=2 where date='2041-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30002, color=2 where date='2041-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30003, color=2 where date='2042-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30003, color=2 where date='2042-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期四)|', liturgic=30104, color=2 where date='2042-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第一周(星期五)|', liturgic=30105, color=2 where date='2042-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|圣诞期 1月4日\\17|圣诞期第一周(星期六)|', liturgic=30106, color=2 where date='2042-01-04';
@@ -12997,7 +12995,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第三周(星期五)|', liturgic=10305, color=2 where date='2042-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第三周(星期六)|', liturgic=10306, color=1 where date='2042-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四主日|', liturgic=10400, color=2 where date='2042-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2042-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2042-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2042-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第四周(星期三)|', liturgic=10403, color=3 where date='2042-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第四周(星期四)|', liturgic=10404, color=3 where date='2042-02-06';
@@ -13329,7 +13327,7 @@ update easter_daily set cells='圣家节\\8|诸圣婴孩(The Holy Innocents)\\11
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30001, color=2 where date='2042-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30002, color=2 where date='2042-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30003, color=2 where date='2042-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30004, color=2 where date='2043-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30004, color=2 where date='2043-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期五)|', liturgic=30105, color=2 where date='2043-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第一周(星期六)|', liturgic=30106, color=2 where date='2043-01-03';
 update easter_daily set cells='主显节(Epiphany of the Lord)\\1|圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|', liturgic=30000, color=2 where date='2043-01-04';
@@ -13362,7 +13360,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第三周(星期六)|', liturgic=10306, color=2 where date='2043-01-31';
 update easter_daily set cells='常年期第四主日|圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|', liturgic=10400, color=1 where date='2043-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四周(星期一)|', liturgic=10401, color=2 where date='2043-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2043-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2043-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2043-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第四周(星期四)|', liturgic=10404, color=3 where date='2043-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第四周(星期五)|', liturgic=10405, color=3 where date='2043-02-06';
@@ -13694,7 +13692,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30002, color=2 where date='2043-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30003, color=2 where date='2043-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30004, color=2 where date='2043-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30005, color=2 where date='2044-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30005, color=2 where date='2044-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期六)|', liturgic=30106, color=2 where date='2044-01-02';
 update easter_daily set cells='主显节(Epiphany of the Lord)\\1|耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|', liturgic=30000, color=2 where date='2044-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|主显节后 星期一\\31|圣诞期第二周(星期一)|', liturgic=30201, color=2 where date='2044-01-04';
@@ -13727,7 +13725,7 @@ update easter_daily set cells='农历新春\\12|真福雷永明(司铎 Bd. Gabri
 update easter_daily set cells='常年期第四主日|圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|', liturgic=10400, color=1 where date='2044-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2044-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2044-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2044-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2044-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2044-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第四周(星期五)|', liturgic=10405, color=3 where date='2044-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第四周(星期六)|', liturgic=10406, color=3 where date='2044-02-06';
@@ -14060,7 +14058,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30004, color=2 where date='2044-12-29';
 update easter_daily set cells='圣家节\\8|圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30005, color=2 where date='2044-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30006, color=2 where date='2044-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30000, color=2 where date='2045-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30000, color=2 where date='2045-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第二周(星期一)|', liturgic=30201, color=2 where date='2045-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第二周(星期二)|', liturgic=30202, color=2 where date='2045-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|圣诞期 1月4日\\17|圣诞期第二周(星期三)|', liturgic=30203, color=2 where date='2045-01-04';
@@ -14093,7 +14091,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2045-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2045-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四周(星期四)|', liturgic=10404, color=2 where date='2045-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期五)|', liturgic=10405, color=1 where date='2045-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期五)|', liturgic=10405, color=1 where date='2045-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期六)|', liturgic=10406, color=1 where date='2045-02-04';
 update easter_daily set cells='常年期第五主日|圣女亚加大(童贞殉道 St. Agatha)\\1020501|', liturgic=10500, color=1 where date='2045-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第五周(星期一)|', liturgic=10501, color=3 where date='2045-02-06';
@@ -14425,7 +14423,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30005, color=2 where date='2045-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30006, color=2 where date='2045-12-30';
 update easter_daily set cells='圣家节\\8|圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30000, color=2 where date='2045-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30001, color=2 where date='2046-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30001, color=2 where date='2046-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2046-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2046-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|圣诞期 1月4日\\17|圣诞期第一周(星期四)|', liturgic=30104, color=2 where date='2046-01-04';
@@ -14458,7 +14456,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第四周(星期三)|', liturgic=10403, color=2 where date='2046-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2046-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四周(星期五)|', liturgic=10405, color=2 where date='2046-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期六)|', liturgic=10406, color=1 where date='2046-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期六)|', liturgic=10406, color=1 where date='2046-02-03';
 update easter_daily set cells='常年期第五主日|圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|', liturgic=10500, color=1 where date='2046-02-04';
 update easter_daily set cells='农历除夕\\11|圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第五周(星期一)|', liturgic=10501, color=3 where date='2046-02-05';
 update easter_daily set cells='农历新春\\12|圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第五周(星期二)|', liturgic=10502, color=3 where date='2046-02-06';
@@ -14790,7 +14788,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30006, color=2 where date='2046-12-29';
 update easter_daily set cells='圣家节\\8|圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30000, color=2 where date='2046-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30001, color=2 where date='2046-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30002, color=2 where date='2047-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30002, color=2 where date='2047-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2047-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第一周(星期四)|', liturgic=30104, color=2 where date='2047-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|圣诞期 1月4日\\17|圣诞期第一周(星期五)|', liturgic=30105, color=2 where date='2047-01-04';
@@ -14823,7 +14821,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第三周(星期四)|', liturgic=10304, color=2 where date='2047-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第三周(星期五)|', liturgic=10305, color=1 where date='2047-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第三周(星期六)|', liturgic=10306, color=2 where date='2047-02-02';
-update easter_daily set cells='常年期第四主日|圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|', liturgic=10400, color=1 where date='2047-02-03';
+update easter_daily set cells='常年期第四主日|圣巴拉削(主教殉道 St. Blaise)\\1020301|', liturgic=10400, color=1 where date='2047-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2047-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第四周(星期二)|', liturgic=10402, color=3 where date='2047-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第四周(星期三)|', liturgic=10403, color=3 where date='2047-02-06';
@@ -15155,7 +15153,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣家节\\8|圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30000, color=2 where date='2047-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30001, color=2 where date='2047-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30002, color=2 where date='2047-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30003, color=2 where date='2048-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30003, color=2 where date='2048-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期四)|', liturgic=30104, color=2 where date='2048-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第一周(星期五)|', liturgic=30105, color=2 where date='2048-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|圣诞期 1月4日\\17|圣诞期第一周(星期六)|', liturgic=30106, color=2 where date='2048-01-04';
@@ -15188,7 +15186,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第三周(星期五)|', liturgic=10305, color=2 where date='2048-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第三周(星期六)|', liturgic=10306, color=1 where date='2048-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四主日|', liturgic=10400, color=2 where date='2048-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2048-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2048-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2048-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第四周(星期三)|', liturgic=10403, color=3 where date='2048-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第四周(星期四)|', liturgic=10404, color=3 where date='2048-02-06';
@@ -15521,7 +15519,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30002, color=2 where date='2048-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30003, color=2 where date='2048-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30004, color=2 where date='2048-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30005, color=2 where date='2049-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30005, color=2 where date='2049-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期六)|', liturgic=30106, color=2 where date='2049-01-02';
 update easter_daily set cells='主显节(Epiphany of the Lord)\\1|耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|', liturgic=30000, color=2 where date='2049-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|主显节后 星期一\\31|圣诞期第二周(星期一)|', liturgic=30201, color=2 where date='2049-01-04';
@@ -15554,7 +15552,7 @@ update easter_daily set cells='真福雷永明(司铎 Bd. Gabriele Allegra)\\101
 update easter_daily set cells='常年期第四主日|圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|', liturgic=10400, color=1 where date='2049-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2049-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|农历除夕\\11|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2049-02-02';
-update easter_daily set cells='农历新春\\12|圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2049-02-03';
+update easter_daily set cells='农历新春\\12|圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2049-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2049-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第四周(星期五)|', liturgic=10405, color=3 where date='2049-02-05';
 update easter_daily set cells='圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|常年期第四周(星期六)|', liturgic=10406, color=3 where date='2049-02-06';
@@ -15886,7 +15884,7 @@ update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|', litu
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30003, color=2 where date='2049-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30004, color=2 where date='2049-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30005, color=2 where date='2049-12-31';
-update easter_daily set cells='天主之母节(Solemnity Mary,Monther of God)\\1010101|', liturgic=30006, color=2 where date='2050-01-01';
+update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|', liturgic=30006, color=2 where date='2050-01-01';
 update easter_daily set cells='主显节(Epiphany of the Lord)\\1|圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|', liturgic=30000, color=2 where date='2050-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|主显节后 星期一\\31|圣诞期第二周(星期一)|', liturgic=30201, color=2 where date='2050-01-03';
 update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabeth Ann Bayley Seton)\\1010401|圣女法拉意弟(St. Pharaildis)\\1010402|主显节后 星期二\\32|圣诞期第二周(星期二)|', liturgic=30202, color=2 where date='2050-01-04';
@@ -15919,7 +15917,7 @@ update easter_daily set cells='常年期第四主日|真福雷永明(司铎 Bd. 
 update easter_daily set cells='圣鲍思高(慈幼会会祖 St. John Bosco)\\1013101|圣方济各•沙勿略•白英奇(St. Francis Xavier Bianchi)\\1013102|常年期第四周(星期一)|', liturgic=10401, color=2 where date='2050-01-31';
 update easter_daily set cells='圣亨利•莫斯(殉道 St. Herry Morse)\\1020101|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2050-02-01';
 update easter_daily set cells='献耶稣于圣殿(Presentation of the Lord)\\1020201|常年期第四周(星期三)|', liturgic=10403, color=2 where date='2050-02-02';
-update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|圣老楞佐(主教 St. Laurence)\\1020302|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2050-02-03';
+update easter_daily set cells='圣巴拉削(主教殉道 St. Blaise)\\1020301|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2050-02-03';
 update easter_daily set cells='圣若望•波利多(殉道 St. John de Britto)\\1020401|圣妇若翰纳(圣母领报会会祖 St. John of France)\\1020402|常年期第四周(星期五)|', liturgic=10405, color=1 where date='2050-02-04';
 update easter_daily set cells='圣女亚加大(童贞殉道 St. Agatha)\\1020501|常年期第四周(星期六)|', liturgic=10406, color=3 where date='2050-02-05';
 update easter_daily set cells='常年期第五主日|圣保禄三木司铎及同伴(the Martyrs of Japan)\\1020601|圣童郑安道\\1020602|', liturgic=10500, color=1 where date='2050-02-06';
