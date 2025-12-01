@@ -10,6 +10,7 @@
 */
 
 #include "LiturgicYear.h"
+#include "MultiLang.h"
 #include <sstream>
 
 using namespace CathAssist::Calendar;
@@ -31,7 +32,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
 	{
 		/*******************1月**********************/
         //1日
-		mapPropers.insert(std::make_pair(1010101,CellInfo(SOLEMNITY,WHITE,"天主之母节(Solemnity Mary,Monther of God)")));
+		mapPropers.insert(std::make_pair(1010101,CellInfo(SOLEMNITY,WHITE,"天主之母节(Solemnity Mary, Mother of God)")));
         //2日
         mapPropers.insert(std::make_pair(1010201,CellInfo(MEMORIAL,WHITE,"圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)")));
         //3日
@@ -109,7 +110,6 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         mapPropers.insert(std::make_pair(1020101,CellInfo(OPTIONAL,NOCOLOR,"圣亨利•莫斯(殉道 St. Herry Morse)")));
         mapPropers.insert(std::make_pair(1020201,CellInfo(LORD,WHITE,"献耶稣于圣殿(Presentation of the Lord)")));
         mapPropers.insert(std::make_pair(1020301,CellInfo(OPTIONAL,NOCOLOR,"圣巴拉削(主教殉道 St. Blaise)")));
-        mapPropers.insert(std::make_pair(1020302,CellInfo(OPTIONAL,NOCOLOR,"圣老楞佐(主教 St. Laurence)")));
         //4日
         mapPropers.insert(std::make_pair(1020401,CellInfo(OPTIONAL,NOCOLOR,"圣若望•波利多(殉道 St. John de Britto)")));
         mapPropers.insert(std::make_pair(1020402,CellInfo(OPTIONAL,NOCOLOR,"圣妇若翰纳(圣母领报会会祖 St. John of France)")));
@@ -835,6 +835,11 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
     auto iter = mapPropers.begin();
     while(iter != mapPropers.end()) {
         iter->second.code = iter->first;
+        CathAssist::Calendar::MultiLang::setString(iter->first, "zh_CN", iter->second.celebration);
+        auto celebration = CathAssist::Calendar::MultiLang::getString(iter->first);
+        if(celebration.size() > 0) {
+            iter->second.celebration = celebration;
+        }
         ++iter;
     }
 }

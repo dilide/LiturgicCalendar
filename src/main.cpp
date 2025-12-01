@@ -11,6 +11,7 @@
 #include "rapidjson/document.h"
 #include "rapidjson/stringbuffer.h"
 #include "rapidjson/prettywriter.h"
+#include "MultiLang.h"
 
 using namespace std;
 using namespace rapidjson;
@@ -337,7 +338,7 @@ void export_to_liturgy() {
 }
 
 void calendar_test()
-{  
+{
     Calendar::initCalendar();
     
     CathAssist::Calendar::Date dtBegin(2022,1,1);
@@ -365,10 +366,15 @@ void calendar_test()
 
 int main(int argc, char *argv[])
 {
+    CathAssist::Calendar::MultiLang::read("lang.ini");
+    //CathAssist::Calendar::MultiLang::setDefaultLang("en");
+
     export_month_json_test();
     export_to_sqlite();
     export_to_liturgy();
     
     calendar_test();
+
+    CathAssist::Calendar::MultiLang::write("lang_out.ini");
     return 0;
 }
