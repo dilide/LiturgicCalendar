@@ -388,24 +388,30 @@ void calendar_test()
 {
     Calendar::initCalendar();
     
-    CathAssist::Calendar::Date dtBegin(2022,1,1);
+    CathAssist::Calendar::Date dtBegin(2026,1,1);
 
-    while (dtBegin.year()==2022 && dtBegin.month()==1)
+    while (dtBegin.year()==2026)
     {
-       LiturgicDay dayInfo = Calendar::getLiturgicDay(dtBegin);
+        LiturgicDay dayInfo = Calendar::getLiturgicDay(dtBegin);
 
-       unsigned int iLiturgicDay = dayInfo.getLiturgicId();
-       std::cout<<dayInfo.toString()<<"\t";
-       std::ostringstream ostr;
-       auto cells = dayInfo.getCellInfos();
-       auto iterCell = cells.begin();
-       while (iterCell!=cells.end())
-       {
-           ostr<<iterCell->toString()<<"|";
+        unsigned int iLiturgicDay = dayInfo.getLiturgicId();
+        std::ostringstream ostr;
+        auto cells = dayInfo.getCellInfos();
+        auto iterCell = cells.begin();
+        while (iterCell!=cells.end()) {
+            if((iterCell->rank == WEEKDAY && dayInfo.dayOfWeek() == THU) || iterCell->rank == SUNDAY) {
+                if(ostr.str().empty()) {
+                    ostr<<iterCell->celebration;
+                } else {
+                    ostr<<" | "<<iterCell->celebration;
+                }
+            }
             ++iterCell;
-       }
-       std::cout<<ostr.str()<<std::endl;
-       dtBegin = dtBegin.addDays(1);
+        }
+        if(!ostr.str().empty()) {
+            std::cout<<dayInfo.toString()<<","<<ostr.str()<<","<<CathAssist::Calendar::getLangCodeStr(CathAssist::Calendar::MultiLang::getLangCode())<<std::endl;
+        }
+        dtBegin = dtBegin.addDays(1);
     }
 
     Calendar::releaseCalendar();
@@ -414,6 +420,7 @@ void calendar_test()
 int main(int argc, char *argv[])
 {
     CathAssist::Calendar::MultiLang::read("lang.ini");
+    
     export_month_json_test();
     export_to_sqlite("liturgic.db");
     export_to_update_sql();
@@ -424,8 +431,13 @@ int main(int argc, char *argv[])
         std::string strDbName = "liturgic." + CathAssist::Calendar::getLangCodeStr(static_cast<CathAssist::Calendar::langcode_t>(lang)) + ".db";
         export_to_sqlite(strDbName);
     }
-
-    calendar_test();
+    /*
+    for(int lang=CathAssist::Calendar::LANG_EN; lang <= CathAssist::Calendar::LANG_PT_BR; ++lang) {
+        CathAssist::Calendar::MultiLang::setLangCode(static_cast<CathAssist::Calendar::langcode_t>(lang));
+        calendar_test();
+        std::cout<<std::endl;
+    }
+    */
     CathAssist::Calendar::MultiLang::write("lang_out.ini");
     return 0;
 }
