@@ -723,12 +723,21 @@ namespace CathAssist
         }
 
         // 意大利语介词阴阳的问题
-        static std::string getItPrepStr(const season_t& season) {
-            if(season == ORDINARY) {
-                return "del";
-            } else {
-                return "di";
+        static std::string getPrepGenderStr(const season_t& season, const langcode_t& lang = LANG_IT_IT) {
+            if(lang != LANG_IT_IT) {
+                if(season == ORDINARY) {
+                    return "del";
+                } else {
+                    return "di";
+                }
+            } else if(lang == LANG_ES_ES) {
+                if(season == ORDINARY || season == ADVENT) {
+                    return "el";
+                } else {
+                    return "de la";
+                }
             }
+            return "";
         }
 	}
 }

@@ -316,13 +316,13 @@ std::string LiturgicDay::getWeekdayString(const season_t &season, const int &wee
 		{
 			ostr<<getOrdinalStr(weekOfSeason, lang)
 				<<" "<<CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)
-				<<" "<<getItPrepStr(season)<<" "<<CathAssist::Calendar::getSeasonStr(season, lang);
+				<<" "<<getPrepGenderStr(season, lang)<<" "<<CathAssist::Calendar::getSeasonStr(season, lang);
 		}
 		else
 		{
 			ostr<<CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)
 				<<" della "<<getOrdinalStr(weekOfSeason, lang)
-				<<" settimana "<<getItPrepStr(season)<<" " << CathAssist::Calendar::getSeasonStr(season, lang);
+				<<" settimana "<<getPrepGenderStr(season, lang)<<" " << CathAssist::Calendar::getSeasonStr(season, lang);
 		}
 	} else if(CathAssist::Calendar::LANG_PT_BR == lang) {
 		if(LENT == season && 0 == weekOfSeason) {
