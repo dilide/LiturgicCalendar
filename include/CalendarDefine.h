@@ -607,6 +607,23 @@ namespace CathAssist
             return "Not define";
         }
 
+        static std::string intToRoman(int num) {
+            // 千位 (0, 1000, 2000, 3000)
+            std::string thousands[] = {"", "M", "MM", "MMM"};
+            // 百位 (0, 100, 200, ... 900)
+            std::string hundreds[]  = {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
+            // 十位 (0, 10, 20, ... 90)
+            std::string tens[]      = {"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"};
+            // 个位 (0, 1, 2, ... 9)
+            std::string ones[]      = {"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
+
+            // 直接通过取模和除法计算每一位的索引并拼接
+            return thousands[num / 1000] + 
+                hundreds[(num % 1000) / 100] + 
+                tens[(num % 100) / 10] + 
+                ones[num % 10];
+        }
+
         static std::string getOrdinalStr(const int& num, const langcode_t& lang = LANG_ZH_CN) {
             if(lang == LANG_EN) {
                 if(num == 1) {
@@ -629,15 +646,7 @@ namespace CathAssist
                     return std::to_string(num) + "º";
                 }
             } else if(lang == LANG_IT_IT) {
-                if(num == 1) {
-                    return "Primo";
-                } else if(num == 2) {
-                    return "Secondo";
-                } else if(num == 3) {
-                    return "Terzo";
-                } else {
-                    return std::to_string(num) + "º";
-                }
+                return intToRoman(num);
             } else if(lang == LANG_PT_BR) {
                 if(num == 1) {
                     return "Primeiro";
@@ -711,6 +720,15 @@ namespace CathAssist
             }
             
             return "";
+        }
+
+        // 意大利语介词阴阳的问题
+        static std::string getItPrepStr(const season_t& season) {
+            if(season == ORDINARY) {
+                return "del";
+            } else {
+                return "di";
+            }
         }
 	}
 }
