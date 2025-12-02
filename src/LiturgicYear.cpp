@@ -926,19 +926,32 @@ std::string LiturgicYear::toString() const
 
 void LiturgicYear::init()
 {
-	//主显节
 	LiturgicDay t(year,1,2);
-	ep = t.addDays((7-t.dayOfWeek())%7);
 
-	//主受洗日(圣诞期的结束)
-	if(ep.day()>6)
-	{
-		bl = ep.addDays(1);
-	}
-	else
-	{
-		bl = ep.addDays(7);
-	}
+	//主显节
+    langcode_t lang = CathAssist::Calendar::MultiLang::getLangCode();
+    if(lang == LANG_IT_IT || lang == LANG_ES_ES) {
+        //意大利、西班牙等国家采用1月6日为主显节
+        ep.setDate(year,1,6);
+
+        //主受洗日(主显节后的主日)
+        bl = ep.addDays(7-ep.dayOfWeek());
+    } else {
+        //其他国家采用临近1月6日的主日为主显节
+        ep = t.addDays((7-t.dayOfWeek())%7);
+
+        //主受洗日
+        if(ep.day()>6)
+        {
+            //主显节后的第二天（星期一）
+            bl = ep.addDays(1);
+        }
+        else
+        {
+            //主显节后的下一个主日
+            bl = ep.addDays(7);
+        }
+    }
 
 	//复活节
 	{
