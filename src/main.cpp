@@ -389,6 +389,7 @@ void calendar_test()
     Calendar::initCalendar();
     
     CathAssist::Calendar::Date dtBegin(2026,1,1);
+    std::cout<<"日期, 名称, 语言代码"<<std::endl;
 
     while (dtBegin.year()==2026)
     {
@@ -399,7 +400,8 @@ void calendar_test()
         auto cells = dayInfo.getCellInfos();
         auto iterCell = cells.begin();
         while (iterCell!=cells.end()) {
-            if((iterCell->rank == WEEKDAY && dayInfo.dayOfWeek() == THU) || iterCell->rank == SUNDAY) {
+            if(iterCell->rank == WEEKDAY || iterCell->rank == SUNDAY)
+            {
                 if(ostr.str().empty()) {
                     ostr<<iterCell->celebration;
                 } else {
@@ -421,23 +423,31 @@ int main(int argc, char *argv[])
 {
     CathAssist::Calendar::MultiLang::read("lang.ini");
     
-    export_month_json_test();
-    export_to_sqlite("liturgic.db");
-    export_to_update_sql();
-    export_to_liturgy();
+    if(false)
+    {
+        // 输出数据
+        export_month_json_test();
+        export_to_sqlite("liturgic.db");
+        export_to_update_sql();
+        export_to_liturgy();
 
-    for(int lang=CathAssist::Calendar::LANG_EN; lang <= CathAssist::Calendar::LANG_PT_BR; ++lang) {
-        CathAssist::Calendar::MultiLang::setLangCode(static_cast<CathAssist::Calendar::langcode_t>(lang));
-        std::string strDbName = "liturgic." + CathAssist::Calendar::getLangCodeStr(static_cast<CathAssist::Calendar::langcode_t>(lang)) + ".db";
-        export_to_sqlite(strDbName);
+        for(int lang=CathAssist::Calendar::LANG_EN; lang <= CathAssist::Calendar::LANG_PT_BR; ++lang) {
+            CathAssist::Calendar::MultiLang::setLangCode(static_cast<CathAssist::Calendar::langcode_t>(lang));
+            std::string strDbName = "liturgic." + CathAssist::Calendar::getLangCodeStr(static_cast<CathAssist::Calendar::langcode_t>(lang)) + ".db";
+            export_to_sqlite(strDbName);
+        }
     }
-    /*
-    for(int lang=CathAssist::Calendar::LANG_EN; lang <= CathAssist::Calendar::LANG_PT_BR; ++lang) {
-        CathAssist::Calendar::MultiLang::setLangCode(static_cast<CathAssist::Calendar::langcode_t>(lang));
-        calendar_test();
-        std::cout<<std::endl;
+    
+    if(true)
+    {
+        // 测试不同语言环境下的输出
+        for(int lang=CathAssist::Calendar::LANG_IT_IT; lang <= CathAssist::Calendar::LANG_IT_IT; ++lang) {
+            CathAssist::Calendar::MultiLang::setLangCode(static_cast<CathAssist::Calendar::langcode_t>(lang));
+            calendar_test();
+            std::cout<<std::endl;
+        }
     }
-    */
+    
     CathAssist::Calendar::MultiLang::write("lang_out.ini");
     return 0;
 }
