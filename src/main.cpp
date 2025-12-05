@@ -423,7 +423,7 @@ int main(int argc, char *argv[])
 {
     CathAssist::Calendar::MultiLang::read("lang.ini");
     
-    if(false)
+    if(true)
     {
         // 输出数据
         export_month_json_test();
