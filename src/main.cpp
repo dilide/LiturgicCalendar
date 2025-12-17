@@ -396,31 +396,6 @@ void export_to_catholicism()
     std::string langStr = CathAssist::Calendar::getLangCodeStr(CathAssist::Calendar::LANG_EN);
     Calendar::initCalendar();
     {
-        // 特殊节日
-        {
-            auto saints = LiturgicYear::getPropers();
-            auto iter = saints.begin();
-            while (iter!=saints.end()) {
-                auto name = iter->second.celebration;
-                std::cout<<name<<std::endl;
-                // 圣人传记表
-                of<<"insert into c_saint(code, name, rank, color) select "<<iter->first<<",'"<<ansi2utf8(sqlite3_mprintf("{\"%q\": \"%q\"}",langStr.c_str(),name.c_str()))<<"',"
-                    <<iter->second.rank<<","<<iter->second.color<<" where not exists (select 1 from c_saint where code="<<iter->first<<");"<<std::endl;
-                of<<"update c_saint set name=jsonb_set(name, '{"<<langStr<<"}', '"<<ansi2utf8(sqlite3_mprintf("\"%q\"",name.c_str()))<<"'::jsonb), rank="<<iter->second.rank<<", color="<<iter->second.color<<" where code="<<iter->first<<";"<<std::endl;
-
-                // 弥撒表
-                of<<"insert into c_mass(code, name) select "<<iter->second.code<<",'"<<ansi2utf8(sqlite3_mprintf("{\"%q\": \"%q\"}",langStr.c_str(),name.c_str()))<<"'"
-                    <<" where not exists (select 1 from c_mass where code="<<iter->second.code<<");"<<std::endl;
-                of<<"update c_mass set name=jsonb_set(name, '{"<<langStr<<"}', '"<<ansi2utf8(sqlite3_mprintf("\"%q\"",name.c_str()))<<"'::jsonb) where code="<<iter->second.code<<";"<<std::endl;
-
-                // 日课表
-                of<<"insert into c_liturgy_hours(code, name) select "<<iter->second.code<<",'"<<ansi2utf8(sqlite3_mprintf("{\"%q\": \"%q\"}",langStr.c_str(),name.c_str()))<<"'"
-                    <<" where not exists (select 1 from c_liturgy_hours where code="<<iter->second.code<<");"<<std::endl;
-                of<<"update c_liturgy_hours set name=jsonb_set(name, '{"<<langStr<<"}', '"<<ansi2utf8(sqlite3_mprintf("\"%q\"",name.c_str()))<<"'::jsonb) where code="<<iter->second.code<<";"<<std::endl;
-
-                ++iter;
-            }
-        }
         // 礼仪年
         {
             auto days = LiturgicYear::getNormalDays();
@@ -429,13 +404,38 @@ void export_to_catholicism()
                 auto name = iter->celebration;
                 std::cout<<name<<std::endl;
 
-                of<<"insert into c_mass(code, name) select "<<iter->code<<",'"<<ansi2utf8(sqlite3_mprintf("{\"%q\": \"%q\"}",langStr.c_str(),name.c_str()))<<"'"
-                        <<" where not exists (select 1 from c_mass where code="<<iter->code<<");"<<std::endl;
-                of<<"update c_mass set name=jsonb_set(name, '{"<<langStr<<"}', '"<<ansi2utf8(sqlite3_mprintf("\"%q\"",name.c_str()))<<"'::jsonb) where code="<<iter->code<<";"<<std::endl;
+                of<<"insert into c_liturgic_code(code, rank, color) values("
+                <<iter->code<<","<<iter->rank<<","<<iter->color<<")"
+                <<" on conflict (code) do update set rank="<<iter->rank<<", color="<<iter->color<<";"<<std::endl;
 
-                of<<"insert into c_liturgy_hours(code, name) select "<<iter->code<<",'"<<ansi2utf8(sqlite3_mprintf("{\"%q\": \"%q\"}",langStr.c_str(),name.c_str()))<<"'"
-                        <<" where not exists (select 1 from c_liturgy_hours where code="<<iter->code<<");"<<std::endl;
-                of<<"update c_liturgy_hours set name=jsonb_set(name, '{"<<langStr<<"}', '"<<ansi2utf8(sqlite3_mprintf("\"%q\"",name.c_str()))<<"'::jsonb) where code="<<iter->code<<";"<<std::endl;
+                of<<"insert into c_mass(code) values("<<iter->code<<")"
+                    <<" on conflict (code) do nothing;"<<std::endl;
+
+                of<<"insert into c_liturgy_hours(code) values("<<iter->code<<")"
+                    <<" on conflict (code) do nothing;"<<std::endl;
+                ++iter;
+            }
+        }
+        // 特殊节日
+        {
+            auto saints = LiturgicYear::getPropers();
+            auto iter = saints.begin();
+            while (iter!=saints.end()) {
+                auto name = iter->second.celebration;
+                std::cout<<name<<std::endl;
+                // 圣人传记表
+                of<<"insert into c_liturgic_code(code, name, rank, color) values("
+                <<iter->first<<", '{}', "<<iter->second.rank<<","<<iter->second.color<<")"
+                <<" on conflict (code) do update set rank="<<iter->second.rank<<", color="<<iter->second.color<<";"<<std::endl;
+
+                // 弥撒表
+                of<<"insert into c_mass(code) values("<<iter->second.code<<")"
+                    <<" on conflict (code) do nothing;"<<std::endl;
+
+                // 日课表
+                of<<"insert into c_liturgy_hours(code) values("<<iter->second.code<<")"
+                    <<" on conflict (code) do nothing;"<<std::endl;
+
                 ++iter;
             }
         }
@@ -447,18 +447,6 @@ void export_to_catholicism()
         langStr = CathAssist::Calendar::getLangCodeStr(static_cast<CathAssist::Calendar::langcode_t>(lang));
         Calendar::initCalendar();
 
-        // 特殊节日
-        {
-            auto saints = LiturgicYear::getPropers();
-            auto iter = saints.begin();
-            while (iter!=saints.end()) {
-                auto name = iter->second.celebration;
-                of<<"update c_saint set name=jsonb_set(name, '{"<<langStr<<"}', '"<<ansi2utf8(sqlite3_mprintf("\"%q\"",name.c_str()))<<"'::jsonb) where code="<<iter->first<<";"<<std::endl;
-                of<<"update c_mass set name=jsonb_set(name, '{"<<langStr<<"}', '"<<ansi2utf8(sqlite3_mprintf("\"%q\"",name.c_str()))<<"'::jsonb) where code="<<iter->first<<";"<<std::endl;
-                of<<"update c_liturgy_hours set name=jsonb_set(name, '{"<<langStr<<"}', '"<<ansi2utf8(sqlite3_mprintf("\"%q\"",name.c_str()))<<"'::jsonb) where code="<<iter->first<<";"<<std::endl;
-                ++iter;
-            }
-        }
         // 礼仪年
         {
             auto days = LiturgicYear::getNormalDays();
@@ -467,8 +455,17 @@ void export_to_catholicism()
                 auto name = iter->celebration;
                 std::cout<<name<<std::endl;
 
-                of<<"update c_mass set name=jsonb_set(name, '{"<<langStr<<"}', '"<<ansi2utf8(sqlite3_mprintf("\"%q\"",name.c_str()))<<"'::jsonb) where code="<<iter->code<<";"<<std::endl;
-                of<<"update c_liturgy_hours set name=jsonb_set(name, '{"<<langStr<<"}', '"<<ansi2utf8(sqlite3_mprintf("\"%q\"",name.c_str()))<<"'::jsonb) where code="<<iter->code<<";"<<std::endl;
+                of<<"update c_liturgic_code set name=jsonb_set(name, '{"<<langStr<<"}', '"<<ansi2utf8(sqlite3_mprintf("\"%q\"",name.c_str()))<<"'::jsonb) where code="<<iter->code<<";"<<std::endl;
+                ++iter;
+            }
+        }
+        // 特殊节日
+        {
+            auto saints = LiturgicYear::getPropers();
+            auto iter = saints.begin();
+            while (iter!=saints.end()) {
+                auto name = iter->second.celebration;
+                of<<"update c_liturgic_code set name=jsonb_set(name, '{"<<langStr<<"}', '"<<ansi2utf8(sqlite3_mprintf("\"%q\"",name.c_str()))<<"'::jsonb) where code="<<iter->first<<";"<<std::endl;
                 ++iter;
             }
         }
