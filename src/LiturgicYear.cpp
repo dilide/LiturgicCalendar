@@ -1012,14 +1012,11 @@ void LiturgicYear::testChristmas1(LiturgicDay& ld)
     ld.setWeekOfSeason(-1);
 	if(ld<ep)
 	{
-        if(ld.day() > 1) {
-            if(ep.day() == 8) {
-                // 主显节在 1 月 8 日，主显节前是第二周（没有第一周）
-                ld.setWeekOfSeason(2);
-            } else {
-                // 否则主显节前是第一周
-                ld.setWeekOfSeason(1);
-            }
+        if(ep.day() == 8) {
+            // 主显节在 1 月 8 日，主显节前是第二周（没有第一周）
+            ld.setWeekOfSeason(2);
+        } else {
+            ld.setWeekOfSeason(1);
         }
 
         //弥撒特殊处理 主显节前(1月2日～1月8日)
@@ -1042,6 +1039,11 @@ void LiturgicYear::testChristmas1(LiturgicDay& ld)
 	else if(ld==ep)
 	{
 		ld.appendCell(1);	//主显节（普世教会）
+        if(ep.day() == 8) {
+            ld.setWeekOfSeason(-1);
+        } else {
+            ld.setWeekOfSeason(2);
+        }
 	}
     else if(ld>ep && ld<bl)
     {
@@ -1164,9 +1166,14 @@ void LiturgicYear::testChristmas2(LiturgicDay& ld)
 	if((!ld.isValid()) || ld<cm || ld>LiturgicDay(year,12,31))
 		return;
 
-	ld.setSeason(CHRISTMAS);
-    //12 月份全是圣诞节八日庆期
-    ld.setWeekOfSeason(-1);
+    // 将临期第四主日的星期六之后的日期归为圣诞期第一周
+    if(cm.dayOfWeek() != SUN && ld.dayOfWeek()>=cm.dayOfWeek()) {
+        ld.setSeason(ADVENT);
+        ld.setWeekOfSeason(4);
+    } else {
+        ld.setSeason(CHRISTMAS);
+        ld.setWeekOfSeason(1);
+    }
 
 	//圣家节
 	if(cm.dayOfWeek() == SUN)
@@ -1179,6 +1186,7 @@ void LiturgicYear::testChristmas2(LiturgicDay& ld)
 		if(ld.dayOfWeek() == SUN)
 			ld.appendCell(8);
 	}
+    
 }
 
 void LiturgicYear::testProper(LiturgicDay& ld)

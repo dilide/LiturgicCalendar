@@ -171,11 +171,12 @@ CellInfo LiturgicDay::getLiturgicCellInfo() const
 	}
 	else if(CHRISTMAS == season)
 	{
+		/*
 		if(dayOfWeek()==SUN) {
 			// 圣诞期所有主日都是特殊的
 			_rank = ErrorRank;
 		}
-		
+		*/
 		_clr = WHITE;
 	}
 

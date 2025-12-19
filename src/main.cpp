@@ -404,8 +404,8 @@ void export_to_catholicism()
                 auto name = iter->celebration;
                 std::cout<<name<<std::endl;
 
-                of<<"insert into c_liturgic_code(code, rank, color) values("
-                <<iter->code<<","<<iter->rank<<","<<iter->color<<")"
+                of<<"insert into c_liturgic_code(code, name, rank, color) values("
+                <<iter->code<<", '{}', "<<iter->rank<<","<<iter->color<<")"
                 <<" on conflict (code) do update set rank="<<iter->rank<<", color="<<iter->color<<";"<<std::endl;
 
                 of<<"insert into c_mass(code) values("<<iter->code<<")"
