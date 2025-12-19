@@ -1649,7 +1649,7 @@ update easter_daily set cells='将临期 12月22日\\1122202|圣女方济加(童
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地(St. John of Kanti 1297-1473)\\1122301|将临期第四周(星期四)|', liturgic=20404, color=4 where date='2010-12-23';
 update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2010-12-24';
 update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2010-12-25';
-update easter_daily set cells='圣家节\\8|圣诞期第一主日|圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|', liturgic=30100, color=2 where date='2010-12-26';
+update easter_daily set cells='圣家节\\8|圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|', liturgic=30000, color=2 where date='2010-12-26';
 update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2010-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|圣诞期第一周(星期二)|', liturgic=30102, color=3 where date='2010-12-28';
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2010-12-29';
@@ -2013,7 +2013,7 @@ update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加�
 update easter_daily set cells='将临期 12月22日\\1122202|圣女方济加(童贞 圣心传教女修会创办人 St. Frances Xavier Cabrini 1850-1917)\\1122201|将临期第四周(星期四)|', liturgic=20404, color=4 where date='2011-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地(St. John of Kanti 1297-1473)\\1122301|将临期第四周(星期五)|', liturgic=20405, color=4 where date='2011-12-23';
 update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2011-12-24';
-update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|圣诞期第一主日|', liturgic=30100, color=2 where date='2011-12-25';
+update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|', liturgic=30000, color=2 where date='2011-12-25';
 update easter_daily set cells='圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|圣诞期第一周(星期一)|', liturgic=30101, color=3 where date='2011-12-26';
 update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2011-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|圣诞期第一周(星期三)|', liturgic=30103, color=3 where date='2011-12-28';
@@ -2384,7 +2384,7 @@ update easter_daily set cells='圣斯德望(首位殉道 St. Stephen -34)\\11226
 update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2012-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|将临期第四周(星期五)|', liturgic=20405, color=3 where date='2012-12-28';
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2012-12-29';
-update easter_daily set cells='圣家节\\8|圣诞节庆期第六日\\1123002|圣诞期第一主日|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30100, color=2 where date='2012-12-30';
+update easter_daily set cells='圣家节\\8|圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30000, color=2 where date='2012-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2012-12-31';
 update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2013-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2013-01-02';
@@ -2748,7 +2748,7 @@ update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Chris
 update easter_daily set cells='圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|将临期第四周(星期四)|', liturgic=20404, color=3 where date='2013-12-26';
 update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2013-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|将临期第四周(星期六)|', liturgic=20406, color=3 where date='2013-12-28';
-update easter_daily set cells='圣家节\\8|圣诞节庆期第五日\\1122902|圣诞期第一主日|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30100, color=2 where date='2013-12-29';
+update easter_daily set cells='圣家节\\8|圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30000, color=2 where date='2013-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2013-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2013-12-31';
 update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2014-01-01';
@@ -3112,7 +3112,7 @@ update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周
 update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2014-12-25';
 update easter_daily set cells='圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|将临期第四周(星期五)|', liturgic=20405, color=3 where date='2014-12-26';
 update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2014-12-27';
-update easter_daily set cells='圣家节\\8|圣诞期第一主日|诸圣婴孩(The Holy Innocents)\\1122801|', liturgic=30100, color=2 where date='2014-12-28';
+update easter_daily set cells='圣家节\\8|诸圣婴孩(The Holy Innocents)\\1122801|', liturgic=30000, color=2 where date='2014-12-28';
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2014-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2014-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2014-12-31';
@@ -3476,7 +3476,7 @@ update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地(St.
 update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2015-12-24';
 update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2015-12-25';
 update easter_daily set cells='圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|将临期第四周(星期六)|', liturgic=20406, color=3 where date='2015-12-26';
-update easter_daily set cells='圣家节\\8|圣诞期第一主日|圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|', liturgic=30100, color=2 where date='2015-12-27';
+update easter_daily set cells='圣家节\\8|圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|', liturgic=30000, color=2 where date='2015-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|圣诞期第一周(星期一)|', liturgic=30101, color=3 where date='2015-12-28';
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2015-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2015-12-30';
@@ -3840,7 +3840,7 @@ update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加�
 update easter_daily set cells='将临期 12月22日\\1122202|圣女方济加(童贞 圣心传教女修会创办人 St. Frances Xavier Cabrini 1850-1917)\\1122201|将临期第四周(星期四)|', liturgic=20404, color=4 where date='2016-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地(St. John of Kanti 1297-1473)\\1122301|将临期第四周(星期五)|', liturgic=20405, color=4 where date='2016-12-23';
 update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2016-12-24';
-update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|圣诞期第一主日|', liturgic=30100, color=2 where date='2016-12-25';
+update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|', liturgic=30000, color=2 where date='2016-12-25';
 update easter_daily set cells='圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|圣诞期第一周(星期一)|', liturgic=30101, color=3 where date='2016-12-26';
 update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2016-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|圣诞期第一周(星期三)|', liturgic=30103, color=3 where date='2016-12-28';
@@ -4211,7 +4211,7 @@ update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|将临期第四周(星期四)|', liturgic=20404, color=3 where date='2017-12-28';
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2017-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2017-12-30';
-update easter_daily set cells='圣家节\\8|圣诞节庆期第七日\\1123103|圣诞期第一主日|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30100, color=2 where date='2017-12-31';
+update easter_daily set cells='圣家节\\8|圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30000, color=2 where date='2017-12-31';
 update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2018-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2018-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2018-01-03';
@@ -4575,7 +4575,7 @@ update easter_daily set cells='圣斯德望(首位殉道 St. Stephen -34)\\11226
 update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2018-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|将临期第四周(星期五)|', liturgic=20405, color=3 where date='2018-12-28';
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2018-12-29';
-update easter_daily set cells='圣家节\\8|圣诞节庆期第六日\\1123002|圣诞期第一主日|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30100, color=2 where date='2018-12-30';
+update easter_daily set cells='圣家节\\8|圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30000, color=2 where date='2018-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2018-12-31';
 update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2019-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2019-01-02';
@@ -4939,7 +4939,7 @@ update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Chris
 update easter_daily set cells='圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|将临期第四周(星期四)|', liturgic=20404, color=3 where date='2019-12-26';
 update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2019-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|将临期第四周(星期六)|', liturgic=20406, color=3 where date='2019-12-28';
-update easter_daily set cells='圣家节\\8|圣诞节庆期第五日\\1122902|圣诞期第一主日|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30100, color=2 where date='2019-12-29';
+update easter_daily set cells='圣家节\\8|圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30000, color=2 where date='2019-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2019-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2019-12-31';
 update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2020-01-01';
@@ -5303,7 +5303,7 @@ update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地(St.
 update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2020-12-24';
 update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2020-12-25';
 update easter_daily set cells='圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|将临期第四周(星期六)|', liturgic=20406, color=3 where date='2020-12-26';
-update easter_daily set cells='圣家节\\8|圣诞期第一主日|圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|', liturgic=30100, color=2 where date='2020-12-27';
+update easter_daily set cells='圣家节\\8|圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|', liturgic=30000, color=2 where date='2020-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|圣诞期第一周(星期一)|', liturgic=30101, color=3 where date='2020-12-28';
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2020-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2020-12-30';
@@ -5667,7 +5667,7 @@ update easter_daily set cells='将临期 12月22日\\1122202|圣女方济加(童
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地(St. John of Kanti 1297-1473)\\1122301|将临期第四周(星期四)|', liturgic=20404, color=4 where date='2021-12-23';
 update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2021-12-24';
 update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2021-12-25';
-update easter_daily set cells='圣家节\\8|圣诞期第一主日|圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|', liturgic=30100, color=2 where date='2021-12-26';
+update easter_daily set cells='圣家节\\8|圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|', liturgic=30000, color=2 where date='2021-12-26';
 update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2021-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|圣诞期第一周(星期二)|', liturgic=30102, color=3 where date='2021-12-28';
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2021-12-29';
@@ -6031,7 +6031,7 @@ update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加�
 update easter_daily set cells='将临期 12月22日\\1122202|圣女方济加(童贞 圣心传教女修会创办人 St. Frances Xavier Cabrini 1850-1917)\\1122201|将临期第四周(星期四)|', liturgic=20404, color=4 where date='2022-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地(St. John of Kanti 1297-1473)\\1122301|将临期第四周(星期五)|', liturgic=20405, color=4 where date='2022-12-23';
 update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2022-12-24';
-update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|圣诞期第一主日|', liturgic=30100, color=2 where date='2022-12-25';
+update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|', liturgic=30000, color=2 where date='2022-12-25';
 update easter_daily set cells='圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|圣诞期第一周(星期一)|', liturgic=30101, color=3 where date='2022-12-26';
 update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2022-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|圣诞期第一周(星期三)|', liturgic=30103, color=3 where date='2022-12-28';
@@ -6402,7 +6402,7 @@ update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|将临期第四周(星期四)|', liturgic=20404, color=3 where date='2023-12-28';
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2023-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2023-12-30';
-update easter_daily set cells='圣家节\\8|圣诞节庆期第七日\\1123103|圣诞期第一主日|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30100, color=2 where date='2023-12-31';
+update easter_daily set cells='圣家节\\8|圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30000, color=2 where date='2023-12-31';
 update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2024-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2024-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2024-01-03';
@@ -6766,7 +6766,7 @@ update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Chris
 update easter_daily set cells='圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|将临期第四周(星期四)|', liturgic=20404, color=3 where date='2024-12-26';
 update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2024-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|将临期第四周(星期六)|', liturgic=20406, color=3 where date='2024-12-28';
-update easter_daily set cells='圣家节\\8|圣诞节庆期第五日\\1122902|圣诞期第一主日|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30100, color=2 where date='2024-12-29';
+update easter_daily set cells='圣家节\\8|圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30000, color=2 where date='2024-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2024-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2024-12-31';
 update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2025-01-01';
@@ -7130,7 +7130,7 @@ update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周
 update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2025-12-25';
 update easter_daily set cells='圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|将临期第四周(星期五)|', liturgic=20405, color=3 where date='2025-12-26';
 update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2025-12-27';
-update easter_daily set cells='圣家节\\8|圣诞期第一主日|诸圣婴孩(The Holy Innocents)\\1122801|', liturgic=30100, color=2 where date='2025-12-28';
+update easter_daily set cells='圣家节\\8|诸圣婴孩(The Holy Innocents)\\1122801|', liturgic=30000, color=2 where date='2025-12-28';
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2025-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2025-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2025-12-31';
@@ -7494,7 +7494,7 @@ update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地(St.
 update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2026-12-24';
 update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2026-12-25';
 update easter_daily set cells='圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|将临期第四周(星期六)|', liturgic=20406, color=3 where date='2026-12-26';
-update easter_daily set cells='圣家节\\8|圣诞期第一主日|圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|', liturgic=30100, color=2 where date='2026-12-27';
+update easter_daily set cells='圣家节\\8|圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|', liturgic=30000, color=2 where date='2026-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|圣诞期第一周(星期一)|', liturgic=30101, color=3 where date='2026-12-28';
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2026-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2026-12-30';
@@ -7858,7 +7858,7 @@ update easter_daily set cells='将临期 12月22日\\1122202|圣女方济加(童
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地(St. John of Kanti 1297-1473)\\1122301|将临期第四周(星期四)|', liturgic=20404, color=4 where date='2027-12-23';
 update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2027-12-24';
 update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2027-12-25';
-update easter_daily set cells='圣家节\\8|圣诞期第一主日|圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|', liturgic=30100, color=2 where date='2027-12-26';
+update easter_daily set cells='圣家节\\8|圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|', liturgic=30000, color=2 where date='2027-12-26';
 update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2027-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|圣诞期第一周(星期二)|', liturgic=30102, color=3 where date='2027-12-28';
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2027-12-29';
@@ -8229,7 +8229,7 @@ update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|将临期第四周(星期四)|', liturgic=20404, color=3 where date='2028-12-28';
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2028-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2028-12-30';
-update easter_daily set cells='圣家节\\8|圣诞节庆期第七日\\1123103|圣诞期第一主日|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30100, color=2 where date='2028-12-31';
+update easter_daily set cells='圣家节\\8|圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30000, color=2 where date='2028-12-31';
 update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2029-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2029-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2029-01-03';
@@ -8593,7 +8593,7 @@ update easter_daily set cells='圣斯德望(首位殉道 St. Stephen -34)\\11226
 update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2029-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|将临期第四周(星期五)|', liturgic=20405, color=3 where date='2029-12-28';
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2029-12-29';
-update easter_daily set cells='圣家节\\8|圣诞节庆期第六日\\1123002|圣诞期第一主日|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30100, color=2 where date='2029-12-30';
+update easter_daily set cells='圣家节\\8|圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30000, color=2 where date='2029-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2029-12-31';
 update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2030-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2030-01-02';
@@ -8957,7 +8957,7 @@ update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Chris
 update easter_daily set cells='圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|将临期第四周(星期四)|', liturgic=20404, color=3 where date='2030-12-26';
 update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2030-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|将临期第四周(星期六)|', liturgic=20406, color=3 where date='2030-12-28';
-update easter_daily set cells='圣家节\\8|圣诞节庆期第五日\\1122902|圣诞期第一主日|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30100, color=2 where date='2030-12-29';
+update easter_daily set cells='圣家节\\8|圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30000, color=2 where date='2030-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2030-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2030-12-31';
 update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2031-01-01';
@@ -9321,7 +9321,7 @@ update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周
 update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2031-12-25';
 update easter_daily set cells='圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|将临期第四周(星期五)|', liturgic=20405, color=3 where date='2031-12-26';
 update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2031-12-27';
-update easter_daily set cells='圣家节\\8|圣诞期第一主日|诸圣婴孩(The Holy Innocents)\\1122801|', liturgic=30100, color=2 where date='2031-12-28';
+update easter_daily set cells='圣家节\\8|诸圣婴孩(The Holy Innocents)\\1122801|', liturgic=30000, color=2 where date='2031-12-28';
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2031-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2031-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2031-12-31';
@@ -9685,7 +9685,7 @@ update easter_daily set cells='将临期 12月22日\\1122202|圣女方济加(童
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地(St. John of Kanti 1297-1473)\\1122301|将临期第四周(星期四)|', liturgic=20404, color=4 where date='2032-12-23';
 update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2032-12-24';
 update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2032-12-25';
-update easter_daily set cells='圣家节\\8|圣诞期第一主日|圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|', liturgic=30100, color=2 where date='2032-12-26';
+update easter_daily set cells='圣家节\\8|圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|', liturgic=30000, color=2 where date='2032-12-26';
 update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2032-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|圣诞期第一周(星期二)|', liturgic=30102, color=3 where date='2032-12-28';
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2032-12-29';
@@ -10049,7 +10049,7 @@ update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加�
 update easter_daily set cells='将临期 12月22日\\1122202|圣女方济加(童贞 圣心传教女修会创办人 St. Frances Xavier Cabrini 1850-1917)\\1122201|将临期第四周(星期四)|', liturgic=20404, color=4 where date='2033-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地(St. John of Kanti 1297-1473)\\1122301|将临期第四周(星期五)|', liturgic=20405, color=4 where date='2033-12-23';
 update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2033-12-24';
-update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|圣诞期第一主日|', liturgic=30100, color=2 where date='2033-12-25';
+update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|', liturgic=30000, color=2 where date='2033-12-25';
 update easter_daily set cells='圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|圣诞期第一周(星期一)|', liturgic=30101, color=3 where date='2033-12-26';
 update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2033-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|圣诞期第一周(星期三)|', liturgic=30103, color=3 where date='2033-12-28';
@@ -10420,7 +10420,7 @@ update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|将临期第四周(星期四)|', liturgic=20404, color=3 where date='2034-12-28';
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2034-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2034-12-30';
-update easter_daily set cells='圣家节\\8|圣诞节庆期第七日\\1123103|圣诞期第一主日|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30100, color=2 where date='2034-12-31';
+update easter_daily set cells='圣家节\\8|圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30000, color=2 where date='2034-12-31';
 update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2035-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2035-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2035-01-03';
@@ -10784,7 +10784,7 @@ update easter_daily set cells='圣斯德望(首位殉道 St. Stephen -34)\\11226
 update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2035-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|将临期第四周(星期五)|', liturgic=20405, color=3 where date='2035-12-28';
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2035-12-29';
-update easter_daily set cells='圣家节\\8|圣诞节庆期第六日\\1123002|圣诞期第一主日|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30100, color=2 where date='2035-12-30';
+update easter_daily set cells='圣家节\\8|圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30000, color=2 where date='2035-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2035-12-31';
 update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2036-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2036-01-02';
@@ -11148,7 +11148,7 @@ update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周
 update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2036-12-25';
 update easter_daily set cells='圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|将临期第四周(星期五)|', liturgic=20405, color=3 where date='2036-12-26';
 update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2036-12-27';
-update easter_daily set cells='圣家节\\8|圣诞期第一主日|诸圣婴孩(The Holy Innocents)\\1122801|', liturgic=30100, color=2 where date='2036-12-28';
+update easter_daily set cells='圣家节\\8|诸圣婴孩(The Holy Innocents)\\1122801|', liturgic=30000, color=2 where date='2036-12-28';
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2036-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2036-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2036-12-31';
@@ -11512,7 +11512,7 @@ update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地(St.
 update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2037-12-24';
 update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2037-12-25';
 update easter_daily set cells='圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|将临期第四周(星期六)|', liturgic=20406, color=3 where date='2037-12-26';
-update easter_daily set cells='圣家节\\8|圣诞期第一主日|圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|', liturgic=30100, color=2 where date='2037-12-27';
+update easter_daily set cells='圣家节\\8|圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|', liturgic=30000, color=2 where date='2037-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|圣诞期第一周(星期一)|', liturgic=30101, color=3 where date='2037-12-28';
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2037-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2037-12-30';
@@ -11876,7 +11876,7 @@ update easter_daily set cells='将临期 12月22日\\1122202|圣女方济加(童
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地(St. John of Kanti 1297-1473)\\1122301|将临期第四周(星期四)|', liturgic=20404, color=4 where date='2038-12-23';
 update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2038-12-24';
 update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2038-12-25';
-update easter_daily set cells='圣家节\\8|圣诞期第一主日|圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|', liturgic=30100, color=2 where date='2038-12-26';
+update easter_daily set cells='圣家节\\8|圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|', liturgic=30000, color=2 where date='2038-12-26';
 update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2038-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|圣诞期第一周(星期二)|', liturgic=30102, color=3 where date='2038-12-28';
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2038-12-29';
@@ -12240,7 +12240,7 @@ update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加�
 update easter_daily set cells='将临期 12月22日\\1122202|圣女方济加(童贞 圣心传教女修会创办人 St. Frances Xavier Cabrini 1850-1917)\\1122201|将临期第四周(星期四)|', liturgic=20404, color=4 where date='2039-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地(St. John of Kanti 1297-1473)\\1122301|将临期第四周(星期五)|', liturgic=20405, color=4 where date='2039-12-23';
 update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2039-12-24';
-update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|圣诞期第一主日|', liturgic=30100, color=2 where date='2039-12-25';
+update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|', liturgic=30000, color=2 where date='2039-12-25';
 update easter_daily set cells='圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|圣诞期第一周(星期一)|', liturgic=30101, color=3 where date='2039-12-26';
 update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2039-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|圣诞期第一周(星期三)|', liturgic=30103, color=3 where date='2039-12-28';
@@ -12611,7 +12611,7 @@ update easter_daily set cells='圣斯德望(首位殉道 St. Stephen -34)\\11226
 update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2040-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|将临期第四周(星期五)|', liturgic=20405, color=3 where date='2040-12-28';
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2040-12-29';
-update easter_daily set cells='圣家节\\8|圣诞节庆期第六日\\1123002|圣诞期第一主日|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30100, color=2 where date='2040-12-30';
+update easter_daily set cells='圣家节\\8|圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30000, color=2 where date='2040-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2040-12-31';
 update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2041-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2041-01-02';
@@ -12975,7 +12975,7 @@ update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Chris
 update easter_daily set cells='圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|将临期第四周(星期四)|', liturgic=20404, color=3 where date='2041-12-26';
 update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2041-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|将临期第四周(星期六)|', liturgic=20406, color=3 where date='2041-12-28';
-update easter_daily set cells='圣家节\\8|圣诞节庆期第五日\\1122902|圣诞期第一主日|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30100, color=2 where date='2041-12-29';
+update easter_daily set cells='圣家节\\8|圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30000, color=2 where date='2041-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2041-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2041-12-31';
 update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2042-01-01';
@@ -13339,7 +13339,7 @@ update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周
 update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2042-12-25';
 update easter_daily set cells='圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|将临期第四周(星期五)|', liturgic=20405, color=3 where date='2042-12-26';
 update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2042-12-27';
-update easter_daily set cells='圣家节\\8|圣诞期第一主日|诸圣婴孩(The Holy Innocents)\\1122801|', liturgic=30100, color=2 where date='2042-12-28';
+update easter_daily set cells='圣家节\\8|诸圣婴孩(The Holy Innocents)\\1122801|', liturgic=30000, color=2 where date='2042-12-28';
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2042-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2042-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2042-12-31';
@@ -13703,7 +13703,7 @@ update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地(St.
 update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2043-12-24';
 update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2043-12-25';
 update easter_daily set cells='圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|将临期第四周(星期六)|', liturgic=20406, color=3 where date='2043-12-26';
-update easter_daily set cells='圣家节\\8|圣诞期第一主日|圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|', liturgic=30100, color=2 where date='2043-12-27';
+update easter_daily set cells='圣家节\\8|圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|', liturgic=30000, color=2 where date='2043-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|圣诞期第一周(星期一)|', liturgic=30101, color=3 where date='2043-12-28';
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2043-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2043-12-30';
@@ -14067,7 +14067,7 @@ update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加�
 update easter_daily set cells='将临期 12月22日\\1122202|圣女方济加(童贞 圣心传教女修会创办人 St. Frances Xavier Cabrini 1850-1917)\\1122201|将临期第四周(星期四)|', liturgic=20404, color=4 where date='2044-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地(St. John of Kanti 1297-1473)\\1122301|将临期第四周(星期五)|', liturgic=20405, color=4 where date='2044-12-23';
 update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2044-12-24';
-update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|圣诞期第一主日|', liturgic=30100, color=2 where date='2044-12-25';
+update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|', liturgic=30000, color=2 where date='2044-12-25';
 update easter_daily set cells='圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|圣诞期第一周(星期一)|', liturgic=30101, color=3 where date='2044-12-26';
 update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2044-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|圣诞期第一周(星期三)|', liturgic=30103, color=3 where date='2044-12-28';
@@ -14438,7 +14438,7 @@ update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|将临期第四周(星期四)|', liturgic=20404, color=3 where date='2045-12-28';
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2045-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2045-12-30';
-update easter_daily set cells='圣家节\\8|圣诞节庆期第七日\\1123103|圣诞期第一主日|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30100, color=2 where date='2045-12-31';
+update easter_daily set cells='圣家节\\8|圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|', liturgic=30000, color=2 where date='2045-12-31';
 update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2046-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2046-01-02';
 update easter_daily set cells='耶稣圣名\\1010301|真福查瓦拉(Bd. Kuriakose Elias Chavara)\\1010302|圣女日南斐法(童贞 St. Genevieve)\\1010303|圣诞期 1月3日\\16|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2046-01-03';
@@ -14802,7 +14802,7 @@ update easter_daily set cells='圣斯德望(首位殉道 St. Stephen -34)\\11226
 update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2046-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|将临期第四周(星期五)|', liturgic=20405, color=3 where date='2046-12-28';
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2046-12-29';
-update easter_daily set cells='圣家节\\8|圣诞节庆期第六日\\1123002|圣诞期第一主日|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30100, color=2 where date='2046-12-30';
+update easter_daily set cells='圣家节\\8|圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|', liturgic=30000, color=2 where date='2046-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2046-12-31';
 update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2047-01-01';
 update easter_daily set cells='圣西略及圣国瑞•纳祥(St. Basil the Great & Gregory Nazianxen)\\1010201|圣诞期 1月2日\\15|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2047-01-02';
@@ -15166,7 +15166,7 @@ update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Chris
 update easter_daily set cells='圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|将临期第四周(星期四)|', liturgic=20404, color=3 where date='2047-12-26';
 update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2047-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|将临期第四周(星期六)|', liturgic=20406, color=3 where date='2047-12-28';
-update easter_daily set cells='圣家节\\8|圣诞节庆期第五日\\1122902|圣诞期第一主日|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30100, color=2 where date='2047-12-29';
+update easter_daily set cells='圣家节\\8|圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|', liturgic=30000, color=2 where date='2047-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2047-12-30';
 update easter_daily set cells='圣诞节庆期第七日\\1123103|圣西尔物斯德肋(思维 St. Silvestes 314-335)\\1123101|圣妇幼梅肋尼亚(St. Melania the Younger -439)\\1123102|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2047-12-31';
 update easter_daily set cells='天主之母节(Solemnity Mary, Mother of God)\\1010101|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2048-01-01';
@@ -15530,7 +15530,7 @@ update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地(St.
 update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2048-12-24';
 update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2048-12-25';
 update easter_daily set cells='圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|将临期第四周(星期六)|', liturgic=20406, color=3 where date='2048-12-26';
-update easter_daily set cells='圣家节\\8|圣诞期第一主日|圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|', liturgic=30100, color=2 where date='2048-12-27';
+update easter_daily set cells='圣家节\\8|圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|', liturgic=30000, color=2 where date='2048-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|圣诞期第一周(星期一)|', liturgic=30101, color=3 where date='2048-12-28';
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2048-12-29';
 update easter_daily set cells='圣诞节庆期第六日\\1123002|圣撒比诺等殉道者(Ss. Sabinus and his Companions)\\1123001|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2048-12-30';
@@ -15894,7 +15894,7 @@ update easter_daily set cells='将临期 12月22日\\1122202|圣女方济加(童
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地(St. John of Kanti 1297-1473)\\1122301|将临期第四周(星期四)|', liturgic=20404, color=4 where date='2049-12-23';
 update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2049-12-24';
 update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2049-12-25';
-update easter_daily set cells='圣家节\\8|圣诞期第一主日|圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|', liturgic=30100, color=2 where date='2049-12-26';
+update easter_daily set cells='圣家节\\8|圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|', liturgic=30000, color=2 where date='2049-12-26';
 update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2049-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|圣诞期第一周(星期二)|', liturgic=30102, color=3 where date='2049-12-28';
 update easter_daily set cells='圣诞节庆期第五日\\1122902|圣多默•贝凯(St. Thomas Becket)\\1122901|圣诞期第一周(星期三)|', liturgic=30103, color=2 where date='2049-12-29';
@@ -16258,7 +16258,7 @@ update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加�
 update easter_daily set cells='将临期 12月22日\\1122202|圣女方济加(童贞 圣心传教女修会创办人 St. Frances Xavier Cabrini 1850-1917)\\1122201|将临期第四周(星期四)|', liturgic=20404, color=4 where date='2050-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地(St. John of Kanti 1297-1473)\\1122301|将临期第四周(星期五)|', liturgic=20405, color=4 where date='2050-12-23';
 update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2050-12-24';
-update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|圣诞期第一主日|', liturgic=30100, color=2 where date='2050-12-25';
+update easter_daily set cells='耶稣圣诞(The Birthday of Our Lord Jesus Christ)\\1122501|', liturgic=30000, color=2 where date='2050-12-25';
 update easter_daily set cells='圣斯德望(首位殉道 St. Stephen -34)\\1122601|真福味增济亚(童贞 无玷圣母修会创办人 Bd. Vincentia Lopez 1847-1890)\\1122602|圣诞期第一周(星期一)|', liturgic=30101, color=3 where date='2050-12-26';
 update easter_daily set cells='圣若望(宗徒兼圣史 St. John the Evangelist -100)\\1122701|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2050-12-27';
 update easter_daily set cells='诸圣婴孩(The Holy Innocents)\\1122801|圣诞期第一周(星期三)|', liturgic=30103, color=3 where date='2050-12-28';

@@ -1175,6 +1175,12 @@ void LiturgicYear::testChristmas2(LiturgicDay& ld)
         ld.setWeekOfSeason(1);
     }
 
+    if(ld.dayOfWeek() == SUN)
+    {
+        // 省去圣诞期第一主日
+        ld.setWeekOfSeason(-1);
+    }
+
 	//圣家节
 	if(cm.dayOfWeek() == SUN)
 	{
@@ -1260,8 +1266,11 @@ std::list<CellInfo> LiturgicYear::getNormalDays()
     {
         // 圣诞期（12月25日至次年1月1日全部是特殊日期，1月2日～主显节为第二周，主显节后为第三周）
         for(int i=1; i<=2; ++i) {
-            for(int j=1; j<=6; ++j) {
-                // 不含主日（所有主日都是特殊的）
+            for(int j=0; j<=6; ++j) {
+                if(i==1 && j==0) {
+                    // 省去圣诞期第一主日
+                    continue;
+                }
                 int code = CHRISTMAS*10000 + i*100 + j;
                 days.push_back(CellInfo(code, OPTIONAL, NOCOLOR, LiturgicDay::getWeekdayString(code)));
             }

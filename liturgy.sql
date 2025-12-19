@@ -134,6 +134,10 @@ insert into easter_mass(code, name) select 30106,'圣诞期第一周(星期六)'
 update easter_mass set name='圣诞期第一周(星期六)' where code=30106;
 insert into easter_liturgy_hours(code, name) select 30106,'圣诞期第一周(星期六)' where not exists (select 1 from easter_liturgy_hours where code=30106);
 update easter_liturgy_hours set name='圣诞期第一周(星期六)' where code=30106;
+insert into easter_mass(code, name) select 30200,'圣诞期第二主日' where not exists (select 1 from easter_mass where code=30200);
+update easter_mass set name='圣诞期第二主日' where code=30200;
+insert into easter_liturgy_hours(code, name) select 30200,'圣诞期第二主日' where not exists (select 1 from easter_liturgy_hours where code=30200);
+update easter_liturgy_hours set name='圣诞期第二主日' where code=30200;
 insert into easter_mass(code, name) select 30201,'圣诞期第二周(星期一)' where not exists (select 1 from easter_mass where code=30201);
 update easter_mass set name='圣诞期第二周(星期一)' where code=30201;
 insert into easter_liturgy_hours(code, name) select 30201,'圣诞期第二周(星期一)' where not exists (select 1 from easter_liturgy_hours where code=30201);
