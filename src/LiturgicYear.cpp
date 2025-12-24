@@ -1259,7 +1259,7 @@ std::list<CellInfo> LiturgicYear::getNormalDays()
         for(int i=1; i<=4; ++i) {
             for(int j=0; j<=6; ++j) {
                 int code = ADVENT*10000 + i*100 + j;
-                days.push_back(CellInfo(code, OPTIONAL, NOCOLOR, LiturgicDay::getWeekdayString(code)));
+                days.push_back(CellInfo(code, getRankByLiturgicId(code), getColorByLiturgicId(code), LiturgicDay::getWeekdayString(code)));
             }
         }
     }
@@ -1272,7 +1272,7 @@ std::list<CellInfo> LiturgicYear::getNormalDays()
                     continue;
                 }
                 int code = CHRISTMAS*10000 + i*100 + j;
-                days.push_back(CellInfo(code, OPTIONAL, NOCOLOR, LiturgicDay::getWeekdayString(code)));
+                days.push_back(CellInfo(code, getRankByLiturgicId(code), getColorByLiturgicId(code), LiturgicDay::getWeekdayString(code)));
             }
         }
     }
@@ -1280,15 +1280,15 @@ std::list<CellInfo> LiturgicYear::getNormalDays()
         //四旬期
         //圣灰礼仪后三天（周四、周五、周六）
         int code = LENT*10000 + 0*100 + 4;
-        days.push_back(CellInfo(code, OPTIONAL, NOCOLOR, LiturgicDay::getWeekdayString(code)));
+        days.push_back(CellInfo(code, WEEKDAY, PURPLE, LiturgicDay::getWeekdayString(code)));
         code++;
-        days.push_back(CellInfo(code, OPTIONAL, NOCOLOR, LiturgicDay::getWeekdayString(code)));
+        days.push_back(CellInfo(code, WEEKDAY, PURPLE, LiturgicDay::getWeekdayString(code)));
         code++;
-        days.push_back(CellInfo(code, OPTIONAL, NOCOLOR, LiturgicDay::getWeekdayString(code)));
+        days.push_back(CellInfo(code, WEEKDAY, PURPLE, LiturgicDay::getWeekdayString(code)));
         for(int i=1; i<=6; ++i) {
             for(int j=0; j<=6; ++j) {
                 int code = LENT*10000 + i*100 + j;
-                days.push_back(CellInfo(code, OPTIONAL, NOCOLOR, LiturgicDay::getWeekdayString(code)));
+                days.push_back(CellInfo(code, getRankByLiturgicId(code), getColorByLiturgicId(code), LiturgicDay::getWeekdayString(code)));
             }
         }
     }
@@ -1297,7 +1297,7 @@ std::list<CellInfo> LiturgicYear::getNormalDays()
         for(int i=1; i<=7; ++i) {
             for(int j=0; j<=6; ++j) {
                 int code = EASTER*10000 + i*100 + j;
-                days.push_back(CellInfo(code, OPTIONAL, NOCOLOR, LiturgicDay::getWeekdayString(code)));
+                days.push_back(CellInfo(code, getRankByLiturgicId(code), getColorByLiturgicId(code), LiturgicDay::getWeekdayString(code)));
             }
         }
     }
@@ -1306,7 +1306,7 @@ std::list<CellInfo> LiturgicYear::getNormalDays()
         for(int i=1; i<=34; ++i) {
             for(int j=0; j<=6; ++j) {
                 int code = ORDINARY*10000 + i*100 + j;
-                days.push_back(CellInfo(code, OPTIONAL, NOCOLOR, LiturgicDay::getWeekdayString(code)));
+                days.push_back(CellInfo(code, getRankByLiturgicId(code), getColorByLiturgicId(code), LiturgicDay::getWeekdayString(code)));
             }
         }
     }

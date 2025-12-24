@@ -202,6 +202,158 @@ namespace CathAssist
 		   AUGUST,   SEPTEMBER, OCTOBER, NOVEMBER,
 		   DECEMBER, NEXTJAN
 		} month_t;
+
+		/*
+		 * Liturgical Seasons
+		 */
+		typedef enum Seasons
+        {
+		   ORDINARY = 1,
+		   ADVENT,
+		   CHRISTMAS,
+		   LENT,
+		   EASTER,
+		   PASCHAL	/* Ash Wed., Holy Week & Easter Octave 	*/
+		} season_t;
+        
+        static std::string getSeasonStr(season_t s, const LanguageCodes& lang = LANG_ZH_CN)
+        {
+            if(lang == LANG_ZH_CN) {
+                switch(s)
+                {
+                    case ORDINARY:
+                        return "常年期";
+                        break;
+                    case ADVENT:
+                        return "将临期";
+                        break;
+                    case CHRISTMAS:
+                        return "圣诞期";
+                        break;
+                    case LENT:
+                        return "四旬期";
+                        break;
+                    case EASTER:
+                        return "复活期";
+                        break;
+                    case PASCHAL:
+                        return "逾越节";	//Ash Wed., Holy Week & Easter Octave
+                        break;
+                }
+            } else if(lang == LANG_EN) {
+                switch(s)
+                {
+                    case ORDINARY:
+                        return "Ordinary Time";
+                        break;
+                    case ADVENT:
+                        return "Advent";
+                        break;
+                    case CHRISTMAS:
+                        return "Christmas";
+                        break;
+                    case LENT:
+                        return "Lent";
+                        break;
+                    case EASTER:
+                        return "Easter";
+                        break;
+                    case PASCHAL:
+                        return "Paschal";	//Ash Wed., Holy Week & Easter Octave
+                        break;
+                }
+            } else if(lang == LANG_ZH_TW) {
+                switch(s)
+                {
+                    case ORDINARY:
+                        return "常年期";
+                        break;
+                    case ADVENT:
+                        return "將臨期";
+                        break;
+                    case CHRISTMAS:
+                        return "聖誕期";
+                        break;
+                    case LENT:
+                        return "四旬期";
+                        break;
+                    case EASTER:
+                        return "復活期";
+                        break;
+                    case PASCHAL:
+                        return "逾越節";	//Ash Wed., Holy Week & Easter Octave
+                        break;
+                }
+            } else if (lang == LANG_ES_ES) {
+                switch(s)
+                {
+                    case ORDINARY:
+                        return "Tiempo Ordinario";
+                        break;
+                    case ADVENT:
+                        return "Adviento";
+                        break;
+                    case CHRISTMAS:
+                        return "Navidad";
+                        break;
+                    case LENT:
+                        return "Cuaresma";
+                        break;
+                    case EASTER:
+                        return "Pascua";
+                        break;
+                    case PASCHAL:
+                        return "Pascual";	//Ash Wed., Holy Week & Easter Octave
+                        break;
+                }
+            } else if(lang == LANG_IT_IT) {
+                switch(s)
+                {
+                    case ORDINARY:
+                        return "Tempo Ordinario";
+                        break;
+                    case ADVENT:
+                        return "Avvento";
+                        break;
+                    case CHRISTMAS:
+                        return "Natale";
+                        break;
+                    case LENT:
+                        return "Quaresima";
+                        break;
+                    case EASTER:
+                        return "Pasqua";
+                        break;
+                    case PASCHAL:
+                        return "Pasquale";	//Ash Wed., Holy Week & Easter Octave
+                        break;
+                }
+            } else if (lang == LANG_PT_BR) {
+                switch(s)
+                {
+                    case ORDINARY:
+                        return "Tempo Comum";
+                        break;
+                    case ADVENT:
+                        return "Advento";
+                        break;
+                    case CHRISTMAS:
+                        return "Natal";
+                        break;
+                    case LENT:
+                        return "Quaresma";
+                        break;
+                    case EASTER:
+                        return "Páscoa";
+                        break;
+                    case PASCHAL:
+                        return "Pascal";	//Ash Wed., Holy Week & Easter Octave
+                        break;
+                }
+            }
+            return "Not define";
+        }
+
 		/*
 		 * Liturgical Colors
 		 */
@@ -394,7 +546,52 @@ namespace CathAssist
             }
             return "Not define";
         }
-		/*
+
+        static color_t getColorByLiturgicId(int liturgicId)
+        {
+            int season = liturgicId / 10000;
+            int weekOfSeason = (liturgicId % 10000) / 100;
+            int dayOfWeek = liturgicId % 100;
+
+            Colors _clr = NOCOLOR;
+            if(ORDINARY == season)
+            {
+                _clr = GREEN;
+            }
+            else if(LENT == season)
+            {
+                if(dayOfWeek==SUN && weekOfSeason == 4)
+                {
+                    _clr = ROSE;
+                }
+                else
+                {
+                    _clr = PURPLE;
+                }
+            }
+            else if(EASTER == season)
+            {
+                _clr = WHITE;
+            }
+            else if(ADVENT == season)
+            {
+                if(dayOfWeek == SUN && weekOfSeason == 3)
+                {
+                    _clr = ROSE;
+                }
+                else
+                {
+                    _clr = PURPLE;
+                }
+            }
+            else if(CHRISTMAS == season)
+            {
+                _clr = WHITE;
+            }
+            return _clr;
+        }
+
+        /*
 		 * Liturgical Ranks
 		 */
 		typedef enum Ranks
@@ -456,155 +653,36 @@ namespace CathAssist
             return "Not define";
         }
         
-		/*
-		 * Liturgical Seasons
-		 */
-		typedef enum Seasons
-        {
-		   ORDINARY = 1,
-		   ADVENT,
-		   CHRISTMAS,
-		   LENT,
-		   EASTER,
-		   PASCHAL	/* Ash Wed., Holy Week & Easter Octave 	*/
-		} season_t;
-        
-        static std::string getSeasonStr(season_t s, const LanguageCodes& lang = LANG_ZH_CN)
-        {
-            if(lang == LANG_ZH_CN) {
-                switch(s)
-                {
-                    case ORDINARY:
-                        return "常年期";
-                        break;
-                    case ADVENT:
-                        return "将临期";
-                        break;
-                    case CHRISTMAS:
-                        return "圣诞期";
-                        break;
-                    case LENT:
-                        return "四旬期";
-                        break;
-                    case EASTER:
-                        return "复活期";
-                        break;
-                    case PASCHAL:
-                        return "逾越节";	//Ash Wed., Holy Week & Easter Octave
-                        break;
-                }
-            } else if(lang == LANG_EN) {
-                switch(s)
-                {
-                    case ORDINARY:
-                        return "Ordinary Time";
-                        break;
-                    case ADVENT:
-                        return "Advent";
-                        break;
-                    case CHRISTMAS:
-                        return "Christmas";
-                        break;
-                    case LENT:
-                        return "Lent";
-                        break;
-                    case EASTER:
-                        return "Easter";
-                        break;
-                    case PASCHAL:
-                        return "Paschal";	//Ash Wed., Holy Week & Easter Octave
-                        break;
-                }
-            } else if(lang == LANG_ZH_TW) {
-                switch(s)
-                {
-                    case ORDINARY:
-                        return "常年期";
-                        break;
-                    case ADVENT:
-                        return "將臨期";
-                        break;
-                    case CHRISTMAS:
-                        return "聖誕期";
-                        break;
-                    case LENT:
-                        return "四旬期";
-                        break;
-                    case EASTER:
-                        return "復活期";
-                        break;
-                    case PASCHAL:
-                        return "逾越節";	//Ash Wed., Holy Week & Easter Octave
-                        break;
-                }
-            } else if (lang == LANG_ES_ES) {
-                switch(s)
-                {
-                    case ORDINARY:
-                        return "Tiempo Ordinario";
-                        break;
-                    case ADVENT:
-                        return "Adviento";
-                        break;
-                    case CHRISTMAS:
-                        return "Navidad";
-                        break;
-                    case LENT:
-                        return "Cuaresma";
-                        break;
-                    case EASTER:
-                        return "Pascua";
-                        break;
-                    case PASCHAL:
-                        return "Pascual";	//Ash Wed., Holy Week & Easter Octave
-                        break;
-                }
-            } else if(lang == LANG_IT_IT) {
-                switch(s)
-                {
-                    case ORDINARY:
-                        return "Tempo Ordinario";
-                        break;
-                    case ADVENT:
-                        return "Avvento";
-                        break;
-                    case CHRISTMAS:
-                        return "Natale";
-                        break;
-                    case LENT:
-                        return "Quaresima";
-                        break;
-                    case EASTER:
-                        return "Pasqua";
-                        break;
-                    case PASCHAL:
-                        return "Pasquale";	//Ash Wed., Holy Week & Easter Octave
-                        break;
-                }
-            } else if (lang == LANG_PT_BR) {
-                switch(s)
-                {
-                    case ORDINARY:
-                        return "Tempo Comum";
-                        break;
-                    case ADVENT:
-                        return "Advento";
-                        break;
-                    case CHRISTMAS:
-                        return "Natal";
-                        break;
-                    case LENT:
-                        return "Quaresma";
-                        break;
-                    case EASTER:
-                        return "Páscoa";
-                        break;
-                    case PASCHAL:
-                        return "Pascal";	//Ash Wed., Holy Week & Easter Octave
-                        break;
+
+        static rank_t getRankByLiturgicId(int liturgicId) {
+            int season = liturgicId / 10000;
+            int weekOfSeason = (liturgicId % 10000) / 100;
+            int dayOfWeek = liturgicId % 100;
+            rank_t _rank = WEEKDAY;
+
+            if(dayOfWeek == SUN) {
+                _rank = SUNDAY;
+            }
+
+            if(season == EASTER) {
+                if((weekOfSeason == 1 || weekOfSeason == 2) && dayOfWeek == SUN) {
+                    _rank = ErrorRank;
                 }
             }
-            return "Not define";
+            else if(CHRISTMAS == season) {
+                /*
+                if(dayOfWeek == SUN) {
+                    // 圣诞期所有主日都是特殊的
+                    _rank = ErrorRank;
+                }
+                */
+            }
+
+            if(weekOfSeason < 0) {
+                _rank = ErrorRank;
+            }
+
+            return _rank;
         }
 
         static std::string intToRoman(int num) {

@@ -123,67 +123,13 @@ void CathAssist::Calendar::LiturgicDay::appendCell(const int& id)
 
 CellInfo LiturgicDay::getLiturgicCellInfo() const
 {
-	Colors _clr = NOCOLOR;
-	rank_t _rank = WEEKDAY;
-
-	if(dayOfWeek()==SUN)
-	{
-		_rank = SUNDAY;
-	}
-
-	if(ORDINARY == season)
-	{
-		_clr = GREEN;
-	}
-	else if(LENT == season)
-	{
-		if(dayOfWeek()==SUN && getWeekOfSeason() == 4)
-		{
-			_clr = ROSE;
-		}
-		else
-		{
-			_clr = PURPLE;
-		}
-	}
-	else if(EASTER == season)
-	{
-		if((getWeekOfSeason()==1 || getWeekOfSeason()==2) && dayOfWeek()==0)
-		{
-			//复活节八日庆典（已特殊定义）
-			_rank = ErrorRank;
-		}
-		else
-		{
-			_clr = WHITE;
-		}
-	}
-	else if(ADVENT == season)
-	{
-		if(dayOfWeek() == SUN && getWeekOfSeason()==3)
-		{
-			_clr = ROSE;
-		}
-		else
-		{
-			_clr = PURPLE;
-		}
-	}
-	else if(CHRISTMAS == season)
-	{
-		/*
-		if(dayOfWeek()==SUN) {
-			// 圣诞期所有主日都是特殊的
-			_rank = ErrorRank;
-		}
-		*/
-		_clr = WHITE;
-	}
-
-	if(getWeekOfSeason() < 0) {
+	int liturgicId = getLiturgicId();
+	Colors _clr = getColorByLiturgicId(liturgicId);
+	rank_t _rank = getRankByLiturgicId(liturgicId);
+	
+	if(weekOfSeason < 0) {
 		_rank = ErrorRank;
 	}
-    
 	return CellInfo(_rank, _clr, toWeekdayString());
 }
 
