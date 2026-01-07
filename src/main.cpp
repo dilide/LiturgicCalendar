@@ -494,7 +494,10 @@ void export_to_catholicism()
                     if(iterCell->code > 0) {
                         ostr<<iterCell->code<<",";
                     } else {
-                        ostr<<iLiturgicDay<<",";
+                        // 判断 ostr 是否已经有 iLiturgicDay
+                        if(ostr.str().find(std::to_string(iLiturgicDay)) == std::string::npos) {
+                            ostr<<iLiturgicDay<<",";
+                        }
                     }
 
                     ++iterCell;
