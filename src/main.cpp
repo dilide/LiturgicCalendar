@@ -4,6 +4,7 @@
 #include <iostream>
 #include <iomanip>
 #include <fstream>
+#include <list>
 #include "sqlite/sqlite3.h"
 #include "CharConverter.h"
 #include "Calendar.h"
@@ -486,25 +487,31 @@ void export_to_catholicism()
 
                 unsigned int iLiturgicDay = dayInfo.getLiturgicId();
 
+                std::list<int> listCodes;   // 去重后的节日代码列表
                 std::ostringstream ostr;
                 auto cells = dayInfo.getCellInfos();
                 auto iterCell = cells.begin();
                 while (iterCell!=cells.end())
                 {
+                    int c = -1;
                     if(iterCell->code > 0) {
-                        ostr<<iterCell->code<<",";
+                        c = iterCell->code;
                     } else {
-                        // 判断 ostr 是否已经有 iLiturgicDay
-                        if(ostr.str().find(std::to_string(iLiturgicDay)) == std::string::npos) {
-                            ostr<<iLiturgicDay<<",";
-                        }
+                        c = iLiturgicDay;
+                    }
+                    if(std::find(listCodes.begin(), listCodes.end(), c) == listCodes.end()) {
+                        listCodes.push_back(c);
                     }
 
                     ++iterCell;
                 }
+
+                for(auto iterCode = listCodes.begin(); iterCode != listCodes.end(); ++iterCode) {
+                    ostr<<*iterCode<<",";
+                }
                 std::string strCodes = ostr.str();
                 if(!strCodes.empty()) {
-                    strCodes = strCodes.substr(0, strCodes.length()-1);
+                    strCodes.pop_back();
                 }
 
                 of <<"insert into c_daily(date, liturgic, color, codes) values("
