@@ -470,56 +470,57 @@ void export_to_catholicism()
                 ++iter;
             }
         }
-        Calendar::releaseCalendar();
-    }
 
-    {
+
         // 更新每日信息
-        CathAssist::Calendar::MultiLang::setLangCode(CathAssist::Calendar::LANG_ZH_CN);
-        Calendar::initCalendar();
-        for(int iYear=2010;iYear<2051;++iYear)
         {
-            CathAssist::Calendar::Date dtBegin(iYear,1,1);
+            // 清空所有数据
+            of<< "delete from c_daily;"<<std::endl;
+            for(int iYear=2010;iYear<2051;++iYear) {
+                CathAssist::Calendar::Date dtBegin(iYear,1,1);
+                of<<"-- Year: "<<iYear<<", Lang:"<<langStr<<std::endl;
+                of<<"insert into c_daily(date, lang, liturgic, color, codes) values "<<std::endl;
 
-            while (dtBegin.year()==iYear)
-            {
-                LiturgicDay dayInfo = Calendar::getLiturgicDay(dtBegin);
-
-                unsigned int iLiturgicDay = dayInfo.getLiturgicId();
-
-                std::list<int> listCodes;   // 去重后的节日代码列表
-                std::ostringstream ostr;
-                auto cells = dayInfo.getCellInfos();
-                auto iterCell = cells.begin();
-                while (iterCell!=cells.end())
+                while (dtBegin.year()==iYear)
                 {
-                    int c = -1;
-                    if(iterCell->code > 0) {
-                        c = iterCell->code;
-                    } else {
-                        c = iLiturgicDay;
+                    LiturgicDay dayInfo = Calendar::getLiturgicDay(dtBegin);
+
+                    unsigned int iLiturgicDay = dayInfo.getLiturgicId();
+
+                    std::list<int> listCodes;   // 去重后的节日代码列表
+                    std::ostringstream ostr;
+                    auto cells = dayInfo.getCellInfos();
+                    auto iterCell = cells.begin();
+                    while (iterCell!=cells.end())
+                    {
+                        int c = -1;
+                        if(iterCell->code > 0) {
+                            c = iterCell->code;
+                        } else {
+                            c = iLiturgicDay;
+                        }
+                        if(std::find(listCodes.begin(), listCodes.end(), c) == listCodes.end()) {
+                            listCodes.push_back(c);
+                        }
+
+                        ++iterCell;
                     }
-                    if(std::find(listCodes.begin(), listCodes.end(), c) == listCodes.end()) {
-                        listCodes.push_back(c);
+
+                    for(auto iterCode = listCodes.begin(); iterCode != listCodes.end(); ++iterCode) {
+                        ostr<<*iterCode<<",";
+                    }
+                    std::string strCodes = ostr.str();
+                    if(!strCodes.empty()) {
+                        strCodes.pop_back();
                     }
 
-                    ++iterCell;
+                    // c_daily(date, lang, liturgic, color, codes)
+                    of <<"('"<<ansi2utf8(dayInfo.toString())<<"',"<<lang<<","<<iLiturgicDay<<","<<dayInfo.getColor()<<",'"<<ansi2utf8(sqlite3_mprintf("{%q}",strCodes.c_str()))<<"'),"<<std::endl;
+                    dtBegin = dtBegin.addDays(1);
                 }
-
-                for(auto iterCode = listCodes.begin(); iterCode != listCodes.end(); ++iterCode) {
-                    ostr<<*iterCode<<",";
-                }
-                std::string strCodes = ostr.str();
-                if(!strCodes.empty()) {
-                    strCodes.pop_back();
-                }
-
-                of <<"insert into c_daily(date, liturgic, color, codes) values("
-                <<"'"<<ansi2utf8(dayInfo.toString())<<"',"<<iLiturgicDay<<","<<dayInfo.getColor()<<",'"<<ansi2utf8(sqlite3_mprintf("{%q}",strCodes.c_str()))<<"')"
-                <<" on conflict (date) do update set liturgic="<<iLiturgicDay<<", color="<<dayInfo.getColor()<<", codes='"<<ansi2utf8(sqlite3_mprintf("{%q}",strCodes.c_str()))<<"';"
-                <<std::endl;
-
-                dtBegin = dtBegin.addDays(1);
+                // 删除最后一个字符 ','
+                of.seekp(-2, std::ios_base::end);
+                of<<";"<<std::endl;
             }
         }
         Calendar::releaseCalendar();
