@@ -443,6 +443,8 @@ void export_to_catholicism()
     }
     Calendar::releaseCalendar();
     
+    // 清空c_daily中的所有数据
+    of<< "delete from c_daily;"<<std::endl;
     for(int lang=CathAssist::Calendar::LANG_EN; lang <= CathAssist::Calendar::LANG_PT_BR; ++lang) {
         CathAssist::Calendar::MultiLang::setLangCode(static_cast<CathAssist::Calendar::langcode_t>(lang));
         langStr = CathAssist::Calendar::getLangCodeStr(static_cast<CathAssist::Calendar::langcode_t>(lang));
@@ -474,8 +476,6 @@ void export_to_catholicism()
 
         // 更新每日信息
         {
-            // 清空所有数据
-            of<< "delete from c_daily;"<<std::endl;
             for(int iYear=2010;iYear<2051;++iYear) {
                 CathAssist::Calendar::Date dtBegin(iYear,1,1);
                 of<<"-- Year: "<<iYear<<", Lang:"<<langStr<<std::endl;
