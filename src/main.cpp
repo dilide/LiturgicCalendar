@@ -577,12 +577,6 @@ int main(int argc, char *argv[])
         export_to_liturgy();
 
         export_to_catholicism();
-
-        for(int lang=CathAssist::Calendar::LANG_EN; lang <= CathAssist::Calendar::LANG_PT_BR; ++lang) {
-            CathAssist::Calendar::MultiLang::setLangCode(static_cast<CathAssist::Calendar::langcode_t>(lang));
-            std::string strDbName = "liturgic." + CathAssist::Calendar::getLangCodeStr(static_cast<CathAssist::Calendar::langcode_t>(lang)) + ".db";
-            export_to_sqlite(strDbName);
-        }
     }
     
     if(true)

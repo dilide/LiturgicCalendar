@@ -2028,7 +2028,7 @@ update easter_daily set cells='圣牛曼(St. John Nepornucene Neumann)\\1010501|
 update easter_daily set cells='真福辣法厄尔•玛利亚(童贞圣心婢女会会祖 Bd. Raphaela Mary)\\1010602|圣诞期 1月6日\\19|圣诞期第二周(星期五)|', liturgic=30205, color=2 where date='2012-01-06';
 update easter_daily set cells='圣赖孟多(St. Raymond of Penyafort)\\1010701|圣诞期 1月7日\\20|圣诞期第二周(星期六)|', liturgic=30206, color=2 where date='2012-01-07';
 update easter_daily set cells='主显节(Epiphany of the Lord)\\1|圣塞味利•诺利根(St. Severin of Noricun)\\1010801|', liturgic=30000, color=2 where date='2012-01-08';
-update easter_daily set cells='主受洗日(Baptism of the Lord)\\2|圣哈德良(坎特培里院长 St. Adrian)\\1010901|', liturgic=30001, color=2 where date='2012-01-09';
+update easter_daily set cells='主受洗日(Baptism of the Lord)\\2|圣哈德良(坎特培里院长 St. Adrian)\\1010901|常年期第一周(星期一)|', liturgic=10101, color=2 where date='2012-01-09';
 update easter_daily set cells='圣阿加道(教宗 St. Agatho)\\1011001|真福额我略十世(教宗 Bd. Gregory X)\\1011002|常年期第一周(星期二)|', liturgic=10102, color=1 where date='2012-01-10';
 update easter_daily set cells='圣戴沃多西(St. Theodosius the Cenobiarch)\\1011101|常年期第一周(星期三)|', liturgic=10103, color=1 where date='2012-01-11';
 update easter_daily set cells='圣本笃•波斯哥(修院院长 St. Benedict Biscop)\\1011201|常年期第一周(星期四)|', liturgic=10104, color=1 where date='2012-01-12';
@@ -3855,7 +3855,7 @@ update easter_daily set cells='圣牛曼(St. John Nepornucene Neumann)\\1010501|
 update easter_daily set cells='真福辣法厄尔•玛利亚(童贞圣心婢女会会祖 Bd. Raphaela Mary)\\1010602|圣诞期 1月6日\\19|圣诞期第二周(星期五)|', liturgic=30205, color=2 where date='2017-01-06';
 update easter_daily set cells='圣赖孟多(St. Raymond of Penyafort)\\1010701|圣诞期 1月7日\\20|圣诞期第二周(星期六)|', liturgic=30206, color=2 where date='2017-01-07';
 update easter_daily set cells='主显节(Epiphany of the Lord)\\1|圣塞味利•诺利根(St. Severin of Noricun)\\1010801|', liturgic=30000, color=2 where date='2017-01-08';
-update easter_daily set cells='主受洗日(Baptism of the Lord)\\2|圣哈德良(坎特培里院长 St. Adrian)\\1010901|', liturgic=30001, color=2 where date='2017-01-09';
+update easter_daily set cells='主受洗日(Baptism of the Lord)\\2|圣哈德良(坎特培里院长 St. Adrian)\\1010901|常年期第一周(星期一)|', liturgic=10101, color=2 where date='2017-01-09';
 update easter_daily set cells='圣阿加道(教宗 St. Agatho)\\1011001|真福额我略十世(教宗 Bd. Gregory X)\\1011002|常年期第一周(星期二)|', liturgic=10102, color=1 where date='2017-01-10';
 update easter_daily set cells='圣戴沃多西(St. Theodosius the Cenobiarch)\\1011101|常年期第一周(星期三)|', liturgic=10103, color=1 where date='2017-01-11';
 update easter_daily set cells='圣本笃•波斯哥(修院院长 St. Benedict Biscop)\\1011201|常年期第一周(星期四)|', liturgic=10104, color=1 where date='2017-01-12';
@@ -4219,7 +4219,7 @@ update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabet
 update easter_daily set cells='圣牛曼(St. John Nepornucene Neumann)\\1010501|圣西默盎“石柱人”(St. Simeon the Stylite)\\1010502|圣诞期 1月5日\\18|圣诞期第一周(星期五)|', liturgic=30105, color=2 where date='2018-01-05';
 update easter_daily set cells='真福辣法厄尔•玛利亚(童贞圣心婢女会会祖 Bd. Raphaela Mary)\\1010602|圣诞期 1月6日\\19|圣诞期第一周(星期六)|', liturgic=30106, color=2 where date='2018-01-06';
 update easter_daily set cells='主显节(Epiphany of the Lord)\\1|圣诞期第二主日|圣赖孟多(St. Raymond of Penyafort)\\1010701|', liturgic=30200, color=2 where date='2018-01-07';
-update easter_daily set cells='主受洗日(Baptism of the Lord)\\2|圣塞味利•诺利根(St. Severin of Noricun)\\1010801|', liturgic=30001, color=2 where date='2018-01-08';
+update easter_daily set cells='主受洗日(Baptism of the Lord)\\2|圣塞味利•诺利根(St. Severin of Noricun)\\1010801|常年期第一周(星期一)|', liturgic=10101, color=2 where date='2018-01-08';
 update easter_daily set cells='圣哈德良(坎特培里院长 St. Adrian)\\1010901|常年期第一周(星期二)|', liturgic=10102, color=1 where date='2018-01-09';
 update easter_daily set cells='圣阿加道(教宗 St. Agatho)\\1011001|真福额我略十世(教宗 Bd. Gregory X)\\1011002|常年期第一周(星期三)|', liturgic=10103, color=1 where date='2018-01-10';
 update easter_daily set cells='圣戴沃多西(St. Theodosius the Cenobiarch)\\1011101|常年期第一周(星期四)|', liturgic=10104, color=1 where date='2018-01-11';
@@ -6046,7 +6046,7 @@ update easter_daily set cells='圣牛曼(St. John Nepornucene Neumann)\\1010501|
 update easter_daily set cells='真福辣法厄尔•玛利亚(童贞圣心婢女会会祖 Bd. Raphaela Mary)\\1010602|圣诞期 1月6日\\19|圣诞期第二周(星期五)|', liturgic=30205, color=2 where date='2023-01-06';
 update easter_daily set cells='圣赖孟多(St. Raymond of Penyafort)\\1010701|圣诞期 1月7日\\20|圣诞期第二周(星期六)|', liturgic=30206, color=2 where date='2023-01-07';
 update easter_daily set cells='主显节(Epiphany of the Lord)\\1|圣塞味利•诺利根(St. Severin of Noricun)\\1010801|', liturgic=30000, color=2 where date='2023-01-08';
-update easter_daily set cells='主受洗日(Baptism of the Lord)\\2|圣哈德良(坎特培里院长 St. Adrian)\\1010901|', liturgic=30001, color=2 where date='2023-01-09';
+update easter_daily set cells='主受洗日(Baptism of the Lord)\\2|圣哈德良(坎特培里院长 St. Adrian)\\1010901|常年期第一周(星期一)|', liturgic=10101, color=2 where date='2023-01-09';
 update easter_daily set cells='圣阿加道(教宗 St. Agatho)\\1011001|真福额我略十世(教宗 Bd. Gregory X)\\1011002|常年期第一周(星期二)|', liturgic=10102, color=1 where date='2023-01-10';
 update easter_daily set cells='圣戴沃多西(St. Theodosius the Cenobiarch)\\1011101|常年期第一周(星期三)|', liturgic=10103, color=1 where date='2023-01-11';
 update easter_daily set cells='圣本笃•波斯哥(修院院长 St. Benedict Biscop)\\1011201|常年期第一周(星期四)|', liturgic=10104, color=1 where date='2023-01-12';
@@ -6410,7 +6410,7 @@ update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabet
 update easter_daily set cells='圣牛曼(St. John Nepornucene Neumann)\\1010501|圣西默盎“石柱人”(St. Simeon the Stylite)\\1010502|圣诞期 1月5日\\18|圣诞期第一周(星期五)|', liturgic=30105, color=2 where date='2024-01-05';
 update easter_daily set cells='真福辣法厄尔•玛利亚(童贞圣心婢女会会祖 Bd. Raphaela Mary)\\1010602|圣诞期 1月6日\\19|圣诞期第一周(星期六)|', liturgic=30106, color=2 where date='2024-01-06';
 update easter_daily set cells='主显节(Epiphany of the Lord)\\1|圣诞期第二主日|圣赖孟多(St. Raymond of Penyafort)\\1010701|', liturgic=30200, color=2 where date='2024-01-07';
-update easter_daily set cells='主受洗日(Baptism of the Lord)\\2|圣塞味利•诺利根(St. Severin of Noricun)\\1010801|', liturgic=30001, color=2 where date='2024-01-08';
+update easter_daily set cells='主受洗日(Baptism of the Lord)\\2|圣塞味利•诺利根(St. Severin of Noricun)\\1010801|常年期第一周(星期一)|', liturgic=10101, color=2 where date='2024-01-08';
 update easter_daily set cells='圣哈德良(坎特培里院长 St. Adrian)\\1010901|常年期第一周(星期二)|', liturgic=10102, color=1 where date='2024-01-09';
 update easter_daily set cells='圣阿加道(教宗 St. Agatho)\\1011001|真福额我略十世(教宗 Bd. Gregory X)\\1011002|常年期第一周(星期三)|', liturgic=10103, color=1 where date='2024-01-10';
 update easter_daily set cells='圣戴沃多西(St. Theodosius the Cenobiarch)\\1011101|常年期第一周(星期四)|', liturgic=10104, color=1 where date='2024-01-11';
@@ -8237,7 +8237,7 @@ update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabet
 update easter_daily set cells='圣牛曼(St. John Nepornucene Neumann)\\1010501|圣西默盎“石柱人”(St. Simeon the Stylite)\\1010502|圣诞期 1月5日\\18|圣诞期第一周(星期五)|', liturgic=30105, color=2 where date='2029-01-05';
 update easter_daily set cells='真福辣法厄尔•玛利亚(童贞圣心婢女会会祖 Bd. Raphaela Mary)\\1010602|圣诞期 1月6日\\19|圣诞期第一周(星期六)|', liturgic=30106, color=2 where date='2029-01-06';
 update easter_daily set cells='主显节(Epiphany of the Lord)\\1|圣诞期第二主日|圣赖孟多(St. Raymond of Penyafort)\\1010701|', liturgic=30200, color=2 where date='2029-01-07';
-update easter_daily set cells='主受洗日(Baptism of the Lord)\\2|圣塞味利•诺利根(St. Severin of Noricun)\\1010801|', liturgic=30001, color=2 where date='2029-01-08';
+update easter_daily set cells='主受洗日(Baptism of the Lord)\\2|圣塞味利•诺利根(St. Severin of Noricun)\\1010801|常年期第一周(星期一)|', liturgic=10101, color=2 where date='2029-01-08';
 update easter_daily set cells='圣哈德良(坎特培里院长 St. Adrian)\\1010901|常年期第一周(星期二)|', liturgic=10102, color=1 where date='2029-01-09';
 update easter_daily set cells='圣阿加道(教宗 St. Agatho)\\1011001|真福额我略十世(教宗 Bd. Gregory X)\\1011002|常年期第一周(星期三)|', liturgic=10103, color=1 where date='2029-01-10';
 update easter_daily set cells='圣戴沃多西(St. Theodosius the Cenobiarch)\\1011101|常年期第一周(星期四)|', liturgic=10104, color=1 where date='2029-01-11';
@@ -10064,7 +10064,7 @@ update easter_daily set cells='圣牛曼(St. John Nepornucene Neumann)\\1010501|
 update easter_daily set cells='真福辣法厄尔•玛利亚(童贞圣心婢女会会祖 Bd. Raphaela Mary)\\1010602|圣诞期 1月6日\\19|圣诞期第二周(星期五)|', liturgic=30205, color=2 where date='2034-01-06';
 update easter_daily set cells='圣赖孟多(St. Raymond of Penyafort)\\1010701|圣诞期 1月7日\\20|圣诞期第二周(星期六)|', liturgic=30206, color=2 where date='2034-01-07';
 update easter_daily set cells='主显节(Epiphany of the Lord)\\1|圣塞味利•诺利根(St. Severin of Noricun)\\1010801|', liturgic=30000, color=2 where date='2034-01-08';
-update easter_daily set cells='主受洗日(Baptism of the Lord)\\2|圣哈德良(坎特培里院长 St. Adrian)\\1010901|', liturgic=30001, color=2 where date='2034-01-09';
+update easter_daily set cells='主受洗日(Baptism of the Lord)\\2|圣哈德良(坎特培里院长 St. Adrian)\\1010901|常年期第一周(星期一)|', liturgic=10101, color=2 where date='2034-01-09';
 update easter_daily set cells='圣阿加道(教宗 St. Agatho)\\1011001|真福额我略十世(教宗 Bd. Gregory X)\\1011002|常年期第一周(星期二)|', liturgic=10102, color=1 where date='2034-01-10';
 update easter_daily set cells='圣戴沃多西(St. Theodosius the Cenobiarch)\\1011101|常年期第一周(星期三)|', liturgic=10103, color=1 where date='2034-01-11';
 update easter_daily set cells='圣本笃•波斯哥(修院院长 St. Benedict Biscop)\\1011201|常年期第一周(星期四)|', liturgic=10104, color=1 where date='2034-01-12';
@@ -10428,7 +10428,7 @@ update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabet
 update easter_daily set cells='圣牛曼(St. John Nepornucene Neumann)\\1010501|圣西默盎“石柱人”(St. Simeon the Stylite)\\1010502|圣诞期 1月5日\\18|圣诞期第一周(星期五)|', liturgic=30105, color=2 where date='2035-01-05';
 update easter_daily set cells='真福辣法厄尔•玛利亚(童贞圣心婢女会会祖 Bd. Raphaela Mary)\\1010602|圣诞期 1月6日\\19|圣诞期第一周(星期六)|', liturgic=30106, color=2 where date='2035-01-06';
 update easter_daily set cells='主显节(Epiphany of the Lord)\\1|圣诞期第二主日|圣赖孟多(St. Raymond of Penyafort)\\1010701|', liturgic=30200, color=2 where date='2035-01-07';
-update easter_daily set cells='主受洗日(Baptism of the Lord)\\2|圣塞味利•诺利根(St. Severin of Noricun)\\1010801|', liturgic=30001, color=2 where date='2035-01-08';
+update easter_daily set cells='主受洗日(Baptism of the Lord)\\2|圣塞味利•诺利根(St. Severin of Noricun)\\1010801|常年期第一周(星期一)|', liturgic=10101, color=2 where date='2035-01-08';
 update easter_daily set cells='圣哈德良(坎特培里院长 St. Adrian)\\1010901|常年期第一周(星期二)|', liturgic=10102, color=1 where date='2035-01-09';
 update easter_daily set cells='圣阿加道(教宗 St. Agatho)\\1011001|真福额我略十世(教宗 Bd. Gregory X)\\1011002|常年期第一周(星期三)|', liturgic=10103, color=1 where date='2035-01-10';
 update easter_daily set cells='圣戴沃多西(St. Theodosius the Cenobiarch)\\1011101|常年期第一周(星期四)|', liturgic=10104, color=1 where date='2035-01-11';
@@ -12255,7 +12255,7 @@ update easter_daily set cells='圣牛曼(St. John Nepornucene Neumann)\\1010501|
 update easter_daily set cells='真福辣法厄尔•玛利亚(童贞圣心婢女会会祖 Bd. Raphaela Mary)\\1010602|圣诞期 1月6日\\19|圣诞期第二周(星期五)|', liturgic=30205, color=2 where date='2040-01-06';
 update easter_daily set cells='圣赖孟多(St. Raymond of Penyafort)\\1010701|圣诞期 1月7日\\20|圣诞期第二周(星期六)|', liturgic=30206, color=2 where date='2040-01-07';
 update easter_daily set cells='主显节(Epiphany of the Lord)\\1|圣塞味利•诺利根(St. Severin of Noricun)\\1010801|', liturgic=30000, color=2 where date='2040-01-08';
-update easter_daily set cells='主受洗日(Baptism of the Lord)\\2|圣哈德良(坎特培里院长 St. Adrian)\\1010901|', liturgic=30001, color=2 where date='2040-01-09';
+update easter_daily set cells='主受洗日(Baptism of the Lord)\\2|圣哈德良(坎特培里院长 St. Adrian)\\1010901|常年期第一周(星期一)|', liturgic=10101, color=2 where date='2040-01-09';
 update easter_daily set cells='圣阿加道(教宗 St. Agatho)\\1011001|真福额我略十世(教宗 Bd. Gregory X)\\1011002|常年期第一周(星期二)|', liturgic=10102, color=1 where date='2040-01-10';
 update easter_daily set cells='圣戴沃多西(St. Theodosius the Cenobiarch)\\1011101|常年期第一周(星期三)|', liturgic=10103, color=1 where date='2040-01-11';
 update easter_daily set cells='圣本笃•波斯哥(修院院长 St. Benedict Biscop)\\1011201|常年期第一周(星期四)|', liturgic=10104, color=1 where date='2040-01-12';
@@ -14082,7 +14082,7 @@ update easter_daily set cells='圣牛曼(St. John Nepornucene Neumann)\\1010501|
 update easter_daily set cells='真福辣法厄尔•玛利亚(童贞圣心婢女会会祖 Bd. Raphaela Mary)\\1010602|圣诞期 1月6日\\19|圣诞期第二周(星期五)|', liturgic=30205, color=2 where date='2045-01-06';
 update easter_daily set cells='圣赖孟多(St. Raymond of Penyafort)\\1010701|圣诞期 1月7日\\20|圣诞期第二周(星期六)|', liturgic=30206, color=2 where date='2045-01-07';
 update easter_daily set cells='主显节(Epiphany of the Lord)\\1|圣塞味利•诺利根(St. Severin of Noricun)\\1010801|', liturgic=30000, color=2 where date='2045-01-08';
-update easter_daily set cells='主受洗日(Baptism of the Lord)\\2|圣哈德良(坎特培里院长 St. Adrian)\\1010901|', liturgic=30001, color=2 where date='2045-01-09';
+update easter_daily set cells='主受洗日(Baptism of the Lord)\\2|圣哈德良(坎特培里院长 St. Adrian)\\1010901|常年期第一周(星期一)|', liturgic=10101, color=2 where date='2045-01-09';
 update easter_daily set cells='圣阿加道(教宗 St. Agatho)\\1011001|真福额我略十世(教宗 Bd. Gregory X)\\1011002|常年期第一周(星期二)|', liturgic=10102, color=1 where date='2045-01-10';
 update easter_daily set cells='圣戴沃多西(St. Theodosius the Cenobiarch)\\1011101|常年期第一周(星期三)|', liturgic=10103, color=1 where date='2045-01-11';
 update easter_daily set cells='圣本笃•波斯哥(修院院长 St. Benedict Biscop)\\1011201|常年期第一周(星期四)|', liturgic=10104, color=1 where date='2045-01-12';
@@ -14446,7 +14446,7 @@ update easter_daily set cells='圣安•贝兰•丝彤(依丽莎白 St. Eizabet
 update easter_daily set cells='圣牛曼(St. John Nepornucene Neumann)\\1010501|圣西默盎“石柱人”(St. Simeon the Stylite)\\1010502|圣诞期 1月5日\\18|圣诞期第一周(星期五)|', liturgic=30105, color=2 where date='2046-01-05';
 update easter_daily set cells='真福辣法厄尔•玛利亚(童贞圣心婢女会会祖 Bd. Raphaela Mary)\\1010602|圣诞期 1月6日\\19|圣诞期第一周(星期六)|', liturgic=30106, color=2 where date='2046-01-06';
 update easter_daily set cells='主显节(Epiphany of the Lord)\\1|圣诞期第二主日|圣赖孟多(St. Raymond of Penyafort)\\1010701|', liturgic=30200, color=2 where date='2046-01-07';
-update easter_daily set cells='主受洗日(Baptism of the Lord)\\2|圣塞味利•诺利根(St. Severin of Noricun)\\1010801|', liturgic=30001, color=2 where date='2046-01-08';
+update easter_daily set cells='主受洗日(Baptism of the Lord)\\2|圣塞味利•诺利根(St. Severin of Noricun)\\1010801|常年期第一周(星期一)|', liturgic=10101, color=2 where date='2046-01-08';
 update easter_daily set cells='圣哈德良(坎特培里院长 St. Adrian)\\1010901|常年期第一周(星期二)|', liturgic=10102, color=1 where date='2046-01-09';
 update easter_daily set cells='圣阿加道(教宗 St. Agatho)\\1011001|真福额我略十世(教宗 Bd. Gregory X)\\1011002|常年期第一周(星期三)|', liturgic=10103, color=1 where date='2046-01-10';
 update easter_daily set cells='圣戴沃多西(St. Theodosius the Cenobiarch)\\1011101|常年期第一周(星期四)|', liturgic=10104, color=1 where date='2046-01-11';

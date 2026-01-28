@@ -1068,6 +1068,11 @@ void LiturgicYear::testChristmas1(LiturgicDay& ld)
 	else if(ld==bl)
 	{
 		ld.appendCell(2);	//主受洗日
+        if(bl.dayOfWeek() == MON) {
+            //主受洗日不是主日
+            ld.setSeason(ORDINARY);
+            ld.setWeekOfSeason(1);
+        }
 	}
 
 	if(ld.month()==1&&ld.day()==6)
