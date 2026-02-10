@@ -34,8 +34,8 @@ namespace CathAssist
 				this->enable = enable;
 			}
 
-			CellInfo(rank_t r, color_t c, const std::string &cel)
-				: CellInfo(-1, r, c, cel)
+			CellInfo(rank_t r, color_t c, const std::string &cel, bool enable = true)
+				: CellInfo(-1, r, c, cel, enable)
 			{
 			}
 
@@ -102,20 +102,8 @@ namespace CathAssist
 			std::list<CellInfo> getCellInfos() const;
 			std::list<int> getCellsId() const { return listCell; }
 			void appendCell(const int &id);
-
 			CellInfo getLiturgicCellInfo() const;
-
-			//          rank_t getRank(){ return rank; }
-			//          void setRank(rank_t r){ rank = r; }
-
-			//          std::string getCelebration()const{ return celebration; }
-			//          void setCelebration(const std::string& c){ celebration = c; }
-
-			//          std::string getInvitatory()const{ return invitatory; }
-			//          void setInvitatory(const std::string& i){ invitatory = i; }
-
 			std::string toWeekdayString() const;
-
 			std::string toLiturgicString() const;
 
 		private:

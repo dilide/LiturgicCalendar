@@ -430,21 +430,23 @@ void export_to_catholicism()
             auto iter = saints.begin();
             while (iter != saints.end())
             {
-                auto name = iter->second.celebration;
-                std::cout << name << std::endl;
-                // 圣人传记表
-                of << "insert into c_liturgic_code(code, name, rank, color) values("
-                   << iter->first << ", '{}', " << iter->second.rank << "," << iter->second.color << ")"
-                   << " on conflict (code) do update set rank=" << iter->second.rank << ", color=" << iter->second.color << ";" << std::endl;
+                if (iter->second.enable)
+                {
+                    auto name = iter->second.celebration;
+                    std::cout << name << std::endl;
+                    // 圣人传记表
+                    of << "insert into c_liturgic_code(code, name, rank, color) values("
+                       << iter->first << ", '{}', " << iter->second.rank << "," << iter->second.color << ")"
+                       << " on conflict (code) do update set rank=" << iter->second.rank << ", color=" << iter->second.color << ";" << std::endl;
 
-                // 弥撒表
-                of << "insert into c_mass(code) values(" << iter->second.code << ")"
-                   << " on conflict (code) do nothing;" << std::endl;
+                    // 弥撒表
+                    of << "insert into c_mass(code) values(" << iter->second.code << ")"
+                       << " on conflict (code) do nothing;" << std::endl;
 
-                // 日课表
-                of << "insert into c_liturgy_hours(code) values(" << iter->second.code << ")"
-                   << " on conflict (code) do nothing;" << std::endl;
-
+                    // 日课表
+                    of << "insert into c_liturgy_hours(code) values(" << iter->second.code << ")"
+                       << " on conflict (code) do nothing;" << std::endl;
+                }
                 ++iter;
             }
         }
@@ -504,20 +506,22 @@ void export_to_catholicism()
                     auto iterCell = cells.begin();
                     while (iterCell != cells.end())
                     {
-                        int c = -1;
-                        if (iterCell->code > 0)
+                        if (iterCell->enable)
                         {
-                            c = iterCell->code;
+                            int c = -1;
+                            if (iterCell->code > 0)
+                            {
+                                c = iterCell->code;
+                            }
+                            else
+                            {
+                                c = iLiturgicDay;
+                            }
+                            if (std::find(listCodes.begin(), listCodes.end(), c) == listCodes.end())
+                            {
+                                listCodes.push_back(c);
+                            }
                         }
-                        else
-                        {
-                            c = iLiturgicDay;
-                        }
-                        if (std::find(listCodes.begin(), listCodes.end(), c) == listCodes.end())
-                        {
-                            listCodes.push_back(c);
-                        }
-
                         ++iterCell;
                     }
 
