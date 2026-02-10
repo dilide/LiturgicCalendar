@@ -13,19 +13,20 @@
 #include <sstream>
 #include <iomanip>
 
-#define LOWORD(x) (x&0x0000FFFF)
-#define HIWORD(x) ((x&0xFFFF0000)>>16)
-#define MAKELONG(x,y) ((y<<16)|x)
+#define LOWORD(x) (x & 0x0000FFFF)
+#define HIWORD(x) ((x & 0xFFFF0000) >> 16)
+#define MAKELONG(x, y) ((y << 16) | x)
 
 using namespace CathAssist::Calendar;
 
 template <typename T>
-inline const T& Min(const T& a, const T& b) { return (a < b) ? a : b; }
+inline const T &Min(const T &a, const T &b) { return (a < b) ? a : b; }
 
-enum {
+enum
+{
 	FIRST_YEAR = -4713,
 	FIRST_MONTH = 1,
-	FIRST_DAY = 2,  // ### Qt 5: make FIRST_DAY = 1, by support jd == 0 as valid
+	FIRST_DAY = 2, // ### Qt 5: make FIRST_DAY = 1, by support jd == 0 as valid
 	SECS_PER_DAY = 86400,
 	MSECS_PER_DAY = 86400000,
 	SECS_PER_HOUR = 3600,
@@ -35,7 +36,7 @@ enum {
 	JULIAN_DAY_FOR_EPOCH = 2440588 // result of julianDayFromGregorianDate(1970, 1, 1)
 };
 
-static const char monthDays[] = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+static const char monthDays[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
 static inline Date fixedDate(int y, int m, int d)
 {
@@ -48,10 +49,7 @@ static inline unsigned int julianDayFromGregorianDate(int year, int month, int d
 {
 	// Gregorian calendar starting from October 15, 1582
 	// Algorithm from Henry F. Fliegel and Thomas C. Van Flandern
-	return (1461 * (year + 4800 + (month - 14) / 12)) / 4
-		+ (367 * (month - 2 - 12 * ((month - 14) / 12))) / 12
-		- (3 * ((year + 4900 + (month - 14) / 12) / 100)) / 4
-		+ day - 32075;
+	return (1461 * (year + 4800 + (month - 14) / 12)) / 4 + (367 * (month - 2 - 12 * ((month - 14) / 12))) / 12 - (3 * ((year + 4900 + (month - 14) / 12) / 100)) / 4 + day - 32075;
 }
 
 static unsigned int julianDayFromDate(int year, int month, int day)
@@ -68,9 +66,7 @@ static unsigned int julianDayFromDate(int year, int month, int day)
 		// Julian calendar until October 4, 1582
 		// Algorithm from Frequently Asked Questions about Calendars by Claus Toendering
 		int a = (14 - month) / 12;
-		return (153 * (month + (12 * a) - 3) + 2) / 5
-			+ (1461 * (year + 4800 - a)) / 4
-			+ day - 32083;
+		return (153 * (month + (12 * a) - 3) + 2) / 5 + (1461 * (year + 4800 - a)) / 4 + day - 32083;
 	}
 	else
 	{
@@ -79,7 +75,7 @@ static unsigned int julianDayFromDate(int year, int month, int day)
 	}
 }
 
-static void getDateFromJulianDay(unsigned int julianDay, int& year, int& month, int& day)
+static void getDateFromJulianDay(unsigned int julianDay, int &year, int &month, int &day)
 {
 	int y, m, d;
 
@@ -113,19 +109,15 @@ static void getDateFromJulianDay(unsigned int julianDay, int& year, int& month, 
 		if (y <= 0)
 			--y;
 	}
-	
-    year = y;
+
+	year = y;
 	month = m;
 	day = d;
 }
 
-bool Date::isValid(const int& year,const int& month,const int& day)
+bool Date::isValid(const int &year, const int &month, const int &day)
 {
-	if (year < FIRST_YEAR
-		|| (year == FIRST_YEAR &&
-		(month < FIRST_MONTH
-		|| (month == FIRST_MONTH && day < FIRST_DAY)))
-		|| year == 0) // there is no year 0 in the Julian calendar
+	if (year < FIRST_YEAR || (year == FIRST_YEAR && (month < FIRST_MONTH || (month == FIRST_MONTH && day < FIRST_DAY))) || year == 0) // there is no year 0 in the Julian calendar
 		return false;
 
 	// passage from Julian to Gregorian calendar
@@ -133,16 +125,16 @@ bool Date::isValid(const int& year,const int& month,const int& day)
 		return 0;
 
 	return (day > 0 && month > 0 && month <= 12) &&
-		(day <= monthDays[month] || (day == 29 && month == 2 && isLeapYear(year)));
+		   (day <= monthDays[month] || (day == 29 && month == 2 && isLeapYear(year)));
 }
 
-bool Date::isLeapYear(const int& year)
+bool Date::isLeapYear(const int &year)
 {
 	int y = year;
 	if (y < 1582)
 	{
-		if ( y < 1)
-		{  // No year 0 in Julian calendar, so -1, -5, -9 etc are leap years
+		if (y < 1)
+		{ // No year 0 in Julian calendar, so -1, -5, -9 etc are leap years
 			++y;
 		}
 		return y % 4 == 0;
@@ -153,19 +145,23 @@ bool Date::isLeapYear(const int& year)
 	}
 }
 
-bool Date::isSpringFestival(const Date& d) {
+bool Date::isSpringFestival(const Date &d)
+{
 	int year = d.year();
 	std::map<int, Date>::const_iterator found = gLunarSpringDays.find(year);
-	if(found != gLunarSpringDays.end()) {
+	if (found != gLunarSpringDays.end())
+	{
 		return found->second == d;
 	}
 	return false;
 }
 
-bool Date::isNewYearEve(const Date& d) {
+bool Date::isNewYearEve(const Date &d)
+{
 	int year = d.year();
 	std::map<int, Date>::const_iterator found = gLunarSpringDays.find(year);
-	if(found != gLunarSpringDays.end()) {
+	if (found != gLunarSpringDays.end())
+	{
 		return found->second.addDays(-1) == d;
 	}
 	return false;
@@ -173,19 +169,17 @@ bool Date::isNewYearEve(const Date& d) {
 
 Date::Date(void)
 {
-	 jd = 0;
+	jd = 0;
 }
 
-Date::Date(const int& year, const int& month, const int& day)
+Date::Date(const int &year, const int &month, const int &day)
 {
 	setDate(year, month, day);
 }
 
 Date::~Date(void)
 {
-
 }
-
 
 bool CathAssist::Calendar::Date::isValid() const
 {
@@ -194,21 +188,21 @@ bool CathAssist::Calendar::Date::isValid() const
 
 int Date::year() const
 {
-	int y = 0,m = 0,d = 0;
+	int y = 0, m = 0, d = 0;
 	getDateFromJulianDay(jd, y, m, d);
 	return y;
 }
 
 int Date::month() const
 {
-	int y = 0,m = 0,d = 0;
+	int y = 0, m = 0, d = 0;
 	getDateFromJulianDay(jd, y, m, d);
 	return m;
 }
 
 int Date::day() const
 {
-	int y = 0,m = 0,d = 0;
+	int y = 0, m = 0, d = 0;
 	getDateFromJulianDay(jd, y, m, d);
 	return d;
 }
@@ -217,7 +211,7 @@ day_t Date::dayOfWeek() const
 {
 	int w = (jd % 7) + 1;
 
-	return static_cast<day_t>(w%7);
+	return static_cast<day_t>(w % 7);
 }
 
 int Date::dayOfYear() const
@@ -227,7 +221,7 @@ int Date::dayOfYear() const
 
 int Date::daysInMonth() const
 {
-	int y = 0,m = 0,d = 0;
+	int y = 0, m = 0, d = 0;
 	getDateFromJulianDay(jd, y, m, d);
 	if (m == 2 && isLeapYear(y))
 		return 29;
@@ -237,63 +231,64 @@ int Date::daysInMonth() const
 
 int Date::daysInYear() const
 {
-	int y = 0,m = 0,d = 0;
+	int y = 0, m = 0, d = 0;
 	getDateFromJulianDay(jd, y, m, d);
 	return isLeapYear(y) ? 366 : 365;
 }
 
-int Date::weekNumber(int* yearNumber /*= 0*/) const
+int Date::weekNumber(int *yearNumber /*= 0*/) const
 {
-    if (!isValid())
-        return 0;
+	if (!isValid())
+		return 0;
 
-    int year = Date::year();
-    int yday = dayOfYear() - 1;
-    int wday = dayOfWeek();
-    int w;
+	int year = Date::year();
+	int yday = dayOfYear() - 1;
+	int wday = dayOfWeek();
+	int w;
 
-    for (;;)
+	for (;;)
 	{
-        int len;
-        int bot;
-        int top;
+		int len;
+		int bot;
+		int top;
 
-        len = isLeapYear(year) ? 366 : 365;
-        /*
-        ** What yday (-3 ... 3) does
-        ** the ISO year begin on?
-        */
-        bot = ((yday + 11 - wday) % 7) - 3;
-        /*
-        ** What yday does the NEXT
-        ** ISO year begin on?
-        */
-        top = bot - (len % 7);
-        if (top < -3)
-            top += 7;
-        top += len;
-        if (yday >= top) {
-            ++year;
-            w = 1;
-            break;
-        }
-        if (yday >= bot) {
-            w = 1 + ((yday - bot) / 7);
-            break;
-        }
-        --year;
-        yday += isLeapYear(year) ? 366 : 365;
-    }
-    if (yearNumber != 0)
-        *yearNumber = year;
+		len = isLeapYear(year) ? 366 : 365;
+		/*
+		** What yday (-3 ... 3) does
+		** the ISO year begin on?
+		*/
+		bot = ((yday + 11 - wday) % 7) - 3;
+		/*
+		** What yday does the NEXT
+		** ISO year begin on?
+		*/
+		top = bot - (len % 7);
+		if (top < -3)
+			top += 7;
+		top += len;
+		if (yday >= top)
+		{
+			++year;
+			w = 1;
+			break;
+		}
+		if (yday >= bot)
+		{
+			w = 1 + ((yday - bot) / 7);
+			break;
+		}
+		--year;
+		yday += isLeapYear(year) ? 366 : 365;
+	}
+	if (yearNumber != 0)
+		*yearNumber = year;
 
-	if(wday == 0)
-		w+=1;
-    return w;
+	if (wday == 0)
+		w += 1;
+	return w;
 }
 
-
-bool Date::setYMD(const int& year, const int& month, const int& day)
+bool Date::setYMD(const int &year, const int &month, const int &day)
 {
 	int y = year;
 	if ((unsigned int)(y) <= 99)
@@ -301,7 +296,7 @@ bool Date::setYMD(const int& year, const int& month, const int& day)
 	return setDate(y, month, day);
 }
 
-bool Date::setDate(const int& year,const int& month,const int& day)
+bool Date::setDate(const int &year, const int &month, const int &day)
 {
 	if (!isValid(year, month, day))
 	{
@@ -314,7 +309,7 @@ bool Date::setDate(const int& year,const int& month,const int& day)
 	return jd != 0;
 }
 
-void Date::getDate(int& year, int& month, int& day)
+void Date::getDate(int &year, int &month, int &day)
 {
 	getDateFromJulianDay(jd, year, month, day);
 }
@@ -348,11 +343,11 @@ Date Date::addMonths(int nmonths) const
 		if (nmonths < 0 && nmonths + 12 <= 0)
 		{
 			y--;
-			nmonths+=12;
+			nmonths += 12;
 		}
 		else if (nmonths < 0)
 		{
-			m+= nmonths;
+			m += nmonths;
 			nmonths = 0;
 			if (m <= 0)
 			{
@@ -399,8 +394,8 @@ Date Date::addYears(int nyears) const
 {
 	if (!isValid())
 		return Date();
-    
-	int y = 0,m = 0,d = 0;
+
+	int y = 0, m = 0, d = 0;
 	getDateFromJulianDay(jd, y, m, d);
 
 	int old_y = y;
@@ -415,7 +410,7 @@ Date Date::addYears(int nyears) const
 	return fixedDate(y, m, d);
 }
 
-int Date::daysTo(const Date& d) const
+int Date::daysTo(const Date &d) const
 {
 	return d.jd - jd;
 }
@@ -425,11 +420,11 @@ std::string Date::toString() const
 	if (year() > 9999)
 		return std::string();
 
-	//格式化输出
+	// 格式化输出
 	std::ostringstream ostr;
-	ostr<<Date::year()<<"-"
-        <<std::setfill('0')<<std::setw(2)<<Date::month()<<"-"
-        <<std::setfill('0')<<std::setw(2)<<Date::day();
+	ostr << Date::year() << "-"
+		 << std::setfill('0') << std::setw(2) << Date::month() << "-"
+		 << std::setfill('0') << std::setw(2) << Date::day();
 
 	return ostr.str();
 }

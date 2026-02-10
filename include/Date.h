@@ -23,16 +23,16 @@ namespace CathAssist
 		class Date
 		{
 		public:
-			static bool isValid(const int& year,const int& month,const int& day); 
-			static bool isLeapYear(const int& year);
+			static bool isValid(const int &year, const int &month, const int &day);
+			static bool isLeapYear(const int &year);
 			// 判断是否为春节
-			static bool isSpringFestival(const Date& d);
+			static bool isSpringFestival(const Date &d);
 			// 判断是否为除夕
-			static bool isNewYearEve(const Date& d);
+			static bool isNewYearEve(const Date &d);
 
 		public:
 			Date(void);
-			Date(const int& year, const int& month, const int& day);
+			Date(const int &year, const int &month, const int &day);
 			~Date(void);
 
 		public:
@@ -46,11 +46,11 @@ namespace CathAssist
 			int dayOfYear() const;
 			int daysInMonth() const;
 			int daysInYear() const;
-			int weekNumber(int* yearNumber = 0) const;
+			int weekNumber(int *yearNumber = 0) const;
 
-			bool setYMD(const int& year, const int& month, const int& day);
-			bool setDate(const int& year,const int& month,const int& day);
-			void getDate(int& year, int& month, int& day);
+			bool setYMD(const int &year, const int &month, const int &day);
+			bool setDate(const int &year, const int &month, const int &day);
+			void getDate(int &year, int &month, int &day);
 
 			Date addDays(int days) const;
 			Date addMonths(int months) const;
@@ -67,15 +67,14 @@ namespace CathAssist
 			bool operator>=(const Date &other) const { return jd >= other.jd; }
 
 		private:
-			unsigned int jd;	//JulianDay
-            
-        private:
-            static const int gStartYear;
-            static const int gEndYear;
+			unsigned int jd; // JulianDay
+
+		private:
+			static const int gStartYear;
+			static const int gEndYear;
 			static const std::map<int, Date> gLunarSpringDays;
 		};
 	}
 }
 
-
-#endif	//__CA_CALENDAR_DATE_H__
+#endif //__CA_CALENDAR_DATE_H__

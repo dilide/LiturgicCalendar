@@ -18,28 +18,22 @@
 using namespace CathAssist::Calendar;
 
 LiturgicDay::LiturgicDay()
-    : Date()
-    , season(ORDINARY)
+	: Date(), season(ORDINARY)
 {
 }
 
-LiturgicDay::LiturgicDay(const Date& d)
-    : Date(d)
-    , season(ORDINARY)
+LiturgicDay::LiturgicDay(const Date &d)
+	: Date(d), season(ORDINARY)
 {
-    
 }
 
-LiturgicDay::LiturgicDay(const int& year, const int& month, const int& day)
-    : Date(year,month,day)
-    , season(ORDINARY)
+LiturgicDay::LiturgicDay(const int &year, const int &month, const int &day)
+	: Date(year, month, day), season(ORDINARY)
 {
-    
 }
 
 LiturgicDay::~LiturgicDay()
 {
-    
 }
 
 color_t LiturgicDay::getColor() const
@@ -47,9 +41,9 @@ color_t LiturgicDay::getColor() const
 	std::list<CellInfo> cells = getCellInfos();
 
 	auto iter = cells.begin();
-	while(iter != cells.end())
+	while (iter != cells.end())
 	{
-		if(NOCOLOR != iter->color)
+		if (NOCOLOR != iter->color)
 			return iter->color;
 		++iter;
 	}
@@ -59,32 +53,36 @@ color_t LiturgicDay::getColor() const
 
 int LiturgicDay::getLiturgicId() const
 {
-	if(weekOfSeason > -1) {
-		return season*10000+weekOfSeason*100+dayOfWeek();
-	} else {
-		return season*10000+0*100+dayOfWeek();
+	if (weekOfSeason > -1)
+	{
+		return season * 10000 + weekOfSeason * 100 + dayOfWeek();
+	}
+	else
+	{
+		return season * 10000 + 0 * 100 + dayOfWeek();
 	}
 }
 
 std::list<CellInfo> LiturgicDay::getCellInfos() const
 {
-    std::list<CellInfo> cells;
+	std::list<CellInfo> cells;
 
-	for(int r = CathAssist::Calendar::SOLEMNITY; r>=WEEKDAY; --r)
+	for (int r = CathAssist::Calendar::SOLEMNITY; r >= WEEKDAY; --r)
 	{
 		CellInfo normalCell(ErrorRank, NOCOLOR, "");
-		if(r == CathAssist::Calendar::WEEKDAY && dayOfWeek()!=0) {
-			//平日
+		if (r == CathAssist::Calendar::WEEKDAY && dayOfWeek() != 0)
+		{
+			// 平日
 			normalCell = getLiturgicCellInfo();
 		}
 
-		//特殊节日
+		// 特殊节日
 		int iCount = 0;
 		auto iter = listCell.begin();
-		while (iter!=listCell.end())
+		while (iter != listCell.end())
 		{
 			CellInfo c = LiturgicYear::getCellInfo(*iter);
-			if(c.rank == r)
+			if (c.rank == r)
 			{
 				cells.push_back(c);
 				++iCount;
@@ -93,30 +91,30 @@ std::list<CellInfo> LiturgicDay::getCellInfos() const
 			++iter;
 		}
 
-		if(iCount<1)
+		if (iCount < 1)
 		{
-			//计算特殊主日
-			if(r == CathAssist::Calendar::SUNDAY && dayOfWeek()==0)
+			// 计算特殊主日
+			if (r == CathAssist::Calendar::SUNDAY && dayOfWeek() == 0)
 			{
-				//主日
+				// 主日
 				CellInfo c = getLiturgicCellInfo();
-				if(c.rank != ErrorRank)
+				if (c.rank != ErrorRank)
 				{
 					cells.push_back(c);
 				}
 			}
 		}
 
-		if(normalCell.rank != ErrorRank)
+		if (normalCell.rank != ErrorRank)
 		{
 			cells.push_back(normalCell);
 		}
 	}
-    
-    return cells;
+
+	return cells;
 }
 
-void CathAssist::Calendar::LiturgicDay::appendCell(const int& id)
+void CathAssist::Calendar::LiturgicDay::appendCell(const int &id)
 {
 	listCell.push_back(id);
 }
@@ -126,8 +124,9 @@ CellInfo LiturgicDay::getLiturgicCellInfo() const
 	int liturgicId = getLiturgicId();
 	Colors _clr = getColorByLiturgicId(liturgicId);
 	rank_t _rank = getRankByLiturgicId(liturgicId);
-	
-	if(weekOfSeason < 0) {
+
+	if (weekOfSeason < 0)
+	{
 		_rank = ErrorRank;
 	}
 	return CellInfo(_rank, _clr, toWeekdayString());
@@ -135,164 +134,184 @@ CellInfo LiturgicDay::getLiturgicCellInfo() const
 
 std::string LiturgicDay::toWeekdayString() const
 {
-    return LiturgicDay::getWeekdayString(season, weekOfSeason, dayOfWeek());
+	return LiturgicDay::getWeekdayString(season, weekOfSeason, dayOfWeek());
 }
 
 std::string LiturgicDay::toLiturgicString() const
 {
-    //返回礼仪年日期对应的字符串，格式化输出本身
+	// 返回礼仪年日期对应的字符串，格式化输出本身
 	std::ostringstream ostr;
-    ostr<<"日期\t:\t"<<toString()<<std::endl;
-    ostr<<"颜色\t:\t"<<CathAssist::Calendar::getColorStr(getColor())<<std::endl;
-    
-    
+	ostr << "日期\t:\t" << toString() << std::endl;
+	ostr << "颜色\t:\t" << CathAssist::Calendar::getColorStr(getColor()) << std::endl;
+
 	std::list<CellInfo> cells = getCellInfos();
 	auto iter = cells.begin();
-    ostr<<"节日:\t"<<std::endl;
-    while (iter!=cells.end())
-    {
-        ostr<<"    "<<iter->celebration<<std::endl;
-        ++iter;
-    }
-    
-    
-    //ostr<<"Invit\t:\t"<<invitatory<<std::endl;
-    
-    
-    return ostr.str();
+	ostr << "节日:\t" << std::endl;
+	while (iter != cells.end())
+	{
+		ostr << "    " << iter->celebration << std::endl;
+		++iter;
+	}
+
+	// ostr<<"Invit\t:\t"<<invitatory<<std::endl;
+
+	return ostr.str();
 }
 
-std::string LiturgicDay::getWeekdayString(int code) { 
-    int season = code/10000;
-    int weekNum = (code%10000)/100;
-    int dayNum = code%100;
+std::string LiturgicDay::getWeekdayString(int code)
+{
+	int season = code / 10000;
+	int weekNum = (code % 10000) / 100;
+	int dayNum = code % 100;
 
-    return LiturgicDay::getWeekdayString((season_t)season, weekNum, dayNum);
+	return LiturgicDay::getWeekdayString((season_t)season, weekNum, dayNum);
 }
 
-
-std::string LiturgicDay::getWeekdayString(const season_t &season, const int &weekOfSeason, const int &dayOfWeek) {
-    std::ostringstream ostr;
+std::string LiturgicDay::getWeekdayString(const season_t &season, const int &weekOfSeason, const int &dayOfWeek)
+{
+	std::ostringstream ostr;
 
 	CathAssist::Calendar::LanguageCodes lang = CathAssist::Calendar::MultiLang::getLangCode();
 
-	if(CathAssist::Calendar::LANG_ZH_CN == lang) {
-		if(LENT == season && 0 == weekOfSeason) {
-			if(dayOfWeek != 3) {
-				ostr<<"圣灰礼仪后" + CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang);
+	if (CathAssist::Calendar::LANG_ZH_CN == lang)
+	{
+		if (LENT == season && 0 == weekOfSeason)
+		{
+			if (dayOfWeek != 3)
+			{
+				ostr << "圣灰礼仪后" + CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang);
 				return ostr.str();
 			}
 		}
 
-		if(dayOfWeek==SUN)
+		if (dayOfWeek == SUN)
 		{
-			ostr<<CathAssist::Calendar::getSeasonStr(season, lang)
-				<<"第"<<getOrdinalStr(weekOfSeason, lang)<<"主日";
+			ostr << CathAssist::Calendar::getSeasonStr(season, lang)
+				 << "第" << getOrdinalStr(weekOfSeason, lang) << "主日";
 		}
 		else
 		{
-			ostr<<CathAssist::Calendar::getSeasonStr(season, lang)
-				<<"第"<<getOrdinalStr(weekOfSeason, lang)<<"周("<<CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)<<")";
+			ostr << CathAssist::Calendar::getSeasonStr(season, lang)
+				 << "第" << getOrdinalStr(weekOfSeason, lang) << "周(" << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang) << ")";
 		}
-	} else if(CathAssist::Calendar::LANG_ZH_TW == lang) {
-		if(LENT == season && 0 == weekOfSeason) {
-			if(dayOfWeek != 3) {
-				ostr<<"聖灰禮儀後" + CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang);
+	}
+	else if (CathAssist::Calendar::LANG_ZH_TW == lang)
+	{
+		if (LENT == season && 0 == weekOfSeason)
+		{
+			if (dayOfWeek != 3)
+			{
+				ostr << "聖灰禮儀後" + CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang);
 				return ostr.str();
 			}
 		}
 
-		if(dayOfWeek==SUN)
+		if (dayOfWeek == SUN)
 		{
-			ostr<<CathAssist::Calendar::getSeasonStr(season, lang)
-				<<"第"<<getOrdinalStr(weekOfSeason, lang)<<"主日";
+			ostr << CathAssist::Calendar::getSeasonStr(season, lang)
+				 << "第" << getOrdinalStr(weekOfSeason, lang) << "主日";
 		}
 		else
 		{
-			ostr<<CathAssist::Calendar::getSeasonStr(season, lang)
-				<<"第"<<getOrdinalStr(weekOfSeason, lang)<<"週("<<CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)<<")";
+			ostr << CathAssist::Calendar::getSeasonStr(season, lang)
+				 << "第" << getOrdinalStr(weekOfSeason, lang) << "週(" << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang) << ")";
 		}
-	} else if(CathAssist::Calendar::LANG_EN == lang) {
-		if(LENT == season && 0 == weekOfSeason) {
-			if(dayOfWeek != 3) {
-				ostr<<CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)<<" after Ash Wednesday";
+	}
+	else if (CathAssist::Calendar::LANG_EN == lang)
+	{
+		if (LENT == season && 0 == weekOfSeason)
+		{
+			if (dayOfWeek != 3)
+			{
+				ostr << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang) << " after Ash Wednesday";
 				return ostr.str();
 			}
 		}
 
-		if(dayOfWeek==SUN)
+		if (dayOfWeek == SUN)
 		{
-			ostr<<getOrdinalStr(weekOfSeason, lang)
-				<<" "<<CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)
-				<<" in "<<CathAssist::Calendar::getSeasonStr(season, lang);
+			ostr << getOrdinalStr(weekOfSeason, lang)
+				 << " " << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)
+				 << " in " << CathAssist::Calendar::getSeasonStr(season, lang);
 		}
 		else
 		{
-			ostr<<CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)
-				<<" of "<<getOrdinalStr(weekOfSeason, lang)
-				<<" Week in " << CathAssist::Calendar::getSeasonStr(season, lang);
+			ostr << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)
+				 << " of " << getOrdinalStr(weekOfSeason, lang)
+				 << " Week in " << CathAssist::Calendar::getSeasonStr(season, lang);
 		}
-	} else if(CathAssist::Calendar::LANG_ES_ES == lang) {
-		if(LENT == season && 0 == weekOfSeason) {
-			if(dayOfWeek != 3) {
-				ostr<<CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)<<" después de ceniza";
+	}
+	else if (CathAssist::Calendar::LANG_ES_ES == lang)
+	{
+		if (LENT == season && 0 == weekOfSeason)
+		{
+			if (dayOfWeek != 3)
+			{
+				ostr << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang) << " después de ceniza";
 				return ostr.str();
 			}
 		}
-		if(dayOfWeek==SUN)
+		if (dayOfWeek == SUN)
 		{
-			ostr<<getOrdinalStr(weekOfSeason, lang)
-				<<" "<<CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)
-				<<" de la "<<CathAssist::Calendar::getSeasonStr(season, lang);
+			ostr << getOrdinalStr(weekOfSeason, lang)
+				 << " " << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)
+				 << " de la " << CathAssist::Calendar::getSeasonStr(season, lang);
 		}
 		else
 		{
-			ostr<<CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)
-				<<" de la "<<getOrdinalStr(weekOfSeason, lang)
-				<<" semana de " << CathAssist::Calendar::getSeasonStr(season, lang);
+			ostr << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)
+				 << " de la " << getOrdinalStr(weekOfSeason, lang)
+				 << " semana de " << CathAssist::Calendar::getSeasonStr(season, lang);
 		}
-	} else if(CathAssist::Calendar::LANG_IT_IT == lang) {
-		if(LENT == season && 0 == weekOfSeason) {
-			if(dayOfWeek != 3) {
-				ostr<<CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)<<" dopo le Ceneri";
-				return ostr.str();
-			}
-		}
-
-		if(dayOfWeek==SUN)
+	}
+	else if (CathAssist::Calendar::LANG_IT_IT == lang)
+	{
+		if (LENT == season && 0 == weekOfSeason)
 		{
-			ostr<<getOrdinalStr(weekOfSeason, lang)
-				<<" "<<CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)
-				<<" "<<getPrepGenderStr(season, lang)<<" "<<CathAssist::Calendar::getSeasonStr(season, lang);
-		}
-		else
-		{
-			ostr<<CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)
-				<<" della "<<getOrdinalStr(weekOfSeason, lang)
-				<<" settimana "<<getPrepGenderStr(season, lang)<<" " << CathAssist::Calendar::getSeasonStr(season, lang);
-		}
-	} else if(CathAssist::Calendar::LANG_PT_BR == lang) {
-		if(LENT == season && 0 == weekOfSeason) {
-			if(dayOfWeek != 3) {
-				ostr<<CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)<<" depois das Cinzas";
+			if (dayOfWeek != 3)
+			{
+				ostr << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang) << " dopo le Ceneri";
 				return ostr.str();
 			}
 		}
 
-		if(dayOfWeek==SUN)
+		if (dayOfWeek == SUN)
 		{
-			ostr<<getOrdinalStr(weekOfSeason, lang)
-				<<" "<<CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)
-				<<" da "<<CathAssist::Calendar::getSeasonStr(season, lang);
+			ostr << getOrdinalStr(weekOfSeason, lang)
+				 << " " << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)
+				 << " " << getPrepGenderStr(season, lang) << " " << CathAssist::Calendar::getSeasonStr(season, lang);
 		}
 		else
 		{
-			ostr<<CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)
-				<<" da "<<getOrdinalStr(weekOfSeason, lang)
-				<<" semana " << CathAssist::Calendar::getSeasonStr(season, lang);
+			ostr << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)
+				 << " della " << getOrdinalStr(weekOfSeason, lang)
+				 << " settimana " << getPrepGenderStr(season, lang) << " " << CathAssist::Calendar::getSeasonStr(season, lang);
+		}
+	}
+	else if (CathAssist::Calendar::LANG_PT_BR == lang)
+	{
+		if (LENT == season && 0 == weekOfSeason)
+		{
+			if (dayOfWeek != 3)
+			{
+				ostr << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang) << " depois das Cinzas";
+				return ostr.str();
+			}
+		}
+
+		if (dayOfWeek == SUN)
+		{
+			ostr << getOrdinalStr(weekOfSeason, lang)
+				 << " " << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)
+				 << " da " << CathAssist::Calendar::getSeasonStr(season, lang);
+		}
+		else
+		{
+			ostr << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)
+				 << " da " << getOrdinalStr(weekOfSeason, lang)
+				 << " semana " << CathAssist::Calendar::getSeasonStr(season, lang);
 		}
 	}
 
 	return ostr.str();
 }
-
