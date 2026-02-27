@@ -82,7 +82,7 @@ std::list<CellInfo> LiturgicDay::getCellInfos() const
 		while (iter != listCell.end())
 		{
 			CellInfo c = LiturgicYear::getCellInfo(*iter);
-			if (c.rank == r)
+			if (c.rank == r && c.hasLang(CathAssist::Calendar::MultiLang::getLangCode()))
 			{
 				cells.push_back(c);
 				++iCount;

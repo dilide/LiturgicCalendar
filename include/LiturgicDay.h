@@ -45,6 +45,11 @@ namespace CathAssist
 				this->langs = langs;
 			}
 
+			bool hasLang(const int &langCode) const
+			{
+				return std::find(langs.begin(), langs.end(), langCode) != langs.end();
+			}
+
 			bool isEnable() const {
 				return langs.size() > 0;
 			}
