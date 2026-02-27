@@ -1,6 +1,7 @@
 ﻿#ifndef __CA_CALENDAR_DEFINE_H__
 #define __CA_CALENDAR_DEFINE_H__
 #include <string>
+#include <list>
 #include <sstream>
 
 namespace CathAssist
@@ -51,6 +52,14 @@ namespace CathAssist
             } else {
                 return LANG_ZH_CN;
             }
+        }
+
+        static std::list<int> getAllLangCodes() {
+            std::list<int> langCodes;
+            for(int lang = LANG_EN; lang <= LANG_PT_BR; ++lang) {
+                langCodes.push_back(lang);
+            }
+            return langCodes;
         }
 
 		/*

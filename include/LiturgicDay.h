@@ -24,19 +24,29 @@ namespace CathAssist
 			rank_t rank;			 // 优先级
 			color_t color;			 // 祭衣颜色
 			std::string celebration; // 节日
-			bool enable;			 // 是否启用
-			CellInfo(int code, rank_t r, color_t c, const std::string &cel, bool enable = true)
+			std::list<int> langs;	 // 适用的语言列表
+			CellInfo(int code, rank_t r, color_t c, const std::string &cel)
 			{
 				this->code = code;
 				this->rank = r;
 				this->color = c;
-				celebration = cel;
-				this->enable = enable;
+				this->celebration = cel;
+				this->langs = getAllLangCodes();
 			}
 
-			CellInfo(rank_t r, color_t c, const std::string &cel, bool enable = true)
-				: CellInfo(-1, r, c, cel, enable)
+			CellInfo(rank_t r, color_t c, const std::string &cel)
+				: CellInfo(-1, r, c, cel)
 			{
+			}
+
+			CellInfo(rank_t r, color_t c, const std::string &cel, const std::list<int> &langs)
+				: CellInfo(-1, r, c, cel)
+			{
+				this->langs = langs;
+			}
+
+			bool isEnable() const {
+				return langs.size() > 0;
 			}
 
 			std::string toString()

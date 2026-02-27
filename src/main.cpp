@@ -430,7 +430,7 @@ void export_to_catholicism()
             auto iter = saints.begin();
             while (iter != saints.end())
             {
-                if (iter->second.enable)
+                if (iter->second.isEnable())
                 {
                     auto name = iter->second.celebration;
                     std::cout << name << std::endl;
@@ -506,7 +506,7 @@ void export_to_catholicism()
                     auto iterCell = cells.begin();
                     while (iterCell != cells.end())
                     {
-                        if (iterCell->enable)
+                        if (iterCell->isEnable())
                         {
                             int c = -1;
                             if (iterCell->code > 0)
