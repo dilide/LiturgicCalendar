@@ -479,8 +479,10 @@ void export_to_catholicism()
             auto iter = saints.begin();
             while (iter != saints.end())
             {
-                auto name = iter->second.celebration;
-                of << "update c_liturgic_code set name=jsonb_set(name, '{" << langStr << "}', '" << ansi2utf8(sqlite3_mprintf("\"%q\"", name.c_str())) << "'::jsonb) where code=" << iter->first << ";" << std::endl;
+                if(iter->second.hasLang(lang)) {
+                    auto name = iter->second.celebration;
+                    of << "update c_liturgic_code set name=jsonb_set(name, '{" << langStr << "}', '" << ansi2utf8(sqlite3_mprintf("\"%q\"", name.c_str())) << "'::jsonb) where code=" << iter->first << ";" << std::endl;
+                }
                 ++iter;
             }
         }
