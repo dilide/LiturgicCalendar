@@ -21,7 +21,7 @@ namespace CathAssist
 		public:
 			static void initPropers();
 			static void releasePropers();
-			static std::multimap<int, CellInfo> getPropers() { return mapPropers; }
+			static std::map<int, CellInfo> getPropers() { return mapPropers; }
 			static std::list<CellInfo> getNormalDays();
 			static CellInfo getCellInfo(const int &id);
 
@@ -65,7 +65,7 @@ namespace CathAssist
 
 			int year; // Current year             当前年份
 
-			static std::multimap<int, CellInfo> mapPropers;
+			static std::map<int, CellInfo> mapPropers;
 		};
 	}
 }

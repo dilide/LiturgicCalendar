@@ -1,5 +1,6 @@
 #include <iostream>
 #include "MultiLang.h"
+#include "Calendar.h"
 using namespace inicpp;
 
 std::map<int, std::map<std::string, std::string>> CathAssist::Calendar::MultiLang::mapLangs;
@@ -24,12 +25,28 @@ void CathAssist::Calendar::MultiLang::read(const std::string &strLangFile)
 
 void CathAssist::Calendar::MultiLang::write(const std::string &strLangFile)
 {
+    CathAssist::Calendar::MultiLang::setLangCode(CathAssist::Calendar::LANG_EN);
+    Calendar::initCalendar();
+    auto allSaints = LiturgicYear::getPropers();
+    Calendar::releaseCalendar();
+
     IniManager ini(strLangFile);
     for (auto langItem : mapLangs)
     {
         std::string section = std::to_string(langItem.first);
-        for (auto item : langItem.second)
-        {
+        auto found = allSaints.find(langItem.first);
+        if(found == allSaints.end()) {
+            continue;
+        }
+
+        for(auto l : found->second.langs) {
+            auto lang = CathAssist::Calendar::getLangCodeStr(static_cast<langcode_t>(l));
+            if(ini[section].isKeyExist(lang)) {
+                continue;
+            }
+            ini[section][lang] = found->second.celebration;
+        }
+        for (auto item : langItem.second) {
             ini[section][item.first] = item.second;
         }
     }

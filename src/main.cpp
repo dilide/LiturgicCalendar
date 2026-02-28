@@ -394,7 +394,6 @@ void export_to_liturgy()
 
 void export_to_catholicism()
 {
-
     std::ofstream of;
     of.open(string("./catholicism.sql"));
 
@@ -550,6 +549,25 @@ void export_to_catholicism()
     of.close();
 }
 
+void export_disable_saints()
+{
+    // 通过英文初始化表
+    CathAssist::Calendar::MultiLang::setLangCode(CathAssist::Calendar::LANG_EN);
+    Calendar::initCalendar();
+    std::cout<<"禁用的节日代码列表：" << std::endl;
+    auto saints = LiturgicYear::getPropers();
+    auto iter = saints.begin();
+    while (iter != saints.end())
+    {
+        if (!iter->second.isEnable()) {
+            std::cout<<iter->first<<",";
+        }
+        ++iter;
+    }
+    std::cout << std::endl;
+    Calendar::releaseCalendar();
+}
+
 void calendar_test()
 {
     Calendar::initCalendar();
@@ -616,6 +634,7 @@ int main(int argc, char *argv[])
         }
     }
 
+    export_disable_saints();
     CathAssist::Calendar::MultiLang::write("lang_out.ini");
     return 0;
 }
