@@ -672,96 +672,98 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         // 1日
         mapPropers.insert(std::make_pair(1110101, CellInfo(SOLEMNITY, WHITE, "诸圣节(All Saints)")));
         mapPropers.insert(std::make_pair(1110201, CellInfo(LORD, PURPLE, "追思亡者(All Souls)")));
-        mapPropers.insert(std::make_pair(1110301, CellInfo(OPTIONAL, NOCOLOR, "圣玛尔定(St. Martin de Porres)")));
-        mapPropers.insert(std::make_pair(1110401, CellInfo(MEMORIAL, WHITE, "圣嘉禄(米兰枢机主教 St. Charles Borromeo)")));
-        mapPropers.insert(std::make_pair(1110501, CellInfo(OPTIONAL, NOCOLOR, "圣女伯蒂拉(童贞 St. Betrilla)")));
+        mapPropers.insert(std::make_pair(1110301, CellInfo(OPTIONAL, NOCOLOR, "圣玛尔定•包瑞斯(St. Martin de Porres)")));
+        mapPropers.insert(std::make_pair(1110401, CellInfo(MEMORIAL, WHITE, "圣嘉禄(St. Charles Borromeo)")));
+        mapPropers.insert(std::make_pair(1110501, CellInfo(OPTIONAL, NOCOLOR, "圣女伯蒂拉(St. Betrilla)")));
         // 6日
         mapPropers.insert(std::make_pair(1110601, CellInfo(MEMORIAL, RED, "越南第二批殉道烈士(The Martyrs of Indo-China, II)")));
-        mapPropers.insert(std::make_pair(1110602, CellInfo(OPTIONAL, NOCOLOR, "圣良纳弟(St. Leonard of Noblac)")));
-        mapPropers.insert(std::make_pair(1110701, CellInfo(OPTIONAL, NOCOLOR, "圣威利巴(欧德莱主教 St. Willbrord)")));
-        mapPropers.insert(std::make_pair(1110702, CellInfo(OPTIONAL, NOCOLOR, "真福安多尼•白田诺西(Bd. Antony Baldinucci)")));
-        mapPropers.insert(std::make_pair(1110801, CellInfo(OPTIONAL, NOCOLOR, "圣高弗烈(亚弥央斯主教 St. Godfrey)")));
+        mapPropers.insert(std::make_pair(1110602, CellInfo(OPTIONAL, NOCOLOR, "圣良纳弟(St. Leonard of Noblac)", disableLang)));
+        mapPropers.insert(std::make_pair(1110701, CellInfo(OPTIONAL, NOCOLOR, "圣威利巴(St. Willbrord)")));
+        mapPropers.insert(std::make_pair(1110702, CellInfo(OPTIONAL, NOCOLOR, "真福安多尼•白田诺西(Bd. Antony Baldinucci)", disableLang)));
+        mapPropers.insert(std::make_pair(1110801, CellInfo(OPTIONAL, NOCOLOR, "圣高弗烈(St. Godfrey)")));
         mapPropers.insert(std::make_pair(1110802, CellInfo(OPTIONAL, NOCOLOR, "真福若望·董思高(Bd. John Duns Scott)")));
         mapPropers.insert(std::make_pair(1110901, CellInfo(LORD, WHITE, "拉特朗大殿奉献日(The Dedication of the Lateran Basilica)")));
         mapPropers.insert(std::make_pair(1111001, CellInfo(MEMORIAL, WHITE, "圣良一世(教宗 St. Leo the Great)")));
-        mapPropers.insert(std::make_pair(1111002, CellInfo(OPTIONAL, NOCOLOR, "圣安德肋•亚委琳(St. Andrew Avellino)")));
+        mapPropers.insert(std::make_pair(1111002, CellInfo(OPTIONAL, NOCOLOR, "圣安德肋•亚委琳(St. Andrew Avellino)", disableLang)));
         // 11日
-        mapPropers.insert(std::make_pair(1111101, CellInfo(MEMORIAL, WHITE, "圣玛尔定(都尔主教 St. Martin of Tours)")));
-        mapPropers.insert(std::make_pair(1111102, CellInfo(OPTIONAL, NOCOLOR, "圣刁多禄(院长 St. Theodore the Studite)")));
-        mapPropers.insert(std::make_pair(1111201, CellInfo(MEMORIAL, RED, "圣若撒法(波罗总主教殉道 St. Joaphat of Polotsk)")));
+        mapPropers.insert(std::make_pair(1111101, CellInfo(MEMORIAL, WHITE, "圣玛尔定(St. Martin of Tours)")));
+        mapPropers.insert(std::make_pair(1111102, CellInfo(OPTIONAL, NOCOLOR, "圣刁多禄(St. Theodore the Studite)", disableLang)));
+        mapPropers.insert(std::make_pair(1111201, CellInfo(MEMORIAL, RED, "圣若撒法(St. Joaphat of Polotsk)")));
         mapPropers.insert(std::make_pair(1111301, CellInfo(OPTIONAL, NOCOLOR, "圣达尼老•各斯加(St. Stanislaus Kostka)")));
-        mapPropers.insert(std::make_pair(1111401, CellInfo(OPTIONAL, NOCOLOR, "圣老楞佐•奥多(都柏林总主教 St. Laurence O'Toole)")));
-        mapPropers.insert(std::make_pair(1111501, CellInfo(OPTIONAL, NOCOLOR, "圣大亚伯尔(勒根斯堡主教圣师 St. Albert the Great)")));
-        mapPropers.insert(std::make_pair(1111502, CellInfo(OPTIONAL, NOCOLOR, "真福痛苦玛利亚修女(Bl. Mary of the Passion)")));
+        mapPropers.insert(std::make_pair(1111401, CellInfo(OPTIONAL, NOCOLOR, "圣老楞佐•奥多(St. Laurence O'Toole)")));
+        mapPropers.insert(std::make_pair(1111501, CellInfo(OPTIONAL, NOCOLOR, "圣大亚尔伯(St. Albert the Great)")));
+        mapPropers.insert(std::make_pair(1111502, CellInfo(OPTIONAL, NOCOLOR, "真福痛苦玛利亚修女(Bl. Mary of the Passion)", disableLang)));
         // 16日
-        mapPropers.insert(std::make_pair(1111601, CellInfo(OPTIONAL, NOCOLOR, "圣妇玛加利大(St. Margaret of Scotland)")));
+        mapPropers.insert(std::make_pair(1111601, CellInfo(OPTIONAL, NOCOLOR, "圣玛加利大(St. Margaret of Scotland)")));
         mapPropers.insert(std::make_pair(1111602, CellInfo(OPTIONAL, NOCOLOR, "圣女日多达(St. Getrude)")));
-        mapPropers.insert(std::make_pair(1111603, CellInfo(OPTIONAL, NOCOLOR, "圣爱德门(坎特布里总主教 St. Edmund of Abingdon)")));
+        mapPropers.insert(std::make_pair(1111603, CellInfo(OPTIONAL, NOCOLOR, "圣爱德门(St. Edmund of Abingdon)", disableLang)));
         mapPropers.insert(std::make_pair(1111701, CellInfo(MEMORIAL, WHITE, "圣依撒伯尔(St. Elizabeth of Hungary)")));
         mapPropers.insert(std::make_pair(1111801, CellInfo(MEMORIAL, WHITE, "圣伯多禄圣保禄大殿奉献日(The Dedication of the Basilicas of St. Peter and of St. Paul)")));
-        mapPropers.insert(std::make_pair(1111901, CellInfo(OPTIONAL, NOCOLOR, "圣额我略“显灵迹者”(新则撒肋主教 St. Gregory the Wonderworker)")));
-        mapPropers.insert(std::make_pair(1111902, CellInfo(OPTIONAL, NOCOLOR, "圣狄尼削(亚历山大主教 St. Dionysius of Alexandria)")));
-        mapPropers.insert(std::make_pair(1112001, CellInfo(OPTIONAL, NOCOLOR, "圣斐理斯•瓦洛亚(圣三赎虏会会祖 St. Felix of Valois)")));
+        mapPropers.insert(std::make_pair(1111901, CellInfo(OPTIONAL, NOCOLOR, "圣额我略“显灵迹者”(St. Gregory the Wonderworker)", disableLang)));
+        mapPropers.insert(std::make_pair(1111902, CellInfo(OPTIONAL, NOCOLOR, "圣狄尼削(St. Dionysius of Alexandria)")));
+        mapPropers.insert(std::make_pair(1112001, CellInfo(OPTIONAL, NOCOLOR, "圣斐理斯•瓦洛亚(St. Felix of Valois)")));
         // 21日
         mapPropers.insert(std::make_pair(1112101, CellInfo(MEMORIAL, WHITE, "圣母奉献日(The Presentation of the Blessed Virgin Mary)")));
-        mapPropers.insert(std::make_pair(1112201, CellInfo(MEMORIAL, RED, "圣女则济利亚(童贞殉道 St. Cecilia)")));
-        mapPropers.insert(std::make_pair(1112301, CellInfo(OPTIONAL, NOCOLOR, "圣格肋孟一世(教宗殉道 St. Clement I)")));
+        mapPropers.insert(std::make_pair(1112201, CellInfo(MEMORIAL, RED, "圣女则济利亚(St. Cecilia)")));
+        mapPropers.insert(std::make_pair(1112301, CellInfo(OPTIONAL, NOCOLOR, "圣格肋孟一世(St. Clement I)")));
         mapPropers.insert(std::make_pair(1112302, CellInfo(OPTIONAL, NOCOLOR, "圣高隆庞(St. Columban)")));
-        mapPropers.insert(std::make_pair(1112401, CellInfo(MEMORIAL, RED, "圣陈安勇乐司铎及同伴(殉道)")));
-        mapPropers.insert(std::make_pair(1112501, CellInfo(OPTIONAL, NOCOLOR, "圣加斯伯(宝血会会祖 St. Caspar Del Bufalo)")));
-        mapPropers.insert(std::make_pair(1112502, CellInfo(OPTIONAL, NOCOLOR, "圣若望•伯尔各满(St. John Berchmans)")));
+        mapPropers.insert(std::make_pair(1112401, CellInfo(MEMORIAL, RED, "圣陈安勇乐司铎及同伴")));
+        mapPropers.insert(std::make_pair(1112402, CellInfo(OPTIONAL, NOCOLOR, "圣徐德新(St. Ioannes Dufresse)", chineseLang)));
+        mapPropers.insert(std::make_pair(1112501, CellInfo(OPTIONAL, NOCOLOR, "圣加斯伯(St. Caspar Del Bufalo)", disableLang)));
+        mapPropers.insert(std::make_pair(1112502, CellInfo(OPTIONAL, NOCOLOR, "圣若望•伯尔各满(St. John Berchmans)", disableLang)));
         mapPropers.insert(std::make_pair(1112503, CellInfo(OPTIONAL, NOCOLOR, "圣加大利纳•亚力山卓(St. Catherine of Alexandria)")));
         // 26日
         mapPropers.insert(std::make_pair(1112601, CellInfo(OPTIONAL, NOCOLOR, "圣良纳(St. Leonard of Port Mauriee)")));
-        mapPropers.insert(std::make_pair(1112701, CellInfo(OPTIONAL, NOCOLOR, "圣维琪尔(苏士堡主教 St. Virgil of Salzburg)")));
-        mapPropers.insert(std::make_pair(1112801, CellInfo(OPTIONAL, NOCOLOR, "圣女加大利纳•拉布莱(童贞 St. Catherine Laboure)")));
-        mapPropers.insert(std::make_pair(1112901, CellInfo(OPTIONAL, NOCOLOR, "圣斯德望(殉道 St. Stephen the Younger)")));
-        mapPropers.insert(std::make_pair(1112902, CellInfo(OPTIONAL, NOCOLOR, "圣胡伯(列日主教 St. Hubert)")));
-        mapPropers.insert(std::make_pair(1113001, CellInfo(FEAST, RED, "圣安德肋(宗徒 St. Andrew the Apostle)")));
+        mapPropers.insert(std::make_pair(1112701, CellInfo(OPTIONAL, NOCOLOR, "圣维琪尔(St. Virgil of Salzburg)")));
+        mapPropers.insert(std::make_pair(1112801, CellInfo(OPTIONAL, NOCOLOR, "圣女加大利纳•拉布莱(St. Catherine Laboure)")));
+        mapPropers.insert(std::make_pair(1112901, CellInfo(OPTIONAL, NOCOLOR, "圣小斯德望(St. Stephen the Younger)")));
+        mapPropers.insert(std::make_pair(1112902, CellInfo(OPTIONAL, NOCOLOR, "圣胡伯(St. Hubert)", disableLang)));
+        mapPropers.insert(std::make_pair(1112903, CellInfo(OPTIONAL, NOCOLOR, "圣刘瑞廷", chineseLang)));
+        mapPropers.insert(std::make_pair(1113001, CellInfo(FEAST, RED, "圣安德肋(St. Andrew the Apostle)")));
 
         /*******************12月*****************/
         // 1日
-        mapPropers.insert(std::make_pair(1120101, CellInfo(OPTIONAL, NOCOLOR, "圣安利日(诺雷主教 St. Eligius)")));
+        mapPropers.insert(std::make_pair(1120101, CellInfo(OPTIONAL, NOCOLOR, "圣安利日(St. Eligius)")));
         mapPropers.insert(std::make_pair(1120102, CellInfo(OPTIONAL, NOCOLOR, "真福爱德门•江本(Bd. Edmund Campion)")));
-        mapPropers.insert(std::make_pair(1120201, CellInfo(OPTIONAL, NOCOLOR, "圣女彼彼亚纳(童贞殉道 St. Bibiana)")));
+        mapPropers.insert(std::make_pair(1120201, CellInfo(OPTIONAL, NOCOLOR, "圣女彼彼亚纳(St. Bibiana)")));
         mapPropers.insert(std::make_pair(1120301, CellInfo(MEMORIAL, WHITE, "圣方济各•沙勿略(St. Francis Xavier)")));
-        mapPropers.insert(std::make_pair(1120401, CellInfo(OPTIONAL, NOCOLOR, "圣若望•达玛森(圣师 St. John Damascene)")));
-        mapPropers.insert(std::make_pair(1120501, CellInfo(OPTIONAL, NOCOLOR, "圣撒巴(院长 St. Sabas)")));
+        mapPropers.insert(std::make_pair(1120401, CellInfo(OPTIONAL, NOCOLOR, "圣若望•达玛森(St. John Damascene)")));
+        mapPropers.insert(std::make_pair(1120501, CellInfo(OPTIONAL, NOCOLOR, "圣撒巴(St. Sabas)")));
         // 6日
-        mapPropers.insert(std::make_pair(1120601, CellInfo(OPTIONAL, NOCOLOR, "圣尼各老(米辣主教 St. Nicholas of Myra)")));
-        mapPropers.insert(std::make_pair(1120701, CellInfo(MEMORIAL, WHITE, "圣盎博罗削(米兰主教圣师 St. Ambrose)")));
-        mapPropers.insert(std::make_pair(1120702, CellInfo(OPTIONAL, NOCOLOR, "圣女若撒法•罗撒洛(童贞仁慈圣母女修会创办人 St. Josepha ROssello)")));
+        mapPropers.insert(std::make_pair(1120601, CellInfo(OPTIONAL, NOCOLOR, "圣尼各老(St. Nicholas of Myra)")));
+        mapPropers.insert(std::make_pair(1120701, CellInfo(MEMORIAL, WHITE, "圣盎博罗削(St. Ambrose)")));
+        mapPropers.insert(std::make_pair(1120702, CellInfo(OPTIONAL, NOCOLOR, "圣女若撒法•罗撒洛(St. Josepha ROssello)")));
         mapPropers.insert(std::make_pair(1120801, CellInfo(FEAST, WHITE, "圣母无原罪始胎(The Immaculate Conception of the Blessed Virgin Mary)")));
-        mapPropers.insert(std::make_pair(1120901, CellInfo(OPTIONAL, NOCOLOR, "圣伯多禄•傅雷(圣母奥斯定女修会副会祖 St. Peter Fourier)")));
+        mapPropers.insert(std::make_pair(1120901, CellInfo(OPTIONAL, NOCOLOR, "圣伯多禄•傅雷(St. Peter Fourier)")));
         mapPropers.insert(std::make_pair(1120902, CellInfo(OPTIONAL, NOCOLOR, "圣若望•迪达谷(St. Juan Diego Cuauhtlatoatzin)")));
         mapPropers.insert(std::make_pair(1121001, CellInfo(MEMORIAL, WHITE, "洛雷托圣母"))); // 我灵赞颂主有
-        mapPropers.insert(std::make_pair(1121002, CellInfo(OPTIONAL, NOCOLOR, "圣米济亚德(教宗殉道 St. Miltiades)")));
+        mapPropers.insert(std::make_pair(1121002, CellInfo(OPTIONAL, NOCOLOR, "圣米济亚德(St. Miltiades)")));
         // 11日
-        mapPropers.insert(std::make_pair(1121101, CellInfo(OPTIONAL, NOCOLOR, "圣达玛稣一世(圣达生 St. Damasus)")));
+        mapPropers.insert(std::make_pair(1121101, CellInfo(OPTIONAL, NOCOLOR, "圣达玛稣一世(St. Damasus)")));
         mapPropers.insert(std::make_pair(1121201, CellInfo(FEAST, WHITE, "瓜达卢佩圣母(Our Lady of Guadalupe)")));
-        mapPropers.insert(std::make_pair(1121202, CellInfo(OPTIONAL, NOCOLOR, "圣妇若翰纳•方济加•尚达尔(圣母往见会创办人 St. Jane Frances de Chantal)")));
-        mapPropers.insert(std::make_pair(1121301, CellInfo(MEMORIAL, RED, "圣女路济亚(圣路琪童贞殉道 St. Lucy)")));
-        mapPropers.insert(std::make_pair(1121401, CellInfo(MEMORIAL, WHITE, "圣若望“由十字架者”(圣师 St. John of the Cross)")));
-        mapPropers.insert(std::make_pair(1121402, CellInfo(OPTIONAL, NOCOLOR, "圣史比利廷(德米杜主教 St. Spiridion)")));
-        mapPropers.insert(std::make_pair(1121501, CellInfo(OPTIONAL, NOCOLOR, "圣万南修•福多诺(波蒂亚主教 St. Venantius Fotunatus)")));
-        mapPropers.insert(std::make_pair(1121502, CellInfo(OPTIONAL, NOCOLOR, "圣女尼诺(童贞 St. Nino)")));
-        mapPropers.insert(std::make_pair(1121503, CellInfo(OPTIONAL, NOCOLOR, "圣女玛利亚•罗撒(童贞伯来西亚仁爱婢女会创办人 St. Mary di Rosa)")));
+        mapPropers.insert(std::make_pair(1121202, CellInfo(OPTIONAL, NOCOLOR, "圣妇若翰纳•方济加•尚达尔(St. Jane Frances de Chantal)")));
+        mapPropers.insert(std::make_pair(1121301, CellInfo(MEMORIAL, RED, "圣女路济亚(St. Lucy)")));
+        mapPropers.insert(std::make_pair(1121401, CellInfo(MEMORIAL, WHITE, "圣若望“由十字架者”(St. John of the Cross)")));
+        mapPropers.insert(std::make_pair(1121402, CellInfo(OPTIONAL, NOCOLOR, "圣史比利廷(St. Spiridion)")));
+        mapPropers.insert(std::make_pair(1121501, CellInfo(OPTIONAL, NOCOLOR, "圣万南修•福多诺(St. Venantius Fotunatus)")));
+        mapPropers.insert(std::make_pair(1121502, CellInfo(OPTIONAL, NOCOLOR, "圣女尼诺(St. Nino)")));
+        mapPropers.insert(std::make_pair(1121503, CellInfo(OPTIONAL, NOCOLOR, "圣女玛利亚•罗撒(St. Mary di Rosa)")));
         // 16日
         mapPropers.insert(std::make_pair(1121601, CellInfo(OPTIONAL, NOCOLOR, "圣妇亚德莱(St. Adelaide)")));
         mapPropers.insert(std::make_pair(1121701, CellInfo(MEMORIAL, NOCOLOR, "圣拉匝禄(St. Lazarus)")));
         mapPropers.insert(std::make_pair(1121702, CellInfo(OPTIONAL, NOCOLOR, "圣妇奥林比亚(St. Olympias)")));
         mapPropers.insert(std::make_pair(1121703, CellInfo(MEMORIAL, PURPLE, "将临期 12月17日")));
-        mapPropers.insert(std::make_pair(1121801, CellInfo(OPTIONAL, NOCOLOR, "圣威纳巴(院长 St. Wunibald)")));
-        mapPropers.insert(std::make_pair(1121802, CellInfo(OPTIONAL, NOCOLOR, "圣斯多米(院长 St. Sturmi)")));
+        mapPropers.insert(std::make_pair(1121801, CellInfo(OPTIONAL, NOCOLOR, "圣威纳巴(St. Wunibald)")));
+        mapPropers.insert(std::make_pair(1121802, CellInfo(OPTIONAL, NOCOLOR, "圣斯多米(St. Sturmi)")));
         mapPropers.insert(std::make_pair(1121803, CellInfo(MEMORIAL, PURPLE, "将临期 12月18日")));
         mapPropers.insert(std::make_pair(1121901, CellInfo(OPTIONAL, NOCOLOR, "圣南米修及其他殉道烈士(Ss. Nemesius and other Martyrs)")));
         mapPropers.insert(std::make_pair(1121902, CellInfo(MEMORIAL, PURPLE, "将临期 12月19日")));
-        mapPropers.insert(std::make_pair(1122001, CellInfo(OPTIONAL, NOCOLOR, "圣多明我•西洛(院长 St. Dominic of Silos)")));
+        mapPropers.insert(std::make_pair(1122001, CellInfo(OPTIONAL, NOCOLOR, "圣多明我•西洛(St. Dominic of Silos)")));
         mapPropers.insert(std::make_pair(1122002, CellInfo(MEMORIAL, PURPLE, "将临期 12月20日")));
         // 21日
-        mapPropers.insert(std::make_pair(1122101, CellInfo(OPTIONAL, NOCOLOR, "圣伯多禄•加尼削(圣师 St. Peter Canisius)")));
+        mapPropers.insert(std::make_pair(1122101, CellInfo(OPTIONAL, NOCOLOR, "圣伯多禄•加尼削(St. Peter Canisius)")));
         mapPropers.insert(std::make_pair(1122102, CellInfo(MEMORIAL, PURPLE, "将临期 12月21日")));
-        mapPropers.insert(std::make_pair(1122201, CellInfo(OPTIONAL, NOCOLOR, "圣女方济加(童贞 圣心传教女修会创办人 St. Frances Xavier Cabrini)")));
+        mapPropers.insert(std::make_pair(1122201, CellInfo(OPTIONAL, NOCOLOR, "圣女方济加(St. Frances Xavier Cabrini)")));
         mapPropers.insert(std::make_pair(1122202, CellInfo(MEMORIAL, PURPLE, "将临期 12月22日")));
         mapPropers.insert(std::make_pair(1122301, CellInfo(OPTIONAL, NOCOLOR, "圣若望根地(St. John of Kanti)")));
         mapPropers.insert(std::make_pair(1122302, CellInfo(MEMORIAL, PURPLE, "将临期 12月23日")));
@@ -769,8 +771,8 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         mapPropers.insert(std::make_pair(1122501, CellInfo(SOLEMNITY, WHITE, "耶稣圣诞(The Birthday of Our Lord Jesus Christ)")));
         // 26日
         mapPropers.insert(std::make_pair(1122601, CellInfo(FEAST, RED, "圣斯德望(首位殉道 St. Stephen)")));
-        mapPropers.insert(std::make_pair(1122602, CellInfo(OPTIONAL, NOCOLOR, "真福味增济亚(无玷圣母女修会创办人 Bd. Vincentia)")));
-        mapPropers.insert(std::make_pair(1122701, CellInfo(FEAST, WHITE, "圣若望(宗徒兼圣史 St. John the Evangelist)")));
+        mapPropers.insert(std::make_pair(1122602, CellInfo(OPTIONAL, NOCOLOR, "真福味增济亚(Bd. Vincentia)")));
+        mapPropers.insert(std::make_pair(1122701, CellInfo(FEAST, WHITE, "圣若望(St. John the Evangelist)")));
         mapPropers.insert(std::make_pair(1122801, CellInfo(FEAST, RED, "诸圣婴孩(The Holy Innocents)")));
         mapPropers.insert(std::make_pair(1122901, CellInfo(OPTIONAL, NOCOLOR, "圣多默•贝凯(St. Thomas Becket)")));
         mapPropers.insert(std::make_pair(1122902, CellInfo(LORD, WHITE, "圣诞节庆期第五日")));
