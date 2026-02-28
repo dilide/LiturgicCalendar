@@ -192,21 +192,22 @@ void export_to_sqlite(const std::string &strDbName)
         auto iter = saints.begin();
         while (iter != saints.end())
         {
-
             // 插入sqlite数据库
-            std::ostringstream osql;
-            osql << "insert into saints(key,name,rank,color) values("
-                 << iter->first << ",'" << ansi2utf8(sqlite3_mprintf("%q", iter->second.celebration.c_str())) << "',"
-                 << iter->second.rank << "," << iter->second.color << ");";
+            if(iter->second.hasLang(LANG_ZH_CN)) {
+                std::ostringstream osql;
+                osql << "insert into saints(key,name,rank,color) values("
+                    << iter->first << ",'" << ansi2utf8(sqlite3_mprintf("%q", iter->second.celebration.c_str())) << "',"
+                    << iter->second.rank << "," << iter->second.color << ");";
 
-            if (sqlite3_exec(db, osql.str().c_str(), NULL, 0, NULL))
-            {
-                std::cout << osql.str() << std::endl;
-                return;
-            }
-            else
-            {
-                std::cout << "insert date " << iter->second.celebration << std::endl;
+                if (sqlite3_exec(db, osql.str().c_str(), NULL, 0, NULL))
+                {
+                    std::cout << osql.str() << std::endl;
+                    return;
+                }
+                else
+                {
+                    std::cout << "insert date " << iter->second.celebration << std::endl;
+                }
             }
             ++iter;
         }
@@ -284,10 +285,12 @@ void export_to_update_sql()
         auto iter = saints.begin();
         while (iter != saints.end())
         {
-            //"INSERT INTO easter_saint (code, name, rank, color) SELECT 10300,'常年期第三主日(圣言主日)', 5, 4 WHERE NOT EXISTS (SELECT 1 FROM easter_saint WHERE code=10300);";
-            of << "insert into easter_saint(code, name, rank, color) select " << iter->first << ",'" << ansi2utf8(sqlite3_mprintf("%q", iter->second.celebration.c_str())) << "',"
-               << iter->second.rank << "," << iter->second.color << " where not exists (select 1 from easter_saint where code=" << iter->first << ");" << std::endl;
-            of << "update easter_saint set name='" << ansi2utf8(sqlite3_mprintf("%q", iter->second.celebration.c_str())) << "', rank=" << iter->second.rank << ", color=" << iter->second.color << " where code=" << iter->first << ";" << std::endl;
+            if(iter->second.hasLang(LANG_ZH_CN)) {
+                //"INSERT INTO easter_saint (code, name, rank, color) SELECT 10300,'常年期第三主日(圣言主日)', 5, 4 WHERE NOT EXISTS (SELECT 1 FROM easter_saint WHERE code=10300);";
+                of << "insert into easter_saint(code, name, rank, color) select " << iter->first << ",'" << ansi2utf8(sqlite3_mprintf("%q", iter->second.celebration.c_str())) << "',"
+                << iter->second.rank << "," << iter->second.color << " where not exists (select 1 from easter_saint where code=" << iter->first << ");" << std::endl;
+                of << "update easter_saint set name='" << ansi2utf8(sqlite3_mprintf("%q", iter->second.celebration.c_str())) << "', rank=" << iter->second.rank << ", color=" << iter->second.color << " where code=" << iter->first << ";" << std::endl;
+            }
 
             ++iter;
         }
