@@ -415,8 +415,8 @@ void export_to_catholicism()
                 std::cout << name << std::endl;
 
                 of << "insert into c_liturgic_code(code, name, rank, color) values("
-                   << iter->code << ", '{}', " << iter->rank << "," << iter->color << ")"
-                   << " on conflict (code) do update set rank=" << iter->rank << ", color=" << iter->color << ";" << std::endl;
+                   << iter->code << ", '{}', '{}', '{}')"
+                   << " on conflict (code) do update set name='{}', rank='{}', color='{}';" << std::endl;
 
                 of << "insert into c_mass(code) values(" << iter->code << ")"
                    << " on conflict (code) do nothing;" << std::endl;
@@ -438,8 +438,8 @@ void export_to_catholicism()
                     std::cout << name << std::endl;
                     // 圣人传记表
                     of << "insert into c_liturgic_code(code, name, rank, color) values("
-                       << iter->first << ", '{}', " << iter->second.rank << "," << iter->second.color << ")"
-                       << " on conflict (code) do update set rank=" << iter->second.rank << ", color=" << iter->second.color << ";" << std::endl;
+                       << iter->first << ", '{}', '{}', '{}')"
+                       << " on conflict (code) do update set name='{}', rank='{}', color='{}';" << std::endl;
 
                     // 弥撒表
                     of << "insert into c_mass(code) values(" << iter->second.code << ")"
@@ -472,7 +472,10 @@ void export_to_catholicism()
                 auto name = iter->celebration;
                 std::cout << name << std::endl;
 
-                of << "update c_liturgic_code set name=jsonb_set(name, '{" << langStr << "}', '" << ansi2utf8(sqlite3_mprintf("\"%q\"", name.c_str())) << "'::jsonb) where code=" << iter->code << ";" << std::endl;
+                of << "update c_liturgic_code set name=jsonb_set(name, '{" << langStr << "}', '" << ansi2utf8(sqlite3_mprintf("\"%q\"", name.c_str())) << "'::jsonb),"
+                   << " rank=jsonb_set(rank, '{" << langStr << "}', '" << iter->rank << "'::jsonb),"
+                   << " color=jsonb_set(color, '{" << langStr << "}', '" << iter->color << "'::jsonb)"
+                   <<" where code=" << iter->code << ";" << std::endl;
                 ++iter;
             }
         }
@@ -484,7 +487,10 @@ void export_to_catholicism()
             {
                 if(iter->second.hasLang(lang)) {
                     auto name = iter->second.celebration;
-                    of << "update c_liturgic_code set name=jsonb_set(name, '{" << langStr << "}', '" << ansi2utf8(sqlite3_mprintf("\"%q\"", name.c_str())) << "'::jsonb) where code=" << iter->first << ";" << std::endl;
+                    of << "update c_liturgic_code set name=jsonb_set(name, '{" << langStr << "}', '" << ansi2utf8(sqlite3_mprintf("\"%q\"", name.c_str())) << "'::jsonb),"
+                       << " rank=jsonb_set(rank, '{" << langStr << "}', '" << iter->second.rank << "'::jsonb),"
+                       << " color=jsonb_set(color, '{" << langStr << "}', '" << iter->second.color << "'::jsonb)"
+                       <<" where code=" << iter->first << ";" << std::endl;
                 }
                 ++iter;
             }

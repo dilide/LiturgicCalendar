@@ -62,6 +62,10 @@ namespace CathAssist
             return langCodes;
         }
 
+        static bool checkContain(std::list<int> langs, int lang) {
+            return std::find(langs.begin(), langs.end(), lang) != langs.end();
+        }
+
 		/*
 		 * Days of the Week
 		 */
