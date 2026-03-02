@@ -1053,14 +1053,20 @@ void LiturgicYear::testChristmas1(LiturgicDay &ld)
     ld.setWeekOfSeason(-1);
     if (ld < ep)
     {
-        if (ep.day() == 8)
+        if(ld.dayOfWeek() == SUN && ep.dayOfWeek() != SUN)
         {
-            // 主显节在 1 月 8 日，主显节前是第二周（没有第一周）
+            // 晚祷只用第二主日圣咏
             ld.setWeekOfSeason(2);
-        }
-        else
-        {
-            ld.setWeekOfSeason(1);
+        } else {
+            if (ep.day() == 8)
+            {
+                // 主显节在 1 月 8 日，主显节前是第二周（没有第一周）
+                ld.setWeekOfSeason(2);
+            }
+            else
+            {
+                ld.setWeekOfSeason(1);
+            }
         }
 
         // 弥撒特殊处理 主显节前(1月2日～1月8日)
