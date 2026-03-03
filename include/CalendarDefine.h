@@ -815,7 +815,7 @@ namespace CathAssist
 
         // 意大利语介词阴阳的问题
         static std::string getPrepGenderStr(const season_t& season, const langcode_t& lang = LANG_IT_IT) {
-            if(lang != LANG_IT_IT) {
+            if(lang == LANG_IT_IT) {
                 if(season == ORDINARY) {
                     return "del";
                 } else {

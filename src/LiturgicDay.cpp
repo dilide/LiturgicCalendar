@@ -278,14 +278,20 @@ std::string LiturgicDay::getWeekdayString(const season_t &season, const int &wee
 		if (dayOfWeek == SUN)
 		{
 			ostr << getOrdinalStr(weekOfSeason, lang)
-				 << " " << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)
-				 << " " << getPrepGenderStr(season, lang) << " " << CathAssist::Calendar::getSeasonStr(season, lang);
+				 << " " << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang) << " ";
+			auto prepGender = getPrepGenderStr(season, lang);
+			if (!prepGender.empty())
+				ostr << prepGender << " ";
+			ostr << CathAssist::Calendar::getSeasonStr(season, lang);
 		}
 		else
 		{
 			ostr << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)
-				 << " della " << getOrdinalStr(weekOfSeason, lang)
-				 << " settimana " << getPrepGenderStr(season, lang) << " " << CathAssist::Calendar::getSeasonStr(season, lang);
+				 << " della " << getOrdinalStr(weekOfSeason, lang) << " settimana ";
+			auto prepGender = getPrepGenderStr(season, lang);
+			if (!prepGender.empty())
+				ostr << prepGender << " ";
+			ostr << CathAssist::Calendar::getSeasonStr(season, lang);
 		}
 	}
 	else if (CathAssist::Calendar::LANG_PT_BR == lang)
