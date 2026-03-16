@@ -720,8 +720,8 @@ insert into easter_saint(code, name, rank, color) select 1081602,'圣洛克(St. 
 update easter_saint set name='圣洛克(St. Rock)', rank=2, color=0 where code=1081602;
 insert into easter_saint(code, name, rank, color) select 1081701,'圣雅钦多(St. Hyachinth)',2,0 where not exists (select 1 from easter_saint where code=1081701);
 update easter_saint set name='圣雅钦多(St. Hyachinth)', rank=2, color=0 where code=1081701;
-insert into easter_saint(code, name, rank, color) select 1081702,'真福若翰纳•德拉诺(Bd. Joan Delanoue)',2,0 where not exists (select 1 from easter_saint where code=1081702);
-update easter_saint set name='真福若翰纳•德拉诺(Bd. Joan Delanoue)', rank=2, color=0 where code=1081702;
+insert into easter_saint(code, name, rank, color) select 1081702,'圣若翰纳•德拉诺(St. Joan Delanoue)',2,0 where not exists (select 1 from easter_saint where code=1081702);
+update easter_saint set name='圣若翰纳•德拉诺(St. Joan Delanoue)', rank=2, color=0 where code=1081702;
 insert into easter_saint(code, name, rank, color) select 1081801,'圣海伦(St. Helen)',2,0 where not exists (select 1 from easter_saint where code=1081801);
 update easter_saint set name='圣海伦(St. Helen)', rank=2, color=0 where code=1081801;
 insert into easter_saint(code, name, rank, color) select 1081802,'圣亚尔比(St. Alipius)',2,0 where not exists (select 1 from easter_saint where code=1081802);
@@ -1292,7 +1292,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期六)|', liturgic=11906, color=3 where date='2010-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第二十主日|', liturgic=12000, color=2 where date='2010-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2010-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2010-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2010-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2010-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第二十周(星期四)|', liturgic=12004, color=1 where date='2010-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期五)|', liturgic=12005, color=2 where date='2010-08-20';
@@ -1657,7 +1657,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='常年期第二十主日|圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|', liturgic=12000, color=1 where date='2011-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第二十周(星期一)|', liturgic=12001, color=2 where date='2011-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2011-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2011-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2011-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第二十周(星期四)|', liturgic=12004, color=1 where date='2011-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第二十周(星期五)|', liturgic=12005, color=1 where date='2011-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期六)|', liturgic=12006, color=2 where date='2011-08-20';
@@ -2023,7 +2023,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期二)|', liturgic=11902, color=3 where date='2012-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期三)|', liturgic=11903, color=2 where date='2012-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2012-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2012-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2012-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2012-08-18';
 update easter_daily set cells='常年期第二十主日|圣若望•欧德(St. John Eudes)\\1081901|', liturgic=12000, color=1 where date='2012-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期一)|', liturgic=12001, color=2 where date='2012-08-20';
@@ -2388,7 +2388,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期三)|', liturgic=11903, color=3 where date='2013-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期四)|', liturgic=11904, color=2 where date='2013-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2013-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2013-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2013-08-17';
 update easter_daily set cells='常年期第二十主日|圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|', liturgic=12000, color=1 where date='2013-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2013-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期二)|', liturgic=12002, color=2 where date='2013-08-20';
@@ -2753,7 +2753,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期四)|', liturgic=11904, color=3 where date='2014-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期五)|', liturgic=11905, color=2 where date='2014-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2014-08-16';
-update easter_daily set cells='常年期第二十主日|圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|', liturgic=12000, color=1 where date='2014-08-17';
+update easter_daily set cells='常年期第二十主日|圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|', liturgic=12000, color=1 where date='2014-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2014-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2014-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期三)|', liturgic=12003, color=2 where date='2014-08-20';
@@ -3118,7 +3118,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期五)|', liturgic=11905, color=3 where date='2015-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期六)|', liturgic=11906, color=2 where date='2015-08-15';
 update easter_daily set cells='常年期第二十主日|圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|', liturgic=12000, color=1 where date='2015-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2015-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2015-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2015-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2015-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期四)|', liturgic=12004, color=2 where date='2015-08-20';
@@ -3484,7 +3484,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='常年期第二十主日|圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|', liturgic=12000, color=1 where date='2016-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第二十周(星期一)|', liturgic=12001, color=2 where date='2016-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2016-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2016-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2016-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第二十周(星期四)|', liturgic=12004, color=1 where date='2016-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第二十周(星期五)|', liturgic=12005, color=1 where date='2016-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期六)|', liturgic=12006, color=2 where date='2016-08-20';
@@ -3849,7 +3849,7 @@ update easter_daily set cells='常年期第十九主日|圣依玻里多和圣彭
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期一)|', liturgic=11901, color=3 where date='2017-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期二)|', liturgic=11902, color=2 where date='2017-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期三)|', liturgic=11903, color=1 where date='2017-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2017-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2017-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2017-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2017-08-19';
 update easter_daily set cells='常年期第二十主日|圣伯尔纳铎(St. Bernard)\\1082001|', liturgic=12000, color=1 where date='2017-08-20';
@@ -4214,7 +4214,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期二)|', liturgic=11902, color=3 where date='2018-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期三)|', liturgic=11903, color=2 where date='2018-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2018-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2018-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2018-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2018-08-18';
 update easter_daily set cells='常年期第二十主日|圣若望•欧德(St. John Eudes)\\1081901|', liturgic=12000, color=1 where date='2018-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期一)|', liturgic=12001, color=2 where date='2018-08-20';
@@ -4579,7 +4579,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期三)|', liturgic=11903, color=3 where date='2019-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期四)|', liturgic=11904, color=2 where date='2019-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2019-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2019-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2019-08-17';
 update easter_daily set cells='常年期第二十主日|圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|', liturgic=12000, color=1 where date='2019-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2019-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期二)|', liturgic=12002, color=2 where date='2019-08-20';
@@ -4945,7 +4945,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期五)|', liturgic=11905, color=3 where date='2020-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期六)|', liturgic=11906, color=2 where date='2020-08-15';
 update easter_daily set cells='常年期第二十主日|圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|', liturgic=12000, color=1 where date='2020-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2020-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2020-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2020-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2020-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期四)|', liturgic=12004, color=2 where date='2020-08-20';
@@ -5310,7 +5310,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期六)|', liturgic=11906, color=3 where date='2021-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第二十主日|', liturgic=12000, color=2 where date='2021-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2021-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2021-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2021-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2021-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第二十周(星期四)|', liturgic=12004, color=1 where date='2021-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期五)|', liturgic=12005, color=2 where date='2021-08-20';
@@ -5675,7 +5675,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='常年期第二十主日|圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|', liturgic=12000, color=1 where date='2022-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第二十周(星期一)|', liturgic=12001, color=2 where date='2022-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2022-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2022-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2022-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第二十周(星期四)|', liturgic=12004, color=1 where date='2022-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第二十周(星期五)|', liturgic=12005, color=1 where date='2022-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期六)|', liturgic=12006, color=2 where date='2022-08-20';
@@ -6040,7 +6040,7 @@ update easter_daily set cells='常年期第十九主日|圣依玻里多和圣彭
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期一)|', liturgic=11901, color=3 where date='2023-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期二)|', liturgic=11902, color=2 where date='2023-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期三)|', liturgic=11903, color=1 where date='2023-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2023-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2023-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2023-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2023-08-19';
 update easter_daily set cells='常年期第二十主日|圣伯尔纳铎(St. Bernard)\\1082001|', liturgic=12000, color=1 where date='2023-08-20';
@@ -6406,7 +6406,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期三)|', liturgic=11903, color=3 where date='2024-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期四)|', liturgic=11904, color=2 where date='2024-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2024-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2024-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2024-08-17';
 update easter_daily set cells='常年期第二十主日|圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|', liturgic=12000, color=1 where date='2024-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2024-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期二)|', liturgic=12002, color=2 where date='2024-08-20';
@@ -6771,7 +6771,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期四)|', liturgic=11904, color=3 where date='2025-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期五)|', liturgic=11905, color=2 where date='2025-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2025-08-16';
-update easter_daily set cells='常年期第二十主日|圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|', liturgic=12000, color=1 where date='2025-08-17';
+update easter_daily set cells='常年期第二十主日|圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|', liturgic=12000, color=1 where date='2025-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2025-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2025-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期三)|', liturgic=12003, color=2 where date='2025-08-20';
@@ -7136,7 +7136,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期五)|', liturgic=11905, color=3 where date='2026-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期六)|', liturgic=11906, color=2 where date='2026-08-15';
 update easter_daily set cells='常年期第二十主日|圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|', liturgic=12000, color=1 where date='2026-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2026-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2026-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2026-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2026-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期四)|', liturgic=12004, color=2 where date='2026-08-20';
@@ -7501,7 +7501,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期六)|', liturgic=11906, color=3 where date='2027-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第二十主日|', liturgic=12000, color=2 where date='2027-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2027-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2027-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2027-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2027-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第二十周(星期四)|', liturgic=12004, color=1 where date='2027-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期五)|', liturgic=12005, color=2 where date='2027-08-20';
@@ -7867,7 +7867,7 @@ update easter_daily set cells='常年期第十九主日|圣依玻里多和圣彭
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期一)|', liturgic=11901, color=3 where date='2028-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期二)|', liturgic=11902, color=2 where date='2028-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期三)|', liturgic=11903, color=1 where date='2028-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2028-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2028-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2028-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2028-08-19';
 update easter_daily set cells='常年期第二十主日|圣伯尔纳铎(St. Bernard)\\1082001|', liturgic=12000, color=1 where date='2028-08-20';
@@ -8232,7 +8232,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期二)|', liturgic=11902, color=3 where date='2029-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期三)|', liturgic=11903, color=2 where date='2029-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2029-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2029-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2029-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2029-08-18';
 update easter_daily set cells='常年期第二十主日|圣若望•欧德(St. John Eudes)\\1081901|', liturgic=12000, color=1 where date='2029-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期一)|', liturgic=12001, color=2 where date='2029-08-20';
@@ -8597,7 +8597,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期三)|', liturgic=11903, color=3 where date='2030-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期四)|', liturgic=11904, color=2 where date='2030-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2030-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2030-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2030-08-17';
 update easter_daily set cells='常年期第二十主日|圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|', liturgic=12000, color=1 where date='2030-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2030-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期二)|', liturgic=12002, color=2 where date='2030-08-20';
@@ -8962,7 +8962,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期四)|', liturgic=11904, color=3 where date='2031-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期五)|', liturgic=11905, color=2 where date='2031-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2031-08-16';
-update easter_daily set cells='常年期第二十主日|圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|', liturgic=12000, color=1 where date='2031-08-17';
+update easter_daily set cells='常年期第二十主日|圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|', liturgic=12000, color=1 where date='2031-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2031-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2031-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期三)|', liturgic=12003, color=2 where date='2031-08-20';
@@ -9328,7 +9328,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期六)|', liturgic=11906, color=3 where date='2032-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第二十主日|', liturgic=12000, color=2 where date='2032-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2032-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2032-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2032-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2032-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第二十周(星期四)|', liturgic=12004, color=1 where date='2032-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期五)|', liturgic=12005, color=2 where date='2032-08-20';
@@ -9693,7 +9693,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='常年期第二十主日|圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|', liturgic=12000, color=1 where date='2033-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第二十周(星期一)|', liturgic=12001, color=2 where date='2033-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2033-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2033-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2033-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第二十周(星期四)|', liturgic=12004, color=1 where date='2033-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第二十周(星期五)|', liturgic=12005, color=1 where date='2033-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期六)|', liturgic=12006, color=2 where date='2033-08-20';
@@ -10058,7 +10058,7 @@ update easter_daily set cells='常年期第十九主日|圣依玻里多和圣彭
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期一)|', liturgic=11901, color=3 where date='2034-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期二)|', liturgic=11902, color=2 where date='2034-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期三)|', liturgic=11903, color=1 where date='2034-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2034-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2034-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2034-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2034-08-19';
 update easter_daily set cells='常年期第二十主日|圣伯尔纳铎(St. Bernard)\\1082001|', liturgic=12000, color=1 where date='2034-08-20';
@@ -10423,7 +10423,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期二)|', liturgic=11902, color=3 where date='2035-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期三)|', liturgic=11903, color=2 where date='2035-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2035-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2035-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2035-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2035-08-18';
 update easter_daily set cells='常年期第二十主日|圣若望•欧德(St. John Eudes)\\1081901|', liturgic=12000, color=1 where date='2035-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期一)|', liturgic=12001, color=2 where date='2035-08-20';
@@ -10789,7 +10789,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期四)|', liturgic=11904, color=3 where date='2036-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期五)|', liturgic=11905, color=2 where date='2036-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2036-08-16';
-update easter_daily set cells='常年期第二十主日|圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|', liturgic=12000, color=1 where date='2036-08-17';
+update easter_daily set cells='常年期第二十主日|圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|', liturgic=12000, color=1 where date='2036-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2036-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2036-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期三)|', liturgic=12003, color=2 where date='2036-08-20';
@@ -11154,7 +11154,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期五)|', liturgic=11905, color=3 where date='2037-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期六)|', liturgic=11906, color=2 where date='2037-08-15';
 update easter_daily set cells='常年期第二十主日|圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|', liturgic=12000, color=1 where date='2037-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2037-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2037-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2037-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2037-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期四)|', liturgic=12004, color=2 where date='2037-08-20';
@@ -11519,7 +11519,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期六)|', liturgic=11906, color=3 where date='2038-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第二十主日|', liturgic=12000, color=2 where date='2038-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2038-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2038-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2038-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2038-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第二十周(星期四)|', liturgic=12004, color=1 where date='2038-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期五)|', liturgic=12005, color=2 where date='2038-08-20';
@@ -11884,7 +11884,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='常年期第二十主日|圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|', liturgic=12000, color=1 where date='2039-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第二十周(星期一)|', liturgic=12001, color=2 where date='2039-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2039-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2039-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2039-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第二十周(星期四)|', liturgic=12004, color=1 where date='2039-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第二十周(星期五)|', liturgic=12005, color=1 where date='2039-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期六)|', liturgic=12006, color=2 where date='2039-08-20';
@@ -12250,7 +12250,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期二)|', liturgic=11902, color=3 where date='2040-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期三)|', liturgic=11903, color=2 where date='2040-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2040-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2040-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2040-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2040-08-18';
 update easter_daily set cells='常年期第二十主日|圣若望•欧德(St. John Eudes)\\1081901|', liturgic=12000, color=1 where date='2040-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期一)|', liturgic=12001, color=2 where date='2040-08-20';
@@ -12615,7 +12615,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期三)|', liturgic=11903, color=3 where date='2041-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期四)|', liturgic=11904, color=2 where date='2041-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2041-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2041-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2041-08-17';
 update easter_daily set cells='常年期第二十主日|圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|', liturgic=12000, color=1 where date='2041-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2041-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期二)|', liturgic=12002, color=2 where date='2041-08-20';
@@ -12980,7 +12980,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期四)|', liturgic=11904, color=3 where date='2042-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期五)|', liturgic=11905, color=2 where date='2042-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2042-08-16';
-update easter_daily set cells='常年期第二十主日|圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|', liturgic=12000, color=1 where date='2042-08-17';
+update easter_daily set cells='常年期第二十主日|圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|', liturgic=12000, color=1 where date='2042-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2042-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2042-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期三)|', liturgic=12003, color=2 where date='2042-08-20';
@@ -13345,7 +13345,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期五)|', liturgic=11905, color=3 where date='2043-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期六)|', liturgic=11906, color=2 where date='2043-08-15';
 update easter_daily set cells='常年期第二十主日|圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|', liturgic=12000, color=1 where date='2043-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2043-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2043-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2043-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2043-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期四)|', liturgic=12004, color=2 where date='2043-08-20';
@@ -13711,7 +13711,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='常年期第二十主日|圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|', liturgic=12000, color=1 where date='2044-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第二十周(星期一)|', liturgic=12001, color=2 where date='2044-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2044-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2044-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2044-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第二十周(星期四)|', liturgic=12004, color=1 where date='2044-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第二十周(星期五)|', liturgic=12005, color=1 where date='2044-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期六)|', liturgic=12006, color=2 where date='2044-08-20';
@@ -14076,7 +14076,7 @@ update easter_daily set cells='常年期第十九主日|圣依玻里多和圣彭
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期一)|', liturgic=11901, color=3 where date='2045-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期二)|', liturgic=11902, color=2 where date='2045-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期三)|', liturgic=11903, color=1 where date='2045-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2045-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2045-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2045-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2045-08-19';
 update easter_daily set cells='常年期第二十主日|圣伯尔纳铎(St. Bernard)\\1082001|', liturgic=12000, color=1 where date='2045-08-20';
@@ -14441,7 +14441,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期二)|', liturgic=11902, color=3 where date='2046-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期三)|', liturgic=11903, color=2 where date='2046-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2046-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2046-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2046-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2046-08-18';
 update easter_daily set cells='常年期第二十主日|圣若望•欧德(St. John Eudes)\\1081901|', liturgic=12000, color=1 where date='2046-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期一)|', liturgic=12001, color=2 where date='2046-08-20';
@@ -14806,7 +14806,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期三)|', liturgic=11903, color=3 where date='2047-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期四)|', liturgic=11904, color=2 where date='2047-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2047-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2047-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第十九周(星期六)|', liturgic=11906, color=1 where date='2047-08-17';
 update easter_daily set cells='常年期第二十主日|圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|', liturgic=12000, color=1 where date='2047-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2047-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期二)|', liturgic=12002, color=2 where date='2047-08-20';
@@ -15172,7 +15172,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期五)|', liturgic=11905, color=3 where date='2048-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第十九周(星期六)|', liturgic=11906, color=2 where date='2048-08-15';
 update easter_daily set cells='常年期第二十主日|圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|', liturgic=12000, color=1 where date='2048-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2048-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2048-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2048-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2048-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期四)|', liturgic=12004, color=2 where date='2048-08-20';
@@ -15537,7 +15537,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|常年期第十九周(星期六)|', liturgic=11906, color=3 where date='2049-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第二十主日|', liturgic=12000, color=2 where date='2049-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第二十周(星期一)|', liturgic=12001, color=1 where date='2049-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2049-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2049-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2049-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第二十周(星期四)|', liturgic=12004, color=1 where date='2049-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期五)|', liturgic=12005, color=2 where date='2049-08-20';
@@ -15902,7 +15902,7 @@ update easter_daily set cells='圣依玻里多和圣彭谦(Ss. Hippolytus and Po
 update easter_daily set cells='常年期第二十主日|圣国柏司铎(St. Maximilian Kolbe, Priest and Martyr)\\1081402|圣母升天节前夕\\1081403|', liturgic=12000, color=1 where date='2050-08-14';
 update easter_daily set cells='圣母升天节(The Assumption of the Blessed Virgin Mary)\\1081501|常年期第二十周(星期一)|', liturgic=12001, color=2 where date='2050-08-15';
 update easter_daily set cells='圣斯德望（匈牙利）(St. Stephen of Hungary)\\1081601|圣洛克(St. Rock)\\1081602|常年期第二十周(星期二)|', liturgic=12002, color=1 where date='2050-08-16';
-update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|真福若翰纳•德拉诺(Bd. Joan Delanoue)\\1081702|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2050-08-17';
+update easter_daily set cells='圣雅钦多(St. Hyachinth)\\1081701|圣若翰纳•德拉诺(St. Joan Delanoue)\\1081702|常年期第二十周(星期三)|', liturgic=12003, color=1 where date='2050-08-17';
 update easter_daily set cells='圣海伦(St. Helen)\\1081801|圣亚尔比(St. Alipius)\\1081802|常年期第二十周(星期四)|', liturgic=12004, color=1 where date='2050-08-18';
 update easter_daily set cells='圣若望•欧德(St. John Eudes)\\1081901|常年期第二十周(星期五)|', liturgic=12005, color=1 where date='2050-08-19';
 update easter_daily set cells='圣伯尔纳铎(St. Bernard)\\1082001|常年期第二十周(星期六)|', liturgic=12006, color=2 where date='2050-08-20';
