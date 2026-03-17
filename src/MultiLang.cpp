@@ -38,6 +38,9 @@ void CathAssist::Calendar::MultiLang::write(const std::string &strLangFile)
         if(found == allSaints.end()) {
             continue;
         }
+        if(!found->second.isEnable()) {
+            continue;
+        }
 
         for(auto l : found->second.langs) {
             auto lang = CathAssist::Calendar::getLangCodeStr(static_cast<langcode_t>(l));
