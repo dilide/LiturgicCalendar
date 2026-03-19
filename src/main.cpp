@@ -639,7 +639,7 @@ void export_to_ical()
         of << "X-WR-CALNAME:Liturgic Calendar (" << langStr << ")" << "\r\n";
         of << "X-WR-TIMEZONE:UTC" << "\r\n";
 
-        for (int iYear = 2010; iYear < 2051; ++iYear)
+        for (int iYear = 2025; iYear < 2030; ++iYear)
         {
             CathAssist::Calendar::Date dtBegin(iYear, 1, 1);
 
