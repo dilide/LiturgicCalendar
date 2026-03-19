@@ -621,8 +621,8 @@ void calendar_test()
 
 void export_to_ical()
 {
-    // 导出各语言版本的 iCal
-    for (int lang = CathAssist::Calendar::LANG_EN; lang <= CathAssist::Calendar::LANG_PT_BR; ++lang)
+    // 仅生成简体中文版本的 iCal
+    int lang = CathAssist::Calendar::LANG_ZH_CN;
     {
         CathAssist::Calendar::MultiLang::setLangCode(static_cast<CathAssist::Calendar::langcode_t>(lang));
         Calendar::initCalendar();
@@ -636,10 +636,10 @@ void export_to_ical()
         of << "PRODID:-//CathAssist//LiturgicCalendar//EN" << "\r\n";
         of << "CALSCALE:GREGORIAN" << "\r\n";
         of << "METHOD:PUBLISH" << "\r\n";
-        of << "X-WR-CALNAME:Liturgic Calendar (" << langStr << ")" << "\r\n";
+        of << "X-WR-CALNAME:教会礼仪历" << "\r\n";
         of << "X-WR-TIMEZONE:UTC" << "\r\n";
 
-        for (int iYear = 2025; iYear < 2030; ++iYear)
+        for (int iYear = 2025; iYear <= 2030; ++iYear)
         {
             CathAssist::Calendar::Date dtBegin(iYear, 1, 1);
 
@@ -648,51 +648,46 @@ void export_to_ical()
                 LiturgicDay dayInfo = Calendar::getLiturgicDay(dtBegin);
 
                 auto cells = dayInfo.getCellInfos();
-                std::string summary = "";
-                std::string description = "";
-
+                int cellIdx = 0;
                 for (auto& cell : cells) {
-                    if (cell.isEnable()) {
-                        if (!summary.empty()) summary += " | ";
-                        summary += cell.celebration;
+                    if (cell.isEnable() && cell.rank >= MEMORIAL) {
+                        std::ostringstream ossDate;
+                        ossDate << setfill('0') << setw(4) << dtBegin.year()
+                                << setfill('0') << setw(2) << dtBegin.month()
+                                << setfill('0') << setw(2) << dtBegin.day();
+                        std::string dateStr = ossDate.str();
 
-                        if (!description.empty()) description += "\\n";
-                        description += cell.celebration + " (" + getRankStr(cell.rank) + ", " + getColorStr(cell.color, static_cast<CathAssist::Calendar::langcode_t>(lang)) + ")";
+                        CathAssist::Calendar::Date dtEnd = dtBegin.addDays(1);
+                        std::ostringstream ossDateEnd;
+                        ossDateEnd << setfill('0') << setw(4) << dtEnd.year()
+                                   << setfill('0') << setw(2) << dtEnd.month()
+                                   << setfill('0') << setw(2) << dtEnd.day();
+                        std::string dateEndStr = ossDateEnd.str();
+
+                        std::string summary = cell.celebration;
+                        std::string description = cell.celebration + " (" + getRankStr(cell.rank) + ", " + getColorStr(cell.color, static_cast<CathAssist::Calendar::langcode_t>(lang)) + ")";
+
+                        std::string summaryEscaped = ReplaceAll(summary, "\\", "\\\\");
+                        summaryEscaped = ReplaceAll(summaryEscaped, ",", "\\,");
+                        summaryEscaped = ReplaceAll(summaryEscaped, ";", "\\;");
+
+                        std::string descriptionEscaped = ReplaceAll(description, "\\", "\\\\");
+                        descriptionEscaped = ReplaceAll(descriptionEscaped, ",", "\\,");
+                        descriptionEscaped = ReplaceAll(descriptionEscaped, ";", "\\;");
+
+                        of << "BEGIN:VEVENT" << "\r\n";
+                        // 确保 UID 唯一：日期 + 语言 + 节日索引/代码
+                        of << "UID:" << dateStr << "_" << (cell.code > 0 ? std::to_string(cell.code) : std::to_string(cellIdx)) << "_" << langStr << "@cathassist.org" << "\r\n";
+                        of << "DTSTAMP:20260319T091850Z" << "\r\n";
+                        of << "DTSTART;VALUE=DATE:" << dateStr << "\r\n";
+                        of << "DTEND;VALUE=DATE:" << dateEndStr << "\r\n";
+                        of << "SUMMARY:" << summaryEscaped << "\r\n";
+                        of << "DESCRIPTION:" << descriptionEscaped << "\r\n";
+                        of << "STATUS:CONFIRMED" << "\r\n";
+                        of << "TRANSP:TRANSPARENT" << "\r\n";
+                        of << "END:VEVENT" << "\r\n";
                     }
-                }
-
-                if (!summary.empty()) {
-                    std::ostringstream ossDate;
-                    ossDate << setfill('0') << setw(4) << dtBegin.year()
-                            << setfill('0') << setw(2) << dtBegin.month()
-                            << setfill('0') << setw(2) << dtBegin.day();
-                    std::string dateStr = ossDate.str();
-
-                    CathAssist::Calendar::Date dtEnd = dtBegin.addDays(1);
-                    std::ostringstream ossDateEnd;
-                    ossDateEnd << setfill('0') << setw(4) << dtEnd.year()
-                               << setfill('0') << setw(2) << dtEnd.month()
-                               << setfill('0') << setw(2) << dtEnd.day();
-                    std::string dateEndStr = ossDateEnd.str();
-
-                    std::string summaryEscaped = ReplaceAll(summary, "\\", "\\\\");
-                    summaryEscaped = ReplaceAll(summaryEscaped, ",", "\\,");
-                    summaryEscaped = ReplaceAll(summaryEscaped, ";", "\\;");
-
-                    std::string descriptionEscaped = ReplaceAll(description, "\\", "\\\\");
-                    descriptionEscaped = ReplaceAll(descriptionEscaped, ",", "\\,");
-                    descriptionEscaped = ReplaceAll(descriptionEscaped, ";", "\\;");
-
-                    of << "BEGIN:VEVENT" << "\r\n";
-                    of << "UID:" << dateStr << "_" << langStr << "@cathassist.org" << "\r\n";
-                    of << "DTSTAMP:20260319T091850Z" << "\r\n";
-                    of << "DTSTART;VALUE=DATE:" << dateStr << "\r\n";
-                    of << "DTEND;VALUE=DATE:" << dateEndStr << "\r\n";
-                    of << "SUMMARY:" << summaryEscaped << "\r\n";
-                    of << "DESCRIPTION:" << descriptionEscaped << "\r\n";
-                    of << "STATUS:CONFIRMED" << "\r\n";
-                    of << "TRANSP:TRANSPARENT" << "\r\n";
-                    of << "END:VEVENT" << "\r\n";
+                    cellIdx++;
                 }
 
                 dtBegin = dtBegin.addDays(1);
