@@ -619,6 +619,92 @@ void calendar_test()
     Calendar::releaseCalendar();
 }
 
+void export_to_ical()
+{
+    // 导出各语言版本的 iCal
+    for (int lang = CathAssist::Calendar::LANG_EN; lang <= CathAssist::Calendar::LANG_PT_BR; ++lang)
+    {
+        CathAssist::Calendar::MultiLang::setLangCode(static_cast<CathAssist::Calendar::langcode_t>(lang));
+        Calendar::initCalendar();
+
+        std::string langStr = getLangCodeStr(static_cast<CathAssist::Calendar::langcode_t>(lang));
+        std::ofstream of;
+        of.open(string("./liturgic_") + langStr + ".ics");
+
+        of << "BEGIN:VCALENDAR" << "\r\n";
+        of << "VERSION:2.0" << "\r\n";
+        of << "PRODID:-//CathAssist//LiturgicCalendar//EN" << "\r\n";
+        of << "CALSCALE:GREGORIAN" << "\r\n";
+        of << "METHOD:PUBLISH" << "\r\n";
+        of << "X-WR-CALNAME:Liturgic Calendar (" << langStr << ")" << "\r\n";
+        of << "X-WR-TIMEZONE:UTC" << "\r\n";
+
+        for (int iYear = 2010; iYear < 2051; ++iYear)
+        {
+            CathAssist::Calendar::Date dtBegin(iYear, 1, 1);
+
+            while (dtBegin.year() == iYear)
+            {
+                LiturgicDay dayInfo = Calendar::getLiturgicDay(dtBegin);
+
+                auto cells = dayInfo.getCellInfos();
+                std::string summary = "";
+                std::string description = "";
+
+                for (auto& cell : cells) {
+                    if (cell.isEnable()) {
+                        if (!summary.empty()) summary += " | ";
+                        summary += cell.celebration;
+
+                        if (!description.empty()) description += "\\n";
+                        description += cell.celebration + " (" + getRankStr(cell.rank) + ", " + getColorStr(cell.color, static_cast<CathAssist::Calendar::langcode_t>(lang)) + ")";
+                    }
+                }
+
+                if (!summary.empty()) {
+                    std::ostringstream ossDate;
+                    ossDate << setfill('0') << setw(4) << dtBegin.year()
+                            << setfill('0') << setw(2) << dtBegin.month()
+                            << setfill('0') << setw(2) << dtBegin.day();
+                    std::string dateStr = ossDate.str();
+
+                    CathAssist::Calendar::Date dtEnd = dtBegin.addDays(1);
+                    std::ostringstream ossDateEnd;
+                    ossDateEnd << setfill('0') << setw(4) << dtEnd.year()
+                               << setfill('0') << setw(2) << dtEnd.month()
+                               << setfill('0') << setw(2) << dtEnd.day();
+                    std::string dateEndStr = ossDateEnd.str();
+
+                    std::string summaryEscaped = ReplaceAll(summary, "\\", "\\\\");
+                    summaryEscaped = ReplaceAll(summaryEscaped, ",", "\\,");
+                    summaryEscaped = ReplaceAll(summaryEscaped, ";", "\\;");
+
+                    std::string descriptionEscaped = ReplaceAll(description, "\\", "\\\\");
+                    descriptionEscaped = ReplaceAll(descriptionEscaped, ",", "\\,");
+                    descriptionEscaped = ReplaceAll(descriptionEscaped, ";", "\\;");
+
+                    of << "BEGIN:VEVENT" << "\r\n";
+                    of << "UID:" << dateStr << "_" << langStr << "@cathassist.org" << "\r\n";
+                    of << "DTSTAMP:20260319T091850Z" << "\r\n";
+                    of << "DTSTART;VALUE=DATE:" << dateStr << "\r\n";
+                    of << "DTEND;VALUE=DATE:" << dateEndStr << "\r\n";
+                    of << "SUMMARY:" << summaryEscaped << "\r\n";
+                    of << "DESCRIPTION:" << descriptionEscaped << "\r\n";
+                    of << "STATUS:CONFIRMED" << "\r\n";
+                    of << "TRANSP:TRANSPARENT" << "\r\n";
+                    of << "END:VEVENT" << "\r\n";
+                }
+
+                dtBegin = dtBegin.addDays(1);
+            }
+        }
+        of << "END:VCALENDAR" << "\r\n";
+        of.close();
+
+        Calendar::releaseCalendar();
+    }
+}
+
 int main(int argc, char *argv[])
 {
     CathAssist::Calendar::MultiLang::read("lang.ini");
@@ -632,6 +718,8 @@ int main(int argc, char *argv[])
         export_to_liturgy();
 
         export_to_catholicism();
+
+        export_to_ical();
     }
 
     if (true)
