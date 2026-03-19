@@ -18,3 +18,5 @@ liturgic.it_IT.db
 liturgic.pt_BR.db
 liturgic.zh_CN.db
 liturgic.zh_TW.db
+.claude
+node_modules
