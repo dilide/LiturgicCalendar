@@ -700,6 +700,8 @@ insert into easter_saint(code, name, rank, color) select 1080801,'圣多明我(S
 update easter_saint set name='圣多明我(St. Dominic)', rank=3, color=2 where code=1080801;
 insert into easter_saint(code, name, rank, color) select 1080901,'圣奥斯华(St. Oswald of Northumbria)',2,0 where not exists (select 1 from easter_saint where code=1080901);
 update easter_saint set name='圣奥斯华(St. Oswald of Northumbria)', rank=2, color=0 where code=1080901;
+insert into easter_saint(code, name, rank, color) select 1080903,'圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)',2,0 where not exists (select 1 from easter_saint where code=1080903);
+update easter_saint set name='圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)', rank=2, color=0 where code=1080903;
 insert into easter_saint(code, name, rank, color) select 1081001,'圣老楞佐(St. Laurence)',4,3 where not exists (select 1 from easter_saint where code=1081001);
 update easter_saint set name='圣老楞佐(St. Laurence)', rank=4, color=3 where code=1081001;
 insert into easter_saint(code, name, rank, color) select 1081002,'圣女菲洛美娜(St. Philomena)',2,0 where not exists (select 1 from easter_saint where code=1081002);
@@ -1288,7 +1290,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期五)|', liturgic=11805, color=2 where date='2010-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期六)|', liturgic=11806, color=1 where date='2010-08-07';
 update easter_daily set cells='常年期第十九主日|圣多明我(St. Dominic)\\1080801|', liturgic=11900, color=1 where date='2010-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十九周(星期一)|', liturgic=11901, color=1 where date='2010-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十九周(星期一)|', liturgic=11901, color=1 where date='2010-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十九周(星期二)|', liturgic=11902, color=3 where date='2010-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期三)|', liturgic=11903, color=2 where date='2010-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2010-08-12';
@@ -1653,7 +1655,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期六)|', liturgic=11806, color=2 where date='2011-08-06';
 update easter_daily set cells='常年期第十九主日|圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|', liturgic=11900, color=1 where date='2011-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十九周(星期一)|', liturgic=11901, color=2 where date='2011-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十九周(星期二)|', liturgic=11902, color=1 where date='2011-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十九周(星期二)|', liturgic=11902, color=1 where date='2011-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十九周(星期三)|', liturgic=11903, color=3 where date='2011-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期四)|', liturgic=11904, color=2 where date='2011-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2011-08-12';
@@ -2019,7 +2021,7 @@ update easter_daily set cells='常年期第十八主日|罗马圣母大殿奉献
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期一)|', liturgic=11801, color=2 where date='2012-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期二)|', liturgic=11802, color=1 where date='2012-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十八周(星期三)|', liturgic=11803, color=2 where date='2012-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十八周(星期四)|', liturgic=11804, color=1 where date='2012-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十八周(星期四)|', liturgic=11804, color=1 where date='2012-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十八周(星期五)|', liturgic=11805, color=3 where date='2012-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十八周(星期六)|', liturgic=11806, color=2 where date='2012-08-11';
 update easter_daily set cells='常年期第十九主日|圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|', liturgic=11900, color=1 where date='2012-08-12';
@@ -2384,7 +2386,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期二)|', liturgic=11802, color=2 where date='2013-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期三)|', liturgic=11803, color=1 where date='2013-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十八周(星期四)|', liturgic=11804, color=2 where date='2013-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十八周(星期五)|', liturgic=11805, color=1 where date='2013-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十八周(星期五)|', liturgic=11805, color=1 where date='2013-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十八周(星期六)|', liturgic=11806, color=3 where date='2013-08-10';
 update easter_daily set cells='常年期第十九主日|圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|', liturgic=11900, color=1 where date='2013-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十九周(星期一)|', liturgic=11901, color=1 where date='2013-08-12';
@@ -2749,7 +2751,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期三)|', liturgic=11803, color=2 where date='2014-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期四)|', liturgic=11804, color=1 where date='2014-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十八周(星期五)|', liturgic=11805, color=2 where date='2014-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十八周(星期六)|', liturgic=11806, color=1 where date='2014-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十八周(星期六)|', liturgic=11806, color=1 where date='2014-08-09';
 update easter_daily set cells='常年期第十九主日|圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|', liturgic=11900, color=1 where date='2014-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期一)|', liturgic=11901, color=2 where date='2014-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十九周(星期二)|', liturgic=11902, color=1 where date='2014-08-12';
@@ -3114,7 +3116,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期四)|', liturgic=11804, color=2 where date='2015-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期五)|', liturgic=11805, color=1 where date='2015-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十八周(星期六)|', liturgic=11806, color=2 where date='2015-08-08';
-update easter_daily set cells='常年期第十九主日|圣奥斯华(St. Oswald of Northumbria)\\1080901|', liturgic=11900, color=1 where date='2015-08-09';
+update easter_daily set cells='常年期第十九主日|圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|', liturgic=11900, color=1 where date='2015-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十九周(星期一)|', liturgic=11901, color=3 where date='2015-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期二)|', liturgic=11902, color=2 where date='2015-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十九周(星期三)|', liturgic=11903, color=1 where date='2015-08-12';
@@ -3480,7 +3482,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期六)|', liturgic=11806, color=2 where date='2016-08-06';
 update easter_daily set cells='常年期第十九主日|圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|', liturgic=11900, color=1 where date='2016-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十九周(星期一)|', liturgic=11901, color=2 where date='2016-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十九周(星期二)|', liturgic=11902, color=1 where date='2016-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十九周(星期二)|', liturgic=11902, color=1 where date='2016-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十九周(星期三)|', liturgic=11903, color=3 where date='2016-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期四)|', liturgic=11904, color=2 where date='2016-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2016-08-12';
@@ -3845,7 +3847,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八主日|', liturgic=11800, color=2 where date='2017-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期一)|', liturgic=11801, color=1 where date='2017-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十八周(星期二)|', liturgic=11802, color=2 where date='2017-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十八周(星期三)|', liturgic=11803, color=1 where date='2017-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十八周(星期三)|', liturgic=11803, color=1 where date='2017-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十八周(星期四)|', liturgic=11804, color=3 where date='2017-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十八周(星期五)|', liturgic=11805, color=2 where date='2017-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十八周(星期六)|', liturgic=11806, color=1 where date='2017-08-12';
@@ -4210,7 +4212,7 @@ update easter_daily set cells='常年期第十八主日|罗马圣母大殿奉献
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期一)|', liturgic=11801, color=2 where date='2018-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期二)|', liturgic=11802, color=1 where date='2018-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十八周(星期三)|', liturgic=11803, color=2 where date='2018-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十八周(星期四)|', liturgic=11804, color=1 where date='2018-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十八周(星期四)|', liturgic=11804, color=1 where date='2018-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十八周(星期五)|', liturgic=11805, color=3 where date='2018-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十八周(星期六)|', liturgic=11806, color=2 where date='2018-08-11';
 update easter_daily set cells='常年期第十九主日|圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|', liturgic=11900, color=1 where date='2018-08-12';
@@ -4575,7 +4577,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期二)|', liturgic=11802, color=2 where date='2019-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期三)|', liturgic=11803, color=1 where date='2019-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十八周(星期四)|', liturgic=11804, color=2 where date='2019-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十八周(星期五)|', liturgic=11805, color=1 where date='2019-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十八周(星期五)|', liturgic=11805, color=1 where date='2019-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十八周(星期六)|', liturgic=11806, color=3 where date='2019-08-10';
 update easter_daily set cells='常年期第十九主日|圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|', liturgic=11900, color=1 where date='2019-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十九周(星期一)|', liturgic=11901, color=1 where date='2019-08-12';
@@ -4941,7 +4943,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期四)|', liturgic=11804, color=2 where date='2020-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期五)|', liturgic=11805, color=1 where date='2020-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十八周(星期六)|', liturgic=11806, color=2 where date='2020-08-08';
-update easter_daily set cells='常年期第十九主日|圣奥斯华(St. Oswald of Northumbria)\\1080901|', liturgic=11900, color=1 where date='2020-08-09';
+update easter_daily set cells='常年期第十九主日|圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|', liturgic=11900, color=1 where date='2020-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十九周(星期一)|', liturgic=11901, color=3 where date='2020-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期二)|', liturgic=11902, color=2 where date='2020-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十九周(星期三)|', liturgic=11903, color=1 where date='2020-08-12';
@@ -5306,7 +5308,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期五)|', liturgic=11805, color=2 where date='2021-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期六)|', liturgic=11806, color=1 where date='2021-08-07';
 update easter_daily set cells='常年期第十九主日|圣多明我(St. Dominic)\\1080801|', liturgic=11900, color=1 where date='2021-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十九周(星期一)|', liturgic=11901, color=1 where date='2021-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十九周(星期一)|', liturgic=11901, color=1 where date='2021-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十九周(星期二)|', liturgic=11902, color=3 where date='2021-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期三)|', liturgic=11903, color=2 where date='2021-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2021-08-12';
@@ -5671,7 +5673,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期六)|', liturgic=11806, color=2 where date='2022-08-06';
 update easter_daily set cells='常年期第十九主日|圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|', liturgic=11900, color=1 where date='2022-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十九周(星期一)|', liturgic=11901, color=2 where date='2022-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十九周(星期二)|', liturgic=11902, color=1 where date='2022-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十九周(星期二)|', liturgic=11902, color=1 where date='2022-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十九周(星期三)|', liturgic=11903, color=3 where date='2022-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期四)|', liturgic=11904, color=2 where date='2022-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2022-08-12';
@@ -6036,7 +6038,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八主日|', liturgic=11800, color=2 where date='2023-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期一)|', liturgic=11801, color=1 where date='2023-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十八周(星期二)|', liturgic=11802, color=2 where date='2023-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十八周(星期三)|', liturgic=11803, color=1 where date='2023-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十八周(星期三)|', liturgic=11803, color=1 where date='2023-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十八周(星期四)|', liturgic=11804, color=3 where date='2023-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十八周(星期五)|', liturgic=11805, color=2 where date='2023-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十八周(星期六)|', liturgic=11806, color=1 where date='2023-08-12';
@@ -6402,7 +6404,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期二)|', liturgic=11802, color=2 where date='2024-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期三)|', liturgic=11803, color=1 where date='2024-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十八周(星期四)|', liturgic=11804, color=2 where date='2024-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十八周(星期五)|', liturgic=11805, color=1 where date='2024-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十八周(星期五)|', liturgic=11805, color=1 where date='2024-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十八周(星期六)|', liturgic=11806, color=3 where date='2024-08-10';
 update easter_daily set cells='常年期第十九主日|圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|', liturgic=11900, color=1 where date='2024-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十九周(星期一)|', liturgic=11901, color=1 where date='2024-08-12';
@@ -6767,7 +6769,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期三)|', liturgic=11803, color=2 where date='2025-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期四)|', liturgic=11804, color=1 where date='2025-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十八周(星期五)|', liturgic=11805, color=2 where date='2025-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十八周(星期六)|', liturgic=11806, color=1 where date='2025-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十八周(星期六)|', liturgic=11806, color=1 where date='2025-08-09';
 update easter_daily set cells='常年期第十九主日|圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|', liturgic=11900, color=1 where date='2025-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期一)|', liturgic=11901, color=2 where date='2025-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十九周(星期二)|', liturgic=11902, color=1 where date='2025-08-12';
@@ -7132,7 +7134,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期四)|', liturgic=11804, color=2 where date='2026-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期五)|', liturgic=11805, color=1 where date='2026-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十八周(星期六)|', liturgic=11806, color=2 where date='2026-08-08';
-update easter_daily set cells='常年期第十九主日|圣奥斯华(St. Oswald of Northumbria)\\1080901|', liturgic=11900, color=1 where date='2026-08-09';
+update easter_daily set cells='常年期第十九主日|圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|', liturgic=11900, color=1 where date='2026-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十九周(星期一)|', liturgic=11901, color=3 where date='2026-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期二)|', liturgic=11902, color=2 where date='2026-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十九周(星期三)|', liturgic=11903, color=1 where date='2026-08-12';
@@ -7497,7 +7499,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期五)|', liturgic=11805, color=2 where date='2027-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期六)|', liturgic=11806, color=1 where date='2027-08-07';
 update easter_daily set cells='常年期第十九主日|圣多明我(St. Dominic)\\1080801|', liturgic=11900, color=1 where date='2027-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十九周(星期一)|', liturgic=11901, color=1 where date='2027-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十九周(星期一)|', liturgic=11901, color=1 where date='2027-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十九周(星期二)|', liturgic=11902, color=3 where date='2027-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期三)|', liturgic=11903, color=2 where date='2027-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2027-08-12';
@@ -7863,7 +7865,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八主日|', liturgic=11800, color=2 where date='2028-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期一)|', liturgic=11801, color=1 where date='2028-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十八周(星期二)|', liturgic=11802, color=2 where date='2028-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十八周(星期三)|', liturgic=11803, color=1 where date='2028-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十八周(星期三)|', liturgic=11803, color=1 where date='2028-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十八周(星期四)|', liturgic=11804, color=3 where date='2028-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十八周(星期五)|', liturgic=11805, color=2 where date='2028-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十八周(星期六)|', liturgic=11806, color=1 where date='2028-08-12';
@@ -8228,7 +8230,7 @@ update easter_daily set cells='常年期第十八主日|罗马圣母大殿奉献
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期一)|', liturgic=11801, color=2 where date='2029-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期二)|', liturgic=11802, color=1 where date='2029-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十八周(星期三)|', liturgic=11803, color=2 where date='2029-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十八周(星期四)|', liturgic=11804, color=1 where date='2029-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十八周(星期四)|', liturgic=11804, color=1 where date='2029-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十八周(星期五)|', liturgic=11805, color=3 where date='2029-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十八周(星期六)|', liturgic=11806, color=2 where date='2029-08-11';
 update easter_daily set cells='常年期第十九主日|圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|', liturgic=11900, color=1 where date='2029-08-12';
@@ -8593,7 +8595,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期二)|', liturgic=11802, color=2 where date='2030-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期三)|', liturgic=11803, color=1 where date='2030-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十八周(星期四)|', liturgic=11804, color=2 where date='2030-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十八周(星期五)|', liturgic=11805, color=1 where date='2030-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十八周(星期五)|', liturgic=11805, color=1 where date='2030-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十八周(星期六)|', liturgic=11806, color=3 where date='2030-08-10';
 update easter_daily set cells='常年期第十九主日|圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|', liturgic=11900, color=1 where date='2030-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十九周(星期一)|', liturgic=11901, color=1 where date='2030-08-12';
@@ -8958,7 +8960,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期三)|', liturgic=11803, color=2 where date='2031-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期四)|', liturgic=11804, color=1 where date='2031-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十八周(星期五)|', liturgic=11805, color=2 where date='2031-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十八周(星期六)|', liturgic=11806, color=1 where date='2031-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十八周(星期六)|', liturgic=11806, color=1 where date='2031-08-09';
 update easter_daily set cells='常年期第十九主日|圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|', liturgic=11900, color=1 where date='2031-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期一)|', liturgic=11901, color=2 where date='2031-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十九周(星期二)|', liturgic=11902, color=1 where date='2031-08-12';
@@ -9324,7 +9326,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期五)|', liturgic=11805, color=2 where date='2032-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期六)|', liturgic=11806, color=1 where date='2032-08-07';
 update easter_daily set cells='常年期第十九主日|圣多明我(St. Dominic)\\1080801|', liturgic=11900, color=1 where date='2032-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十九周(星期一)|', liturgic=11901, color=1 where date='2032-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十九周(星期一)|', liturgic=11901, color=1 where date='2032-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十九周(星期二)|', liturgic=11902, color=3 where date='2032-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期三)|', liturgic=11903, color=2 where date='2032-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2032-08-12';
@@ -9689,7 +9691,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期六)|', liturgic=11806, color=2 where date='2033-08-06';
 update easter_daily set cells='常年期第十九主日|圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|', liturgic=11900, color=1 where date='2033-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十九周(星期一)|', liturgic=11901, color=2 where date='2033-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十九周(星期二)|', liturgic=11902, color=1 where date='2033-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十九周(星期二)|', liturgic=11902, color=1 where date='2033-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十九周(星期三)|', liturgic=11903, color=3 where date='2033-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期四)|', liturgic=11904, color=2 where date='2033-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2033-08-12';
@@ -10054,7 +10056,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八主日|', liturgic=11800, color=2 where date='2034-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期一)|', liturgic=11801, color=1 where date='2034-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十八周(星期二)|', liturgic=11802, color=2 where date='2034-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十八周(星期三)|', liturgic=11803, color=1 where date='2034-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十八周(星期三)|', liturgic=11803, color=1 where date='2034-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十八周(星期四)|', liturgic=11804, color=3 where date='2034-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十八周(星期五)|', liturgic=11805, color=2 where date='2034-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十八周(星期六)|', liturgic=11806, color=1 where date='2034-08-12';
@@ -10419,7 +10421,7 @@ update easter_daily set cells='常年期第十八主日|罗马圣母大殿奉献
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期一)|', liturgic=11801, color=2 where date='2035-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期二)|', liturgic=11802, color=1 where date='2035-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十八周(星期三)|', liturgic=11803, color=2 where date='2035-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十八周(星期四)|', liturgic=11804, color=1 where date='2035-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十八周(星期四)|', liturgic=11804, color=1 where date='2035-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十八周(星期五)|', liturgic=11805, color=3 where date='2035-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十八周(星期六)|', liturgic=11806, color=2 where date='2035-08-11';
 update easter_daily set cells='常年期第十九主日|圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|', liturgic=11900, color=1 where date='2035-08-12';
@@ -10785,7 +10787,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期三)|', liturgic=11803, color=2 where date='2036-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期四)|', liturgic=11804, color=1 where date='2036-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十八周(星期五)|', liturgic=11805, color=2 where date='2036-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十八周(星期六)|', liturgic=11806, color=1 where date='2036-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十八周(星期六)|', liturgic=11806, color=1 where date='2036-08-09';
 update easter_daily set cells='常年期第十九主日|圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|', liturgic=11900, color=1 where date='2036-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期一)|', liturgic=11901, color=2 where date='2036-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十九周(星期二)|', liturgic=11902, color=1 where date='2036-08-12';
@@ -11150,7 +11152,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期四)|', liturgic=11804, color=2 where date='2037-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期五)|', liturgic=11805, color=1 where date='2037-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十八周(星期六)|', liturgic=11806, color=2 where date='2037-08-08';
-update easter_daily set cells='常年期第十九主日|圣奥斯华(St. Oswald of Northumbria)\\1080901|', liturgic=11900, color=1 where date='2037-08-09';
+update easter_daily set cells='常年期第十九主日|圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|', liturgic=11900, color=1 where date='2037-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十九周(星期一)|', liturgic=11901, color=3 where date='2037-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期二)|', liturgic=11902, color=2 where date='2037-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十九周(星期三)|', liturgic=11903, color=1 where date='2037-08-12';
@@ -11515,7 +11517,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期五)|', liturgic=11805, color=2 where date='2038-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期六)|', liturgic=11806, color=1 where date='2038-08-07';
 update easter_daily set cells='常年期第十九主日|圣多明我(St. Dominic)\\1080801|', liturgic=11900, color=1 where date='2038-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十九周(星期一)|', liturgic=11901, color=1 where date='2038-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十九周(星期一)|', liturgic=11901, color=1 where date='2038-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十九周(星期二)|', liturgic=11902, color=3 where date='2038-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期三)|', liturgic=11903, color=2 where date='2038-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2038-08-12';
@@ -11880,7 +11882,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期六)|', liturgic=11806, color=2 where date='2039-08-06';
 update easter_daily set cells='常年期第十九主日|圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|', liturgic=11900, color=1 where date='2039-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十九周(星期一)|', liturgic=11901, color=2 where date='2039-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十九周(星期二)|', liturgic=11902, color=1 where date='2039-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十九周(星期二)|', liturgic=11902, color=1 where date='2039-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十九周(星期三)|', liturgic=11903, color=3 where date='2039-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期四)|', liturgic=11904, color=2 where date='2039-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2039-08-12';
@@ -12246,7 +12248,7 @@ update easter_daily set cells='常年期第十八主日|罗马圣母大殿奉献
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期一)|', liturgic=11801, color=2 where date='2040-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期二)|', liturgic=11802, color=1 where date='2040-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十八周(星期三)|', liturgic=11803, color=2 where date='2040-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十八周(星期四)|', liturgic=11804, color=1 where date='2040-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十八周(星期四)|', liturgic=11804, color=1 where date='2040-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十八周(星期五)|', liturgic=11805, color=3 where date='2040-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十八周(星期六)|', liturgic=11806, color=2 where date='2040-08-11';
 update easter_daily set cells='常年期第十九主日|圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|', liturgic=11900, color=1 where date='2040-08-12';
@@ -12611,7 +12613,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期二)|', liturgic=11802, color=2 where date='2041-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期三)|', liturgic=11803, color=1 where date='2041-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十八周(星期四)|', liturgic=11804, color=2 where date='2041-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十八周(星期五)|', liturgic=11805, color=1 where date='2041-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十八周(星期五)|', liturgic=11805, color=1 where date='2041-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十八周(星期六)|', liturgic=11806, color=3 where date='2041-08-10';
 update easter_daily set cells='常年期第十九主日|圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|', liturgic=11900, color=1 where date='2041-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十九周(星期一)|', liturgic=11901, color=1 where date='2041-08-12';
@@ -12976,7 +12978,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期三)|', liturgic=11803, color=2 where date='2042-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期四)|', liturgic=11804, color=1 where date='2042-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十八周(星期五)|', liturgic=11805, color=2 where date='2042-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十八周(星期六)|', liturgic=11806, color=1 where date='2042-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十八周(星期六)|', liturgic=11806, color=1 where date='2042-08-09';
 update easter_daily set cells='常年期第十九主日|圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|', liturgic=11900, color=1 where date='2042-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期一)|', liturgic=11901, color=2 where date='2042-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十九周(星期二)|', liturgic=11902, color=1 where date='2042-08-12';
@@ -13341,7 +13343,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期四)|', liturgic=11804, color=2 where date='2043-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期五)|', liturgic=11805, color=1 where date='2043-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十八周(星期六)|', liturgic=11806, color=2 where date='2043-08-08';
-update easter_daily set cells='常年期第十九主日|圣奥斯华(St. Oswald of Northumbria)\\1080901|', liturgic=11900, color=1 where date='2043-08-09';
+update easter_daily set cells='常年期第十九主日|圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|', liturgic=11900, color=1 where date='2043-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十九周(星期一)|', liturgic=11901, color=3 where date='2043-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期二)|', liturgic=11902, color=2 where date='2043-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十九周(星期三)|', liturgic=11903, color=1 where date='2043-08-12';
@@ -13707,7 +13709,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期六)|', liturgic=11806, color=2 where date='2044-08-06';
 update easter_daily set cells='常年期第十九主日|圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|', liturgic=11900, color=1 where date='2044-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十九周(星期一)|', liturgic=11901, color=2 where date='2044-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十九周(星期二)|', liturgic=11902, color=1 where date='2044-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十九周(星期二)|', liturgic=11902, color=1 where date='2044-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十九周(星期三)|', liturgic=11903, color=3 where date='2044-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期四)|', liturgic=11904, color=2 where date='2044-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2044-08-12';
@@ -14072,7 +14074,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八主日|', liturgic=11800, color=2 where date='2045-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期一)|', liturgic=11801, color=1 where date='2045-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十八周(星期二)|', liturgic=11802, color=2 where date='2045-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十八周(星期三)|', liturgic=11803, color=1 where date='2045-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十八周(星期三)|', liturgic=11803, color=1 where date='2045-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十八周(星期四)|', liturgic=11804, color=3 where date='2045-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十八周(星期五)|', liturgic=11805, color=2 where date='2045-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十八周(星期六)|', liturgic=11806, color=1 where date='2045-08-12';
@@ -14437,7 +14439,7 @@ update easter_daily set cells='常年期第十八主日|罗马圣母大殿奉献
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期一)|', liturgic=11801, color=2 where date='2046-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期二)|', liturgic=11802, color=1 where date='2046-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十八周(星期三)|', liturgic=11803, color=2 where date='2046-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十八周(星期四)|', liturgic=11804, color=1 where date='2046-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十八周(星期四)|', liturgic=11804, color=1 where date='2046-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十八周(星期五)|', liturgic=11805, color=3 where date='2046-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十八周(星期六)|', liturgic=11806, color=2 where date='2046-08-11';
 update easter_daily set cells='常年期第十九主日|圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|', liturgic=11900, color=1 where date='2046-08-12';
@@ -14802,7 +14804,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期二)|', liturgic=11802, color=2 where date='2047-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期三)|', liturgic=11803, color=1 where date='2047-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十八周(星期四)|', liturgic=11804, color=2 where date='2047-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十八周(星期五)|', liturgic=11805, color=1 where date='2047-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十八周(星期五)|', liturgic=11805, color=1 where date='2047-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十八周(星期六)|', liturgic=11806, color=3 where date='2047-08-10';
 update easter_daily set cells='常年期第十九主日|圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|', liturgic=11900, color=1 where date='2047-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十九周(星期一)|', liturgic=11901, color=1 where date='2047-08-12';
@@ -15168,7 +15170,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期四)|', liturgic=11804, color=2 where date='2048-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期五)|', liturgic=11805, color=1 where date='2048-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十八周(星期六)|', liturgic=11806, color=2 where date='2048-08-08';
-update easter_daily set cells='常年期第十九主日|圣奥斯华(St. Oswald of Northumbria)\\1080901|', liturgic=11900, color=1 where date='2048-08-09';
+update easter_daily set cells='常年期第十九主日|圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|', liturgic=11900, color=1 where date='2048-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十九周(星期一)|', liturgic=11901, color=3 where date='2048-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期二)|', liturgic=11902, color=2 where date='2048-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十九周(星期三)|', liturgic=11903, color=1 where date='2048-08-12';
@@ -15533,7 +15535,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期五)|', liturgic=11805, color=2 where date='2049-08-06';
 update easter_daily set cells='圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|常年期第十八周(星期六)|', liturgic=11806, color=1 where date='2049-08-07';
 update easter_daily set cells='常年期第十九主日|圣多明我(St. Dominic)\\1080801|', liturgic=11900, color=1 where date='2049-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十九周(星期一)|', liturgic=11901, color=1 where date='2049-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十九周(星期一)|', liturgic=11901, color=1 where date='2049-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十九周(星期二)|', liturgic=11902, color=3 where date='2049-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期三)|', liturgic=11903, color=2 where date='2049-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十九周(星期四)|', liturgic=11904, color=1 where date='2049-08-12';
@@ -15898,7 +15900,7 @@ update easter_daily set cells='罗马圣母大殿奉献日(The Dedication of the
 update easter_daily set cells='耶稣显圣容(The Transfiguration of Our Lord Jesus Christ)\\1080601|常年期第十八周(星期六)|', liturgic=11806, color=2 where date='2050-08-06';
 update easter_daily set cells='常年期第十九主日|圣西斯笃二世(St. Sixtus II)\\1080701|圣加耶当(St. Cajetan)\\1080702|', liturgic=11900, color=1 where date='2050-08-07';
 update easter_daily set cells='圣多明我(St. Dominic)\\1080801|常年期第十九周(星期一)|', liturgic=11901, color=2 where date='2050-08-08';
-update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|常年期第十九周(星期二)|', liturgic=11902, color=1 where date='2050-08-09';
+update easter_daily set cells='圣奥斯华(St. Oswald of Northumbria)\\1080901|圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)\\1080903|常年期第十九周(星期二)|', liturgic=11902, color=1 where date='2050-08-09';
 update easter_daily set cells='圣老楞佐(St. Laurence)\\1081001|圣女菲洛美娜(St. Philomena)\\1081002|常年期第十九周(星期三)|', liturgic=11903, color=3 where date='2050-08-10';
 update easter_daily set cells='圣女加辣(St. Clare)\\1081101|真福伯多禄•法华(Bd. Peter Favre)\\1081102|常年期第十九周(星期四)|', liturgic=11904, color=2 where date='2050-08-11';
 update easter_daily set cells='圣慕达(St. Murtagh)\\1081201|圣方济加•尚达尔(St. Jane Frances de Chantal)\\1081202|常年期第十九周(星期五)|', liturgic=11905, color=1 where date='2050-08-12';

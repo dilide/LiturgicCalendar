@@ -22,6 +22,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
     std::list<int> disableLang = {};
     std::list<int> allLang = getAllLangCodes();
     std::list<int> chineseLang = {LANG_ZH_CN, LANG_ZH_TW};
+    std::list<int> europeanLang = {LANG_EN, LANG_ES_ES, LANG_IT_IT, LANG_PT_BR};
     std::list<int> allLangWithoutChinese = allLang;
     for(auto iter = chineseLang.begin(); iter != chineseLang.end(); ++iter) {
         allLangWithoutChinese.remove(*iter);
@@ -516,6 +517,13 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         mapPropers.insert(std::make_pair(1080801, CellInfo(MEMORIAL, WHITE, "圣多明我(St. Dominic)")));
         mapPropers.insert(std::make_pair(1080901, CellInfo(OPTIONAL, NOCOLOR, "圣奥斯华(St. Oswald of Northumbria)")));
         mapPropers.insert(std::make_pair(1080902, CellInfo(OPTIONAL, NOCOLOR, "真福若望•沙肋诺(Bd. John of Salerno)", disableLang)));
+        if(checkContain(europeanLang, lang)) {
+            // 欧洲为庆日
+            mapPropers.insert(std::make_pair(1080903, CellInfo(FEAST, RED, "圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)")));
+        } else {
+            // 非欧洲为可选纪念日
+            mapPropers.insert(std::make_pair(1080903, CellInfo(OPTIONAL, NOCOLOR, "圣十字德肋撒•本笃(St. Teresa Benedicta of the Cross)")));
+        }
         mapPropers.insert(std::make_pair(1081001, CellInfo(FEAST, RED, "圣老楞佐(St. Laurence)")));
         mapPropers.insert(std::make_pair(1081002, CellInfo(OPTIONAL, NOCOLOR, "圣女菲洛美娜(St. Philomena)")));
         // 11日
