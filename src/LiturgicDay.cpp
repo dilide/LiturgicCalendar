@@ -84,8 +84,10 @@ std::list<CellInfo> LiturgicDay::getCellInfos() const
 			CellInfo c = LiturgicYear::getCellInfo(*iter);
 			if (c.rank == r && c.hasLang(CathAssist::Calendar::MultiLang::getLangCode()))
 			{
-				cells.push_back(c);
-				++iCount;
+				if(!CellInfo::isContain(cells, c.code)) {
+					cells.push_back(c);
+					++iCount;
+				}
 			}
 
 			++iter;
@@ -98,14 +100,14 @@ std::list<CellInfo> LiturgicDay::getCellInfos() const
 			{
 				// 主日
 				CellInfo c = getLiturgicCellInfo();
-				if (c.rank != ErrorRank)
+				if (c.rank != ErrorRank && !CellInfo::isContain(cells, getLiturgicId()))
 				{
 					cells.push_back(c);
 				}
 			}
 		}
 
-		if (normalCell.rank != ErrorRank)
+		if (normalCell.rank != ErrorRank && !CellInfo::isContain(cells, getLiturgicId()))
 		{
 			cells.push_back(normalCell);
 		}

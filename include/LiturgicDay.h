@@ -79,6 +79,17 @@ namespace CathAssist
 
 				return ostr.str();
 			}
+
+			static bool isContain(std::list<CellInfo> cells, const int& code) {
+				auto iter = cells.begin();
+				while (iter != cells.end()) {
+					if(iter->code == code) {
+						return true;
+					}
+					++iter;
+				}
+				return false;
+			}
 		} CellInfo_t;
 
 		typedef std::multimap<rank_t, CellInfo> CellMap;
