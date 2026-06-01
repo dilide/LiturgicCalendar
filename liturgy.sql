@@ -1834,10 +1834,10 @@ insert into easter_mass(code, name) select 1053101,'圣母访亲(the Vistation o
 update easter_mass set name='圣母访亲(the Vistation of the Blessed Virgin Mary)' where code=1053101;
 insert into easter_liturgy_hours(code, name) select 1053101,'圣母访亲(the Vistation of the Blessed Virgin Mary)' where not exists (select 1 from easter_liturgy_hours where code=1053101);
 update easter_liturgy_hours set name='圣母访亲(the Vistation of the Blessed Virgin Mary)' where code=1053101;
-insert into easter_mass(code, name) select 1060101,'圣犹思定殉道(St. Justin)' where not exists (select 1 from easter_mass where code=1060101);
-update easter_mass set name='圣犹思定殉道(St. Justin)' where code=1060101;
-insert into easter_liturgy_hours(code, name) select 1060101,'圣犹思定殉道(St. Justin)' where not exists (select 1 from easter_liturgy_hours where code=1060101);
-update easter_liturgy_hours set name='圣犹思定殉道(St. Justin)' where code=1060101;
+insert into easter_mass(code, name) select 1060101,'圣犹思定(St. Justin)' where not exists (select 1 from easter_mass where code=1060101);
+update easter_mass set name='圣犹思定(St. Justin)' where code=1060101;
+insert into easter_liturgy_hours(code, name) select 1060101,'圣犹思定(St. Justin)' where not exists (select 1 from easter_liturgy_hours where code=1060101);
+update easter_liturgy_hours set name='圣犹思定(St. Justin)' where code=1060101;
 insert into easter_mass(code, name) select 1060301,'圣嘉禄•卢安加及同伴(St. Charles Lwanga and Companions)' where not exists (select 1 from easter_mass where code=1060301);
 update easter_mass set name='圣嘉禄•卢安加及同伴(St. Charles Lwanga and Companions)' where code=1060301;
 insert into easter_liturgy_hours(code, name) select 1060301,'圣嘉禄•卢安加及同伴(St. Charles Lwanga and Companions)' where not exists (select 1 from easter_liturgy_hours where code=1060301);

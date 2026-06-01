@@ -367,7 +367,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
 
         /*************6月***************/
         // 1日
-        mapPropers.insert(std::make_pair(1060101, CellInfo(MEMORIAL, RED, "圣犹思定殉道(St. Justin)")));
+        mapPropers.insert(std::make_pair(1060101, CellInfo(MEMORIAL, RED, "圣犹思定(St. Justin)")));
         mapPropers.insert(std::make_pair(1060102, CellInfo(OPTIONAL, NOCOLOR, "日本殉道烈士(The Martyrs of Japan, II)")));
         mapPropers.insert(std::make_pair(1060201, CellInfo(OPTIONAL, NOCOLOR, "圣玛策廉、圣伯多禄(Ss. Marcellinus and Peter)")));
         mapPropers.insert(std::make_pair(1060202, CellInfo(OPTIONAL, NOCOLOR, "里昂及维安殉道烈士(St. Pothinus and his Companions, the Martyrs of Lyons and Vienne)", disableLang)));
