@@ -639,7 +639,8 @@ void export_to_ical()
         of << "X-WR-CALNAME:教会礼仪历" << "\r\n";
         of << "X-WR-TIMEZONE:UTC" << "\r\n";
 
-        for (int iYear = 2025; iYear <= 2030; ++iYear)
+        int currentYear = CathAssist::Calendar::Date::getCurrentDate().year();
+        for (int iYear = currentYear - 1; iYear <= currentYear + 5; ++iYear)
         {
             CathAssist::Calendar::Date dtBegin(iYear, 1, 1);
 

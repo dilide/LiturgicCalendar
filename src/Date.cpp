@@ -167,6 +167,13 @@ bool Date::isNewYearEve(const Date &d)
 	return false;
 }
 
+Date Date::getCurrentDate(void)
+{
+	time_t now = time(0);
+	struct tm *ltm = localtime(&now);
+	return Date(ltm->tm_year + 1900, ltm->tm_mon + 1, ltm->tm_mday);
+}
+
 Date::Date(void)
 {
 	jd = 0;

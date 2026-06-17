@@ -29,6 +29,7 @@ namespace CathAssist
 			static bool isSpringFestival(const Date &d);
 			// 判断是否为除夕
 			static bool isNewYearEve(const Date &d);
+			static Date getCurrentDate(void);
 
 		public:
 			Date(void);
