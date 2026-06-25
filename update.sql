@@ -236,8 +236,8 @@ insert into easter_saint(code, name, rank, color) select 1022202,'圣女玛加�
 update easter_saint set name='圣女玛加利大•高多娜(St. Margaret Cortona)', rank=2, color=0 where code=1022202;
 insert into easter_saint(code, name, rank, color) select 1022301,'圣波利卡浦(St. Polycarp)',3,3 where not exists (select 1 from easter_saint where code=1022301);
 update easter_saint set name='圣波利卡浦(St. Polycarp)', rank=3, color=3 where code=1022301;
-insert into easter_saint(code, name, rank, color) select 1022402,'圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)',2,0 where not exists (select 1 from easter_saint where code=1022402);
-update easter_saint set name='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)', rank=2, color=0 where code=1022402;
+insert into easter_saint(code, name, rank, color) select 1022402,'圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)',2,0 where not exists (select 1 from easter_saint where code=1022402);
+update easter_saint set name='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)', rank=2, color=0 where code=1022402;
 insert into easter_saint(code, name, rank, color) select 1022502,'圣泰拉修(St. Tarsius)',2,0 where not exists (select 1 from easter_saint where code=1022502);
 update easter_saint set name='圣泰拉修(St. Tarsius)', rank=2, color=0 where code=1022502;
 insert into easter_saint(code, name, rank, color) select 1022602,'圣波菲利(St. Porphyry)',2,0 where not exists (select 1 from easter_saint where code=1022602);
@@ -616,8 +616,8 @@ insert into easter_saint(code, name, rank, color) select 1070802,'圣武文印',
 update easter_saint set name='圣武文印', rank=2, color=0 where code=1070802;
 insert into easter_saint(code, name, rank, color) select 1070901,'中华诸圣及真福(The Martyrs of China)',4,3 where not exists (select 1 from easter_saint where code=1070901);
 update easter_saint set name='中华诸圣及真福(The Martyrs of China)', rank=4, color=3 where code=1070901;
-insert into easter_saint(code, name, rank, color) select 1070902,'圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)',2,0 where not exists (select 1 from easter_saint where code=1070902);
-update easter_saint set name='圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)', rank=2, color=0 where code=1070902;
+insert into easter_saint(code, name, rank, color) select 1070902,'圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)',2,0 where not exists (select 1 from easter_saint where code=1070902);
+update easter_saint set name='圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)', rank=2, color=0 where code=1070902;
 insert into easter_saint(code, name, rank, color) select 1071002,'圣克努特四世(St. Canute IV of Denmark)',2,0 where not exists (select 1 from easter_saint where code=1071002);
 update easter_saint set name='圣克努特四世(St. Canute IV of Denmark)', rank=2, color=0 where code=1071002;
 insert into easter_saint(code, name, rank, color) select 1071101,'圣本笃(院长 St. Benedict)',3,2 where not exists (select 1 from easter_saint where code=1071101);
@@ -1124,7 +1124,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|圣灰礼仪
 update easter_daily set cells='四旬期第一主日|圣伯多禄•达弥盎(St. Peter Damian)\\1022101|', liturgic=40100, color=4 where date='2010-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|四旬期第一周(星期一)|', liturgic=40101, color=2 where date='2010-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|四旬期第一周(星期二)|', liturgic=40102, color=3 where date='2010-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第一周(星期三)|', liturgic=40103, color=4 where date='2010-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第一周(星期三)|', liturgic=40103, color=4 where date='2010-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|四旬期第一周(星期四)|', liturgic=40104, color=4 where date='2010-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|四旬期第一周(星期五)|', liturgic=40105, color=4 where date='2010-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|四旬期第一周(星期六)|', liturgic=40106, color=4 where date='2010-02-27';
@@ -1259,7 +1259,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十四周(星期二)|', liturgic=11402, color=1 where date='2010-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十四周(星期三)|', liturgic=11403, color=1 where date='2010-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十四周(星期四)|', liturgic=11404, color=1 where date='2010-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期五)|', liturgic=11405, color=3 where date='2010-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期五)|', liturgic=11405, color=3 where date='2010-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期六)|', liturgic=11406, color=1 where date='2010-07-10';
 update easter_daily set cells='常年期第十五主日|圣本笃(院长 St. Benedict)\\1071101|', liturgic=11500, color=1 where date='2010-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十五周(星期一)|', liturgic=11501, color=1 where date='2010-07-12';
@@ -1489,7 +1489,7 @@ update easter_daily set cells='常年期第七主日|圣欧却琉(St. Eucherius)
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|常年期第七周(星期一)|', liturgic=10701, color=1 where date='2011-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|常年期第七周(星期二)|', liturgic=10702, color=2 where date='2011-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|常年期第七周(星期三)|', liturgic=10703, color=3 where date='2011-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|常年期第七周(星期四)|', liturgic=10704, color=1 where date='2011-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|常年期第七周(星期四)|', liturgic=10704, color=1 where date='2011-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|常年期第七周(星期五)|', liturgic=10705, color=1 where date='2011-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|常年期第七周(星期六)|', liturgic=10706, color=1 where date='2011-02-26';
 update easter_daily set cells='常年期第八主日|圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|', liturgic=10800, color=1 where date='2011-02-27';
@@ -1624,7 +1624,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十四周(星期三)|', liturgic=11403, color=1 where date='2011-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十四周(星期四)|', liturgic=11404, color=1 where date='2011-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十四周(星期五)|', liturgic=11405, color=1 where date='2011-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期六)|', liturgic=11406, color=3 where date='2011-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期六)|', liturgic=11406, color=3 where date='2011-07-09';
 update easter_daily set cells='常年期第十五主日|圣克努特四世(St. Canute IV of Denmark)\\1071002|', liturgic=11500, color=1 where date='2011-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十五周(星期一)|', liturgic=11501, color=2 where date='2011-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十五周(星期二)|', liturgic=11502, color=1 where date='2011-07-12';
@@ -1854,7 +1854,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|常年期第
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|常年期第七周(星期二)|', liturgic=10702, color=1 where date='2012-02-21';
 update easter_daily set cells='圣灰礼仪\\40003|建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|', liturgic=40003, color=4 where date='2012-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|圣灰礼仪后星期四|', liturgic=40004, color=3 where date='2012-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|圣灰礼仪后星期五|', liturgic=40005, color=4 where date='2012-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|圣灰礼仪后星期五|', liturgic=40005, color=4 where date='2012-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|圣灰礼仪后星期六|', liturgic=40006, color=4 where date='2012-02-25';
 update easter_daily set cells='四旬期第一主日|圣波菲利(St. Porphyry)\\1022602|', liturgic=40100, color=4 where date='2012-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|四旬期第一周(星期一)|', liturgic=40101, color=4 where date='2012-02-27';
@@ -1990,7 +1990,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十三周(星期五)|', liturgic=11305, color=1 where date='2012-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十三周(星期六)|', liturgic=11306, color=1 where date='2012-07-07';
 update easter_daily set cells='常年期第十四主日|圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|', liturgic=11400, color=1 where date='2012-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期一)|', liturgic=11401, color=3 where date='2012-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期一)|', liturgic=11401, color=3 where date='2012-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期二)|', liturgic=11402, color=1 where date='2012-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十四周(星期三)|', liturgic=11403, color=2 where date='2012-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十四周(星期四)|', liturgic=11404, color=1 where date='2012-07-12';
@@ -2220,7 +2220,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|四旬期第
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|四旬期第一周(星期四)|', liturgic=40104, color=4 where date='2013-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|四旬期第一周(星期五)|', liturgic=40105, color=2 where date='2013-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|四旬期第一周(星期六)|', liturgic=40106, color=3 where date='2013-02-23';
-update easter_daily set cells='四旬期第二主日|圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|', liturgic=40200, color=4 where date='2013-02-24';
+update easter_daily set cells='四旬期第二主日|圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|', liturgic=40200, color=4 where date='2013-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|四旬期第二周(星期一)|', liturgic=40201, color=4 where date='2013-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|四旬期第二周(星期二)|', liturgic=40202, color=4 where date='2013-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|四旬期第二周(星期三)|', liturgic=40203, color=4 where date='2013-02-27';
@@ -2355,7 +2355,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十三周(星期六)|', liturgic=11306, color=1 where date='2013-07-06';
 update easter_daily set cells='常年期第十四主日|圣庞德诺(St. Pantaenus)\\1070701|', liturgic=11400, color=1 where date='2013-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十四周(星期一)|', liturgic=11401, color=1 where date='2013-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期二)|', liturgic=11402, color=3 where date='2013-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期二)|', liturgic=11402, color=3 where date='2013-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期三)|', liturgic=11403, color=1 where date='2013-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十四周(星期四)|', liturgic=11404, color=2 where date='2013-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十四周(星期五)|', liturgic=11405, color=1 where date='2013-07-12';
@@ -2585,7 +2585,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|常年期第
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|常年期第六周(星期五)|', liturgic=10605, color=1 where date='2014-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|常年期第六周(星期六)|', liturgic=10606, color=2 where date='2014-02-22';
 update easter_daily set cells='常年期第七主日|圣波利卡浦(St. Polycarp)\\1022301|', liturgic=10700, color=1 where date='2014-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|常年期第七周(星期一)|', liturgic=10701, color=1 where date='2014-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|常年期第七周(星期一)|', liturgic=10701, color=1 where date='2014-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|常年期第七周(星期二)|', liturgic=10702, color=1 where date='2014-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|常年期第七周(星期三)|', liturgic=10703, color=1 where date='2014-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|常年期第七周(星期四)|', liturgic=10704, color=1 where date='2014-02-27';
@@ -2720,7 +2720,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='常年期第十四主日|圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|', liturgic=11400, color=1 where date='2014-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十四周(星期一)|', liturgic=11401, color=1 where date='2014-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十四周(星期二)|', liturgic=11402, color=1 where date='2014-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期三)|', liturgic=11403, color=3 where date='2014-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期三)|', liturgic=11403, color=3 where date='2014-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期四)|', liturgic=11404, color=1 where date='2014-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十四周(星期五)|', liturgic=11405, color=2 where date='2014-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十四周(星期六)|', liturgic=11406, color=1 where date='2014-07-12';
@@ -2950,7 +2950,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|圣灰礼仪
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|圣灰礼仪后星期六|', liturgic=40006, color=4 where date='2015-02-21';
 update easter_daily set cells='四旬期第一主日|建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|', liturgic=40100, color=4 where date='2015-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|四旬期第一周(星期一)|', liturgic=40101, color=3 where date='2015-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第一周(星期二)|', liturgic=40102, color=4 where date='2015-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第一周(星期二)|', liturgic=40102, color=4 where date='2015-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|四旬期第一周(星期三)|', liturgic=40103, color=4 where date='2015-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|四旬期第一周(星期四)|', liturgic=40104, color=4 where date='2015-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|四旬期第一周(星期五)|', liturgic=40105, color=4 where date='2015-02-27';
@@ -3085,7 +3085,7 @@ update easter_daily set cells='常年期第十四主日|圣安多尼•匝加利
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十四周(星期一)|', liturgic=11401, color=1 where date='2015-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十四周(星期二)|', liturgic=11402, color=1 where date='2015-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十四周(星期三)|', liturgic=11403, color=1 where date='2015-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期四)|', liturgic=11404, color=3 where date='2015-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期四)|', liturgic=11404, color=3 where date='2015-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期五)|', liturgic=11405, color=1 where date='2015-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十四周(星期六)|', liturgic=11406, color=2 where date='2015-07-11';
 update easter_daily set cells='常年期第十五主日|越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|', liturgic=11500, color=1 where date='2015-07-12';
@@ -3315,7 +3315,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|四旬期第
 update easter_daily set cells='四旬期第二主日|圣伯多禄•达弥盎(St. Peter Damian)\\1022101|', liturgic=40200, color=4 where date='2016-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|四旬期第二周(星期一)|', liturgic=40201, color=2 where date='2016-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|四旬期第二周(星期二)|', liturgic=40202, color=3 where date='2016-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第二周(星期三)|', liturgic=40203, color=4 where date='2016-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第二周(星期三)|', liturgic=40203, color=4 where date='2016-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|四旬期第二周(星期四)|', liturgic=40204, color=4 where date='2016-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|四旬期第二周(星期五)|', liturgic=40205, color=4 where date='2016-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|四旬期第二周(星期六)|', liturgic=40206, color=4 where date='2016-02-27';
@@ -3451,7 +3451,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十四周(星期三)|', liturgic=11403, color=1 where date='2016-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十四周(星期四)|', liturgic=11404, color=1 where date='2016-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十四周(星期五)|', liturgic=11405, color=1 where date='2016-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期六)|', liturgic=11406, color=3 where date='2016-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期六)|', liturgic=11406, color=3 where date='2016-07-09';
 update easter_daily set cells='常年期第十五主日|圣克努特四世(St. Canute IV of Denmark)\\1071002|', liturgic=11500, color=1 where date='2016-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十五周(星期一)|', liturgic=11501, color=2 where date='2016-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十五周(星期二)|', liturgic=11502, color=1 where date='2016-07-12';
@@ -3681,7 +3681,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|常年期第
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|常年期第七周(星期二)|', liturgic=10702, color=1 where date='2017-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|常年期第七周(星期三)|', liturgic=10703, color=2 where date='2017-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|常年期第七周(星期四)|', liturgic=10704, color=3 where date='2017-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|常年期第七周(星期五)|', liturgic=10705, color=1 where date='2017-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|常年期第七周(星期五)|', liturgic=10705, color=1 where date='2017-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|常年期第七周(星期六)|', liturgic=10706, color=1 where date='2017-02-25';
 update easter_daily set cells='常年期第八主日|圣波菲利(St. Porphyry)\\1022602|', liturgic=10800, color=1 where date='2017-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|常年期第八周(星期一)|', liturgic=10801, color=1 where date='2017-02-27';
@@ -3816,7 +3816,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十三周(星期四)|', liturgic=11304, color=1 where date='2017-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十三周(星期五)|', liturgic=11305, color=1 where date='2017-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十三周(星期六)|', liturgic=11306, color=1 where date='2017-07-08';
-update easter_daily set cells='常年期第十四主日|中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|', liturgic=11400, color=1 where date='2017-07-09';
+update easter_daily set cells='常年期第十四主日|中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|', liturgic=11400, color=1 where date='2017-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期一)|', liturgic=11401, color=1 where date='2017-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十四周(星期二)|', liturgic=11402, color=2 where date='2017-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十四周(星期三)|', liturgic=11403, color=1 where date='2017-07-12';
@@ -4046,7 +4046,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|四旬期第
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|四旬期第一周(星期三)|', liturgic=40103, color=4 where date='2018-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|四旬期第一周(星期四)|', liturgic=40104, color=2 where date='2018-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|四旬期第一周(星期五)|', liturgic=40105, color=3 where date='2018-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第一周(星期六)|', liturgic=40106, color=4 where date='2018-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第一周(星期六)|', liturgic=40106, color=4 where date='2018-02-24';
 update easter_daily set cells='四旬期第二主日|圣泰拉修(St. Tarsius)\\1022502|', liturgic=40200, color=4 where date='2018-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|四旬期第二周(星期一)|', liturgic=40201, color=4 where date='2018-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|四旬期第二周(星期二)|', liturgic=40202, color=4 where date='2018-02-27';
@@ -4181,7 +4181,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十三周(星期五)|', liturgic=11305, color=1 where date='2018-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十三周(星期六)|', liturgic=11306, color=1 where date='2018-07-07';
 update easter_daily set cells='常年期第十四主日|圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|', liturgic=11400, color=1 where date='2018-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期一)|', liturgic=11401, color=3 where date='2018-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期一)|', liturgic=11401, color=3 where date='2018-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期二)|', liturgic=11402, color=1 where date='2018-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十四周(星期三)|', liturgic=11403, color=2 where date='2018-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十四周(星期四)|', liturgic=11404, color=1 where date='2018-07-12';
@@ -4411,7 +4411,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|常年期第
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|常年期第六周(星期四)|', liturgic=10604, color=1 where date='2019-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|常年期第六周(星期五)|', liturgic=10605, color=2 where date='2019-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|常年期第六周(星期六)|', liturgic=10606, color=3 where date='2019-02-23';
-update easter_daily set cells='常年期第七主日|圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|', liturgic=10700, color=1 where date='2019-02-24';
+update easter_daily set cells='常年期第七主日|圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|', liturgic=10700, color=1 where date='2019-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|常年期第七周(星期一)|', liturgic=10701, color=1 where date='2019-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|常年期第七周(星期二)|', liturgic=10702, color=1 where date='2019-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|常年期第七周(星期三)|', liturgic=10703, color=1 where date='2019-02-27';
@@ -4546,7 +4546,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十三周(星期六)|', liturgic=11306, color=1 where date='2019-07-06';
 update easter_daily set cells='常年期第十四主日|圣庞德诺(St. Pantaenus)\\1070701|', liturgic=11400, color=1 where date='2019-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十四周(星期一)|', liturgic=11401, color=1 where date='2019-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期二)|', liturgic=11402, color=3 where date='2019-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期二)|', liturgic=11402, color=3 where date='2019-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期三)|', liturgic=11403, color=1 where date='2019-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十四周(星期四)|', liturgic=11404, color=2 where date='2019-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十四周(星期五)|', liturgic=11405, color=1 where date='2019-07-12';
@@ -4776,7 +4776,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|常年期第
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|常年期第六周(星期五)|', liturgic=10605, color=1 where date='2020-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|常年期第六周(星期六)|', liturgic=10606, color=2 where date='2020-02-22';
 update easter_daily set cells='常年期第七主日|圣波利卡浦(St. Polycarp)\\1022301|', liturgic=10700, color=1 where date='2020-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|常年期第七周(星期一)|', liturgic=10701, color=1 where date='2020-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|常年期第七周(星期一)|', liturgic=10701, color=1 where date='2020-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|常年期第七周(星期二)|', liturgic=10702, color=1 where date='2020-02-25';
 update easter_daily set cells='圣灰礼仪\\40003|圣波菲利(St. Porphyry)\\1022602|', liturgic=40003, color=4 where date='2020-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|圣灰礼仪后星期四|', liturgic=40004, color=4 where date='2020-02-27';
@@ -4912,7 +4912,7 @@ update easter_daily set cells='常年期第十四主日|圣安多尼•匝加利
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十四周(星期一)|', liturgic=11401, color=1 where date='2020-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十四周(星期二)|', liturgic=11402, color=1 where date='2020-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十四周(星期三)|', liturgic=11403, color=1 where date='2020-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期四)|', liturgic=11404, color=3 where date='2020-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期四)|', liturgic=11404, color=3 where date='2020-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期五)|', liturgic=11405, color=1 where date='2020-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十四周(星期六)|', liturgic=11406, color=2 where date='2020-07-11';
 update easter_daily set cells='常年期第十五主日|越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|', liturgic=11500, color=1 where date='2020-07-12';
@@ -5142,7 +5142,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|圣灰礼仪
 update easter_daily set cells='四旬期第一主日|圣伯多禄•达弥盎(St. Peter Damian)\\1022101|', liturgic=40100, color=4 where date='2021-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|四旬期第一周(星期一)|', liturgic=40101, color=2 where date='2021-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|四旬期第一周(星期二)|', liturgic=40102, color=3 where date='2021-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第一周(星期三)|', liturgic=40103, color=4 where date='2021-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第一周(星期三)|', liturgic=40103, color=4 where date='2021-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|四旬期第一周(星期四)|', liturgic=40104, color=4 where date='2021-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|四旬期第一周(星期五)|', liturgic=40105, color=4 where date='2021-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|四旬期第一周(星期六)|', liturgic=40106, color=4 where date='2021-02-27';
@@ -5277,7 +5277,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十四周(星期二)|', liturgic=11402, color=1 where date='2021-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十四周(星期三)|', liturgic=11403, color=1 where date='2021-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十四周(星期四)|', liturgic=11404, color=1 where date='2021-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期五)|', liturgic=11405, color=3 where date='2021-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期五)|', liturgic=11405, color=3 where date='2021-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期六)|', liturgic=11406, color=1 where date='2021-07-10';
 update easter_daily set cells='常年期第十五主日|圣本笃(院长 St. Benedict)\\1071101|', liturgic=11500, color=1 where date='2021-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十五周(星期一)|', liturgic=11501, color=1 where date='2021-07-12';
@@ -5507,7 +5507,7 @@ update easter_daily set cells='常年期第七主日|圣欧却琉(St. Eucherius)
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|常年期第七周(星期一)|', liturgic=10701, color=1 where date='2022-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|常年期第七周(星期二)|', liturgic=10702, color=2 where date='2022-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|常年期第七周(星期三)|', liturgic=10703, color=3 where date='2022-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|常年期第七周(星期四)|', liturgic=10704, color=1 where date='2022-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|常年期第七周(星期四)|', liturgic=10704, color=1 where date='2022-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|常年期第七周(星期五)|', liturgic=10705, color=1 where date='2022-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|常年期第七周(星期六)|', liturgic=10706, color=1 where date='2022-02-26';
 update easter_daily set cells='常年期第八主日|圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|', liturgic=10800, color=1 where date='2022-02-27';
@@ -5642,7 +5642,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十四周(星期三)|', liturgic=11403, color=1 where date='2022-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十四周(星期四)|', liturgic=11404, color=1 where date='2022-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十四周(星期五)|', liturgic=11405, color=1 where date='2022-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期六)|', liturgic=11406, color=3 where date='2022-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期六)|', liturgic=11406, color=3 where date='2022-07-09';
 update easter_daily set cells='常年期第十五主日|圣克努特四世(St. Canute IV of Denmark)\\1071002|', liturgic=11500, color=1 where date='2022-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十五周(星期一)|', liturgic=11501, color=2 where date='2022-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十五周(星期二)|', liturgic=11502, color=1 where date='2022-07-12';
@@ -5872,7 +5872,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|常年期第
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|常年期第七周(星期二)|', liturgic=10702, color=1 where date='2023-02-21';
 update easter_daily set cells='圣灰礼仪\\40003|建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|', liturgic=40003, color=4 where date='2023-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|圣灰礼仪后星期四|', liturgic=40004, color=3 where date='2023-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|圣灰礼仪后星期五|', liturgic=40005, color=4 where date='2023-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|圣灰礼仪后星期五|', liturgic=40005, color=4 where date='2023-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|圣灰礼仪后星期六|', liturgic=40006, color=4 where date='2023-02-25';
 update easter_daily set cells='四旬期第一主日|圣波菲利(St. Porphyry)\\1022602|', liturgic=40100, color=4 where date='2023-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|四旬期第一周(星期一)|', liturgic=40101, color=4 where date='2023-02-27';
@@ -6007,7 +6007,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十三周(星期四)|', liturgic=11304, color=1 where date='2023-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十三周(星期五)|', liturgic=11305, color=1 where date='2023-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十三周(星期六)|', liturgic=11306, color=1 where date='2023-07-08';
-update easter_daily set cells='常年期第十四主日|中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|', liturgic=11400, color=1 where date='2023-07-09';
+update easter_daily set cells='常年期第十四主日|中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|', liturgic=11400, color=1 where date='2023-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期一)|', liturgic=11401, color=1 where date='2023-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十四周(星期二)|', liturgic=11402, color=2 where date='2023-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十四周(星期三)|', liturgic=11403, color=1 where date='2023-07-12';
@@ -6237,7 +6237,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|四旬期第
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|四旬期第一周(星期三)|', liturgic=40103, color=4 where date='2024-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|四旬期第一周(星期四)|', liturgic=40104, color=2 where date='2024-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|四旬期第一周(星期五)|', liturgic=40105, color=3 where date='2024-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第一周(星期六)|', liturgic=40106, color=4 where date='2024-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第一周(星期六)|', liturgic=40106, color=4 where date='2024-02-24';
 update easter_daily set cells='四旬期第二主日|圣泰拉修(St. Tarsius)\\1022502|', liturgic=40200, color=4 where date='2024-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|四旬期第二周(星期一)|', liturgic=40201, color=4 where date='2024-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|四旬期第二周(星期二)|', liturgic=40202, color=4 where date='2024-02-27';
@@ -6373,7 +6373,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十三周(星期六)|', liturgic=11306, color=1 where date='2024-07-06';
 update easter_daily set cells='常年期第十四主日|圣庞德诺(St. Pantaenus)\\1070701|', liturgic=11400, color=1 where date='2024-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十四周(星期一)|', liturgic=11401, color=1 where date='2024-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期二)|', liturgic=11402, color=3 where date='2024-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期二)|', liturgic=11402, color=3 where date='2024-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期三)|', liturgic=11403, color=1 where date='2024-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十四周(星期四)|', liturgic=11404, color=2 where date='2024-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十四周(星期五)|', liturgic=11405, color=1 where date='2024-07-12';
@@ -6603,7 +6603,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|常年期第
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|常年期第六周(星期五)|', liturgic=10605, color=1 where date='2025-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|常年期第六周(星期六)|', liturgic=10606, color=2 where date='2025-02-22';
 update easter_daily set cells='常年期第七主日|圣波利卡浦(St. Polycarp)\\1022301|', liturgic=10700, color=1 where date='2025-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|常年期第七周(星期一)|', liturgic=10701, color=1 where date='2025-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|常年期第七周(星期一)|', liturgic=10701, color=1 where date='2025-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|常年期第七周(星期二)|', liturgic=10702, color=1 where date='2025-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|常年期第七周(星期三)|', liturgic=10703, color=1 where date='2025-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|常年期第七周(星期四)|', liturgic=10704, color=1 where date='2025-02-27';
@@ -6738,7 +6738,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='常年期第十四主日|圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|', liturgic=11400, color=1 where date='2025-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十四周(星期一)|', liturgic=11401, color=1 where date='2025-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十四周(星期二)|', liturgic=11402, color=1 where date='2025-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期三)|', liturgic=11403, color=3 where date='2025-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期三)|', liturgic=11403, color=3 where date='2025-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期四)|', liturgic=11404, color=1 where date='2025-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十四周(星期五)|', liturgic=11405, color=2 where date='2025-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十四周(星期六)|', liturgic=11406, color=1 where date='2025-07-12';
@@ -6968,7 +6968,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|圣灰礼仪
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|圣灰礼仪后星期六|', liturgic=40006, color=4 where date='2026-02-21';
 update easter_daily set cells='四旬期第一主日|建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|', liturgic=40100, color=4 where date='2026-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|四旬期第一周(星期一)|', liturgic=40101, color=3 where date='2026-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第一周(星期二)|', liturgic=40102, color=4 where date='2026-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第一周(星期二)|', liturgic=40102, color=4 where date='2026-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|四旬期第一周(星期三)|', liturgic=40103, color=4 where date='2026-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|四旬期第一周(星期四)|', liturgic=40104, color=4 where date='2026-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|四旬期第一周(星期五)|', liturgic=40105, color=4 where date='2026-02-27';
@@ -7103,7 +7103,7 @@ update easter_daily set cells='常年期第十四主日|圣安多尼•匝加利
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十四周(星期一)|', liturgic=11401, color=1 where date='2026-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十四周(星期二)|', liturgic=11402, color=1 where date='2026-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十四周(星期三)|', liturgic=11403, color=1 where date='2026-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期四)|', liturgic=11404, color=3 where date='2026-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期四)|', liturgic=11404, color=3 where date='2026-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期五)|', liturgic=11405, color=1 where date='2026-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十四周(星期六)|', liturgic=11406, color=2 where date='2026-07-11';
 update easter_daily set cells='常年期第十五主日|越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|', liturgic=11500, color=1 where date='2026-07-12';
@@ -7333,7 +7333,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|四旬期第
 update easter_daily set cells='四旬期第二主日|圣伯多禄•达弥盎(St. Peter Damian)\\1022101|', liturgic=40200, color=4 where date='2027-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|四旬期第二周(星期一)|', liturgic=40201, color=2 where date='2027-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|四旬期第二周(星期二)|', liturgic=40202, color=3 where date='2027-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第二周(星期三)|', liturgic=40203, color=4 where date='2027-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第二周(星期三)|', liturgic=40203, color=4 where date='2027-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|四旬期第二周(星期四)|', liturgic=40204, color=4 where date='2027-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|四旬期第二周(星期五)|', liturgic=40205, color=4 where date='2027-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|四旬期第二周(星期六)|', liturgic=40206, color=4 where date='2027-02-27';
@@ -7468,7 +7468,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十四周(星期二)|', liturgic=11402, color=1 where date='2027-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十四周(星期三)|', liturgic=11403, color=1 where date='2027-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十四周(星期四)|', liturgic=11404, color=1 where date='2027-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期五)|', liturgic=11405, color=3 where date='2027-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期五)|', liturgic=11405, color=3 where date='2027-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期六)|', liturgic=11406, color=1 where date='2027-07-10';
 update easter_daily set cells='常年期第十五主日|圣本笃(院长 St. Benedict)\\1071101|', liturgic=11500, color=1 where date='2027-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十五周(星期一)|', liturgic=11501, color=1 where date='2027-07-12';
@@ -7698,7 +7698,7 @@ update easter_daily set cells='常年期第七主日|圣欧却琉(St. Eucherius)
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|常年期第七周(星期一)|', liturgic=10701, color=1 where date='2028-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|常年期第七周(星期二)|', liturgic=10702, color=2 where date='2028-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|常年期第七周(星期三)|', liturgic=10703, color=3 where date='2028-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|常年期第七周(星期四)|', liturgic=10704, color=1 where date='2028-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|常年期第七周(星期四)|', liturgic=10704, color=1 where date='2028-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|常年期第七周(星期五)|', liturgic=10705, color=1 where date='2028-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|常年期第七周(星期六)|', liturgic=10706, color=1 where date='2028-02-26';
 update easter_daily set cells='常年期第八主日|圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|', liturgic=10800, color=1 where date='2028-02-27';
@@ -7834,7 +7834,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十三周(星期四)|', liturgic=11304, color=1 where date='2028-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十三周(星期五)|', liturgic=11305, color=1 where date='2028-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十三周(星期六)|', liturgic=11306, color=1 where date='2028-07-08';
-update easter_daily set cells='常年期第十四主日|中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|', liturgic=11400, color=1 where date='2028-07-09';
+update easter_daily set cells='常年期第十四主日|中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|', liturgic=11400, color=1 where date='2028-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期一)|', liturgic=11401, color=1 where date='2028-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十四周(星期二)|', liturgic=11402, color=2 where date='2028-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十四周(星期三)|', liturgic=11403, color=1 where date='2028-07-12';
@@ -8064,7 +8064,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|四旬期第
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|四旬期第一周(星期三)|', liturgic=40103, color=4 where date='2029-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|四旬期第一周(星期四)|', liturgic=40104, color=2 where date='2029-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|四旬期第一周(星期五)|', liturgic=40105, color=3 where date='2029-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第一周(星期六)|', liturgic=40106, color=4 where date='2029-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第一周(星期六)|', liturgic=40106, color=4 where date='2029-02-24';
 update easter_daily set cells='四旬期第二主日|圣泰拉修(St. Tarsius)\\1022502|', liturgic=40200, color=4 where date='2029-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|四旬期第二周(星期一)|', liturgic=40201, color=4 where date='2029-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|四旬期第二周(星期二)|', liturgic=40202, color=4 where date='2029-02-27';
@@ -8199,7 +8199,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十三周(星期五)|', liturgic=11305, color=1 where date='2029-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十三周(星期六)|', liturgic=11306, color=1 where date='2029-07-07';
 update easter_daily set cells='常年期第十四主日|圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|', liturgic=11400, color=1 where date='2029-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期一)|', liturgic=11401, color=3 where date='2029-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期一)|', liturgic=11401, color=3 where date='2029-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期二)|', liturgic=11402, color=1 where date='2029-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十四周(星期三)|', liturgic=11403, color=2 where date='2029-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十四周(星期四)|', liturgic=11404, color=1 where date='2029-07-12';
@@ -8429,7 +8429,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|常年期第
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|常年期第六周(星期四)|', liturgic=10604, color=1 where date='2030-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|常年期第六周(星期五)|', liturgic=10605, color=2 where date='2030-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|常年期第六周(星期六)|', liturgic=10606, color=3 where date='2030-02-23';
-update easter_daily set cells='常年期第七主日|圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|', liturgic=10700, color=1 where date='2030-02-24';
+update easter_daily set cells='常年期第七主日|圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|', liturgic=10700, color=1 where date='2030-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|常年期第七周(星期一)|', liturgic=10701, color=1 where date='2030-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|常年期第七周(星期二)|', liturgic=10702, color=1 where date='2030-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|常年期第七周(星期三)|', liturgic=10703, color=1 where date='2030-02-27';
@@ -8564,7 +8564,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十三周(星期六)|', liturgic=11306, color=1 where date='2030-07-06';
 update easter_daily set cells='常年期第十四主日|圣庞德诺(St. Pantaenus)\\1070701|', liturgic=11400, color=1 where date='2030-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十四周(星期一)|', liturgic=11401, color=1 where date='2030-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期二)|', liturgic=11402, color=3 where date='2030-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期二)|', liturgic=11402, color=3 where date='2030-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期三)|', liturgic=11403, color=1 where date='2030-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十四周(星期四)|', liturgic=11404, color=2 where date='2030-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十四周(星期五)|', liturgic=11405, color=1 where date='2030-07-12';
@@ -8794,7 +8794,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|常年期第
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|常年期第六周(星期五)|', liturgic=10605, color=1 where date='2031-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|常年期第六周(星期六)|', liturgic=10606, color=2 where date='2031-02-22';
 update easter_daily set cells='常年期第七主日|圣波利卡浦(St. Polycarp)\\1022301|', liturgic=10700, color=1 where date='2031-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|常年期第七周(星期一)|', liturgic=10701, color=1 where date='2031-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|常年期第七周(星期一)|', liturgic=10701, color=1 where date='2031-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|常年期第七周(星期二)|', liturgic=10702, color=1 where date='2031-02-25';
 update easter_daily set cells='圣灰礼仪\\40003|圣波菲利(St. Porphyry)\\1022602|', liturgic=40003, color=4 where date='2031-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|圣灰礼仪后星期四|', liturgic=40004, color=4 where date='2031-02-27';
@@ -8929,7 +8929,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='常年期第十四主日|圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|', liturgic=11400, color=1 where date='2031-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十四周(星期一)|', liturgic=11401, color=1 where date='2031-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十四周(星期二)|', liturgic=11402, color=1 where date='2031-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期三)|', liturgic=11403, color=3 where date='2031-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期三)|', liturgic=11403, color=3 where date='2031-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期四)|', liturgic=11404, color=1 where date='2031-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十四周(星期五)|', liturgic=11405, color=2 where date='2031-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十四周(星期六)|', liturgic=11406, color=1 where date='2031-07-12';
@@ -9159,7 +9159,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|四旬期第
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|四旬期第一周(星期六)|', liturgic=40106, color=4 where date='2032-02-21';
 update easter_daily set cells='四旬期第二主日|建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|', liturgic=40200, color=4 where date='2032-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|四旬期第二周(星期一)|', liturgic=40201, color=3 where date='2032-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第二周(星期二)|', liturgic=40202, color=4 where date='2032-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第二周(星期二)|', liturgic=40202, color=4 where date='2032-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|四旬期第二周(星期三)|', liturgic=40203, color=4 where date='2032-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|四旬期第二周(星期四)|', liturgic=40204, color=4 where date='2032-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|四旬期第二周(星期五)|', liturgic=40205, color=4 where date='2032-02-27';
@@ -9295,7 +9295,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十四周(星期二)|', liturgic=11402, color=1 where date='2032-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十四周(星期三)|', liturgic=11403, color=1 where date='2032-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十四周(星期四)|', liturgic=11404, color=1 where date='2032-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期五)|', liturgic=11405, color=3 where date='2032-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期五)|', liturgic=11405, color=3 where date='2032-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期六)|', liturgic=11406, color=1 where date='2032-07-10';
 update easter_daily set cells='常年期第十五主日|圣本笃(院长 St. Benedict)\\1071101|', liturgic=11500, color=1 where date='2032-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十五周(星期一)|', liturgic=11501, color=1 where date='2032-07-12';
@@ -9525,7 +9525,7 @@ update easter_daily set cells='常年期第七主日|圣欧却琉(St. Eucherius)
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|常年期第七周(星期一)|', liturgic=10701, color=1 where date='2033-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|常年期第七周(星期二)|', liturgic=10702, color=2 where date='2033-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|常年期第七周(星期三)|', liturgic=10703, color=3 where date='2033-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|常年期第七周(星期四)|', liturgic=10704, color=1 where date='2033-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|常年期第七周(星期四)|', liturgic=10704, color=1 where date='2033-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|常年期第七周(星期五)|', liturgic=10705, color=1 where date='2033-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|常年期第七周(星期六)|', liturgic=10706, color=1 where date='2033-02-26';
 update easter_daily set cells='常年期第八主日|圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|', liturgic=10800, color=1 where date='2033-02-27';
@@ -9660,7 +9660,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十四周(星期三)|', liturgic=11403, color=1 where date='2033-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十四周(星期四)|', liturgic=11404, color=1 where date='2033-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十四周(星期五)|', liturgic=11405, color=1 where date='2033-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期六)|', liturgic=11406, color=3 where date='2033-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期六)|', liturgic=11406, color=3 where date='2033-07-09';
 update easter_daily set cells='常年期第十五主日|圣克努特四世(St. Canute IV of Denmark)\\1071002|', liturgic=11500, color=1 where date='2033-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十五周(星期一)|', liturgic=11501, color=2 where date='2033-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十五周(星期二)|', liturgic=11502, color=1 where date='2033-07-12';
@@ -9890,7 +9890,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|常年期第
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|常年期第七周(星期二)|', liturgic=10702, color=1 where date='2034-02-21';
 update easter_daily set cells='圣灰礼仪\\40003|建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|', liturgic=40003, color=4 where date='2034-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|圣灰礼仪后星期四|', liturgic=40004, color=3 where date='2034-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|圣灰礼仪后星期五|', liturgic=40005, color=4 where date='2034-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|圣灰礼仪后星期五|', liturgic=40005, color=4 where date='2034-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|圣灰礼仪后星期六|', liturgic=40006, color=4 where date='2034-02-25';
 update easter_daily set cells='四旬期第一主日|圣波菲利(St. Porphyry)\\1022602|', liturgic=40100, color=4 where date='2034-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|四旬期第一周(星期一)|', liturgic=40101, color=4 where date='2034-02-27';
@@ -10025,7 +10025,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十三周(星期四)|', liturgic=11304, color=1 where date='2034-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十三周(星期五)|', liturgic=11305, color=1 where date='2034-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十三周(星期六)|', liturgic=11306, color=1 where date='2034-07-08';
-update easter_daily set cells='常年期第十四主日|中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|', liturgic=11400, color=1 where date='2034-07-09';
+update easter_daily set cells='常年期第十四主日|中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|', liturgic=11400, color=1 where date='2034-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期一)|', liturgic=11401, color=1 where date='2034-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十四周(星期二)|', liturgic=11402, color=2 where date='2034-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十四周(星期三)|', liturgic=11403, color=1 where date='2034-07-12';
@@ -10255,7 +10255,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|四旬期第
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|四旬期第二周(星期三)|', liturgic=40203, color=4 where date='2035-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|四旬期第二周(星期四)|', liturgic=40204, color=2 where date='2035-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|四旬期第二周(星期五)|', liturgic=40205, color=3 where date='2035-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第二周(星期六)|', liturgic=40206, color=4 where date='2035-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第二周(星期六)|', liturgic=40206, color=4 where date='2035-02-24';
 update easter_daily set cells='四旬期第三主日|圣泰拉修(St. Tarsius)\\1022502|', liturgic=40300, color=4 where date='2035-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|四旬期第三周(星期一)|', liturgic=40301, color=4 where date='2035-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|四旬期第三周(星期二)|', liturgic=40302, color=4 where date='2035-02-27';
@@ -10390,7 +10390,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十三周(星期五)|', liturgic=11305, color=1 where date='2035-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十三周(星期六)|', liturgic=11306, color=1 where date='2035-07-07';
 update easter_daily set cells='常年期第十四主日|圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|', liturgic=11400, color=1 where date='2035-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期一)|', liturgic=11401, color=3 where date='2035-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期一)|', liturgic=11401, color=3 where date='2035-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期二)|', liturgic=11402, color=1 where date='2035-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十四周(星期三)|', liturgic=11403, color=2 where date='2035-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十四周(星期四)|', liturgic=11404, color=1 where date='2035-07-12';
@@ -10620,7 +10620,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|常年期第
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|常年期第六周(星期四)|', liturgic=10604, color=1 where date='2036-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|常年期第六周(星期五)|', liturgic=10605, color=2 where date='2036-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|常年期第六周(星期六)|', liturgic=10606, color=3 where date='2036-02-23';
-update easter_daily set cells='常年期第七主日|圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|', liturgic=10700, color=1 where date='2036-02-24';
+update easter_daily set cells='常年期第七主日|圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|', liturgic=10700, color=1 where date='2036-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|常年期第七周(星期一)|', liturgic=10701, color=1 where date='2036-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|常年期第七周(星期二)|', liturgic=10702, color=1 where date='2036-02-26';
 update easter_daily set cells='圣灰礼仪\\40003|圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|', liturgic=40003, color=4 where date='2036-02-27';
@@ -10756,7 +10756,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='常年期第十四主日|圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|', liturgic=11400, color=1 where date='2036-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十四周(星期一)|', liturgic=11401, color=1 where date='2036-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十四周(星期二)|', liturgic=11402, color=1 where date='2036-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期三)|', liturgic=11403, color=3 where date='2036-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期三)|', liturgic=11403, color=3 where date='2036-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期四)|', liturgic=11404, color=1 where date='2036-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十四周(星期五)|', liturgic=11405, color=2 where date='2036-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十四周(星期六)|', liturgic=11406, color=1 where date='2036-07-12';
@@ -10986,7 +10986,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|圣灰礼仪
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|圣灰礼仪后星期六|', liturgic=40006, color=4 where date='2037-02-21';
 update easter_daily set cells='四旬期第一主日|建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|', liturgic=40100, color=4 where date='2037-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|四旬期第一周(星期一)|', liturgic=40101, color=3 where date='2037-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第一周(星期二)|', liturgic=40102, color=4 where date='2037-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第一周(星期二)|', liturgic=40102, color=4 where date='2037-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|四旬期第一周(星期三)|', liturgic=40103, color=4 where date='2037-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|四旬期第一周(星期四)|', liturgic=40104, color=4 where date='2037-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|四旬期第一周(星期五)|', liturgic=40105, color=4 where date='2037-02-27';
@@ -11121,7 +11121,7 @@ update easter_daily set cells='常年期第十四主日|圣安多尼•匝加利
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十四周(星期一)|', liturgic=11401, color=1 where date='2037-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十四周(星期二)|', liturgic=11402, color=1 where date='2037-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十四周(星期三)|', liturgic=11403, color=1 where date='2037-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期四)|', liturgic=11404, color=3 where date='2037-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期四)|', liturgic=11404, color=3 where date='2037-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期五)|', liturgic=11405, color=1 where date='2037-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十四周(星期六)|', liturgic=11406, color=2 where date='2037-07-11';
 update easter_daily set cells='常年期第十五主日|越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|', liturgic=11500, color=1 where date='2037-07-12';
@@ -11351,7 +11351,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|常年期第
 update easter_daily set cells='常年期第七主日|圣伯多禄•达弥盎(St. Peter Damian)\\1022101|', liturgic=10700, color=1 where date='2038-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|常年期第七周(星期一)|', liturgic=10701, color=2 where date='2038-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|常年期第七周(星期二)|', liturgic=10702, color=3 where date='2038-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|常年期第七周(星期三)|', liturgic=10703, color=1 where date='2038-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|常年期第七周(星期三)|', liturgic=10703, color=1 where date='2038-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|常年期第七周(星期四)|', liturgic=10704, color=1 where date='2038-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|常年期第七周(星期五)|', liturgic=10705, color=1 where date='2038-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|常年期第七周(星期六)|', liturgic=10706, color=1 where date='2038-02-27';
@@ -11486,7 +11486,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十四周(星期二)|', liturgic=11402, color=1 where date='2038-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十四周(星期三)|', liturgic=11403, color=1 where date='2038-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十四周(星期四)|', liturgic=11404, color=1 where date='2038-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期五)|', liturgic=11405, color=3 where date='2038-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期五)|', liturgic=11405, color=3 where date='2038-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期六)|', liturgic=11406, color=1 where date='2038-07-10';
 update easter_daily set cells='常年期第十五主日|圣本笃(院长 St. Benedict)\\1071101|', liturgic=11500, color=1 where date='2038-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十五周(星期一)|', liturgic=11501, color=1 where date='2038-07-12';
@@ -11716,7 +11716,7 @@ update easter_daily set cells='常年期第七主日|圣欧却琉(St. Eucherius)
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|常年期第七周(星期一)|', liturgic=10701, color=1 where date='2039-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|常年期第七周(星期二)|', liturgic=10702, color=2 where date='2039-02-22';
 update easter_daily set cells='圣灰礼仪\\40003|圣波利卡浦(St. Polycarp)\\1022301|', liturgic=40003, color=4 where date='2039-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|圣灰礼仪后星期四|', liturgic=40004, color=4 where date='2039-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|圣灰礼仪后星期四|', liturgic=40004, color=4 where date='2039-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|圣灰礼仪后星期五|', liturgic=40005, color=4 where date='2039-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|圣灰礼仪后星期六|', liturgic=40006, color=4 where date='2039-02-26';
 update easter_daily set cells='四旬期第一主日|圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|', liturgic=40100, color=4 where date='2039-02-27';
@@ -11851,7 +11851,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十四周(星期三)|', liturgic=11403, color=1 where date='2039-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十四周(星期四)|', liturgic=11404, color=1 where date='2039-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十四周(星期五)|', liturgic=11405, color=1 where date='2039-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期六)|', liturgic=11406, color=3 where date='2039-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期六)|', liturgic=11406, color=3 where date='2039-07-09';
 update easter_daily set cells='常年期第十五主日|圣克努特四世(St. Canute IV of Denmark)\\1071002|', liturgic=11500, color=1 where date='2039-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十五周(星期一)|', liturgic=11501, color=2 where date='2039-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十五周(星期二)|', liturgic=11502, color=1 where date='2039-07-12';
@@ -12081,7 +12081,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|四旬期第
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|四旬期第一周(星期二)|', liturgic=40102, color=4 where date='2040-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|四旬期第一周(星期三)|', liturgic=40103, color=2 where date='2040-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|四旬期第一周(星期四)|', liturgic=40104, color=3 where date='2040-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第一周(星期五)|', liturgic=40105, color=4 where date='2040-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第一周(星期五)|', liturgic=40105, color=4 where date='2040-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|四旬期第一周(星期六)|', liturgic=40106, color=4 where date='2040-02-25';
 update easter_daily set cells='四旬期第二主日|圣波菲利(St. Porphyry)\\1022602|', liturgic=40200, color=4 where date='2040-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|四旬期第二周(星期一)|', liturgic=40201, color=4 where date='2040-02-27';
@@ -12217,7 +12217,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十三周(星期五)|', liturgic=11305, color=1 where date='2040-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十三周(星期六)|', liturgic=11306, color=1 where date='2040-07-07';
 update easter_daily set cells='常年期第十四主日|圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|', liturgic=11400, color=1 where date='2040-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期一)|', liturgic=11401, color=3 where date='2040-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期一)|', liturgic=11401, color=3 where date='2040-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期二)|', liturgic=11402, color=1 where date='2040-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十四周(星期三)|', liturgic=11403, color=2 where date='2040-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十四周(星期四)|', liturgic=11404, color=1 where date='2040-07-12';
@@ -12447,7 +12447,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|常年期第
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|常年期第六周(星期四)|', liturgic=10604, color=1 where date='2041-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|常年期第六周(星期五)|', liturgic=10605, color=2 where date='2041-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|常年期第六周(星期六)|', liturgic=10606, color=3 where date='2041-02-23';
-update easter_daily set cells='常年期第七主日|圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|', liturgic=10700, color=1 where date='2041-02-24';
+update easter_daily set cells='常年期第七主日|圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|', liturgic=10700, color=1 where date='2041-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|常年期第七周(星期一)|', liturgic=10701, color=1 where date='2041-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|常年期第七周(星期二)|', liturgic=10702, color=1 where date='2041-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|常年期第七周(星期三)|', liturgic=10703, color=1 where date='2041-02-27';
@@ -12582,7 +12582,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十三周(星期六)|', liturgic=11306, color=1 where date='2041-07-06';
 update easter_daily set cells='常年期第十四主日|圣庞德诺(St. Pantaenus)\\1070701|', liturgic=11400, color=1 where date='2041-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十四周(星期一)|', liturgic=11401, color=1 where date='2041-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期二)|', liturgic=11402, color=3 where date='2041-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期二)|', liturgic=11402, color=3 where date='2041-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期三)|', liturgic=11403, color=1 where date='2041-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十四周(星期四)|', liturgic=11404, color=2 where date='2041-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十四周(星期五)|', liturgic=11405, color=1 where date='2041-07-12';
@@ -12812,7 +12812,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|圣灰礼仪
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|圣灰礼仪后星期五|', liturgic=40005, color=4 where date='2042-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|圣灰礼仪后星期六|', liturgic=40006, color=2 where date='2042-02-22';
 update easter_daily set cells='四旬期第一主日|圣波利卡浦(St. Polycarp)\\1022301|', liturgic=40100, color=4 where date='2042-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第一周(星期一)|', liturgic=40101, color=4 where date='2042-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第一周(星期一)|', liturgic=40101, color=4 where date='2042-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|四旬期第一周(星期二)|', liturgic=40102, color=4 where date='2042-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|四旬期第一周(星期三)|', liturgic=40103, color=4 where date='2042-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|四旬期第一周(星期四)|', liturgic=40104, color=4 where date='2042-02-27';
@@ -12947,7 +12947,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='常年期第十四主日|圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|', liturgic=11400, color=1 where date='2042-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十四周(星期一)|', liturgic=11401, color=1 where date='2042-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十四周(星期二)|', liturgic=11402, color=1 where date='2042-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期三)|', liturgic=11403, color=3 where date='2042-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期三)|', liturgic=11403, color=3 where date='2042-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期四)|', liturgic=11404, color=1 where date='2042-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十四周(星期五)|', liturgic=11405, color=2 where date='2042-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十四周(星期六)|', liturgic=11406, color=1 where date='2042-07-12';
@@ -13177,7 +13177,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|四旬期第
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|四旬期第一周(星期六)|', liturgic=40106, color=4 where date='2043-02-21';
 update easter_daily set cells='四旬期第二主日|建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|', liturgic=40200, color=4 where date='2043-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|四旬期第二周(星期一)|', liturgic=40201, color=3 where date='2043-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第二周(星期二)|', liturgic=40202, color=4 where date='2043-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第二周(星期二)|', liturgic=40202, color=4 where date='2043-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|四旬期第二周(星期三)|', liturgic=40203, color=4 where date='2043-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|四旬期第二周(星期四)|', liturgic=40204, color=4 where date='2043-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|四旬期第二周(星期五)|', liturgic=40205, color=4 where date='2043-02-27';
@@ -13312,7 +13312,7 @@ update easter_daily set cells='常年期第十四主日|圣安多尼•匝加利
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十四周(星期一)|', liturgic=11401, color=1 where date='2043-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十四周(星期二)|', liturgic=11402, color=1 where date='2043-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十四周(星期三)|', liturgic=11403, color=1 where date='2043-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期四)|', liturgic=11404, color=3 where date='2043-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期四)|', liturgic=11404, color=3 where date='2043-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期五)|', liturgic=11405, color=1 where date='2043-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十四周(星期六)|', liturgic=11406, color=2 where date='2043-07-11';
 update easter_daily set cells='常年期第十五主日|越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|', liturgic=11500, color=1 where date='2043-07-12';
@@ -13542,7 +13542,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|常年期第
 update easter_daily set cells='常年期第七主日|圣伯多禄•达弥盎(St. Peter Damian)\\1022101|', liturgic=10700, color=1 where date='2044-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|常年期第七周(星期一)|', liturgic=10701, color=2 where date='2044-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|常年期第七周(星期二)|', liturgic=10702, color=3 where date='2044-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|常年期第七周(星期三)|', liturgic=10703, color=1 where date='2044-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|常年期第七周(星期三)|', liturgic=10703, color=1 where date='2044-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|常年期第七周(星期四)|', liturgic=10704, color=1 where date='2044-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|常年期第七周(星期五)|', liturgic=10705, color=1 where date='2044-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|常年期第七周(星期六)|', liturgic=10706, color=1 where date='2044-02-27';
@@ -13678,7 +13678,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十四周(星期三)|', liturgic=11403, color=1 where date='2044-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十四周(星期四)|', liturgic=11404, color=1 where date='2044-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十四周(星期五)|', liturgic=11405, color=1 where date='2044-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期六)|', liturgic=11406, color=3 where date='2044-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期六)|', liturgic=11406, color=3 where date='2044-07-09';
 update easter_daily set cells='常年期第十五主日|圣克努特四世(St. Canute IV of Denmark)\\1071002|', liturgic=11500, color=1 where date='2044-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十五周(星期一)|', liturgic=11501, color=2 where date='2044-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十五周(星期二)|', liturgic=11502, color=1 where date='2044-07-12';
@@ -13908,7 +13908,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|常年期第
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|常年期第七周(星期二)|', liturgic=10702, color=1 where date='2045-02-21';
 update easter_daily set cells='圣灰礼仪\\40003|建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|', liturgic=40003, color=4 where date='2045-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|圣灰礼仪后星期四|', liturgic=40004, color=3 where date='2045-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|圣灰礼仪后星期五|', liturgic=40005, color=4 where date='2045-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|圣灰礼仪后星期五|', liturgic=40005, color=4 where date='2045-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|圣灰礼仪后星期六|', liturgic=40006, color=4 where date='2045-02-25';
 update easter_daily set cells='四旬期第一主日|圣波菲利(St. Porphyry)\\1022602|', liturgic=40100, color=4 where date='2045-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|四旬期第一周(星期一)|', liturgic=40101, color=4 where date='2045-02-27';
@@ -14043,7 +14043,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十三周(星期四)|', liturgic=11304, color=1 where date='2045-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十三周(星期五)|', liturgic=11305, color=1 where date='2045-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十三周(星期六)|', liturgic=11306, color=1 where date='2045-07-08';
-update easter_daily set cells='常年期第十四主日|中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|', liturgic=11400, color=1 where date='2045-07-09';
+update easter_daily set cells='常年期第十四主日|中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|', liturgic=11400, color=1 where date='2045-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期一)|', liturgic=11401, color=1 where date='2045-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十四周(星期二)|', liturgic=11402, color=2 where date='2045-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十四周(星期三)|', liturgic=11403, color=1 where date='2045-07-12';
@@ -14273,7 +14273,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|四旬期第
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|四旬期第二周(星期三)|', liturgic=40203, color=4 where date='2046-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|四旬期第二周(星期四)|', liturgic=40204, color=2 where date='2046-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|四旬期第二周(星期五)|', liturgic=40205, color=3 where date='2046-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第二周(星期六)|', liturgic=40206, color=4 where date='2046-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第二周(星期六)|', liturgic=40206, color=4 where date='2046-02-24';
 update easter_daily set cells='四旬期第三主日|圣泰拉修(St. Tarsius)\\1022502|', liturgic=40300, color=4 where date='2046-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|四旬期第三周(星期一)|', liturgic=40301, color=4 where date='2046-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|四旬期第三周(星期二)|', liturgic=40302, color=4 where date='2046-02-27';
@@ -14408,7 +14408,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十三周(星期五)|', liturgic=11305, color=1 where date='2046-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十三周(星期六)|', liturgic=11306, color=1 where date='2046-07-07';
 update easter_daily set cells='常年期第十四主日|圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|', liturgic=11400, color=1 where date='2046-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期一)|', liturgic=11401, color=3 where date='2046-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期一)|', liturgic=11401, color=3 where date='2046-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期二)|', liturgic=11402, color=1 where date='2046-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十四周(星期三)|', liturgic=11403, color=2 where date='2046-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十四周(星期四)|', liturgic=11404, color=1 where date='2046-07-12';
@@ -14638,7 +14638,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|常年期第
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|常年期第六周(星期四)|', liturgic=10604, color=1 where date='2047-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|常年期第六周(星期五)|', liturgic=10605, color=2 where date='2047-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|常年期第六周(星期六)|', liturgic=10606, color=3 where date='2047-02-23';
-update easter_daily set cells='常年期第七主日|圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|', liturgic=10700, color=1 where date='2047-02-24';
+update easter_daily set cells='常年期第七主日|圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|', liturgic=10700, color=1 where date='2047-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|常年期第七周(星期一)|', liturgic=10701, color=1 where date='2047-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|常年期第七周(星期二)|', liturgic=10702, color=1 where date='2047-02-26';
 update easter_daily set cells='圣灰礼仪\\40003|圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|', liturgic=40003, color=4 where date='2047-02-27';
@@ -14773,7 +14773,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十三周(星期六)|', liturgic=11306, color=1 where date='2047-07-06';
 update easter_daily set cells='常年期第十四主日|圣庞德诺(St. Pantaenus)\\1070701|', liturgic=11400, color=1 where date='2047-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十四周(星期一)|', liturgic=11401, color=1 where date='2047-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期二)|', liturgic=11402, color=3 where date='2047-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期二)|', liturgic=11402, color=3 where date='2047-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期三)|', liturgic=11403, color=1 where date='2047-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十四周(星期四)|', liturgic=11404, color=2 where date='2047-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十四周(星期五)|', liturgic=11405, color=1 where date='2047-07-12';
@@ -15003,7 +15003,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|圣灰礼仪
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|圣灰礼仪后星期五|', liturgic=40005, color=4 where date='2048-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|圣灰礼仪后星期六|', liturgic=40006, color=2 where date='2048-02-22';
 update easter_daily set cells='四旬期第一主日|圣波利卡浦(St. Polycarp)\\1022301|', liturgic=40100, color=4 where date='2048-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第一周(星期一)|', liturgic=40101, color=4 where date='2048-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|四旬期第一周(星期一)|', liturgic=40101, color=4 where date='2048-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|四旬期第一周(星期二)|', liturgic=40102, color=4 where date='2048-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|四旬期第一周(星期三)|', liturgic=40103, color=4 where date='2048-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|四旬期第一周(星期四)|', liturgic=40104, color=4 where date='2048-02-27';
@@ -15139,7 +15139,7 @@ update easter_daily set cells='常年期第十四主日|圣安多尼•匝加利
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十四周(星期一)|', liturgic=11401, color=1 where date='2048-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十四周(星期二)|', liturgic=11402, color=1 where date='2048-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十四周(星期三)|', liturgic=11403, color=1 where date='2048-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期四)|', liturgic=11404, color=3 where date='2048-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期四)|', liturgic=11404, color=3 where date='2048-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期五)|', liturgic=11405, color=1 where date='2048-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十四周(星期六)|', liturgic=11406, color=2 where date='2048-07-11';
 update easter_daily set cells='常年期第十五主日|越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|', liturgic=11500, color=1 where date='2048-07-12';
@@ -15369,7 +15369,7 @@ update easter_daily set cells='圣欧却琉(St. Eucherius)\\1022001|常年期第
 update easter_daily set cells='常年期第七主日|圣伯多禄•达弥盎(St. Peter Damian)\\1022101|', liturgic=10700, color=1 where date='2049-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|常年期第七周(星期一)|', liturgic=10701, color=2 where date='2049-02-22';
 update easter_daily set cells='圣波利卡浦(St. Polycarp)\\1022301|常年期第七周(星期二)|', liturgic=10702, color=3 where date='2049-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|常年期第七周(星期三)|', liturgic=10703, color=1 where date='2049-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|常年期第七周(星期三)|', liturgic=10703, color=1 where date='2049-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|常年期第七周(星期四)|', liturgic=10704, color=1 where date='2049-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|常年期第七周(星期五)|', liturgic=10705, color=1 where date='2049-02-26';
 update easter_daily set cells='圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|常年期第七周(星期六)|', liturgic=10706, color=1 where date='2049-02-27';
@@ -15504,7 +15504,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十四周(星期二)|', liturgic=11402, color=1 where date='2049-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十四周(星期三)|', liturgic=11403, color=1 where date='2049-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十四周(星期四)|', liturgic=11404, color=1 where date='2049-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期五)|', liturgic=11405, color=3 where date='2049-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期五)|', liturgic=11405, color=3 where date='2049-07-09';
 update easter_daily set cells='圣克努特四世(St. Canute IV of Denmark)\\1071002|常年期第十四周(星期六)|', liturgic=11406, color=1 where date='2049-07-10';
 update easter_daily set cells='常年期第十五主日|圣本笃(院长 St. Benedict)\\1071101|', liturgic=11500, color=1 where date='2049-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十五周(星期一)|', liturgic=11501, color=1 where date='2049-07-12';
@@ -15734,7 +15734,7 @@ update easter_daily set cells='常年期第七主日|圣欧却琉(St. Eucherius)
 update easter_daily set cells='圣伯多禄•达弥盎(St. Peter Damian)\\1022101|常年期第七周(星期一)|', liturgic=10701, color=1 where date='2050-02-21';
 update easter_daily set cells='建立圣伯多禄宗座(St. Peter’s Chair at Antioch)\\1022201|圣女玛加利大•高多娜(St. Margaret Cortona)\\1022202|常年期第七周(星期二)|', liturgic=10702, color=2 where date='2050-02-22';
 update easter_daily set cells='圣灰礼仪\\40003|圣波利卡浦(St. Polycarp)\\1022301|', liturgic=40003, color=4 where date='2050-02-23';
-update easter_daily set cells='圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)\\1022402|圣灰礼仪后星期四|', liturgic=40004, color=4 where date='2050-02-24';
+update easter_daily set cells='圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)\\1022402|圣灰礼仪后星期四|', liturgic=40004, color=4 where date='2050-02-24';
 update easter_daily set cells='圣泰拉修(St. Tarsius)\\1022502|圣灰礼仪后星期五|', liturgic=40005, color=4 where date='2050-02-25';
 update easter_daily set cells='圣波菲利(St. Porphyry)\\1022602|圣灰礼仪后星期六|', liturgic=40006, color=4 where date='2050-02-26';
 update easter_daily set cells='四旬期第一主日|圣母痛苦圣嘉俾厄尔(St. Gabriel Possenti)\\1022701|', liturgic=40100, color=4 where date='2050-02-27';
@@ -15869,7 +15869,7 @@ update easter_daily set cells='圣安多尼•匝加利(St. Antony Zaccaria)\\10
 update easter_daily set cells='圣玛利亚•葛蕾蒂(St. Maria Goretti)\\1070601|常年期第十四周(星期三)|', liturgic=11403, color=1 where date='2050-07-06';
 update easter_daily set cells='圣庞德诺(St. Pantaenus)\\1070701|常年期第十四周(星期四)|', liturgic=11404, color=1 where date='2050-07-07';
 update easter_daily set cells='圣艾士波和卓娅(Ss. Hesperus and Zoa)\\1070801|圣武文印\\1070802|常年期第十四周(星期五)|', liturgic=11405, color=1 where date='2050-07-08';
-update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期六)|', liturgic=11406, color=3 where date='2050-07-09';
+update easter_daily set cells='中华诸圣及真福(The Martyrs of China)\\1070901|圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)\\1070902|常年期第十四周(星期六)|', liturgic=11406, color=3 where date='2050-07-09';
 update easter_daily set cells='常年期第十五主日|圣克努特四世(St. Canute IV of Denmark)\\1071002|', liturgic=11500, color=1 where date='2050-07-10';
 update easter_daily set cells='圣本笃(院长 St. Benedict)\\1071101|常年期第十五周(星期一)|', liturgic=11501, color=2 where date='2050-07-11';
 update easter_daily set cells='越南殉道烈士(the Martyrs of Indo-China, I)\\1071201|常年期第十五周(星期二)|', liturgic=11502, color=1 where date='2050-07-12';

@@ -174,7 +174,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         mapPropers.insert(std::make_pair(1022301, CellInfo(MEMORIAL, RED, "圣波利卡浦(St. Polycarp)")));
         // 24日
         mapPropers.insert(std::make_pair(1022401, CellInfo(OPTIONAL, NOCOLOR, "圣凯撒利乌•纳齐盎(St. Caesarius of Nazianzus)", disableLang)));
-        mapPropers.insert(std::make_pair(1022402, CellInfo(OPTIONAL, NOCOLOR, "圣孟泰诺、圣路琪及其它烈士(Ss. Montantls, Lucius & their Companions)")));
+        mapPropers.insert(std::make_pair(1022402, CellInfo(OPTIONAL, NOCOLOR, "圣孟泰诺、圣路琪及其他烈士(Ss. Montantls, Lucius & their Companions)")));
         mapPropers.insert(std::make_pair(1022501, CellInfo(OPTIONAL, NOCOLOR, "圣女华波加(St. Walburga)", disableLang)));
         mapPropers.insert(std::make_pair(1022502, CellInfo(OPTIONAL, NOCOLOR, "圣泰拉修(St. Tarsius)")));
         mapPropers.insert(std::make_pair(1022601, CellInfo(OPTIONAL, NOCOLOR, "圣女美狄黛(St. Mechtilde)", disableLang)));
@@ -452,7 +452,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         } else {
             mapPropers.insert(std::make_pair(1070901, CellInfo(OPTIONAL, NOCOLOR, "中华诸圣及真福(The Martyrs of China)")));
         }
-        mapPropers.insert(std::make_pair(1070902, CellInfo(OPTIONAL, NOCOLOR, "圣尼各老•比克及其它殉道烈士(Ss. Nicholas Pieck and his Companions)")));
+        mapPropers.insert(std::make_pair(1070902, CellInfo(OPTIONAL, NOCOLOR, "圣尼各老•比克及其他殉道烈士(Ss. Nicholas Pieck and his Companions)")));
         mapPropers.insert(std::make_pair(1070903, CellInfo(OPTIONAL, NOCOLOR, "圣万罗尼加•祁拉尼(St. Veronica Giuliani)", disableLang)));
         mapPropers.insert(std::make_pair(1071001, CellInfo(OPTIONAL, NOCOLOR, "七位圣昆仲(the Seven Brothers and St. Feheity)", disableLang)));
         mapPropers.insert(std::make_pair(1071002, CellInfo(OPTIONAL, NOCOLOR, "圣克努特四世(St. Canute IV of Denmark)")));
