@@ -541,7 +541,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         mapPropers.insert(std::make_pair(1081601, CellInfo(OPTIONAL, NOCOLOR, "圣斯德望（匈牙利）(St. Stephen of Hungary)")));
         mapPropers.insert(std::make_pair(1081602, CellInfo(OPTIONAL, NOCOLOR, "圣洛克(St. Rock)")));
         mapPropers.insert(std::make_pair(1081701, CellInfo(OPTIONAL, NOCOLOR, "圣雅钦多(St. Hyachinth)")));
-        mapPropers.insert(std::make_pair(1081702, CellInfo(OPTIONAL, NOCOLOR, "圣若翰纳•德拉诺(St. Joan Delanoue)")));
+        mapPropers.insert(std::make_pair(1081702, CellInfo(OPTIONAL, NOCOLOR, "圣若翰纳•德拉诺(St. Jeanne Delanoue)")));
         mapPropers.insert(std::make_pair(1081801, CellInfo(OPTIONAL, NOCOLOR, "圣海伦(St. Helen)")));
         mapPropers.insert(std::make_pair(1081802, CellInfo(OPTIONAL, NOCOLOR, "圣亚尔比(St. Alipius)")));
         mapPropers.insert(std::make_pair(1081803, CellInfo(OPTIONAL, NOCOLOR, "真福白亚蒂斯(Bd. Beatrice da Silva)", disableLang)));
@@ -619,7 +619,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         mapPropers.insert(std::make_pair(1092201, CellInfo(OPTIONAL, NOCOLOR, "圣多默•威拉诺(St. Thomas of Villanova)")));
         mapPropers.insert(std::make_pair(1092301, CellInfo(OPTIONAL, NOCOLOR, "圣理诺(St. Linus)", disableLang)));
         mapPropers.insert(std::make_pair(1092302, CellInfo(OPTIONAL, NOCOLOR, "圣女德格拉(St. Thecla of Iconium)", disableLang)));
-        mapPropers.insert(std::make_pair(1092303, CellInfo(MEMORIAL, WHITE, "圣比约•庇特來(St. Pio of Pietrelcina.)")));
+        mapPropers.insert(std::make_pair(1092303, CellInfo(MEMORIAL, WHITE, "圣比约•庇特來(St. Pius of Pietrelcina)")));
         mapPropers.insert(std::make_pair(1092401, CellInfo(OPTIONAL, NOCOLOR, "圣母赎虏(Our Lady of Ransom)")));
         mapPropers.insert(std::make_pair(1092402, CellInfo(OPTIONAL, NOCOLOR, "圣吉拉(St. Gerard of Sagredo)")));
         mapPropers.insert(std::make_pair(1092501, CellInfo(OPTIONAL, NOCOLOR, "圣西弗里(St. Ceolfrid)", disableLang)));
@@ -628,7 +628,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         mapPropers.insert(std::make_pair(1092601, CellInfo(OPTIONAL, NOCOLOR, "圣葛斯默、圣达弥盎(Ss. Cosmas and Damian)")));
         mapPropers.insert(std::make_pair(1092701, CellInfo(OPTIONAL, NOCOLOR, "圣爱徐亚(St. Eleazar de Sabran)", disableLang)));
         mapPropers.insert(std::make_pair(1092702, CellInfo(MEMORIAL, WHITE, "圣味增爵(St. Vincent De Paul)")));
-        mapPropers.insert(std::make_pair(1092801, CellInfo(OPTIONAL, NOCOLOR, "圣文策老(St. Wenceslaus)")));
+        mapPropers.insert(std::make_pair(1092801, CellInfo(OPTIONAL, NOCOLOR, "圣文策老(St. Lorenzo Ruiz and companions)")));
         mapPropers.insert(std::make_pair(1092802, CellInfo(OPTIONAL, NOCOLOR, "圣女欧多钦(St. Eustochium)", disableLang)));
         mapPropers.insert(std::make_pair(1092901, CellInfo(FEAST, WHITE, "诸圣天使")));
         mapPropers.insert(std::make_pair(1093001, CellInfo(MEMORIAL, WHITE, "圣热罗尼莫(St. Jerome)")));
@@ -901,7 +901,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
     while (iter != mapPropers.end())
     {
         iter->second.code = iter->first;
-        CathAssist::Calendar::MultiLang::setString(iter->first, "zh_CN", iter->second.celebration);
+        //CathAssist::Calendar::MultiLang::setString(iter->first, "zh_CN", iter->second.celebration);
         auto celebration = CathAssist::Calendar::MultiLang::getString(iter->first);
         if (celebration.size() > 0)
         {
