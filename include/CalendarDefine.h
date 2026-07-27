@@ -1,8 +1,9 @@
-﻿#ifndef __CA_CALENDAR_DEFINE_H__
+#ifndef __CA_CALENDAR_DEFINE_H__
 #define __CA_CALENDAR_DEFINE_H__
 #include <string>
 #include <list>
 #include <sstream>
+#include <algorithm>
 
 namespace CathAssist
 {
@@ -14,7 +15,8 @@ namespace CathAssist
             LANG_ZH_TW,
             LANG_ES_ES,
             LANG_IT_IT,
-            LANG_PT_BR
+            LANG_PT_BR,
+            LANG_KO_KR
         } langcode_t;
 
         static std::string getLangCodeStr(langcode_t lc) {
@@ -31,6 +33,8 @@ namespace CathAssist
                     return "it_IT";
                 case LANG_PT_BR:
                     return "pt_BR";
+                case LANG_KO_KR:
+                    return "ko_KR";
                 default:
                     return "zh_CN";
             }
@@ -49,6 +53,8 @@ namespace CathAssist
                 return LANG_IT_IT;
             } else if (strLang == "pt_BR") {
                 return LANG_PT_BR;
+            } else if (strLang == "ko_KR") {
+                return LANG_KO_KR;
             } else {
                 return LANG_ZH_CN;
             }
@@ -56,7 +62,7 @@ namespace CathAssist
 
         static std::list<int> getAllLangCodes() {
             std::list<int> langCodes;
-            for(int lang = LANG_EN; lang <= LANG_PT_BR; ++lang) {
+            for(int lang = LANG_EN; lang <= LANG_KO_KR; ++lang) {
                 langCodes.push_back(lang);
             }
             return langCodes;
@@ -199,6 +205,31 @@ namespace CathAssist
                     break;
                 case SAT:
                     return "Sábado";
+                    break;
+                }
+            } else if (lang == LANG_KO_KR) {
+                switch(d)
+                {
+                case SUN:
+                    return "일요일";
+                    break;
+                case MON:
+                    return "월요일";
+                    break;
+                case TUE:
+                    return "화요일";
+                    break;
+                case WED:
+                    return "수요일";
+                    break;
+                case THU:
+                    return "목요일";
+                    break;
+                case FRI:
+                    return "금요일";
+                    break;
+                case SAT:
+                    return "토요일";
                     break;
                 }
             }
@@ -363,6 +394,28 @@ namespace CathAssist
                         return "Pascal";	//Ash Wed., Holy Week & Easter Octave
                         break;
                 }
+            } else if (lang == LANG_KO_KR) {
+                switch(s)
+                {
+                    case ORDINARY:
+                        return "연중";
+                        break;
+                    case ADVENT:
+                        return "대림";
+                        break;
+                    case CHRISTMAS:
+                        return "성탄";
+                        break;
+                    case LENT:
+                        return "사순";
+                        break;
+                    case EASTER:
+                        return "부활";
+                        break;
+                    case PASCHAL:
+                        return "파스카";	//Ash Wed., Holy Week & Easter Octave
+                        break;
+                }
             }
             return "Not define";
         }
@@ -525,6 +578,31 @@ namespace CathAssist
                         break;
                     case BLACK:
                         return "Preto";
+                        break;
+                }
+            } else if (lang == LANG_KO_KR) {
+                switch(c)
+                {
+                    case NOCOLOR:
+                        return "무색";
+                        break;
+                    case GREEN:
+                        return "녹색";
+                        break;
+                    case WHITE:
+                        return "백색";
+                        break;
+                    case RED:
+                        return "홍색";
+                        break;
+                    case PURPLE:
+                        return "자색";
+                        break;
+                    case ROSE:
+                        return "장미색";
+                        break;
+                    case BLACK:
+                        return "검은색";
                         break;
                 }
             }
@@ -788,6 +866,8 @@ namespace CathAssist
                     else
                         return "三十"+numStr[num%10];
                 }
+            } else if(lang == LANG_KO_KR) {
+                return "제" + std::to_string(num);
             }
 
             return "Not define";

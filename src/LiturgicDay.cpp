@@ -320,6 +320,30 @@ std::string LiturgicDay::getWeekdayString(const season_t &season, const int &wee
 				 << " semana " << CathAssist::Calendar::getSeasonStr(season, lang);
 		}
 	}
+	else if (CathAssist::Calendar::LANG_KO_KR == lang)
+	{
+		if (LENT == season && 0 == weekOfSeason)
+		{
+			if (dayOfWeek != 3)
+			{
+				ostr << "재의 수요일 다음 " << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang);
+				return ostr.str();
+			}
+		}
+
+		if (dayOfWeek == SUN)
+		{
+			ostr << CathAssist::Calendar::getSeasonStr(season, lang)
+				 << " " << getOrdinalStr(weekOfSeason, lang)
+				 << "주일";
+		}
+		else
+		{
+			ostr << CathAssist::Calendar::getSeasonStr(season, lang)
+				 << " " << getOrdinalStr(weekOfSeason, lang)
+				 << "주간 " << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang);
+		}
+	}
 
 	return ostr.str();
 }

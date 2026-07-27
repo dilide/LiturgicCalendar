@@ -457,7 +457,7 @@ void export_to_catholicism()
 
     // 清空c_daily中的所有数据
     of << "delete from c_daily;" << std::endl;
-    for (int lang = CathAssist::Calendar::LANG_EN; lang <= CathAssist::Calendar::LANG_PT_BR; ++lang)
+    for (int lang = CathAssist::Calendar::LANG_EN; lang <= CathAssist::Calendar::LANG_KO_KR; ++lang)
     {
         CathAssist::Calendar::MultiLang::setLangCode(static_cast<CathAssist::Calendar::langcode_t>(lang));
         langStr = CathAssist::Calendar::getLangCodeStr(static_cast<CathAssist::Calendar::langcode_t>(lang));
@@ -721,7 +721,7 @@ int main(int argc, char *argv[])
     if (true)
     {
         // 测试不同语言环境下的输出
-        for (int lang = CathAssist::Calendar::LANG_IT_IT; lang <= CathAssist::Calendar::LANG_IT_IT; ++lang)
+        for (int lang = CathAssist::Calendar::LANG_EN; lang <= CathAssist::Calendar::LANG_KO_KR; ++lang)
         {
             CathAssist::Calendar::MultiLang::setLangCode(static_cast<CathAssist::Calendar::langcode_t>(lang));
             calendar_test();
