@@ -249,21 +249,42 @@ std::string LiturgicDay::getWeekdayString(const season_t &season, const int &wee
 		{
 			if (dayOfWeek != 3)
 			{
-				ostr << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang) << " después de ceniza";
+				ostr << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang) << " después de Ceniza";
 				return ostr.str();
 			}
 		}
+
+		std::string prepSeason = " del ";
+		if (season == LENT || season == EASTER || season == ADVENT)
+		{
+			prepSeason = " de ";
+		}
+
 		if (dayOfWeek == SUN)
 		{
-			ostr << getOrdinalStr(weekOfSeason, lang)
-				 << " " << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)
-				 << " de la " << CathAssist::Calendar::getSeasonStr(season, lang);
+			std::string ord = getOrdinalStr(weekOfSeason, lang);
+			if (weekOfSeason == 1) ord = "Primer";
+			else if (weekOfSeason == 3) ord = "Tercer";
+			ostr << ord << " " << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)
+				 << prepSeason << CathAssist::Calendar::getSeasonStr(season, lang);
 		}
 		else
 		{
+			std::string ord;
+			switch (weekOfSeason)
+			{
+				case 1: ord = "primera"; break;
+				case 2: ord = "segunda"; break;
+				case 3: ord = "tercera"; break;
+				case 4: ord = "cuarta"; break;
+				case 5: ord = "quinta"; break;
+				case 6: ord = "sexta"; break;
+				case 7: ord = "séptima"; break;
+				default: ord = std::to_string(weekOfSeason) + "ª"; break;
+			}
 			ostr << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)
-				 << " de la " << getOrdinalStr(weekOfSeason, lang)
-				 << " semana de " << CathAssist::Calendar::getSeasonStr(season, lang);
+				 << " de la " << ord
+				 << " semana" << prepSeason << CathAssist::Calendar::getSeasonStr(season, lang);
 		}
 	}
 	else if (CathAssist::Calendar::LANG_IT_IT == lang)
