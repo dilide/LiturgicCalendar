@@ -23,6 +23,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
     std::list<int> allLang = getAllLangCodes();
     std::list<int> chineseLang = {LANG_ZH_CN, LANG_ZH_TW};
     std::list<int> europeanLang = {LANG_EN, LANG_ES_ES, LANG_IT_IT, LANG_PT_BR};
+    std::list<int> koreanLang = {LANG_KO_KR};
     std::list<int> allLangWithoutChinese = allLang;
     for(auto iter = chineseLang.begin(); iter != chineseLang.end(); ++iter) {
         allLangWithoutChinese.remove(*iter);
@@ -868,10 +869,11 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         // 教会之母节（圣神降临节后星期一）
         mapPropers.insert(std::make_pair(10, CellInfo(MEMORIAL, WHITE, "教会之母")));
 
-        // 农历除夕
-        mapPropers.insert(std::make_pair(11, CellInfo(FEAST, NOCOLOR, "农历除夕", chineseLang)));
-        // 农历春节
-        mapPropers.insert(std::make_pair(12, CellInfo(FEAST, NOCOLOR, "农历新春", chineseLang)));
+        // 农历除夕和春节
+        std::list<int> springFestivalLang = {LANG_ZH_CN, LANG_ZH_TW, LANG_KO_KR};
+        mapPropers.insert(std::make_pair(11, CellInfo(FEAST, NOCOLOR, "农历除夕", springFestivalLang)));
+        mapPropers.insert(std::make_pair(12, CellInfo(FEAST, NOCOLOR, "农历新春", springFestivalLang)));
+        
         // 普世传教节
         mapPropers.insert(std::make_pair(13, CellInfo(LORD, GREEN, "普世传教节")));
 
