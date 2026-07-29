@@ -1698,10 +1698,6 @@ insert into easter_mass(code, name) select 1011701,'圣安当院长' where not e
 update easter_mass set name='圣安当院长' where code=1011701;
 insert into easter_liturgy_hours(code, name) select 1011701,'圣安当院长' where not exists (select 1 from easter_liturgy_hours where code=1011701);
 update easter_liturgy_hours set name='圣安当院长' where code=1011701;
-insert into easter_mass(code, name) select 1011802,'圣伯多禄定圣座于罗马(St. Peter''s Chair at Rome)' where not exists (select 1 from easter_mass where code=1011802);
-update easter_mass set name='圣伯多禄定圣座于罗马(St. Peter''s Chair at Rome)' where code=1011802;
-insert into easter_liturgy_hours(code, name) select 1011802,'圣伯多禄定圣座于罗马(St. Peter''s Chair at Rome)' where not exists (select 1 from easter_liturgy_hours where code=1011802);
-update easter_liturgy_hours set name='圣伯多禄定圣座于罗马(St. Peter''s Chair at Rome)' where code=1011802;
 insert into easter_mass(code, name) select 1012101,'圣女依搦斯' where not exists (select 1 from easter_mass where code=1012101);
 update easter_mass set name='圣女依搦斯' where code=1012101;
 insert into easter_liturgy_hours(code, name) select 1012101,'圣女依搦斯' where not exists (select 1 from easter_liturgy_hours where code=1012101);
@@ -2186,10 +2182,6 @@ insert into easter_mass(code, name) select 1121401,'圣若望“由十字架者�
 update easter_mass set name='圣若望“由十字架者”' where code=1121401;
 insert into easter_liturgy_hours(code, name) select 1121401,'圣若望“由十字架者”' where not exists (select 1 from easter_liturgy_hours where code=1121401);
 update easter_liturgy_hours set name='圣若望“由十字架者”' where code=1121401;
-insert into easter_mass(code, name) select 1121701,'圣拉匝禄(St. Lazarus)' where not exists (select 1 from easter_mass where code=1121701);
-update easter_mass set name='圣拉匝禄(St. Lazarus)' where code=1121701;
-insert into easter_liturgy_hours(code, name) select 1121701,'圣拉匝禄(St. Lazarus)' where not exists (select 1 from easter_liturgy_hours where code=1121701);
-update easter_liturgy_hours set name='圣拉匝禄(St. Lazarus)' where code=1121701;
 insert into easter_mass(code, name) select 1121703,'将临期 12月17日' where not exists (select 1 from easter_mass where code=1121703);
 update easter_mass set name='将临期 12月17日' where code=1121703;
 insert into easter_liturgy_hours(code, name) select 1121703,'将临期 12月17日' where not exists (select 1 from easter_liturgy_hours where code=1121703);
