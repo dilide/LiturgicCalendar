@@ -1,4 +1,4 @@
-﻿/*
+/*
 ============================================================================
 文件名称	:	Date.h
 公司		:	CathAssist
@@ -29,6 +29,8 @@ namespace CathAssist
 			static bool isSpringFestival(const Date &d);
 			// 判断是否为除夕
 			static bool isNewYearEve(const Date &d);
+			// 判断是否为中秋节
+			static bool isChuseok(const Date &d);
 			static Date getCurrentDate(void);
 
 		public:
@@ -74,6 +76,7 @@ namespace CathAssist
 			static const int gStartYear;
 			static const int gEndYear;
 			static const std::map<int, Date> gLunarSpringDays;
+			static const std::map<int, Date> gChuseokDays;
 		};
 	}
 }

@@ -614,7 +614,11 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         mapPropers.insert(std::make_pair(1091901, CellInfo(OPTIONAL, NOCOLOR, "圣雅纳略主教及其他殉道烈士(Ss. Januarius and his Companions)")));
         mapPropers.insert(std::make_pair(1092001, CellInfo(OPTIONAL, NOCOLOR, "圣刁多禄(St. Theodore)", disableLang)));
         mapPropers.insert(std::make_pair(1092002, CellInfo(OPTIONAL, NOCOLOR, "圣爱弥理(St. Emily de Rodat)")));
-        mapPropers.insert(std::make_pair(1092003, CellInfo(MEMORIAL, RED, "圣金大建及同伴殉道(Ss. Andrew Kim Taegon and Companions)")));
+        if(checkContain(koreanLang, lang)) {
+            mapPropers.insert(std::make_pair(1092003, CellInfo(SOLEMNITY, RED, "圣金大建及同伴殉道(Ss. Andrew Kim Taegon and Companions)")));
+        } else {
+            mapPropers.insert(std::make_pair(1092003, CellInfo(MEMORIAL, RED, "圣金大建及同伴殉道(Ss. Andrew Kim Taegon and Companions)")));
+        }
         // 21日
         mapPropers.insert(std::make_pair(1092101, CellInfo(FEAST, RED, "圣玛窦(St. Matthew)")));
         mapPropers.insert(std::make_pair(1092201, CellInfo(OPTIONAL, NOCOLOR, "圣多默•威拉诺(St. Thomas of Villanova)")));
@@ -896,6 +900,9 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         mapPropers.insert(std::make_pair(34, CellInfo(WEEKDAY, WHITE, "主显节后 星期四")));
         mapPropers.insert(std::make_pair(35, CellInfo(WEEKDAY, WHITE, "主显节后 星期五")));
         mapPropers.insert(std::make_pair(36, CellInfo(WEEKDAY, WHITE, "主显节后 星期六")));
+
+        // 中秋节
+        mapPropers.insert(std::make_pair(41, CellInfo(FEAST, WHITE, "中秋节", koreanLang)));
     }
 
     // 将节日编码插入到节日里
@@ -1332,10 +1339,15 @@ void LiturgicYear::testProper(LiturgicDay &ld)
         {
             ld.appendCell(12);
         }
-        // 中国农历除夕
+        // 农历除夕
         if (LiturgicDay::isNewYearEve(ld))
         {
             ld.appendCell(11);
+        }
+        // 韩国中秋节 (추석)
+        if (LiturgicDay::isChuseok(ld))
+        {
+            ld.appendCell(41);
         }
     }
 
