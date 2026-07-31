@@ -353,7 +353,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         mapPropers.insert(std::make_pair(1052402, CellInfo(OPTIONAL, NOCOLOR, "圣味增爵•雷冷(St. Vincent of Lerins)")));
         mapPropers.insert(std::make_pair(1052501, CellInfo(OPTIONAL, NOCOLOR, "圣伯达(St. Bede the Venerable)")));
         mapPropers.insert(std::make_pair(1052502, CellInfo(OPTIONAL, NOCOLOR, "圣额我略七世(St. Gregory VII)")));
-        mapPropers.insert(std::make_pair(1052503, CellInfo(OPTIONAL, NOCOLOR, "圣玛达肋纳•沙斐•亚巴拉(St. Madeleine Sophie Barat)", disableLang)));
+        mapPropers.insert(std::make_pair(1052503, CellInfo(OPTIONAL, NOCOLOR, "圣玛德兰•索菲•巴拉(St. Madeleine Sophie Barat)", disableLang)));
         // 26日
         mapPropers.insert(std::make_pair(1052601, CellInfo(MEMORIAL, WHITE, "圣斐理伯•内利(St. Philip Neri)")));
         mapPropers.insert(std::make_pair(1052701, CellInfo(OPTIONAL, NOCOLOR, "圣奥斯定（坎特伯里总主教）(St. Augustine of Canterbury)")));
