@@ -23,6 +23,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
     std::list<int> allLang = getAllLangCodes();
     std::list<int> chineseLang = {LANG_ZH_CN, LANG_ZH_TW};
     std::list<int> europeanLang = {LANG_EN, LANG_ES_ES, LANG_IT_IT, LANG_PT_BR};
+    std::list<int> spanishLang = {LANG_ES_ES};
     std::list<int> koreanLang = {LANG_KO_KR};
     std::list<int> allLangWithoutChinese = allLang;
     for(auto iter = chineseLang.begin(); iter != chineseLang.end(); ++iter) {
@@ -251,7 +252,12 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         mapPropers.insert(std::make_pair(1040102, CellInfo(OPTIONAL, NOCOLOR, "真福路道味•巴华尼(Bd. Ludovic Pavoni)", disableLang)));
         mapPropers.insert(std::make_pair(1040201, CellInfo(OPTIONAL, NOCOLOR, "圣方济各保拉(St. Francis of Paola)")));
         mapPropers.insert(std::make_pair(1040301, CellInfo(OPTIONAL, NOCOLOR, "圣理查德(St. Richard)")));
-        mapPropers.insert(std::make_pair(1040401, CellInfo(OPTIONAL, NOCOLOR, "圣依西多(St. Isidore)")));
+        if(checkContain(spanishLang, lang)) {
+            // 西班牙挪到4月26日隆重庆祝
+            mapPropers.insert(std::make_pair(1042609, CellInfo(FEAST, WHITE, "San Isidoro(仅西班牙语)")));
+        } else {
+            mapPropers.insert(std::make_pair(1040401, CellInfo(OPTIONAL, NOCOLOR, "圣依西多禄(St. Isidore of Seville)")));
+        }
         mapPropers.insert(std::make_pair(1040402, CellInfo(OPTIONAL, NOCOLOR, "圣“农民”依西多禄希道(St. Isidore the Husbandman)", disableLang)));
         mapPropers.insert(std::make_pair(1040501, CellInfo(OPTIONAL, NOCOLOR, "圣味增爵•斐勒洛(St. Vincent Ferrer)")));
         mapPropers.insert(std::make_pair(1040502, CellInfo(OPTIONAL, NOCOLOR, "圣儒利亚纳(St. Juliana of Mount Cornillon)", disableLang)));

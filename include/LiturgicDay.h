@@ -25,6 +25,14 @@ namespace CathAssist
 			color_t color;			 // 祭衣颜色
 			std::string celebration; // 节日
 			std::list<int> langs;	 // 适用的语言列表
+			CellInfo(const CellInfo& other)
+			{
+				this->code = other.code;
+				this->rank = other.rank;
+				this->color = other.color;
+				this->celebration = other.celebration;
+				this->langs = other.langs; // std::list 会自动执行深拷贝
+			}
 			CellInfo(int code, rank_t r, color_t c, const std::string &cel)
 			{
 				this->code = code;

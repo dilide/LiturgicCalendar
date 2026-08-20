@@ -16,7 +16,9 @@ namespace CathAssist
             LANG_ES_ES,
             LANG_IT_IT,
             LANG_PT_BR,
-            LANG_KO_KR
+            LANG_KO_KR,
+            // 新增填这里
+            LANG_COUNT
         } langcode_t;
 
         static std::string getLangCodeStr(langcode_t lc) {

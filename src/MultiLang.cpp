@@ -25,10 +25,20 @@ void CathAssist::Calendar::MultiLang::read(const std::string &strLangFile)
 
 void CathAssist::Calendar::MultiLang::write(const std::string &strLangFile)
 {
-    CathAssist::Calendar::MultiLang::setLangCode(CathAssist::Calendar::LANG_EN);
-    Calendar::initCalendar();
-    auto allSaints = LiturgicYear::getPropers();
-    Calendar::releaseCalendar();
+    std::map<int, CellInfo> allSaints;
+    for (int lang = CathAssist::Calendar::LANG_EN; lang < CathAssist::Calendar::LANG_COUNT; ++lang) {
+        CathAssist::Calendar::MultiLang::setLangCode(static_cast<CathAssist::Calendar::langcode_t>(lang));
+        Calendar::initCalendar();
+        auto saints = LiturgicYear::getPropers();
+        for(auto s : saints) {
+            auto it = allSaints.find(s.first);
+            if(it == allSaints.end()) {
+                allSaints.insert(s);
+            }
+        }
+
+        Calendar::releaseCalendar();
+    }
 
     IniManager ini(strLangFile);
     for (auto langItem : mapLangs)
