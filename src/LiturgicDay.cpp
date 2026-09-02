@@ -113,6 +113,10 @@ std::list<CellInfo> LiturgicDay::getCellInfos() const
 		}
 	}
 
+	cells.sort([](const CellInfo& a, const CellInfo& b) {
+		return a.rank > b.rank;
+	});
+
 	return cells;
 }
 

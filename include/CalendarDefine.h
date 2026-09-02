@@ -769,6 +769,11 @@ namespace CathAssist
                     _rank = ErrorRank;
                 }
                 */
+            } else if(LENT == season) {
+                if(dayOfWeek != SUN) {
+                    // 四旬期平日的级别暂定为庆日（仅次于主日）
+                    _rank = FEAST;
+                }
             }
 
             if(weekOfSeason < 0) {

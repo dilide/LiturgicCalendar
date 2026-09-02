@@ -652,6 +652,10 @@ void export_to_ical()
                 int cellIdx = 0;
                 for (auto& cell : cells) {
                     if (cell.isEnable() && cell.rank >= MEMORIAL) {
+                        if((dayInfo.getSeason() == LENT) && (dayInfo.dayOfWeek() != SUN) && (cell.code < 0)) {
+                            // 四旬期的平日不展示
+                            continue;
+                        }
                         std::ostringstream ossDate;
                         ossDate << setfill('0') << setw(4) << dtBegin.year()
                                 << setfill('0') << setw(2) << dtBegin.month()
