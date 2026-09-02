@@ -25,20 +25,7 @@ void CathAssist::Calendar::MultiLang::read(const std::string &strLangFile)
 
 void CathAssist::Calendar::MultiLang::write(const std::string &strLangFile)
 {
-    std::map<int, CellInfo> allSaints;
-    for (int lang = CathAssist::Calendar::LANG_EN; lang < CathAssist::Calendar::LANG_COUNT; ++lang) {
-        CathAssist::Calendar::MultiLang::setLangCode(static_cast<CathAssist::Calendar::langcode_t>(lang));
-        Calendar::initCalendar();
-        auto saints = LiturgicYear::getPropers();
-        for(auto s : saints) {
-            auto it = allSaints.find(s.first);
-            if(it == allSaints.end()) {
-                allSaints.insert(s);
-            }
-        }
-
-        Calendar::releaseCalendar();
-    }
+    std::map<int, CellInfo> allSaints = getAllSaints();
 
     IniManager ini(strLangFile);
     for (auto langItem : mapLangs)
@@ -74,4 +61,22 @@ std::string CathAssist::Calendar::MultiLang::getString(const int &code, const st
     }
     */
     return mapLangs[code][langCode];
+}
+
+std::map<int, CellInfo> CathAssist::Calendar::MultiLang::getAllSaints() {
+    std::map<int, CellInfo> allSaints;
+    for (int lang = CathAssist::Calendar::LANG_EN; lang < CathAssist::Calendar::LANG_COUNT; ++lang) {
+        CathAssist::Calendar::MultiLang::setLangCode(static_cast<CathAssist::Calendar::langcode_t>(lang));
+        Calendar::initCalendar();
+        auto saints = LiturgicYear::getPropers();
+        for(auto s : saints) {
+            auto it = allSaints.find(s.first);
+            if(it == allSaints.end()) {
+                allSaints.insert(s);
+            }
+        }
+
+        Calendar::releaseCalendar();
+    }
+    return allSaints;
 }

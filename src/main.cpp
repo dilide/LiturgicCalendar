@@ -399,6 +399,7 @@ void export_to_catholicism()
 {
     std::ofstream of;
     of.open(string("./catholicism.sql"));
+    auto saints = MultiLang::getAllSaints();
 
     // 通过英文初始化表
     CathAssist::Calendar::MultiLang::setLangCode(CathAssist::Calendar::LANG_EN);
@@ -428,7 +429,6 @@ void export_to_catholicism()
         }
         // 特殊节日
         {
-            auto saints = LiturgicYear::getPropers();
             auto iter = saints.begin();
             while (iter != saints.end())
             {

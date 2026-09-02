@@ -2,6 +2,7 @@
 #define _MULTILANG_H_
 #include "CalendarDefine.h"
 #include "ini/inicpp.hpp"
+#include "LiturgicDay.h"
 #include <map>
 
 namespace CathAssist
@@ -33,6 +34,8 @@ namespace CathAssist
             {
                 mapLangs[code][langCode] = strValue;
             }
+
+            static std::map<int, CellInfo> getAllSaints();
 
         private:
             static std::map<int, std::map<std::string, std::string>> mapLangs;
