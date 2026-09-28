@@ -924,8 +924,8 @@ insert into easter_saint(code, name, rank, color) select 1110401,'圣嘉禄',3,2
 update easter_saint set name='圣嘉禄', rank=3, color=2 where code=1110401;
 insert into easter_saint(code, name, rank, color) select 1110501,'圣女伯蒂拉',2,0 where not exists (select 1 from easter_saint where code=1110501);
 update easter_saint set name='圣女伯蒂拉', rank=2, color=0 where code=1110501;
-insert into easter_saint(code, name, rank, color) select 1110601,'越南第二批殉道烈士',3,3 where not exists (select 1 from easter_saint where code=1110601);
-update easter_saint set name='越南第二批殉道烈士', rank=3, color=3 where code=1110601;
+insert into easter_saint(code, name, rank, color) select 1110602,'圣良纳弟(St. Leonard of Noblac)',2,0 where not exists (select 1 from easter_saint where code=1110602);
+update easter_saint set name='圣良纳弟(St. Leonard of Noblac)', rank=2, color=0 where code=1110602;
 insert into easter_saint(code, name, rank, color) select 1110701,'圣威利巴',2,0 where not exists (select 1 from easter_saint where code=1110701);
 update easter_saint set name='圣威利巴', rank=2, color=0 where code=1110701;
 insert into easter_saint(code, name, rank, color) select 1110801,'圣高弗烈',2,0 where not exists (select 1 from easter_saint where code=1110801);
@@ -1379,7 +1379,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十一周(�
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2010-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十一周(星期四)|', liturgic=13104, color=2 where date='2010-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2010-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期六)|', liturgic=13106, color=3 where date='2010-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2010-11-06';
 update easter_daily set cells='常年期第三十二主日|圣威利巴\\1110701|', liturgic=13200, color=1 where date='2010-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2010-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十二周(星期二)|', liturgic=13202, color=2 where date='2010-11-09';
@@ -1744,7 +1744,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十一周(�
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2011-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十一周(星期五)|', liturgic=13105, color=2 where date='2011-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2011-11-05';
-update easter_daily set cells='常年期第三十二主日|越南第二批殉道烈士\\1110601|', liturgic=13200, color=1 where date='2011-11-06';
+update easter_daily set cells='常年期第三十二主日|圣良纳弟(St. Leonard of Noblac)\\1110602|', liturgic=13200, color=1 where date='2011-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2011-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十二周(星期二)|', liturgic=13202, color=1 where date='2011-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2011-11-09';
@@ -2110,7 +2110,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十周(星�
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十周(星期六)|', liturgic=13006, color=1 where date='2012-11-03';
 update easter_daily set cells='常年期第三十一主日|圣嘉禄\\1110401|', liturgic=13100, color=1 where date='2012-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期一)|', liturgic=13101, color=1 where date='2012-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期二)|', liturgic=13102, color=3 where date='2012-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期二)|', liturgic=13102, color=1 where date='2012-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2012-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2012-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十一周(星期五)|', liturgic=13105, color=2 where date='2012-11-09';
@@ -2475,7 +2475,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十周(星�
 update easter_daily set cells='常年期第三十一主日|圣玛尔定•包瑞斯\\1110301|', liturgic=13100, color=1 where date='2013-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十一周(星期一)|', liturgic=13101, color=2 where date='2013-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期二)|', liturgic=13102, color=1 where date='2013-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期三)|', liturgic=13103, color=3 where date='2013-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2013-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2013-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2013-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十一周(星期六)|', liturgic=13106, color=2 where date='2013-11-09';
@@ -2840,7 +2840,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十一主日
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十一周(星期一)|', liturgic=13101, color=1 where date='2014-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十一周(星期二)|', liturgic=13102, color=2 where date='2014-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2014-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期四)|', liturgic=13104, color=3 where date='2014-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2014-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2014-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2014-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十二主日|', liturgic=13200, color=2 where date='2014-11-09';
@@ -3205,7 +3205,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十一周(�
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十一周(星期二)|', liturgic=13102, color=1 where date='2015-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十一周(星期三)|', liturgic=13103, color=2 where date='2015-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2015-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期五)|', liturgic=13105, color=3 where date='2015-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2015-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2015-11-07';
 update easter_daily set cells='常年期第三十二主日|圣高弗烈\\1110801|真福若望·董思高\\1110802|', liturgic=13200, color=1 where date='2015-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十二周(星期一)|', liturgic=13201, color=2 where date='2015-11-09';
@@ -3571,7 +3571,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十一周(�
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2016-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十一周(星期五)|', liturgic=13105, color=2 where date='2016-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2016-11-05';
-update easter_daily set cells='常年期第三十二主日|越南第二批殉道烈士\\1110601|', liturgic=13200, color=1 where date='2016-11-06';
+update easter_daily set cells='常年期第三十二主日|圣良纳弟(St. Leonard of Noblac)\\1110602|', liturgic=13200, color=1 where date='2016-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2016-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十二周(星期二)|', liturgic=13202, color=1 where date='2016-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2016-11-09';
@@ -3936,7 +3936,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十周(星�
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十周(星期五)|', liturgic=13005, color=1 where date='2017-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十周(星期六)|', liturgic=13006, color=2 where date='2017-11-04';
 update easter_daily set cells='常年期第三十一主日|圣女伯蒂拉\\1110501|', liturgic=13100, color=1 where date='2017-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期一)|', liturgic=13101, color=3 where date='2017-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期一)|', liturgic=13101, color=1 where date='2017-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十一周(星期二)|', liturgic=13102, color=1 where date='2017-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2017-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十一周(星期四)|', liturgic=13104, color=2 where date='2017-11-09';
@@ -4301,7 +4301,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十周(星�
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十周(星期六)|', liturgic=13006, color=1 where date='2018-11-03';
 update easter_daily set cells='常年期第三十一主日|圣嘉禄\\1110401|', liturgic=13100, color=1 where date='2018-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期一)|', liturgic=13101, color=1 where date='2018-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期二)|', liturgic=13102, color=3 where date='2018-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期二)|', liturgic=13102, color=1 where date='2018-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2018-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2018-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十一周(星期五)|', liturgic=13105, color=2 where date='2018-11-09';
@@ -4666,7 +4666,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十周(星�
 update easter_daily set cells='常年期第三十一主日|圣玛尔定•包瑞斯\\1110301|', liturgic=13100, color=1 where date='2019-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十一周(星期一)|', liturgic=13101, color=2 where date='2019-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期二)|', liturgic=13102, color=1 where date='2019-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期三)|', liturgic=13103, color=3 where date='2019-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2019-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2019-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2019-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十一周(星期六)|', liturgic=13106, color=2 where date='2019-11-09';
@@ -5032,7 +5032,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十一周(�
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十一周(星期二)|', liturgic=13102, color=1 where date='2020-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十一周(星期三)|', liturgic=13103, color=2 where date='2020-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2020-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期五)|', liturgic=13105, color=3 where date='2020-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2020-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2020-11-07';
 update easter_daily set cells='常年期第三十二主日|圣高弗烈\\1110801|真福若望·董思高\\1110802|', liturgic=13200, color=1 where date='2020-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十二周(星期一)|', liturgic=13201, color=2 where date='2020-11-09';
@@ -5397,7 +5397,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十一周(�
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2021-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十一周(星期四)|', liturgic=13104, color=2 where date='2021-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2021-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期六)|', liturgic=13106, color=3 where date='2021-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2021-11-06';
 update easter_daily set cells='常年期第三十二主日|圣威利巴\\1110701|', liturgic=13200, color=1 where date='2021-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2021-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十二周(星期二)|', liturgic=13202, color=2 where date='2021-11-09';
@@ -5762,7 +5762,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十一周(�
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2022-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十一周(星期五)|', liturgic=13105, color=2 where date='2022-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2022-11-05';
-update easter_daily set cells='常年期第三十二主日|越南第二批殉道烈士\\1110601|', liturgic=13200, color=1 where date='2022-11-06';
+update easter_daily set cells='常年期第三十二主日|圣良纳弟(St. Leonard of Noblac)\\1110602|', liturgic=13200, color=1 where date='2022-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2022-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十二周(星期二)|', liturgic=13202, color=1 where date='2022-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2022-11-09';
@@ -6127,7 +6127,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十周(星�
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十周(星期五)|', liturgic=13005, color=1 where date='2023-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十周(星期六)|', liturgic=13006, color=2 where date='2023-11-04';
 update easter_daily set cells='常年期第三十一主日|圣女伯蒂拉\\1110501|', liturgic=13100, color=1 where date='2023-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期一)|', liturgic=13101, color=3 where date='2023-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期一)|', liturgic=13101, color=1 where date='2023-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十一周(星期二)|', liturgic=13102, color=1 where date='2023-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2023-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十一周(星期四)|', liturgic=13104, color=2 where date='2023-11-09';
@@ -6493,7 +6493,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十周(星�
 update easter_daily set cells='常年期第三十一主日|圣玛尔定•包瑞斯\\1110301|', liturgic=13100, color=1 where date='2024-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十一周(星期一)|', liturgic=13101, color=2 where date='2024-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期二)|', liturgic=13102, color=1 where date='2024-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期三)|', liturgic=13103, color=3 where date='2024-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2024-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2024-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2024-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十一周(星期六)|', liturgic=13106, color=2 where date='2024-11-09';
@@ -6858,7 +6858,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十一主日
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十一周(星期一)|', liturgic=13101, color=1 where date='2025-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十一周(星期二)|', liturgic=13102, color=2 where date='2025-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2025-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期四)|', liturgic=13104, color=3 where date='2025-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2025-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2025-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2025-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十二主日|', liturgic=13200, color=2 where date='2025-11-09';
@@ -7223,7 +7223,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十一周(�
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十一周(星期二)|', liturgic=13102, color=1 where date='2026-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十一周(星期三)|', liturgic=13103, color=2 where date='2026-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2026-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期五)|', liturgic=13105, color=3 where date='2026-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2026-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2026-11-07';
 update easter_daily set cells='常年期第三十二主日|圣高弗烈\\1110801|真福若望·董思高\\1110802|', liturgic=13200, color=1 where date='2026-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十二周(星期一)|', liturgic=13201, color=2 where date='2026-11-09';
@@ -7588,7 +7588,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十一周(�
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2027-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十一周(星期四)|', liturgic=13104, color=2 where date='2027-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2027-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期六)|', liturgic=13106, color=3 where date='2027-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2027-11-06';
 update easter_daily set cells='常年期第三十二主日|圣威利巴\\1110701|', liturgic=13200, color=1 where date='2027-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2027-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十二周(星期二)|', liturgic=13202, color=2 where date='2027-11-09';
@@ -7954,7 +7954,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十周(星�
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十周(星期五)|', liturgic=13005, color=1 where date='2028-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十周(星期六)|', liturgic=13006, color=2 where date='2028-11-04';
 update easter_daily set cells='常年期第三十一主日|圣女伯蒂拉\\1110501|', liturgic=13100, color=1 where date='2028-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期一)|', liturgic=13101, color=3 where date='2028-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期一)|', liturgic=13101, color=1 where date='2028-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十一周(星期二)|', liturgic=13102, color=1 where date='2028-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2028-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十一周(星期四)|', liturgic=13104, color=2 where date='2028-11-09';
@@ -8319,7 +8319,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十周(星�
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十周(星期六)|', liturgic=13006, color=1 where date='2029-11-03';
 update easter_daily set cells='常年期第三十一主日|圣嘉禄\\1110401|', liturgic=13100, color=1 where date='2029-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期一)|', liturgic=13101, color=1 where date='2029-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期二)|', liturgic=13102, color=3 where date='2029-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期二)|', liturgic=13102, color=1 where date='2029-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2029-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2029-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十一周(星期五)|', liturgic=13105, color=2 where date='2029-11-09';
@@ -8684,7 +8684,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十周(星�
 update easter_daily set cells='常年期第三十一主日|圣玛尔定•包瑞斯\\1110301|', liturgic=13100, color=1 where date='2030-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十一周(星期一)|', liturgic=13101, color=2 where date='2030-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期二)|', liturgic=13102, color=1 where date='2030-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期三)|', liturgic=13103, color=3 where date='2030-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2030-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2030-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2030-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十一周(星期六)|', liturgic=13106, color=2 where date='2030-11-09';
@@ -9049,7 +9049,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十一主日
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十一周(星期一)|', liturgic=13101, color=1 where date='2031-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十一周(星期二)|', liturgic=13102, color=2 where date='2031-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2031-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期四)|', liturgic=13104, color=3 where date='2031-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2031-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2031-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2031-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十二主日|', liturgic=13200, color=2 where date='2031-11-09';
@@ -9415,7 +9415,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十一周(�
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2032-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十一周(星期四)|', liturgic=13104, color=2 where date='2032-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2032-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期六)|', liturgic=13106, color=3 where date='2032-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2032-11-06';
 update easter_daily set cells='常年期第三十二主日|圣威利巴\\1110701|', liturgic=13200, color=1 where date='2032-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2032-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十二周(星期二)|', liturgic=13202, color=2 where date='2032-11-09';
@@ -9780,7 +9780,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十一周(�
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2033-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十一周(星期五)|', liturgic=13105, color=2 where date='2033-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2033-11-05';
-update easter_daily set cells='常年期第三十二主日|越南第二批殉道烈士\\1110601|', liturgic=13200, color=1 where date='2033-11-06';
+update easter_daily set cells='常年期第三十二主日|圣良纳弟(St. Leonard of Noblac)\\1110602|', liturgic=13200, color=1 where date='2033-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2033-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十二周(星期二)|', liturgic=13202, color=1 where date='2033-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2033-11-09';
@@ -10145,7 +10145,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十周(星�
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十周(星期五)|', liturgic=13005, color=1 where date='2034-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十周(星期六)|', liturgic=13006, color=2 where date='2034-11-04';
 update easter_daily set cells='常年期第三十一主日|圣女伯蒂拉\\1110501|', liturgic=13100, color=1 where date='2034-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期一)|', liturgic=13101, color=3 where date='2034-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期一)|', liturgic=13101, color=1 where date='2034-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十一周(星期二)|', liturgic=13102, color=1 where date='2034-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2034-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十一周(星期四)|', liturgic=13104, color=2 where date='2034-11-09';
@@ -10510,7 +10510,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十周(星�
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十周(星期六)|', liturgic=13006, color=1 where date='2035-11-03';
 update easter_daily set cells='常年期第三十一主日|圣嘉禄\\1110401|', liturgic=13100, color=1 where date='2035-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期一)|', liturgic=13101, color=1 where date='2035-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期二)|', liturgic=13102, color=3 where date='2035-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期二)|', liturgic=13102, color=1 where date='2035-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2035-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2035-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十一周(星期五)|', liturgic=13105, color=2 where date='2035-11-09';
@@ -10876,7 +10876,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十一主日
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十一周(星期一)|', liturgic=13101, color=1 where date='2036-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十一周(星期二)|', liturgic=13102, color=2 where date='2036-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2036-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期四)|', liturgic=13104, color=3 where date='2036-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2036-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2036-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2036-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十二主日|', liturgic=13200, color=2 where date='2036-11-09';
@@ -11241,7 +11241,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十一周(�
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十一周(星期二)|', liturgic=13102, color=1 where date='2037-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十一周(星期三)|', liturgic=13103, color=2 where date='2037-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2037-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期五)|', liturgic=13105, color=3 where date='2037-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2037-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2037-11-07';
 update easter_daily set cells='常年期第三十二主日|圣高弗烈\\1110801|真福若望·董思高\\1110802|', liturgic=13200, color=1 where date='2037-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十二周(星期一)|', liturgic=13201, color=2 where date='2037-11-09';
@@ -11606,7 +11606,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十一周(�
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2038-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十一周(星期四)|', liturgic=13104, color=2 where date='2038-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2038-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期六)|', liturgic=13106, color=3 where date='2038-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2038-11-06';
 update easter_daily set cells='常年期第三十二主日|圣威利巴\\1110701|', liturgic=13200, color=1 where date='2038-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2038-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十二周(星期二)|', liturgic=13202, color=2 where date='2038-11-09';
@@ -11971,7 +11971,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十一周(�
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2039-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十一周(星期五)|', liturgic=13105, color=2 where date='2039-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2039-11-05';
-update easter_daily set cells='常年期第三十二主日|越南第二批殉道烈士\\1110601|', liturgic=13200, color=1 where date='2039-11-06';
+update easter_daily set cells='常年期第三十二主日|圣良纳弟(St. Leonard of Noblac)\\1110602|', liturgic=13200, color=1 where date='2039-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2039-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十二周(星期二)|', liturgic=13202, color=1 where date='2039-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2039-11-09';
@@ -12337,7 +12337,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十周(星�
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十周(星期六)|', liturgic=13006, color=1 where date='2040-11-03';
 update easter_daily set cells='常年期第三十一主日|圣嘉禄\\1110401|', liturgic=13100, color=1 where date='2040-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期一)|', liturgic=13101, color=1 where date='2040-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期二)|', liturgic=13102, color=3 where date='2040-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期二)|', liturgic=13102, color=1 where date='2040-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2040-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2040-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十一周(星期五)|', liturgic=13105, color=2 where date='2040-11-09';
@@ -12702,7 +12702,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十周(星�
 update easter_daily set cells='常年期第三十一主日|圣玛尔定•包瑞斯\\1110301|', liturgic=13100, color=1 where date='2041-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十一周(星期一)|', liturgic=13101, color=2 where date='2041-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期二)|', liturgic=13102, color=1 where date='2041-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期三)|', liturgic=13103, color=3 where date='2041-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2041-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2041-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2041-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十一周(星期六)|', liturgic=13106, color=2 where date='2041-11-09';
@@ -13067,7 +13067,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十一主日
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十一周(星期一)|', liturgic=13101, color=1 where date='2042-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十一周(星期二)|', liturgic=13102, color=2 where date='2042-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2042-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期四)|', liturgic=13104, color=3 where date='2042-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2042-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2042-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2042-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十二主日|', liturgic=13200, color=2 where date='2042-11-09';
@@ -13432,7 +13432,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十一周(�
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十一周(星期二)|', liturgic=13102, color=1 where date='2043-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十一周(星期三)|', liturgic=13103, color=2 where date='2043-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2043-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期五)|', liturgic=13105, color=3 where date='2043-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2043-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2043-11-07';
 update easter_daily set cells='常年期第三十二主日|圣高弗烈\\1110801|真福若望·董思高\\1110802|', liturgic=13200, color=1 where date='2043-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十二周(星期一)|', liturgic=13201, color=2 where date='2043-11-09';
@@ -13798,7 +13798,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十一周(�
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2044-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十一周(星期五)|', liturgic=13105, color=2 where date='2044-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2044-11-05';
-update easter_daily set cells='常年期第三十二主日|越南第二批殉道烈士\\1110601|', liturgic=13200, color=1 where date='2044-11-06';
+update easter_daily set cells='常年期第三十二主日|圣良纳弟(St. Leonard of Noblac)\\1110602|', liturgic=13200, color=1 where date='2044-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2044-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十二周(星期二)|', liturgic=13202, color=1 where date='2044-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2044-11-09';
@@ -14163,7 +14163,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十周(星�
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十周(星期五)|', liturgic=13005, color=1 where date='2045-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十周(星期六)|', liturgic=13006, color=2 where date='2045-11-04';
 update easter_daily set cells='常年期第三十一主日|圣女伯蒂拉\\1110501|', liturgic=13100, color=1 where date='2045-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期一)|', liturgic=13101, color=3 where date='2045-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期一)|', liturgic=13101, color=1 where date='2045-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十一周(星期二)|', liturgic=13102, color=1 where date='2045-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2045-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十一周(星期四)|', liturgic=13104, color=2 where date='2045-11-09';
@@ -14528,7 +14528,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十周(星�
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十周(星期六)|', liturgic=13006, color=1 where date='2046-11-03';
 update easter_daily set cells='常年期第三十一主日|圣嘉禄\\1110401|', liturgic=13100, color=1 where date='2046-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期一)|', liturgic=13101, color=1 where date='2046-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期二)|', liturgic=13102, color=3 where date='2046-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期二)|', liturgic=13102, color=1 where date='2046-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2046-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2046-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十一周(星期五)|', liturgic=13105, color=2 where date='2046-11-09';
@@ -14893,7 +14893,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十周(星�
 update easter_daily set cells='常年期第三十一主日|圣玛尔定•包瑞斯\\1110301|', liturgic=13100, color=1 where date='2047-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十一周(星期一)|', liturgic=13101, color=2 where date='2047-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期二)|', liturgic=13102, color=1 where date='2047-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期三)|', liturgic=13103, color=3 where date='2047-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2047-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2047-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2047-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十一周(星期六)|', liturgic=13106, color=2 where date='2047-11-09';
@@ -15259,7 +15259,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十一周(�
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十一周(星期二)|', liturgic=13102, color=1 where date='2048-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十一周(星期三)|', liturgic=13103, color=2 where date='2048-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2048-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期五)|', liturgic=13105, color=3 where date='2048-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2048-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2048-11-07';
 update easter_daily set cells='常年期第三十二主日|圣高弗烈\\1110801|真福若望·董思高\\1110802|', liturgic=13200, color=1 where date='2048-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十二周(星期一)|', liturgic=13201, color=2 where date='2048-11-09';
@@ -15624,7 +15624,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十一周(�
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十一周(星期三)|', liturgic=13103, color=1 where date='2049-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十一周(星期四)|', liturgic=13104, color=2 where date='2049-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期五)|', liturgic=13105, color=1 where date='2049-11-05';
-update easter_daily set cells='越南第二批殉道烈士\\1110601|常年期第三十一周(星期六)|', liturgic=13106, color=3 where date='2049-11-06';
+update easter_daily set cells='圣良纳弟(St. Leonard of Noblac)\\1110602|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2049-11-06';
 update easter_daily set cells='常年期第三十二主日|圣威利巴\\1110701|', liturgic=13200, color=1 where date='2049-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2049-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十二周(星期二)|', liturgic=13202, color=2 where date='2049-11-09';
@@ -15989,7 +15989,7 @@ update easter_daily set cells='追思亡者\\1110201|常年期第三十一周(�
 update easter_daily set cells='圣玛尔定•包瑞斯\\1110301|常年期第三十一周(星期四)|', liturgic=13104, color=1 where date='2050-11-03';
 update easter_daily set cells='圣嘉禄\\1110401|常年期第三十一周(星期五)|', liturgic=13105, color=2 where date='2050-11-04';
 update easter_daily set cells='圣女伯蒂拉\\1110501|常年期第三十一周(星期六)|', liturgic=13106, color=1 where date='2050-11-05';
-update easter_daily set cells='常年期第三十二主日|越南第二批殉道烈士\\1110601|', liturgic=13200, color=1 where date='2050-11-06';
+update easter_daily set cells='常年期第三十二主日|圣良纳弟(St. Leonard of Noblac)\\1110602|', liturgic=13200, color=1 where date='2050-11-06';
 update easter_daily set cells='圣威利巴\\1110701|常年期第三十二周(星期一)|', liturgic=13201, color=1 where date='2050-11-07';
 update easter_daily set cells='圣高弗烈\\1110801|真福若望·董思高\\1110802|常年期第三十二周(星期二)|', liturgic=13202, color=1 where date='2050-11-08';
 update easter_daily set cells='拉特朗大殿奉献日\\1110901|常年期第三十二周(星期三)|', liturgic=13203, color=2 where date='2050-11-09';
