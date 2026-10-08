@@ -659,7 +659,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         mapPropers.insert(std::make_pair(1100201, CellInfo(MEMORIAL, WHITE, "护守天使(The Guardian Angels)")));
         mapPropers.insert(std::make_pair(1100301, CellInfo(OPTIONAL, NOCOLOR, "依华昆仲(The Two Ewalds)")));
         mapPropers.insert(std::make_pair(1100401, CellInfo(MEMORIAL, WHITE, "圣五伤方济各(St. Francis Assisi)")));
-        mapPropers.insert(std::make_pair(1100501, CellInfo(MEMORIAL, WHITE, "圣女傅天娜(St. Faustina)")));
+        mapPropers.insert(std::make_pair(1100501, CellInfo(OPTIONAL, NOCOLOR, "圣女傅天娜(St. Faustina)")));
         mapPropers.insert(std::make_pair(1100502, CellInfo(OPTIONAL, NOCOLOR, "圣布拉祺多(St. Placid)", disableLang)));
         mapPropers.insert(std::make_pair(1100503, CellInfo(OPTIONAL, NOCOLOR, "圣女福辣(St. Flora of Beaulien)", disableLang)));
         if(checkContain(spanishLang, lang)) {

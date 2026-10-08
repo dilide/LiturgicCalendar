@@ -2066,10 +2066,6 @@ insert into easter_mass(code, name) select 1100401,'圣五伤方济各' where no
 update easter_mass set name='圣五伤方济各' where code=1100401;
 insert into easter_liturgy_hours(code, name) select 1100401,'圣五伤方济各' where not exists (select 1 from easter_liturgy_hours where code=1100401);
 update easter_liturgy_hours set name='圣五伤方济各' where code=1100401;
-insert into easter_mass(code, name) select 1100501,'圣女傅天娜' where not exists (select 1 from easter_mass where code=1100501);
-update easter_mass set name='圣女傅天娜' where code=1100501;
-insert into easter_liturgy_hours(code, name) select 1100501,'圣女傅天娜' where not exists (select 1 from easter_liturgy_hours where code=1100501);
-update easter_liturgy_hours set name='圣女傅天娜' where code=1100501;
 insert into easter_mass(code, name) select 1100701,'玫瑰圣母' where not exists (select 1 from easter_mass where code=1100701);
 update easter_mass set name='玫瑰圣母' where code=1100701;
 insert into easter_liturgy_hours(code, name) select 1100701,'玫瑰圣母' where not exists (select 1 from easter_liturgy_hours where code=1100701);
