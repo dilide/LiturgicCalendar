@@ -20,3 +20,8 @@ liturgic.zh_CN.db
 liturgic.zh_TW.db
 .claude
 node_modules
+
+# Temporary translation review reports
+/reports/lang-audit-*
+/reports/lang-severe-fixes-*
+/reports/lang-prefix-fixes-*
