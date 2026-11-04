@@ -1,0 +1,7636 @@
+# lang.ini 全量七语交叉对照与审查索引
+
+审查日期：2026-11-04。全部545条已交叉阅读。原始空格、TAB以问题详情为准；这里使用INI解析后的值。
+
+无关联问题仅表示本轮未列出发现，不表示官方译名、各地等级及纪念日期均获认证。详见[报告](lang-audit-2026-11-04.md)。
+
+## [1] · 源文件第1行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|The Epiphany of the Lord|
+|zh_CN|主显节|
+|zh_TW|主顯節|
+|es_ES|Epifanía del Señor|
+|it_IT|Epifania del Signore|
+|pt_BR|Epifania do Senhor|
+|ko_KR|주님 공현 대축일|
+
+## [2] · 源文件第11行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|The Baptism of the Lord|
+|zh_CN|主受洗日|
+|zh_TW|主受洗日|
+|es_ES|Bautismo del Señor|
+|it_IT|Battesimo del Signore|
+|pt_BR|Batismo do Senhor|
+|ko_KR|주님 세례 축일|
+
+## [3] · 源文件第21行
+
+关联：F174
+
+|语言|译文|
+|---|---|
+|en|Our Lord Jesus Christ, the Eternal High Priest|
+|zh_CN|我们的主耶稣基督—永恒的大司祭|
+|zh_TW|我們的主耶穌基督—永恆的大司祭|
+|es_ES|Jesucristo, Sumo y Eterno Sacerdote|
+|it_IT|Nostro Signore Gesù Cristo Sommo ed Eterno Sacerdote|
+|pt_BR|Nosso Senhor Jesus Cristo, Sumo e Eterno Sacerdote|
+|ko_KR|우리의 영원한 대제사장이신 예수님|
+
+## [4] · 源文件第31行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|The Most Holy Trinity|
+|zh_CN|圣三主日|
+|zh_TW|聖三主日|
+|es_ES|Santísima Trinidad|
+|it_IT|SS. Trinità|
+|pt_BR|Santíssima Trindade|
+|ko_KR|지극히 거룩하신 삼위일체 대축일|
+
+## [5] · 源文件第41行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|The Most Holy Body and Blood of Christ (Corpus Christi)|
+|zh_CN|基督圣体圣血节|
+|zh_TW|基督聖體聖血節|
+|es_ES|Corpus Christi|
+|it_IT|SS. Corpo e Sangue di Cristo|
+|pt_BR|Santíssimo Corpo e Sangue de Cristo|
+|ko_KR|지극히 거룩하신 그리스도의 성체 성혈 대축일|
+
+## [6] · 源文件第51行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|The Most Sacred Heart of Jesus|
+|zh_CN|耶稣圣心节|
+|zh_TW|耶穌聖心節|
+|es_ES|Sagrado Corazón de Jesús|
+|it_IT|Sacratissimo Cuore di Gesù|
+|pt_BR|Sagrado Coração de Jesus|
+|ko_KR|지극히 거룩하신 예수 성심 대축일|
+
+## [7] · 源文件第61行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|The Immaculate Heart of the Blessed Virgin Mary|
+|zh_CN|圣母无玷圣心|
+|zh_TW|聖母無玷聖心|
+|es_ES|Inmaculado Corazón de María|
+|it_IT|Cuore Immacolato della B. V. Maria|
+|pt_BR|Imaculado Coração de Maria|
+|ko_KR|티 없이 깨끗하신 성모 성심 기념일|
+
+## [8] · 源文件第71行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|The Holy Family of Jesus, Mary and Joseph|
+|zh_CN|圣家节|
+|zh_TW|聖家節|
+|es_ES|Sagrada Familia|
+|it_IT|Santa Famiglia di Gesù, Maria e Giuseppe|
+|pt_BR|Sagrada Família de Jesus, Maria e José|
+|ko_KR|예수, 마리아, 요셉의 성가정 축일|
+
+## [9] · 源文件第81行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Our Lady of China|
+|zh_CN|中华圣母|
+|zh_TW|中華聖母|
+|es_ES|Nuestra Señora de China|
+|it_IT|Nostra Signora della Cina|
+|pt_BR|Nossa Senhora da China|
+|ko_KR|중국의 성모 마리아|
+
+## [10] · 源文件第91行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Mary, Mother of the Church|
+|zh_CN|教会之母|
+|zh_TW|教會之母|
+|es_ES|María, Madre de la Iglesia|
+|it_IT|Beata Vergine Maria Madre della Chiesa|
+|pt_BR|Maria, Mãe da Igreja|
+|ko_KR|교회의 어머니 복되신 동정 마리아 기념일|
+
+## [11] · 源文件第101行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Lunar New Year's Eve|
+|zh_CN|农历除夕|
+|zh_TW|農曆除夕|
+|es_ES|Víspera del Año Nuevo Lunar|
+|it_IT|Vigilia del Capodanno Lunare|
+|pt_BR|Véspera do Ano Novo Lunar|
+|ko_KR|설날 전날|
+
+## [12] · 源文件第111行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Lunar New Year|
+|zh_CN|农历新春|
+|zh_TW|農曆新春|
+|es_ES|Año Nuevo Lunar|
+|it_IT|Capodanno Lunare|
+|pt_BR|Ano Novo Lunar|
+|ko_KR|설|
+
+## [13] · 源文件第121行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|World Mission Sunday|
+|zh_CN|普世传教节|
+|zh_TW|普世傳教節|
+|es_ES|Domingo Mundial de las Misiones (DOMUND)|
+|it_IT|Giornata Missionaria Mondiale|
+|pt_BR|Dia Mundial das Missões|
+|ko_KR|전교 주일|
+
+## [14] · 源文件第131行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|The Ascension of the Lord|
+|zh_CN|耶稣升天节|
+|zh_TW|耶穌升天節|
+|es_ES|Ascensión del Señor|
+|it_IT|Ascensione del Signore|
+|pt_BR|Ascensão do Senhor|
+|ko_KR|주님 승천 대축일|
+
+## [15] · 源文件第141行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Christmas Time January 2|
+|zh_CN|圣诞期 1月2日|
+|zh_TW|聖誕期 1月2日|
+|es_ES|Tiempo de Navidad 2 de enero|
+|it_IT|Tempo di Natale - 2 gennaio|
+|pt_BR|Tempo do Natal 2 de janeiro|
+|ko_KR|성탄 시기 1월 2일|
+
+## [16] · 源文件第151行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Christmas Time January 3|
+|zh_CN|圣诞期 1月3日|
+|zh_TW|聖誕期 1月3日|
+|es_ES|Tiempo de Navidad 3 de enero|
+|it_IT|Tempo di Natale - 3 gennaio|
+|pt_BR|Tempo do Natal 3 de janeiro|
+|ko_KR|성탄 시기 1월 3일|
+
+## [17] · 源文件第161行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Christmas Time January 4|
+|zh_CN|圣诞期 1月4日|
+|zh_TW|聖誕期 1月4日|
+|es_ES|Tiempo de Navidad 4 de enero|
+|it_IT|Tempo di Natale - 4 gennaio|
+|pt_BR|Tempo do Natal 4 de janeiro|
+|ko_KR|성탄 시기 1월 4일|
+
+## [18] · 源文件第171行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Christmas Time January 5|
+|zh_CN|圣诞期 1月5日|
+|zh_TW|聖誕期 1月5日|
+|es_ES|Tiempo de Navidad 5 de enero|
+|it_IT|Tempo di Natale - 5 gennaio|
+|pt_BR|Tempo do Natal 5 de janeiro|
+|ko_KR|성탄 시기 1월 5일|
+
+## [19] · 源文件第181行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Christmas Time January 6|
+|zh_CN|圣诞期 1月6日|
+|zh_TW|聖誕期 1月6日|
+|es_ES|Tiempo de Navidad 6 de enero|
+|it_IT|Tempo di Natale - 6 gennaio|
+|pt_BR|Tempo do Natal 6 de janeiro|
+|ko_KR|성탄 시기 1월 6일|
+
+## [20] · 源文件第191行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Christmas Time January 7|
+|zh_CN|圣诞期 1月7日|
+|zh_TW|聖誕期 1月7日|
+|es_ES|Tiempo de Navidad 7 de enero|
+|it_IT|Tempo di Natale - 7 gennaio|
+|pt_BR|Tempo do Natal 7 de janeiro|
+|ko_KR|성탄 시기 1월 7일|
+
+## [21] · 源文件第201行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Christmas Time January 8|
+|zh_CN|圣诞期 1月8日|
+|zh_TW|聖誕期 1月8日|
+|es_ES|Tiempo de Navidad 8 de enero|
+|it_IT|Tempo di Natale - 8 gennaio|
+|pt_BR|Tempo do Natal 8 de janeiro|
+|ko_KR|성탄 시기 1월 8일|
+
+## [31] · 源文件第211行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Monday after Epiphany|
+|zh_CN|主显节后 星期一|
+|zh_TW|主顯節後 星期一|
+|es_ES|Lunes después de Epifanía|
+|it_IT|Lunedì dopo l'Epifania|
+|pt_BR|Segunda-feira depois da Epifania|
+|ko_KR|주님 공현 대축일 후 월요일|
+
+## [32] · 源文件第221行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Tuesday after Epiphany|
+|zh_CN|主显节后 星期二|
+|zh_TW|主顯節後 星期二|
+|es_ES|Martes después de Epifanía|
+|it_IT|Martedì dopo l'Epifania|
+|pt_BR|Terça-feira depois da Epifania|
+|ko_KR|주님 공현 대축일 후 화요일|
+
+## [33] · 源文件第231行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Wednesday after Epiphany|
+|zh_CN|主显节后 星期三|
+|zh_TW|主顯節後 星期三|
+|es_ES|Miércoles después de Epifanía|
+|it_IT|Mercoledì dopo l'Epifania|
+|pt_BR|Quarta-feira depois da Epifania|
+|ko_KR|주님 공현 대축일 후 수요일|
+
+## [34] · 源文件第241行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Thursday after Epiphany|
+|zh_CN|主显节后 星期四|
+|zh_TW|主顯節後 星期四|
+|es_ES|Jueves después de Epifanía|
+|it_IT|Giovedì dopo l'Epifania|
+|pt_BR|Quinta-feira depois da Epifania|
+|ko_KR|주님 공현 대축일 후 목요일|
+
+## [35] · 源文件第251行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Friday after Epiphany|
+|zh_CN|主显节后 星期五|
+|zh_TW|主顯節後 星期五|
+|es_ES|Viernes después de Epifanía|
+|it_IT|Venerdì dopo l'Epifania|
+|pt_BR|Sexta-feira depois da Epifania|
+|ko_KR|주님 공현 대축일 후 금요일|
+
+## [36] · 源文件第261行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Saturday after Epiphany|
+|zh_CN|主显节后 星期六|
+|zh_TW|主顯節後 星期六|
+|es_ES|Sábado después de Epifanía|
+|it_IT|Sabato dopo l'Epifania|
+|pt_BR|Sábado depois da Epifania|
+|ko_KR|주님 공현 대축일 후 토요일|
+
+## [41] · 源文件第271行
+
+关联：F173
+
+|语言|译文|
+|---|---|
+|en|Chuseok|
+|zh_CN|中秋节|
+|zh_TW|中秋節|
+|es_ES|Chuseok|
+|it_IT|Chuseok|
+|pt_BR|Chuseok|
+|ko_KR|한가위|
+
+## [10300] · 源文件第281行
+
+关联：F164、F171
+
+|语言|译文|
+|---|---|
+|en|Third Sunday in Ordinary Time (Sunday of the Word of God)|
+|zh_CN|常年期第三主日（圣言主日）|
+|zh_TW|常年期第三主日（聖言主日）|
+|es_ES|III Domingo del Tiempo Ordinario (Domingo de la Palabra de Dios)|
+|it_IT|III Domenica del Tempo Ordinario (Domenica della Parola di Dio)|
+|pt_BR|3º Domingo do Tempo Comum (Domingo da Palavra de Deus)|
+|ko_KR|연중 제3주일(하느님의 말씀 주일, 해외 원조 주일)|
+
+## [13300] · 源文件第291行
+
+关联：F129
+
+|语言|译文|
+|---|---|
+|en|33th Sunday in Ordinary Time (World Day of the Poor)|
+|zh_CN|常年期第三十三主日（世界穷人日）|
+|zh_TW|常年期第三十三主日（世界窮人日）|
+|es_ES|XXXIII Domingo del Tiempo Ordinario (Jornada Mundial de los Pobres)|
+|it_IT|XXXIII Domenica del Tempo Ordinario (Giornata Mondiale dei Poveri)|
+|pt_BR|33º Domingo do Tempo Comum (Dia Mundial dos Pobres)|
+|ko_KR|연중 제33주일 (세계 가난한 이의 날)|
+
+## [13400] · 源文件第301行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Our Lord Jesus Christ, King of the Universe|
+|zh_CN|基督普世君王节|
+|zh_TW|基督普世君王節|
+|es_ES|Jesucristo, Rey del Universo|
+|it_IT|Nostro Signore Gesù Cristo Re dell'Universo|
+|pt_BR|Nosso Senhor Jesus Cristo, Rei do Universo|
+|ko_KR|온 누리의 임금이신 우리 주 예수 그리스도 왕 대축일|
+
+## [40003] · 源文件第311行
+
+关联：F145
+
+|语言|译文|
+|---|---|
+|en|Ash Wednesday|
+|zh_CN|圣灰礼仪|
+|zh_TW|聖灰禮儀|
+|es_ES|Miércoles de Ceniza|
+|it_IT|Mercoledì delle Ceneri|
+|pt_BR|Quarta-feira de Cinzas|
+|ko_KR|재의 수요일|
+
+## [40600] · 源文件第321行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Palm Sunday of the Passion of the Lord|
+|zh_CN|圣枝主日（基督苦难主日）|
+|zh_TW|聖枝主日（基督苦難主日）|
+|es_ES|Domingo de Ramos en la Pasión del Señor|
+|it_IT|Domenica delle Palme (Passione del Signore)|
+|pt_BR|Domingo de Ramos e da Paixão do Senhor|
+|ko_KR|주님 수난 성지 주일|
+
+## [40601] · 源文件第331行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Monday of Holy Week|
+|zh_CN|圣周一|
+|zh_TW|聖周一|
+|es_ES|Lunes Santo|
+|it_IT|Lunedì della Settimana Santa|
+|pt_BR|Segunda-feira Santa|
+|ko_KR|성주간 월요일|
+
+## [40602] · 源文件第341行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Tuesday of Holy Week|
+|zh_CN|圣周二|
+|zh_TW|聖周二|
+|es_ES|Martes Santo|
+|it_IT|Martedì della Settimana Santa|
+|pt_BR|Terça-feira Santa|
+|ko_KR|성주간 화요일|
+
+## [40603] · 源文件第351行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Wednesday of Holy Week|
+|zh_CN|圣周三|
+|zh_TW|聖周三|
+|es_ES|Miércoles Santo|
+|it_IT|Mercoledì della Settimana Santa|
+|pt_BR|Quarta-feira Santa|
+|ko_KR|성주간 수요일|
+
+## [40604] · 源文件第361行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Thursday of Holy Week (Holy Thursday)|
+|zh_CN|主的晚餐|
+|zh_TW|主的晚餐|
+|es_ES|Jueves Santo en la Cena del Señor|
+|it_IT|Giovedì Santo (Cena del Signore)|
+|pt_BR|Quinta-feira Santa|
+|ko_KR|주님 만찬 성목요일|
+
+## [40605] · 源文件第371行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Friday of the Passion of the Lord (Good Friday)|
+|zh_CN|耶稣受难|
+|zh_TW|耶穌受難|
+|es_ES|Viernes Santo en la Pasión del Señor|
+|it_IT|Venerdì Santo (Passione del Signore)|
+|pt_BR|Sexta-feira Santa|
+|ko_KR|주님 수난 성금요일|
+
+## [40606] · 源文件第381行
+
+关联：F146
+
+|语言|译文|
+|---|---|
+|en|Holy Saturday|
+|zh_CN|基督安眠墓中（复活节前夕）|
+|zh_TW|基督安眠墓中（復活節前夕）|
+|es_ES|Sábado Santo|
+|it_IT|Sabato Santo(Veglia pasquale nella Notte Santa)|
+|pt_BR|Sábado Santo|
+|ko_KR|성토요일|
+
+## [50100] · 源文件第391行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Easter Sunday of the Resurrection of the Lord|
+|zh_CN|复活节|
+|zh_TW|復活節|
+|es_ES|Domingo de Pascua de la Resurrección del Señor|
+|it_IT|Pasqua - Risurrezione del Signore|
+|pt_BR|Domingo de Páscoa da Ressurreição do Senhor|
+|ko_KR|주님 부활 대축일|
+
+## [50101] · 源文件第401行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Monday within the Octave of Easter|
+|zh_CN|复活节庆期第二日|
+|zh_TW|復活節慶期第二日|
+|es_ES|Lunes de la Octava de Pascua|
+|it_IT|Lunedì fra l'Ottava di Pasqua|
+|pt_BR|Segunda-feira da Oitava da Páscoa|
+|ko_KR|부활 팔일 축일 월요일|
+
+## [50102] · 源文件第411行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Tuesday within the Octave of Easter|
+|zh_CN|复活节庆期第三日|
+|zh_TW|復活節慶期第三日|
+|es_ES|Martes de la Octava de Pascua|
+|it_IT|Martedì fra l'Ottava di Pasqua|
+|pt_BR|Terça-feira da Oitava da Páscoa|
+|ko_KR|부활 팔일 축일 화요일|
+
+## [50103] · 源文件第421行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Wednesday within the Octave of Easter|
+|zh_CN|复活节庆期第四日|
+|zh_TW|復活節慶期第四日|
+|es_ES|Miércoles de la Octava de Pascua|
+|it_IT|Mercoledì fra l'Ottava di Pasqua|
+|pt_BR|Quarta-feira da Oitava da Páscoa|
+|ko_KR|부활 팔일 축일 수요일|
+
+## [50104] · 源文件第431行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Thursday within the Octave of Easter|
+|zh_CN|复活节庆期第五日|
+|zh_TW|復活節慶期第五日|
+|es_ES|Jueves de la Octava de Pascua|
+|it_IT|Giovedì fra l'Ottava di Pasqua|
+|pt_BR|Quinta-feira da Oitava da Páscoa|
+|ko_KR|부활 팔일 축일 목요일|
+
+## [50105] · 源文件第441行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Friday within the Octave of Easter|
+|zh_CN|复活节庆期第六日|
+|zh_TW|復活節慶期第六日|
+|es_ES|Viernes de la Octava de Pascua|
+|it_IT|Venerdì fra l'Ottava di Pasqua|
+|pt_BR|Sexta-feira da Oitava da Páscoa|
+|ko_KR|부활 팔일 축일 금요일|
+
+## [50106] · 源文件第451行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Saturday within the Octave of Easter|
+|zh_CN|复活节庆期第七日|
+|zh_TW|復活節慶期第七日|
+|es_ES|Sábado de la Octava de Pascua|
+|it_IT|Sabato fra l'Ottava di Pasqua|
+|pt_BR|Sábado da Oitava da Páscoa|
+|ko_KR|부활 팔일 축일 토요일|
+
+## [50200] · 源文件第461行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Second Sunday of Easter (Divine Mercy Sunday)|
+|zh_CN|复活节庆期第八日（慈悲主日）|
+|zh_TW|復活節慶期第八日（慈悲主日）|
+|es_ES|II Domingo de Pascua (o de la Divina Misericordia)|
+|it_IT|II Domenica di Pasqua (o della Divina Misericordia)|
+|pt_BR|2º Domingo da Páscoa (Domingo da Divina Misericórdia)|
+|ko_KR|부활 제2주일 (하느님의 자비 주일)|
+
+## [50400] · 源文件第471行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|4th Sunday of Easter (Good Shepherd Sunday)|
+|zh_CN|复活期第四主日（善牧主日）|
+|zh_TW|復活期第四主日（善牧主日）|
+|es_ES|IV Domingo de Pascua (Domingo del Buen Pastor)|
+|it_IT|IV Domenica di Pasqua (o del Buon Pastore)|
+|pt_BR|4º Domingo da Páscoa (do Bom Pastor)|
+|ko_KR|부활 제4주일 (착한 목자 주일)|
+
+## [50800] · 源文件第481行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Pentecost Sunday|
+|zh_CN|圣神降临节|
+|zh_TW|聖神降臨節|
+|es_ES|Domingo de Pentecostés|
+|it_IT|Domenica di Pentecoste|
+|pt_BR|Domingo de Pentecostes|
+|ko_KR|성령 강림 대축일|
+
+## [1010101] · 源文件第491行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Solemnity of Mary, the Holy Mother of God|
+|zh_CN|天主之母节|
+|zh_TW|天主之母節|
+|es_ES|Santa María, Madre de Dios|
+|it_IT|Maria SS. Madre di Dio (s)|
+|pt_BR|Solenidade de Santa Maria, Mãe de Deus|
+|ko_KR|천주의 성모 마리아 대축일|
+
+## [1010201] · 源文件第501行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Sts. Basil the Great and Gregory Nazianzen|
+|zh_CN|圣巴西略及圣国瑞•纳祥|
+|zh_TW|聖巴西略及聖國瑞•納祥|
+|es_ES|Santos Basilio Magno y Gregorio Nacianceno|
+|it_IT|Ss. Basilio Magno e Gregorio Nazianzeno (m)|
+|pt_BR|Santos Basílio Magno e Gregório Nazianzeno|
+|ko_KR|성 대 바실리오와 나지안조의 성 그레고리오 주교 학자 기념일|
+
+## [1010301] · 源文件第511行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Holy Name of Jesus|
+|zh_CN|耶稣圣名|
+|zh_TW|耶穌聖名|
+|es_ES|Santísimo Nombre de Jesús|
+|it_IT|SS. Nome di Gesù(mf)|
+|pt_BR|Santíssimo Nome de Jesus|
+|ko_KR|지극히 거룩하신 예수 성명|
+
+## [1010303] · 源文件第521行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Genevieve|
+|zh_CN|圣女日南斐法|
+|zh_TW|聖女日南斐法|
+|es_ES|Santa Genoveva|
+|it_IT|S. Genoveffa|
+|pt_BR|Santa Genoveva|
+|ko_KR|성녀 제노베파|
+
+## [1010402] · 源文件第531行
+
+关联：F001
+
+|语言|译文|
+|---|---|
+|en|St. Pharaildis|
+|zh_CN|圣女法拉意弟|
+|zh_TW|聖女法拉意弟|
+|es_ES|Santa Faraildis|
+|it_IT|Santa Farailde|
+|pt_BR|Santa Farailde|
+|ko_KR|성 그레고리오|
+
+## [1010501] · 源文件第541行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. John Neumann|
+|zh_CN|圣若望纽曼|
+|zh_TW|聖牛曼|
+|es_ES|San Juan Neumann|
+|it_IT|S. Giovanni N. Neumann|
+|pt_BR|São João Neumann|
+|ko_KR|성 요한 노이만|
+
+## [1010502] · 源文件第551行
+
+关联：F002
+
+|语言|译文|
+|---|---|
+|en|St. Simeon the Stylite|
+|zh_CN|圣西默盎“石柱人”|
+|zh_TW|聖西默盎“石柱人”|
+|es_ES|San Simeón el Estilita|
+|it_IT|San Simeone lo Stilita|
+|pt_BR|São Simeão Estilita|
+|ko_KR|성 에두아르도|
+
+## [1010602] · 源文件第561行
+
+关联：F089
+
+|语言|译文|
+|---|---|
+|en|St. Raphaela Mary|
+|zh_CN|真福辣法厄尔•玛利亚|
+|zh_TW|真福辣法厄爾•瑪利亞|
+|es_ES|Santa Rafaela María|
+|it_IT|Santa Raffaella Maria|
+|pt_BR|Santa Rafaela Maria|
+|ko_KR|성녀 라파엘라 마리아 포라스|
+
+## [1010701] · 源文件第571行
+
+关联：F003
+
+|语言|译文|
+|---|---|
+|en|St. Raymond of Penyafort|
+|zh_CN|圣赖孟多|
+|zh_TW|聖賴孟多|
+|es_ES|San Raimundo de Peñafort|
+|it_IT|S. Raimondo de Peñafort (mf)|
+|pt_BR|São Raimundo de Penhafort|
+|ko_KR|성 가누토 라바르|
+
+## [1010802] · 源文件第581行
+
+关联：F156
+
+|语言|译文|
+|---|---|
+|en|St. Apollinaris Claudius|
+|zh_CN|圣亚玻理纳利|
+|zh_TW|聖亞玻理納利|
+|es_ES|San Apolinar Claudio|
+|it_IT|S. Apollinare Claudio|
+|pt_BR|São Polinário|
+|ko_KR|성 아폴리나리스|
+
+## [1010901] · 源文件第591行
+
+关联：F004
+
+|语言|译文|
+|---|---|
+|en|St. Adrian of Canterbury|
+|zh_CN|圣哈德良|
+|zh_TW|聖哈德良|
+|es_ES|San Adriano de Canterbury|
+|it_IT|S. Adriano|
+|pt_BR|Santo Adriano de Cantuária|
+|ko_KR|성 레보카토|
+
+## [1011001] · 源文件第601行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Agatho|
+|zh_CN|圣亚加杜|
+|zh_TW|聖阿加道|
+|es_ES|San Agatón|
+|it_IT|Sant'Agatone|
+|pt_BR|Santo Agatão|
+|ko_KR|성 아가토|
+
+## [1011002] · 源文件第611行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Bl. Gregory X|
+|zh_CN|真福额我略十世|
+|zh_TW|真福額我略十世|
+|es_ES|Beato Gregorio X|
+|it_IT|B. Gregorio X|
+|pt_BR|Beato Gregório X|
+|ko_KR|복자 그레고리오 10세|
+
+## [1011101] · 源文件第621行
+
+关联：F130
+
+|语言|译文|
+|---|---|
+|en|St. Theodosius the Cenobiarch|
+|zh_CN|圣戴沃多塞|
+|zh_TW|聖戴沃多西|
+|es_ES|San Teodosio Cenobiaca|
+|it_IT|S. Teodosio il Cenobiarca|
+|pt_BR|São Teodósio, o Cenobiarca|
+|ko_KR|성 테오도시오|
+
+## [1011201] · 源文件第631行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Benedict Biscop|
+|zh_CN|圣本笃•皮斯哥|
+|zh_TW|聖本篤•波斯哥|
+|es_ES|San Benito Biscop|
+|it_IT|San Benedetto Biscop|
+|pt_BR|São Bento Biscop|
+|ko_KR|성 베네딕토 비스콥|
+
+## [1011301] · 源文件第641行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Hilary of Poitiers|
+|zh_CN|圣依拉略|
+|zh_TW|聖依拉略|
+|es_ES|San Hilario de Poitiers|
+|it_IT|S. Ilario (mf)|
+|pt_BR|Santo Hilário de Poitiers|
+|ko_KR|성 힐라리오|
+
+## [1011401] · 源文件第651行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Bl. Odoric of Pordenone|
+|zh_CN|真福和德理|
+|zh_TW|真福和德理精修|
+|es_ES|Beato Odorico de Pordenone|
+|it_IT|B. Odorico da Pordenone|
+|pt_BR|Beato Odorico de Pordenone|
+|ko_KR|복자 오도리코|
+
+## [1011501] · 源文件第661行
+
+关联：F005
+
+|语言|译文|
+|---|---|
+|en|St. Paul the Hermit|
+|zh_CN|圣保禄首位独修|
+|zh_TW|聖保祿首位獨修|
+|es_ES|San Pablo el Ermitaño|
+|it_IT|San Paolo di Tebe|
+|pt_BR|São Paulo, o Eremita|
+|ko_KR|성녀 니노|
+
+## [1011503] · 源文件第671行
+
+关联：F182
+
+|语言|译文|
+|---|---|
+|en|〈缺失；见地区限定说明〉|
+|zh_CN|圣刘方济|
+|zh_TW|聖劉方濟|
+|es_ES|San Francisco Fernández de Capillas|
+|it_IT|〈缺失；见地区限定说明〉|
+|pt_BR|〈缺失；见地区限定说明〉|
+|ko_KR|성 프란치스코 데 카필라스|
+
+## [1011601] · 源文件第678行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Marcellus I|
+|zh_CN|圣马策禄一世|
+|zh_TW|聖馬塞錄一世|
+|es_ES|San Marcelo I|
+|it_IT|S. Marcello I|
+|pt_BR|São Marcelo I|
+|ko_KR|성 마르첼로 1세|
+
+## [1011701] · 源文件第688行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Anthony, Abbot|
+|zh_CN|圣安当院长|
+|zh_TW|聖安當院長|
+|es_ES|San Antonio, Abad|
+|it_IT|S. Antonio, abate (m)|
+|pt_BR|Santo Antão, Abade|
+|ko_KR|성 안토니오|
+
+## [1011801] · 源文件第698行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Week of Prayer for Christian Unity (Jan 18-25)|
+|zh_CN|为基督徒合一祈祷周（18～25日）|
+|zh_TW|為基督徒合一祈禱週|
+|es_ES|Semana de Oración por la Unidad de los Cristianos|
+|it_IT|Settimana di preghiera per l'unità dei cristiani|
+|pt_BR|Semana de Oração pela Unidade dos Cristãos|
+|ko_KR|그리스도인 일치기도주간|
+
+## [1011803] · 源文件第708行
+
+关联：F131、F132
+
+|语言|译文|
+|---|---|
+|en|St. Prisca|
+|zh_CN|圣女普黎斯加|
+|zh_TW|聖女普黎斯加|
+|es_ES|Santa Prisca|
+|it_IT|St. Prisca|
+|pt_BR|S. Prisca|
+|ko_KR|산타 프리스카|
+
+## [1011902] · 源文件第718行
+
+关联：F106
+
+|语言|译文|
+|---|---|
+|en|Sts. Marius, Martha, Audifax, and Abachum|
+|zh_CN|马略、玛尔大、奥地法和亚巴古|
+|zh_TW|馬略、瑪爾大、奧地法和亞巴古|
+|es_ES|Santos Mario, Marta, Audifaz y Ábaco|
+|it_IT|Ss. Mario, Marta, Audiface e Abaco|
+|pt_BR|Santos Mário, Marta, Audifaz e Ábaco|
+|ko_KR|성녀 마르타|
+
+## [1011903] · 源文件第728行
+
+关联：F006
+
+|语言|译文|
+|---|---|
+|en|St. Marguerite Bourgeoys|
+|zh_CN|圣女玛加利大|
+|zh_TW|聖女瑪加利大|
+|es_ES|Santa Margarita Bourgeoys|
+|it_IT|Santa Margherita Bourgeoys|
+|pt_BR|Santa Margarida Bourgeoys|
+|ko_KR|성 나탈란|
+
+## [1012001] · 源文件第738行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Fabian|
+|zh_CN|圣法比盎|
+|zh_TW|聖法比盎|
+|es_ES|San Fabián|
+|it_IT|S. Fabiano|
+|pt_BR|São Fabiano|
+|ko_KR|성 파비아노|
+
+## [1012002] · 源文件第748行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Sebastian|
+|zh_CN|圣巴斯弟盎|
+|zh_TW|聖巴斯弟盎|
+|es_ES|San Sebastián|
+|it_IT|S. Sebastiano (mf)|
+|pt_BR|São Sebastião|
+|ko_KR|성 세바스티아노|
+
+## [1012101] · 源文件第758行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Agnes|
+|zh_CN|圣女依搦斯|
+|zh_TW|聖女依搦斯|
+|es_ES|Santa Inés|
+|it_IT|S. Agnese (m)|
+|pt_BR|Santa Inês|
+|ko_KR|성녀 아녜스 기념일|
+
+## [1012201] · 源文件第768行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Vincent of Saragossa|
+|zh_CN|圣味增爵|
+|zh_TW|聖味增爵|
+|es_ES|San Vicente|
+|it_IT|S. Vincenzo (mf)|
+|pt_BR|São Vicente|
+|ko_KR|성 빈첸시오|
+
+## [1012202] · 源文件第778行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Anastasius the Persian|
+|zh_CN|圣亚纳大削|
+|zh_TW|聖亞納大削|
+|es_ES|San Anastasio de Persia|
+|it_IT|S. Anastasio il Persiano|
+|pt_BR|Santo Anastácio, o Persa|
+|ko_KR|성 아나스타시오|
+
+## [1012301] · 源文件第788行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Emerentiana|
+|zh_CN|圣爱美兰霞|
+|zh_TW|聖愛美蘭霞|
+|es_ES|Santa Emerenciana|
+|it_IT|Sant'Emerenziana|
+|pt_BR|S. Emerenciana|
+|ko_KR|성녀 에메렌시아나|
+
+## [1012302] · 源文件第798行
+
+关联：F183
+
+|语言|译文|
+|---|---|
+|en|〈缺失；见地区限定说明〉|
+|zh_CN|圣白小满|
+|zh_TW|聖白小滿|
+|es_ES|San Pablo Bai Xiaoman|
+|it_IT|〈缺失；见地区限定说明〉|
+|pt_BR|〈缺失；见地区限定说明〉|
+|ko_KR|성 바오로 바이샤오만|
+
+## [1012303] · 源文件第805行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Ildefonsus|
+|zh_CN|圣伊尔德丰索|
+|zh_TW|聖依爾德豐索|
+|es_ES|San Ildefonso|
+|it_IT|S. Ildefonso|
+|pt_BR|São Ildefonso|
+|ko_KR|성 일데폰소|
+
+## [1012401] · 源文件第815行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Francis de Sales|
+|zh_CN|圣方济各•撒肋爵|
+|zh_TW|聖方濟各•撒肋爵|
+|es_ES|San Francisco de Sales|
+|it_IT|S. Francesco di Sales|
+|pt_BR|São Francisco de Sales|
+|ko_KR|성 프란치스코 살레시오|
+
+## [1012501] · 源文件第825行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|The Conversion of St. Paul the Apostle|
+|zh_CN|圣保禄宗徒归化|
+|zh_TW|聖保祿宗徒歸化|
+|es_ES|Conversión de San Pablo|
+|it_IT|Conversione di San Paolo Apostolo|
+|pt_BR|Conversão de São Paulo, Apóstolo|
+|ko_KR|성 바오로 사도의 회심 축일|
+
+## [1012601] · 源文件第835行
+
+关联：F160
+
+|语言|译文|
+|---|---|
+|en|Sts. Timothy and Titus|
+|zh_CN|圣弟茂德及圣弟铎(St. Timothy & St. Titus)|
+|zh_TW|聖弟茂德及聖弟鐸|
+|es_ES|Santos Timoteo y Tito|
+|it_IT|Ss. Timòteo e Tito|
+|pt_BR|Santos Timóteo e Tito|
+|ko_KR|성 티모테오 성 티토 주교 기념일|
+
+## [1012701] · 源文件第845行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Angela Merici|
+|zh_CN|圣女安琪拉|
+|zh_TW|聖女安琪拉|
+|es_ES|Santa Ángela Merici|
+|it_IT|S. Angela Merici (mf)|
+|pt_BR|Santa Ângela Mérici|
+|ko_KR|성녀 안젤라 메리치|
+
+## [1012702] · 源文件第855行
+
+关联：F184
+
+|语言|译文|
+|---|---|
+|en|〈缺失；见地区限定说明〉|
+|zh_CN|圣赵荣|
+|zh_TW|聖趙榮|
+|es_ES|San Agustín Zhao Rong|
+|it_IT|〈缺失；见地区限定说明〉|
+|pt_BR|〈缺失；见地区限定说明〉|
+|ko_KR|성 아우구스티노 자오룽|
+
+## [1012801] · 源文件第862行
+
+关联：F133
+
+|语言|译文|
+|---|---|
+|en|St. Thomas Aquinas|
+|zh_CN|圣多玛斯•阿奎那|
+|zh_TW|聖多瑪斯•阿奎那|
+|es_ES|Santo Tomás de Aquino|
+|it_IT|S. Tommaso d'Aquino|
+|pt_BR|São Tomás de Aquino|
+|ko_KR|토마스 아퀴나스|
+
+## [1012902] · 源文件第872行
+
+关联：F007
+
+|语言|译文|
+|---|---|
+|en|St. Joseph Freinademetz|
+|zh_CN|圣福若瑟|
+|zh_TW|聖福若瑟|
+|es_ES|San José Freinademetz|
+|it_IT|S. Giuseppe Freinademetz|
+|pt_BR|São José Freinademetz|
+|ko_KR|성 마우로|
+
+## [1012903] · 源文件第882行
+
+关联：F185
+
+|语言|译文|
+|---|---|
+|en|〈缺失；见地区限定说明〉|
+|zh_CN|圣王炳|
+|zh_TW|聖王炳|
+|es_ES|San Pablo Wang Bing|
+|it_IT|〈缺失；见地区限定说明〉|
+|pt_BR|〈缺失；见地区限定说明〉|
+|ko_KR|성 파울로 왕빙|
+
+## [1013002] · 源文件第889行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Bathildis|
+|zh_CN|圣妇巴蒂弟|
+|zh_TW|聖婦巴蒂弟|
+|es_ES|Santa Batilda|
+|it_IT|Santa Batilde|
+|pt_BR|Santa Batilde|
+|ko_KR|성녀 바틸다|
+
+## [1013003] · 源文件第899行
+
+关联：F008
+
+|语言|译文|
+|---|---|
+|en|Bl. Gabriele Allegra|
+|zh_CN|真福雷永明|
+|zh_TW|真福雷永明|
+|es_ES|Beato Gabriel Allegra|
+|it_IT|B. Gabriele Allegra|
+|pt_BR|Beato Gabriel Allegra|
+|ko_KR|성녀 마르티나|
+
+## [1013101] · 源文件第909行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. John Bosco|
+|zh_CN|圣鲍思高|
+|zh_TW|聖鮑思高|
+|es_ES|San Juan Bosco|
+|it_IT|S. Giovanni Bosco (m)|
+|pt_BR|São João Bosco|
+|ko_KR|성 요한 보스코|
+
+## [1020201] · 源文件第919行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|The Presentation of the Lord|
+|zh_CN|献耶稣于圣殿|
+|zh_TW|獻耶穌於聖殿|
+|es_ES|Presentación del Señor|
+|it_IT|Presentazione del Signore (f)|
+|pt_BR|Apresentação do Senhor|
+|ko_KR|주님 봉헌 축일|
+
+## [1020301] · 源文件第929行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Blaise|
+|zh_CN|圣伯拉削|
+|zh_TW|聖巴拉削|
+|es_ES|San Blas|
+|it_IT|S. Biagio (mf)|
+|pt_BR|São Brás|
+|ko_KR|성 블라시오|
+
+## [1020302] · 源文件第939行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Ansgar|
+|zh_CN|圣安加略|
+|zh_TW|聖安加略|
+|es_ES|San Ansgario|
+|it_IT|S. Ansgario(Oscar) (mf)|
+|pt_BR|São Ansgário|
+|ko_KR|성 안스가리오|
+
+## [1020401] · 源文件第949行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. John de Britto|
+|zh_CN|圣若望•波利多|
+|zh_TW|聖若望•波利多|
+|es_ES|San Juan de Brito|
+|it_IT|S. Giovanni de Britto|
+|pt_BR|São João de Brito|
+|ko_KR|성 요한 데 브리토|
+
+## [1020402] · 源文件第959行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Joan of Valois|
+|zh_CN|圣妇若翰纳|
+|zh_TW|聖婦若翰納|
+|es_ES|Santa Juana de Valois|
+|it_IT|Santa Giovanna di Valois|
+|pt_BR|Santa Joana de Valois|
+|ko_KR|성녀 요안나|
+
+## [1020501] · 源文件第969行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Agatha|
+|zh_CN|圣女亚加大|
+|zh_TW|聖女亞加大|
+|es_ES|Santa Águeda|
+|it_IT|S. Agata (m)|
+|pt_BR|Santa Águeda|
+|ko_KR|성녀 아가타|
+
+## [1020601] · 源文件第979行
+
+关联：F155
+
+|语言|译文|
+|---|---|
+|en|St. Paul Miki and Companions|
+|zh_CN|圣郑安道及圣保禄弥基等|
+|zh_TW|聖保祿三木司鐸及同伴|
+|es_ES|San Pablo Miki y compañeros|
+|it_IT|Ss. Paolo Miki e compagni (m)|
+|pt_BR|Santos Paulo Miki e companheiros|
+|ko_KR|성 바오로 미키와 동료 순교자들 기념일|
+
+## [1020702] · 源文件第989行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Bl. Pius IX|
+|zh_CN|真福比约九世|
+|zh_TW|真福比約九世|
+|es_ES|B. Pío IX|
+|it_IT|B. Pio IX|
+|pt_BR|B. Pio IX|
+|ko_KR|복자 비오 9세|
+
+## [1020801] · 源文件第999行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Jerome Emiliani|
+|zh_CN|圣热罗莫•爱弥廉|
+|zh_TW|聖熱羅莫•愛彌廉|
+|es_ES|San Jerónimo Emiliano|
+|it_IT|S. Girolamo Emiliani (mf)|
+|pt_BR|São Jerónimo Emiliano|
+|ko_KR|성 예로니모 에밀리아니|
+
+## [1020803] · 源文件第1009行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Josephine Bakhita|
+|zh_CN|圣若瑟芬•柏姬达|
+|zh_TW|聖若瑟芬•柏姬達|
+|es_ES|Santa Josefina Bakhita|
+|it_IT|S. Giuseppina Bakhita|
+|pt_BR|Santa Josefina Bakhita|
+|ko_KR|성녀 요세피나 바키타 동정|
+
+## [1020902] · 源文件第1019行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Sabinus of Canosa|
+|zh_CN|圣撒比诺|
+|zh_TW|聖撒比諾|
+|es_ES|San Sabino de Canosa|
+|it_IT|S. Sabino|
+|pt_BR|São Sabino de Canosa|
+|ko_KR|성 사비노|
+
+## [1021001] · 源文件第1029行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Scholastica|
+|zh_CN|圣女斯高拉蒂加|
+|zh_TW|聖女斯高拉蒂加|
+|es_ES|Santa Escolástica|
+|it_IT|S. Scolastica (m)|
+|pt_BR|Santa Escolástica|
+|ko_KR|성녀 스콜라스티카 동정 기념일|
+
+## [1021101] · 源文件第1039行
+
+关联：F179
+
+|语言|译文|
+|---|---|
+|en|Our Lady of Lourdes|
+|zh_CN|露德圣母显现|
+|zh_TW|露德聖母顯現|
+|es_ES|Nuestra Señora de Lourdes|
+|it_IT|B. V. Maria di Lourdes (mf)|
+|pt_BR|Nossa Senhora de Lourdes|
+|ko_KR|루르드의 복되신 동정 마리아 기념일|
+
+## [1021202] · 源文件第1049行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Ludan|
+|zh_CN|圣路登|
+|zh_TW|聖路登|
+|es_ES|San Ludan|
+|it_IT|San Ludano|
+|pt_BR|São Ludano|
+|ko_KR|성 루단|
+
+## [1021301] · 源文件第1059行
+
+关联：F009
+
+|语言|译文|
+|---|---|
+|en|St. Catherine de Ricci|
+|zh_CN|圣女加大利纳•利其|
+|zh_TW|聖女加大利納•利其|
+|es_ES|Santa Catalina de Ricci|
+|it_IT|Santa Caterina de Ricci|
+|pt_BR|Santa Catarina de Ricci|
+|ko_KR|성 고스베르토|
+
+## [1021303] · 源文件第1069行
+
+关联：F186
+
+|语言|译文|
+|---|---|
+|en|〈缺失；见地区限定说明〉|
+|zh_CN|圣蓝月旺|
+|zh_TW|聖藍月旺|
+|es_ES|San Juan Lan Yuewang|
+|it_IT|〈缺失；见地区限定说明〉|
+|pt_BR|〈缺失；见地区限定说明〉|
+|ko_KR|성 요한 란웨왕|
+
+## [1021401] · 源文件第1076行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Sts. Cyril and Methodius|
+|zh_CN|圣济利禄、圣美铎第|
+|zh_TW|聖濟利祿、聖美鐸第|
+|es_ES|Santos Cirilo, monje, y Metodio|
+|it_IT|Ss. Cirillo e Metodio (f)|
+|pt_BR|Santos Cirilo, monge, e Metódio, bispo|
+|ko_KR|성 치릴로 수도자와 성 메토디오 주교 기념일|
+
+## [1021402] · 源文件第1086行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Valentine|
+|zh_CN|圣华楞定|
+|zh_TW|聖華楞定|
+|es_ES|San Valentín|
+|it_IT|San Valentino|
+|pt_BR|São Valentim|
+|ko_KR|성 발렌티노|
+
+## [1021503] · 源文件第1096行
+
+关联：F010
+
+|语言|译文|
+|---|---|
+|en|St. Claude de la Colombière|
+|zh_CN|圣高隆汴|
+|zh_TW|聖高隆汴|
+|es_ES|San Claudio de la Colombière|
+|it_IT|S. Claudio de la Colombière|
+|pt_BR|São Cláudio de la Colombière|
+|ko_KR|성 데코로소|
+
+## [1021601] · 源文件第1106行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Onesimus|
+|zh_CN|圣奥乃西莫|
+|zh_TW|聖奧乃西|
+|es_ES|San Onésimo|
+|it_IT|Sant'Onesimo|
+|pt_BR|Santo Onésimo|
+|ko_KR|성 오네시모|
+
+## [1021701] · 源文件第1116行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|The Seven Holy Founders of the Servite Order|
+|zh_CN|圣母忠仆会七位会祖|
+|zh_TW|聖母忠僕會七位會祖|
+|es_ES|Santos Siete Fundadores de la Orden de los Siervos|
+|it_IT|Ss. Sette Fondatori dell'Ordine dei Servi della Beata Vergine Maria (mf)|
+|pt_BR|Santos Sete Fundadores da Ordem dos Servitas|
+|ko_KR|성모 마리아의 종 수도회 7인 회조 기념일|
+
+## [1021801] · 源文件第1126行
+
+关联：F011
+
+|语言|译文|
+|---|---|
+|en|St. Simeon of Jerusalem|
+|zh_CN|圣西满|
+|zh_TW|聖西滿|
+|es_ES|San Simeón de Jerusalén|
+|it_IT|San Simeone di Gerusalemme|
+|pt_BR|São Simeão de Jerusalém|
+|ko_KR|성 레오|
+
+## [1021901] · 源文件第1136行
+
+关联：F100
+
+|语言|译文|
+|---|---|
+|en|St. Conrad of Piacenza|
+|zh_CN|圣公拉|
+|zh_TW|聖公拉|
+|es_ES|San Conrado de Piacenza|
+|it_IT|S. Corrado Confalonieri|
+|pt_BR|São Conrado de Placência|
+|ko_KR|복자 콘라도|
+
+## [1021902] · 源文件第1146行
+
+关联：F187
+
+|语言|译文|
+|---|---|
+|en|〈缺失；见地区限定说明〉|
+|zh_CN|圣易贞美|
+|zh_TW|聖易貞美|
+|es_ES|Santa Lucía Yi Zhenmei|
+|it_IT|〈缺失；见地区限定说明〉|
+|pt_BR|〈缺失；见地区限定说明〉|
+|ko_KR|성녀 루치아 이전메이|
+
+## [1022001] · 源文件第1153行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Eucherius of Orleans|
+|zh_CN|圣欧却琉|
+|zh_TW|聖歐千流|
+|es_ES|San Euquerio de Orleans|
+|it_IT|S. Eucherio di Orleans|
+|pt_BR|Santo Euquério de Orleans|
+|ko_KR|성 에우케리오|
+
+## [1022101] · 源文件第1163行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Peter Damian|
+|zh_CN|圣伯多禄•达弥盎|
+|zh_TW|聖伯多祿•達彌盎|
+|es_ES|San Pedro Damián|
+|it_IT|S. Pier Damiani (mf)|
+|pt_BR|São Pedro Damião|
+|ko_KR|성 베드로 다미아니|
+
+## [1022201] · 源文件第1173行
+
+关联：F134
+
+|语言|译文|
+|---|---|
+|en|Chair of Saint Peter|
+|zh_CN|建立圣伯多禄宗座|
+|zh_TW|建立聖伯多祿宗座|
+|es_ES|Cátedra de San Pedro|
+|it_IT|Cattedra di S. Pietro, apostolo (f)|
+|pt_BR|Cáteira de São Pedro, APóstolo|
+|ko_KR|성 베드로 사도 좌 축일|
+
+## [1022202] · 源文件第1183行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Margaret of Cortona|
+|zh_CN|圣女玛加利大•高多娜|
+|zh_TW|聖女瑪加利大•高多娜|
+|es_ES|Santa Margarita de Cortona|
+|it_IT|S. Margherita da Cortona|
+|pt_BR|Santa Margarida de Cortona|
+|ko_KR|성녀 마르가리타|
+
+## [1022301] · 源文件第1193行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Polycarp|
+|zh_CN|圣波利卡浦|
+|zh_TW|聖波利卡浦|
+|es_ES|San Policarpo|
+|it_IT|S. Policarpo|
+|pt_BR|São Policarpo|
+|ko_KR|성 폴리카르포|
+
+## [1022402] · 源文件第1203行
+
+关联：F012
+
+|语言|译文|
+|---|---|
+|en|Sts. Montanus, Lucius and Companions|
+|zh_CN|圣孟泰诺、圣路琪及其他烈士|
+|zh_TW|聖孟泰諾、聖路琪及其他烈士|
+|es_ES|Santos Montano, Lucio y compañeros|
+|it_IT|Santi Montano, Lucio e compagni|
+|pt_BR|Santos Montano, Lúcio e companheiros|
+|ko_KR|성 모데스토|
+
+## [1022502] · 源文件第1213行
+
+关联：F013
+
+|语言|译文|
+|---|---|
+|en|St. Tarasius|
+|zh_CN|圣泰拉修|
+|zh_TW|聖泰拉修|
+|es_ES|San Tarasio|
+|it_IT|San Tarasio|
+|pt_BR|São Tarásio|
+|ko_KR|성 네스토르|
+
+## [1022602] · 源文件第1223行
+
+关联：F014
+
+|语言|译文|
+|---|---|
+|en|St. Porphyry of Gaza|
+|zh_CN|圣波菲利|
+|zh_TW|聖波菲利|
+|es_ES|San Porfirio de Gaza|
+|it_IT|S. Porfirìo|
+|pt_BR|São Porfírio de Gaza|
+|ko_KR|성녀 바울라 몬탈 포르네스(성 요셉 데 갈라산즈의)|
+
+## [1022701] · 源文件第1233行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Gabriel of Our Lady of Sorrows|
+|zh_CN|圣母痛苦圣嘉俾厄尔|
+|zh_TW|聖母痛苦聖嘉俾厄爾|
+|es_ES|San Gabriel de la Dolorosa|
+|it_IT|S. Gabriele dell'Addolorata|
+|pt_BR|São Gabriel de Nossa Senhora das Dores|
+|ko_KR|성 가브리엘 포센티|
+
+## [1022801] · 源文件第1243行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Hilary (Pope)|
+|zh_CN|圣希拉利|
+|zh_TW|聖希拉利|
+|es_ES|San Hilario (Papa)|
+|it_IT|Sant'Ilario (Papa)|
+|pt_BR|Santo Hilário (Papa)|
+|ko_KR|성 힐라리오|
+
+## [1022802] · 源文件第1253行
+
+关联：F015、F090
+
+|语言|译文|
+|---|---|
+|en|Bl. Angela of Foligno|
+|zh_CN|圣安日拉|
+|zh_TW|福女安日拉|
+|es_ES|Beata Ángela de Foligno|
+|it_IT|Beata Angela da Foligno|
+|pt_BR|Beata Ângela de Foligno|
+|ko_KR|성 가이오|
+
+## [1022901] · 源文件第1263行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Auguste Chapdelaine|
+|zh_CN|圣马赖|
+|zh_TW|聖馬賴|
+|es_ES|San Agustín Chapdelaine|
+|it_IT|S. Augusto Chapdelaine|
+|pt_BR|S. Augusto Chapdelaine|
+|ko_KR|성 아우구스티노 샤프돌랭|
+
+## [1030101] · 源文件第1273行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. David of Wales|
+|zh_CN|圣达味|
+|zh_TW|聖達味|
+|es_ES|San David de Gales|
+|it_IT|San Davide di Galles|
+|pt_BR|São David de Gales|
+|ko_KR|성 다윗|
+
+## [1030102] · 源文件第1283行
+
+关联：F188
+
+|语言|译文|
+|---|---|
+|en|〈缺失；见地区限定说明〉|
+|zh_CN|圣曹桂英|
+|zh_TW|聖曹桂英|
+|es_ES|Santa Inés Cao Guiying|
+|it_IT|〈缺失；见地区限定说明〉|
+|pt_BR|〈缺失；见地区限定说明〉|
+|ko_KR|성녀 아그네스 차오구이잉|
+
+## [1030201] · 源文件第1290行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Chad|
+|zh_CN|圣嘉德|
+|zh_TW|聖嘉德|
+|es_ES|San Chad|
+|it_IT|San Chad|
+|pt_BR|São Chad|
+|ko_KR|성 체아다|
+
+## [1030301] · 源文件第1300行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Katharine Drexel|
+|zh_CN|圣加大利纳|
+|zh_TW|聖女加大利納|
+|es_ES|Santa Catalina Drexel|
+|it_IT|Santa Caterina Drexel|
+|pt_BR|Santa Catarina Drexel|
+|ko_KR|성녀 가타리나 마리아 드렉셀|
+
+## [1030401] · 源文件第1310行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Casimir|
+|zh_CN|圣加西弥禄|
+|zh_TW|聖加西彌祿|
+|es_ES|S. Casimiro|
+|it_IT|S. Casimiro|
+|pt_BR|São Casimiro|
+|ko_KR|성 카시미로|
+
+## [1030501] · 源文件第1320行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. John Joseph of the Cross|
+|zh_CN|圣十字架若望若瑟|
+|zh_TW|聖十字架若望若瑟|
+|es_ES|San Juan José de la Cruz|
+|it_IT|San Giovan Giuseppe della Croce|
+|pt_BR|São João José da Cruz|
+|ko_KR|성 요한 요셉(십자가의)|
+
+## [1030601] · 源文件第1330行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Colette|
+|zh_CN|圣高莱德|
+|zh_TW|聖女高萊德|
+|es_ES|Santa Coleta|
+|it_IT|S. Coletta di Boylet|
+|pt_BR|Santa Coleta|
+|ko_KR|성녀 콜레타|
+
+## [1030701] · 源文件第1340行
+
+关联：F157
+
+|语言|译文|
+|---|---|
+|en|Sts. Perpetua and Felicity|
+|zh_CN|圣伯尔都亚、圣斐利谦等殉道|
+|zh_TW|聖伯爾都亞、聖斐利谦等殉道|
+|es_ES|Santas Perpetua y Felicidad|
+|it_IT|Ss. Perpetua e Felicita|
+|pt_BR|Santas Perpétua e Felicidade|
+|ko_KR|성녀 페르페투아와 성녀 펠리치타 순교자|
+
+## [1030801] · 源文件第1350行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. John of God|
+|zh_CN|天赐圣若望|
+|zh_TW|天賜聖若望|
+|es_ES|San Juan de Dios|
+|it_IT|S. Giovanni di Dio|
+|pt_BR|São João de Deus|
+|ko_KR|성 요한(천주의)|
+
+## [1030901] · 源文件第1360行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Frances of Rome|
+|zh_CN|圣芳济加|
+|zh_TW|聖芳濟加|
+|es_ES|Santa Francesca Romana|
+|it_IT|S. Francesca Romana|
+|pt_BR|Santa Francisca Romana|
+|ko_KR|성녀 프란치스카|
+
+## [1031001] · 源文件第1370行
+
+关联：F152
+
+|语言|译文|
+|---|---|
+|en|The Forty Martyrs of Sebaste|
+|zh_CN|色巴德等四十位圣人殉道|
+|zh_TW|色巴德等四十位聖人殉道|
+|es_ES|Cuarenta Mártires de Sebaste|
+|it_IT|I Quaranta Martiri di Sebaste|
+|pt_BR|Os Quarenta Mártires de Sebaste|
+|ko_KR|세바스테의 사십 순교자|
+
+## [1031101] · 源文件第1380行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Eulogius of Cordoba|
+|zh_CN|圣欧乐日|
+|zh_TW|聖歐樂日|
+|es_ES|San Eulogio de Córdoba|
+|it_IT|Sant'Eulogio di Cordova|
+|pt_BR|Santo Eulógio de Córdova|
+|ko_KR|성 에울로지오|
+
+## [1031201] · 源文件第1390行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Theophanes the Confessor|
+|zh_CN|圣戴法纳|
+|zh_TW|聖戴法納|
+|es_ES|San Teófanes el Confesor|
+|it_IT|San Teofane Confessore|
+|pt_BR|São Teófanes, o Confessor|
+|ko_KR|성 테오파네|
+
+## [1031202] · 源文件第1400行
+
+关联：F189
+
+|语言|译文|
+|---|---|
+|en|〈缺失；见地区限定说明〉|
+|zh_CN|圣张大鹏|
+|zh_TW|聖張大鵬|
+|es_ES|San José Zhang Dapeng|
+|it_IT|〈缺失；见地区限定说明〉|
+|pt_BR|〈缺失；见地区限定说明〉|
+|ko_KR|성 요셉 장다펑|
+
+## [1031301] · 源文件第1407行
+
+关联：F016
+
+|语言|译文|
+|---|---|
+|en|St. Euphrasia|
+|zh_CN|圣欧弗来西亚|
+|zh_TW|聖女歐弗來西亞|
+|es_ES|Santa Eufrasia|
+|it_IT|Santa Eufrasia|
+|pt_BR|Santa Eufrásia|
+|ko_KR|성녀 님포도라|
+
+## [1031302] · 源文件第1417行
+
+关联：F017
+
+|语言|译文|
+|---|---|
+|en|St. Nicephorus|
+|zh_CN|圣尼赛福禄|
+|zh_TW|聖尼賽福祿|
+|es_ES|San Nicéforo|
+|it_IT|San Niceforo|
+|pt_BR|São Nicéforo|
+|ko_KR|성녀 님포도라|
+
+## [1031401] · 源文件第1427行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Matilda|
+|zh_CN|圣玛蒂达|
+|zh_TW|聖婦瑪蒂達|
+|es_ES|Santa Matilde|
+|it_IT|S. Matilde|
+|pt_BR|Santa Matilde|
+|ko_KR|성녀 마틸다|
+
+## [1031501] · 源文件第1437行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Louise de Marillac|
+|zh_CN|圣露易丝|
+|zh_TW|聖婦露易絲|
+|es_ES|Santa Luisa de Marillac|
+|it_IT|S. Luisa de Marillac|
+|pt_BR|Santa Luísa de Marillac|
+|ko_KR|성녀 루도비카 드 마리약|
+
+## [1031502] · 源文件第1447行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Clement Mary Hofbauer|
+|zh_CN|圣格肋孟•浩卜|
+|zh_TW|聖格肋孟•浩卜|
+|es_ES|San Clemente María Hofbauer|
+|it_IT|San Clemente Maria Hofbauer|
+|pt_BR|São Clemente Maria Hofbauer|
+|ko_KR|성 클레멘스 마리아 호프바우어|
+
+## [1031601] · 源文件第1457行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Heribert of Cologne|
+|zh_CN|圣赫利巴|
+|zh_TW|聖赫利巴|
+|es_ES|San Heriberto de Colonia|
+|it_IT|S. Eriberto di Colonia|
+|pt_BR|Santo Heriberto de Colônia|
+|ko_KR|성 헤리베르토|
+
+## [1031701] · 源文件第1467行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Patrick|
+|zh_CN|圣巴特里爵|
+|zh_TW|聖巴特里爵|
+|es_ES|San Patricio|
+|it_IT|S. Patrizio|
+|pt_BR|São Patrício|
+|ko_KR|성 파트리치오 주교|
+
+## [1031702] · 源文件第1477行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Gertrude of Nivelles|
+|zh_CN|圣日多达•尼凡拉|
+|zh_TW|聖女日多達•尼凡拉|
+|es_ES|Santa Gertrudis de Nivelles|
+|it_IT|S. Gertrude di Nivelles|
+|pt_BR|Santa Gertrudes de Nivelles|
+|ko_KR|성녀 제르트루다|
+
+## [1031801] · 源文件第1487行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Cyril of Jerusalem|
+|zh_CN|耶路撒冷•圣济利禄|
+|zh_TW|耶路撒冷•聖濟利祿|
+|es_ES|San Cirilo de Jerusalén|
+|it_IT|S. Cirillo di Gerusalemme|
+|pt_BR|São Cirilo de Jerusalém|
+|ko_KR|예루살렘의 성 치릴로 주교 학자|
+
+## [1031901] · 源文件第1497行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Joseph, Spouse of the Blessed Virgin Mary|
+|zh_CN|圣母净配圣若瑟|
+|zh_TW|聖母淨配聖若瑟|
+|es_ES|San José, Esposo de la Virgen María|
+|it_IT|S. Giuseppe, sposo della B. V. Maria|
+|pt_BR|São José, Esposo da Virgem Santa Maria|
+|ko_KR|복되신 동정 마리아의 배필 성 요셉 대축일|
+
+## [1032001] · 源文件第1507行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Cuthbert|
+|zh_CN|圣格时白|
+|zh_TW|聖格時白|
+|es_ES|San Cutberto|
+|it_IT|S. Cutberto|
+|pt_BR|São Cuteberto|
+|ko_KR|성 쿠트베르토|
+
+## [1032101] · 源文件第1517行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Nicholas of Flue|
+|zh_CN|圣尼格老•冯物洛|
+|zh_TW|聖尼格老•馮物洛|
+|es_ES|San Nicolás de Flüe|
+|it_IT|S. Nicola di Flüe|
+|pt_BR|S. Nicolau de Flüe|
+|ko_KR|성 니콜라오 데 플뤼에|
+
+## [1032102] · 源文件第1527行
+
+关联：F107
+
+|语言|译文|
+|---|---|
+|en|St. Enda and St. Fanchea|
+|zh_CN|圣恩达、圣女芳佳|
+|zh_TW|聖恩達（院長）、聖女芳佳（童貞）|
+|es_ES|San Enda y Santa Fanchea|
+|it_IT|Sant'Enda e Santa Fanchea|
+|pt_BR|São Enda e Santa Fanchea|
+|ko_KR|성 엔다|
+
+## [1032201] · 源文件第1537行
+
+关联：F088
+
+|语言|译文|
+|---|---|
+|en|Sts. Simon of Trent and William of Norwich|
+|zh_CN|圣婴西满和圣童威廉|
+|zh_TW|聖嬰西滿和聖童威廉|
+|es_ES|Santos Simón de Trento y Guillermo de Norwich|
+|it_IT|Santi Simone da Trento e Guglielmo di Norwich|
+|pt_BR|Santos Simão de Trento e Guilherme de Norwich|
+|ko_KR|성 트렌트의 시몬 과 노리치의 윌리엄|
+
+## [1032302] · 源文件第1547行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Joseph Oriol|
+|zh_CN|圣若瑟•奥利沃|
+|zh_TW|聖若瑟•奧利沃|
+|es_ES|San José Oriol|
+|it_IT|San Giuseppe Oriol|
+|pt_BR|São José Oriol|
+|ko_KR|성 요셉 오리올|
+
+## [1032401] · 源文件第1557行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Catherine of Sweden|
+|zh_CN|圣加大利纳•瑞典|
+|zh_TW|聖女加大利納•瑞典|
+|es_ES|Santa Catalina de Suecia|
+|it_IT|S. Caterina di Svezia|
+|pt_BR|Santa Catarina da Suécia|
+|ko_KR|성녀 가타리나|
+
+## [1032402] · 源文件第1567行
+
+关联：F018
+
+|语言|译文|
+|---|---|
+|en|St. Irenaeus of Sirmium|
+|zh_CN|圣依勒内|
+|zh_TW|聖依勒內|
+|es_ES|San Ireneo de Sirmium|
+|it_IT|Sant'Ireneo di Sirmio|
+|pt_BR|Santo Irineu de Sirmium|
+|ko_KR|성녀 가타리나|
+
+## [1032501] · 源文件第1577行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|The Annunciation of the Lord|
+|zh_CN|圣母领报|
+|zh_TW|聖母領報|
+|es_ES|Anunciación del Señor|
+|it_IT|Annunciazione del Signore (s)|
+|pt_BR|Anunciação do Senhor|
+|ko_KR|주님 탄생 예고 대축일|
+
+## [1032502] · 源文件第1587行
+
+关联：F098
+
+|语言|译文|
+|---|---|
+|en|St. Margaret Clitherow|
+|zh_CN|真福玛加大•格利塞罗|
+|zh_TW|真福瑪加大•格利塞羅|
+|es_ES|Santa Margarita Clitherow|
+|it_IT|Santa Margherita Clitherow|
+|pt_BR|Santa Margarida Clitherow|
+|ko_KR|성녀 마르가리타 클리테로우|
+
+## [1032601] · 源文件第1597行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Ludger|
+|zh_CN|圣路基|
+|zh_TW|聖路基|
+|es_ES|San Ludgero|
+|it_IT|San Ludgero|
+|pt_BR|São Ludgero|
+|ko_KR|성 루드제로|
+
+## [1032602] · 源文件第1607行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Castulus|
+|zh_CN|圣加斯多罗|
+|zh_TW|聖加斯多羅|
+|es_ES|San Cástulo|
+|it_IT|San Castulo|
+|pt_BR|São Cástulo|
+|ko_KR|성 카스툴로|
+
+## [1032701] · 源文件第1617行
+
+关联：F019
+
+|语言|译文|
+|---|---|
+|en|St. John of Egypt|
+|zh_CN|圣若望“埃及人”|
+|zh_TW|聖若望“埃及人”|
+|es_ES|San Juan de Egipto|
+|it_IT|San Giovanni d'Egitto|
+|pt_BR|São João do Egito|
+|ko_KR|성 나르세스|
+
+## [1032801] · 源文件第1627行
+
+关联：F020
+
+|语言|译文|
+|---|---|
+|en|St. Sixtus III|
+|zh_CN|圣西斯督三世|
+|zh_TW|聖西斯督三世|
+|es_ES|San Sixto III|
+|it_IT|San Sisto III|
+|pt_BR|São Sisto III|
+|ko_KR|성녀 군델린다|
+
+## [1032902] · 源文件第1637行
+
+关联：F108
+
+|语言|译文|
+|---|---|
+|en|Sts. Jonas and Barachisius|
+|zh_CN|圣约纳和巴拉古|
+|zh_TW|聖約納和巴拉古|
+|es_ES|Santos Jonás y Baraquiso|
+|it_IT|Santi Giona e Baracisio|
+|pt_BR|Santos Jonas e Baracísio|
+|ko_KR|성 바라키시오|
+
+## [1033001] · 源文件第1647行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. John Climacus|
+|zh_CN|圣若望•克利马古|
+|zh_TW|聖若望•克利馬古|
+|es_ES|San Juan Clímaco|
+|it_IT|San Giovanni Climaco|
+|pt_BR|São João Clímaco|
+|ko_KR|성 요한 클리마코|
+
+## [1033102] · 源文件第1657行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Balbina of Rome|
+|zh_CN|圣女巴比诺|
+|zh_TW|聖女巴比諾|
+|es_ES|Santa Balbina de Roma|
+|it_IT|Santa Balbina da Roma|
+|pt_BR|Santa Balbina de Roma|
+|ko_KR|성녀 발비나|
+
+## [1040101] · 源文件第1667行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Hugh of Grenoble|
+|zh_CN|圣许格|
+|zh_TW|聖許格|
+|es_ES|San Hugo de Grenoble|
+|it_IT|S. Ugo di Grenoble|
+|pt_BR|Santo Hugo de Grenoble|
+|ko_KR|성 후고|
+
+## [1040201] · 源文件第1677行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Francis of Paola|
+|zh_CN|圣方济各保拉|
+|zh_TW|聖方濟各保拉|
+|es_ES|San Francisco de Paula|
+|it_IT|S. Francesco da Paola|
+|pt_BR|São Francisco de Paula|
+|ko_KR|성 프란치스코|
+
+## [1040301] · 源文件第1687行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Richard of Chichester|
+|zh_CN|圣理查德|
+|zh_TW|聖理查德|
+|es_ES|San Ricardo de Chichester|
+|it_IT|San Riccardo di Chichester|
+|pt_BR|São Ricardo de Chichester|
+|ko_KR|성 리카르도|
+
+## [1040401] · 源文件第1697行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Isidore of Seville|
+|zh_CN|圣依西多禄|
+|zh_TW|聖依西多祿|
+|es_ES|San Isidoro de Sevilla|
+|it_IT|S. Isidoro|
+|pt_BR|Santo Isidoro|
+|ko_KR|성 이시도로 주교 학자|
+
+## [1040501] · 源文件第1707行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Vincent Ferrer|
+|zh_CN|圣味增爵•斐勒洛|
+|zh_TW|聖味增爵•斐勒略|
+|es_ES|San Vicente Ferrer|
+|it_IT|S. Vincenzo Ferrer|
+|pt_BR|São Vicente Ferrer|
+|ko_KR|성 빈첸시오 페레리오 사제|
+
+## [1040601] · 源文件第1717行
+
+关联：F021
+
+|语言|译文|
+|---|---|
+|en|St. Celestine I|
+|zh_CN|圣塞来斯定一世|
+|zh_TW|聖塞來斯定一世|
+|es_ES|San Celestino I|
+|it_IT|San Celestino I|
+|pt_BR|São Celestino I|
+|ko_KR|복녀 가타리나|
+
+## [1040701] · 源文件第1727行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. John Baptist de la Salle|
+|zh_CN|圣若翰•兰沙|
+|zh_TW|聖若翰•蘭沙|
+|es_ES|San Juan Bautista de la Salle|
+|it_IT|S. Giovanni Battista de la Salle|
+|pt_BR|São João Batista de La Salle|
+|ko_KR|성 요한 바티스타 데 라 살 사제 기념일|
+
+## [1040801] · 源文件第1737行
+
+关联：F091
+
+|语言|译文|
+|---|---|
+|en|St. Julie Billiart|
+|zh_CN|真福尤丽•贝略|
+|zh_TW|真福尤麗•貝略|
+|es_ES|Santa Julia Billiart|
+|it_IT|Santa Giulia Billiart|
+|pt_BR|Santa Júlia Billiart|
+|ko_KR|성녀 율리아 빌리아르|
+
+## [1040802] · 源文件第1747行
+
+关联：F022
+
+|语言|译文|
+|---|---|
+|en|Bl. Maria Assunta Pallotta|
+|zh_CN|真福亚松大|
+|zh_TW|真福亞松大|
+|es_ES|Beata María Asunta Pallotta|
+|it_IT|B. Maria Assunta Pallotta|
+|pt_BR|Beata Maria Assunta Pallotta|
+|ko_KR|성 디오니시오|
+
+## [1040901] · 源文件第1757行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Waldetrudis|
+|zh_CN|圣华德托蒂|
+|zh_TW|聖婦華德托蒂|
+|es_ES|Santa Valdetrudis|
+|it_IT|Santa Valdetrude|
+|pt_BR|Santa Valdetrudes|
+|ko_KR|성녀 발데트루디스|
+
+## [1041001] · 源文件第1767行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Fulbert of Chartres|
+|zh_CN|圣傅培|
+|zh_TW|聖傅培|
+|es_ES|San Fulberto de Chartres|
+|it_IT|S. Fulberto|
+|pt_BR|São Fulberto de Chartres|
+|ko_KR|성 풀베르토|
+
+## [1041101] · 源文件第1777行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Stanislaus|
+|zh_CN|圣达尼老|
+|zh_TW|聖達尼老|
+|es_ES|San Estanislao|
+|it_IT|S. Stanislao|
+|pt_BR|Santo Estanislau|
+|ko_KR|성 스타니스라오 주교 순교자 기념일|
+
+## [1041201] · 源文件第1787行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Julius I|
+|zh_CN|圣儒略一世|
+|zh_TW|聖儒略一世|
+|es_ES|San Julio I|
+|it_IT|S. Giulio I|
+|pt_BR|São Júlio I|
+|ko_KR|성 율리오 1세|
+
+## [1041202] · 源文件第1797行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Zeno of Verona|
+|zh_CN|圣柴诺|
+|zh_TW|聖柴諾|
+|es_ES|San Zenón de Verona|
+|it_IT|S. Zeno|
+|pt_BR|São Zenão de Verona|
+|ko_KR|성 제노 주교|
+
+## [1041301] · 源文件第1807行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Martin I|
+|zh_CN|圣玛尔定一世|
+|zh_TW|聖瑪爾定一世|
+|es_ES|San Martín I|
+|it_IT|S. Martino I|
+|pt_BR|São Martinho I|
+|ko_KR|성 마르티노 1세 교황 순교자|
+
+## [1041401] · 源文件第1817行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Sts. Tiburtius, Valerian and Maximus|
+|zh_CN|圣谛步爵、圣华肋廉、圣玛息莫|
+|zh_TW|聖諦步爵、聖華肋廉、聖瑪息莫|
+|es_ES|Santos Tiburcio, Valeriano y Máximo|
+|it_IT|Ss. Tiburzio, Valeriano e Massimo|
+|pt_BR|Santos Tibúrcio, Valeriano e Máximo|
+|ko_KR|성 발레리아노、성 티부르티우스 와 성 막시모|
+
+## [1041402] · 源文件第1827行
+
+关联：F092、F165
+
+|语言|译文|
+|---|---|
+|en|St. Lydwina of Schiedam|
+|zh_CN|真福李维娜|
+|zh_TW|真福李維娜|
+|es_ES|Santa Lidwina de Schiedam|
+|it_IT|Santa Liduina di Schiedam|
+|pt_BR|Santa Liduína de Schiedam|
+|ko_KR|성녀 리드비나|
+
+## [1041501] · 源文件第1837行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Benedict Joseph Labre|
+|zh_CN|圣本笃•若瑟•雷伯|
+|zh_TW|聖本篤•若瑟•雷伯|
+|es_ES|San Benito José Labre|
+|it_IT|San Benedetto Giuseppe Labre|
+|pt_BR|São Bento José Labre|
+|ko_KR|성 베네딕토 요셉 라브르 순례자 증거자|
+
+## [1041601] · 源文件第1847行
+
+关联：F135
+
+|语言|译文|
+|---|---|
+|en|St. Bernadette Soubirous|
+|zh_CN|圣伯尔纳德|
+|zh_TW|聖女伯爾納德|
+|es_ES|Santa Bernadette Soubirous|
+|it_IT|S. Bernardetta Sourbirous|
+|pt_BR|Santa Bernadette Soubirous|
+|ko_KR|성녀 베르나데트 수비루|
+
+## [1041702] · 源文件第1857行
+
+关联：F023
+
+|语言|译文|
+|---|---|
+|en|St. Stephen Harding|
+|zh_CN|圣斯德望•哈定|
+|zh_TW|聖斯德望|
+|es_ES|San Esteban Harding|
+|it_IT|Santo Stefano Harding|
+|pt_BR|Santo Estêvão Harding|
+|ko_KR|성 돈난|
+
+## [1041801] · 源文件第1867行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Galdinus|
+|zh_CN|圣加帝诺|
+|zh_TW|聖加帝諾|
+|es_ES|San Galdino|
+|it_IT|S. Galdino|
+|pt_BR|São Galdino|
+|ko_KR|성 갈디노|
+
+## [1041802] · 源文件第1877行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Bl. Marie of the Incarnation (Acarie)|
+|zh_CN|真福玛利亚|
+|zh_TW|福女瑪利亞|
+|es_ES|Beata María de la Encarnación (Acarie)|
+|it_IT|Beata Maria dell'Incarnazione (Acarie)|
+|pt_BR|Beata Maria da Encarnação (Acarie)|
+|ko_KR|복녀 마리아(강생의)|
+
+## [1041901] · 源文件第1887行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Leo IX|
+|zh_CN|圣良九世|
+|zh_TW|聖良九世|
+|es_ES|San León IX|
+|it_IT|S. Leone IX|
+|pt_BR|São Leão IX|
+|ko_KR|성 레오 9세|
+
+## [1041902] · 源文件第1897行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Alphege|
+|zh_CN|圣亚斐奇|
+|zh_TW|聖亞斐奇|
+|es_ES|San Alphege|
+|it_IT|Sant'Alphege|
+|pt_BR|Santo Alphege|
+|ko_KR|성 엘페고|
+
+## [1042001] · 源文件第1907行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Agnes of Montepulciano|
+|zh_CN|圣女依搦斯•蒙德波|
+|zh_TW|聖女依搦斯•蒙德波|
+|es_ES|Santa Inés de Montepulciano|
+|it_IT|S. Agnese di Montepulciano|
+|pt_BR|Santa Inês de Montepulciano|
+|ko_KR|성녀 아녜스|
+
+## [1042101] · 源文件第1917行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Anselm of Canterbury|
+|zh_CN|圣安色莫|
+|zh_TW|聖安色莫|
+|es_ES|San Anselmo de Canterbury|
+|it_IT|S. Anselmo|
+|pt_BR|Santo Anselmo de Cantuária|
+|ko_KR|성 안셀모 주교 학자|
+
+## [1042202] · 源文件第1927行
+
+关联：F109
+
+|语言|译文|
+|---|---|
+|en|Sts. Epipodius and Alexander|
+|zh_CN|圣爱比巴巨、圣亚历山大|
+|zh_TW|聖愛比巴巨、聖亞歷山大|
+|es_ES|Santos Epipodio y Alejandro|
+|it_IT|Santi Epipodio e Alessandro|
+|pt_BR|Santos Epipódio e Alexandre|
+|ko_KR|성 에피포디오 순교자|
+
+## [1042301] · 源文件第1937行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. George|
+|zh_CN|圣乔治|
+|zh_TW|聖喬治|
+|es_ES|San Jorge|
+|it_IT|S. Giorgio|
+|pt_BR|São Jorge|
+|ko_KR|성 제오르지오 군인 순교자|
+
+## [1042302] · 源文件第1947行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Bl. Giles of Assisi|
+|zh_CN|真福吉利时|
+|zh_TW|真福吉利|
+|es_ES|Beato Gil de Asís|
+|it_IT|Beato Egidio d'Assisi|
+|pt_BR|Beato Egídio de Assis|
+|ko_KR|복자 에지디오 수사|
+
+## [1042402] · 源文件第1957行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Mary Euphrasia Pelletier|
+|zh_CN|圣女贝莱蒂|
+|zh_TW|聖女貝萊蒂|
+|es_ES|Santa María Eufrasia Pelletier|
+|it_IT|Santa Maria Eufrasia Pelletier|
+|pt_BR|Santa Maria Eufrásia Pelletier|
+|ko_KR|성녀 마리아 에우프라시아 펠레티에|
+
+## [1042501] · 源文件第1967行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Mark the Evangelist|
+|zh_CN|圣马尔谷|
+|zh_TW|聖馬爾谷|
+|es_ES|San Marcos, Evangelista|
+|it_IT|S. Marco, evangelista (f)|
+|pt_BR|São Marcos Evangelista|
+|ko_KR|성 마르코 복음사가 축일|
+
+## [1042601] · 源文件第1977行
+
+关联：F166
+
+|语言|译文|
+|---|---|
+|en|St. Cletus|
+|zh_CN|圣格肋多|
+|zh_TW|聖格肋多|
+|es_ES|San Cleto|
+|it_IT|San Cleto|
+|pt_BR|São Cleto|
+|ko_KR|성 아나클레토|
+
+## [1042602] · 源文件第1987行
+
+关联：F024
+
+|语言|译文|
+|---|---|
+|en|St. Franca of Piacenza|
+|zh_CN|圣女方佳|
+|zh_TW|聖女方佳|
+|es_ES|Santa Franca de Piacenza|
+|it_IT|Santa Franca da Piacenza|
+|pt_BR|Santa Franca de Piacenza|
+|ko_KR|복자 그레고리오|
+
+## [1042609] · 源文件第1997行
+
+关联：F154
+
+|语言|译文|
+|---|---|
+|en|San Isidoro(仅西班牙语)|
+|zh_CN|San Isidoro(仅西班牙语)|
+|zh_TW|San Isidoro(仅西班牙语)|
+|es_ES|San Isidoro de Sevilla|
+|it_IT|San Isidoro(仅西班牙语)|
+|pt_BR|San Isidoro(仅西班牙语)|
+|ko_KR|San Isidoro(仅西班牙语)|
+
+## [1042701] · 源文件第2007行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Zita|
+|zh_CN|圣女纪达|
+|zh_TW|聖女紀達|
+|es_ES|Santa Zita|
+|it_IT|S. Zita|
+|pt_BR|Santa Zita|
+|ko_KR|성녀 지타|
+
+## [1042802] · 源文件第2017行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Peter Chanel|
+|zh_CN|圣伯多禄•尚耐|
+|zh_TW|聖伯多祿•查納神父|
+|es_ES|San Pedro Chanel|
+|it_IT|S. Pietro Chanel (mf)|
+|pt_BR|São Pedro Chanel|
+|ko_KR|성 베드로 샤넬|
+
+## [1042901] · 源文件第2027行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Catherine of Siena|
+|zh_CN|圣女加大利纳•仙娜|
+|zh_TW|聖女加大利納•仙娜|
+|es_ES|Santa Catalina de Siena|
+|it_IT|S. Caterina da Siena (f)|
+|pt_BR|Santa Catarina de Sena|
+|ko_KR|성녀 가타리나 기념일|
+
+## [1043001] · 源文件第2038行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Pius V|
+|zh_CN|圣比约五世|
+|zh_TW|聖比約五世|
+|es_ES|San Pío V|
+|it_IT|S. Pio V (mf)|
+|pt_BR|São Pio V|
+|ko_KR|성 비오 5세 교황|
+
+## [1050101] · 源文件第2048行
+
+关联：F180
+
+|语言|译文|
+|---|---|
+|en|St. Joseph the Worker|
+|zh_CN|大圣若瑟劳工主保|
+|zh_TW|大聖若瑟勞工主保|
+|es_ES|San José Obrero|
+|it_IT|S. Giuseppe lavoratore (mf)|
+|pt_BR|São José Operário|
+|ko_KR|노동자 성 요셉 기념일|
+
+## [1050201] · 源文件第2058行
+
+关联：F175
+
+|语言|译文|
+|---|---|
+|en|St. Athanasius|
+|zh_CN|圣亚大纳削|
+|zh_TW|聖亞大納削|
+|es_ES|San Atanasio|
+|it_IT|S. Atanasio (mf)|
+|pt_BR|Santo Atanásio|
+|ko_KR|성 아타나시오 주교 교부 교회학자|
+
+## [1050301] · 源文件第2068行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Sts. Philip and James, Apostles|
+|zh_CN|圣斐理伯、圣雅各伯宗徒|
+|zh_TW|聖斐理伯、聖雅各伯宗徒|
+|es_ES|Santos Felipe y Santiago, Apóstoles|
+|it_IT|Ss. Filippo e Giacomo, apostoli (f)|
+|pt_BR|Santos Filipe e Tiago, Apóstolos|
+|ko_KR|성 필립보와 성 야고보 사도 축일|
+
+## [1050402] · 源文件第2078行
+
+关联：F025
+
+|语言|译文|
+|---|---|
+|en|The English Martyrs|
+|zh_CN|英格兰和威尔士殉道烈士|
+|zh_TW|英格蘭和威爾士殉道烈士|
+|es_ES|Mártires Ingleses|
+|it_IT|Santi Martiri Inglesi|
+|pt_BR|Os Mártires Ingleses|
+|ko_KR|복녀 가타리나|
+
+## [1050501] · 源文件第2088行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Angelus of Jerusalem|
+|zh_CN|圣安日洛|
+|zh_TW|聖安日洛|
+|es_ES|San Ángel de Jerusalén|
+|it_IT|Sant'Angelo da Gerusalemme|
+|pt_BR|Santo Ângelo de Jerusalém|
+|ko_KR|성 안젤로|
+
+## [1050602] · 源文件第2098行
+
+关联：F026
+
+|语言|译文|
+|---|---|
+|en|St. Dominic Savio|
+|zh_CN|圣多明我•沙维豪|
+|zh_TW|聖多明我•沙維豪|
+|es_ES|Santo Domingo Savio|
+|it_IT|S. Domenico Savio|
+|pt_BR|São Domingos Sávio|
+|ko_KR|성 루치오|
+
+## [1050701] · 源文件第2108行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. John of Beverley|
+|zh_CN|圣若望•比华力|
+|zh_TW|聖若望•比華力|
+|es_ES|San Juan de Beverley|
+|it_IT|San Giovanni di Beverley|
+|pt_BR|São João de Beverley|
+|ko_KR|성 요한|
+
+## [1050702] · 源文件第2118行
+
+关联：F093
+
+|语言|译文|
+|---|---|
+|en|St. Rose Venerini|
+|zh_CN|真福罗撒•味内丽尼|
+|zh_TW|真福羅撒|
+|es_ES|Santa Rosa Venerini|
+|it_IT|S. Rosa Venerini|
+|pt_BR|Santa Rosa Venerini|
+|ko_KR|성녀 로사 베네리니|
+
+## [1050801] · 源文件第2128行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Boniface IV|
+|zh_CN|圣波尼法爵四世|
+|zh_TW|聖波尼法爵四世|
+|es_ES|San Bonifacio IV|
+|it_IT|San Bonifacio IV|
+|pt_BR|São Bonifácio IV|
+|ko_KR|성 보니파시오 4세|
+
+## [1050802] · 源文件第2138行
+
+关联：F027
+
+|语言|译文|
+|---|---|
+|en|St. Magdalene of Canossa|
+|zh_CN|圣女玛达肋纳•嘉诺撒|
+|zh_TW|聖女瑪達肋納•嘉諾撒|
+|es_ES|Santa Magdalena de Canossa|
+|it_IT|Santa Maddalena di Canossa|
+|pt_BR|Santa Madalena de Canossa|
+|ko_KR|성 데시데라토|
+
+## [1050901] · 源文件第2148行
+
+关联：F028
+
+|语言|译文|
+|---|---|
+|en|St. Peter Nolasco|
+|zh_CN|圣伯多禄•诺拉谷|
+|zh_TW|聖伯多祿•諾拉谷|
+|es_ES|San Pedro Nolasco|
+|it_IT|San Pietro Nolasco|
+|pt_BR|São Pedro Nolasco|
+|ko_KR|성 그레고리오|
+
+## [1051001] · 源文件第2158行
+
+关联：F029
+
+|语言|译文|
+|---|---|
+|en|St. Antoninus of Florence|
+|zh_CN|圣安多宁|
+|zh_TW|聖安多寧|
+|es_ES|San Antonino de Florencia|
+|it_IT|Sant'Antonino Pierozzi|
+|pt_BR|Santo Antonino de Florença|
+|ko_KR|성 가탈도|
+
+## [1051002] · 源文件第2168行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. John of Avila|
+|zh_CN|圣若望•亚维拉|
+|zh_TW|聖若望•亞維拉|
+|es_ES|San Juan de Ávila|
+|it_IT|S. Giovanni d'Avila|
+|pt_BR|São João de Ávila|
+|ko_KR|성 요한|
+
+## [1051101] · 源文件第2178行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Ignatius of Laconi|
+|zh_CN|圣依纳爵•雷可尼|
+|zh_TW|聖依納爵•雷可尼|
+|es_ES|San Ignacio de Láconi|
+|it_IT|S. Ignazio da Laconi|
+|pt_BR|Santo Inácio de Láconi|
+|ko_KR|성 이냐시오|
+
+## [1051102] · 源文件第2188行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Francis de Geronimo|
+|zh_CN|圣方济各•基罗拉莫|
+|zh_TW|聖方濟各•基羅拉莫|
+|es_ES|San Francisco de Jerónimo|
+|it_IT|San Francesco de Geronimo|
+|pt_BR|São Francisco de Jerônimo|
+|ko_KR|성 프란치스코(성 예로니모의)|
+
+## [1051201] · 源文件第2198行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Sts. Nereus and Achilleus|
+|zh_CN|圣聂略及圣亚基略|
+|zh_TW|聖乃仁、聖亞啟略|
+|es_ES|Santos Nereo, Aquiles|
+|it_IT|Ss. Nereo, Achilleo (mf)|
+|pt_BR|São Nereu, Santo Aquileu|
+|ko_KR|성 네레오와 성 아킬레오 순교자|
+
+## [1051202] · 源文件第2208行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Pancras|
+|zh_CN|圣庞加爵|
+|zh_TW|聖邦康|
+|es_ES|San Pancracio|
+|it_IT|S. Pancrazio (mf)|
+|pt_BR|São Pancrácio|
+|ko_KR|성 판크라시오|
+
+## [1051301] · 源文件第2218行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Our Lady of Fatima|
+|zh_CN|法蒂玛圣母|
+|zh_TW|法蒂瑪聖母|
+|es_ES|Nuestra Señora de Fátima|
+|it_IT|B. V. Maria di Fatima|
+|pt_BR|Nossa Senhora de Fátima|
+|ko_KR|파티마의 복되신 동정 마리아 기념일|
+
+## [1051302] · 源文件第2228行
+
+关联：F030
+
+|语言|译文|
+|---|---|
+|en|St. Maria Domenica Mazzarello|
+|zh_CN|圣玛利亚•玛萨利洛|
+|zh_TW|聖瑪利亞•瑪薩利洛|
+|es_ES|Santa María Dominga Mazzarello|
+|it_IT|S. Maria Domenica Mazzarello|
+|pt_BR|Santa Maria Domingas Mazzarello|
+|ko_KR|성 나탈리스|
+
+## [1051401] · 源文件第2238行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Matthias, Apostle|
+|zh_CN|圣玛弟亚宗徒|
+|zh_TW|聖瑪弟亞宗徒|
+|es_ES|San Matías, Apóstol|
+|it_IT|S. Mattia apostolo (f)|
+|pt_BR|São Matias, Apóstolo|
+|ko_KR|성 마티아 사도 축일|
+
+## [1051402] · 源文件第2248行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Michael Garicoits|
+|zh_CN|圣弥额尔•加利古|
+|zh_TW|聖彌額爾•加利古|
+|es_ES|San Miguel Garicoits|
+|it_IT|San Michele Garicoits|
+|pt_BR|São Miguel Garicoits|
+|ko_KR|성 미카엘 가리코이트|
+
+## [1051501] · 源文件第2258行
+
+关联：F120
+
+|语言|译文|
+|---|---|
+|en|Sts. Peter, Andrew, Paul, and Denise|
+|zh_CN|圣伯多禄和圣刁尼霞|
+|zh_TW|聖伯多祿和聖刁尼霞|
+|es_ES|Santos Pedro, Andrés, Pablo y Dionisia|
+|it_IT|Santi Pietro, Andrea, Paolo e Dionisia|
+|pt_BR|Santos Pedro, André, Paulo e Dionísia|
+|ko_KR|성 베드로, 성 안드레아, 성 바오로, 성녀 데니세|
+
+## [1051502] · 源文件第2268行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Isidore|
+|zh_CN|圣依西多禄|
+|zh_TW|聖依西多祿|
+|es_ES|San Isidro|
+|it_IT|San Isidro|
+|pt_BR|São Isidro|
+|ko_KR|성 이시도로|
+
+## [1051601] · 源文件第2278行
+
+关联：F101
+
+|语言|译文|
+|---|---|
+|en|St. Simon Stock|
+|zh_CN|圣西满•斯道克|
+|zh_TW|聖西滿•斯道克|
+|es_ES|San Simón Stock|
+|it_IT|B. Simone Stock|
+|pt_BR|São Simão Stock|
+|ko_KR|성 시몬 스톡|
+
+## [1051602] · 源文件第2288行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Ubaldus|
+|zh_CN|圣吴巴多|
+|zh_TW|聖吳巴多|
+|es_ES|San Ubaldo|
+|it_IT|S. Ubaldo|
+|pt_BR|Santo Ubaldo|
+|ko_KR|성 우발도|
+
+## [1051701] · 源文件第2298行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Paschal Baylon|
+|zh_CN|圣巴斯卦|
+|zh_TW|聖巴斯卦|
+|es_ES|San Pascual Bailón|
+|it_IT|S. Pasquale Baylon|
+|pt_BR|São Pascoal Bailão|
+|ko_KR|성 파스칼 바일론|
+
+## [1051702] · 源文件第2308行
+
+关联：F190
+
+|语言|译文|
+|---|---|
+|en|〈缺失；见地区限定说明〉|
+|zh_CN|圣刘文元|
+|zh_TW|聖劉文元|
+|es_ES|San Pedro Liu Wenyuan|
+|it_IT|〈缺失；见地区限定说明〉|
+|pt_BR|〈缺失；见地区限定说明〉|
+|ko_KR|성 피터 리우원위안|
+
+## [1051801] · 源文件第2315行
+
+关联：F167
+
+|语言|译文|
+|---|---|
+|en|St. John I|
+|zh_CN|圣若望一世|
+|zh_TW|聖若望一世|
+|es_ES|San Juan I|
+|it_IT|S. Giovanni I (mf)|
+|pt_BR|São João I|
+|ko_KR|성 요한 1세|
+
+## [1051802] · 源文件第2325行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Felix of Cantalice|
+|zh_CN|圣斐理斯|
+|zh_TW|聖斐理斯|
+|es_ES|San Félix de Cantalicio|
+|it_IT|S. Felice da Cantalice|
+|pt_BR|São Félix de Cantalice|
+|ko_KR|성 펠릭스|
+
+## [1051901] · 源文件第2335行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Celestine V|
+|zh_CN|圣塞来斯定五世|
+|zh_TW|聖塞來斯定五世|
+|es_ES|San Celestino V|
+|it_IT|S. Pietro Celestino|
+|pt_BR|São Celestino V|
+|ko_KR|성 첼레스티노 5세|
+
+## [1052001] · 源文件第2345行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Bernardine of Siena|
+|zh_CN|圣伯尔纳定•栖亚那|
+|zh_TW|聖伯爾納定•棲亞那|
+|es_ES|San Bernardino de Siena|
+|it_IT|S. Bernardino da Siena (mf)|
+|pt_BR|São Bernardino de Sena|
+|ko_KR|시에나의 성 베르나르디노 사제|
+
+## [1052002] · 源文件第2355行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Bl. Columba of Rieti|
+|zh_CN|真福高隆巴|
+|zh_TW|真福高隆巴|
+|es_ES|Beata Columba de Rieti|
+|it_IT|Beata Colomba da Rieti|
+|pt_BR|Beata Columba de Rieti|
+|ko_KR|복녀 골룸바|
+
+## [1052101] · 源文件第2365行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Victor of Marseilles|
+|zh_CN|圣维克多|
+|zh_TW|聖維克多|
+|es_ES|San Víctor de Marsella|
+|it_IT|San Vittore di Marsiglia|
+|pt_BR|São Vítor de Marselha|
+|ko_KR|성 빅토리오|
+
+## [1052102] · 源文件第2375行
+
+关联：F080
+
+|语言|译文|
+|---|---|
+|en|St. Christopher Magallanes, priest, and companions|
+|zh_CN|圣多福•麦哲伦司铎及同伴|
+|zh_TW|聖多福•麥哲倫司鐸及同伴|
+|es_ES|Santos Cristóbal Magallanes, presbítero, y compañeros|
+|it_IT|Ss. Cristoforo Magallanes, sacerdote, e compagni (mf)|
+|pt_BR|Santos Cristóvão de Magalhães, presbítero, e Companheiros|
+|ko_KR|성 마테오 코레아 마가야네스|
+
+## [1052201] · 源文件第2385行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Rita of Cascia|
+|zh_CN|圣丽达|
+|zh_TW|聖麗達|
+|es_ES|Santa Rita de Casia|
+|it_IT|S. Rita da Cascia|
+|pt_BR|Santa Rita de Cássia|
+|ko_KR|카시아의 성녀 리타 수도자|
+
+## [1052202] · 源文件第2395行
+
+关联：F031、F099
+
+|语言|译文|
+|---|---|
+|en|St. Joaquina de Vedruna|
+|zh_CN|真福若基玛|
+|zh_TW|福女若基瑪|
+|es_ES|Santa Joaquina de Vedruna|
+|it_IT|Santa Gioacchina de Vedruna|
+|pt_BR|Santa Joaquina de Vedruna|
+|ko_KR|성 로마노|
+
+## [1052301] · 源文件第2405行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. John Baptist de Rossi|
+|zh_CN|圣若翰•路西|
+|zh_TW|聖若翰•路西|
+|es_ES|San Juan Bautista de Rossi|
+|it_IT|S. Giovanni Battista de Rossi|
+|pt_BR|São João Batista de Rossi|
+|ko_KR|성 요한 세례자 데 로시|
+
+## [1052401] · 源文件第2415行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Our Lady, Help of Christians|
+|zh_CN|圣母进教之佑|
+|zh_TW|聖母進教之佑|
+|es_ES|María Auxiliadora|
+|it_IT|B. V. Maria Ausiliatrice|
+|pt_BR|Nossa Senhora Auxiliadora|
+|ko_KR|도움이신 성모 마리아|
+
+## [1052402] · 源文件第2425行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Vincent of Lerins|
+|zh_CN|圣味增爵•雷冷|
+|zh_TW|聖味增爵•雷冷|
+|es_ES|San Vicente de Lerins|
+|it_IT|S. Vincenzo di Lerins|
+|pt_BR|São Vicente de Lerins|
+|ko_KR|성 빈첸시오|
+
+## [1052501] · 源文件第2435行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Bede the Venerable|
+|zh_CN|圣伯达|
+|zh_TW|聖伯達|
+|es_ES|San Beda el Venerable|
+|it_IT|S. Beda (mf)|
+|pt_BR|São Beda Venerável|
+|ko_KR|성 베다 사제 학자|
+
+## [1052502] · 源文件第2445行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Gregory VII|
+|zh_CN|圣额我略七世|
+|zh_TW|聖額我略七世教宗|
+|es_ES|San Gregorio VII|
+|it_IT|S. Gregorio VII (mf)|
+|pt_BR|São Gregório VII|
+|ko_KR|성 그레고리오 7세|
+
+## [1052601] · 源文件第2455行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Philip Neri|
+|zh_CN|圣斐理伯•内利|
+|zh_TW|聖斐理伯•內利|
+|es_ES|San Felipe Neri|
+|it_IT|S. Filippo Neri (m)|
+|pt_BR|São Filipe Néri|
+|ko_KR|성 필립보 네리 사제|
+
+## [1052701] · 源文件第2465行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Augustine of Canterbury|
+|zh_CN|圣奥斯定（坎特伯里总主教）|
+|zh_TW|聖奧斯定|
+|es_ES|San Agustín de Canterbury|
+|it_IT|S. Agostino di Canterbury (mf)|
+|pt_BR|Santo Agostinho de Cantuária|
+|ko_KR|캔터베리의 성 아우구스티노 주교|
+
+## [1052801] · 源文件第2475行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Germanus of Paris|
+|zh_CN|圣日曼诺斯|
+|zh_TW|聖日曼諾斯|
+|es_ES|San Germán de París|
+|it_IT|S. Germano|
+|pt_BR|São Germano de Paris|
+|ko_KR|성 제르마노|
+
+## [1052802] · 源文件第2485行
+
+关联：F110
+
+|语言|译文|
+|---|---|
+|en|Bl. Thomas Ford and Companions|
+|zh_CN|真福多默•福特及其他殉道烈士|
+|zh_TW|真福多默•福特及其他殉道烈士|
+|es_ES|Beato Tomás Ford y compañeros|
+|it_IT|Beato Tommaso Ford e compagni|
+|pt_BR|Beato Tomás Ford e companheiros|
+|ko_KR|복자 토마스 포드|
+
+## [1052902] · 源文件第2495行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Paul VI|
+|zh_CN|圣保禄六世|
+|zh_TW|聖保祿六世|
+|es_ES|San Pablo VI|
+|it_IT|S. Paolo VI|
+|pt_BR|São Paulo VI|
+|ko_KR|성 바오로 6세|
+
+## [1052903] · 源文件第2505行
+
+关联：F191
+
+|语言|译文|
+|---|---|
+|en|〈缺失；见地区限定说明〉|
+|zh_CN|圣何开枝|
+|zh_TW|聖何開枝|
+|es_ES|San Joaquín Ho Kaizhi|
+|it_IT|〈缺失；见地区限定说明〉|
+|pt_BR|〈缺失；见地区限定说明〉|
+|ko_KR|성 요아킴 허카이지|
+
+## [1053001] · 源文件第2512行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Joan of Arc|
+|zh_CN|圣女贞德|
+|zh_TW|聖女貞德|
+|es_ES|Santa Juana de Arco|
+|it_IT|S. Giovanna d'Arco|
+|pt_BR|Santa Joana d'Arc|
+|ko_KR|성녀 잔 다르크|
+
+## [1053101] · 源文件第2522行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|The Visitation of the Blessed Virgin Mary|
+|zh_CN|圣母访亲|
+|zh_TW|聖母訪親|
+|es_ES|Visitación de la Virgen María|
+|it_IT|Visitazione della B. V. Maria (f)|
+|pt_BR|Visitação de Nossa Senhora|
+|ko_KR|복되신 동정 마리아의 방문 축일|
+
+## [1053102] · 源文件第2532行
+
+关联：F032、F123
+
+|语言|译文|
+|---|---|
+|en|Our Lady of All Graces|
+|zh_CN|圣母诸宠中保及中华圣母节|
+|zh_TW|聖母諸寵中保及中華聖母節|
+|es_ES|Nuestra Señora Mediadora de Todas las Gracias|
+|it_IT|Maria Mediatrice di Tutte le Grazie|
+|pt_BR|Nossa Senhora Medianeira de Todas as Graças|
+|ko_KR|성 노아 마와갈리|
+
+## [1060101] · 源文件第2542行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Justin Martyr|
+|zh_CN|圣犹思定|
+|zh_TW|聖猶思定|
+|es_ES|San Justino|
+|it_IT|S. Giustino (m)|
+|pt_BR|São Justino|
+|ko_KR|성 유스티노 순교자|
+
+## [1060102] · 源文件第2552行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|The Martyrs of Japan|
+|zh_CN|日本殉道烈士|
+|zh_TW|日本殉道烈士|
+|es_ES|Mártires de Japón|
+|it_IT|Martiri del Giappone|
+|pt_BR|Mártires do Japão|
+|ko_KR|일본의 순교자들|
+
+## [1060201] · 源文件第2562行
+
+关联：F081
+
+|语言|译文|
+|---|---|
+|en|Sts. Marcellinus and Peter|
+|zh_CN|圣玛策廉、圣伯多禄|
+|zh_TW|聖瑪策林、聖伯多祿|
+|es_ES|Santos Marcelino y Pedro|
+|it_IT|Ss. Marcellino e Pietro (mf)|
+|pt_BR|Santos Marcelino e Pedro|
+|ko_KR|성 마르첼리노와 성 페트로나 순교자|
+
+## [1060301] · 源文件第2572行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Charles Lwanga and Companions|
+|zh_CN|圣嘉禄•卢安加及同伴|
+|zh_TW|聖嘉祿•盧安加及同伴|
+|es_ES|Santos Carlos Lwanga y compañeros|
+|it_IT|Ss. Carlo Lwanga e compagni (m)|
+|pt_BR|Santos Carlos Lwanga e companheiros|
+|ko_KR|성 카롤로 르왕가와 동료 순교자들 기념일|
+
+## [1060401] · 源文件第2582行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Francis Caracciolo|
+|zh_CN|圣方济各•加辣巧洛|
+|zh_TW|聖方濟各•加辣巧洛|
+|es_ES|San Francisco Caracciolo|
+|it_IT|S. Francesco Caracciolo|
+|pt_BR|São Francisco Caracciolo|
+|ko_KR|성 프란치스코 카라치올로|
+
+## [1060501] · 源文件第2592行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Boniface|
+|zh_CN|圣波尼法爵|
+|zh_TW|聖波尼法爵|
+|es_ES|San Bonifacio|
+|it_IT|S. Bonifacio (m)|
+|pt_BR|São Bonifácio|
+|ko_KR|성 보니파시오|
+
+## [1060601] · 源文件第2602行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Norbert|
+|zh_CN|圣诺伯多|
+|zh_TW|聖諾貝特|
+|es_ES|San Norberto|
+|it_IT|S. Norberto (mf)|
+|pt_BR|São Norberto|
+|ko_KR|성 노르베르토 주교|
+
+## [1060703] · 源文件第2612行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Robert of Newminster|
+|zh_CN|圣罗拔|
+|zh_TW|聖羅拔|
+|es_ES|San Roberto de Newminster|
+|it_IT|San Roberto di Newminster|
+|pt_BR|São Roberto de Newminster|
+|ko_KR|성 로베르토|
+
+## [1060801] · 源文件第2622行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Medard|
+|zh_CN|圣迈达|
+|zh_TW|聖邁達|
+|es_ES|San Medardo|
+|it_IT|S. Medardo|
+|pt_BR|São Medardo|
+|ko_KR|성 메다르도|
+
+## [1060802] · 源文件第2632行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Chlodulf of Metz|
+|zh_CN|圣克路多|
+|zh_TW|聖克路多|
+|es_ES|San Clodulfo|
+|it_IT|San Clodolfo|
+|pt_BR|São Clodulfo|
+|ko_KR|성 클로둘포|
+
+## [1060901] · 源文件第2642行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Ephrem|
+|zh_CN|圣爱弗冷|
+|zh_TW|聖愛弗冷|
+|es_ES|San Efrén|
+|it_IT|S. Efrem (mf)|
+|pt_BR|Santo Efrém|
+|ko_KR|성 에프렘 학자|
+
+## [1060902] · 源文件第2652行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Columba|
+|zh_CN|圣高隆巴|
+|zh_TW|聖高隆巴|
+|es_ES|San Columba|
+|it_IT|San Columba|
+|pt_BR|São Columba|
+|ko_KR|성 골룸바|
+
+## [1061001] · 源文件第2662行
+
+关联：F083、F111
+
+|语言|译文|
+|---|---|
+|en|St. Getulius and Companions|
+|zh_CN|圣日多列和殉道烈士|
+|zh_TW|聖日多列和殉道烈士|
+|es_ES|San Getulio y compañeros|
+|it_IT|Ss. Censurio e compagni|
+|pt_BR|São Getúlio e companheiros|
+|ko_KR|성 제툴리오|
+
+## [1061101] · 源文件第2672行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Barnabas, Apostle|
+|zh_CN|圣巴尔纳伯|
+|zh_TW|聖巴爾納伯|
+|es_ES|San Bernabé Apóstol|
+|it_IT|S. Barnaba, apostolo (m)|
+|pt_BR|São Barnabé Apóstolo|
+|ko_KR|성 바르나바 사도 기념일|
+
+## [1061201] · 源文件第2682行
+
+关联：F033
+
+|语言|译文|
+|---|---|
+|en|St. John of Sahagun|
+|zh_CN|圣若望•瑟哈公|
+|zh_TW|聖若望•瑟哈公|
+|es_ES|San Juan de Sahagún|
+|it_IT|San Giovanni da San Facondo|
+|pt_BR|São João de Sahagun|
+|ko_KR|성 가스파르 베르토니|
+
+## [1061301] · 源文件第2692行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Anthony of Padua|
+|zh_CN|圣安多尼|
+|zh_TW|聖安多尼|
+|es_ES|San Antonio de Padua|
+|it_IT|S. Antonio di Padova (m)|
+|pt_BR|Santo Antônio de Pádua|
+|ko_KR|성 안토니오|
+
+## [1061401] · 源文件第2702行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Methodius I of Constantinople|
+|zh_CN|圣梅多田|
+|zh_TW|聖梅多田|
+|es_ES|San Metodio I de Constantinopla|
+|it_IT|S. Metodio I di Costantinopoli|
+|pt_BR|São Metódio I de Constantinopla|
+|ko_KR|성 메토디오|
+
+## [1061501] · 源文件第2712行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Germaine Cousin|
+|zh_CN|圣女任曼娜|
+|zh_TW|聖女任曼娜|
+|es_ES|Santa Germana Cousin|
+|it_IT|Santa Germana Cousin|
+|pt_BR|Santa Germana Cousin|
+|ko_KR|성녀 제르마나 쿠쟁|
+
+## [1061502] · 源文件第2722行
+
+关联：F034
+
+|语言|译文|
+|---|---|
+|en|St. Alice (Aleydis)|
+|zh_CN|圣女亚兰弟|
+|zh_TW|聖女亞蘭弟|
+|es_ES|Santa Alicia|
+|it_IT|Sant'Alice|
+|pt_BR|Santa Alice|
+|ko_KR|성 둘라|
+
+## [1061601] · 源文件第2732行
+
+关联：F035
+
+|语言|译文|
+|---|---|
+|en|St. John Francis Regis|
+|zh_CN|圣若望•方济各•雷奇|
+|zh_TW|聖若望•方濟各•雷奇|
+|es_ES|San Juan Francisco Regis|
+|it_IT|San Giovanni Francesco Regis|
+|pt_BR|São João Francisco Regis|
+|ko_KR|성녀 루갈다|
+
+## [1061602] · 源文件第2742行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Lutgardis|
+|zh_CN|圣女吕佳田|
+|zh_TW|聖女呂佳田|
+|es_ES|Santa Lutgarda|
+|it_IT|Santa Lutgarda|
+|pt_BR|Santa Lutgarda|
+|ko_KR|성녀 루갈다|
+
+## [1061701] · 源文件第2752行
+
+关联：F112
+
+|语言|译文|
+|---|---|
+|en|Sts. Nicander and Marcian|
+|zh_CN|圣尼冈德、圣马星|
+|zh_TW|聖尼岡德、聖馬星|
+|es_ES|Santos Nicandro y Marciano|
+|it_IT|Ss. Nicandro e Marciano|
+|pt_BR|Santos Nicandro e Marciano|
+|ko_KR|성 니칸데르|
+
+## [1061702] · 源文件第2762行
+
+关联：F036
+
+|语言|译文|
+|---|---|
+|en|St. Emily de Vialar|
+|zh_CN|圣女爱弥丽|
+|zh_TW|聖女愛彌麗|
+|es_ES|Santa Emilia de Vialar|
+|it_IT|Sant'Emilia de Vialar|
+|pt_BR|Santa Emília de Vialar|
+|ko_KR|성 군둘포|
+
+## [1061801] · 源文件第2772行
+
+关联：F113
+
+|语言|译文|
+|---|---|
+|en|Sts. Mark and Marcellian|
+|zh_CN|圣马尔谷、圣玛策廉|
+|zh_TW|聖馬爾谷、聖瑪策廉|
+|es_ES|Santos Marcos y Marceliano|
+|it_IT|Santi Marco e Marcelliano|
+|pt_BR|São Marcos e São Marceliano|
+|ko_KR|성 마르코|
+
+## [1061802] · 源文件第2782行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Elizabeth of Schonau|
+|zh_CN|圣女依撒伯尔•许诺|
+|zh_TW|聖女依撒伯爾•許諾|
+|es_ES|Santa Isabel de Schönau|
+|it_IT|Sant'Elisabetta di Schönau|
+|pt_BR|Santa Isabel de Schönau|
+|ko_KR|성녀 엘리사벳|
+
+## [1061901] · 源文件第2792行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Romuald|
+|zh_CN|圣罗慕铎|
+|zh_TW|聖羅慕鐸|
+|es_ES|San Romualdo|
+|it_IT|S. Romualdo|
+|pt_BR|São Romualdo|
+|ko_KR|성 로무알도 아빠스|
+
+## [1061903] · 源文件第2802行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Juliana of Florence|
+|zh_CN|圣女尤丽娜|
+|zh_TW|聖女尤麗娜|
+|es_ES|Santa Juliana de Florencia|
+|it_IT|Santa Giuliana di Firenze|
+|pt_BR|Santa Juliana de Florença|
+|ko_KR|성녀 율리아나 팔코니에리|
+
+## [1062001] · 源文件第2812行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Silverius|
+|zh_CN|圣西尔物留|
+|zh_TW|聖西爾物留|
+|es_ES|San Silverio|
+|it_IT|San Silverio|
+|pt_BR|São Silvério|
+|ko_KR|성 실베리오|
+
+## [1062002] · 源文件第2822行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Bl. Michelina of Pesaro|
+|zh_CN|真福米凯琳|
+|zh_TW|真福米凱琳|
+|es_ES|Beata Michelina de Pésaro|
+|it_IT|Beata Michelina da Pesaro|
+|pt_BR|Beata Michelina de Pesaro|
+|ko_KR|복녀 미첼리나|
+
+## [1062101] · 源文件第2832行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Aloysius Gonzaga|
+|zh_CN|圣类思•公撒格|
+|zh_TW|聖類思•公撒格|
+|es_ES|San Luis Gonzaga|
+|it_IT|S. Luigi Gonzaga (m)|
+|pt_BR|São Luís Gonzaga|
+|ko_KR|성 알로이시오 공자가 기념일|
+
+## [1062102] · 源文件第2842行
+
+关联：F037
+
+|语言|译文|
+|---|---|
+|en|St. Eusebius of Samosata|
+|zh_CN|圣欧瑟伯|
+|zh_TW|聖歐瑟伯|
+|es_ES|San Eusebio de Samosata|
+|it_IT|Sant'Eusebio di Samosata|
+|pt_BR|Santo Eusébio de Samósata|
+|ko_KR|성녀 데메트리아|
+
+## [1062201] · 源文件第2852行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Paulinus of Nola|
+|zh_CN|圣保林|
+|zh_TW|聖保林|
+|es_ES|San Paulino de Nola|
+|it_IT|S. Paolino di Nola (mf)|
+|pt_BR|São Paulino de Nola|
+|ko_KR|성 파울리노 주교|
+
+## [1062202] · 源文件第2862行
+
+关联：F122
+
+|语言|译文|
+|---|---|
+|en|St. John Fisher|
+|zh_CN|圣若望•菲雪及圣多默•莫尔|
+|zh_TW|聖若望•費生|
+|es_ES|San Juan Fisher|
+|it_IT|Ss. Giovanni Fisher e Tommaso More (mf)|
+|pt_BR|São João Fisher|
+|ko_KR|성 요한 피셔|
+
+## [1062301] · 源文件第2872行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Joseph Cafasso|
+|zh_CN|圣若瑟•嘉法沙|
+|zh_TW|聖若瑟•嘉法沙|
+|es_ES|San José Cafasso|
+|it_IT|S. Giuseppe Cafasso|
+|pt_BR|São José Cafasso|
+|ko_KR|성 요셉 카파소|
+
+## [1062302] · 源文件第2882行
+
+关联：F147
+
+|语言|译文|
+|---|---|
+|en|Vigil of the Nativity of St. John the Baptist|
+|zh_CN|圣若翰洗者诞辰前夕|
+|zh_TW|聖若翰洗者誕辰前夕|
+|es_ES|Vigilia de la Natividad de San Juan Bautista|
+|it_IT|Vigilia della Natività di S. Giovanni Battista|
+|pt_BR|Vigília da Natividade de São João Batista|
+|ko_KR|성 요한|
+
+## [1062303] · 源文件第2892行
+
+关联：F192
+
+|语言|译文|
+|---|---|
+|en|〈缺失；见地区限定说明〉|
+|zh_CN|圣袁在德|
+|zh_TW|聖袁在德|
+|es_ES|San José Yuan Zaide|
+|it_IT|〈缺失；见地区限定说明〉|
+|pt_BR|〈缺失；见地区限定说明〉|
+|ko_KR|성 요셉 위안자이더|
+
+## [1062401] · 源文件第2899行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|The Nativity of St. John the Baptist|
+|zh_CN|圣若翰洗者诞辰|
+|zh_TW|聖若翰洗者誕辰|
+|es_ES|Natividad de San Juan Bautista|
+|it_IT|Natività di S. Giovanni Battista|
+|pt_BR|Nascimento de São João Batista|
+|ko_KR|성 요한 세례자 탄생 대축일|
+
+## [1062501] · 源文件第2909行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. William of Montevergine|
+|zh_CN|圣威廉•维吉尔|
+|zh_TW|聖威廉•維吉爾|
+|es_ES|San Guillermo de Montevergine|
+|it_IT|S. Guglielmo di Montevergine|
+|pt_BR|São Guilherme de Montevergine|
+|ko_KR|성 윌리엄|
+
+## [1062502] · 源文件第2919行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Febronia|
+|zh_CN|圣女佛波罗尼|
+|zh_TW|聖女佛波羅尼|
+|es_ES|Santa Febronia|
+|it_IT|Santa Febronia|
+|pt_BR|Santa Febrônia|
+|ko_KR|성녀 페브로니아|
+
+## [1062601] · 源文件第2929行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Anthelm|
+|zh_CN|圣安德莫|
+|zh_TW|聖安德莫|
+|es_ES|San Antelmo|
+|it_IT|Sant'Antelmo|
+|pt_BR|Santo Antelmo|
+|ko_KR|성 안텔모|
+
+## [1062602] · 源文件第2939行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Josemaría Escrivá|
+|zh_CN|圣施礼华|
+|zh_TW|聖施禮華|
+|es_ES|San Josemaría Escrivá|
+|it_IT|S. Josemaria Escrivà|
+|pt_BR|São Josemaría Escrivá|
+|ko_KR|성 호세마리아 에스크리바|
+
+## [1062701] · 源文件第2949行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Cyril of Alexandria|
+|zh_CN|圣济利禄|
+|zh_TW|聖濟利祿|
+|es_ES|San Cirilo de Alejandría|
+|it_IT|S. Cirillo d'Alessandria (mf)|
+|pt_BR|São Cirilo de Alexandria|
+|ko_KR|성 치릴로 주교 학자|
+
+## [1062801] · 源文件第2959行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Irenaeus|
+|zh_CN|圣依勒内|
+|zh_TW|聖依勒內|
+|es_ES|San Ireneo|
+|it_IT|S. Ireneo (m)|
+|pt_BR|Santo Irineu|
+|ko_KR|성 이레네오 주교 순교자 기념일|
+
+## [1062803] · 源文件第2969行
+
+关联：F038
+
+|语言|译文|
+|---|---|
+|en|Vigil of Sts. Peter and Paul|
+|zh_CN|圣伯多禄及圣保禄宗徒前夕|
+|zh_TW|聖伯多祿及聖保祿宗徒前夕|
+|es_ES|Vigilia de San Pedro y San Pablo|
+|it_IT|Vigilia dei Ss. Pietro e Paolo|
+|pt_BR|Vigília de São Pedro e São Paulo|
+|ko_KR|성 바오로 1세|
+
+## [1062901] · 源文件第2979行
+
+关联：F136、F161
+
+|语言|译文|
+|---|---|
+|en|Sts. Peter and Paul, Apostles|
+|zh_CN|圣伯多禄及圣保禄宗徒(St. Peter Apostle & St. Paul Apostle)|
+|zh_TW|聖伯多祿及聖保祿宗徒|
+|es_ES|Santos Pedro y Pablo|
+|it_IT|Sts. Pietro e Paolo, apostoli (s)|
+|pt_BR|Santos Pedro e Paulo, Apóstolos|
+|ko_KR|성 베드로와 성 바오로 사도 대축일|
+
+## [1063001] · 源文件第2989行
+
+关联：F137、F138
+
+|语言|译文|
+|---|---|
+|en|The First Martyrs of the Holy Roman Church|
+|zh_CN|罗马第一批殉道烈士|
+|zh_TW|羅馬第一批殉道烈士|
+|es_ES|Santos Primeros mártires de la Iglesia Roma|
+|it_IT|Ss. Primi martiri della Chiesa romana (mf)|
+|pt_BR|Primeiros Santos mártires da Igreja Roma|
+|ko_KR|로마 교회의 첫 순교자들|
+
+## [1070103] · 源文件第2999行
+
+关联：F039
+
+|语言|译文|
+|---|---|
+|en|Bd. Antonio Rosmini|
+|zh_CN|真福安多尼•罗斯米尼|
+|zh_TW|真福安多尼•羅斯米尼|
+|es_ES|B. Antonio Rosmini|
+|it_IT|B. Antonio Rosmini|
+|pt_BR|B. Antonio Rosmini|
+|ko_KR|성 도미시아노|
+
+## [1070202] · 源文件第3009行
+
+关联：F040
+
+|语言|译文|
+|---|---|
+|en|St. Otto of Bamberg|
+|zh_CN|圣奥多|
+|zh_TW|聖奧多|
+|es_ES|San Otón de Bamberg|
+|it_IT|Sant'Ottone di Bamberga|
+|pt_BR|Santo Otto de Bamberg|
+|ko_KR|성 로가토|
+
+## [1070301] · 源文件第3019行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Thomas, Apostle|
+|zh_CN|圣多默|
+|zh_TW|聖多默|
+|es_ES|Santo Tomás, Apóstol|
+|it_IT|S. Tommaso, apostolo (f)|
+|pt_BR|São Tomé Apóstolo|
+|ko_KR|성 토마스 사도 축일|
+
+## [1070401] · 源文件第3029行
+
+关联：F041
+
+|语言|译文|
+|---|---|
+|en|St. Elizabeth of Portugal|
+|zh_CN|圣依撒伯尔|
+|zh_TW|聖婦依撒伯爾|
+|es_ES|Santa Isabel de Portugal|
+|it_IT|S. Elisabetta di Portogallo (mf)|
+|pt_BR|Santa Isabel de Portugal|
+|ko_KR|포르투갈의 성녀 앙겔라|
+
+## [1070402] · 源文件第3039行
+
+关联：F042
+
+|语言|译文|
+|---|---|
+|en|St. Pier Giorgio Frassati|
+|zh_CN|圣皮耶•乔治•弗拉萨蒂|
+|zh_TW|聖皮耶•喬治•弗拉薩蒂|
+|es_ES|San Pedro Jorge Frassati|
+|it_IT|S. Pier Giorgio Frassati|
+|pt_BR|São Pedro Jorge Frassati|
+|ko_KR|성 라우리아노|
+
+## [1070501] · 源文件第3049行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Anthony Zaccaria|
+|zh_CN|圣安多尼•匝加利|
+|zh_TW|聖安多尼•匝加利|
+|es_ES|San Antonio María Zacarías|
+|it_IT|S. Antonio Maria Zaccaria (mf)|
+|pt_BR|Santo Antônio Maria Zaccaria|
+|ko_KR|성 안토니오 마리아 자카리아 사제|
+
+## [1070601] · 源文件第3059行
+
+关联：F151
+
+|语言|译文|
+|---|---|
+|en|St. Maria Goretti|
+|zh_CN|圣玛利亚•葛蕾蒂|
+|zh_TW|高蘭蒂•瑪利亞|
+|es_ES|Santa María Goretti|
+|it_IT|S. Maria Goretti (mf)|
+|pt_BR|Santa Maria Goretti|
+|ko_KR|성녀 마리아 고레티 동정 순교자|
+
+## [1070701] · 源文件第3069行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Pantaenus|
+|zh_CN|圣庞德诺|
+|zh_TW|聖龐德諾|
+|es_ES|San Panteno|
+|it_IT|S. Panteno di Alessandria|
+|pt_BR|São Panteno|
+|ko_KR|성 판테노|
+
+## [1070801] · 源文件第3079行
+
+关联：F043
+
+|语言|译文|
+|---|---|
+|en|Sts. Hesperus and Zoe|
+|zh_CN|圣艾士波和卓娅|
+|zh_TW|聖艾士波和卓婭|
+|es_ES|Santos Héspero y Zoe|
+|it_IT|Santi Espero e Zoe|
+|pt_BR|Santos Héspero e Zoé|
+|ko_KR|성 그림발도|
+
+## [1070802] · 源文件第3089行
+
+关联：F193
+
+|语言|译文|
+|---|---|
+|en|〈缺失；见地区限定说明〉|
+|zh_CN|圣武文印|
+|zh_TW|聖武文印|
+|es_ES|San Pedro Wu Wenyin|
+|it_IT|〈缺失；见地区限定说明〉|
+|pt_BR|〈缺失；见地区限定说明〉|
+|ko_KR|성 피터 우원인|
+
+## [1070901] · 源文件第3096行
+
+关联：F124
+
+|语言|译文|
+|---|---|
+|en|St. Augustine Zhao Rong, priest, and Companions|
+|zh_CN|中华诸圣及真福|
+|zh_TW|中華諸聖及真福|
+|es_ES|Santos Agustín Zhao Rong, presbítero, y compañeros|
+|it_IT|Ss. Agostino Zhao Rong, sacerdote, e compagni (mf)|
+|pt_BR|Santos Agostinho Zao Rong, presbítero, e Companheiros|
+|ko_KR|성 아우구스티노 자오룽 사제와 동료 순교자들|
+
+## [1070902] · 源文件第3106行
+
+关联：F114
+
+|语言|译文|
+|---|---|
+|en|St. Nicholas Pieck and Companions|
+|zh_CN|圣尼各老•比克及其他殉道烈士|
+|zh_TW|聖尼各老•比克及其他殉道烈士|
+|es_ES|San Nicolás Pieck y compañeros|
+|it_IT|San Nicola Pieck e compagni|
+|pt_BR|São Nicolau Pieck e companheiros|
+|ko_KR|성 니콜라오 피크|
+
+## [1071002] · 源文件第3116行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Canute IV of Denmark|
+|zh_CN|圣克努特四世|
+|zh_TW|聖克努特四世|
+|es_ES|San Canuto IV de Dinamarca|
+|it_IT|S. Canuto IV di Danimarca|
+|pt_BR|São Canuto IV da Dinamarca|
+|ko_KR|성 가누토 4세|
+
+## [1071101] · 源文件第3126行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Benedict|
+|zh_CN|圣本笃|
+|zh_TW|聖本篤|
+|es_ES|San Benito|
+|it_IT|S. Benedetto (f)|
+|pt_BR|São Bento|
+|ko_KR|성 베네딕토|
+
+## [1071201] · 源文件第3136行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|The Martyrs of Vietnam (Indo-China)|
+|zh_CN|越南殉道烈士|
+|zh_TW|越南殉道烈士|
+|es_ES|Mártires de Vietnam|
+|it_IT|Martiri del Vietnam|
+|pt_BR|Os Mártires do Vietnã|
+|ko_KR|베트남의 성 순교자들|
+
+## [1071301] · 源文件第3146行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Henry|
+|zh_CN|圣亨利二世|
+|zh_TW|聖亨利二世|
+|es_ES|San Enrique|
+|it_IT|S. Enrico (mf)|
+|pt_BR|Santo Henrique|
+|ko_KR|성 헨리코|
+
+## [1071401] · 源文件第3156行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Camillus de Lellis|
+|zh_CN|圣加弥禄|
+|zh_TW|聖加彌祿|
+|es_ES|San Camilo de Lelis|
+|it_IT|S. Camillo de Lellis (mf)|
+|pt_BR|São Camilo de Lellis|
+|ko_KR|성 감밀로 데 렐리스 사제|
+
+## [1071501] · 源文件第3166行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Bonaventure|
+|zh_CN|圣文都辣|
+|zh_TW|聖文都辣|
+|es_ES|San Buenaventura|
+|it_IT|S. Bonaventura da Bagnoregio|
+|pt_BR|São Boaventura|
+|ko_KR|성 보나벤투라 주교 학자|
+
+## [1071502] · 源文件第3176行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Athanasius of Naples|
+|zh_CN|圣亚大纳削|
+|zh_TW|聖亞大納削|
+|es_ES|San Atanasio de Nápoles|
+|it_IT|Sant'Atanasio di Napoli|
+|pt_BR|Santo Atanásio de Nápoles|
+|ko_KR|성 아타나시오|
+
+## [1071601] · 源文件第3186行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Our Lady of Mount Carmel|
+|zh_CN|加尔默罗圣母|
+|zh_TW|加爾默羅聖母|
+|es_ES|Nuestra Señora del Carmen|
+|it_IT|B. V. Maria del Monte Carmelo (mf)|
+|pt_BR|Nossa Senhora do Carmo|
+|ko_KR|가르멜 산의 복되신 동정 마리아 기념일|
+
+## [1071602] · 源文件第3196行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Mary Magdalene Postel|
+|zh_CN|圣女玛利亚•玛达肋纳•巴斯德|
+|zh_TW|聖女瑪利亞•瑪達肋納•巴斯德|
+|es_ES|Santa María Magdalena Postel|
+|it_IT|Santa Maria Maddalena Postel|
+|pt_BR|Santa Maria Madalena Postel|
+|ko_KR|성녀 마리아 막달레나 포스텔|
+
+## [1071701] · 源文件第3206行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Alexius|
+|zh_CN|圣亚肋叔|
+|zh_TW|聖亞肋叔|
+|es_ES|San Alejo|
+|it_IT|Sant'Alessio|
+|pt_BR|Santo Aleixo|
+|ko_KR|성 알렉시오|
+
+## [1071702] · 源文件第3216行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Marcellina|
+|zh_CN|圣女玛珊利纳|
+|zh_TW|聖女瑪珊利納|
+|es_ES|Santa Marcelina|
+|it_IT|Santa Marcellina|
+|pt_BR|Santa Marcelina|
+|ko_KR|성녀 마르첼리나|
+
+## [1071801] · 源文件第3226行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Frederick of Utrecht|
+|zh_CN|圣威德廉|
+|zh_TW|聖威德廉|
+|es_ES|San Federico de Utrecht|
+|it_IT|S. Federico|
+|pt_BR|São Frederico de Utrecht|
+|ko_KR|성 프레데리코|
+
+## [1071902] · 源文件第3236行
+
+关联：F044
+
+|语言|译文|
+|---|---|
+|en|St. Arsenius the Great|
+|zh_CN|圣亚赛热|
+|zh_TW|聖亞賽熱|
+|es_ES|San Arsenio el Grande|
+|it_IT|Sant'Arsenio il Grande|
+|pt_BR|Santo Arsênio, o Grande|
+|ko_KR|성 마르티노|
+
+## [1072002] · 源文件第3246行
+
+关联：F102
+
+|语言|译文|
+|---|---|
+|en|St. Joseph Barsabbas|
+|zh_CN|圣若瑟•巴尔撒巴|
+|zh_TW|聖若瑟•巴爾撒巴|
+|es_ES|San José Barsabás|
+|it_IT|San Giuseppe Barsabba|
+|pt_BR|São José Barsabás|
+|ko_KR|복자 요셉 바르사빠스|
+
+## [1072004] · 源文件第3256行
+
+关联：F194
+
+|语言|译文|
+|---|---|
+|en|〈缺失；见地区限定说明〉|
+|zh_CN|圣任德芬及同伴殉道|
+|zh_TW|聖任德芬及同伴殉道|
+|es_ES|San León Ignacio Mangin y compañeros|
+|it_IT|〈缺失；见地区限定说明〉|
+|pt_BR|〈缺失；见地区限定说明〉|
+|ko_KR|성 레오 망쟁과 동료 순교자들|
+
+## [1072101] · 源文件第3263行
+
+关联：F150
+
+|语言|译文|
+|---|---|
+|en|St. Lawrence of Brindisi|
+|zh_CN|圣老楞佐•炳德西|
+|zh_TW|聖炳德西|
+|es_ES|San Lorenzo de Brindis|
+|it_IT|S. Lorenzo da Brindisi (mf)|
+|pt_BR|São Lourenço de Brindisi|
+|ko_KR|성 라우렌시오|
+
+## [1072102] · 源文件第3273行
+
+关联：F195
+
+|语言|译文|
+|---|---|
+|en|〈缺失；见地区限定说明〉|
+|zh_CN|圣郭西德|
+|zh_TW|聖郭西德|
+|es_ES|San José Guo Xide|
+|it_IT|〈缺失；见地区限定说明〉|
+|pt_BR|〈缺失；见地区限定说明〉|
+|ko_KR|성 요셉 구오시데|
+
+## [1072201] · 源文件第3280行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Mary Magdalene|
+|zh_CN|圣玛利亚•玛达肋纳|
+|zh_TW|聖瑪利亞•瑪達肋納|
+|es_ES|Santa María Magdalena|
+|it_IT|S. Maria Maddalena (f)|
+|pt_BR|Santa Maria Madalena|
+|ko_KR|성녀 마리아 막달레나 축일|
+
+## [1072301] · 源文件第3290行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Bridget of Sweden|
+|zh_CN|圣彼利日大|
+|zh_TW|聖婦彼利日大|
+|es_ES|Santa Brígida de Suecia|
+|it_IT|S. Brigida (f)|
+|pt_BR|Santa Brígida da Suécia|
+|ko_KR|성녀 브리짓다 수도자|
+
+## [1072402] · 源文件第3300行
+
+关联：F084、F103
+
+|语言|译文|
+|---|---|
+|en|St. Christina the Astonishing|
+|zh_CN|圣克利斯蒂娜|
+|zh_TW|聖女克利斯蒂娜|
+|es_ES|Santa Cristina la Admirable|
+|it_IT|S. Cristina di Bolsena|
+|pt_BR|Santa Cristina, a Admirável|
+|ko_KR|복녀 크리스티나|
+
+## [1072501] · 源文件第3310行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. James, Apostle|
+|zh_CN|圣长雅各伯宗徒|
+|zh_TW|聖長雅各伯宗徒|
+|es_ES|Santiago, Apóstol|
+|it_IT|S. Giacomo, apostolo (f)|
+|pt_BR|São Tiago Maior|
+|ko_KR|성 야고보 사도 축일|
+
+## [1072502] · 源文件第3320行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Christopher|
+|zh_CN|圣基多福|
+|zh_TW|聖基多福|
+|es_ES|San Cristóbal|
+|it_IT|S. Cristoforo|
+|pt_BR|São Cristóvão|
+|ko_KR|성 크리스토포로|
+
+## [1072601] · 源文件第3330行
+
+关联：F162
+
+|语言|译文|
+|---|---|
+|en|Sts. Joachim and Anne|
+|zh_CN|圣妇亚纳及若亚敬(St. Anne & St. Joachim)|
+|zh_TW|聖婦亞納及若亞敬|
+|es_ES|Santos Joaquín y Ana|
+|it_IT|Ss. Gioacchino e Anna (m)|
+|pt_BR|Santos Joaquim e Ana|
+|ko_KR|성 요아킴과 성녀 안나 기념일|
+
+## [1072702] · 源文件第3340行
+
+关联：F082
+
+|语言|译文|
+|---|---|
+|en|St. Pantaleon|
+|zh_CN|圣庞大良|
+|zh_TW|聖龐大良|
+|es_ES|San Pantaleón|
+|it_IT|S. Pantaleone|
+|pt_BR|São Pantaleão|
+|ko_KR|성녀 나탈레온|
+
+## [1072801] · 源文件第3350行
+
+关联：F045、F094
+
+|语言|译文|
+|---|---|
+|en|St. Alphonsa of the Immaculate Conception|
+|zh_CN|真福亚尔丰索|
+|zh_TW|真福亞爾豐索|
+|es_ES|Santa Alfonsa de la Inmaculada Concepción|
+|it_IT|Sant'Alfonsa dell'Immacolata Concezione|
+|pt_BR|Santa Alfonsa da Imaculada Conceição|
+|ko_KR|성 나자리오|
+
+## [1072802] · 源文件第3360行
+
+关联：F196
+
+|语言|译文|
+|---|---|
+|en|〈缺失；见地区限定说明〉|
+|zh_CN|圣陈昌品及同伴|
+|zh_TW|聖陳昌品及同伴|
+|es_ES|San Manuel Chen Changpin y compañeros|
+|it_IT|〈缺失；见地区限定说明〉|
+|pt_BR|〈缺失；见地区限定说明〉|
+|ko_KR|성 엠마누엘 천창핀과 동료 순교자들|
+
+## [1072901] · 源文件第3367行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Sts. Martha, Mary and Lazarus|
+|zh_CN|圣玛尔大、圣玛利亚及圣拉匝禄|
+|zh_TW|聖瑪爾大、聖瑪利亞及聖拉匝祿|
+|es_ES|Santa Marta, María y Lázaro|
+|it_IT|Ss. Marta, Maria e Lazzaro (m)|
+|pt_BR|Santa Marta, Maria e Lázaro|
+|ko_KR|성녀 마르타, 마리아, 라자로 기념일|
+
+## [1073001] · 源文件第3377行
+
+关联：F168
+
+|语言|译文|
+|---|---|
+|en|St. Peter Chrysologus|
+|zh_CN|圣伯多禄•金言|
+|zh_TW|聖伯多祿金言|
+|es_ES|San Pedro Crisólogo|
+|it_IT|S. Pietro Crisologo (mf)|
+|pt_BR|São Pedro Crisólogo|
+|ko_KR|성〈TAB〉 베드로 크리솔로고|
+
+## [1073101] · 源文件第3387行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Ignatius of Loyola|
+|zh_CN|圣依纳爵•罗耀拉|
+|zh_TW|聖依納爵•羅耀拉|
+|es_ES|San Ignacio de Loyola|
+|it_IT|S. Ignazio di Loyola (m)|
+|pt_BR|Santo Inácio de Loyola|
+|ko_KR|성 이냐시오 데 로욜라 사제 기념일|
+
+## [1080101] · 源文件第3397行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Alphonsus Liguori|
+|zh_CN|圣亚丰索|
+|zh_TW|聖亞豐索|
+|es_ES|San Alfonso María de Ligorio|
+|it_IT|S. Alfonso Maria de' Liguori (m)|
+|pt_BR|Santo Afonso Maria de Ligório|
+|ko_KR|성 알폰소 마리아 데 리구오리 주교 학자 기념일|
+
+## [1080201] · 源文件第3407行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Eusebius of Vercelli|
+|zh_CN|圣欧瑟伯|
+|zh_TW|聖歐瑟伯|
+|es_ES|San Eusebio de Vercelli|
+|it_IT|S. Eusebio di Vercelli (mf)|
+|pt_BR|Santo Eusébio de Vercelli|
+|ko_KR|성 에우세비오 주교|
+
+## [1080301] · 源文件第3417行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Waltheof of Melrose|
+|zh_CN|圣华旦|
+|zh_TW|聖華旦|
+|es_ES|San Walteof|
+|it_IT|San Valteno|
+|pt_BR|São Valteof|
+|ko_KR|성 발테오포|
+
+## [1080302] · 源文件第3427行
+
+关联：F095
+
+|语言|译文|
+|---|---|
+|en|St. Peter Julian Eymard|
+|zh_CN|真福伯多禄•儒里安•爱麦|
+|zh_TW|真福伯多祿•儒里安•愛麥|
+|es_ES|San Pedro Julián Eymard|
+|it_IT|San Pietro Giuliano Eymard|
+|pt_BR|São Pedro Julião Eymard|
+|ko_KR|성 베드로|
+
+## [1080401] · 源文件第3437行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. John Vianney (Curé of Ars)|
+|zh_CN|圣若翰•维雅纳|
+|zh_TW|聖若翰•維雅納|
+|es_ES|San Juan María Vianney (Cura de Ars)|
+|it_IT|S. Giovanni Maria Vianney (m)|
+|pt_BR|São João Maria Vianney|
+|ko_KR|성 요한 마리아 비안네 사제 기념일|
+
+## [1080501] · 源文件第3447行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Dedication of the Basilica of St. Mary Major|
+|zh_CN|罗马圣母大殿奉献日|
+|zh_TW|羅馬聖母大殿奉獻日|
+|es_ES|Dedicación de la Basílica de Santa María la Mayor|
+|it_IT|Dedicazione della Basilica di Santa Maria Maggiore|
+|pt_BR|Dedicação da Basílica de Santa Maria Maior|
+|ko_KR|성모 대성전 봉헌|
+
+## [1080502] · 源文件第3457行
+
+关联：F046
+
+|语言|译文|
+|---|---|
+|en|St. Afra|
+|zh_CN|圣亚勿拉|
+|zh_TW|聖婦亞勿拉|
+|es_ES|Santa Afra|
+|it_IT|Sant'Afra|
+|pt_BR|Santa Afra|
+|ko_KR|성녀 논나|
+
+## [1080601] · 源文件第3467行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|The Transfiguration of the Lord|
+|zh_CN|耶稣显圣容|
+|zh_TW|耶穌顯聖容|
+|es_ES|Transfiguración del Señor|
+|it_IT|Trasfigurazione del Signore (f)|
+|pt_BR|Transfiguração do Senhor|
+|ko_KR|주님 거룩한 변모 축일|
+
+## [1080701] · 源文件第3477行
+
+关联：F115、F121
+
+|语言|译文|
+|---|---|
+|en|St. Sixtus II and Companions|
+|zh_CN|圣西斯笃二世|
+|zh_TW|聖西斯督二世|
+|es_ES|San Sixto II y compañeros|
+|it_IT|Ss. Sisto II e compagni (mf)|
+|pt_BR|São Sisto II e companheiros|
+|ko_KR|성 식스토 2세|
+
+## [1080702] · 源文件第3487行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Cajetan|
+|zh_CN|圣加耶当|
+|zh_TW|聖加耶當|
+|es_ES|San Cayetano|
+|it_IT|S. Gaetano da Thiene (mf)|
+|pt_BR|São Caetano|
+|ko_KR|성 가예타노|
+
+## [1080801] · 源文件第3497行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Dominic|
+|zh_CN|圣多明我|
+|zh_TW|聖多明我|
+|es_ES|Santo Domingo|
+|it_IT|S. Domenico Guzman (m)|
+|pt_BR|São Domingos|
+|ko_KR|성 도미니코 사제|
+
+## [1080901] · 源文件第3507行
+
+关联：F047
+
+|语言|译文|
+|---|---|
+|en|St. Oswald of Northumbria|
+|zh_CN|圣奥斯华|
+|zh_TW|聖奧斯華|
+|es_ES|San Osvaldo de Northumbria|
+|it_IT|Sant'Osvaldo di Northumbria|
+|pt_BR|Santo Osvaldo da Nortúmbria|
+|ko_KR|성녀 데레사 베네딕타(십자가의)|
+
+## [1080903] · 源文件第3517行
+
+关联：F139
+
+|语言|译文|
+|---|---|
+|en|St. Teresa Benedicta of the Cross|
+|zh_CN|圣十字德肋撒•本笃|
+|zh_TW|聖十字德肋撒•本篤|
+|es_ES|Santa Teresa Benedicta de la Cruz|
+|it_IT|Santa Teresa Benedetta della Croce|
+|pt_BR|Santa Teresa Bento da Cruz|
+|ko_KR|십자가의 성녀 테레사 베네딕타 동정 순교자|
+
+## [1081001] · 源文件第3527行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Lawrence, Deacon and Martyr|
+|zh_CN|圣老楞佐|
+|zh_TW|聖老楞佐|
+|es_ES|San Lorenzo, Diácono y Mártir|
+|it_IT|S. Lorenzo (f)|
+|pt_BR|São Lourenço, Diácono e Mártir|
+|ko_KR|성 라우렌시오 부제 순교자 축일|
+
+## [1081002] · 源文件第3537行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Philomena|
+|zh_CN|圣女菲洛美娜|
+|zh_TW|聖女菲洛美娜|
+|es_ES|Santa Filomena|
+|it_IT|Santa Filomena|
+|pt_BR|Santa Filomena|
+|ko_KR|성녀 필로메나|
+
+## [1081101] · 源文件第3547行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Clare of Assisi|
+|zh_CN|圣女加辣|
+|zh_TW|聖女加辣|
+|es_ES|Santa Clara de Asís|
+|it_IT|S. Chiara d'Assisi (m)|
+|pt_BR|Santa Clara de Assis|
+|ko_KR|성녀 글라라 동정 기념일|
+
+## [1081102] · 源文件第3557行
+
+关联：F048、F096
+
+|语言|译文|
+|---|---|
+|en|St. Peter Faber|
+|zh_CN|真福伯多禄•法华|
+|zh_TW|真福伯多祿•法華|
+|es_ES|San Pedro Fabro|
+|it_IT|San Pietro Favre|
+|pt_BR|São Pedro Faber|
+|ko_KR|성 가우제리코|
+
+## [1081201] · 源文件第3567行
+
+关联：F049
+
+|语言|译文|
+|---|---|
+|en|St. Muredach|
+|zh_CN|圣慕达|
+|zh_TW|聖慕達|
+|es_ES|San Muredach|
+|it_IT|San Muredach|
+|pt_BR|São Muredach|
+|ko_KR|성녀 잔 프란치스카 데 샹탈 수도자|
+
+## [1081202] · 源文件第3577行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Saint Jane Frances de Chantal|
+|zh_CN|圣方济加•尚达尔|
+|zh_TW|聖方濟加•尚達爾|
+|es_ES|Santa Juana Francisca de Chantal|
+|it_IT|S. Giovanna Francesca de Chantal|
+|pt_BR|Santa Joana Francisca de Chantal|
+|ko_KR|성녀 요안나 프란치스카 드 샹탈|
+
+## [1081301] · 源文件第3587行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Sts. Pontian and Hippolytus|
+|zh_CN|圣依玻里多和圣彭谦|
+|zh_TW|聖依玻里多和聖彭謙|
+|es_ES|Santos Ponciano e Hipólito|
+|it_IT|Ss. Ponziano e Ippolito (mf)|
+|pt_BR|São Ponciano e Santo Hipólito|
+|ko_KR|성 폰시아노 교황과 성 히폴리토 사제 순교자|
+
+## [1081402] · 源文件第3597行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Maximilian Kolbe|
+|zh_CN|圣国柏司铎|
+|zh_TW|聖國柏司鐸|
+|es_ES|San Maximiliano Kolbe|
+|it_IT|S. Massimiliano Kolbe (m)|
+|pt_BR|São Maximiliano Kolbe|
+|ko_KR|성 막시밀리아노 마리아 콜베|
+
+## [1081403] · 源文件第3607行
+
+关联：F050
+
+|语言|译文|
+|---|---|
+|en|Vigil of the Assumption|
+|zh_CN|圣母升天节前夕|
+|zh_TW|聖母升天節前夕|
+|es_ES|Vigilia de la Asunción|
+|it_IT|Vigilia dell'Assunzione|
+|pt_BR|Vigília da Assunção|
+|ko_KR|성 데메트리오|
+
+## [1081501] · 源文件第3617行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|The Assumption of the Blessed Virgin Mary|
+|zh_CN|圣母升天节|
+|zh_TW|聖母升天節|
+|es_ES|Asunción de la Virgen María|
+|it_IT|Assunzione della B. V. Maria (s)|
+|pt_BR|Assunção de Nossa Senhora|
+|ko_KR|성모 승천 대축일|
+
+## [1081601] · 源文件第3627行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Stephen of Hungary|
+|zh_CN|圣斯德望（匈牙利）|
+|zh_TW|聖斯德望國王|
+|es_ES|San Esteban de Hungría|
+|it_IT|S. Stefano d'Ungheria (mf)|
+|pt_BR|Santo Estêvão da Hungria|
+|ko_KR|성 스테파노|
+
+## [1081602] · 源文件第3637行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Roch|
+|zh_CN|圣洛克|
+|zh_TW|聖洛克|
+|es_ES|San Roque|
+|it_IT|S. Rocco|
+|pt_BR|São Roque|
+|ko_KR|성 로코|
+
+## [1081701] · 源文件第3647行
+
+关联：F051
+
+|语言|译文|
+|---|---|
+|en|St. Hyacinth|
+|zh_CN|圣雅钦多|
+|zh_TW|聖雅欽多|
+|es_ES|San Jacinto|
+|it_IT|San Giacinto|
+|pt_BR|São Jacinto|
+|ko_KR|성 드리텔모|
+
+## [1081702] · 源文件第3657行
+
+关联：F140、F158
+
+|语言|译文|
+|---|---|
+|en|St. Jeanne delanoue|
+|zh_CN|圣若翰纳•德拉诺|
+|zh_TW|圣若翰納•德拉諾|
+|es_ES|Santa Juana Delanoue|
+|it_IT|S. Giovanna Delanoue|
+|pt_BR|Santa Joana Delanoue|
+|ko_KR|성녀 요안나 들라누|
+
+## [1081801] · 源文件第3667行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Helena|
+|zh_CN|圣海伦|
+|zh_TW|聖婦海倫|
+|es_ES|Santa Elena|
+|it_IT|S. Elena|
+|pt_BR|Santa Helena|
+|ko_KR|성녀 헬레나|
+
+## [1081802] · 源文件第3677行
+
+关联：F052、F085
+
+|语言|译文|
+|---|---|
+|en|St. Alypius|
+|zh_CN|圣亚尔比|
+|zh_TW|聖亞爾比|
+|es_ES|San Alipio|
+|it_IT|S. Agapito|
+|pt_BR|Santo Alípio|
+|ko_KR|성 라우로|
+
+## [1081901] · 源文件第3687行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. John Eudes|
+|zh_CN|圣若望•欧德|
+|zh_TW|聖若望•歐德|
+|es_ES|San Juan Eudes|
+|it_IT|S. Giovanni Eudes|
+|pt_BR|São João Eudes|
+|ko_KR|성 요한 에우데스 사제|
+
+## [1082001] · 源文件第3697行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Bernard of Clairvaux|
+|zh_CN|圣伯尔纳铎|
+|zh_TW|聖伯爾納鐸|
+|es_ES|San Bernardo de Claraval|
+|it_IT|S. Bernardo (m)|
+|pt_BR|São Bernardo de Claraval|
+|ko_KR|성 베르나르도 아빠스 학자|
+
+## [1082101] · 源文件第3707行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Pius X|
+|zh_CN|圣比约十世|
+|zh_TW|聖比約十世|
+|es_ES|San Pío X|
+|it_IT|S. Pio X (m)|
+|pt_BR|São Pio X|
+|ko_KR|성 비오 10세 교황|
+
+## [1082201] · 源文件第3717行
+
+关联：F176
+
+|语言|译文|
+|---|---|
+|en|The Queenship of the Blessed Virgin Mary|
+|zh_CN|圣母元后|
+|zh_TW|聖母元后|
+|es_ES|Santa María Virgen, Reina|
+|it_IT|B. V. Maria Regina (mf)|
+|pt_BR|Nossa Senhora Rainha|
+|ko_KR|모후이신 복되신 동정 마리아 기념일|
+
+## [1082301] · 源文件第3727行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Rose of Lima|
+|zh_CN|圣女罗撒（利马）|
+|zh_TW|聖女羅撒|
+|es_ES|Santa Rosa de Lima|
+|it_IT|S. Rosa da Lima (mf)|
+|pt_BR|Santa Rosa de Lima|
+|ko_KR|리마의 성녀 로사 동정|
+
+## [1082302] · 源文件第3737行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Philip Benizi|
+|zh_CN|圣斐理伯•贝尼谛|
+|zh_TW|聖斐理伯•貝尼諦|
+|es_ES|San Felipe Benicio|
+|it_IT|San Filippo Benizi|
+|pt_BR|São Filipe Benício|
+|ko_KR|성 필립보 베니치|
+
+## [1082401] · 源文件第3747行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Bartholomew, Apostle|
+|zh_CN|圣巴尔多禄茂|
+|zh_TW|聖巴爾多祿茂|
+|es_ES|San Bartolomé, Apóstol|
+|it_IT|S. Bartolomeo, apostolo (f)|
+|pt_BR|São Bartolomeu Apóstolo|
+|ko_KR|성 바르톨로메오 사도 축일|
+
+## [1082501] · 源文件第3757行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Louis IX|
+|zh_CN|圣路易|
+|zh_TW|聖路易|
+|es_ES|San Luis de Francia|
+|it_IT|S. Ludovico (Luigi IX) (mf)|
+|pt_BR|São Luís de França|
+|ko_KR|성 루도비코|
+
+## [1082502] · 源文件第3767行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Joseph Calasanz|
+|zh_CN|圣若瑟•加拉桑|
+|zh_TW|聖加拉桑|
+|es_ES|San José de Calasanz|
+|it_IT|S. Giuseppe Calasanzio (mf)|
+|pt_BR|São José de Calasanz|
+|ko_KR|성 요셉 데 갈라산즈|
+
+## [1082601] · 源文件第3777行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Joan Elizabeth Bichier des Ages|
+|zh_CN|圣女依撒伯尔•皮希亚|
+|zh_TW|聖女依撒伯爾•皮希亞|
+|es_ES|Santa Juana Isabel Bichier des Ages|
+|it_IT|Santa Giovanna Elisabetta Bichier des Ages|
+|pt_BR|Santa Joana Isabel Bichier des Ages|
+|ko_KR|성녀 요안나 엘리사벳 비쉬엘|
+
+## [1082602] · 源文件第3787行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Teresa Jornet Ibars|
+|zh_CN|圣德肋撒•若内•依巴斯|
+|zh_TW|聖德肋撒•若內•依巴斯|
+|es_ES|Santa Teresa de Jesús Jornet|
+|it_IT|S. Teresa de Jesús Jornet|
+|pt_BR|Santa Teresa de Jesus Jornet|
+|ko_KR|성녀 테레사 호르넷 이바르스|
+
+## [1082701] · 源文件第3797行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Monica|
+|zh_CN|圣莫尼加|
+|zh_TW|聖婦莫尼加|
+|es_ES|Santa Mónica|
+|it_IT|S. Monica (m)|
+|pt_BR|Santa Mônica|
+|ko_KR|성녀 모니카 기념일|
+
+## [1082801] · 源文件第3807行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Augustine of Hippo|
+|zh_CN|圣奥斯定|
+|zh_TW|聖奧斯定|
+|es_ES|San Agustín de Hipona|
+|it_IT|S. Agostino (m)|
+|pt_BR|Santo Agostinho de Hipona|
+|ko_KR|성 아우구스티노|
+
+## [1082901] · 源文件第3817行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|The Passion of St. John the Baptist|
+|zh_CN|圣若翰洗者蒙难|
+|zh_TW|聖若翰洗者蒙難|
+|es_ES|Martirio de San Juan Bautista|
+|it_IT|Martirio di S. Giovanni Battista (m)|
+|pt_BR|Martírio de São João Batista|
+|ko_KR|성 요한 세례자의 수난 기념일|
+
+## [1083001] · 源文件第3827行
+
+关联：F116
+
+|语言|译文|
+|---|---|
+|en|Sts. Felix and Adauctus|
+|zh_CN|圣斐理、圣亚祷多|
+|zh_TW|聖斐理、聖亞禱多|
+|es_ES|Santos Félix y Adaucto|
+|it_IT|Santi Felice e Adautto|
+|pt_BR|Santos Félix e Adauto|
+|ko_KR|성 아다욱토|
+
+## [1083101] · 源文件第3837行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Raymond Nonnatus|
+|zh_CN|圣赖孟多•农纳都|
+|zh_TW|聖賴孟多•農納都|
+|es_ES|San Ramón Nonato|
+|it_IT|S. Raimondo Nonnato|
+|pt_BR|São Raimundo Nonato|
+|ko_KR|성 라이문도 논나토|
+
+## [1090101] · 源文件第3847行
+
+关联：F053
+
+|语言|译文|
+|---|---|
+|en|St. Giles|
+|zh_CN|圣祺肋|
+|zh_TW|聖祺肋|
+|es_ES|San Gil|
+|it_IT|S. Egidio abate|
+|pt_BR|Santo Egídio|
+|ko_KR|복자 가브라 미카엘|
+
+## [1090103] · 源文件第3857行
+
+关联：F148
+
+|语言|译文|
+|---|---|
+|en|World Day of Prayer for the Care of Creation|
+|zh_CN|照料受造界日|
+|zh_TW|照料受造界日|
+|es_ES|Jornada Mundial de Oración por el Cuidado de la Creación|
+|it_IT|Giornata Mondiale di Preghiera per la Cura del Creato|
+|pt_BR|Dia Mundial de Oração pelo Cuidado da Criação|
+|ko_KR|피조물 보호를 위한 기도의 날|
+
+## [1090201] · 源文件第3867行
+
+关联：F054
+
+|语言|译文|
+|---|---|
+|en|St. William of Roskilde|
+|zh_CN|圣威廉|
+|zh_TW|聖威廉|
+|es_ES|San Guillermo de Roskilde|
+|it_IT|San Guglielmo di Roskilde|
+|pt_BR|São Guilherme de Roskilde|
+|ko_KR|성 갈리스토|
+
+## [1090202] · 源文件第3877行
+
+关联：F055
+
+|语言|译文|
+|---|---|
+|en|Bl. John du Lau and Companions (September Martyrs)|
+|zh_CN|真福若望狄洛及其他殉道烈士|
+|zh_TW|真福若望狄洛及其他殉道烈士|
+|es_ES|Beato Juan du Lau y compañeros|
+|it_IT|Beato Giovanni du Lau e compagni|
+|pt_BR|Beato João du Lau e companheiros|
+|ko_KR|성 갈리스토|
+
+## [1090301] · 源文件第3887行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Gregory the Great|
+|zh_CN|圣额我略一世|
+|zh_TW|聖額我略一世|
+|es_ES|San Gregorio Magno|
+|it_IT|S. Gregorio Magno (m)|
+|pt_BR|São Gregório Magno|
+|ko_KR|성 그레고리오 1세(대)|
+
+## [1090401] · 源文件第3897行
+
+关联：F086、F104
+
+|语言|译文|
+|---|---|
+|en|St. Rose of Viterbo|
+|zh_CN|圣女罗撒•薇台宝|
+|zh_TW|聖女羅撒•薇台寶|
+|es_ES|Santa Rosa de Viterbo|
+|it_IT|S. Rosalia|
+|pt_BR|Santa Rosa de Viterbo|
+|ko_KR|복녀 로사|
+
+## [1090502] · 源文件第3907行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Teresa of Calcutta|
+|zh_CN|圣德肋撒（加尔各答）|
+|zh_TW|聖德肋撒·加爾各答|
+|es_ES|Santa Teresa de Calcuta|
+|it_IT|S. Teresa di Calcutta|
+|pt_BR|Santa Teresa de Calcutá|
+|ko_KR|성녀 데레사|
+
+## [1090601] · 源文件第3917行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Eleutherius|
+|zh_CN|圣爱琉德理|
+|zh_TW|聖愛琉德理|
+|es_ES|San Eleuterio|
+|it_IT|Sant'Eleuterio|
+|pt_BR|Santo Eleutério|
+|ko_KR|성 엘레우테리오|
+
+## [1090701] · 源文件第3927行
+
+关联：F056
+
+|语言|译文|
+|---|---|
+|en|St. Cloud|
+|zh_CN|圣克罗德|
+|zh_TW|聖克羅德|
+|es_ES|San Clodoaldo|
+|it_IT|San Clodoaldo|
+|pt_BR|São Clodoaldo|
+|ko_KR|성 그라토|
+
+## [1090702] · 源文件第3937行
+
+关联：F117
+
+|语言|译文|
+|---|---|
+|en|Bl. John Duckett and Ralph Corby|
+|zh_CN|真福若望•德盖、赖夫•高比|
+|zh_TW|真福若望•德蓋、賴夫•高比|
+|es_ES|Beatos Juan Duckett y Rodolfo Corby|
+|it_IT|Beati Giovanni Duckett e Ralph Corby|
+|pt_BR|Beatos João Duckett e Ralph Corby|
+|ko_KR|복자 요한 더켓|
+
+## [1090801] · 源文件第3947行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|The Nativity of the Blessed Virgin Mary|
+|zh_CN|圣母诞辰|
+|zh_TW|聖母誕辰|
+|es_ES|Natividad de la Virgen María|
+|it_IT|Natività della B. V. Maria (f)|
+|pt_BR|Natividade de Nossa Senhora|
+|ko_KR|복되신 동정 마리아 탄생 축일|
+
+## [1090901] · 源文件第3957行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Peter Claver|
+|zh_CN|圣伯多禄•格肋凡|
+|zh_TW|聖伯多祿•格肋凡|
+|es_ES|San Pedro Claver|
+|it_IT|S. Pietro Claver|
+|pt_BR|São Pedro Claver|
+|ko_KR|성 페드로 클라베르 사제|
+
+## [1091001] · 源文件第3967行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Nicholas of Tolentino|
+|zh_CN|圣尼各老•多伦定|
+|zh_TW|聖尼各老•多倫定|
+|es_ES|San Nicolás de Tolentino|
+|it_IT|S. Nicola da Tolentino|
+|pt_BR|São Nicolau de Tolentino|
+|ko_KR|성 니콜라오|
+
+## [1091102] · 源文件第3977行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Paphnutius|
+|zh_CN|圣彭诺许|
+|zh_TW|聖彭諾許|
+|es_ES|San Pafnucio|
+|it_IT|San Pafnuzio|
+|pt_BR|São Pafnúcio|
+|ko_KR|성 파프누시오|
+
+## [1091103] · 源文件第3987行
+
+关联：F197
+
+|语言|译文|
+|---|---|
+|en|〈缺失；见地区限定说明〉|
+|zh_CN|圣董文学|
+|zh_TW|聖董文學|
+|es_ES|San Juan Gabriel Perboyre|
+|it_IT|〈缺失；见地区限定说明〉|
+|pt_BR|〈缺失；见地区限定说明〉|
+|ko_KR|성 장 가브리엘 페르보아르|
+
+## [1091201] · 源文件第3994行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|The Most Holy Name of Mary|
+|zh_CN|圣母圣名|
+|zh_TW|聖母聖名|
+|es_ES|Santísimo Nombre de María|
+|it_IT|SS. Nome di Maria (mf)|
+|pt_BR|Santíssimo Nome de Maria|
+|ko_KR|지극히 거룩하신 마리아 성명|
+
+## [1091301] · 源文件第4004行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. John Chrysostom|
+|zh_CN|金口圣若望|
+|zh_TW|金口聖若望|
+|es_ES|San Juan Crisóstomo|
+|it_IT|S. Giovanni Crisostomo (m)|
+|pt_BR|São João Crisóstomo|
+|ko_KR|성 요한 크리소스토모 주교 학자 기념일|
+
+## [1091401] · 源文件第4014行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|The Exaltation of the Holy Cross|
+|zh_CN|光荣十字圣架|
+|zh_TW|光榮十字聖架|
+|es_ES|Exaltación de la Santa Cruz|
+|it_IT|Esaltazione della Santa Croce (f)|
+|pt_BR|Exaltação da Santa Cruz|
+|ko_KR|성십자가 칭양 축일|
+
+## [1091501] · 源文件第4024行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Our Lady of Sorrows|
+|zh_CN|痛苦圣母|
+|zh_TW|痛苦聖母|
+|es_ES|Nuestra Señora de los Dolores|
+|it_IT|B. V. Maria Addolorata (m)|
+|pt_BR|Nossa Senhora das Dores|
+|ko_KR|고통의 성모 마리아 기념일|
+
+## [1091502] · 源文件第4034行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Catherine of Genoa|
+|zh_CN|圣加大利纳•热那亚|
+|zh_TW|聖婦加大利納•熱那亞|
+|es_ES|Santa Catalina de Génova|
+|it_IT|S. Caterina da Genova|
+|pt_BR|Santa Catarina de Gênova|
+|ko_KR|성녀 가타리나|
+
+## [1091601] · 源文件第4044行
+
+关联：F163
+
+|语言|译文|
+|---|---|
+|en|Sts. Cornelius and Cyprian|
+|zh_CN|圣高尔内略及圣西彼廉主教(St. Cornelius & St. Cyprian)|
+|zh_TW|聖高爾內略及聖西彼廉主教|
+|es_ES|Santos Cornelio y Cipriano|
+|it_IT|Ss. Cornelio e Cipriano|
+|pt_BR|São Cornélio e São Cipriano|
+|ko_KR|성 코르넬리오 교황과 성 키프리아노 주교 순교자 기념일|
+
+## [1091701] · 源文件第4054行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Robert Bellarmine|
+|zh_CN|圣罗伯多•贝辣民|
+|zh_TW|聖羅伯多•貝勒明|
+|es_ES|San Roberto Belarmino|
+|it_IT|S. Roberto Bellarmino (mf)|
+|pt_BR|São Roberto Belarmino|
+|ko_KR|벨라르미노의 성 로베르토 주교 학자|
+
+## [1091702] · 源文件第4064行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|The Stigmata of St. Francis of Assisi|
+|zh_CN|圣方济各受五伤痕|
+|zh_TW|聖方濟各受五傷痕|
+|es_ES|Impresión de las Llagas de San Francisco|
+|it_IT|Impressione delle Stimmate di San Francesco|
+|pt_BR|As Chagas de São Francisco|
+|ko_KR|성 프란치스코의 거룩한 상흔 축일|
+
+## [1091801] · 源文件第4074行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Joseph of Cupertino|
+|zh_CN|圣若瑟•古白定|
+|zh_TW|聖若瑟•古白定|
+|es_ES|San José de Cupertino|
+|it_IT|S. Giuseppe da Copertino|
+|pt_BR|São José de Cupertino|
+|ko_KR|성 요셉|
+
+## [1091901] · 源文件第4084行
+
+关联：F126
+
+|语言|译文|
+|---|---|
+|en|St. Januarius|
+|zh_CN|圣雅纳略主教及其他殉道烈士|
+|zh_TW|聖雅納略主教及其他殉道烈士|
+|es_ES|San Jenaro|
+|it_IT|S. Gennaro (mf)|
+|pt_BR|São Januário|
+|ko_KR|성 야누아리오|
+
+## [1092002] · 源文件第4094行
+
+关联：F057
+
+|语言|译文|
+|---|---|
+|en|St. Emily de Rodat|
+|zh_CN|圣爱弥理|
+|zh_TW|聖愛彌理|
+|es_ES|Santa Emilia de Rodat|
+|it_IT|Sant'Emilia de Rodat|
+|pt_BR|Santa Emília de Rodat|
+|ko_KR|성녀 고순이 바르바라|
+
+## [1092003] · 源文件第4104行
+
+关联：F125
+
+|语言|译文|
+|---|---|
+|en|Sts. Andrew Kim Tae-gon, Paul Chong Ha-sang, and Companions|
+|zh_CN|圣金大建及同伴殉道|
+|zh_TW|聖金大建及同伴殉道|
+|es_ES|Santos Andrés Kim Taegon, Pablo Chong Ha-sang y compañeros|
+|it_IT|Ss. Andrea Kim Taegon, Paolo Chong Hasang e compagni (m)|
+|pt_BR|Santos André Kim Taegon, Paulo Chong Ha-sang e companheiros|
+|ko_KR|성 김대건 안드레아 사제와 성 정하상 바오로와 동료 순교자 대축일|
+
+## [1092101] · 源文件第4114行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Matthew, Apostle and Evangelist|
+|zh_CN|圣玛窦|
+|zh_TW|聖瑪竇|
+|es_ES|San Mateo, Apóstol y Evangelista|
+|it_IT|S. Matteo, ap. ev. (f)|
+|pt_BR|São Mateus, Apóstolo e Evangelista|
+|ko_KR|성 마태오 사도 복음사가 축일|
+
+## [1092201] · 源文件第4124行
+
+关联：F058
+
+|语言|译文|
+|---|---|
+|en|St. Thomas of Villanova|
+|zh_CN|圣多默•威拉诺|
+|zh_TW|聖多默•威拉諾|
+|es_ES|Santo Tomás de Villanueva|
+|it_IT|San Tommaso da Villanova|
+|pt_BR|São Tomás de Villanueva|
+|ko_KR|성녀 디냐|
+
+## [1092303] · 源文件第4134行
+
+关联：F159
+
+|语言|译文|
+|---|---|
+|en|St. Pius of Pietrelcina|
+|zh_CN|圣比约•庇特來|
+|zh_TW|聖比約•庇特來|
+|es_ES|San Pío de Pietrelcina|
+|it_IT|S. Pio da Pietrelcina|
+|pt_BR|São Pio de Pietrelcina|
+|ko_KR|성 비오(오상의)|
+
+## [1092401] · 源文件第4144行
+
+关联：F059
+
+|语言|译文|
+|---|---|
+|en|Our Lady of Ransom|
+|zh_CN|圣母赎虏|
+|zh_TW|聖母贖虜|
+|es_ES|Nuestra Señora de la Merced|
+|it_IT|B. V. Maria della Mercede|
+|pt_BR|Nossa Senhora das Mercês|
+|ko_KR|복자 달마시오 모네르|
+
+## [1092402] · 源文件第4154行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Gerard Sagredo|
+|zh_CN|圣吉拉|
+|zh_TW|聖吉拉|
+|es_ES|San Gerardo Sagredo|
+|it_IT|San Gerardo Sagredo|
+|pt_BR|São Gerardo Sagredo|
+|ko_KR|성 제라르도 사그레도|
+
+## [1092502] · 源文件第4164行
+
+关联：F060
+
+|语言|译文|
+|---|---|
+|en|St. Albert of Jerusalem|
+|zh_CN|圣亚尔伯|
+|zh_TW|聖亞爾伯|
+|es_ES|San Alberto de Jerusalén|
+|it_IT|Sant'Alberto di Gerusalemme|
+|pt_BR|Santo Alberto de Jerusalém|
+|ko_KR|성 루포|
+
+## [1092601] · 源文件第4174行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Sts. Cosmas and Damian|
+|zh_CN|圣葛斯默、圣达弥盎|
+|zh_TW|聖葛斯默、聖達彌盎|
+|es_ES|Santos Cosme y Damián|
+|it_IT|Ss. Cosma e Damiano (mf)|
+|pt_BR|São Cosme e São Damião|
+|ko_KR|성 고스마 성 다미아노|
+
+## [1092702] · 源文件第4184行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Vincent de Paul|
+|zh_CN|圣味增爵|
+|zh_TW|聖味增爵|
+|es_ES|San Vicente de Paúl|
+|it_IT|S. Vincenzo de' Paoli (m)|
+|pt_BR|São Vicente de Paulo|
+|ko_KR|성 빈첸시오 드 폴|
+
+## [1092801] · 源文件第4194行
+
+关联：F087
+
+|语言|译文|
+|---|---|
+|en|St. Lorenzo Ruiz and companions|
+|zh_CN|圣文策老|
+|zh_TW|聖文策老、聖老楞佐•盧斯及同伴|
+|es_ES|Santos Lorenzo Ruiz y compañeros|
+|it_IT|Ss. Lorenzo Ruiz, sacerdote, e compagni (mf)|
+|pt_BR|Santos Lourenço Ruiz e Companheiros|
+|ko_KR|성 로렌조 루이스와 동료 순교자|
+
+## [1092901] · 源文件第4204行
+
+关联：F149
+
+|语言|译文|
+|---|---|
+|en|Sts. Michael, Gabriel and Raphael, Archangels|
+|zh_CN|诸圣天使|
+|zh_TW|諸聖天使(聖彌額爾、聖加俾額爾、聖拉法厄爾)|
+|es_ES|Santos Miguel, Gabriel y Rafael|
+|it_IT|Ss. Michele, Gabriele e Raffaele arcangeli (f)|
+|pt_BR|Santos Arcanjos Miguel, Gabriel e Rafael|
+|ko_KR|성 미카엘, 성 가브리엘, 성 라파엘 대천사 축일|
+
+## [1093001] · 源文件第4214行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Jerome|
+|zh_CN|圣热罗尼莫|
+|zh_TW|聖熱羅尼莫|
+|es_ES|San Jerónimo|
+|it_IT|S. Girolamo|
+|pt_BR|São Jerônimo|
+|ko_KR|성 예로니모 사제 학자 기념일|
+
+## [1100101] · 源文件第4224行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Thérèse of the Child Jesus|
+|zh_CN|圣女婴孩耶稣德肋撒|
+|zh_TW|聖女嬰孩耶穌德肋撒|
+|es_ES|Santa Teresa del Niño Jesús|
+|it_IT|S. Teresa di Gesù Bambino (m)|
+|pt_BR|Santa Teresinha do Menino Jesus|
+|ko_KR|아기 예수의 성녀 테레사 동정 학자 기념일|
+
+## [1100201] · 源文件第4234行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|The Holy Guardian Angels|
+|zh_CN|护守天使|
+|zh_TW|護守天使|
+|es_ES|Santos Ángeles Custodios|
+|it_IT|Ss. Angeli Custodi (m)|
+|pt_BR|Santos Anjos da Guarda|
+|ko_KR|수호천사 기념일|
+
+## [1100301] · 源文件第4244行
+
+关联：F061
+
+|语言|译文|
+|---|---|
+|en|The Two Ewalds|
+|zh_CN|依华昆仲|
+|zh_TW|依華昆仲|
+|es_ES|Dos Ewaldos|
+|it_IT|I Due Ewaldi|
+|pt_BR|Os Dois Ewaldos|
+|ko_KR|복자 도미니코 스파다포라|
+
+## [1100401] · 源文件第4254行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Francis of Assisi|
+|zh_CN|圣五伤方济各|
+|zh_TW|聖五傷方濟各|
+|es_ES|San Francisco de Asís|
+|it_IT|S. Francesco d'Assisi (f)|
+|pt_BR|São Francisco de Assis|
+|ko_KR|아시시의 성 프란치스코 기념일|
+
+## [1100501] · 源文件第4264行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Faustina Kowalska|
+|zh_CN|圣女傅天娜|
+|zh_TW|聖女傅天娜|
+|es_ES|Santa Faustina Kowalska|
+|it_IT|S. Faustina Kowalska|
+|pt_BR|Santa Faustina Kowalska|
+|ko_KR|성녀 파우스티나 코발스카|
+
+## [1100504] · 源文件第4274行
+
+关联：F153
+
+|语言|译文|
+|---|---|
+|en|Ember Days of Thanksgiving and Petition|
+|zh_CN|四季感恩祈愿日|
+|zh_TW|四季感恩祈願日|
+|es_ES|Témporas de acción de gracias y de petición|
+|it_IT|Quattro tempora|
+|pt_BR|Quatro Têmporas|
+|ko_KR|추수절(계절제)|
+
+## [1100601] · 源文件第4284行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Bruno|
+|zh_CN|圣勃路诺|
+|zh_TW|聖勃路諾|
+|es_ES|San Bruno|
+|it_IT|S. Bruno (mf)|
+|pt_BR|São Bruno|
+|ko_KR|성 브루노 사제|
+
+## [1100602] · 源文件第4294行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Mary Frances of the Five Wounds|
+|zh_CN|圣女玛利亚•方济加|
+|zh_TW|聖女瑪利亞•方濟加|
+|es_ES|Santa María Francisca de las Cinco Llagas|
+|it_IT|Santa Maria Francesca delle Cinque Piaghe|
+|pt_BR|Santa Maria Francisca das Cinco Chagas|
+|ko_KR|성녀 마리아 프란치스카|
+
+## [1100701] · 源文件第4304行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Our Lady of the Rosary|
+|zh_CN|玫瑰圣母|
+|zh_TW|玫瑰聖母|
+|es_ES|Nuestra Señora del Rosario|
+|it_IT|B. V. Maria del Rosario|
+|pt_BR|Nossa Senhora do Rosário|
+|ko_KR|묵주 기도의 복되신 동정 마리아 기념일|
+
+## [1100802] · 源文件第4314行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Pelagia|
+|zh_CN|圣女白兰佳|
+|zh_TW|聖女白蘭佳|
+|es_ES|Santa Pelagia|
+|it_IT|S. Pelagia|
+|pt_BR|Santa Pelágia|
+|ko_KR|성녀 펠라지아|
+
+## [1100901] · 源文件第4324行
+
+关联：F118
+
+|语言|译文|
+|---|---|
+|en|St. Denis and Companions|
+|zh_CN|圣迪奥尼削及同伴|
+|zh_TW|聖德尼斯(巴黎主教)、聖路帝古、聖愛留德路|
+|es_ES|San Dionisio y compañeros|
+|it_IT|Ss. Dionigi e compagni (mf)|
+|pt_BR|São Dionísio e companheiros|
+|ko_KR|성 디오니시오|
+
+## [1100902] · 源文件第4334行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. John Leonardi|
+|zh_CN|圣若望•良纳弟|
+|zh_TW|聖若望•良納弟|
+|es_ES|San Juan Leonardi|
+|it_IT|S. Giovanni Leonardi (mf)|
+|pt_BR|São João Leonardi|
+|ko_KR|성 요한 레오나르디|
+
+## [1100903] · 源文件第4344行
+
+关联：F141、F142
+
+|语言|译文|
+|---|---|
+|en|St. John Henry Newman|
+|zh_CN|圣若望•亨利•纽曼|
+|zh_TW|聖若望•亨利•紐曼|
+|es_ES|San Juan Henríquez Newman|
+|it_IT|S. Giovanni Enrico Newman|
+|pt_BR|São João Henríquez Newman|
+|ko_KR|성 요한 헨리코(존 헨리) 뉴먼|
+
+## [1101001] · 源文件第4354行
+
+关联：F062
+
+|语言|译文|
+|---|---|
+|en|St. Francis Borgia|
+|zh_CN|圣方济各•玻尔日亚|
+|zh_TW|聖方濟各•玻爾日亞|
+|es_ES|San Francisco de Borja|
+|it_IT|San Francesco Borgia|
+|pt_BR|São Francisco de Borja|
+|ko_KR|성 니콜라오|
+
+## [1101102] · 源文件第4364行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. John XXIII|
+|zh_CN|圣若望二十三世|
+|zh_TW|聖若望二十三世|
+|es_ES|San Juan XXIII|
+|it_IT|S. Giovanni XXIII|
+|pt_BR|São João XXIII|
+|ko_KR|성 요한 23세 교황|
+
+## [1101201] · 源文件第4374行
+
+关联：F063
+
+|语言|译文|
+|---|---|
+|en|St. Wilfrid|
+|zh_CN|圣威弗烈|
+|zh_TW|聖威弗烈|
+|es_ES|San Wilfrido|
+|it_IT|San Vilfrido|
+|pt_BR|São Vilfrido|
+|ko_KR|성녀 돔니나|
+
+## [1101202] · 源文件第4384行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Carlo Acutis|
+|zh_CN|圣卡洛·阿库蒂斯|
+|zh_TW|聖卡洛·阿庫蒂斯|
+|es_ES|San Carlo Acutis|
+|it_IT|S. Carlo Acutis|
+|pt_BR|São Carlos Acutis|
+|ko_KR|성 카를로 아쿠티스|
+
+## [1101203] · 源文件第4394行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Our Lady of the Pillar|
+|zh_CN|柱中圣母|
+|zh_TW|柱中聖母|
+|es_ES|Nuestra Señora del Pilar|
+|it_IT|Nostra Signora del Pilar|
+|pt_BR|Virgem do Pilar|
+|ko_KR|기둥 성모 마리아 기념일|
+
+## [1101301] · 源文件第4404行
+
+关联：F064
+
+|语言|译文|
+|---|---|
+|en|St. Edward the Confessor|
+|zh_CN|圣爱德华|
+|zh_TW|聖愛德華|
+|es_ES|San Eduardo el Confesor|
+|it_IT|Sant'Edoardo il Confessore|
+|pt_BR|Santo Eduardo, o Confessor|
+|ko_KR|성 루벤시오|
+
+## [1101401] · 源文件第4414行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Callistus I|
+|zh_CN|圣加理多一世|
+|zh_TW|聖加利斯督|
+|es_ES|San Calixto I|
+|it_IT|S. Callisto I (mf)|
+|pt_BR|São Calisto I|
+|ko_KR|성 갈리스토 1세|
+
+## [1101501] · 源文件第4424行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Teresa of Jesus (of Avila)|
+|zh_CN|圣女大德肋撒|
+|zh_TW|聖女大德肋撒|
+|es_ES|Santa Teresa de Jesús (de Ávila)|
+|it_IT|S. Teresa di Gesù (d'Avila) (m)|
+|pt_BR|Santa Teresa de Jesus (de Ávila)|
+|ko_KR|예수의 성녀 테레사 동정 학자 기념일|
+
+## [1101601] · 源文件第4434行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Hedwig|
+|zh_CN|圣赫德维|
+|zh_TW|聖婦赫德維|
+|es_ES|Santa Eduvigis|
+|it_IT|S. Edvige|
+|pt_BR|Santa Edviges|
+|ko_KR|성녀 헤드비제스|
+
+## [1101602] · 源文件第4444行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Margaret Mary Alacoque|
+|zh_CN|圣玛加利大•亚拉高|
+|zh_TW|聖女瑪加利大|
+|es_ES|Santa Margarita María Alacoque|
+|it_IT|S. Margherita Maria Alacoque|
+|pt_BR|Santa Margarida Maria Alacoque|
+|ko_KR|성녀 마르가리타 마리아 알라코크|
+
+## [1101701] · 源文件第4454行
+
+关联：F169
+
+|语言|译文|
+|---|---|
+|en|St. Ignatius of Antioch|
+|zh_CN|圣依纳爵•安提约基亚|
+|zh_TW|聖依納爵•安提約基亞|
+|es_ES|San Ignacio de Antioquía|
+|it_IT|S. Ignazio di Antiochia (m)|
+|pt_BR|Santo Inácio de Antioquia|
+|ko_KR|성〈TAB〉이냐시오|
+
+## [1101801] · 源文件第4464行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Luke, Evangelist|
+|zh_CN|圣史路加|
+|zh_TW|聖史路加|
+|es_ES|San Lucas, Evangelista|
+|it_IT|S. Luca, evangelista (f)|
+|pt_BR|São Lucas Evangelista|
+|ko_KR|성 루카 복음사가 축일|
+
+## [1101903] · 源文件第4474行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Paul of the Cross|
+|zh_CN|十字圣保禄|
+|zh_TW|聖十字保祿|
+|es_ES|San Pablo de la Cruz|
+|it_IT|S. Paolo della Croce (mf)|
+|pt_BR|São Paulo da Cruz|
+|ko_KR|성 바오로(십자가의)|
+
+## [1102001] · 源文件第4484行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Maria Bertilla Boscardin|
+|zh_CN|圣女贝蒂拉|
+|zh_TW|聖女貝蒂拉|
+|es_ES|Santa María Bertilla Boscardin|
+|it_IT|S. Maria Bertilla Boscardin|
+|pt_BR|Santa Maria Bertilla Boscardin|
+|ko_KR|성녀 마리아 베르틸라 보스카르딘|
+
+## [1102101] · 源文件第4494行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Hilarion|
+|zh_CN|圣依拉良|
+|zh_TW|聖依拉良|
+|es_ES|San Hilarión|
+|it_IT|Sant'Ilarione|
+|pt_BR|Santo Hilarião|
+|ko_KR|성 힐라리온|
+
+## [1102201] · 源文件第4504行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. John Paul II|
+|zh_CN|圣若望·保禄二世|
+|zh_TW|聖若望·保祿二世|
+|es_ES|San Juan Pablo II|
+|it_IT|S. Giovanni Paolo II|
+|pt_BR|São João Paulo II|
+|ko_KR|성 요한 바오로 2세 교황|
+
+## [1102301] · 源文件第4514行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. John of Capistrano|
+|zh_CN|圣若望•嘉庇当|
+|zh_TW|聖若望•賈必昌|
+|es_ES|San Juan de Capistrano|
+|it_IT|S. Giovanni da Capestrano (mf)|
+|pt_BR|São João de Capistrano|
+|ko_KR|성 요한|
+
+## [1102401] · 源文件第4524行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Anthony Mary Claret|
+|zh_CN|圣安多尼•加烈|
+|zh_TW|聖安多尼•加烈|
+|es_ES|San Antonio María Claret|
+|it_IT|S. Antonio Maria Claret (mf)|
+|pt_BR|Santo Antônio Maria Claret|
+|ko_KR|성 안토니오 마리아 클라렛 주교|
+
+## [1102501] · 源文件第4534行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Sts. Crispin and Crispinian|
+|zh_CN|圣克利斯品、圣克利斯毕|
+|zh_TW|聖克利斯品、聖克利斯畢|
+|es_ES|Santos Crispín y Crispiniano|
+|it_IT|Santi Crispino e Crispiniano|
+|pt_BR|Santos Crispim e Crispiniano|
+|ko_KR|성 크리스피노 성 크리스피니아노|
+
+## [1102601] · 源文件第4544行
+
+关联：F065
+
+|语言|译文|
+|---|---|
+|en|St. Evaristus|
+|zh_CN|圣厄瓦理斯多|
+|zh_TW|聖厄瓦理斯多|
+|es_ES|San Evaristo|
+|it_IT|Sant'Evaristo|
+|pt_BR|São Evaristo|
+|ko_KR|성 가우디오소|
+
+## [1102701] · 源文件第4554行
+
+关联：F066
+
+|语言|译文|
+|---|---|
+|en|St. Frumentius|
+|zh_CN|圣福门舒|
+|zh_TW|聖福門舒|
+|es_ES|San Frumencio|
+|it_IT|San Frumenzio|
+|pt_BR|São Frumêncio|
+|ko_KR|성 가우디오소|
+
+## [1102703] · 源文件第4564行
+
+关联：F067、F198
+
+|语言|译文|
+|---|---|
+|en|〈缺失；见地区限定说明〉|
+|zh_CN|圣施方济及同伴|
+|zh_TW|聖施方濟及同伴|
+|es_ES|San Francisco Serrano y compañeros|
+|it_IT|〈缺失；见地区限定说明〉|
+|pt_BR|〈缺失；见地区限定说明〉|
+|ko_KR|성 가우디오소|
+
+## [1102801] · 源文件第4571行
+
+关联：F170
+
+|语言|译文|
+|---|---|
+|en|Sts. Simon and Jude, Apostles|
+|zh_CN|圣西满、圣达陡|
+|zh_TW|聖西滿、聖達陡|
+|es_ES|Santos Simón y Judas, Apóstoles|
+|it_IT|Ss. Simone e Giuda, apostoli (f)|
+|pt_BR|São Simão e São Judas, Apóstolos|
+|ko_KR|성〈TAB〉시몬 성 유다 타대오 사도 축일|
+
+## [1102901] · 源文件第4581行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Narcissus of Jerusalem|
+|zh_CN|圣南西苏|
+|zh_TW|聖南西蘇|
+|es_ES|San Narciso de Jerusalén|
+|it_IT|San Narciso di Gerusalemme|
+|pt_BR|São Narciso de Jerusalém|
+|ko_KR|성 나르치소|
+
+## [1103002] · 源文件第4591行
+
+关联：F097
+
+|语言|译文|
+|---|---|
+|en|Bl. Angelo of Acri|
+|zh_CN|真福安日洛|
+|zh_TW|真福安日洛|
+|es_ES|Beato Ángel de Acri|
+|it_IT|Beato Angelo d'Acri|
+|pt_BR|Beato Ângelo de Acri|
+|ko_KR|성 안젤로|
+
+## [1103101] · 源文件第4601行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Alphonsus Rodriguez|
+|zh_CN|圣亚方沙•罗德利|
+|zh_TW|聖亞方沙•羅德利|
+|es_ES|San Alonso Rodríguez|
+|it_IT|Sant'Alfonso Rodriguez|
+|pt_BR|Santo Afonso Rodrigues|
+|ko_KR|성 알폰소 로드리게스|
+
+## [1110101] · 源文件第4611行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|All Saints' Day|
+|zh_CN|诸圣节|
+|zh_TW|諸聖節|
+|es_ES|Todos los Santos|
+|it_IT|Tutti i Santi (s)|
+|pt_BR|Todos os Santos|
+|ko_KR|모든 성인의 날 대축일|
+
+## [1110201] · 源文件第4621行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|All Souls' Day|
+|zh_CN|追思亡者|
+|zh_TW|追思亡者|
+|es_ES|Fieles Difuntos|
+|it_IT|Commemorazione di tutti i fedeli defunti|
+|pt_BR|Comemoração de Todos os Fiéis Defuntos|
+|ko_KR|위령의 날|
+
+## [1110301] · 源文件第4631行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Martin de Porres|
+|zh_CN|圣玛尔定•包瑞斯|
+|zh_TW|聖瑪爾定|
+|es_ES|San Martín de Porres|
+|it_IT|S. Martino de Porres (mf)|
+|pt_BR|São Martinho de Porres|
+|ko_KR|성 마르티노 데 포레스 수도자|
+
+## [1110401] · 源文件第4641行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Charles Borromeo|
+|zh_CN|圣嘉禄|
+|zh_TW|聖嘉祿|
+|es_ES|San Carlos Borromeo|
+|it_IT|S. Carlo Borromeo|
+|pt_BR|São Carlos Borromeu|
+|ko_KR|성 가롤로 보로메오|
+
+## [1110501] · 源文件第4651行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Bertilla of Chelles|
+|zh_CN|圣女伯蒂拉|
+|zh_TW|聖女伯蒂拉|
+|es_ES|Santa Bertila de Chelles|
+|it_IT|Santa Bertilla di Chelles|
+|pt_BR|Santa Bertila de Chelles|
+|ko_KR|성녀 베르틸라|
+
+## [1110602] · 源文件第4661行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Leonard of Noblac|
+|zh_CN|圣良纳弟|
+|zh_TW|聖良納弟|
+|es_ES|San Leonardo de Noblat|
+|it_IT|S. Leonardo di Noblac|
+|pt_BR|São Leonardo de Noblac|
+|ko_KR|성 레오나르도|
+
+## [1110603] · 源文件第4671行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Sts. Pedro Poveda and Inocencio Canoura|
+|zh_CN|圣伯多禄•波维达与圣依诺增爵|
+|zh_TW|聖伯多祿•波維達與聖依諾森爵|
+|es_ES|Santos Pedro Poveda e Inocencio de la Inmaculada|
+|it_IT|Santi Pietro Poveda e Innocenzo Canoura|
+|pt_BR|Santos Pedro Poveda e Inocêncio Canoura|
+|ko_KR|성 페드로 포베다와 성 이노센시오|
+
+## [1110701] · 源文件第4681行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Willibrord|
+|zh_CN|圣威利巴|
+|zh_TW|聖威利巴|
+|es_ES|San Willibrordo|
+|it_IT|San Villibrordo|
+|pt_BR|São Vilibrordo|
+|ko_KR|성 빌리브로르도|
+
+## [1110801] · 源文件第4691行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Godfrey of Amiens|
+|zh_CN|圣高弗烈|
+|zh_TW|聖高弗烈|
+|es_ES|San Godofredo de Amiens|
+|it_IT|S. Goffredo|
+|pt_BR|São Godofredo de Amiens|
+|ko_KR|성 고데프리도|
+
+## [1110802] · 源文件第4701行
+
+关联：F105
+
+|语言|译文|
+|---|---|
+|en|Bl. John Duns Scotus|
+|zh_CN|真福若望·董思高|
+|zh_TW|真福若望·董思高|
+|es_ES|Beato Juan Duns Scoto|
+|it_IT|S. Giovanni Duns Scoto|
+|pt_BR|Beato João Duns Escoto|
+|ko_KR|복자 요한 둔스 스코투스|
+
+## [1110901] · 源文件第4711行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|The Dedication of the Lateran Basilica|
+|zh_CN|拉特朗大殿奉献日|
+|zh_TW|拉特朗大殿奉獻日|
+|es_ES|Dedicación de la Basílica de Letrán|
+|it_IT|Dedicazione della Basilica Lateranense (f)|
+|pt_BR|Dedicação da Basílica de Latrão|
+|ko_KR|라테라노 대성전 봉헌 축일|
+
+## [1111001] · 源文件第4721行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Leo the Great|
+|zh_CN|圣良一世|
+|zh_TW|聖良一世|
+|es_ES|San León el Magno|
+|it_IT|S. Leone Magno (m)|
+|pt_BR|São Leão Magno|
+|ko_KR|성 대 레오 교황 학자 기념일|
+
+## [1111101] · 源文件第4731行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Martin of Tours|
+|zh_CN|圣玛尔定|
+|zh_TW|聖瑪爾定|
+|es_ES|San Martín de Tours|
+|it_IT|S. Martino di Tours|
+|pt_BR|São Martinho de Tours|
+|ko_KR|투르의 성 마르티노 주교 기념일|
+
+## [1111201] · 源文件第4741行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Josaphat|
+|zh_CN|圣若撒法|
+|zh_TW|聖若撒法|
+|es_ES|San Josafat|
+|it_IT|S. Giosafat (m)|
+|pt_BR|São Josafá|
+|ko_KR|성 요사팟|
+
+## [1111301] · 源文件第4751行
+
+关联：F068
+
+|语言|译文|
+|---|---|
+|en|St. Stanislaus Kostka|
+|zh_CN|圣达尼老•各斯加|
+|zh_TW|聖達尼老•各斯加|
+|es_ES|San Estanislao Kostka|
+|it_IT|San Stanislao Kostka|
+|pt_BR|São Estanislau Kostka|
+|ko_KR|성 니체포로|
+
+## [1111401] · 源文件第4761行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Laurence O'Toole|
+|zh_CN|圣老楞佐•奥多|
+|zh_TW|聖老楞佐•奧多|
+|es_ES|San Lorenzo O'Toole|
+|it_IT|San Lorenzo O'Toole|
+|pt_BR|São Lourenço O'Toole|
+|ko_KR|성 라우렌시오 오툴|
+
+## [1111501] · 源文件第4771行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Albert the Great|
+|zh_CN|圣大亚尔伯|
+|zh_TW|聖大亞伯爾|
+|es_ES|San Alberto Magno|
+|it_IT|S. Alberto Magno (mf)|
+|pt_BR|Santo Alberto Magno|
+|ko_KR|성 알베르토 학자|
+
+## [1111601] · 源文件第4781行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Margaret of Scotland|
+|zh_CN|圣玛加利大|
+|zh_TW|聖婦瑪加利大|
+|es_ES|Santa Margarita de Escocia|
+|it_IT|S. Margherita di Scozia (mf)|
+|pt_BR|Santa Margarida da Escócia|
+|ko_KR|스코틀랜드의 성녀 마르가리타|
+
+## [1111602] · 源文件第4791行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Gertrude the Great|
+|zh_CN|圣女日多达|
+|zh_TW|聖女日多達|
+|es_ES|Santa Gertrudis Magna|
+|it_IT|S. Gertrude la Grande (mf)|
+|pt_BR|Santa Gertrudes Magna|
+|ko_KR|성녀 제르트루다(대)|
+
+## [1111701] · 源文件第4801行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Elizabeth of Hungary|
+|zh_CN|圣依撒伯尔|
+|zh_TW|聖依撒伯爾|
+|es_ES|Santa Isabel de Hungría|
+|it_IT|S. Elisabetta d'Ungheria|
+|pt_BR|Santa Isabel da Hungria|
+|ko_KR|헝가리의 성녀 엘리사벳 수도자 기념일|
+
+## [1111801] · 源文件第4811行
+
+关联：F178
+
+|语言|译文|
+|---|---|
+|en|The Dedication of the Basilicas of Sts. Peter and Paul|
+|zh_CN|圣伯多禄圣保禄大殿奉献日|
+|zh_TW|聖伯多祿聖保祿大殿奉獻日|
+|es_ES|Dedicación de las Basílicas de San Pedro y San Pablo|
+|it_IT|Dedicazione delle Basiliche dei Ss. Pietro e Paolo (mf)|
+|pt_BR|Dedicação das Basílicas de São Pedro e São Paulo|
+|ko_KR|성 베드로 대성전과 성 바오로 대성전 봉헌 축일|
+
+## [1111902] · 源文件第4821行
+
+关联：F069
+
+|语言|译文|
+|---|---|
+|en|St. Dionysius of Alexandria|
+|zh_CN|圣狄尼削|
+|zh_TW|聖狄尼削|
+|es_ES|San Dionisio de Alejandría|
+|it_IT|San Dionisio di Alessandria|
+|pt_BR|São Dionísio de Alexandria|
+|ko_KR|성 나르세스(대)|
+
+## [1112001] · 源文件第4831行
+
+关联：F070
+
+|语言|译文|
+|---|---|
+|en|St. Felix of Valois|
+|zh_CN|圣斐理斯•瓦洛亚|
+|zh_TW|聖斐理斯•瓦洛亞|
+|es_ES|San Félix de Valois|
+|it_IT|San Felice di Valois|
+|pt_BR|São Félix de Valois|
+|ko_KR|성 그레고리오|
+
+## [1112101] · 源文件第4841行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|The Presentation of the Blessed Virgin Mary|
+|zh_CN|圣母奉献日|
+|zh_TW|聖母奉獻日|
+|es_ES|Presentación de la Virgen María|
+|it_IT|Presentazione della B. V. Maria (m)|
+|pt_BR|Apresentação de Nossa Senhora|
+|ko_KR|복되신 동정 마리아의 자헌 기념일|
+
+## [1112201] · 源文件第4851行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Cecilia|
+|zh_CN|圣女则济利亚|
+|zh_TW|聖女則濟利亞|
+|es_ES|Santa Cecilia|
+|it_IT|S. Cecilia (m)|
+|pt_BR|Santa Cecília|
+|ko_KR|성녀 체칠리아|
+
+## [1112301] · 源文件第4861行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Clement I|
+|zh_CN|圣格肋孟一世|
+|zh_TW|聖格肋孟一世|
+|es_ES|San Clemente I|
+|it_IT|S. Clemente I (mf)|
+|pt_BR|São Clemente I|
+|ko_KR|성 클레멘스 1세|
+
+## [1112302] · 源文件第4871行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Columban|
+|zh_CN|圣高隆庞|
+|zh_TW|聖高隆龐|
+|es_ES|San Columbano|
+|it_IT|S. Colombano (mf)|
+|pt_BR|São Columbano|
+|ko_KR|성 골룸바노|
+
+## [1112401] · 源文件第4881行
+
+关联：F119
+
+|语言|译文|
+|---|---|
+|en|St. Andrew Dung-Lac and Companions|
+|zh_CN|圣陈安勇乐司铎及同伴|
+|zh_TW|聖陳安勇樂司鐸及同伴|
+|es_ES|San Andrés Dung-Lac y compañeros|
+|it_IT|Ss. Andrea Dung-Lac e compagni (m)|
+|pt_BR|Santo André Dung-Lac e companheiros|
+|ko_KR|성 안드레아 둥락|
+
+## [1112402] · 源文件第4891行
+
+关联：F071、F199
+
+|语言|译文|
+|---|---|
+|en|〈缺失；见地区限定说明〉|
+|zh_CN|圣徐德新|
+|zh_TW|聖徐德新|
+|es_ES|San Juan Gabriel Taurin Dufresse|
+|it_IT|〈缺失；见地区限定说明〉|
+|pt_BR|〈缺失；见地区限定说明〉|
+|ko_KR|성 장 가브리엘 페르보아르|
+
+## [1112503] · 源文件第4898行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Saint Catherine of Alexandria|
+|zh_CN|圣加大利纳•亚力山卓|
+|zh_TW|聖加大利納•亞力山卓|
+|es_ES|Santa Catalina de Alejandría|
+|it_IT|S. Caterina di Alessandria (mf)|
+|pt_BR|Santa Catarina de Alexandria|
+|ko_KR|성녀 가타리나|
+
+## [1112601] · 源文件第4908行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Leonard of Port Maurice|
+|zh_CN|圣良纳|
+|zh_TW|聖良納|
+|es_ES|San Leonardo de Puerto Mauricio|
+|it_IT|S. Leonardo da Porto Maurizio|
+|pt_BR|São Leonardo de Porto Maurício|
+|ko_KR|성 레오나르도|
+
+## [1112701] · 源文件第4918行
+
+关联：F072
+
+|语言|译文|
+|---|---|
+|en|St. Virgil of Salzburg|
+|zh_CN|圣维琪尔|
+|zh_TW|聖維琪爾|
+|es_ES|San Virgilio de Salzburgo|
+|it_IT|S. Virgilio|
+|pt_BR|São Virgílio de Salzburgo|
+|ko_KR|성 그레고리오|
+
+## [1112801] · 源文件第4928行
+
+关联：F073
+
+|语言|译文|
+|---|---|
+|en|St. Catherine Laboure|
+|zh_CN|圣女加大利纳•拉布莱|
+|zh_TW|聖女加大利納•拉布萊|
+|es_ES|Santa Catalina Labouré|
+|it_IT|Santa Caterina Labouré|
+|pt_BR|Santa Catarina Labouré|
+|ko_KR|성 루포|
+
+## [1112901] · 源文件第4938行
+
+关联：F074
+
+|语言|译文|
+|---|---|
+|en|St. Stephen the Younger|
+|zh_CN|圣小斯德望|
+|zh_TW|聖斯德望|
+|es_ES|San Esteban el Joven|
+|it_IT|Santo Stefano il Giovane|
+|pt_BR|Santo Estêvão, o Jovem|
+|ko_KR|성 데메트리오|
+
+## [1112903] · 源文件第4948行
+
+关联：F200
+
+|语言|译文|
+|---|---|
+|en|〈缺失；见地区限定说明〉|
+|zh_CN|圣刘瑞廷|
+|zh_TW|聖劉瑞廷|
+|es_ES|San Juan Liu Ruiting|
+|it_IT|〈缺失；见地区限定说明〉|
+|pt_BR|〈缺失；见地区限定说明〉|
+|ko_KR|성 요한 라우타인 순교자|
+
+## [1113001] · 源文件第4955行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Andrew, Apostle|
+|zh_CN|圣安德肋|
+|zh_TW|聖安德肋|
+|es_ES|San Andrés, Apóstol|
+|it_IT|S. Andrea, apostolo (f)|
+|pt_BR|Santo André Apóstolo|
+|ko_KR|성 안드레아 사도 축일|
+
+## [1120101] · 源文件第4965行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Eligius|
+|zh_CN|圣安利日|
+|zh_TW|聖安利日|
+|es_ES|San Eligio|
+|it_IT|S. Eligio|
+|pt_BR|Santo Elígio|
+|ko_KR|성 엘리지오|
+
+## [1120201] · 源文件第4975行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Bibiana|
+|zh_CN|圣女彼彼亚纳|
+|zh_TW|聖女彼彼亞納|
+|es_ES|Santa Bibiana|
+|it_IT|Santa Bibiana|
+|pt_BR|Santa Bibiana|
+|ko_KR|성녀 비비아나|
+
+## [1120301] · 源文件第4985行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Francis Xavier|
+|zh_CN|圣方济各•沙勿略|
+|zh_TW|聖方濟各•沙勿略|
+|es_ES|San Francisco Javier|
+|it_IT|S. Francesco Saverio (m)|
+|pt_BR|São Francisco Xavier|
+|ko_KR|성 프란치스코 하비에르 사제 기념일|
+
+## [1120401] · 源文件第4995行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. John Damascene|
+|zh_CN|圣若望•达玛森|
+|zh_TW|聖若望•達瑪森|
+|es_ES|San Juan Damasceno|
+|it_IT|S. Giovanni Damasceno (mf)|
+|pt_BR|São João Damasceno|
+|ko_KR|성 요한|
+
+## [1120501] · 源文件第5005行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Sabas|
+|zh_CN|圣撒巴|
+|zh_TW|聖撒巴|
+|es_ES|San Sabas|
+|it_IT|S. Saba|
+|pt_BR|São Sabas|
+|ko_KR|성 사바|
+
+## [1120601] · 源文件第5015行
+
+关联：F177
+
+|语言|译文|
+|---|---|
+|en|St. Nicholas|
+|zh_CN|圣尼各老|
+|zh_TW|聖尼各老|
+|es_ES|San Nicolás|
+|it_IT|S. Nicola (m)|
+|pt_BR|São Nicolau|
+|ko_KR|성 니콜라오 주교|
+
+## [1120701] · 源文件第5025行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Ambrose|
+|zh_CN|圣盎博罗削|
+|zh_TW|聖盎博羅削|
+|es_ES|San Ambrosio|
+|it_IT|S. Ambrogio (m)|
+|pt_BR|Santo Ambrósio|
+|ko_KR|성 암브로시오|
+
+## [1120801] · 源文件第5035行
+
+关联：F172
+
+|语言|译文|
+|---|---|
+|en|The Immaculate Conception of the Blessed Virgin Mary|
+|zh_CN|圣母无原罪始胎|
+|zh_TW|聖母無原罪始胎|
+|es_ES|Inmaculada Concepción de María|
+|it_IT|Immacolata Concezione della B. V. Maria (s)|
+|pt_BR|Imaculada Conceição de Nossa Senhora|
+|ko_KR|한국 교회의 수호자 원죄 없이 잉태되신 복되신 동정 마리아 대축일|
+
+## [1120901] · 源文件第5045行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Peter Fourier|
+|zh_CN|圣伯多禄•傅雷|
+|zh_TW|聖伯多祿•傅雷|
+|es_ES|San Pedro Fourier|
+|it_IT|San Pietro Fourier|
+|pt_BR|São Pedro Fourier|
+|ko_KR|성 베드로 푸리에|
+
+## [1121001] · 源文件第5055行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Our Lady of Loreto|
+|zh_CN|洛雷托圣母|
+|zh_TW|洛雷托聖母|
+|es_ES|Nuestra Señora de Loreto|
+|it_IT|B. V. Maria di Loreto (mf)|
+|pt_BR|Nossa Senhora de Loreto|
+|ko_KR|로레토의 복되신 동정 마리아 기념일|
+
+## [1121101] · 源文件第5065行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Damasus I|
+|zh_CN|圣达玛稣一世|
+|zh_TW|聖達瑪穌一世|
+|es_ES|San Dámaso I|
+|it_IT|S. Damaso I|
+|pt_BR|São Dâmaso I|
+|ko_KR|성 다마소 1세 교황|
+
+## [1121201] · 源文件第5075行
+
+关联：F181
+
+|语言|译文|
+|---|---|
+|en|Our Lady of Guadalupe|
+|zh_CN|瓜达卢佩圣母|
+|zh_TW|瓜達盧佩聖母|
+|es_ES|Nuestra Señora de Guadalupe|
+|it_IT|B. V. Maria di Guadalupe (mf)|
+|pt_BR|Nossa Senhora de Guadalupe|
+|ko_KR|과달루페의 복되신 동정 마리아 기념일|
+
+## [1121202] · 源文件第5085行
+
+关联：F075
+
+|语言|译文|
+|---|---|
+|en|St. Jane Frances de Chantal|
+|zh_CN|圣若翰纳•方济加•尚达尔|
+|zh_TW|聖婦若翰納•方濟加•尚達爾|
+|es_ES|Santa Juana Francisca de Chantal|
+|it_IT|Santa Giovanna Francesca de Chantal|
+|pt_BR|Santa Joana Francisca de Chantal|
+|ko_KR|성 도나토|
+
+## [1121301] · 源文件第5095行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Lucy|
+|zh_CN|圣女路济亚|
+|zh_TW|聖女路濟亞|
+|es_ES|Santa Lucía|
+|it_IT|S. Lucia (m)|
+|pt_BR|Santa Luzia|
+|ko_KR|성녀 루치아|
+
+## [1121401] · 源文件第5105行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. John of the Cross|
+|zh_CN|圣若望“由十字架者”|
+|zh_TW|聖若望“由十字架者”|
+|es_ES|San Juan de la Cruz|
+|it_IT|S. Giovanni della Croce (m)|
+|pt_BR|São João da Cruz|
+|ko_KR|십자가의 성 요한 사제 학자 기념일|
+
+## [1121502] · 源文件第5115行
+
+关联：F076
+
+|语言|译文|
+|---|---|
+|en|St. Nino|
+|zh_CN|圣女尼诺|
+|zh_TW|聖女尼諾|
+|es_ES|Santa Nino|
+|it_IT|Santa Nino|
+|pt_BR|Santa Nino|
+|ko_KR|성녀 마리아 크로치피사 디 로사|
+
+## [1121503] · 源文件第5125行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Maria Crocifissa di Rosa|
+|zh_CN|圣女玛利亚•罗撒|
+|zh_TW|聖女瑪利亞•羅撒|
+|es_ES|Santa María Crucifija di Rosa|
+|it_IT|Santa Maria Crocifissa Di Rosa|
+|pt_BR|Santa Maria Crucificada di Rosa|
+|ko_KR|성녀 마리아 크로치피사 디 로사|
+
+## [1121601] · 源文件第5135行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Adelaide of Italy|
+|zh_CN|圣亚德莱|
+|zh_TW|聖婦亞德萊|
+|es_ES|Santa Adelaida de Italia|
+|it_IT|S. Adelaide|
+|pt_BR|Santa Adelaide|
+|ko_KR|성녀 아델라이드|
+
+## [1121702] · 源文件第5145行
+
+关联：F077
+
+|语言|译文|
+|---|---|
+|en|St. Olympias|
+|zh_CN|圣妇奥林比亚|
+|zh_TW|聖婦奧林比亞|
+|es_ES|Santa Olimpia|
+|it_IT|Santa Olimpia|
+|pt_BR|Santa Olímpia|
+|ko_KR|성녀 베가|
+
+## [1121703] · 源文件第5155行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Advent Weekday December 17|
+|zh_CN|将临期 12月17日|
+|zh_TW|將臨期 12月17日|
+|es_ES|Feria de Adviento 17 de diciembre|
+|it_IT|Ferie di Avvento 17 dicembre|
+|pt_BR|Feria do Advento 17 de dezembro|
+|ko_KR|대림 시기 12월 17일|
+
+## [1121801] · 源文件第5165行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Winebald|
+|zh_CN|圣威纳巴|
+|zh_TW|聖威納巴|
+|es_ES|San Winebaldo|
+|it_IT|San Vunibaldo|
+|pt_BR|São Winebaldo|
+|ko_KR|성 비니발도|
+
+## [1121803] · 源文件第5175行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Advent Weekday December 18|
+|zh_CN|将临期 12月18日|
+|zh_TW|將臨期 12月18日|
+|es_ES|Feria de Adviento 18 de diciembre|
+|it_IT|Ferie di Avvento 18 dicembre|
+|pt_BR|Feria do Advento 18 de dezembro|
+|ko_KR|대림 시기 12월 18일|
+
+## [1121901] · 源文件第5185行
+
+关联：F078、F127
+
+|语言|译文|
+|---|---|
+|en|St. Nemesius|
+|zh_CN|圣南米修及其他殉道烈士|
+|zh_TW|聖南米修及其他殉道烈士|
+|es_ES|San Nemesio|
+|it_IT|San Nemesio|
+|pt_BR|São Nemésio|
+|ko_KR|성 그레고리오|
+
+## [1121902] · 源文件第5195行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Advent Weekday December 19|
+|zh_CN|将临期 12月19日|
+|zh_TW|將臨期 12月19日|
+|es_ES|Feria de Adviento 19 de diciembre|
+|it_IT|Ferie di Avvento 19 dicembre|
+|pt_BR|Feria do Advento 19 de dezembro|
+|ko_KR|대림 시기 12월 19일|
+
+## [1122001] · 源文件第5205行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Dominic of Silos|
+|zh_CN|圣多明我•西洛|
+|zh_TW|聖多明我•西洛|
+|es_ES|Santo Domingo de Silos|
+|it_IT|San Domenico di Silos|
+|pt_BR|São Domingos de Silos|
+|ko_KR|성 도미니코|
+
+## [1122002] · 源文件第5215行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Advent Weekday December 20|
+|zh_CN|将临期 12月20日|
+|zh_TW|將臨期 12月20日|
+|es_ES|Feria de Adviento 20 de diciembre|
+|it_IT|Ferie di Avvento 20 dicembre|
+|pt_BR|Feria do Advento 20 de dezembro|
+|ko_KR|대림 시기 12월 20일|
+
+## [1122101] · 源文件第5225行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Peter Canisius|
+|zh_CN|圣伯多禄•加尼削|
+|zh_TW|聖伯多祿•加尼削|
+|es_ES|San Pedro Canisio|
+|it_IT|S. Pietro Canisio (mf)|
+|pt_BR|São Pedro Canísio|
+|ko_KR|성 카니시오 사제 학자|
+
+## [1122102] · 源文件第5235行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Advent Weekday December 21|
+|zh_CN|将临期 12月21日|
+|zh_TW|將臨期 12月21日|
+|es_ES|Feria de Adviento 21 de diciembre|
+|it_IT|Ferie di Avvento 21 dicembre|
+|pt_BR|Feria do Advento 21 de dezembro|
+|ko_KR|대림 시기 12월 21일|
+
+## [1122201] · 源文件第5245行
+
+关联：F143
+
+|语言|译文|
+|---|---|
+|en|St. Frances Xavier Cabrini|
+|zh_CN|圣女方济加|
+|zh_TW|聖女方濟加|
+|es_ES|Santa Francisca Javier Cabrini|
+|it_IT|S. Francesca Saverio Cabrini|
+|pt_BR|Santa Francisca Xavier Cabrini|
+|ko_KR|성녀 프란치스카 사베리아 카브리니|
+
+## [1122202] · 源文件第5255行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Advent Weekday December 22|
+|zh_CN|将临期 12月22日|
+|zh_TW|將臨期 12月22日|
+|es_ES|Feria de Adviento 22 de diciembre|
+|it_IT|Ferie di Avvento 22 dicembre|
+|pt_BR|Feria do Advento 22 de dezembro|
+|ko_KR|대림 시기 12월 22일|
+
+## [1122301] · 源文件第5265行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. John of Kanty|
+|zh_CN|圣若望根地|
+|zh_TW|聖若望根地|
+|es_ES|San Juan de Kety|
+|it_IT|S. Giovanni da Kety|
+|pt_BR|São João de Kety|
+|ko_KR|성 요한 케티 사제|
+
+## [1122302] · 源文件第5275行
+
+关联：F144
+
+|语言|译文|
+|---|---|
+|en|Advent Weekday December 23|
+|zh_CN|将临期 12月23日|
+|zh_TW|將臨期 12月23日|
+|es_ES|Ferie de Adviento 23 de diciembre|
+|it_IT|Feria di Avvento 23 dicembre|
+|pt_BR|Feria do Advento 23 de dezembro|
+|ko_KR|대림 시기 12월 23일|
+
+## [1122401] · 源文件第5285行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|Christmas Eve|
+|zh_CN|耶稣圣诞节望日|
+|zh_TW|耶穌聖誕節望日|
+|es_ES|Nochebuena|
+|it_IT|Vigilia di Natale|
+|pt_BR|Véspera de Natal|
+|ko_KR|주님 성탄 대축일 전야|
+
+## [1122501] · 源文件第5295行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|The Nativity of the Lord (Christmas)|
+|zh_CN|耶稣圣诞|
+|zh_TW|耶穌聖誕|
+|es_ES|Natividad del Señor (Navidad)|
+|it_IT|Natale del Signore (s)|
+|pt_BR|Natal do Senhor|
+|ko_KR|주님 성탄 대축일|
+
+## [1122601] · 源文件第5305行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Stephen, The First Martyr|
+|zh_CN|圣斯德望|
+|zh_TW|聖斯德望|
+|es_ES|San Esteban, Protomártir|
+|it_IT|S. Stefano, primo martire (f)|
+|pt_BR|Santo Estêvão, Protomártir|
+|ko_KR|성 스테파노 첫 순교자 축일|
+
+## [1122701] · 源文件第5315行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. John, Apostle and Evangelist|
+|zh_CN|圣若望|
+|zh_TW|聖若望|
+|es_ES|San Juan, Apóstol y Evangelista|
+|it_IT|S. Giovanni, ap. ev. (f)|
+|pt_BR|São João, Apóstolo e Evangelista|
+|ko_KR|성 요한 사도 복음사가 축일|
+
+## [1122801] · 源文件第5325行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|The Holy Innocents, Martyrs|
+|zh_CN|诸圣婴孩|
+|zh_TW|諸聖嬰孩|
+|es_ES|Santos Inocentes|
+|it_IT|Ss. Innocenti, martiri (f)|
+|pt_BR|Santos Inocentes, Mártires|
+|ko_KR|죄 없는 아기 순교자들 축일|
+
+## [1122901] · 源文件第5335行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Thomas Becket|
+|zh_CN|圣多默•贝凯|
+|zh_TW|聖多默•貝凱|
+|es_ES|Santo Tomás Becket|
+|it_IT|S. Tommaso Becket|
+|pt_BR|São Tomás Becket|
+|ko_KR|성 토마스 베케트|
+
+## [1122902] · 源文件第5345行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|5th Day within the Octave of the Nativity|
+|zh_CN|圣诞节庆期第五日|
+|zh_TW|聖誕節慶期第五日|
+|es_ES|V día de la Octava de Navidad|
+|it_IT|V giorno fra l'Ottava di Natale|
+|pt_BR|5º dia da Oitava de Natal|
+|ko_KR|성탄 팔일 축일 제5일|
+
+## [1123001] · 源文件第5355行
+
+关联：F079、F128
+
+|语言|译文|
+|---|---|
+|en|St. Sabinus of Spoleto|
+|zh_CN|圣撒比诺等殉道者|
+|zh_TW|聖撒比諾等殉道者|
+|es_ES|San Sabino de Spoleto|
+|it_IT|San Sabino di Spoleto|
+|pt_BR|São Sabino de Spoleto|
+|ko_KR|성 도나토|
+
+## [1123002] · 源文件第5365行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|6th Day within the Octave of the Nativity|
+|zh_CN|圣诞节庆期第六日|
+|zh_TW|聖誕節慶期第六日|
+|es_ES|VI día de la Octava de Navidad|
+|it_IT|VI giorno fra l'Ottava di Natale|
+|pt_BR|6º dia da Oitava de Natal|
+|ko_KR|성탄 팔일 축일 제6일|
+
+## [1123101] · 源文件第5375行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|St. Sylvester I|
+|zh_CN|圣西尔物斯德肋|
+|zh_TW|聖西爾物斯德肋|
+|es_ES|San Silvestre I|
+|it_IT|S. Silvestro I|
+|pt_BR|São Silvestre I|
+|ko_KR|성 실베스테르 1세 교황|
+
+## [1123103] · 源文件第5385行
+
+关联：本轮未列出发现
+
+|语言|译文|
+|---|---|
+|en|7th Day within the Octave of the Nativity|
+|zh_CN|圣诞节庆期第七日|
+|zh_TW|聖誕節慶期第七日|
+|es_ES|VII día de la Octava de Navidad|
+|it_IT|VII giorno fra l'Ottava di Natale|
+|pt_BR|7º dia da Oitava de Natal|
+|ko_KR|성탄 팔일 축일 제7일|
+
