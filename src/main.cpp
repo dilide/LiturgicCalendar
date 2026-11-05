@@ -681,8 +681,8 @@ void export_to_ical()
                         descriptionEscaped = ReplaceAll(descriptionEscaped, ";", "\\;");
 
                         of << "BEGIN:VEVENT" << "\r\n";
-                        // 确保 UID 唯一：日期 + 语言 + 节日索引/代码
-                        of << "UID:" << dateStr << "_" << (cell.code > 0 ? std::to_string(cell.code) : std::to_string(cellIdx)) << "_" << langStr << "@cathassist.org" << "\r\n";
+                        // 确保 UID 唯一：日期 + 当天事件索引 + 语言
+                        of << "UID:" << dateStr << "_" << cellIdx << "_" << langStr << "@cathassist.org" << "\r\n";
                         of << "DTSTAMP:20260319T091850Z" << "\r\n";
                         of << "DTSTART;VALUE=DATE:" << dateStr << "\r\n";
                         of << "DTEND;VALUE=DATE:" << dateEndStr << "\r\n";
