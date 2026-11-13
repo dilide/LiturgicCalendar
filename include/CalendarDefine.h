@@ -784,14 +784,17 @@ namespace CathAssist
         }
 
         static std::string intToRoman(int num) {
+            if (num <= 0 || num >= 4000) {
+                return "";
+            }
             // 千位 (0, 1000, 2000, 3000)
-            std::string thousands[] = {"", "M", "MM", "MMM"};
+            static const std::string thousands[] = {"", "M", "MM", "MMM"};
             // 百位 (0, 100, 200, ... 900)
-            std::string hundreds[]  = {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
+            static const std::string hundreds[]  = {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
             // 十位 (0, 10, 20, ... 90)
-            std::string tens[]      = {"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"};
+            static const std::string tens[]      = {"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"};
             // 个位 (0, 1, 2, ... 9)
-            std::string ones[]      = {"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
+            static const std::string ones[]      = {"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
 
             // 直接通过取模和除法计算每一位的索引并拼接
             return thousands[num / 1000] + 
@@ -800,7 +803,80 @@ namespace CathAssist
                 ones[num % 10];
         }
 
+        static std::string intToChinese(int num, bool traditional = false) {
+            if (num < 0) {
+                return "";
+            }
+            if (num == 0) {
+                return "零";
+            }
+
+            static const std::string digits[] = {"零", "一", "二", "三", "四", "五", "六", "七", "八", "九"};
+            static const std::string unitChars[] = {"", "十", "百", "千"};
+            const std::string sectionUnits[] = {"", traditional ? "萬" : "万", traditional ? "億" : "亿"};
+
+            int chunks[3] = {0, 0, 0};
+            int chunkCount = 0;
+            int temp = num;
+            while (temp > 0 && chunkCount < 3) {
+                chunks[chunkCount++] = temp % 10000;
+                temp /= 10000;
+            }
+
+            std::string result;
+            bool isFirstChunk = true;
+            bool needZero = false;
+
+            for (int idx = chunkCount - 1; idx >= 0; --idx) {
+                int chunk = chunks[idx];
+                if (chunk == 0) {
+                    needZero = true;
+                    continue;
+                }
+
+                if (needZero || (!isFirstChunk && chunk < 1000)) {
+                    result += "零";
+                }
+                needZero = false;
+
+                if (isFirstChunk && chunk >= 10 && chunk < 20) {
+                    result += "十";
+                    if (chunk % 10 != 0) {
+                        result += digits[chunk % 10];
+                    }
+                } else {
+                    int divisors[4] = {1, 10, 100, 1000};
+                    bool chunkStarted = false;
+                    bool chunkZero = false;
+                    for (int pos = 3; pos >= 0; --pos) {
+                        int d = (chunk / divisors[pos]) % 10;
+                        if (d == 0) {
+                            if (chunkStarted) {
+                                chunkZero = true;
+                            }
+                        } else {
+                            if (chunkZero) {
+                                result += "零";
+                                chunkZero = false;
+                            }
+                            result += digits[d] + unitChars[pos];
+                            chunkStarted = true;
+                        }
+                    }
+                }
+
+                result += sectionUnits[idx];
+                isFirstChunk = false;
+            }
+
+            return result;
+        }
+
         static std::string getOrdinalStr(const int& num, const langcode_t& lang = LANG_ZH_CN) {
+            if (num < 0) {
+                return "Not define";
+            }
+
             if(lang == LANG_EN) {
                 if(num == 1) {
                     return "First";
@@ -809,7 +885,19 @@ namespace CathAssist
                 } else if(num == 3) {
                     return "Third";
                 } else {
-                    return std::to_string(num) + "th";
+                    int mod100 = num % 100;
+                    int mod10 = num % 10;
+                    std::string suffix = "th";
+                    if (mod100 < 11 || mod100 > 13) {
+                        if (mod10 == 1) {
+                            suffix = "st";
+                        } else if (mod10 == 2) {
+                            suffix = "nd";
+                        } else if (mod10 == 3) {
+                            suffix = "rd";
+                        }
+                    }
+                    return std::to_string(num) + suffix;
                 }
             } else if(lang == LANG_ES_ES) {
                 if(num == 1) {
@@ -822,57 +910,14 @@ namespace CathAssist
                     return std::to_string(num) + "º";
                 }
             } else if(lang == LANG_IT_IT) {
+                if (num <= 0 || num >= 4000) {
+                    return "Not define";
+                }
                 return intToRoman(num);
             } else if(lang == LANG_PT_BR) {
-                if(num == 1) {
-                    return "Primeiro";
-                } else if(num == 2) {
-                    return "Segundo";
-                } else if(num == 3) {
-                    return "Terceiro";
-                } else {
-                    return std::to_string(num) + "º";
-                }
+                return std::to_string(num) + "º";
             } else if(lang == LANG_ZH_CN || lang == LANG_ZH_TW) {
-                static std::string numStr[] = 
-                {
-                    "零",
-                    "一",
-                    "二",
-                    "三",
-                    "四",
-                    "五",
-                    "六",
-                    "七",
-                    "八",
-                    "九",
-                    "十",
-                };
-                
-                if(num<0||num>39)
-                    return "Not define";
-                if(num<=10)
-                {
-                    return numStr[num];
-                }
-                else if(num<20)
-                {
-                    return "十"+numStr[num%10];
-                }
-                else if(num<30)
-                {
-                    if(num==20)
-                        return "二十";
-                    else
-                        return "二十"+numStr[num%10];
-                }
-                else if(num<40)
-                {
-                    if(num==30)
-                        return "三十";
-                    else
-                        return "三十"+numStr[num%10];
-                }
+                return intToChinese(num, lang == LANG_ZH_TW);
             } else if(lang == LANG_KO_KR) {
                 return "제" + std::to_string(num);
             }

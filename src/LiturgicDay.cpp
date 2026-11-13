@@ -183,11 +183,12 @@ std::string LiturgicDay::getWeekdayString(const season_t &season, const int &wee
 	{
 		if (LENT == season && 0 == weekOfSeason)
 		{
-			if (dayOfWeek != 3)
+			if (dayOfWeek == WED)
 			{
-				ostr << "圣灰礼仪后" + CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang);
-				return ostr.str();
+				return "圣灰礼仪";
 			}
+			ostr << "圣灰礼仪后" << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang);
+			return ostr.str();
 		}
 
 		if (dayOfWeek == SUN)
@@ -205,11 +206,12 @@ std::string LiturgicDay::getWeekdayString(const season_t &season, const int &wee
 	{
 		if (LENT == season && 0 == weekOfSeason)
 		{
-			if (dayOfWeek != 3)
+			if (dayOfWeek == WED)
 			{
-				ostr << "聖灰禮儀後" + CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang);
-				return ostr.str();
+				return "聖灰禮儀";
 			}
+			ostr << "聖灰禮儀後" << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang);
+			return ostr.str();
 		}
 
 		if (dayOfWeek == SUN)
@@ -227,79 +229,74 @@ std::string LiturgicDay::getWeekdayString(const season_t &season, const int &wee
 	{
 		if (LENT == season && 0 == weekOfSeason)
 		{
-			if (dayOfWeek != 3)
+			if (dayOfWeek == WED)
 			{
-				ostr << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang) << " after Ash Wednesday";
-				return ostr.str();
+				return "Ash Wednesday";
 			}
+			ostr << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang) << " after Ash Wednesday";
+			return ostr.str();
 		}
 
+		std::string prepSeason = (season == ORDINARY) ? " in " : " of ";
 		if (dayOfWeek == SUN)
 		{
 			ostr << getOrdinalStr(weekOfSeason, lang)
 				 << " " << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)
-				 << " in " << CathAssist::Calendar::getSeasonStr(season, lang);
+				 << prepSeason << CathAssist::Calendar::getSeasonStr(season, lang);
 		}
 		else
 		{
 			ostr << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)
-				 << " of " << getOrdinalStr(weekOfSeason, lang)
-				 << " Week in " << CathAssist::Calendar::getSeasonStr(season, lang);
+				 << " of the " << getOrdinalStr(weekOfSeason, lang)
+				 << " Week" << prepSeason << CathAssist::Calendar::getSeasonStr(season, lang);
 		}
 	}
 	else if (CathAssist::Calendar::LANG_ES_ES == lang)
 	{
 		if (LENT == season && 0 == weekOfSeason)
 		{
-			if (dayOfWeek != 3)
+			if (dayOfWeek == WED)
 			{
-				ostr << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang) << " después de Ceniza";
-				return ostr.str();
+				return "Miércoles de Ceniza";
 			}
+			ostr << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang) << " después de Ceniza";
+			return ostr.str();
 		}
 
-		std::string prepSeason = " del ";
-		if (season == LENT || season == EASTER || season == ADVENT)
+		std::string prepSeason = (season == ORDINARY) ? " del " : " de ";
+		std::string ord = intToRoman(weekOfSeason);
+		if (ord.empty())
 		{
-			prepSeason = " de ";
+			ord = std::to_string(weekOfSeason);
 		}
 
 		if (dayOfWeek == SUN)
 		{
-			std::string ord = getOrdinalStr(weekOfSeason, lang);
-			if (weekOfSeason == 1) ord = "Primer";
-			else if (weekOfSeason == 3) ord = "Tercer";
 			ostr << ord << " " << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)
 				 << prepSeason << CathAssist::Calendar::getSeasonStr(season, lang);
 		}
 		else
 		{
-			std::string ord;
-			switch (weekOfSeason)
-			{
-				case 1: ord = "primera"; break;
-				case 2: ord = "segunda"; break;
-				case 3: ord = "tercera"; break;
-				case 4: ord = "cuarta"; break;
-				case 5: ord = "quinta"; break;
-				case 6: ord = "sexta"; break;
-				case 7: ord = "séptima"; break;
-				default: ord = std::to_string(weekOfSeason) + "ª"; break;
-			}
 			ostr << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)
-				 << " de la " << ord
-				 << " semana" << prepSeason << CathAssist::Calendar::getSeasonStr(season, lang);
+				 << " de la " << ord << " semana"
+				 << prepSeason << CathAssist::Calendar::getSeasonStr(season, lang);
 		}
 	}
 	else if (CathAssist::Calendar::LANG_IT_IT == lang)
 	{
 		if (LENT == season && 0 == weekOfSeason)
 		{
-			if (dayOfWeek != 3)
+			if (dayOfWeek == WED)
 			{
-				ostr << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang) << " dopo le Ceneri";
-				return ostr.str();
+				return "Mercoledì delle Ceneri";
 			}
+			ostr << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang) << " dopo le Ceneri";
+			return ostr.str();
+		}
+
+		if (season == CHRISTMAS && weekOfSeason == 2 && dayOfWeek == SUN)
+		{
+			return "II Domenica dopo Natale";
 		}
 
 		if (dayOfWeek == SUN)
@@ -325,35 +322,39 @@ std::string LiturgicDay::getWeekdayString(const season_t &season, const int &wee
 	{
 		if (LENT == season && 0 == weekOfSeason)
 		{
-			if (dayOfWeek != 3)
+			if (dayOfWeek == WED)
 			{
-				ostr << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang) << " depois das Cinzas";
-				return ostr.str();
+				return "Quarta-feira de Cinzas";
 			}
+			ostr << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang) << " depois das Cinzas";
+			return ostr.str();
 		}
 
+		std::string prepSeason = (season == LENT || season == EASTER) ? " da " : " do ";
 		if (dayOfWeek == SUN)
 		{
 			ostr << getOrdinalStr(weekOfSeason, lang)
 				 << " " << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)
-				 << " da " << CathAssist::Calendar::getSeasonStr(season, lang);
+				 << prepSeason << CathAssist::Calendar::getSeasonStr(season, lang);
 		}
 		else
 		{
+			std::string ord = (weekOfSeason >= 0) ? (std::to_string(weekOfSeason) + "ª") : "Not define";
 			ostr << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang)
-				 << " da " << getOrdinalStr(weekOfSeason, lang)
-				 << " semana " << CathAssist::Calendar::getSeasonStr(season, lang);
+				 << " da " << ord
+				 << " semana" << prepSeason << CathAssist::Calendar::getSeasonStr(season, lang);
 		}
 	}
 	else if (CathAssist::Calendar::LANG_KO_KR == lang)
 	{
 		if (LENT == season && 0 == weekOfSeason)
 		{
-			if (dayOfWeek != 3)
+			if (dayOfWeek == WED)
 			{
-				ostr << "재의 수요일 다음 " << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang);
-				return ostr.str();
+				return "재의 수요일";
 			}
+			ostr << "재의 예식 다음 " << CathAssist::Calendar::getDayStr((day_t)dayOfWeek, lang);
+			return ostr.str();
 		}
 
 		if (dayOfWeek == SUN)
