@@ -867,7 +867,6 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         mapPropers.insert(std::make_pair(EASTER * 10000 + 400 + 0, CellInfo(SUNDAY, WHITE, "复活期第四主日(善牧主日)")));
 
         // 圣神降临节（复活期第八主日）
-        // mapPropers.insert(std::make_pair(EASTER*10000+700+6,CellInfo(FEAST,RED,"圣神降临节前夕")));
         mapPropers.insert(std::make_pair(EASTER * 10000 + 800 + 0, CellInfo(SOLEMNITY, RED, "圣神降临节")));
 
         // 常年期第三十三主日（世界穷人日）
@@ -929,6 +928,9 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
 
         // 中秋节
         mapPropers.insert(std::make_pair(41, CellInfo(FEAST, WHITE, "中秋节", koreanLang)));
+
+        // 圣神降临节前夕
+        mapPropers.insert(std::make_pair(42, CellInfo(FEAST , RED, "圣神降临节前夕")));
     }
 
     // 将节日编码插入到节日里
@@ -1249,6 +1251,11 @@ void LiturgicYear::testEaster(LiturgicDay &ld)
     if (ld.getLiturgicId() == EASTER * 10000 + 700 + 0)
     {
         ld.appendCell(14); // 耶稣升天节（可挪到主日庆祝）
+    }
+    if (ld.getLiturgicId() == EASTER * 10000 + 700 + 6)
+    {
+        // 圣神降临节前夕
+        ld.appendCell(42);
     }
 }
 
