@@ -1730,10 +1730,6 @@ insert into easter_mass(code, name) select 1013101,'圣鲍思高' where not exis
 update easter_mass set name='圣鲍思高' where code=1013101;
 insert into easter_liturgy_hours(code, name) select 1013101,'圣鲍思高' where not exists (select 1 from easter_liturgy_hours where code=1013101);
 update easter_liturgy_hours set name='圣鲍思高' where code=1013101;
-insert into easter_mass(code, name) select 1020102,'献耶稣于圣殿前夕' where not exists (select 1 from easter_mass where code=1020102);
-update easter_mass set name='献耶稣于圣殿前夕' where code=1020102;
-insert into easter_liturgy_hours(code, name) select 1020102,'献耶稣于圣殿前夕' where not exists (select 1 from easter_liturgy_hours where code=1020102);
-update easter_liturgy_hours set name='献耶稣于圣殿前夕' where code=1020102;
 insert into easter_mass(code, name) select 1020201,'献耶稣于圣殿' where not exists (select 1 from easter_mass where code=1020201);
 update easter_mass set name='献耶稣于圣殿' where code=1020201;
 insert into easter_liturgy_hours(code, name) select 1020201,'献耶稣于圣殿' where not exists (select 1 from easter_liturgy_hours where code=1020201);

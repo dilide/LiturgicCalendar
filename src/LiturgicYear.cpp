@@ -130,7 +130,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         /**********************2月*********************/
         // 1日
         mapPropers.insert(std::make_pair(1020101, CellInfo(OPTIONAL, NOCOLOR, "圣亨利•莫斯(St. Herry Morse)", disableLang)));
-        mapPropers.insert(std::make_pair(1020102, CellInfo(WEEKDAY, WHITE, "献耶稣于圣殿前夕")));
+        mapPropers.insert(std::make_pair(1020102, CellInfo(WEEKDAY, WHITE, "献耶稣于圣殿前夕", disableLang)));
         mapPropers.insert(std::make_pair(1020201, CellInfo(LORD, WHITE, "献耶稣于圣殿(Presentation of the Lord)")));
         mapPropers.insert(std::make_pair(1020301, CellInfo(OPTIONAL, NOCOLOR, "圣伯拉削(St. Blaise)")));
         mapPropers.insert(std::make_pair(1020302, CellInfo(OPTIONAL, NOCOLOR, "圣安加略(St. Ansgarius)")));
