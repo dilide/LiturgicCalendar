@@ -130,6 +130,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         /**********************2月*********************/
         // 1日
         mapPropers.insert(std::make_pair(1020101, CellInfo(OPTIONAL, NOCOLOR, "圣亨利•莫斯(St. Herry Morse)", disableLang)));
+        mapPropers.insert(std::make_pair(1020102, CellInfo(WEEKDAY, WHITE, "献耶稣于圣殿前夕")));
         mapPropers.insert(std::make_pair(1020201, CellInfo(LORD, WHITE, "献耶稣于圣殿(Presentation of the Lord)")));
         mapPropers.insert(std::make_pair(1020301, CellInfo(OPTIONAL, NOCOLOR, "圣伯拉削(St. Blaise)")));
         mapPropers.insert(std::make_pair(1020302, CellInfo(OPTIONAL, NOCOLOR, "圣安加略(St. Ansgarius)")));
@@ -816,7 +817,7 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
         mapPropers.insert(std::make_pair(1122202, CellInfo(MEMORIAL, PURPLE, "将临期 12月22日")));
         mapPropers.insert(std::make_pair(1122301, CellInfo(OPTIONAL, NOCOLOR, "圣若望根地(St. John of Kanti)")));
         mapPropers.insert(std::make_pair(1122302, CellInfo(MEMORIAL, PURPLE, "将临期 12月23日")));
-        mapPropers.insert(std::make_pair(1122401, CellInfo(SOLEMNITY, WHITE, "耶稣圣诞节望日")));
+        mapPropers.insert(std::make_pair(1122401, CellInfo(SOLEMNITY, WHITE, "耶稣圣诞节前夕")));
         mapPropers.insert(std::make_pair(1122501, CellInfo(SOLEMNITY, WHITE, "耶稣圣诞(The Birthday of Our Lord Jesus Christ)")));
         // 26日
         mapPropers.insert(std::make_pair(1122601, CellInfo(FEAST, RED, "圣斯德望(首位殉道 St. Stephen)")));

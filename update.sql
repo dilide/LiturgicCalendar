@@ -178,6 +178,8 @@ insert into easter_saint(code, name, rank, color) select 1013003,'真福雷永�
 update easter_saint set name='真福雷永明', rank=3, color=0 where code=1013003;
 insert into easter_saint(code, name, rank, color) select 1013101,'圣鲍思高',3,2 where not exists (select 1 from easter_saint where code=1013101);
 update easter_saint set name='圣鲍思高', rank=3, color=2 where code=1013101;
+insert into easter_saint(code, name, rank, color) select 1020102,'献耶稣于圣殿前夕',0,2 where not exists (select 1 from easter_saint where code=1020102);
+update easter_saint set name='献耶稣于圣殿前夕', rank=0, color=2 where code=1020102;
 insert into easter_saint(code, name, rank, color) select 1020201,'献耶稣于圣殿',6,2 where not exists (select 1 from easter_saint where code=1020201);
 update easter_saint set name='献耶稣于圣殿', rank=6, color=2 where code=1020201;
 insert into easter_saint(code, name, rank, color) select 1020301,'圣伯拉削',2,0 where not exists (select 1 from easter_saint where code=1020301);
@@ -1048,8 +1050,8 @@ insert into easter_saint(code, name, rank, color) select 1122301,'圣若望根�
 update easter_saint set name='圣若望根地', rank=2, color=0 where code=1122301;
 insert into easter_saint(code, name, rank, color) select 1122302,'将临期 12月23日',3,4 where not exists (select 1 from easter_saint where code=1122302);
 update easter_saint set name='将临期 12月23日', rank=3, color=4 where code=1122302;
-insert into easter_saint(code, name, rank, color) select 1122401,'耶稣圣诞节望日',10,2 where not exists (select 1 from easter_saint where code=1122401);
-update easter_saint set name='耶稣圣诞节望日', rank=10, color=2 where code=1122401;
+insert into easter_saint(code, name, rank, color) select 1122401,'耶稣圣诞节前夕',10,2 where not exists (select 1 from easter_saint where code=1122401);
+update easter_saint set name='耶稣圣诞节前夕', rank=10, color=2 where code=1122401;
 insert into easter_saint(code, name, rank, color) select 1122501,'耶稣圣诞',10,2 where not exists (select 1 from easter_saint where code=1122501);
 update easter_saint set name='耶稣圣诞', rank=10, color=2 where code=1122501;
 insert into easter_saint(code, name, rank, color) select 1122601,'圣斯德望',4,3 where not exists (select 1 from easter_saint where code=1122601);
@@ -1101,7 +1103,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第三周(星期五)|', liturgic=10305, color=1 where date='2010-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第三周(星期六)|', liturgic=10306, color=1 where date='2010-01-30';
 update easter_daily set cells='常年期第四主日|圣鲍思高\\1013101|', liturgic=10400, color=1 where date='2010-01-31';
-update easter_daily set cells='常年期第四周(星期一)|', liturgic=10401, color=1 where date='2010-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第四周(星期一)|', liturgic=10401, color=2 where date='2010-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2010-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2010-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2010-02-04';
@@ -1427,7 +1429,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第四周(星期二)|', liturgic=20402, color=4 where date='2010-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第四周(星期三)|', liturgic=20403, color=4 where date='2010-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第四周(星期四)|', liturgic=20404, color=4 where date='2010-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2010-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2010-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2010-12-25';
 update easter_daily set cells='圣家节\\8|圣斯德望\\1122601|', liturgic=30000, color=2 where date='2010-12-26';
 update easter_daily set cells='圣若望\\1122701|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2010-12-27';
@@ -1466,7 +1468,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第三周(星期六)|', liturgic=10306, color=1 where date='2011-01-29';
 update easter_daily set cells='常年期第四主日|真福雷永明\\1013003|圣巴蒂弟\\1013002|', liturgic=10400, color=1 where date='2011-01-30';
 update easter_daily set cells='圣鲍思高\\1013101|常年期第四周(星期一)|', liturgic=10401, color=2 where date='2011-01-31';
-update easter_daily set cells='常年期第四周(星期二)|', liturgic=10402, color=1 where date='2011-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2011-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|农历除夕\\11|常年期第四周(星期三)|', liturgic=10403, color=2 where date='2011-02-02';
 update easter_daily set cells='农历新春\\12|圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2011-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期五)|', liturgic=10405, color=1 where date='2011-02-04';
@@ -1792,7 +1794,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第四周(星期三)|', liturgic=20403, color=4 where date='2011-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第四周(星期四)|', liturgic=20404, color=4 where date='2011-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第四周(星期五)|', liturgic=20405, color=4 where date='2011-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2011-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2011-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|', liturgic=30000, color=2 where date='2011-12-25';
 update easter_daily set cells='圣斯德望\\1122601|圣诞期第一周(星期一)|', liturgic=30101, color=3 where date='2011-12-26';
 update easter_daily set cells='圣若望\\1122701|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2011-12-27';
@@ -1831,7 +1833,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='常年期第四主日|圣福若瑟\\1012902|圣王炳\\1012903|', liturgic=10400, color=1 where date='2012-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2012-01-30';
 update easter_daily set cells='圣鲍思高\\1013101|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2012-01-31';
-update easter_daily set cells='常年期第四周(星期三)|', liturgic=10403, color=1 where date='2012-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第四周(星期三)|', liturgic=10403, color=2 where date='2012-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四周(星期四)|', liturgic=10404, color=2 where date='2012-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期五)|', liturgic=10405, color=1 where date='2012-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期六)|', liturgic=10406, color=1 where date='2012-02-04';
@@ -2158,7 +2160,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第三周(星期五)|', liturgic=20305, color=4 where date='2012-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第三周(星期六)|', liturgic=20306, color=4 where date='2012-12-22';
 update easter_daily set cells='将临期第四主日|将临期 12月23日\\1122302|圣若望根地\\1122301|', liturgic=20400, color=4 where date='2012-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期一)|', liturgic=20401, color=2 where date='2012-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期一)|', liturgic=20401, color=2 where date='2012-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期二)|', liturgic=20402, color=2 where date='2012-12-25';
 update easter_daily set cells='圣斯德望\\1122601|将临期第四周(星期三)|', liturgic=20403, color=3 where date='2012-12-26';
 update easter_daily set cells='圣若望\\1122701|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2012-12-27';
@@ -2197,7 +2199,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第三周(星期二)|', liturgic=10302, color=1 where date='2013-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第三周(星期三)|', liturgic=10303, color=1 where date='2013-01-30';
 update easter_daily set cells='圣鲍思高\\1013101|常年期第三周(星期四)|', liturgic=10304, color=2 where date='2013-01-31';
-update easter_daily set cells='常年期第三周(星期五)|', liturgic=10305, color=1 where date='2013-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第三周(星期五)|', liturgic=10305, color=2 where date='2013-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第三周(星期六)|', liturgic=10306, color=2 where date='2013-02-02';
 update easter_daily set cells='常年期第四主日|圣伯拉削\\1020301|圣安加略\\1020302|', liturgic=10400, color=1 where date='2013-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2013-02-04';
@@ -2523,7 +2525,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第三周(星期六)|', liturgic=20306, color=4 where date='2013-12-21';
 update easter_daily set cells='将临期第四主日|将临期 12月22日\\1122202|圣方济加\\1122201|', liturgic=20400, color=4 where date='2013-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第四周(星期一)|', liturgic=20401, color=4 where date='2013-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期二)|', liturgic=20402, color=2 where date='2013-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期二)|', liturgic=20402, color=2 where date='2013-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期三)|', liturgic=20403, color=2 where date='2013-12-25';
 update easter_daily set cells='圣斯德望\\1122601|将临期第四周(星期四)|', liturgic=20404, color=3 where date='2013-12-26';
 update easter_daily set cells='圣若望\\1122701|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2013-12-27';
@@ -2562,7 +2564,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第三周(星期三)|', liturgic=10303, color=1 where date='2014-01-29';
 update easter_daily set cells='农历除夕\\11|真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第三周(星期四)|', liturgic=10304, color=1 where date='2014-01-30';
 update easter_daily set cells='农历新春\\12|圣鲍思高\\1013101|常年期第三周(星期五)|', liturgic=10305, color=2 where date='2014-01-31';
-update easter_daily set cells='常年期第三周(星期六)|', liturgic=10306, color=1 where date='2014-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第三周(星期六)|', liturgic=10306, color=2 where date='2014-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四主日|', liturgic=10400, color=2 where date='2014-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2014-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2014-02-04';
@@ -2888,7 +2890,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期第四主日|将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|', liturgic=20400, color=4 where date='2014-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第四周(星期一)|', liturgic=20401, color=4 where date='2014-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第四周(星期二)|', liturgic=20402, color=4 where date='2014-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期三)|', liturgic=20403, color=2 where date='2014-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期三)|', liturgic=20403, color=2 where date='2014-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2014-12-25';
 update easter_daily set cells='圣斯德望\\1122601|将临期第四周(星期五)|', liturgic=20405, color=3 where date='2014-12-26';
 update easter_daily set cells='圣若望\\1122701|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2014-12-27';
@@ -2927,7 +2929,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第三周(星期四)|', liturgic=10304, color=1 where date='2015-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第三周(星期五)|', liturgic=10305, color=1 where date='2015-01-30';
 update easter_daily set cells='圣鲍思高\\1013101|常年期第三周(星期六)|', liturgic=10306, color=2 where date='2015-01-31';
-update easter_daily set cells='常年期第四主日|', liturgic=10400, color=1 where date='2015-02-01';
+update easter_daily set cells='常年期第四主日|献耶稣于圣殿前夕\\1020102|', liturgic=10400, color=1 where date='2015-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四周(星期一)|', liturgic=10401, color=2 where date='2015-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2015-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2015-02-04';
@@ -3253,7 +3255,7 @@ update easter_daily set cells='将临期第四主日|将临期 12月20日\\11220
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第四周(星期一)|', liturgic=20401, color=4 where date='2015-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第四周(星期二)|', liturgic=20402, color=4 where date='2015-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第四周(星期三)|', liturgic=20403, color=4 where date='2015-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2015-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2015-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2015-12-25';
 update easter_daily set cells='圣斯德望\\1122601|将临期第四周(星期六)|', liturgic=20406, color=3 where date='2015-12-26';
 update easter_daily set cells='圣家节\\8|圣若望\\1122701|', liturgic=30000, color=2 where date='2015-12-27';
@@ -3292,7 +3294,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第三周(星期五)|', liturgic=10305, color=1 where date='2016-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第三周(星期六)|', liturgic=10306, color=1 where date='2016-01-30';
 update easter_daily set cells='常年期第四主日|圣鲍思高\\1013101|', liturgic=10400, color=1 where date='2016-01-31';
-update easter_daily set cells='常年期第四周(星期一)|', liturgic=10401, color=1 where date='2016-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第四周(星期一)|', liturgic=10401, color=2 where date='2016-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2016-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2016-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2016-02-04';
@@ -3619,7 +3621,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第四周(星期三)|', liturgic=20403, color=4 where date='2016-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第四周(星期四)|', liturgic=20404, color=4 where date='2016-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第四周(星期五)|', liturgic=20405, color=4 where date='2016-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2016-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2016-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|', liturgic=30000, color=2 where date='2016-12-25';
 update easter_daily set cells='圣斯德望\\1122601|圣诞期第一周(星期一)|', liturgic=30101, color=3 where date='2016-12-26';
 update easter_daily set cells='圣若望\\1122701|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2016-12-27';
@@ -3658,7 +3660,7 @@ update easter_daily set cells='农历新春\\12|圣多玛斯•阿奎那\\101280
 update easter_daily set cells='常年期第四主日|圣福若瑟\\1012902|圣王炳\\1012903|', liturgic=10400, color=1 where date='2017-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2017-01-30';
 update easter_daily set cells='圣鲍思高\\1013101|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2017-01-31';
-update easter_daily set cells='常年期第四周(星期三)|', liturgic=10403, color=1 where date='2017-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第四周(星期三)|', liturgic=10403, color=2 where date='2017-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四周(星期四)|', liturgic=10404, color=2 where date='2017-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期五)|', liturgic=10405, color=1 where date='2017-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期六)|', liturgic=10406, color=1 where date='2017-02-04';
@@ -3984,7 +3986,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第三周(星期四)|', liturgic=20304, color=4 where date='2017-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第三周(星期五)|', liturgic=20305, color=4 where date='2017-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第三周(星期六)|', liturgic=20306, color=4 where date='2017-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四主日|', liturgic=20400, color=2 where date='2017-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四主日|', liturgic=20400, color=2 where date='2017-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期一)|', liturgic=20401, color=2 where date='2017-12-25';
 update easter_daily set cells='圣斯德望\\1122601|将临期第四周(星期二)|', liturgic=20402, color=3 where date='2017-12-26';
 update easter_daily set cells='圣若望\\1122701|将临期第四周(星期三)|', liturgic=20403, color=2 where date='2017-12-27';
@@ -4023,7 +4025,7 @@ update easter_daily set cells='常年期第四主日|圣多玛斯•阿奎那\\1
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2018-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2018-01-30';
 update easter_daily set cells='圣鲍思高\\1013101|常年期第四周(星期三)|', liturgic=10403, color=2 where date='2018-01-31';
-update easter_daily set cells='常年期第四周(星期四)|', liturgic=10404, color=1 where date='2018-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第四周(星期四)|', liturgic=10404, color=2 where date='2018-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四周(星期五)|', liturgic=10405, color=2 where date='2018-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期六)|', liturgic=10406, color=1 where date='2018-02-03';
 update easter_daily set cells='常年期第五主日|圣若望•波利多\\1020401|圣若翰纳\\1020402|', liturgic=10500, color=1 where date='2018-02-04';
@@ -4349,7 +4351,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第三周(星期五)|', liturgic=20305, color=4 where date='2018-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第三周(星期六)|', liturgic=20306, color=4 where date='2018-12-22';
 update easter_daily set cells='将临期第四主日|将临期 12月23日\\1122302|圣若望根地\\1122301|', liturgic=20400, color=4 where date='2018-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期一)|', liturgic=20401, color=2 where date='2018-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期一)|', liturgic=20401, color=2 where date='2018-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期二)|', liturgic=20402, color=2 where date='2018-12-25';
 update easter_daily set cells='圣斯德望\\1122601|将临期第四周(星期三)|', liturgic=20403, color=3 where date='2018-12-26';
 update easter_daily set cells='圣若望\\1122701|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2018-12-27';
@@ -4388,7 +4390,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第三周(星期二)|', liturgic=10302, color=1 where date='2019-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第三周(星期三)|', liturgic=10303, color=1 where date='2019-01-30';
 update easter_daily set cells='圣鲍思高\\1013101|常年期第三周(星期四)|', liturgic=10304, color=2 where date='2019-01-31';
-update easter_daily set cells='常年期第三周(星期五)|', liturgic=10305, color=1 where date='2019-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第三周(星期五)|', liturgic=10305, color=2 where date='2019-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第三周(星期六)|', liturgic=10306, color=2 where date='2019-02-02';
 update easter_daily set cells='常年期第四主日|圣伯拉削\\1020301|圣安加略\\1020302|', liturgic=10400, color=1 where date='2019-02-03';
 update easter_daily set cells='农历除夕\\11|圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2019-02-04';
@@ -4714,7 +4716,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第三周(星期六)|', liturgic=20306, color=4 where date='2019-12-21';
 update easter_daily set cells='将临期第四主日|将临期 12月22日\\1122202|圣方济加\\1122201|', liturgic=20400, color=4 where date='2019-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第四周(星期一)|', liturgic=20401, color=4 where date='2019-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期二)|', liturgic=20402, color=2 where date='2019-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期二)|', liturgic=20402, color=2 where date='2019-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期三)|', liturgic=20403, color=2 where date='2019-12-25';
 update easter_daily set cells='圣斯德望\\1122601|将临期第四周(星期四)|', liturgic=20404, color=3 where date='2019-12-26';
 update easter_daily set cells='圣若望\\1122701|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2019-12-27';
@@ -4753,7 +4755,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第三周(星期三)|', liturgic=10303, color=1 where date='2020-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第三周(星期四)|', liturgic=10304, color=1 where date='2020-01-30';
 update easter_daily set cells='圣鲍思高\\1013101|常年期第三周(星期五)|', liturgic=10305, color=2 where date='2020-01-31';
-update easter_daily set cells='常年期第三周(星期六)|', liturgic=10306, color=1 where date='2020-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第三周(星期六)|', liturgic=10306, color=2 where date='2020-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四主日|', liturgic=10400, color=2 where date='2020-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2020-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2020-02-04';
@@ -5080,7 +5082,7 @@ update easter_daily set cells='将临期第四主日|将临期 12月20日\\11220
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第四周(星期一)|', liturgic=20401, color=4 where date='2020-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第四周(星期二)|', liturgic=20402, color=4 where date='2020-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第四周(星期三)|', liturgic=20403, color=4 where date='2020-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2020-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2020-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2020-12-25';
 update easter_daily set cells='圣斯德望\\1122601|将临期第四周(星期六)|', liturgic=20406, color=3 where date='2020-12-26';
 update easter_daily set cells='圣家节\\8|圣若望\\1122701|', liturgic=30000, color=2 where date='2020-12-27';
@@ -5119,7 +5121,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第三周(星期五)|', liturgic=10305, color=1 where date='2021-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第三周(星期六)|', liturgic=10306, color=1 where date='2021-01-30';
 update easter_daily set cells='常年期第四主日|圣鲍思高\\1013101|', liturgic=10400, color=1 where date='2021-01-31';
-update easter_daily set cells='常年期第四周(星期一)|', liturgic=10401, color=1 where date='2021-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第四周(星期一)|', liturgic=10401, color=2 where date='2021-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2021-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2021-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2021-02-04';
@@ -5445,7 +5447,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第四周(星期二)|', liturgic=20402, color=4 where date='2021-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第四周(星期三)|', liturgic=20403, color=4 where date='2021-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第四周(星期四)|', liturgic=20404, color=4 where date='2021-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2021-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2021-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2021-12-25';
 update easter_daily set cells='圣家节\\8|圣斯德望\\1122601|', liturgic=30000, color=2 where date='2021-12-26';
 update easter_daily set cells='圣若望\\1122701|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2021-12-27';
@@ -5484,7 +5486,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第三周(星期六)|', liturgic=10306, color=1 where date='2022-01-29';
 update easter_daily set cells='常年期第四主日|真福雷永明\\1013003|圣巴蒂弟\\1013002|', liturgic=10400, color=1 where date='2022-01-30';
 update easter_daily set cells='农历除夕\\11|圣鲍思高\\1013101|常年期第四周(星期一)|', liturgic=10401, color=2 where date='2022-01-31';
-update easter_daily set cells='农历新春\\12|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2022-02-01';
+update easter_daily set cells='农历新春\\12|献耶稣于圣殿前夕\\1020102|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2022-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四周(星期三)|', liturgic=10403, color=2 where date='2022-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2022-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期五)|', liturgic=10405, color=1 where date='2022-02-04';
@@ -5810,7 +5812,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第四周(星期三)|', liturgic=20403, color=4 where date='2022-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第四周(星期四)|', liturgic=20404, color=4 where date='2022-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第四周(星期五)|', liturgic=20405, color=4 where date='2022-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2022-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2022-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|', liturgic=30000, color=2 where date='2022-12-25';
 update easter_daily set cells='圣斯德望\\1122601|圣诞期第一周(星期一)|', liturgic=30101, color=3 where date='2022-12-26';
 update easter_daily set cells='圣若望\\1122701|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2022-12-27';
@@ -5849,7 +5851,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='常年期第四主日|圣福若瑟\\1012902|圣王炳\\1012903|', liturgic=10400, color=1 where date='2023-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2023-01-30';
 update easter_daily set cells='圣鲍思高\\1013101|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2023-01-31';
-update easter_daily set cells='常年期第四周(星期三)|', liturgic=10403, color=1 where date='2023-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第四周(星期三)|', liturgic=10403, color=2 where date='2023-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四周(星期四)|', liturgic=10404, color=2 where date='2023-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期五)|', liturgic=10405, color=1 where date='2023-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期六)|', liturgic=10406, color=1 where date='2023-02-04';
@@ -6175,7 +6177,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第三周(星期四)|', liturgic=20304, color=4 where date='2023-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第三周(星期五)|', liturgic=20305, color=4 where date='2023-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第三周(星期六)|', liturgic=20306, color=4 where date='2023-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四主日|', liturgic=20400, color=2 where date='2023-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四主日|', liturgic=20400, color=2 where date='2023-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期一)|', liturgic=20401, color=2 where date='2023-12-25';
 update easter_daily set cells='圣斯德望\\1122601|将临期第四周(星期二)|', liturgic=20402, color=3 where date='2023-12-26';
 update easter_daily set cells='圣若望\\1122701|将临期第四周(星期三)|', liturgic=20403, color=2 where date='2023-12-27';
@@ -6214,7 +6216,7 @@ update easter_daily set cells='常年期第四主日|圣多玛斯•阿奎那\\1
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2024-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2024-01-30';
 update easter_daily set cells='圣鲍思高\\1013101|常年期第四周(星期三)|', liturgic=10403, color=2 where date='2024-01-31';
-update easter_daily set cells='常年期第四周(星期四)|', liturgic=10404, color=1 where date='2024-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第四周(星期四)|', liturgic=10404, color=2 where date='2024-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四周(星期五)|', liturgic=10405, color=2 where date='2024-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期六)|', liturgic=10406, color=1 where date='2024-02-03';
 update easter_daily set cells='常年期第五主日|圣若望•波利多\\1020401|圣若翰纳\\1020402|', liturgic=10500, color=1 where date='2024-02-04';
@@ -6541,7 +6543,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第三周(星期六)|', liturgic=20306, color=4 where date='2024-12-21';
 update easter_daily set cells='将临期第四主日|将临期 12月22日\\1122202|圣方济加\\1122201|', liturgic=20400, color=4 where date='2024-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第四周(星期一)|', liturgic=20401, color=4 where date='2024-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期二)|', liturgic=20402, color=2 where date='2024-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期二)|', liturgic=20402, color=2 where date='2024-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期三)|', liturgic=20403, color=2 where date='2024-12-25';
 update easter_daily set cells='圣斯德望\\1122601|将临期第四周(星期四)|', liturgic=20404, color=3 where date='2024-12-26';
 update easter_daily set cells='圣若望\\1122701|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2024-12-27';
@@ -6580,7 +6582,7 @@ update easter_daily set cells='农历除夕\\11|圣多玛斯•阿奎那\\101280
 update easter_daily set cells='农历新春\\12|圣福若瑟\\1012902|圣王炳\\1012903|常年期第三周(星期三)|', liturgic=10303, color=1 where date='2025-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第三周(星期四)|', liturgic=10304, color=1 where date='2025-01-30';
 update easter_daily set cells='圣鲍思高\\1013101|常年期第三周(星期五)|', liturgic=10305, color=2 where date='2025-01-31';
-update easter_daily set cells='常年期第三周(星期六)|', liturgic=10306, color=1 where date='2025-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第三周(星期六)|', liturgic=10306, color=2 where date='2025-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四主日|', liturgic=10400, color=2 where date='2025-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2025-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2025-02-04';
@@ -6906,7 +6908,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期第四主日|将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|', liturgic=20400, color=4 where date='2025-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第四周(星期一)|', liturgic=20401, color=4 where date='2025-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第四周(星期二)|', liturgic=20402, color=4 where date='2025-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期三)|', liturgic=20403, color=2 where date='2025-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期三)|', liturgic=20403, color=2 where date='2025-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2025-12-25';
 update easter_daily set cells='圣斯德望\\1122601|将临期第四周(星期五)|', liturgic=20405, color=3 where date='2025-12-26';
 update easter_daily set cells='圣若望\\1122701|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2025-12-27';
@@ -6945,7 +6947,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第三周(星期四)|', liturgic=10304, color=1 where date='2026-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第三周(星期五)|', liturgic=10305, color=1 where date='2026-01-30';
 update easter_daily set cells='圣鲍思高\\1013101|常年期第三周(星期六)|', liturgic=10306, color=2 where date='2026-01-31';
-update easter_daily set cells='常年期第四主日|', liturgic=10400, color=1 where date='2026-02-01';
+update easter_daily set cells='常年期第四主日|献耶稣于圣殿前夕\\1020102|', liturgic=10400, color=1 where date='2026-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四周(星期一)|', liturgic=10401, color=2 where date='2026-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2026-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2026-02-04';
@@ -7271,7 +7273,7 @@ update easter_daily set cells='将临期第四主日|将临期 12月20日\\11220
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第四周(星期一)|', liturgic=20401, color=4 where date='2026-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第四周(星期二)|', liturgic=20402, color=4 where date='2026-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第四周(星期三)|', liturgic=20403, color=4 where date='2026-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2026-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2026-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2026-12-25';
 update easter_daily set cells='圣斯德望\\1122601|将临期第四周(星期六)|', liturgic=20406, color=3 where date='2026-12-26';
 update easter_daily set cells='圣家节\\8|圣若望\\1122701|', liturgic=30000, color=2 where date='2026-12-27';
@@ -7310,7 +7312,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第三周(星期五)|', liturgic=10305, color=1 where date='2027-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第三周(星期六)|', liturgic=10306, color=1 where date='2027-01-30';
 update easter_daily set cells='常年期第四主日|圣鲍思高\\1013101|', liturgic=10400, color=1 where date='2027-01-31';
-update easter_daily set cells='常年期第四周(星期一)|', liturgic=10401, color=1 where date='2027-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第四周(星期一)|', liturgic=10401, color=2 where date='2027-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2027-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2027-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2027-02-04';
@@ -7636,7 +7638,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第四周(星期二)|', liturgic=20402, color=4 where date='2027-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第四周(星期三)|', liturgic=20403, color=4 where date='2027-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第四周(星期四)|', liturgic=20404, color=4 where date='2027-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2027-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2027-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2027-12-25';
 update easter_daily set cells='圣家节\\8|圣斯德望\\1122601|', liturgic=30000, color=2 where date='2027-12-26';
 update easter_daily set cells='圣若望\\1122701|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2027-12-27';
@@ -7675,7 +7677,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第三周(星期六)|', liturgic=10306, color=1 where date='2028-01-29';
 update easter_daily set cells='常年期第四主日|真福雷永明\\1013003|圣巴蒂弟\\1013002|', liturgic=10400, color=1 where date='2028-01-30';
 update easter_daily set cells='圣鲍思高\\1013101|常年期第四周(星期一)|', liturgic=10401, color=2 where date='2028-01-31';
-update easter_daily set cells='常年期第四周(星期二)|', liturgic=10402, color=1 where date='2028-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2028-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四周(星期三)|', liturgic=10403, color=2 where date='2028-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2028-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期五)|', liturgic=10405, color=1 where date='2028-02-04';
@@ -8002,7 +8004,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第三周(星期四)|', liturgic=20304, color=4 where date='2028-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第三周(星期五)|', liturgic=20305, color=4 where date='2028-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第三周(星期六)|', liturgic=20306, color=4 where date='2028-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四主日|', liturgic=20400, color=2 where date='2028-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四主日|', liturgic=20400, color=2 where date='2028-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期一)|', liturgic=20401, color=2 where date='2028-12-25';
 update easter_daily set cells='圣斯德望\\1122601|将临期第四周(星期二)|', liturgic=20402, color=3 where date='2028-12-26';
 update easter_daily set cells='圣若望\\1122701|将临期第四周(星期三)|', liturgic=20403, color=2 where date='2028-12-27';
@@ -8041,7 +8043,7 @@ update easter_daily set cells='常年期第四主日|圣多玛斯•阿奎那\\1
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2029-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2029-01-30';
 update easter_daily set cells='圣鲍思高\\1013101|常年期第四周(星期三)|', liturgic=10403, color=2 where date='2029-01-31';
-update easter_daily set cells='常年期第四周(星期四)|', liturgic=10404, color=1 where date='2029-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第四周(星期四)|', liturgic=10404, color=2 where date='2029-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四周(星期五)|', liturgic=10405, color=2 where date='2029-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期六)|', liturgic=10406, color=1 where date='2029-02-03';
 update easter_daily set cells='常年期第五主日|圣若望•波利多\\1020401|圣若翰纳\\1020402|', liturgic=10500, color=1 where date='2029-02-04';
@@ -8367,7 +8369,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第三周(星期五)|', liturgic=20305, color=4 where date='2029-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第三周(星期六)|', liturgic=20306, color=4 where date='2029-12-22';
 update easter_daily set cells='将临期第四主日|将临期 12月23日\\1122302|圣若望根地\\1122301|', liturgic=20400, color=4 where date='2029-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期一)|', liturgic=20401, color=2 where date='2029-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期一)|', liturgic=20401, color=2 where date='2029-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期二)|', liturgic=20402, color=2 where date='2029-12-25';
 update easter_daily set cells='圣斯德望\\1122601|将临期第四周(星期三)|', liturgic=20403, color=3 where date='2029-12-26';
 update easter_daily set cells='圣若望\\1122701|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2029-12-27';
@@ -8406,7 +8408,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第三周(星期二)|', liturgic=10302, color=1 where date='2030-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第三周(星期三)|', liturgic=10303, color=1 where date='2030-01-30';
 update easter_daily set cells='圣鲍思高\\1013101|常年期第三周(星期四)|', liturgic=10304, color=2 where date='2030-01-31';
-update easter_daily set cells='常年期第三周(星期五)|', liturgic=10305, color=1 where date='2030-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第三周(星期五)|', liturgic=10305, color=2 where date='2030-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|农历除夕\\11|常年期第三周(星期六)|', liturgic=10306, color=2 where date='2030-02-02';
 update easter_daily set cells='常年期第四主日|农历新春\\12|圣伯拉削\\1020301|圣安加略\\1020302|', liturgic=10400, color=1 where date='2030-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2030-02-04';
@@ -8732,7 +8734,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第三周(星期六)|', liturgic=20306, color=4 where date='2030-12-21';
 update easter_daily set cells='将临期第四主日|将临期 12月22日\\1122202|圣方济加\\1122201|', liturgic=20400, color=4 where date='2030-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第四周(星期一)|', liturgic=20401, color=4 where date='2030-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期二)|', liturgic=20402, color=2 where date='2030-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期二)|', liturgic=20402, color=2 where date='2030-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期三)|', liturgic=20403, color=2 where date='2030-12-25';
 update easter_daily set cells='圣斯德望\\1122601|将临期第四周(星期四)|', liturgic=20404, color=3 where date='2030-12-26';
 update easter_daily set cells='圣若望\\1122701|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2030-12-27';
@@ -8771,7 +8773,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第三周(星期三)|', liturgic=10303, color=1 where date='2031-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第三周(星期四)|', liturgic=10304, color=1 where date='2031-01-30';
 update easter_daily set cells='圣鲍思高\\1013101|常年期第三周(星期五)|', liturgic=10305, color=2 where date='2031-01-31';
-update easter_daily set cells='常年期第三周(星期六)|', liturgic=10306, color=1 where date='2031-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第三周(星期六)|', liturgic=10306, color=2 where date='2031-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四主日|', liturgic=10400, color=2 where date='2031-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2031-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2031-02-04';
@@ -9097,7 +9099,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期第四主日|将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|', liturgic=20400, color=4 where date='2031-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第四周(星期一)|', liturgic=20401, color=4 where date='2031-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第四周(星期二)|', liturgic=20402, color=4 where date='2031-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期三)|', liturgic=20403, color=2 where date='2031-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期三)|', liturgic=20403, color=2 where date='2031-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2031-12-25';
 update easter_daily set cells='圣斯德望\\1122601|将临期第四周(星期五)|', liturgic=20405, color=3 where date='2031-12-26';
 update easter_daily set cells='圣若望\\1122701|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2031-12-27';
@@ -9136,7 +9138,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第三周(星期四)|', liturgic=10304, color=1 where date='2032-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第三周(星期五)|', liturgic=10305, color=1 where date='2032-01-30';
 update easter_daily set cells='圣鲍思高\\1013101|常年期第三周(星期六)|', liturgic=10306, color=2 where date='2032-01-31';
-update easter_daily set cells='常年期第四主日|', liturgic=10400, color=1 where date='2032-02-01';
+update easter_daily set cells='常年期第四主日|献耶稣于圣殿前夕\\1020102|', liturgic=10400, color=1 where date='2032-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四周(星期一)|', liturgic=10401, color=2 where date='2032-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2032-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2032-02-04';
@@ -9463,7 +9465,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第四周(星期二)|', liturgic=20402, color=4 where date='2032-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第四周(星期三)|', liturgic=20403, color=4 where date='2032-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第四周(星期四)|', liturgic=20404, color=4 where date='2032-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2032-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2032-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2032-12-25';
 update easter_daily set cells='圣家节\\8|圣斯德望\\1122601|', liturgic=30000, color=2 where date='2032-12-26';
 update easter_daily set cells='圣若望\\1122701|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2032-12-27';
@@ -9502,7 +9504,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第三周(星期六)|', liturgic=10306, color=1 where date='2033-01-29';
 update easter_daily set cells='常年期第四主日|农历除夕\\11|真福雷永明\\1013003|圣巴蒂弟\\1013002|', liturgic=10400, color=1 where date='2033-01-30';
 update easter_daily set cells='农历新春\\12|圣鲍思高\\1013101|常年期第四周(星期一)|', liturgic=10401, color=2 where date='2033-01-31';
-update easter_daily set cells='常年期第四周(星期二)|', liturgic=10402, color=1 where date='2033-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2033-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四周(星期三)|', liturgic=10403, color=2 where date='2033-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2033-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期五)|', liturgic=10405, color=1 where date='2033-02-04';
@@ -9828,7 +9830,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第四周(星期三)|', liturgic=20403, color=4 where date='2033-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第四周(星期四)|', liturgic=20404, color=4 where date='2033-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第四周(星期五)|', liturgic=20405, color=4 where date='2033-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2033-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2033-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|', liturgic=30000, color=2 where date='2033-12-25';
 update easter_daily set cells='圣斯德望\\1122601|圣诞期第一周(星期一)|', liturgic=30101, color=3 where date='2033-12-26';
 update easter_daily set cells='圣若望\\1122701|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2033-12-27';
@@ -9867,7 +9869,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='常年期第四主日|圣福若瑟\\1012902|圣王炳\\1012903|', liturgic=10400, color=1 where date='2034-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2034-01-30';
 update easter_daily set cells='圣鲍思高\\1013101|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2034-01-31';
-update easter_daily set cells='常年期第四周(星期三)|', liturgic=10403, color=1 where date='2034-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第四周(星期三)|', liturgic=10403, color=2 where date='2034-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四周(星期四)|', liturgic=10404, color=2 where date='2034-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期五)|', liturgic=10405, color=1 where date='2034-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期六)|', liturgic=10406, color=1 where date='2034-02-04';
@@ -10193,7 +10195,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第三周(星期四)|', liturgic=20304, color=4 where date='2034-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第三周(星期五)|', liturgic=20305, color=4 where date='2034-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第三周(星期六)|', liturgic=20306, color=4 where date='2034-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四主日|', liturgic=20400, color=2 where date='2034-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四主日|', liturgic=20400, color=2 where date='2034-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期一)|', liturgic=20401, color=2 where date='2034-12-25';
 update easter_daily set cells='圣斯德望\\1122601|将临期第四周(星期二)|', liturgic=20402, color=3 where date='2034-12-26';
 update easter_daily set cells='圣若望\\1122701|将临期第四周(星期三)|', liturgic=20403, color=2 where date='2034-12-27';
@@ -10232,7 +10234,7 @@ update easter_daily set cells='常年期第四主日|圣多玛斯•阿奎那\\1
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2035-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2035-01-30';
 update easter_daily set cells='圣鲍思高\\1013101|常年期第四周(星期三)|', liturgic=10403, color=2 where date='2035-01-31';
-update easter_daily set cells='常年期第四周(星期四)|', liturgic=10404, color=1 where date='2035-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第四周(星期四)|', liturgic=10404, color=2 where date='2035-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四周(星期五)|', liturgic=10405, color=2 where date='2035-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期六)|', liturgic=10406, color=1 where date='2035-02-03';
 update easter_daily set cells='常年期第五主日|圣若望•波利多\\1020401|圣若翰纳\\1020402|', liturgic=10500, color=1 where date='2035-02-04';
@@ -10558,7 +10560,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第三周(星期五)|', liturgic=20305, color=4 where date='2035-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第三周(星期六)|', liturgic=20306, color=4 where date='2035-12-22';
 update easter_daily set cells='将临期第四主日|将临期 12月23日\\1122302|圣若望根地\\1122301|', liturgic=20400, color=4 where date='2035-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期一)|', liturgic=20401, color=2 where date='2035-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期一)|', liturgic=20401, color=2 where date='2035-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期二)|', liturgic=20402, color=2 where date='2035-12-25';
 update easter_daily set cells='圣斯德望\\1122601|将临期第四周(星期三)|', liturgic=20403, color=3 where date='2035-12-26';
 update easter_daily set cells='圣若望\\1122701|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2035-12-27';
@@ -10597,7 +10599,7 @@ update easter_daily set cells='农历新春\\12|圣多玛斯•阿奎那\\101280
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第三周(星期二)|', liturgic=10302, color=1 where date='2036-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第三周(星期三)|', liturgic=10303, color=1 where date='2036-01-30';
 update easter_daily set cells='圣鲍思高\\1013101|常年期第三周(星期四)|', liturgic=10304, color=2 where date='2036-01-31';
-update easter_daily set cells='常年期第三周(星期五)|', liturgic=10305, color=1 where date='2036-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第三周(星期五)|', liturgic=10305, color=2 where date='2036-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第三周(星期六)|', liturgic=10306, color=2 where date='2036-02-02';
 update easter_daily set cells='常年期第四主日|圣伯拉削\\1020301|圣安加略\\1020302|', liturgic=10400, color=1 where date='2036-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2036-02-04';
@@ -10924,7 +10926,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期第四主日|将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|', liturgic=20400, color=4 where date='2036-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第四周(星期一)|', liturgic=20401, color=4 where date='2036-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第四周(星期二)|', liturgic=20402, color=4 where date='2036-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期三)|', liturgic=20403, color=2 where date='2036-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期三)|', liturgic=20403, color=2 where date='2036-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2036-12-25';
 update easter_daily set cells='圣斯德望\\1122601|将临期第四周(星期五)|', liturgic=20405, color=3 where date='2036-12-26';
 update easter_daily set cells='圣若望\\1122701|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2036-12-27';
@@ -10963,7 +10965,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第三周(星期四)|', liturgic=10304, color=1 where date='2037-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第三周(星期五)|', liturgic=10305, color=1 where date='2037-01-30';
 update easter_daily set cells='圣鲍思高\\1013101|常年期第三周(星期六)|', liturgic=10306, color=2 where date='2037-01-31';
-update easter_daily set cells='常年期第四主日|', liturgic=10400, color=1 where date='2037-02-01';
+update easter_daily set cells='常年期第四主日|献耶稣于圣殿前夕\\1020102|', liturgic=10400, color=1 where date='2037-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四周(星期一)|', liturgic=10401, color=2 where date='2037-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2037-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2037-02-04';
@@ -11289,7 +11291,7 @@ update easter_daily set cells='将临期第四主日|将临期 12月20日\\11220
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第四周(星期一)|', liturgic=20401, color=4 where date='2037-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第四周(星期二)|', liturgic=20402, color=4 where date='2037-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第四周(星期三)|', liturgic=20403, color=4 where date='2037-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2037-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2037-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2037-12-25';
 update easter_daily set cells='圣斯德望\\1122601|将临期第四周(星期六)|', liturgic=20406, color=3 where date='2037-12-26';
 update easter_daily set cells='圣家节\\8|圣若望\\1122701|', liturgic=30000, color=2 where date='2037-12-27';
@@ -11328,7 +11330,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第三周(星期五)|', liturgic=10305, color=1 where date='2038-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第三周(星期六)|', liturgic=10306, color=1 where date='2038-01-30';
 update easter_daily set cells='常年期第四主日|圣鲍思高\\1013101|', liturgic=10400, color=1 where date='2038-01-31';
-update easter_daily set cells='常年期第四周(星期一)|', liturgic=10401, color=1 where date='2038-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第四周(星期一)|', liturgic=10401, color=2 where date='2038-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2038-02-02';
 update easter_daily set cells='农历除夕\\11|圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2038-02-03';
 update easter_daily set cells='农历新春\\12|圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2038-02-04';
@@ -11654,7 +11656,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第四周(星期二)|', liturgic=20402, color=4 where date='2038-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第四周(星期三)|', liturgic=20403, color=4 where date='2038-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第四周(星期四)|', liturgic=20404, color=4 where date='2038-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2038-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2038-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2038-12-25';
 update easter_daily set cells='圣家节\\8|圣斯德望\\1122601|', liturgic=30000, color=2 where date='2038-12-26';
 update easter_daily set cells='圣若望\\1122701|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2038-12-27';
@@ -11693,7 +11695,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第三周(星期六)|', liturgic=10306, color=1 where date='2039-01-29';
 update easter_daily set cells='常年期第四主日|真福雷永明\\1013003|圣巴蒂弟\\1013002|', liturgic=10400, color=1 where date='2039-01-30';
 update easter_daily set cells='圣鲍思高\\1013101|常年期第四周(星期一)|', liturgic=10401, color=2 where date='2039-01-31';
-update easter_daily set cells='常年期第四周(星期二)|', liturgic=10402, color=1 where date='2039-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2039-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四周(星期三)|', liturgic=10403, color=2 where date='2039-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2039-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期五)|', liturgic=10405, color=1 where date='2039-02-04';
@@ -12019,7 +12021,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第四周(星期三)|', liturgic=20403, color=4 where date='2039-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第四周(星期四)|', liturgic=20404, color=4 where date='2039-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第四周(星期五)|', liturgic=20405, color=4 where date='2039-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2039-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2039-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|', liturgic=30000, color=2 where date='2039-12-25';
 update easter_daily set cells='圣斯德望\\1122601|圣诞期第一周(星期一)|', liturgic=30101, color=3 where date='2039-12-26';
 update easter_daily set cells='圣若望\\1122701|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2039-12-27';
@@ -12058,7 +12060,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='常年期第四主日|圣福若瑟\\1012902|圣王炳\\1012903|', liturgic=10400, color=1 where date='2040-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2040-01-30';
 update easter_daily set cells='圣鲍思高\\1013101|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2040-01-31';
-update easter_daily set cells='常年期第四周(星期三)|', liturgic=10403, color=1 where date='2040-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第四周(星期三)|', liturgic=10403, color=2 where date='2040-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四周(星期四)|', liturgic=10404, color=2 where date='2040-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期五)|', liturgic=10405, color=1 where date='2040-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期六)|', liturgic=10406, color=1 where date='2040-02-04';
@@ -12385,7 +12387,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第三周(星期五)|', liturgic=20305, color=4 where date='2040-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第三周(星期六)|', liturgic=20306, color=4 where date='2040-12-22';
 update easter_daily set cells='将临期第四主日|将临期 12月23日\\1122302|圣若望根地\\1122301|', liturgic=20400, color=4 where date='2040-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期一)|', liturgic=20401, color=2 where date='2040-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期一)|', liturgic=20401, color=2 where date='2040-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期二)|', liturgic=20402, color=2 where date='2040-12-25';
 update easter_daily set cells='圣斯德望\\1122601|将临期第四周(星期三)|', liturgic=20403, color=3 where date='2040-12-26';
 update easter_daily set cells='圣若望\\1122701|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2040-12-27';
@@ -12424,7 +12426,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第三周(星期二)|', liturgic=10302, color=1 where date='2041-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第三周(星期三)|', liturgic=10303, color=1 where date='2041-01-30';
 update easter_daily set cells='农历除夕\\11|圣鲍思高\\1013101|常年期第三周(星期四)|', liturgic=10304, color=2 where date='2041-01-31';
-update easter_daily set cells='农历新春\\12|常年期第三周(星期五)|', liturgic=10305, color=1 where date='2041-02-01';
+update easter_daily set cells='农历新春\\12|献耶稣于圣殿前夕\\1020102|常年期第三周(星期五)|', liturgic=10305, color=2 where date='2041-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第三周(星期六)|', liturgic=10306, color=2 where date='2041-02-02';
 update easter_daily set cells='常年期第四主日|圣伯拉削\\1020301|圣安加略\\1020302|', liturgic=10400, color=1 where date='2041-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2041-02-04';
@@ -12750,7 +12752,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第三周(星期六)|', liturgic=20306, color=4 where date='2041-12-21';
 update easter_daily set cells='将临期第四主日|将临期 12月22日\\1122202|圣方济加\\1122201|', liturgic=20400, color=4 where date='2041-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第四周(星期一)|', liturgic=20401, color=4 where date='2041-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期二)|', liturgic=20402, color=2 where date='2041-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期二)|', liturgic=20402, color=2 where date='2041-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期三)|', liturgic=20403, color=2 where date='2041-12-25';
 update easter_daily set cells='圣斯德望\\1122601|将临期第四周(星期四)|', liturgic=20404, color=3 where date='2041-12-26';
 update easter_daily set cells='圣若望\\1122701|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2041-12-27';
@@ -12789,7 +12791,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第三周(星期三)|', liturgic=10303, color=1 where date='2042-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第三周(星期四)|', liturgic=10304, color=1 where date='2042-01-30';
 update easter_daily set cells='圣鲍思高\\1013101|常年期第三周(星期五)|', liturgic=10305, color=2 where date='2042-01-31';
-update easter_daily set cells='常年期第三周(星期六)|', liturgic=10306, color=1 where date='2042-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第三周(星期六)|', liturgic=10306, color=2 where date='2042-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四主日|', liturgic=10400, color=2 where date='2042-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2042-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2042-02-04';
@@ -13115,7 +13117,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期第四主日|将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|', liturgic=20400, color=4 where date='2042-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第四周(星期一)|', liturgic=20401, color=4 where date='2042-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第四周(星期二)|', liturgic=20402, color=4 where date='2042-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期三)|', liturgic=20403, color=2 where date='2042-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期三)|', liturgic=20403, color=2 where date='2042-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2042-12-25';
 update easter_daily set cells='圣斯德望\\1122601|将临期第四周(星期五)|', liturgic=20405, color=3 where date='2042-12-26';
 update easter_daily set cells='圣若望\\1122701|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2042-12-27';
@@ -13154,7 +13156,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第三周(星期四)|', liturgic=10304, color=1 where date='2043-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第三周(星期五)|', liturgic=10305, color=1 where date='2043-01-30';
 update easter_daily set cells='圣鲍思高\\1013101|常年期第三周(星期六)|', liturgic=10306, color=2 where date='2043-01-31';
-update easter_daily set cells='常年期第四主日|', liturgic=10400, color=1 where date='2043-02-01';
+update easter_daily set cells='常年期第四主日|献耶稣于圣殿前夕\\1020102|', liturgic=10400, color=1 where date='2043-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四周(星期一)|', liturgic=10401, color=2 where date='2043-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2043-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2043-02-04';
@@ -13480,7 +13482,7 @@ update easter_daily set cells='将临期第四主日|将临期 12月20日\\11220
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第四周(星期一)|', liturgic=20401, color=4 where date='2043-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第四周(星期二)|', liturgic=20402, color=4 where date='2043-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第四周(星期三)|', liturgic=20403, color=4 where date='2043-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2043-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2043-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2043-12-25';
 update easter_daily set cells='圣斯德望\\1122601|将临期第四周(星期六)|', liturgic=20406, color=3 where date='2043-12-26';
 update easter_daily set cells='圣家节\\8|圣若望\\1122701|', liturgic=30000, color=2 where date='2043-12-27';
@@ -13519,7 +13521,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='农历除夕\\11|圣福若瑟\\1012902|圣王炳\\1012903|常年期第三周(星期五)|', liturgic=10305, color=1 where date='2044-01-29';
 update easter_daily set cells='农历新春\\12|真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第三周(星期六)|', liturgic=10306, color=1 where date='2044-01-30';
 update easter_daily set cells='常年期第四主日|圣鲍思高\\1013101|', liturgic=10400, color=1 where date='2044-01-31';
-update easter_daily set cells='常年期第四周(星期一)|', liturgic=10401, color=1 where date='2044-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第四周(星期一)|', liturgic=10401, color=2 where date='2044-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2044-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2044-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2044-02-04';
@@ -13846,7 +13848,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第四周(星期三)|', liturgic=20403, color=4 where date='2044-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第四周(星期四)|', liturgic=20404, color=4 where date='2044-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第四周(星期五)|', liturgic=20405, color=4 where date='2044-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2044-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2044-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|', liturgic=30000, color=2 where date='2044-12-25';
 update easter_daily set cells='圣斯德望\\1122601|圣诞期第一周(星期一)|', liturgic=30101, color=3 where date='2044-12-26';
 update easter_daily set cells='圣若望\\1122701|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2044-12-27';
@@ -13885,7 +13887,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='常年期第四主日|圣福若瑟\\1012902|圣王炳\\1012903|', liturgic=10400, color=1 where date='2045-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2045-01-30';
 update easter_daily set cells='圣鲍思高\\1013101|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2045-01-31';
-update easter_daily set cells='常年期第四周(星期三)|', liturgic=10403, color=1 where date='2045-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第四周(星期三)|', liturgic=10403, color=2 where date='2045-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四周(星期四)|', liturgic=10404, color=2 where date='2045-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期五)|', liturgic=10405, color=1 where date='2045-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期六)|', liturgic=10406, color=1 where date='2045-02-04';
@@ -14211,7 +14213,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第三周(星期四)|', liturgic=20304, color=4 where date='2045-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第三周(星期五)|', liturgic=20305, color=4 where date='2045-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第三周(星期六)|', liturgic=20306, color=4 where date='2045-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四主日|', liturgic=20400, color=2 where date='2045-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四主日|', liturgic=20400, color=2 where date='2045-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期一)|', liturgic=20401, color=2 where date='2045-12-25';
 update easter_daily set cells='圣斯德望\\1122601|将临期第四周(星期二)|', liturgic=20402, color=3 where date='2045-12-26';
 update easter_daily set cells='圣若望\\1122701|将临期第四周(星期三)|', liturgic=20403, color=2 where date='2045-12-27';
@@ -14250,7 +14252,7 @@ update easter_daily set cells='常年期第四主日|圣多玛斯•阿奎那\\1
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2046-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2046-01-30';
 update easter_daily set cells='圣鲍思高\\1013101|常年期第四周(星期三)|', liturgic=10403, color=2 where date='2046-01-31';
-update easter_daily set cells='常年期第四周(星期四)|', liturgic=10404, color=1 where date='2046-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第四周(星期四)|', liturgic=10404, color=2 where date='2046-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四周(星期五)|', liturgic=10405, color=2 where date='2046-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期六)|', liturgic=10406, color=1 where date='2046-02-03';
 update easter_daily set cells='常年期第五主日|圣若望•波利多\\1020401|圣若翰纳\\1020402|', liturgic=10500, color=1 where date='2046-02-04';
@@ -14576,7 +14578,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第三周(星期五)|', liturgic=20305, color=4 where date='2046-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第三周(星期六)|', liturgic=20306, color=4 where date='2046-12-22';
 update easter_daily set cells='将临期第四主日|将临期 12月23日\\1122302|圣若望根地\\1122301|', liturgic=20400, color=4 where date='2046-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期一)|', liturgic=20401, color=2 where date='2046-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期一)|', liturgic=20401, color=2 where date='2046-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期二)|', liturgic=20402, color=2 where date='2046-12-25';
 update easter_daily set cells='圣斯德望\\1122601|将临期第四周(星期三)|', liturgic=20403, color=3 where date='2046-12-26';
 update easter_daily set cells='圣若望\\1122701|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2046-12-27';
@@ -14615,7 +14617,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第三周(星期二)|', liturgic=10302, color=1 where date='2047-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第三周(星期三)|', liturgic=10303, color=1 where date='2047-01-30';
 update easter_daily set cells='圣鲍思高\\1013101|常年期第三周(星期四)|', liturgic=10304, color=2 where date='2047-01-31';
-update easter_daily set cells='常年期第三周(星期五)|', liturgic=10305, color=1 where date='2047-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第三周(星期五)|', liturgic=10305, color=2 where date='2047-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第三周(星期六)|', liturgic=10306, color=2 where date='2047-02-02';
 update easter_daily set cells='常年期第四主日|圣伯拉削\\1020301|圣安加略\\1020302|', liturgic=10400, color=1 where date='2047-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2047-02-04';
@@ -14941,7 +14943,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第三周(星期六)|', liturgic=20306, color=4 where date='2047-12-21';
 update easter_daily set cells='将临期第四主日|将临期 12月22日\\1122202|圣方济加\\1122201|', liturgic=20400, color=4 where date='2047-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第四周(星期一)|', liturgic=20401, color=4 where date='2047-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期二)|', liturgic=20402, color=2 where date='2047-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期二)|', liturgic=20402, color=2 where date='2047-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期三)|', liturgic=20403, color=2 where date='2047-12-25';
 update easter_daily set cells='圣斯德望\\1122601|将临期第四周(星期四)|', liturgic=20404, color=3 where date='2047-12-26';
 update easter_daily set cells='圣若望\\1122701|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2047-12-27';
@@ -14980,7 +14982,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第三周(星期三)|', liturgic=10303, color=1 where date='2048-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第三周(星期四)|', liturgic=10304, color=1 where date='2048-01-30';
 update easter_daily set cells='圣鲍思高\\1013101|常年期第三周(星期五)|', liturgic=10305, color=2 where date='2048-01-31';
-update easter_daily set cells='常年期第三周(星期六)|', liturgic=10306, color=1 where date='2048-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第三周(星期六)|', liturgic=10306, color=2 where date='2048-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四主日|', liturgic=10400, color=2 where date='2048-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2048-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期二)|', liturgic=10402, color=1 where date='2048-02-04';
@@ -15307,7 +15309,7 @@ update easter_daily set cells='将临期第四主日|将临期 12月20日\\11220
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第四周(星期一)|', liturgic=20401, color=4 where date='2048-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第四周(星期二)|', liturgic=20402, color=4 where date='2048-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第四周(星期三)|', liturgic=20403, color=4 where date='2048-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2048-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期四)|', liturgic=20404, color=2 where date='2048-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2048-12-25';
 update easter_daily set cells='圣斯德望\\1122601|将临期第四周(星期六)|', liturgic=20406, color=3 where date='2048-12-26';
 update easter_daily set cells='圣家节\\8|圣若望\\1122701|', liturgic=30000, color=2 where date='2048-12-27';
@@ -15346,7 +15348,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第三周(星期五)|', liturgic=10305, color=1 where date='2049-01-29';
 update easter_daily set cells='真福雷永明\\1013003|圣巴蒂弟\\1013002|常年期第三周(星期六)|', liturgic=10306, color=1 where date='2049-01-30';
 update easter_daily set cells='常年期第四主日|圣鲍思高\\1013101|', liturgic=10400, color=1 where date='2049-01-31';
-update easter_daily set cells='农历除夕\\11|常年期第四周(星期一)|', liturgic=10401, color=1 where date='2049-02-01';
+update easter_daily set cells='农历除夕\\11|献耶稣于圣殿前夕\\1020102|常年期第四周(星期一)|', liturgic=10401, color=2 where date='2049-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|农历新春\\12|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2049-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期三)|', liturgic=10403, color=1 where date='2049-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2049-02-04';
@@ -15672,7 +15674,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第四周(星期二)|', liturgic=20402, color=4 where date='2049-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第四周(星期三)|', liturgic=20403, color=4 where date='2049-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第四周(星期四)|', liturgic=20404, color=4 where date='2049-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2049-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期五)|', liturgic=20405, color=2 where date='2049-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2049-12-25';
 update easter_daily set cells='圣家节\\8|圣斯德望\\1122601|', liturgic=30000, color=2 where date='2049-12-26';
 update easter_daily set cells='圣若望\\1122701|圣诞期第一周(星期一)|', liturgic=30101, color=2 where date='2049-12-27';
@@ -15711,7 +15713,7 @@ update easter_daily set cells='圣多玛斯•阿奎那\\1012801|常年期第三
 update easter_daily set cells='圣福若瑟\\1012902|圣王炳\\1012903|常年期第三周(星期六)|', liturgic=10306, color=1 where date='2050-01-29';
 update easter_daily set cells='常年期第四主日|真福雷永明\\1013003|圣巴蒂弟\\1013002|', liturgic=10400, color=1 where date='2050-01-30';
 update easter_daily set cells='圣鲍思高\\1013101|常年期第四周(星期一)|', liturgic=10401, color=2 where date='2050-01-31';
-update easter_daily set cells='常年期第四周(星期二)|', liturgic=10402, color=1 where date='2050-02-01';
+update easter_daily set cells='献耶稣于圣殿前夕\\1020102|常年期第四周(星期二)|', liturgic=10402, color=2 where date='2050-02-01';
 update easter_daily set cells='献耶稣于圣殿\\1020201|常年期第四周(星期三)|', liturgic=10403, color=2 where date='2050-02-02';
 update easter_daily set cells='圣伯拉削\\1020301|圣安加略\\1020302|常年期第四周(星期四)|', liturgic=10404, color=1 where date='2050-02-03';
 update easter_daily set cells='圣若望•波利多\\1020401|圣若翰纳\\1020402|常年期第四周(星期五)|', liturgic=10405, color=1 where date='2050-02-04';
@@ -16037,7 +16039,7 @@ update easter_daily set cells='将临期 12月20日\\1122002|圣多明我•西�
 update easter_daily set cells='将临期 12月21日\\1122102|圣伯多禄•加尼削\\1122101|将临期第四周(星期三)|', liturgic=20403, color=4 where date='2050-12-21';
 update easter_daily set cells='将临期 12月22日\\1122202|圣方济加\\1122201|将临期第四周(星期四)|', liturgic=20404, color=4 where date='2050-12-22';
 update easter_daily set cells='将临期 12月23日\\1122302|圣若望根地\\1122301|将临期第四周(星期五)|', liturgic=20405, color=4 where date='2050-12-23';
-update easter_daily set cells='耶稣圣诞节望日\\1122401|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2050-12-24';
+update easter_daily set cells='耶稣圣诞节前夕\\1122401|将临期第四周(星期六)|', liturgic=20406, color=2 where date='2050-12-24';
 update easter_daily set cells='耶稣圣诞\\1122501|', liturgic=30000, color=2 where date='2050-12-25';
 update easter_daily set cells='圣斯德望\\1122601|圣诞期第一周(星期一)|', liturgic=30101, color=3 where date='2050-12-26';
 update easter_daily set cells='圣若望\\1122701|圣诞期第一周(星期二)|', liturgic=30102, color=2 where date='2050-12-27';
