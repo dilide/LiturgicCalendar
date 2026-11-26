@@ -1376,18 +1376,19 @@ void LiturgicYear::testProper(LiturgicDay &ld)
     }
 
     {
-        // 中国农历新年
-        if (LiturgicDay::isSpringFestival(ld))
+        const langcode_t lang = MultiLang::getLangCode();
+        // 农历新年
+        if (LiturgicDay::isSpringFestival(ld, lang))
         {
             ld.appendCell(12);
         }
         // 农历除夕
-        if (LiturgicDay::isNewYearEve(ld))
+        if (LiturgicDay::isNewYearEve(ld, lang))
         {
             ld.appendCell(11);
         }
         // 韩国中秋节 (추석)
-        if (LiturgicDay::isChuseok(ld))
+        if (LiturgicDay::isChuseok(ld, lang))
         {
             ld.appendCell(41);
         }
