@@ -19,7 +19,7 @@ This particular implementation is designed for use by [CathAssist](http://www.ca
 
 The LiturgicCalendar project is built around several key C++ components:
 
-*   **`Date.h`**: Handles basic date representations and calculations. It uses Julian Day for date storage and uses a shared 1901–2100 table for Chinese and Korean Lunar New Year and Korean Chuseok. New Year’s Eve follows the date for the selected language.
+*   **`Date.h`**: Handles basic date representations and calculations. It uses Julian Day for date storage and uses a shared 1901–2100 table for Lunar New Year and Mid-Autumn. Each festival stores its Chinese date and optional language-specific dates. New Year’s Eve follows the local New Year date. The liturgical calendar currently lists Mid-Autumn only for Korean (Chuseok).
 *   **`CalendarDefine.h`**: Contains definitions for various liturgical elements, such as seasons (Advent, Christmas, Lent, Easter, Ordinary Time), liturgical ranks (Solemnity, Feast, Memorial, etc.), and liturgical colors.
 *   **`LiturgicDay.h`**: Represents a single day within the Liturgical Calendar. An object of `LiturgicDay` encapsulates information about the day's season (e.g., Lent, Easter), the week of the season, its liturgical rank, color, and any specific celebrations (feasts, memorials, or solemnities) occurring on that day.
 *   **`LiturgicYear.h`**: Responsible for calculating and managing the liturgical details for an entire year. It determines the dates of movable feasts (like Easter, Ash Wednesday, Pentecost) and integrates fixed celebrations (e.g., Christmas, saints' days) to build a complete liturgical year.

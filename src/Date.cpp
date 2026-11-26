@@ -11,6 +11,7 @@
 
 #include "Date.h"
 #include <sstream>
+#include <utility>
 #include <iomanip>
 
 #define LOWORD(x) (x & 0x0000FFFF)
@@ -158,15 +159,30 @@ struct MonthDay
     }
 };
 
-struct LunarHolidays
+struct RegionalDate
 {
-    MonthDay newYear;
-    MonthDay koreanChuseok;
-    MonthDay koreanNewYear; // Omitted (zero-initialized) when the dates coincide.
+    MonthDay china;
+    std::map<langcode_t, MonthDay> overrides;
+
+    RegionalDate(int month, int day, std::map<langcode_t, MonthDay> overrides = {})
+        : china{month, day}, overrides(std::move(overrides)) {}
+
+    bool matches(const Date &date, langcode_t lang) const
+    {
+        const auto it = overrides.find(lang);
+        const MonthDay &local = it == overrides.end() ? china : it->second;
+        return local.matches(date);
+    }
 };
 
-// Gregorian month/day. Chinese New Year follows the Hong Kong Observatory tables.
-// Korean dates use the Korean lunisolar calendar (ICU Dangi and Time4J).
+struct LunarHolidays
+{
+    RegionalDate newYear;
+    RegionalDate midAutumn;
+};
+
+// Each festival starts with the Chinese Gregorian month/day (Hong Kong Observatory).
+// Record a language override only when its date differs. Korean dates use ICU Dangi and Time4J.
 const std::map<int, LunarHolidays> lunarHolidays = {
 	{1901, {{2, 19}, {9, 27}}},
 	{1902, {{2, 8}, {9, 16}}},
@@ -183,7 +199,7 @@ const std::map<int, LunarHolidays> lunarHolidays = {
 	{1913, {{2, 6}, {9, 15}}},
 	{1914, {{1, 26}, {10, 4}}},
 	{1915, {{2, 14}, {9, 23}}},
-	{1916, {{2, 3}, {9, 12}, {2, 4}}},
+	{1916, {{2, 3, {{LANG_KO_KR, {2, 4}}}}, {9, 12}}},
 	{1917, {{1, 23}, {9, 30}}},
 	{1918, {{2, 11}, {9, 19}}},
 	{1919, {{2, 1}, {10, 8}}},
@@ -209,9 +225,9 @@ const std::map<int, LunarHolidays> lunarHolidays = {
 	{1939, {{2, 19}, {9, 27}}},
 	{1940, {{2, 8}, {9, 16}}},
 	{1941, {{1, 27}, {10, 5}}},
-	{1942, {{2, 15}, {9, 25}}},
+	{1942, {{2, 15}, {9, 24, {{LANG_KO_KR, {9, 25}}}}}},
 	{1943, {{2, 5}, {9, 14}}},
-	{1944, {{1, 25}, {10, 1}, {1, 26}}},
+	{1944, {{1, 25, {{LANG_KO_KR, {1, 26}}}}, {10, 1}}},
 	{1945, {{2, 13}, {9, 20}}},
 	{1946, {{2, 2}, {9, 10}}},
 	{1947, {{1, 22}, {9, 29}}},
@@ -221,11 +237,11 @@ const std::map<int, LunarHolidays> lunarHolidays = {
 	{1951, {{2, 6}, {9, 15}}},
 	{1952, {{1, 27}, {10, 3}}},
 	{1953, {{2, 14}, {9, 22}}},
-	{1954, {{2, 3}, {9, 11}, {2, 4}}},
+	{1954, {{2, 3, {{LANG_KO_KR, {2, 4}}}}, {9, 11}}},
 	{1955, {{1, 24}, {9, 30}}},
 	{1956, {{2, 12}, {9, 19}}},
 	{1957, {{1, 31}, {9, 8}}},
-	{1958, {{2, 18}, {9, 27}, {2, 19}}},
+	{1958, {{2, 18, {{LANG_KO_KR, {2, 19}}}}, {9, 27}}},
 	{1959, {{2, 8}, {9, 17}}},
 	{1960, {{1, 28}, {10, 5}}},
 	{1961, {{2, 15}, {9, 24}}},
@@ -233,7 +249,7 @@ const std::map<int, LunarHolidays> lunarHolidays = {
 	{1963, {{1, 25}, {10, 2}}},
 	{1964, {{2, 13}, {9, 20}}},
 	{1965, {{2, 2}, {9, 10}}},
-	{1966, {{1, 21}, {9, 29}, {1, 22}}},
+	{1966, {{1, 21, {{LANG_KO_KR, {1, 22}}}}, {9, 29}}},
 	{1967, {{2, 9}, {9, 18}}},
 	{1968, {{1, 30}, {10, 6}}},
 	{1969, {{2, 17}, {9, 26}}},
@@ -255,7 +271,7 @@ const std::map<int, LunarHolidays> lunarHolidays = {
 	{1985, {{2, 20}, {9, 29}}},
 	{1986, {{2, 9}, {9, 18}}},
 	{1987, {{1, 29}, {10, 7}}},
-	{1988, {{2, 17}, {9, 25}, {2, 18}}},
+	{1988, {{2, 17, {{LANG_KO_KR, {2, 18}}}}, {9, 25}}},
 	{1989, {{2, 6}, {9, 14}}},
 	{1990, {{1, 27}, {10, 3}}},
 	{1991, {{2, 15}, {9, 22}}},
@@ -264,7 +280,7 @@ const std::map<int, LunarHolidays> lunarHolidays = {
 	{1994, {{2, 10}, {9, 20}}},
 	{1995, {{1, 31}, {9, 9}}},
 	{1996, {{2, 19}, {9, 27}}},
-	{1997, {{2, 7}, {9, 16}, {2, 8}}},
+	{1997, {{2, 7, {{LANG_KO_KR, {2, 8}}}}, {9, 16}}},
 	{1998, {{1, 28}, {10, 5}}},
 	{1999, {{2, 16}, {9, 24}}},
 	{2000, {{2, 5}, {9, 12}}},
@@ -294,8 +310,8 @@ const std::map<int, LunarHolidays> lunarHolidays = {
 	{2024, {{2, 10}, {9, 17}}},
 	{2025, {{1, 29}, {10, 6}}},
 	{2026, {{2, 17}, {9, 25}}},
-	{2027, {{2, 6}, {9, 15}, {2, 7}}},
-	{2028, {{1, 26}, {10, 3}, {1, 27}}},
+	{2027, {{2, 6, {{LANG_KO_KR, {2, 7}}}}, {9, 15}}},
+	{2028, {{1, 26, {{LANG_KO_KR, {1, 27}}}}, {10, 3}}},
 	{2029, {{2, 13}, {9, 22}}},
 	{2030, {{2, 3}, {9, 12}}},
 	{2031, {{1, 23}, {10, 1}}},
@@ -307,7 +323,7 @@ const std::map<int, LunarHolidays> lunarHolidays = {
 	{2037, {{2, 15}, {9, 24}}},
 	{2038, {{2, 4}, {9, 13}}},
 	{2039, {{1, 24}, {10, 2}}},
-	{2040, {{2, 12}, {9, 21}}},
+	{2040, {{2, 12}, {9, 20, {{LANG_KO_KR, {9, 21}}}}}},
 	{2041, {{2, 1}, {9, 10}}},
 	{2042, {{1, 22}, {9, 28}}},
 	{2043, {{2, 10}, {9, 17}}},
@@ -328,7 +344,7 @@ const std::map<int, LunarHolidays> lunarHolidays = {
 	{2058, {{1, 24}, {10, 2}}},
 	{2059, {{2, 12}, {9, 21}}},
 	{2060, {{2, 2}, {9, 9}}},
-	{2061, {{1, 21}, {9, 28}, {1, 22}}},
+	{2061, {{1, 21, {{LANG_KO_KR, {1, 22}}}}, {9, 28}}},
 	{2062, {{2, 9}, {9, 17}}},
 	{2063, {{1, 29}, {10, 6}}},
 	{2064, {{2, 17}, {9, 25}}},
@@ -356,16 +372,16 @@ const std::map<int, LunarHolidays> lunarHolidays = {
 	{2086, {{2, 14}, {9, 22}}},
 	{2087, {{2, 3}, {9, 11}}},
 	{2088, {{1, 24}, {9, 29}}},
-	{2089, {{2, 10}, {9, 19}, {2, 11}}},
+	{2089, {{2, 10, {{LANG_KO_KR, {2, 11}}}}, {9, 18, {{LANG_KO_KR, {9, 19}}}}}},
 	{2090, {{1, 30}, {9, 8}}},
 	{2091, {{2, 18}, {9, 27}}},
-	{2092, {{2, 7}, {9, 16}, {2, 8}}},
+	{2092, {{2, 7, {{LANG_KO_KR, {2, 8}}}}, {9, 16}}},
 	{2093, {{1, 27}, {10, 5}}},
 	{2094, {{2, 15}, {9, 24}}},
 	{2095, {{2, 5}, {9, 13}}},
-	{2096, {{1, 25}, {10, 1}}},
+	{2096, {{1, 25}, {9, 30, {{LANG_KO_KR, {10, 1}}}}}},
 	{2097, {{2, 12}, {9, 20}}},
-	{2098, {{2, 1}, {9, 10}}},
+	{2098, {{2, 1}, {9, 9, {{LANG_KO_KR, {9, 10}}}}}},
 	{2099, {{1, 21}, {9, 29}}},
 	{2100, {{2, 9}, {9, 18}}},
 };
@@ -376,12 +392,7 @@ bool Date::isSpringFestival(const Date &d, langcode_t lang)
     if (lang != LANG_ZH_CN && lang != LANG_ZH_TW && lang != LANG_KO_KR)
         return false;
     const auto year = lunarHolidays.find(d.year());
-    if (year == lunarHolidays.end())
-        return false;
-    const auto &holidays = year->second;
-    if (lang == LANG_KO_KR && holidays.koreanNewYear.month != 0)
-        return holidays.koreanNewYear.matches(d);
-    return holidays.newYear.matches(d);
+    return year != lunarHolidays.end() && year->second.newYear.matches(d, lang);
 }
 
 bool Date::isNewYearEve(const Date &d, langcode_t lang)
@@ -389,10 +400,15 @@ bool Date::isNewYearEve(const Date &d, langcode_t lang)
     return isSpringFestival(d.addDays(1), lang);
 }
 
-bool Date::isChuseok(const Date &d, langcode_t lang)
+bool Date::isMidAutumnFestival(const Date &d, langcode_t lang)
 {
     const auto year = lunarHolidays.find(d.year());
-    return lang == LANG_KO_KR && year != lunarHolidays.end() && year->second.koreanChuseok.matches(d);
+    return year != lunarHolidays.end() && year->second.midAutumn.matches(d, lang);
+}
+
+bool Date::isChuseok(const Date &d, langcode_t lang)
+{
+    return lang == LANG_KO_KR && isMidAutumnFestival(d, lang);
 }
 
 Date Date::getCurrentDate(void)

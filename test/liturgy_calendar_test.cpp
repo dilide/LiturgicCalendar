@@ -523,3 +523,25 @@ TEST_F(RegionalCalendarTest, DailyCelebrationsFollowTheSelectedLanguage)
         Calendar::releaseCalendar();
     }
 }
+
+TEST(DateTest, MidAutumnUsesItsOwnRegionalDates)
+{
+    // In 2089 both festivals differ. In 2040 only Mid-Autumn differs.
+    for (const Date& chineseDate : {Date(2089, 9, 18), Date(2040, 9, 20)})
+    {
+        SCOPED_TRACE(chineseDate.toString());
+        const Date koreanDate = chineseDate.addDays(1);
+        for (auto lang : {LANG_ZH_CN, LANG_ZH_TW})
+        {
+            EXPECT_TRUE(Date::isMidAutumnFestival(chineseDate, lang));
+            EXPECT_FALSE(Date::isMidAutumnFestival(koreanDate, lang));
+            EXPECT_FALSE(Date::isChuseok(chineseDate, lang));
+        }
+        EXPECT_FALSE(Date::isMidAutumnFestival(chineseDate, LANG_KO_KR));
+        EXPECT_TRUE(Date::isMidAutumnFestival(koreanDate, LANG_KO_KR));
+    }
+
+    // In 2027 only New Year differs. All three locales share Mid-Autumn.
+    for (auto lang : {LANG_ZH_CN, LANG_ZH_TW, LANG_KO_KR})
+        EXPECT_TRUE(Date::isMidAutumnFestival(Date(2027, 9, 15), lang));
+}

@@ -29,6 +29,8 @@ namespace CathAssist
 			static bool isSpringFestival(const Date &d, langcode_t lang = LANG_ZH_CN);
 			// 判断是否为除夕
 			static bool isNewYearEve(const Date &d, langcode_t lang = LANG_ZH_CN);
+			// 查询当地农历八月十五的日期
+			static bool isMidAutumnFestival(const Date &d, langcode_t lang = LANG_ZH_CN);
 			// 判断是否为韩国秋夕
 			static bool isChuseok(const Date &d, langcode_t lang = LANG_KO_KR);
 			static Date getCurrentDate(void);
