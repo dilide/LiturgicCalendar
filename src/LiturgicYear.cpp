@@ -931,6 +931,9 @@ void CathAssist::Calendar::LiturgicYear::initPropers()
 
         // 圣神降临节前夕
         mapPropers.insert(std::make_pair(42, CellInfo(FEAST , RED, "圣神降临节前夕")));
+
+        // 美国感恩节，仅在英语日历列出
+        mapPropers.insert(std::make_pair(43, CellInfo(OPTIONAL, WHITE, "感恩节", {LANG_EN})));
     }
 
     // 将节日编码插入到节日里
@@ -1347,6 +1350,12 @@ void LiturgicYear::testChristmas2(LiturgicDay &ld)
 
 void LiturgicYear::testProper(LiturgicDay &ld)
 {
+    // 11 月的第四个星期四
+    if (ld.month() == 11 && ld.dayOfWeek() == THU && ld.day() >= 22 && ld.day() <= 28)
+    {
+        ld.appendCell(43);
+    }
+
     {
         // 教会之母（圣神降临节后星期一）
         if (ld.daysTo(ps) == -1)
