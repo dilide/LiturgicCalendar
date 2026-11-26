@@ -4,46 +4,17 @@
 
 ## 构建和测试
 
-在仓库根目录依次运行以下 Bash 命令。项目使用 C++11，SQLite 和 RapidJSON 已随仓库提供。当前云环境使用 CMake 3.31.6。
+在仓库根目录运行 `make`（并行构建可用 `make -j3`）。默认构建生成器和测试程序，每次都通过 CTest 运行 Google Test；测试失败会使构建失败。测试在构建目录的 `test-output/` 中运行，完整日志位于 `Testing/Temporary/LastTest.log`。
 
-```bash
-set -eu
-repo=$(git rev-parse --show-toplevel)
-cd "$repo"
-cmake_bin=$(command -v cmake || echo /workspace/.liturgic-tools/cmake/data/bin/cmake)
-"$cmake_bin" -S . -B build
-"$cmake_bin" --build build --parallel 3
-```
-
-当前 CMake 配置只构建生成器。运行 Google Test 时，复用上一步的对象文件并排除含有生成器入口的 `main.cpp.o`。云环境已准备 Google Test 1.14.0，首次在其他环境运行时，下面的命令会获取相同版本。
-
-```bash
-gtest_root="$repo/build/googletest-1.14.0"
-if [ ! -d "$gtest_root" ]; then
-    git clone --depth 1 --branch v1.14.0 https://github.com/google/googletest.git "$gtest_root"
-fi
-test "$(git -C "$gtest_root" rev-parse HEAD)" = f8d7d77c06936315286eb55f8de22cd23c188571
-gtest="$gtest_root/googletest"
-objects="$repo/build/CMakeFiles/LiturgicCalendar.dir"
-c++ -std=c++14 -pthread -Iinclude -I"$gtest/include" -I"$gtest" \
-    test/liturgy_calendar_test.cpp "$gtest/src/gtest-all.cc" "$gtest/src/gtest_main.cc" \
-    "$objects"/src/{Calendar,Date,LiturgicDay,LiturgicYear,MultiLang}.cpp.o \
-    "$objects/include/sqlite/sqlite3.c.o" -ldl -o build/liturgy_calendar_test
-
-run_dir=$(mktemp -d)
-cp "$repo/lang.ini" "$run_dir/"
-(cd "$run_dir" && "$repo/build/liturgy_calendar_test" --gtest_shuffle > tests.log 2>&1) || {
-    tail -40 "$run_dir/tests.log"
-    exit 1
-}
-tail -3 "$run_dir/tests.log"
-```
+需要 CMake 3.14 或以上版本及支持 C++14 的测试编译器。找不到已安装的 Google Test 时，CMake 会获取固定的 1.14.0 源码。云环境中若 CMake 未加入 PATH，可在首次配置时使用 `make CMAKE=/workspace/.liturgic-tools/cmake/data/bin/cmake`。
 
 ## 验证导出
 
 生成器和导出测试都会在当前目录重建文件，包括 `months/`、`liturgic.db` 和 SQL 文件。请从单独的运行目录启动，并将 `lang.ini` 放在该目录。下面的命令会生成所有语言的 ICS 文件，打印与仓库版本有差异的文件名。将需要发布的文件复制回仓库前，先核对变化的日期和庆典。
 
 ```bash
+set -eu
+repo=$(git rev-parse --show-toplevel)
 export_dir=$(mktemp -d)
 cp "$repo/lang.ini" "$export_dir/"
 (cd "$export_dir" && "$repo/build/LiturgicCalendar" > generator.log 2>&1)
