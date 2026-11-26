@@ -5,6 +5,10 @@
 #include <iomanip>
 #include <fstream>
 #include <list>
+#include <cctype>
+#include <cerrno>
+#include <system_error>
+#include <sys/stat.h>
 #include "sqlite/sqlite3.h"
 #include "CharConverter.h"
 #include "Calendar.h"
@@ -621,25 +625,42 @@ void calendar_test()
 
 void export_to_ical()
 {
-    // 仅生成简体中文版本的 iCal
-    int lang = CathAssist::Calendar::LANG_ZH_CN;
+    if (mkdir("ics", 0777) != 0 && errno != EEXIST)
+        throw std::system_error(errno, std::generic_category(), "mkdir ics");
+
+    const std::map<langcode_t, std::string> calendarNames = {
+        {LANG_EN, "Liturgical Calendar"},
+        {LANG_ZH_CN, "教会礼仪历"},
+        {LANG_ZH_TW, "教會禮儀曆"},
+        {LANG_ES_ES, "Calendario litúrgico"},
+        {LANG_IT_IT, "Calendario liturgico"},
+        {LANG_PT_BR, "Calendário litúrgico"},
+        {LANG_KO_KR, "전례력"}
+    };
+    const int currentYear = Date::getCurrentDate().year();
+    for (const auto &calendar : calendarNames)
     {
-        CathAssist::Calendar::MultiLang::setLangCode(static_cast<CathAssist::Calendar::langcode_t>(lang));
+        const langcode_t lang = calendar.first;
+        MultiLang::setLangCode(lang);
         Calendar::initCalendar();
 
-        std::string langStr = getLangCodeStr(static_cast<CathAssist::Calendar::langcode_t>(lang));
-        std::ofstream of;
-        of.open(string("./liturgic_") + langStr + ".ics");
+        const std::string langStr = getLangCodeStr(lang);
+        std::string fileLang = langStr;
+        for (char &ch : fileLang)
+            ch = static_cast<char>(std::tolower(static_cast<unsigned char>(ch)));
+        const std::string path = "ics/" + fileLang + ".ics";
+        std::ofstream of(path);
+        if (!of)
+            throw std::runtime_error("Cannot open " + path);
 
         of << "BEGIN:VCALENDAR" << "\r\n";
         of << "VERSION:2.0" << "\r\n";
         of << "PRODID:-//CathAssist//LiturgicCalendar//EN" << "\r\n";
         of << "CALSCALE:GREGORIAN" << "\r\n";
         of << "METHOD:PUBLISH" << "\r\n";
-        of << "X-WR-CALNAME:教会礼仪历" << "\r\n";
+        of << "X-WR-CALNAME:" << calendar.second << "\r\n";
         of << "X-WR-TIMEZONE:UTC" << "\r\n";
 
-        int currentYear = CathAssist::Calendar::Date::getCurrentDate().year();
         for (int iYear = currentYear - 1; iYear <= currentYear + 5; ++iYear)
         {
             CathAssist::Calendar::Date dtBegin(iYear, 1, 1);
@@ -670,7 +691,7 @@ void export_to_ical()
                         std::string dateEndStr = ossDateEnd.str();
 
                         std::string summary = cell.celebration;
-                        std::string description = cell.celebration + " (" + getRankStr(cell.rank) + ", " + getColorStr(cell.color, static_cast<CathAssist::Calendar::langcode_t>(lang)) + ")";
+                        std::string description = cell.celebration + " (" + getRankStr(cell.rank) + ", " + getColorStr(cell.color, lang) + ")";
 
                         std::string summaryEscaped = ReplaceAll(summary, "\\", "\\\\");
                         summaryEscaped = ReplaceAll(summaryEscaped, ",", "\\,");
