@@ -5,6 +5,11 @@ CMakeScripts
 CMakeCache.txt
 cmake_install.cmake
 CTestTestfile.cmake
+/Testing/
+/_deps/
+/lib/libgtest*.a
+/liturgy_calendar_test
+/test-output/
 libLiturgicCalendar.a
 LiturgicCalendar
 Makefile
@@ -12,6 +17,7 @@ Makefile
 Debug
 months
 lang_out.ini
+/catholicism.sql
 liturgic.en.db
 liturgic.es_ES.db
 liturgic.it_IT.db
@@ -25,3 +31,4 @@ node_modules
 /reports/lang-audit-*
 /reports/lang-severe-fixes-*
 /reports/lang-prefix-fixes-*
+libcalendar_core.a

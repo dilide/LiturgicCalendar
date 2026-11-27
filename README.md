@@ -29,7 +29,7 @@ The LiturgicCalendar project is built around several key C++ components:
 The project also utilizes:
 
 *   **RapidJSON**: A fast JSON parser and generator for C++, used for serializing calendar data into JSON format (as seen in `export_month_json_test` in `main.cpp` and test files).
-*   **SQLite**: A C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine, used for storing and querying liturgical data (as seen in `export_to_sqlite` in `main.cpp` and test files).
+*   **SQLite**: The generator builds [SQLite 3.54.1](https://sqlite.org/releaselog/3_54_1.html) from the official amalgamation in `include/sqlite/` and uses it to export `liturgic.db`.
 
 **Data Flow:**
 Typically, a user interacts with the `Calendar` class. When liturgical information for a date is requested, the `Calendar` class consults the appropriate `LiturgicYear` object (creating it if necessary). The `LiturgicYear` object calculates the properties of each `LiturgicDay` based on the rules of the General Roman Calendar, including the timing of liturgical seasons and the occurrence of specific celebrations.

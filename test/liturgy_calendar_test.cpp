@@ -2,6 +2,7 @@
 // Created by Peter on 2017/7/28.
 //
 #include <fstream>
+#include <memory>
 #include "gtest/gtest.h"
 #include "sqlite/sqlite3.h"
 #include "CharConverter.h"
@@ -297,6 +298,38 @@ TEST(DateTest, LeapDayFollowsGregorianCenturyRule)
     EXPECT_EQ(Date(2000, 2, 29), Date(2000, 3, 1).addDays(-1));
 }
 
+TEST(DateTest, MonthAndYearOffsetsClampToTheLastValidDay)
+{
+    EXPECT_EQ(Date(2024, 2, 29), Date(2024, 1, 31).addMonths(1));
+    EXPECT_EQ(Date(2023, 2, 28), Date(2023, 3, 31).addMonths(-1));
+    EXPECT_EQ(Date(2025, 2, 28), Date(2024, 2, 29).addYears(1));
+    EXPECT_EQ(Date(2024, 1, 31), Date(2023, 12, 31).addMonths(1));
+}
+
+TEST(SqliteTest, RoundHandlesBothSignsAtTheInt64Limit)
+{
+    sqlite3* handle = nullptr;
+    const int result = sqlite3_open(":memory:", &handle);
+    std::unique_ptr<sqlite3, decltype(&sqlite3_close)> db(handle, sqlite3_close);
+    ASSERT_EQ(SQLITE_OK, result);
+
+    // These doubles near 2^63 have no fractional part and must retain their value.
+    const char* sql = "SELECT round(0.5), round(-0.5),"
+        " round(9223372036854774784.0), round(-9223372036854774784.0),"
+        " round(9223372036854775808.0), round(-9223372036854775808.0)";
+    sqlite3_stmt* statement = nullptr;
+    ASSERT_EQ(SQLITE_OK, sqlite3_prepare_v2(db.get(), sql, -1, &statement, nullptr))
+        << sqlite3_errmsg(db.get());
+    std::unique_ptr<sqlite3_stmt, decltype(&sqlite3_finalize)> row(statement, sqlite3_finalize);
+    ASSERT_EQ(SQLITE_ROW, sqlite3_step(row.get()));
+    EXPECT_EQ(1.0, sqlite3_column_double(row.get(), 0));
+    EXPECT_EQ(-1.0, sqlite3_column_double(row.get(), 1));
+    EXPECT_EQ(9223372036854774784.0, sqlite3_column_double(row.get(), 2));
+    EXPECT_EQ(-9223372036854774784.0, sqlite3_column_double(row.get(), 3));
+    EXPECT_EQ(9223372036854775808.0, sqlite3_column_double(row.get(), 4));
+    EXPECT_EQ(-9223372036854775808.0, sqlite3_column_double(row.get(), 5));
+}
+
 class CalendarSeasonTest : public ::testing::Test
 {
 protected:
@@ -323,6 +356,21 @@ TEST_F(CalendarSeasonTest, PentecostIsTheLastDayOfEaster)
     EXPECT_EQ(EASTER, pentecost.getSeason());
     EXPECT_EQ(RED, pentecost.getColor());
     EXPECT_EQ(ORDINARY, Calendar::getLiturgicDay(2024, 5, 20).getSeason());
+}
+
+TEST_F(CalendarSeasonTest, HolyFamilyFallsOnSundayOrDecemberThirtieth)
+{
+    // USCCB daily readings for December 30, 2022 and December 29, 2024.
+    for (const Date& feast : {Date(2022, 12, 30), Date(2024, 12, 29)})
+    {
+        for (int day = 25; day <= 31; ++day)
+        {
+            const Date date(feast.year(), 12, day);
+            SCOPED_TRACE(date.toString());
+            const auto cells = Calendar::getLiturgicDay(date).getCellInfos();
+            EXPECT_EQ(date == feast, CellInfo::isContain(cells, 8));
+        }
+    }
 }
 
 TEST_F(CalendarSeasonTest, AdventCanStartInNovember)
@@ -439,6 +487,33 @@ TEST_F(RegionalCalendarTest, LateSundayEpiphanyMovesBaptismToMonday)
 TEST_F(RegionalCalendarTest, EarlySundayEpiphanyKeepsBaptismOnSunday)
 {
     checkJanuary(LANG_EN, 2025, 5, 12);
+}
+
+TEST_F(RegionalCalendarTest, ThanksgivingIsOptionalOnlyOnTheFourthThursdayInEnglish)
+{
+    for (int code : getAllLangCodes())
+    {
+        const auto lang = static_cast<langcode_t>(code);
+        SCOPED_TRACE(getLangCodeStr(lang));
+        MultiLang::setLangCode(lang);
+        Calendar::initCalendar();
+        // Earliest and latest possible dates, including a November with five Thursdays.
+        for (const Date& feast : {Date(2018, 11, 22), Date(2024, 11, 28)})
+        {
+            for (int day = 1; day <= 30; ++day)
+            {
+                const Date date(feast.year(), 11, day);
+                SCOPED_TRACE(date.toString());
+                const auto cells = Calendar::getLiturgicDay(date).getCellInfos();
+                const auto thanksgiving = std::find_if(cells.begin(), cells.end(),
+                    [](const CellInfo& cell) { return cell.code == 43; });
+                EXPECT_EQ(lang == LANG_EN && date == feast, thanksgiving != cells.end());
+                if (thanksgiving != cells.end())
+                    EXPECT_EQ(OPTIONAL, thanksgiving->rank);
+            }
+        }
+        Calendar::releaseCalendar();
+    }
 }
 
 TEST(DateTest, LunarHolidaysFallOnTheirKnownGregorianDates)
